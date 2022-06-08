@@ -1,0 +1,16 @@
+.preview-frame {
+    &__grid {
+        height: 100%;
+    }
+
+    &__grid {
+        display: flex;
+        flex-direction: column;
+    }
+ 
+    &__iframe {
+        height: 0;
+        flex-grow: 1;
+        width: 100%;
+    }
+}

@@ -1,0 +1,16 @@
+.task {
+    &__content {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__heading {
+        margin: 10px 0;
+    }
+
+    &__workdesk {
+        height: 0;
+        flex-grow: 1;
+    }
+}

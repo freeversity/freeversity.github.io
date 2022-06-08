@@ -1,0 +1,45 @@
+.workdesk{
+    &__wrapper {
+        height: 100%;
+        width: 100%;
+        display: flex;
+    }
+
+    &__article-container {
+        position: fixed;
+        display: none;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: 1000;
+        background-color: #fff;
+
+        &--visible {
+            display: block;
+        }
+    }
+
+    &__sidepanel {
+        width: 50px;
+    }
+
+    &__theory-btn {    
+        transform: rotate(-90deg) translateX(-50%);
+    }
+
+    &__preview {
+        height: 100%;
+    }
+
+
+
+    &__editor {
+        height: 100% !important;
+        width: 100% !important;
+    }
+
+    &__inspector {
+        height: 100%;
+    }
+}

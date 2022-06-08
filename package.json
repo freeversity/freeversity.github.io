@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "react-markdown": "^8.0.3",
+    "react-reflex": "^4.0.9",
+    "react-router": "^6.3.0",
+    "rehype-raw": "^6.1.1"
+  }
+}

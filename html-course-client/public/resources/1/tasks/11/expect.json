@@ -1,0 +1,19 @@
+{
+    "assertions": [
+        {
+            "name": "addStandardEmptyCssRule",
+            "title": "Добавьте новое пустое CSS-правило для класса `standard`",
+            "expect": "expect(document).to.have.cssRule('.standard')"
+        },
+        {
+            "name": "addBorderColorToStandardCssRule",
+            "title": "В это правило добавьте первое свойство `border-color: #847462;`",
+            "expect": "expect(document).to.have.cssRule('.standard', 'borderColor', '#847462')"
+        },
+        {
+            "name": "addColorToStandardCssRule",
+            "title": "и второе свойство `color: #6a6a6a;`",
+            "expect": "expect(document).to.have.cssRule('.standard', 'color', '#6a6a6a')"
+        }
+    ]
+}

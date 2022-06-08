@@ -1,0 +1,116 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "Gill Sans", sans-serif;
+	font-size: 15px;
+	line-height: 20px;
+	color: #444
+}
+
+h1,
+h2 {
+	font-family: "Verdana", sans-serif
+}
+
+h1 {
+	width: 255px;
+	margin-top: 0;
+	margin-bottom: 6px;
+	color: #6f55d5;
+	font-size: 36px;
+	line-height: 48px
+}
+
+h2 {
+	padding-bottom: 10px;
+	font-size: 20px;
+	line-height: 24px;
+	border-bottom: 2px solid #f2f2f2
+}
+
+.container {
+	width: 510px;
+	margin: 0 auto;
+	padding: 0 20px
+}
+
+.site-header {
+	position: relative;
+	min-width: 550px;
+	height: 148px;
+	margin: 0 30px;
+	padding-top: 32px;
+	background-image: url(img/gloevk-bg-white.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain
+}
+
+.description {
+	width: 255px;
+	margin-top: 0;
+	font-size: 18px;
+	line-height: 24px
+}
+
+.site-header .container {
+	position: relative
+}
+
+.site-header img {
+	position: absolute;
+	top: 0;
+	right: 35px
+}
+
+.features {
+	width: 510px;
+	margin: 0 auto 30px;
+	padding: 0 20px
+}
+
+.features p {
+	display: inline-block;
+	vertical-align: center;
+	width: 145px;
+	margin: 0 30px 0 0;
+	padding: 20px 0 20px 76px;
+	background-repeat: no-repeat;
+	background-position: center left
+}
+
+.feature-furniture {
+	background-image: url(img/furniture.svg)
+}
+
+.feature-lighting {
+	background-image: url(img/lighting.svg)
+}
+.advantages{
+    width:510px;
+    margin:0 auto 40px;
+    padding:0 20px
+}
+ .advantages-list{
+    margin:20px 0 0;
+    padding:0;
+    list-style:none
+}
+ .advantages-list li{
+    margin-bottom:16px;
+    padding:0 0 0 16px;
+    border-left:20px solid #6f55d5
+}
+
+ .site-footer{
+    min-width:550px;
+    text-align:center;
+    background-color:#7e7b88;
+    color:#e2e2e2
+}
+
+ .site-footer .container{
+    display:flex;
+    justify-content:space-between
+}
+ 

@@ -1,0 +1,9 @@
+{
+    "assertions": [
+        {
+            "title": "Раскомментируйте код `<link rel=\"stylesheet\" href=\"style.css\">` на 6 строке, для этого удалите символы `<!--` и `-->`. И полюбуйтесь на новое оформление.",
+            "name": "uncommentStyleLink",
+            "expect": "expect(document.querySelector('style[id=\"style.css\"]')).to.exist"
+        }
+    ]
+}

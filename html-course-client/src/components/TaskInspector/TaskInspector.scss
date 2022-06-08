@@ -1,0 +1,11 @@
+.task-inspector {
+    &__assert-item {
+        list-style-type: circle;
+
+        &--done {
+            color: green;
+            list-style-type: disc;
+        }
+    }
+    
+}

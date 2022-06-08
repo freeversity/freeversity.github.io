@@ -1,0 +1,15 @@
+{
+    "assertions": [
+        {
+            "title": "Добавьте третий абзац c текстом `Аксессуары и мелочи` в раздел «Что поможет вам создать домашний уют?».",
+            "name": "addAccessoriesAndNiceties",
+            "expect": "expect(document.querySelector('.features p:nth-of-type(3)')).to.contain.text('Аксессуары и мелочи')"
+        },
+        {
+            "title": "А в раздел «Что выделяет нас среди конкурентов?» добавьте пятый пункт списка с текстом `Доставка в день заказа`",
+            "name": "addShipmentAtOrderDay",
+            "expect": "expect(document.querySelector('.advantages-list li:nth-child(5)')).to.contain.text('Доставка в день заказа')"
+
+        }
+    ]
+}

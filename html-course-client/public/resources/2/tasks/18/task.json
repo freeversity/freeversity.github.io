@@ -1,0 +1,8 @@
+{
+    "id": 18,
+    "name": "translation-complexities",
+    "htmlEntry": "index.html",
+    "cssEntry": "style.css",
+    "articleEntry": "article.md",
+    "refHtmlEntry": "ref.html"
+}

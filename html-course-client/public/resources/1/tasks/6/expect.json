@@ -1,0 +1,19 @@
+{
+    "assertions": [
+        {
+            "name": "changeFontFromArialToGeorgia",
+            "title": "На 14 строке замените `font-family: \"Arial\", sans-serif;` на `font-family: \"Georgia\", serif;`",
+            "expect": "expect(document.querySelector('h1')).to.have.css('fontFamily', '\"Georgia\", serif')"
+        },
+        {
+            "name": "changeMarginBottomFrom150to70",
+            "title": "затем поменяйте строку `margin-bottom: 150px;` на `margin-bottom: 70px;`",
+            "expect": "expect(document.querySelector('.site-header')).to.have.css('marginBottom', '70px')"
+        },
+        {
+            "name": "changeMarginBottomFrom5to15",
+            "title": "и в конце замените строку `margin-bottom: 5px;` на `margin-bottom: 15px;`",
+            "expect": "expect(document.querySelector('.advantages-item')).to.have.css('marginBottom', '15px')"
+        }
+    ]
+}

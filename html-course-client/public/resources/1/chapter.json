@@ -1,0 +1,107 @@
+{
+    "baseUrl": "/resources/1/assets/",
+    "title": "HTML & CSS Basics",
+    "tasks": [
+        {
+            "type": "task",
+            "entry": "/resources/1/tasks/1/task.json",
+            "name": "what-is-html",
+            "id": 1
+        },
+        {
+            "type": "task",
+            "entry": "/resources/1/tasks/2/task.json",
+            "name": "html-tags",
+            "id": 2
+        },
+        {
+            "type": "task",
+            "entry": "/resources/1/tasks/3/task.json",
+            "name": "nested-tags",
+            "id": 3
+        },
+        {
+            "type": "task",
+            "entry": "/resources/1/tasks/4/task.json",
+            "name": "tags-attributes",
+            "id": 4
+        },
+        {
+            "type": "task",
+            "entry": "/resources/1/tasks/5/task.json",
+            "name": "what-is-css",
+            "id": 5
+        },
+        {
+            "type": "task",
+            "entry": "/resources/1/tasks/6/task.json",
+            "name": "changing-css-props-values",
+            "id": 6
+        },
+        {
+            "entry": "/resources/1/tasks/7/task.json",
+            "name": "changing-props-in-css-rules",
+            "id": 7
+        },
+        {
+            "type": "task",
+            "entry": "/resources/1/tasks/8/task.json",
+            "name": "creating-css-rule",
+            "id": 8
+        },
+        {
+            "type": "task",
+            "entry": "/resources/1/tasks/9/task.json",
+            "name": "set-styles-for-a-class",
+            "id": 9
+        },
+        {
+            "type": "task",
+            "entry": "/resources/1/tasks/10/task.json",
+            "name": "using-two-classes",
+            "id": 10
+        },
+        {
+            "type": "task",
+            "entry": "/resources/1/tasks/11/task.json",
+            "name": "resetting-styles",
+            "id": 11
+        },
+        {
+            "type": "task",
+            "entry": "/resources/1/tasks/12/task.json",
+            "name": "finishing-styling",
+            "id": 12
+        },
+        {
+            "type": "challenge",
+            "entry": "/resources/1/tasks/13/task.json",
+            "name": "save-luster",
+            "id": 13
+        },
+        {
+            "type": "challenge",
+            "entry": "/resources/1/tasks/14/task.json",
+            "name": "get-likes",
+            "id": 14
+        },
+        {
+            "type": "challenge",
+            "entry": "/resources/1/tasks/15/task.json",
+            "name": "classes-strike-back",
+            "id": 15
+        },
+        {
+            "type": "task",
+            "entry": "/resources/1/tasks/16/task.json",
+            "name": "searching-mistakes-in-markup",
+            "id": 16
+        },
+        {
+            "type": "task",
+            "entry": "/resources/1/tasks/17/task.json",
+            "name": "searching-mistakes-in-css",
+            "id": 17
+        }
+    ]
+}

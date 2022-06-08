@@ -1,0 +1,8 @@
+{
+    "id": 13,
+    "name": "save-luster",
+    "htmlEntry": "index.html",
+    "cssEntry": "style.css",
+    "articleEntry": "article.md",
+    "refHtmlEntry": "ref.html"
+}

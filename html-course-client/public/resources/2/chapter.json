@@ -1,0 +1,17 @@
+{
+    "baseUrl": "/resources/2/assets/",
+    "title": "HTML Document Structure",
+    "tasks": [
+        {
+            "type": "challenge",
+            "entry": "/resources/1/tasks/17/task.json",
+            "name": "the-first-challenge",
+            "id": 17
+        }, {
+            "id": 18,
+            "type": "challenge",
+            "entry": "/resources/1/tasks/18/task.json",
+            "name": "translation-complexities"
+        }
+    ]
+}

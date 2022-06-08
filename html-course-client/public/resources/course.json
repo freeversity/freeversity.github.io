@@ -1,0 +1,35 @@
+{
+    "name": "HTML Academy Reparation-Rip",
+    "levels": [
+        {
+            "name": "elementary",
+            "sections": [
+                {
+                    "name": "html-basics",
+                    "chapters": [
+                        {
+                            "name": "web-development-introduction",
+                            "id": 1,
+                            "entry": "/resources/1/chapter.json"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "pre-intermediate",
+            "sections": [
+                {
+                    "name": "html-and-css-introduction",
+                    "chapters": [
+                        {
+                            "name": "html-document-structure",
+                            "id": 2,
+                            "entry": "/resources/2/chapter.json"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
