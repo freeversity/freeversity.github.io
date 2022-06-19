@@ -39,7 +39,7 @@ export function cssRulePlugin(
                         return false;
                     }) as CSSStyleRule;
 
-                    return rule?.style[prop as any] !== '';
+                    return !!rule && rule.style[prop as any] !== '';
                 });
                 const expected = true;
 
@@ -70,15 +70,29 @@ export function cssRulePlugin(
                 testContainer.remove();
 
                 const actual =  [...styleSheets].some((styleSheet) => {
-                    const rule = [...styleSheet.cssRules].find((rule) => {
-                        if ('selectorText' in rule) {
-                            return (rule as CSSStyleRule).selectorText === selector;
-                        }
+                    const rules = [...styleSheet.cssRules].filter((rule) => {
+                        if (!('selectorText' in rule)) return false;
+                        
+                        return (
+                            (rule as CSSStyleRule).selectorText === selector
+                        ) && (
+                            (rule as CSSStyleRule).style[prop as any] !== ''
+                        );
+                    }).reverse() as CSSStyleRule[];
 
-                        return false;
-                    }) as CSSStyleRule;
+                    if (!rules.length) return false;
 
-                    return rule?.style[prop as any] === expectedValue;
+                    const testContainer = doc.createElement('div');
+                    testContainer.style.display = 'none';
+    
+                    testContainer.append(testElem);
+                    doc.body.append(testContainer);
+    
+                    testElem.style[prop as any] = rules[0].style[prop as any];
+    
+                    const actual = win.getComputedStyle(testElem)[prop as any];
+
+                    return actual === expectedValue;
                 });
                 const expected = true;
 

@@ -1,0 +1,8 @@
+{
+    "id": 5,
+    "name": "font-family-css-prop",
+    "htmlEntry": "index.html",
+    "cssEntry": "style.css",
+    "articleEntry": "article.md",
+    "expectEntry": "expect.json"
+}

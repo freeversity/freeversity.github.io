@@ -1,0 +1,22 @@
+{
+    "baseUrl": "/resources/20/assets/",
+    "title": "Flexbox Introduction",
+    "tasks": [
+        {
+            "id": 12,
+            "type": "challenge",
+            "entry": "/resources/20/tasks/12/task.json",
+            "name": "a-simple-palette"
+        }, {
+            "id": 20,
+            "type": "challenge",
+            "entry": "/resources/20/tasks/20/task.json",
+            "name": "a-bit-more-complex-palette"
+        }, {
+            "id": 32,
+            "type": "challenge",
+            "entry": "/resources/20/tasks/32/task.json",
+            "name": "complex-palettes"
+        }
+    ]
+}

@@ -1,0 +1,71 @@
+body {
+    width: 300px;
+    margin: 0;
+    padding: 0;
+    padding-top: 15px;
+  
+    font-size: 0;
+    text-align: center;
+    background-color: white;
+  }
+  
+  .block {
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+    margin-bottom: 1px;
+    margin-right: 1px;
+  
+    background-color: black;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+  
+  .block1 {
+    background-image: url("cat_poo.png");
+  }
+  
+  .block2 {
+    background-image: url("cat_poo.png");
+    background-color: #f1c40f;
+  }
+  
+  .block3 {
+    background-image: url("cat_hiss.png");
+    background-color: #e74c3c;
+  }
+  
+  .block4 {
+    background-image: url("cat_walk.png");
+    background-position: 60px 50%;
+    background-color: #3498db;
+  }
+  
+  .block5 {
+    background-image: url("cat_walk.png");
+    background-position: -30px 50%;
+    background-color: #3498db;
+  }
+  
+  .block6 {
+    background-image: url("cat_slippers.png");
+    background-color: #27ae60;
+  }
+  
+  .block7 {
+    background-color: #bdc3c7;
+  }
+  
+  .block8 {
+    background-image: url("cat_grumpy.png");
+    background-position: 41px 50%;
+    background-color: #95a5a6;
+  }
+  
+  .block9 {
+    background-image: url("cat_grumpy.png");
+    background-position: -50px 50%;
+    background-color: #bdc3c7;
+  }
+  
+  

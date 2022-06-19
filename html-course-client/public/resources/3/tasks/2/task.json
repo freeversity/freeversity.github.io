@@ -1,0 +1,8 @@
+{
+    "id": 2,
+    "name": "ul-unordered-list",
+    "htmlEntry": "day-2.html",
+    "cssEntry": "style.css",
+    "articleEntry": "article.md",
+    "expectEntry": "expect.json"
+}

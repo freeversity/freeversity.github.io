@@ -1,0 +1,8 @@
+{
+    "id": 15,
+    "name": "time-date-and-time",
+    "htmlEntry": "day-9.html",
+    "cssEntry": "style.css",
+    "articleEntry": "article.md",
+    "expectEntry": "expect.json"
+}

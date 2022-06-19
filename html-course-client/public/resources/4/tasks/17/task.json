@@ -1,0 +1,9 @@
+{
+    "id": 17,
+    "name": "listen-to-birds",
+    "htmlEntry": "index.html",
+    "cssEntry": "style.css",
+    "cssReadonly": true,
+    "articleEntry": "article.md",
+    "refHtmlEntry": "ref.html"
+}

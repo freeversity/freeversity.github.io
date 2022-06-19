@@ -1,0 +1,24 @@
+{
+    "assertions": [
+        {
+            "title": "Блоку `<aside>` добавьте класс `partnership`",
+            "name": "addPartnershipClassToAsideElement",
+            "expect": "expect(document.querySelector('aside')).to.have.class('partnership');"
+        },
+        {
+            "title": "затем в правиле для `.partnership` задайте фоновый цвет `background-color` со значением `#4a87fa`",
+            "name": "setBackgroundColorBlueToPartnershipClass",
+            "expect": "expect(document).to.have.cssRule('.partnership', 'backgroundColor', '#4a87fa');"
+        },
+        {
+            "title": "фоновое изображение `background-image` с адресом `url(\"img/bg-partnership.svg\")`",
+            "name": "setBackgroundImageToPartnershipClass",
+            "expect": "expect(document).to.have.cssRule('.partnership', 'backgroundImage', 'url(\"img/bg-partnership.svg\")');"
+        },
+        {
+            "title": "и цвет текста `color` со значением `#ffffff`",
+            "name": "setColorWhiteToPartnershipClass",
+            "expect": "expect(document).to.have.cssRule('.partnership', 'color', '#ffffff');"
+        }
+    ]
+}

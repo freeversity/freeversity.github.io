@@ -1,0 +1,26 @@
+{
+    "intro": "addToAdvantagesList",
+    "introTitle": "В списке `advantages-list` добавьте:",
+    "assertions": [
+        {
+            "name": "addStandardToSecondAdvantagesItem",
+            "title": "второй класс `standard` второму элементу (в атрибуте `class` классы перечисляются через пробел)",
+            "expect": "expect(document.querySelector('.advantages-list li:nth-child(2)')).to.have.class('standard')"
+        },
+        {
+            "name": "addStandardToThirdAdvantagesItem",
+            "title": "второй класс `standard` третьему элементу",
+            "expect": "expect(document.querySelector('.advantages-list li:nth-child(3)')).to.have.class('standard')"
+        },
+        {
+            "name": "addVipToForthAdvantagesItem",
+            "title": "второй класс `vip` четвёртом элементу",
+            "expect": "expect(document.querySelector('.advantages-list li:nth-child(4)')).to.have.class('vip')"
+        },
+        {
+            "name": "addVipToFifthAdvantagesItem",
+            "title": "второй класс `vip` пятому элементу",
+            "expect": "expect(document.querySelector('.advantages-list li:nth-child(5)')).to.have.class('vip')"
+        }
+    ]
+}

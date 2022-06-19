@@ -1,0 +1,23 @@
+{
+    "assertions": [
+        {
+            "title": "Для класса `.page-title` задайте шрифтовое семейство `font-family` со значением `serif`",
+            "name": "setPageTitleFontFamilyToSerif",
+            "expect": "expect(document).to.have.cssRule('.page-title', 'fontFamily', 'serif');"
+        },
+        {
+            "title": "затем смените его на `sans-serif`",
+            "name": "setPageTitleFontFamilyToSansSerif%",
+            "expect": "expect(document).to.have.cssRule('.page-title', 'fontFamily', 'sans-serif');"
+        },
+        {
+            "title": "а потом на `\"Verdana\", sans-serif`",
+            "name": "setPageTitleFontFamilyToVerdanaSansSerif",
+            "expect": "expect(document).to.have.cssRule('.page-title', 'fontFamily', '\"Verdana\", sans-serif');"
+        }
+    ],
+    "strict": true
+}
+
+
+

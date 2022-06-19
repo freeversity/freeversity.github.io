@@ -1,0 +1,27 @@
+{
+    "assertions": [
+        {
+            "title": "В первом пункте списка дел после текста `Покормить кота` добавьте пустой неупорядоченный список",
+            "name": "addEmptyUlIntoFirstLiOfTheFirstUl",
+            "expect": "expect(document.querySelector('ol:first-of-type li:first-child ul')).to.exist"
+        },
+        {
+            "title": "Во вложенный список добавьте элемент с текстом `сухой корм`,",
+            "name": "addDryFoodLiToNestedUl",
+            "expect": "expect(document.querySelector('ol:first-of-type li:first-child ul li:first-child')).to.contain.text('сухой корм')"
+        },
+        {
+            "title": "затем элемент с текстом `рыбные пирожные`",
+            "name": "addFishPiesLiToNestedUl",
+            "expect": "expect(document.querySelector('ol:first-of-type li:first-child ul li:nth-child(2)')).to.contain.text('рыбные пирожные')"
+        },
+        {
+            "title": "и ещё один элемент с текстом `форель океаническая`",
+            "name": "addOceanTroutLiToNestedUl",
+            "expect": "expect(document.querySelector('ol:first-of-type li:first-child ul li:nth-child(3)')).to.contain.text('форель океаническая')"
+        }
+    ]
+}
+
+
+

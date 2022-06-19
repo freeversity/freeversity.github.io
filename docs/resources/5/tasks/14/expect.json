@@ -1,0 +1,15 @@
+{
+    "assertions": [
+        {
+            "title": "В первом теге `dd` диву с классом `skills-level` добавьте второй класс `skills-level-ok`",
+            "name": "addSkillsLevelOkToFirstDd",
+            "expect": "expect(document.querySelector('.skills dd:first-of-type .skills-level')).to.have.class('skills-level-ok');"
+        },
+        {
+            "title": "В стилях раскомментируйте правило с селектором `.skills-level-ok`.",
+            "name": "uncommentSkillsLevelOkRule",
+            "expect": "expect(document).to.have.cssRule('.skills-level-ok');"
+        }
+    ]
+}
+

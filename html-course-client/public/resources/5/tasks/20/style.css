@@ -1,0 +1,14 @@
+body {
+  width: 550px;
+  margin: 0;
+  padding: 0 10px;
+}
+
+.image-map {
+  display: flex;
+  flex-wrap: wrap;
+
+  width: 290px;
+  height: 290px;
+  margin: auto;
+}

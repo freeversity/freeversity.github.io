@@ -1,0 +1,27 @@
+{
+    "baseUrl": "/resources/33/assets/",
+    "title": "Decorative Elements",
+    "tasks": [
+        {
+            "id": 4,
+            "type": "challenge",
+            "entry": "/resources/33/tasks/4/task.json",
+            "name": "a-fish"
+        }, {
+            "id": 7,
+            "type": "challenge",
+            "entry": "/resources/33/tasks/7/task.json",
+            "name": "flexible-stripes"
+        }, {
+            "id": 11,
+            "type": "challenge",
+            "entry": "/resources/33/tasks/11/task.json",
+            "name": "rainbow"
+        }, {
+            "id": 15,
+            "type": "challenge",
+            "entry": "/resources/33/tasks/15/task.json",
+            "name": "yellow-leaf"
+        }
+    ]
+}

@@ -1,0 +1,23 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 280px;
+  min-height: 280px;
+  padding-top: 20px;
+  padding-left: 20px;
+
+  font-size: 14px;
+  line-height: 1.2;
+  font-family: "Arial", sans-serif;
+
+  background-color: #ecf0f1;
+}
+
+/*
+Все размеры, отступы, координаты, размеры шрифтов (не заданные в body) кратны 5 или 10.
+Адрес картинки-спрайта — social-challenge.png
+*/

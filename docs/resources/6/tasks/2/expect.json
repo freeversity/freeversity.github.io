@@ -1,0 +1,17 @@
+{
+    "assertions": [
+        {
+            "title": "Для класса `.page-title` смените размер шрифта на `2.5em`",
+            "name": "changPageTitleFontSizeTo2.5em",
+            "expect": "expect(document).to.have.cssRule('.page-title', 'fontSize', '2.5em');"
+        },
+        {
+            "title": "а затем увеличьте размер шрифта у всего `body` до `20px` и убедитесь, что у заголовка при этом также пропорционально увеличился размер шрифта.",
+            "name": "increaseBodyFontSizeto20Px",
+            "expect": "expect(document).to.have.cssRule('body', 'fontSize', '20px');"
+        }
+    ],
+    "strict": true
+}
+
+

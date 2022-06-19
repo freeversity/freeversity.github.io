@@ -1,0 +1,8 @@
+{
+    "id": 19,
+    "name": "dev-and-span-styling-containers",
+    "htmlEntry": "day-4.html",
+    "cssEntry": "style.css",
+    "articleEntry": "article.md",
+    "expectEntry": "expect.json"
+}

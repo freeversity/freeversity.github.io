@@ -1,0 +1,9 @@
+{
+    "id": 23,
+    "name": "multilevel-shopping-list",
+    "htmlEntry": "index.html",
+    "cssEntry": "style.css",
+    "cssReadonly": true,
+    "articleEntry": "article.md",
+    "refHtmlEntry": "ref.html"
+}

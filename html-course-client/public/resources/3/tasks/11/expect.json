@@ -1,0 +1,9 @@
+{
+    "assertions": [
+        {
+            "title": "Оберните в тег `<q>` текст `для хорошего кота и в феврале март`",
+            "name": "wrapQuoteWithQTag",
+            "expect": "expect(document.querySelector('article p:nth-of-type(2) q')).to.contain.text('для хорошего кота и в феврале март')"
+        }
+    ]
+}

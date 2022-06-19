@@ -1,0 +1,15 @@
+{
+    "assertions": [
+        {
+            "title": "Оберните картинку в тег `figure`",
+            "name": "wrapImgWithFigureTag",
+            "expect": "expect(document.querySelector('article figure:first-child img[src=\"files/keks-1.jpg\"]')).to.exist"
+        },
+        {
+            "title": "Затем добавьте ей описание `Бдительный инструктор Кекс следит за порядком`.",
+            "name": "addFigcaptionTagToFigure",
+            "expect": "expect(document.querySelector('article figure:first-child figcaption')).to.have.rendered.text('Бдительный инструктор Кекс следит за порядком')"
+        }
+    ]
+}
+

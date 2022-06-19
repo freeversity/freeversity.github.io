@@ -1,0 +1,21 @@
+{
+    "assertions": [
+        {
+            "title": "У заголовка `h1` сделайте все буквы строчными свойством `text-transform` со значением `lowercase`",
+            "name": "setH1TextTransformToLowercase",
+            "expect": "expect(document).to.have.cssRule('h1', 'textTransform', 'lowercase');"
+        },
+        {
+            "title": "для класса `.partnership` значением `uppercase` наоборот сделайте все буквы заглавными,",
+            "name": "setPartnershipClassTextTransformToUppercase",
+            "expect": "expect(document).to.have.cssRule('.partnership', 'textTransform', 'uppercase');"
+        },
+        {
+            "title": "а для `blockquote p` значением `capitalize` озаглавьте все слова внутри абзаца.",
+            "name": "setBloclquotePTextTransformToCapitalize",
+            "expect": "expect(document).to.have.cssRule('blockquote p', 'textTransform', 'capitalize');"
+        }
+    ]
+}
+
+

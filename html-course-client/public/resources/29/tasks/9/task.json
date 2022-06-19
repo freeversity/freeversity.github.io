@@ -1,0 +1,9 @@
+{
+    "id": 9,
+    "name": "course-card",
+    "htmlEntry": "index.html",
+    "cssEntry": "style.css",
+    "articleEntry": "article.md",
+    "refHtmlEntry": "ref.html",
+    "refWidth": 300
+}

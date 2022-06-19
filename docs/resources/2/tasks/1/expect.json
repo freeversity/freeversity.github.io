@@ -1,0 +1,11 @@
+{
+    "introTitle": "Добавьте на страницу декларацию типа документа, а для этого:",
+    "intro": "addDocTypeDeclarationOnThePage",
+    "assertions": [
+        {
+            "title": "вставьте в самое начало кода строку `<!DOCTYPE html>`",
+            "name": "insertDoctypeDeclaration",
+            "expect": "expect(document.doctype).to.have.property('name', 'html');"
+        }
+    ]
+}

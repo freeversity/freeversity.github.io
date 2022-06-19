@@ -1,0 +1,8 @@
+{
+    "id": 20,
+    "name": "a-bit-more-complex-palette",
+    "htmlEntry": "index.html",
+    "cssEntry": "style.css",
+    "articleEntry": "article.md",
+    "refHtmlEntry": "ref.html"
+}

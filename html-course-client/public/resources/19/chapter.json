@@ -1,0 +1,22 @@
+{
+    "baseUrl": "/resources/19/assets/",
+    "title": "Grids",
+    "tasks": [
+        {
+            "id": 13,
+            "type": "challenge",
+            "entry": "/resources/19/tasks/13/task.json",
+            "name": "float-puzzle"
+        }, {
+            "id": 27,
+            "type": "challenge",
+            "entry": "/resources/19/tasks/27/task.json",
+            "name": "buiilding-a-grid"
+        }, {
+            "id": 32,
+            "type": "challenge",
+            "entry": "/resources/19/tasks/32/task.json",
+            "name": "cat-gallery-with-inline-block"
+        }
+    ]
+}

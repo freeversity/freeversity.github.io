@@ -1,0 +1,9 @@
+{
+    "assertions": [
+        {
+            "title": "Замените текст-заглушку в шапке сайта на тег `<h1>` с текстом `Сайт начинающего верстальщика`",
+            "name": "replaceStubTxtWithH1Label",
+            "expect": "expect(document.querySelector('header')).not.to.contain.rendered.text('Шапка сайта');expect(document.querySelector('header > h1')).to.have.rendered.text('Сайт начинающего верстальщика');"
+        }
+    ]
+}

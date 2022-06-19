@@ -1,0 +1,23 @@
+{
+    "assertions": [
+        {
+            "title": "В стилях раскомментируйте правило с селектором `.skills dd`.",
+            "name": "uncommentSkillsDdRule",
+            "expect": "expect(document).to.have.cssRule('.skills dd');"
+        },
+        {
+            "title": "Затем в это правило добавьте составное свойство `margin` со значением `0`.",
+            "name": "addMargin0ToSkillsDdRule",
+            "expect": "expect(document).to.have.cssRule('.skills dd', 'margin', '0');"
+        },
+        {
+            "title": "Ниже свойства margin добавьте свойство `margin-bottom` со значением `10px`, переопределив нижний отступ.",
+            "name": "addMarginBottom10pxToSkillsDdRule",
+            "expect": "expect(document).to.have.cssRule('.skills dd', 'marginBottom', '10px');"
+        }
+    ],
+    "strict": true
+}
+
+
+

@@ -1,0 +1,9 @@
+{
+    "assertions": [
+        {
+            "title": "В разметке в последнем блоке `<section>` удалите текст `Раздел про навыки` и раскомментируйте заголовок `h2` и список описаний `dl`.",
+            "name": "uncommentSkillsSectionContent",
+            "expect": "expect(document.querySelector('section:last-of-type h2')).to.exist; expect(document.querySelector('section:last-of-type dl.skills')).to.exist; expect(document.querySelector('section:last-of-type')).not.to.contain('Раздел про навыки');"
+        }
+    ]
+}

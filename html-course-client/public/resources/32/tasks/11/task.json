@@ -1,0 +1,9 @@
+{
+    "id": 11,
+    "name": "zigzag",
+    "svgEntry": "object.svg",
+    "cssEntry": "style.css",
+    "articleEntry": "article.md",
+    "refHtmlEntry": "ref.html",
+    "refWidth": 400
+}

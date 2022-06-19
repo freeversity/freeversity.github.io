@@ -1,0 +1,17 @@
+{
+    "baseUrl": "/resources/12/assets/",
+    "title": "Forms Introduction",
+    "tasks": [
+        {
+            "id": 11,
+            "type": "challenge",
+            "entry": "/resources/12/tasks/11/task.json",
+            "name": "registration-form"
+        }, {
+            "id": 18,
+            "type": "challenge",
+            "entry": "/resources/12/tasks/18/task.json",
+            "name": "profile-editing"
+        }
+    ]
+}

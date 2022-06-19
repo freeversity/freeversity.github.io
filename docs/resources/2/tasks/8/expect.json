@@ -1,0 +1,9 @@
+{
+    "assertions": [
+        {
+            "title": "Перед первой «секцией» внутри `<main>` добавьте тег `<nav>` с текстом `Навигация`",
+            "name": "addNavTagToTheBeginningOfTheMain",
+            "expect": "expect(document.querySelector('main > nav:first-child')).to.have.rendered.text('Навигация')"
+        }
+    ]
+}

@@ -1,0 +1,9 @@
+{
+    "id": 25,
+    "name": "why-so-serious",
+    "htmlEntry": "index.html",
+    "cssEntry": "style.css",
+    "articleEntry": "article.md",
+    "refHtmlEntry": "ref.html",
+    "refWidth": 570
+}

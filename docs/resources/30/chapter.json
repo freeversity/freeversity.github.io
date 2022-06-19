@@ -1,0 +1,17 @@
+{
+    "baseUrl": "/resources/30/assets/",
+    "title": "Decorative Effects",
+    "tasks": [
+        {
+            "id": 19,
+            "type": "challenge",
+            "entry": "/resources/30/tasks/19/task.json",
+            "name": "browser-stats"
+        }, {
+            "id": 31,
+            "type": "challenge",
+            "entry": "/resources/30/tasks/31/task.json",
+            "name": "tomorrow-man-shield"
+        }
+    ]
+}

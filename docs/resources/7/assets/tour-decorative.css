@@ -1,0 +1,107 @@
+body {
+	min-width: 550px;
+	font-family: "Georgia","Times",serif;
+	font-size: 16px;
+	line-height: 20px;
+	color: #333;
+}
+
+.page-header {
+	padding-right: 20px;
+	background-image: url(img/header_bg.png);
+	background-repeat: repeat-x;
+	border: 1px solid transparent;
+}
+
+.title {
+	margin: 0;
+	padding: 0;
+	font-weight: 700;
+	font-size: 30px;
+	line-height: 40px;
+}
+
+.accent,.day h2 {
+	font-weight: 400;
+	color: #da3aae;
+}
+
+.quote {
+	min-height: 100px;
+	margin: 0;
+	padding: 20px 0 0;
+	text-align: center;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 24px;
+	background-image: url(img/heart_bg.svg);
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-size: 120px 120px;
+}
+
+.quote cite {
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 16px;
+}
+
+.days-list {
+	list-style: none;
+}
+
+.day {
+	padding: 20px;
+	background-color: #f9f6f8;
+	border: 1px solid #f4eaf1;
+	border-radius: 4px;
+}
+
+.day h2 {
+	position: relative;
+	padding-left: 30px;
+	margin: 0 0 10px;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 30px;
+}
+
+.day h2::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 5px;
+	width: 20px;
+	height: 20px;
+	background-repeat: no-repeat;
+	box-shadow: 0 1px 3px rgba(151,104,136,.4);
+}
+
+.day-1 h2::before {
+	background-image: url(img/day1_icon.svg);
+}
+
+.day-2 h2::before {
+	background-image: url(img/day2_icon.svg);
+}
+
+.day-3 h2::before {
+	background-image: url(img/day3_icon.svg);
+}
+
+.day-4 h2::before {
+	background-image: url(img/day4_icon.svg);
+}
+
+.day p {
+	margin: 0;
+}
+
+.page-footer {
+	text-align: center;
+	font-style: italic;
+	font-size: 14px;
+	line-height: 20px;
+	color: #fff;
+	background-color: #d19fc2;
+}

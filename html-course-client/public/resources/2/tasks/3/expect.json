@@ -1,0 +1,21 @@
+{
+    "introTitle": "Подключите к странице файл со стилями для прототипирования:",
+    "title": "attachFileWithPrototypeStyles",
+    "assertions": [
+        {
+            "title": "Добавьте тег `<link>` в тег `<head>`",
+            "name": "addLinkTagToHead",
+            "expect": "expect(document.querySelector('head link')).to.exist"
+        },
+        {
+            "title": "Затем тегу `<link>` добавьте атрибут `rel` со значением `stylesheet`",
+            "name": "addRelAttributeToLink",
+            "expect": "expect(document.querySelector('head link')).to.have.attr('rel', 'stylesheet')"
+        },
+        {
+            "title": "и атрибут `href` со значением `outlines.css`",
+            "name": "addHrefAttrToStyleLink",
+            "expect": "expect(document.querySelector('head link')).to.have.attr('href', 'outlines.css')"
+        }
+    ]
+}

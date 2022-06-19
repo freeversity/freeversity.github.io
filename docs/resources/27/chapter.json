@@ -1,0 +1,17 @@
+{
+    "baseUrl": "/resources/27/assets/",
+    "title": "CSS Filters",
+    "tasks": [
+        {
+            "id": 10,
+            "type": "challenge",
+            "entry": "/resources/27/tasks/10/task.json",
+            "name": "some-filters"
+        }, {
+            "id": 14,
+            "type": "challenge",
+            "entry": "/resources/27/tasks/14/task.json",
+            "name": "filters-combinations"
+        }
+    ]
+}

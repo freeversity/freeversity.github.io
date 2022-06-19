@@ -1,0 +1,14 @@
+{
+    "assertions": [
+        {
+            "title": "Добавьте в `<head>` метатег с ключевыми словами: `вёрстка, HTML, CSS, блог`,",
+            "name": "addKeywordsMetaTag",
+            "expect": "expect(document.querySelector('head meta[name=keywords]')).to.have.attr('content', 'вёрстка, HTML, CSS, блог')"
+        },
+        {
+            "title": "затем добавьте в `<head>` ещё один метатег с кратким описанием страницы: `Блог о процессе обучения веб-технологиям`",
+            "name": "addDescriptionMetaTag",
+            "expect": "expect(document.querySelector('head meta[name=description]')).to.have.attr('content', 'Блог о процессе обучения веб-технологиям')"
+        }
+    ]
+}

@@ -1,0 +1,8 @@
+{
+    "id": 12,
+    "name": "blockquote-quote-in-block",
+    "htmlEntry": "day-7.html",
+    "cssEntry": "style.css",
+    "articleEntry": "article.md",
+    "expectEntry": "expect.json"
+}

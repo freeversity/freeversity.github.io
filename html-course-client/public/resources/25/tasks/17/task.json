@@ -1,0 +1,9 @@
+{
+    "id": 17,
+    "name": "sinister-shadows",
+    "htmlEntry": "index.html",
+    "cssEntry": "style.css",
+    "articleEntry": "article.md",
+    "refHtmlEntry": "ref.html",
+    "refWidth": 300
+}

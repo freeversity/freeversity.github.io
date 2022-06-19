@@ -1,0 +1,95 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 280px;
+  min-height: 250px;
+  padding-top: 50px;
+  padding-right: 10px;
+  padding-left: 10px;
+
+  font-size: 12px;
+  line-height: 1.2;
+  font-family: "Arial", sans-serif;
+  color: #7f8c8d;
+
+  background-color: #ecf0f1;
+}
+
+.post-stats .icon {
+  width: 15px;
+  height: 15px;
+}
+
+.post {
+  position: relative;
+  padding-left: 75px; 
+}
+
+.post-title {
+  color: #2980b9;
+  font-size: 20px;  
+  margin-bottom: 5px;
+}
+
+.post-type,
+.post-date {
+  position: absolute;
+  font-weight: bold;
+  font-size: 15px;
+  top: 0;
+  left: 0;
+  height: 55px;
+  width: 55px;
+  line-height: 55px;
+  text-align: center;
+  background-color: #fff;
+  border-bottom: 5px solid #bdc3c7;  
+}
+
+.post-type {
+  top: 70px;
+  background-color: #7f8c8d;
+  background-image: url("quotes.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  
+}
+
+.post-stats a,
+.post-author a {
+  color: #2980b9;
+  text-decoration: none;
+}
+
+.post-author {
+  margin-bottom: 5px;
+}
+
+.post-stats {
+  position: relative;
+  display: inline;
+  margin-right: 10px;
+  padding-left: 20px;
+}
+
+.icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url("post-challenge.png");
+}
+
+.icon-comments {
+  background-position: 20px 0;
+}
+
+.post-text {
+   background-color: #fff;
+   padding: 10px 15px;
+   border-bottom: 5px solid #bdc3c7;
+   margin-right: 10px;
+}

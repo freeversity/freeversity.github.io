@@ -1,0 +1,15 @@
+{
+    "assertions": [
+        {
+            "title": "Тегу `nav` добавьте в разметке класс `blog-navigation`.",
+            "name": "addBlogNavigationClassToNav",
+            "expect": "expect(document.querySelector('nav')).to.have.class('blog-navigation');"
+        },
+        {
+            "title": "Смените селектор по тегу в правиле `nav` на селектор по классу `.blog-navigation`.",
+            "name": "replaceSelectorNavToBlogNavigationClass",
+            "expect": "expect(document).to.have.cssRule('.blog-navigation');expect(document).not.to.have.cssRule('nav')"
+        }
+    ],
+    "strict": true
+}

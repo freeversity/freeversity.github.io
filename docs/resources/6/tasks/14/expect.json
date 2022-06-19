@@ -1,0 +1,18 @@
+{
+    "assertions": [
+        {
+            "title": "Раскомментируйте в редакторе CSS первый блок правил для `pre` и `code`,",
+            "name": "uncommentFirstPreCodeStylesBlock",
+            "expect": "expect(document).to.have.cssRule('pre'); expect(document).to.have.cssRule('pre, code'); expect(document).to.have.cssRule('code');"
+        },
+        {
+            "title": "а затем раскомментируйте второй блок правил.",
+            "name": "uncommentSecondPreCodeStylesBlock",
+            "expect": "expect(document).to.have.cssRule('pre code');"
+        }
+    ],
+    "strict": true
+}
+
+
+

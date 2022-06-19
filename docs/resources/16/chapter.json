@@ -1,0 +1,17 @@
+{
+    "baseUrl": "/resources/16/assets/",
+    "title": "Backgrounds Introduction",
+    "tasks": [
+        {
+            "id": 8,
+            "type": "challenge",
+            "entry": "/resources/8/tasks/10/task.json",
+            "name": "backgrounds-introduction"
+        }, {
+            "id": 16,
+            "type": "challenge",
+            "entry": "/resources/16/tasks/16/task.json",
+            "name": "cat-academy"
+        }
+    ]
+}

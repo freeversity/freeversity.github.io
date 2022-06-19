@@ -1,0 +1,8 @@
+{
+    "id": 14,
+    "name": "sup-and-sub-superscript-and-subscript",
+    "htmlEntry": "day-8.html",
+    "cssEntry": "style.css",
+    "articleEntry": "article.md",
+    "expectEntry": "expect.json"
+}

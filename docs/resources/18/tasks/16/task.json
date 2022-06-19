@@ -1,0 +1,8 @@
+{
+    "id": 16,
+    "name": "the-second-challenge",
+    "htmlEntry": "index.html",
+    "cssEntry": "style.css",
+    "articleEntry": "article.md",
+    "refHtmlEntry": "ref.html"
+}

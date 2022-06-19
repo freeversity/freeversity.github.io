@@ -1,0 +1,22 @@
+{
+    "baseUrl": "/resources/24/assets/",
+    "title": "2D-Transforms",
+    "tasks": [
+        {
+            "id": 10,
+            "type": "challenge",
+            "entry": "/resources/24/tasks/10/task.json",
+            "name": "misterious-map"
+        }, {
+            "id": 12,
+            "type": "challenge",
+            "entry": "/resources/24/tasks/12/task.json",
+            "name": "broken-crystall"
+        }, {
+            "id": 32,
+            "type": "challenge",
+            "entry": "/resources/24/tasks/32/task.json",
+            "name": "cards-deal"
+        }
+    ]
+}

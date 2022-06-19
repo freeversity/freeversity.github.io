@@ -1,0 +1,22 @@
+{
+    "assertions": [
+        {
+            "title": "Текст первого пункта списка оберните в тег `<del>`.",
+            "name": "wrapFirstItemWithDelTag",
+            "expect": "expect(document.querySelector('article ol li:first-child del')).to.contain.text('Покормить кота')"
+        },
+        {
+            "title": "После _зачёркнутого_ пункта списка добавьте ещё один пункт с текстом `Не забыть поесть самому`,",
+            "name": "addNewItemAfterOneWithDelTag",
+            "expect": "expect(document.querySelector('article ol li:nth-child(2):nth-last-child(4)')).to.contain.text('Не забыть поесть самому')"
+
+        },
+        {
+            "title": "а затем оберните текст нового пункта в тег `<ins>`.",
+            "name": "wrapNewItemTextWithInsTag",
+            "expect": "expect(document.querySelector('article ol li:nth-child(2):nth-last-child(4) ins')).to.contain.text('Не забыть поесть самому')"
+        }
+    ]
+}
+
+

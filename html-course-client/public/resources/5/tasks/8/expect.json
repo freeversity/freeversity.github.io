@@ -1,0 +1,27 @@
+{
+    "assertions": [
+        {
+            "title": "В правиле `.avatar` поменяйте значение `border-radius` на `40px`,",
+            "name": "setAvatarBorderRadiusTo40Px",
+            "expect": "expect(document).to.have.cssRule('.avatar', 'border-radius', '40px');"
+        },
+        {
+            "title": "затем в разметке у картинки `.avatar` измените значение атрибута `width` на `160`.",
+            "name": "setAvatarWidthAttributeTo160",
+            "expect": "expect(document.querySelector('.avatar')).to.have.attr('width', '160');"
+        },
+        {
+            "title": "Для `.avatar` снова поменяйте значение `border-radius` на `50%`,",
+            "name": "setAvatarBorderRadiusTo50Perc",
+            "expect": "expect(document).to.have.cssRule('.avatar', 'border-radius', '50%');"
+        },
+        {
+            "title": "а затем верните изначальную ширину `80` картинке в разметке.",
+            "name": "setAvatarWidthAttributeTo80",
+            "expect": "expect(document.querySelector('.avatar')).to.have.attr('width', '80');"
+        }
+    ],
+    "strict": true
+}
+
+

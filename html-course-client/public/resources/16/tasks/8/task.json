@@ -1,0 +1,8 @@
+{
+    "id": 8,
+    "name": "backgrounds-introduction",
+    "htmlEntry": "index.html",
+    "cssEntry": "style.css",
+    "articleEntry": "article.md",
+    "refHtmlEntry": "ref.html"
+}

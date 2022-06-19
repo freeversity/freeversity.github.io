@@ -1,0 +1,9 @@
+{
+    "id": 20,
+    "name": "figures-on-fields",
+    "htmlEntry": "index.html",
+    "cssEntry": "style.css",
+    "cssReadonly": true,
+    "articleEntry": "article.md",
+    "refHtmlEntry": "ref.html"
+}

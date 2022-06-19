@@ -1,0 +1,50 @@
+.land {
+    display: grid;
+    grid-template-columns: 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px;
+    grid-template-rows: 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px;
+}
+
+.element--water {
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+}
+
+.element--top-left {
+    grid-column: 2 / 4;
+    grid-row: 2 / 5;
+}
+
+.element--top-right {
+    grid-column: 8 / -2;
+    grid-row: 1 / -8;
+}
+
+.element--bottom-left {
+    grid-column: 9 / -1;
+    grid-row: 8 / -1;
+}
+
+.element--bottom-right {
+    grid-column: 3 / 7;
+    grid-row: -2 / -5;
+}
+
+.element--bridge-1 {
+    grid-row: 3;
+    grid-column: 4 / 8;
+}
+
+.element--bridge-2 {
+    grid-row: 4 / 8;
+    grid-column: 9;
+}
+
+.element--bridge-3 {
+    grid-row: 8 / 10;
+    grid-column: 7 / 9;
+}
+
+.element--bridge-4 {
+    grid-row: 5 / 7;
+    grid-column: 3;
+}

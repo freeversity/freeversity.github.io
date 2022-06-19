@@ -1,0 +1,8 @@
+{
+    "id": 11,
+    "name": "text-color",
+    "htmlEntry": "day-11.html",
+    "cssEntry": "style.css",
+    "articleEntry": "article.md",
+    "expectEntry": "expect.json"
+}

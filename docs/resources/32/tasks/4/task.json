@@ -1,0 +1,9 @@
+{
+    "id": 4,
+    "name": "colorful-squares",
+    "svgEntry": "object.svg",
+    "cssEntry": "style.css",
+    "articleEntry": "article.md",
+    "refHtmlEntry": "ref.html",
+    "refWidth": 330
+}

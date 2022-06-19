@@ -1,0 +1,20 @@
+{
+    "assertions": [
+        {
+            "title": "Для класса `.page-title` смените значение размера шрифта на `60px`",
+            "name": "setPageTitleFontSizeTo60Px",
+            "expect": "expect(document).to.have.cssRule('.page-title', 'fontSize', '60px');"
+        },
+        {
+            "title": "затем — значение высоты строки на `120%`",
+            "name": "setPageTitleLineHeightTo120%",
+            "expect": "expect(document).to.have.cssRule('.page-title', 'lineHeight', '120%');"
+        },
+        {
+            "title": "и потом верните `.page-title` исходное значение размера шрифта — `36px`",
+            "name": "setPageTitleLineHeightTo36px",
+            "expect": "expect(document).to.have.cssRule('.page-title', 'lineHeight', '36px');"
+        }
+    ],
+    "strict": true
+}

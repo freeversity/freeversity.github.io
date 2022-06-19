@@ -1,0 +1,8 @@
+{
+    "id": 16,
+    "name": "em-and-i-stressing-attention",
+    "htmlEntry": "day-9.html",
+    "cssEntry": "style.css",
+    "articleEntry": "article.md",
+    "expectEntry": "expect.json"
+}

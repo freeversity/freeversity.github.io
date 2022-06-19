@@ -1,0 +1,12 @@
+body {
+  margin: 0;
+  padding: 0 10px;
+
+  font-size: 20px;
+}
+
+pre {
+  line-height: normal;
+  font-family: "Courier New", "Courier", monospace;
+  color: #6a2cce;
+}

@@ -1,0 +1,9 @@
+{
+    "id": 19,
+    "name": "travel-map",
+    "htmlEntry": "index.html",
+    "cssEntry": "style.css",
+    "cssReadonly": true,
+    "articleEntry": "article.md",
+    "refHtmlEntry": "ref.html"
+}

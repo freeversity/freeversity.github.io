@@ -1,0 +1,20 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 570px;
+  height: 250px;
+}
+
+.deck {
+  margin: 0 auto;
+  padding-top: 50px;
+  width: 570px;
+}
+
+.deck > img {
+  position: relative;
+  display: inline-block;
+  margin-right: -4px;
+  width: 110px;
+}

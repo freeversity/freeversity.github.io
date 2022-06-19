@@ -1,0 +1,51 @@
+body {
+    width: 350px;
+    margin: 0;
+    padding: 0 10px;
+  
+    font-size: 14px;
+    font-family: "Arial", sans-serif;
+  }
+  
+  table {
+    width: 100%;  
+    border-collapse: collapse;
+  }
+  
+  td, th {
+    padding: 10px;  
+  }
+  
+  th {
+    width: 33%;
+    border-bottom: 1px solid #000;
+    border-top: 1px solid #000;
+    background-color: darkcyan;
+    color: white;
+  }
+  
+  th:nth-child(2) {
+    background-color: lightblue;  
+  }
+  
+  tr:nth-child(2n+1) td {
+    background-color: lightyellow;      
+  }
+  
+  td {
+    border-bottom: 1px solid lightgray;  
+  }
+  
+  .col-1 {
+    text-align: left;
+  }
+  
+  .col-2 {
+    text-align: center;
+  }
+  
+  .col-3 {
+    text-align: right;
+  }
+  
+  

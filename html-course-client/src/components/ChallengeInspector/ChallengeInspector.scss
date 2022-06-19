@@ -19,10 +19,25 @@
     &__tab {
         display: none;
         position: relative;
+        min-height: 100%;
 
         &--active {
             display: block;
         }
+    }
+
+    &__iframe-wrapper {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
+
+    &__reference-frame {
+        flex-grow: 1;
     }
 
     &__overlay {
@@ -43,6 +58,6 @@
     &__iframe-container {
         visibility: hidden; 
         height: 0; 
-        overflow: 'hidden';
+        overflow: hidden;
     }
 }

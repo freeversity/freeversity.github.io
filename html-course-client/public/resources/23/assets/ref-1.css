@@ -1,0 +1,113 @@
+html {
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+}
+
+.scene {
+    position: relative;
+    width: 260px;
+    height: 260px;
+    background: none;
+    box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+.scene div  {
+    display: inline-block;
+}
+
+.h {
+    background-color: white;
+    position: absolute;
+    width: 50px;
+    height: 10px;
+}
+
+.h1 {
+    top: 170px;
+    left: 80px;
+}
+
+.h2 {
+    top: 190px;
+    left: 20px;
+}
+
+.h3 {
+    width: 40px;
+    top: 210px;
+    left: 200px;
+}
+
+.v {
+    background-color: white;
+    position: absolute;
+    width: 10px;
+    height: 50px;
+}
+
+.v1 {
+    top: 170px;
+    left: 20px;
+}
+
+.v2 {
+    top: 170px;
+    left: 60px;
+}
+
+.v3 {
+    top: 170px;
+    left: 100px;
+}
+
+.v4 {
+    top: 170px;
+    left: 140px;
+}
+
+.v5 {
+    top: 170px;
+    left: 180px;
+}
+
+.v6 {
+    top: 170px;
+    left: 200px;
+}
+
+.corner-top {
+    background: none;
+    border: 15px solid white;
+    border-top-width: 20px;
+    border-top-color: transparent;
+    border-bottom-width: 0;
+    position: absolute;
+    left: 150px;
+    top: 170px;
+}
+
+.corner-bottom {
+    background: none;
+    border: 15px solid transparent;
+    border-top-width: 20px;
+    border-top-color: white;
+    border-bottom-width: 0;
+    position: absolute;
+    left: 150px;
+    top: 190px;
+}
+
+.logo {
+    width: 64px;
+    height: 64px;
+    background-image: url("logo.png");
+    background-repeat: no-repeat;
+    background-color: transparent;
+    position: absolute;
+    top: 80px;
+    left: 87px;
+}

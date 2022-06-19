@@ -6,10 +6,12 @@ import { imageDiff } from "../../services/imageDiff";
 
 export interface ChallengeInspectorProps {
     className?: string;
-    refHtml: string;
+    refMarkup: string;
     previewWindow: Window;
-    html: string;
+    markup: string;
     css: string;
+    refWidth?: number;
+    isSvg?: boolean;
 }
 
 enum ChallengeTabs {
@@ -17,9 +19,10 @@ enum ChallengeTabs {
     RESULT = 'result',
     OVERLAY = 'overlay',
     DIFF = 'diff',
+    REF_FRAME = 'ref-frame'
 }
 
-const ChallengeInspector: FC<ChallengeInspectorProps> = ({className, previewWindow, refHtml}) => {
+const ChallengeInspector: FC<ChallengeInspectorProps> = ({className, previewWindow, refMarkup, refWidth, isSvg}) => {
     const [activeTab, setActiveTab] = useState(ChallengeTabs.REF);
     const [iFrameDoc, setIFrameDoc] = useState<Document | null>(null);
     const [refPngUrl, setRefPngUrl] = useState<string | null>(null);
@@ -69,18 +72,30 @@ const ChallengeInspector: FC<ChallengeInspectorProps> = ({className, previewWind
     useEffect(() => {
         if (!iFrameDoc) return;
 
-        domToPng(iFrameDoc.documentElement, 550)
+        let domNode: HTMLElement | SVGElement = iFrameDoc.documentElement;
+
+        if (isSvg) {
+            domNode = domNode.querySelector('svg')!;
+        }
+
+        domToPng(domNode, refWidth ?? 550)
             .then((pngUrl) => {
                 setRefPngUrl(pngUrl ?? null)
             });
-    }, [iFrameDoc]);
+    }, [iFrameDoc, refWidth, isSvg]);
 
     const onCompare = () => {
         if (!refPngUrl) return;
 
+        let domNode: HTMLElement | SVGElement = previewWindow.document.documentElement;
+
+        if (isSvg) {
+            domNode = domNode.querySelector('svg')!;
+        }
+
         const {height = 500} = refImageRef.current ?? {};
 
-        domToPng(previewWindow.document.documentElement, 550, height)
+        domToPng(domNode, refWidth ?? 550, height)
             .then((pngUrl) => {
                 setResultPngUrl(pngUrl ?? null);
 
@@ -140,7 +155,17 @@ const ChallengeInspector: FC<ChallengeInspectorProps> = ({className, previewWind
                         disabled={!diffPngUrl}
                     >
                         Difference
-                    </button>                  
+                    </button>     
+                    <button 
+                        onClick={onTabClick}
+                        className={cx(
+                            'challenge-inspector__header-btn', {
+                            'challenge-inspector__header-btn--active': activeTab === ChallengeTabs.REF_FRAME
+                        })}
+                        data-tab={ChallengeTabs.REF_FRAME}
+                    >
+                        Ref Frame
+                    </button>               
                 </div>
                 <div className={cx('challenge-inspector__body')}>
                     <div 
@@ -191,6 +216,28 @@ const ChallengeInspector: FC<ChallengeInspectorProps> = ({className, previewWind
                             <img src={diffPngUrl} alt="diff"/>
                         )}
                     </div>
+                    <div 
+                        className={cx(
+                            'challenge-inspector__tab', 
+                            {'challenge-inspector__tab--active': activeTab === ChallengeTabs.REF_FRAME}
+                        )}
+                    >
+                        <div
+                        className={cx(
+                            'challenge-inspector__iframe-wrapper', 
+                        )}>
+                            <iframe 
+                                ref={iFrameRef}
+                                className={cx('challenge-inspector__reference-frame')}
+                                sandbox="allow-same-origin allow-scripts" 
+                                title='reference' 
+                                frameBorder="0" 
+                                srcDoc={refMarkup}
+                                height="100%"
+                                width="100%"
+                            />
+                        </div>
+                    </div>
                 </div>
 
                 <div className={cx('challenge-inspector__footer')}>
@@ -204,7 +251,7 @@ const ChallengeInspector: FC<ChallengeInspectorProps> = ({className, previewWind
                         sandbox="allow-same-origin allow-scripts" 
                         title='reference' 
                         frameBorder="0" 
-                        srcDoc={refHtml}
+                        srcDoc={refMarkup}
                     />
                     {refPngUrl && (
                         <img ref={refImageRef} src={refPngUrl} alt="reference"/>

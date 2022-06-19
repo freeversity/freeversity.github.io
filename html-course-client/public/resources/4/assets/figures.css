@@ -1,0 +1,30 @@
+figure{
+    display:flex;
+    flex-direction:column;
+    margin:0;
+    padding:10px;
+    background-color:#efdecc
+}
+ 
+figcaption{
+    padding:0 10px 15px;
+    background-color:#020305;
+    font-family:"Arial",sans-serif;
+    font-size:15px;
+    text-align:center
+}
+ 
+a[href="https://figuresonfields.com"]{
+    display:inline-block;
+    width:420px;
+    margin:10px;
+    padding:10px;
+    background-color:#6d8820;
+    color:#fff
+}
+ 
+img[alt="Фигуры на полях"]{
+    padding:10px;
+    background-color:#020305
+}
+ 

@@ -1,0 +1,19 @@
+{
+    "assertions": [
+        {
+            "name": "removeUppercaseFromFeaturesP",
+            "title": "Удалите свойство `text-transform: uppercase;` в правиле `.features p` (63 строка).",
+            "expect": "expect(document.querySelector('.features p')).to.not.have.css('textTransform', 'uppercase')"
+        },
+        {
+            "name": "alignFeaturesPByCenter",
+            "title": "Добавьте свойство `text-align` со значением `center` в то же правило.",
+            "expect": "expect(document.querySelector('.features p')).to.have.css('textAlign', 'center')"
+        },
+        {
+            "name": "changeMarginBottomFrom5to15",
+            "title": "Добавьте новое свойство `list-style` со значением `none` в правило `.advantages-list` (92 строка).",
+            "expect": "expect(document.querySelector('.advantages-list')).to.have.css('listStyle', 'none')"
+        }
+    ]
+}

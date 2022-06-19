@@ -1,0 +1,22 @@
+{
+    "assertions": [
+        {
+            "title": "Оберните текст на строках 24-29 в тег `<blockquote>`",
+            "name": "wrapTextOn24to29LinesWithBlockquoteTag",
+            "expect": "expect(document.querySelector('article p:nth-of-type(3) + blockquote')).to.contain.text('Мяу мяу мяу').and.contain.text('мррр мяу мяяяу').and.contain.text('Собрание произведений М. Котидзе.');"
+        },
+        {
+            "title": "Затем внутри цитаты оберните текст стихотворения в тег `<p>`",
+            "name": "wrapParagraphInsideBlockqouteWithPTag",
+            "expect": "expect(document.querySelector('article p:nth-of-type(3) + blockquote p')).to.have.rendered.text('Мяу мяу мяу мррр мяу мяяяу мяу мяу мяу');"
+        },
+        {
+            "title": "а источник цитаты — в тег `<cite>`",
+            "name": "wrapeQuoteSourceWithCiteTag",
+            "expect": "expect(document.querySelector('article p:nth-of-type(3) + blockquote cite')).to.contain.text('Собрание произведений М. Котидзе.');"
+        }
+    ]
+}
+
+
+

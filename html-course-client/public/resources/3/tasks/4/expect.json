@@ -1,0 +1,14 @@
+{
+    "assertions": [
+        {
+            "title": "Добавьте второму списку атрибут `reversed`.",
+            "name": "addReveresedAttrToTheSecondList",
+            "expect": "expect(document.querySelector('ol:nth-of-type(2)')).to.have.attr('reversed')"
+        },
+        {
+            "title": "А третьему задайте атрибут `start` со значением `5`",
+            "name": "addStart5AttrToTheeThirdList",
+            "expect": "expect(document.querySelector('ol:nth-of-type(3)')).to.have.attr('start', '5')"
+        }
+    ]
+}

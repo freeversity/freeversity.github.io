@@ -1,0 +1,9 @@
+{
+    "assertions": [
+        {
+            "title": "В первом абзаце оберните текст `тренажёры по HTML и CSS` в ссылку с абсолютным адресом `https://htmlacademy.ru/courses`",
+            "name": "removeOutlinesCssByRemovingLink",
+            "expect": "expect(document.querySelector('section p:nth-child(1) a[href=\"https://htmlacademy.ru/courses\"]')).to.have.rendered.text('тренажёры по HTML и CSS')"
+        }
+    ]
+}

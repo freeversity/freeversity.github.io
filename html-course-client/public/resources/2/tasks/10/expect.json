@@ -1,0 +1,9 @@
+{
+    "assertions": [
+        {
+            "title": "После `<article>` внутри `<main>` добавьте тег `<aside>` с текстом `Здесь могла быть ваша реклама`",
+            "name": "uncommentStyleLink",
+            "expect": "expect(document.querySelector('main > article + aside')).to.have.rendered.text('Здесь могла быть ваша реклама')"
+        }
+    ]
+}

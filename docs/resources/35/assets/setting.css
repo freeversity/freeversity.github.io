@@ -1,0 +1,90 @@
+body {
+	background: url(img/purty_wood.png);
+}
+
+.portrait {
+	position: relative;
+	box-sizing: border-box;
+}
+
+.set {
+	margin-top: 30px;
+	text-align: center;
+	width: 550px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.set .portrait,.set [class^=portrait] {
+	display: inline-block;
+	margin: 0 30px 30px 0;
+}
+
+.set .portrait:last-child,.set .portrait:nth-child(2n) {
+	margin-right: 0;
+}
+
+.exam {
+	margin: 0;
+	padding: 0;
+	width: 550px;
+	height: 310px;
+}
+
+.sea-wood {
+	background: url(img/sea-wood.jpg);
+}
+
+.geometry {
+	background: url(img/skulls.png);
+}
+
+.wall {
+	background: url(img/ravenna.png);
+}
+
+.goods {
+	padding: 10px;
+}
+
+.goods p {
+	margin: 0 0 40px 10px;
+	text-align: left;
+	font-size: 20px;
+}
+
+.goods a {
+	font-size: 16px;
+}
+
+.goods ul {
+	margin: 0 0 0 20px;
+	padding: 0;
+	list-style: none;
+}
+
+.chest,.goods li {
+	box-sizing: border-box;
+	background-color: #fff;
+}
+
+.goods li {
+	display: inline-block;
+	outline: 10px solid rgba(0,0,0,.1);
+	vertical-align: top;
+	text-align: center;
+	margin: 0 50px 50px 0;
+	padding: 10% 10px;
+	width: 140px;
+}
+
+.chest {
+	position: relative;
+	top: 20px;
+	left: 10px;
+	margin: 0 auto;
+	padding: 30px;
+	width: 300px;
+	height: 270px;
+	box-shadow: 0 5px 20px -5px rgba(0,0,0,.3);
+}

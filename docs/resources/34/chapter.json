@@ -1,0 +1,12 @@
+{
+    "baseUrl": "/resources/34/assets/",
+    "title": "Selectors Niceties",
+    "tasks": [
+        {
+            "id": 18,
+            "type": "challenge",
+            "entry": "/resources/34/tasks/18/task.json",
+            "name": "forms-ui-kit"
+        }
+    ]
+}

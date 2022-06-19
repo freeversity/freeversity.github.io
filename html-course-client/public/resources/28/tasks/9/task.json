@@ -1,0 +1,9 @@
+{
+    "id": 9,
+    "name": "vertical-menu",
+    "htmlEntry": "index.html",
+    "cssEntry": "style.css",
+    "articleEntry": "article.md",
+    "refHtmlEntry": "ref.html",
+    "refWidth": 280
+}

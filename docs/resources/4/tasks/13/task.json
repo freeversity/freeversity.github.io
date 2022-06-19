@@ -1,0 +1,8 @@
+{
+    "id": 13,
+    "name": "image-link",
+    "htmlEntry": "day-15.html",
+    "cssEntry": "style.css",
+    "articleEntry": "article.md",
+    "expectEntry": "expect.json"
+}

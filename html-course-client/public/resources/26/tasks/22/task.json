@@ -1,0 +1,9 @@
+{
+    "id": 22,
+    "name": "suriken-ornament",
+    "htmlEntry": "index.html",
+    "cssEntry": "style.css",
+    "articleEntry": "article.md",
+    "refHtmlEntry": "ref.html",
+    "refWidth": 565
+}

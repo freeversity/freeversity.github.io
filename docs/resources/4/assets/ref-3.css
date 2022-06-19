@@ -1,0 +1,25 @@
+body {
+    width: 460px;
+    margin: 0;
+    padding: 0 20px;
+  
+    font-size: 28px;
+    font-family: "Arial", sans-serif;
+    color: black;
+  }
+  
+  ul {
+    margin: 0;
+    padding: 0;
+  
+    list-style: none;
+  }
+  
+  a {
+    display: inline-block;
+    padding: 12px;
+    margin: 5px;
+  
+    color: #3f445a;
+  }
+  

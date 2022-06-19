@@ -1,0 +1,9 @@
+{
+    "id": 1,
+    "name": "html-doctype-assigning",
+    "htmlEntry": "index.html",
+    "cssEntry": "style.css",
+    "articleEntry": "article.md",
+    "expectEntry": "expect.json",
+    "cssReadonly": true
+}

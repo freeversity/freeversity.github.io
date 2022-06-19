@@ -1,0 +1,28 @@
+/*
+  Цвета смайликов: #f4c300, #009f3d, #0085c7, #df0024
+  Цвета текста: rgba(255, 0, 180, 0.5), rgba(0, 168, 255, 0.5)
+*/
+
+body {
+  position: relative;
+  width: 570px;
+  margin: 0;
+  color: #000000;
+  font-family: "Arial", sans-serif;
+}
+
+p {
+  margin: 0;
+  padding-top: 230px;
+  text-align: center;
+  font-weight: bold;
+}
+
+span {
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  margin-left: -0.5em;
+  font-size: 200px;
+  line-height: 1em;
+}

@@ -1,0 +1,21 @@
+{
+    "assertions": [
+        {
+            "title": "Для заголовка `h1` измените `font-size` на `24px`,",
+            "name": "setH1RuleFontSizeTo24px",
+            "expect": "expect(document).to.have.cssRule('h1', 'fontSize', '24px');"
+        },
+        {
+            "title": "затем добавьте абзацу `<p>Блог</p>` класс `page-title`",
+            "name": "addPageTitleClassToBlogParagraph",
+            "expect": "expect(document.querySelector('header p:first-child')).to.have.class('page-title');"
+        },
+        {
+            "title": "и создайте правило для этого класса с заданием размеру шрифта значения `36px`",
+            "name": "createPageTitleRuleWithFontSize36px",
+            "expect": "expect(document).to.have.cssRule('.page-title', 'fontSize', '36px');"
+        }
+    ]
+}
+
+

@@ -1,0 +1,9 @@
+{
+    "assertions": [
+        {
+            "title": "Для `body` задайте составное свойство `background` со значением `#ffffff url(\"img/bg-page.png\") no-repeat top center`.",
+            "name": "addBackgroundToBodyRule",
+            "expect": "expect(document).to.have.cssRule('body', 'background', '#ffffff url(\"img/bg-page.png\") no-repeat top center');"
+        }
+    ]
+}

@@ -1,0 +1,12 @@
+{
+    "baseUrl": "/resources/13/assets/",
+    "title": "Advanced Forms",
+    "tasks": [
+        {
+            "id": 27,
+            "type": "challenge",
+            "entry": "/resources/13/tasks/27/task.json",
+            "name": "per-aspera-ad-astra"
+        }
+    ]
+}

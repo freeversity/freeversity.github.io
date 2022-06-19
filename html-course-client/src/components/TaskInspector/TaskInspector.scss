@@ -1,11 +1,24 @@
 .task-inspector {
     &__assert-item {
-        list-style-type: circle;
+        &--strict {
+            opacity: 0.3;
+        }
+
+        &--strict:first-child:not(&--done),
+        &--done, &--done + &--strict {
+            opacity: 1;
+        }
 
         &--done {
             color: green;
+        }
+
+        &:not(&--strict) {
+            list-style-type: circle;
+        }
+
+        &--done:not(&--strict) {
             list-style-type: disc;
         }
-    }
-    
+    }    
 }

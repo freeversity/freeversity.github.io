@@ -1,0 +1,8 @@
+{
+    "id": 14,
+    "name": "figure-and-figcaption-tags",
+    "htmlEntry": "photo-1.html",
+    "cssEntry": "style.css",
+    "articleEntry": "article.md",
+    "expectEntry": "expect.json"
+}

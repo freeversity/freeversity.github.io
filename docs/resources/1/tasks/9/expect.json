@@ -1,0 +1,19 @@
+{
+    "assertions": [
+        {
+            "name": "addPaddingLeft20PxToAdvantagesItem",
+            "title": "В правило `.advantages-item` добавьте свойство `padding-left: 20px;`",
+            "expect": "expect(document).to.have.cssRule('.advantages-item', 'paddingLeft', '20px')"
+        },
+        {
+            "name": "addBorderLeft20PxToAdvantagesItem",
+            "title": "Затем свойство `border-left` со значением `20px solid #e2e2e2;`",
+            "expect": "expect(document).to.have.cssRule('.advantages-item', 'borderLeft', '20px solid #e2e2e2')"
+        },
+        {
+            "name": "addColorGrayToAdvantagesItem",
+            "title": "И в конце свойство `color` со значением `#999999`",
+            "expect": "expect(document).to.have.cssRule('.advantages-item', 'color', '#999999')"
+        }
+    ]
+}

@@ -1,0 +1,9 @@
+{
+    "id": 20,
+    "name": "horizontal-menu",
+    "htmlEntry": "index.html",
+    "cssEntry": "style.css",
+    "articleEntry": "article.md",
+    "refHtmlEntry": "ref.html",
+    "refWidth": 420
+}

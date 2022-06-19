@@ -1,0 +1,24 @@
+svg {
+    border: 1px solid #dddddd;
+}
+
+circle:first-child {
+    fill: transparent;
+    stroke: tomato;
+    stroke-width: 150px;
+    stroke-dasharray: 15;
+}
+
+circle:nth-child(2) {
+    fill: transparent;
+    stroke: darkorange;
+    stroke-width: 125px;
+    stroke-dasharray: 10;
+}
+
+circle:nth-child(3) {
+    fill: gold;
+    stroke: gold;
+    stroke-width: 75px;
+    stroke-dasharray: 15 10;
+}

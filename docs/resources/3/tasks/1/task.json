@@ -1,0 +1,8 @@
+{
+    "id": 1,
+    "name": "beginning-diary",
+    "htmlEntry": "day-1.html",
+    "cssEntry": "style.css",
+    "articleEntry": "article.md",
+    "expectEntry": "expect.json"
+}

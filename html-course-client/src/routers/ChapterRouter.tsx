@@ -17,7 +17,6 @@ export interface ChapterType {
         id: string;
         type: 'task' | 'challenge'
     })[]
-
 }
 
 const ChapterRouter: FC<ChapterRouterProps> = ({className}) => {
@@ -25,6 +24,7 @@ const ChapterRouter: FC<ChapterRouterProps> = ({className}) => {
     const [isPending, setPending] = useState(true);
 
     const {chapterId} = useParams();
+
     useEffect(() => {
         fetch(`/resources/${chapterId}/chapter.json`)
             .then(req => req.json())

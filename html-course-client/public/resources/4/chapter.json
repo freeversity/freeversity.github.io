@@ -1,0 +1,122 @@
+{
+    "baseUrl": "/resources/4/assets/",
+    "title": "Links and Images",
+    "tasks": [
+        {
+            "id": 1,
+            "type": "task",
+            "entry": "/resources/4/tasks/1/task.json",
+            "name": "a-anchor-tag"
+        },
+        {
+            "id": 2,
+            "type": "task",
+            "entry": "/resources/4/tasks/2/task.json",
+            "name": "relative-addresses"
+        },
+        {
+            "id": 3,
+            "type": "task",
+            "entry": "/resources/4/tasks/3/task.json",
+            "name": "absolute-addresses"
+        },
+        {
+            "id": 4,
+            "type": "task",
+            "entry": "/resources/4/tasks/4/task.json",
+            "name": "file-reference"
+        },
+        {
+            "id": 5,
+            "type": "task",
+            "entry": "/resources/4/tasks/5/task.json",
+            "name": "hashed-anchor"
+        },
+        {
+            "id": 6,
+            "type": "task",
+            "entry": "/resources/4/tasks/6/task.json",
+            "name": "img-image-tag"
+        },
+        {
+            "id": 7,
+            "type": "task",
+            "entry": "/resources/4/tasks/7/task.json",
+            "name": "svg-image-type"
+        },
+        {
+            "id": 8,
+            "type": "task",
+            "entry": "/resources/4/tasks/8/task.json",
+            "name": "jpeg-image-type"
+        },
+        {
+            "id": 9,
+            "type": "task",
+            "entry": "/resources/4/tasks/9/task.json",
+            "name": "png-image-type"
+        },
+        {
+            "id": 10,
+            "type": "task",
+            "entry": "/resources/4/tasks/10/task.json",
+            "name": "gif-image-type"
+        },
+        {
+            "id": 11,
+            "type": "task",
+            "entry": "/resources/4/tasks/11/task.json",
+            "name": "image-sizes"
+        },
+        {
+            "id": 12,
+            "type": "task",
+            "entry": "/resources/4/tasks/12/task.json",
+            "name": "alt-image-attribute"
+        },
+        {
+            "id": 13,
+            "type": "task",
+            "entry": "/resources/4/tasks/13/task.json",
+            "name": "image-link"
+        },
+        {
+            "id": 14,
+            "type": "task",
+            "entry": "/resources/4/tasks/14/task.json",
+            "name": "figure-and-figcaption-tags"
+        },
+        {
+            "id": 15,
+            "type": "task",
+            "entry": "/resources/4/tasks/15/task.json",
+            "name": "anchors-with-empty-href-and-title-attr"
+        },
+        {
+            "id": 16,
+            "type": "challenge",
+            "entry": "/resources/4/tasks/16/task.json",
+            "name": "cat-traveling-gallery"
+        }, {
+            "id": 17,
+            "type": "challenge",
+            "entry": "/resources/4/tasks/17/task.json",
+            "name": "listen-to-birds"
+        }, {
+            "id": 18,
+            "type": "challenge",
+            "entry": "/resources/4/tasks/18/task.json",
+            "name": "art-references"
+        }, {
+            "id": 19,
+            "type": "challenge",
+            "entry": "/resources/4/tasks/19/task.json",
+            "name": "travel-map"
+        }, {
+            "id": 20,
+            "type": "challenge",
+            "entry": "/resources/4/tasks/20/task.json",
+            "name": "figures-on-fields"
+        }
+    ]
+}

@@ -1,0 +1,9 @@
+{
+    "id": 13,
+    "name": "arithmetic-symbols",
+    "svgEntry": "object.svg",
+    "cssEntry": "style.css",
+    "articleEntry": "article.md",
+    "refHtmlEntry": "ref.html",
+    "refWidth": 570
+}

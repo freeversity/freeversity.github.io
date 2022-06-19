@@ -1,0 +1,8 @@
+{
+    "id": 1,
+    "name": "img-image-tag",
+    "htmlEntry": "index.html",
+    "cssEntry": "style.css",
+    "articleEntry": "article.md",
+    "expectEntry": "expect.json"
+}

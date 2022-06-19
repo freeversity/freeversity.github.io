@@ -1,0 +1,28 @@
+{
+    "assertions": [
+        {
+            "title": "После первого абзаца в `<article>` добавьте неупорядоченный список `<ul>` и заключите в него весь неразмеченный текст.",
+            "name": "addUlAfterArticleWithUnmarkedText",
+            "expect": "expect(document.querySelector('article p:first-of-type + ul')).to.contain.text('ты делаешь полезное дело').and.contain.text('можешь работать удалённо').and.contain.text('интересные люди').and.contain.text('хорошая зарплата')"
+        },
+        {
+            "title": "В списке заключите текст ты `делаешь полезное дело` в элемент `<li>`",
+            "name": "wrapYouDoAGoodThingWithLi",
+            "expect": "expect(document.querySelector('ul li:first-child')).to.contain.text('ты делаешь полезное дело')"
+        },
+        {
+            "title": "затем разметьте элемент с текстом `можешь работать удалённо`",
+            "name": "wrapYouCanWorkRemotelyWithLi",
+            "expect": "expect(document.querySelector('ul li:nth-child(2)')).to.contain.text('можешь работать удалённо')"
+        },
+        {
+            "title": "и ещё один элемент с текстом `интересные люди`",
+            "name": "wrapInterestingPeopleWithLi",
+            "expect": "expect(document.querySelector('ul li:nth-child(3)')).to.contain.text('интересные люди')"
+        }
+    ]
+}
+
+
+
+

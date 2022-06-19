@@ -1,0 +1,29 @@
+body {
+  width: 300px;
+  margin: 0;
+  padding: 0;
+  padding-top: 15px;
+
+  font-size: 0;
+  text-align: center;
+  background-color: white;
+}
+
+.block {
+  display: inline-block;
+  width: 90px;
+  height: 90px;
+  margin-bottom: 1px;
+  margin-right: 1px;
+
+  background-color: black;
+}
+
+/*
+Используемые изображения:
+cat_poo.png
+cat_hiss.png
+cat_walk.png
+cat_slippers.png
+cat_grumpy.png
+*/

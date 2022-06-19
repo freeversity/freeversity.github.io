@@ -1,0 +1,22 @@
+{
+    "assertions": [
+        {
+            "title": "В правиле для `.partnership` задайте внутренний отступ `padding` со значением `30px`,",
+            "name": "setPartnershipClassPaddingTo30Px",
+            "expect": "expect(document).to.have.cssRule('.partnership', 'padding', '30px');"
+        },
+        {
+            "title": "затем внешний отступ `margin` со значением `30px 0`",
+            "name": "setPartnershipClassMarginTo30PxSpace0",
+            "expect": "expect(document).to.have.cssRule('.partnership', 'margin', '30px 0');"
+        },
+        {
+            "title": "и горизонтальное выравнивание по центру.",
+            "name": "setPartnerShipClassTextAlignToCenter",
+            "expect": "expect(document).to.have.cssRule('.partnership', 'textAlign', 'center');"
+        }
+    ]
+}
+
+
+

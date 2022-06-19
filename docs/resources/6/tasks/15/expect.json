@@ -1,0 +1,28 @@
+{
+    "assertions": [
+        {
+            "title": "Для тегов `del` и `ins` отмените эффекты зачёркивания и подчёркивания с помощью свойства `text-decoration` со значением `none`.",
+            "name": "removeDefaultTextDecorationForDelAndIns",
+            "expect": "expect(document.querySelector('del')).to.have.css('textDecoration', 'none');expect(document.querySelector('ins')).to.have.css('textDecoration', 'none');"
+        },
+        {
+            "title": "Для класса `.underline` с помощью `text-decoration` задайте декоративное подчёркивание,",
+            "name": "setTextDecorationUnderlineForUnderlineClass",
+            "expect": "expect(document).to.have.cssRule('.underline', 'textDecoration', 'underline');"
+        },
+        {
+            "title": "для `.line-through` задайте перечёркивание,",
+            "name": "setTextDecorationLineThroughForLineThroughClass",
+            "expect": "expect(document).to.have.cssRule('.line-through', 'textDecoration', 'line-through');"
+        },
+        {
+            "title": "а для `.overline` — надчёркивание.",
+            "name": "setTextDecorationOverlineForOverlineClass",
+            "expect": "expect(document).to.have.cssRule('.overline', 'textDecoration', 'overline');"
+        }
+    ]
+}
+
+
+
+

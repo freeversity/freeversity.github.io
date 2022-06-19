@@ -1,0 +1,8 @@
+{
+    "id": 5,
+    "name": "hashed-anchor",
+    "htmlEntry": "day-13.html",
+    "cssEntry": "style.css",
+    "articleEntry": "article.md",
+    "expectEntry": "expect.json"
+}

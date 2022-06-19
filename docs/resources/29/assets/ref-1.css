@@ -1,0 +1,60 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 280px;
+  min-height: 280px;
+  padding-top: 20px;
+  padding-left: 20px;
+
+  font-size: 14px;
+  line-height: 1.2;
+  font-family: "Arial", sans-serif;
+
+  background-color: #ecf0f1;
+}
+
+.card {
+  width: 200px;
+  padding: 20px;
+  color: white;
+  background-color: #1abc9c;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 20px 0 25px;  
+}
+
+.socials {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  height: 30px;
+}
+
+.social-item {
+  display: inline-block;
+  width: 30px;  
+  height: 30px;  
+  background-color: #16a085;
+  background-image: url("social-challenge.png");
+  margin-right: 5px;
+}
+
+.tw {
+  background-position: 60px 0;  
+}
+
+.gp {
+  background-position: 30px 0;  
+}

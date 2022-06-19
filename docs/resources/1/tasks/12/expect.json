@@ -1,0 +1,19 @@
+{
+    "assertions": [
+        {
+            "name": "addVipEmptyCssRule",
+            "title": "Создайте CSS-правило для класса `vip`",
+            "expect": "expect(document).to.have.cssRule('.vip')"
+        },
+        {
+            "name": "addBorderColorToVipCssRule",
+            "title": "Добавьте в него свойство `border-color` со значением `#ffb864;`",
+            "expect": "expect(document).to.have.cssRule('.vip', 'borderColor', '#ffb864')"
+        },
+        {
+            "name": "addColorToVipCssRule",
+            "title": "и свойство `color` со значением `#000000;`",
+            "expect": "expect(document).to.have.cssRule('.vip', 'color', '#000000')"
+        }
+    ]
+}

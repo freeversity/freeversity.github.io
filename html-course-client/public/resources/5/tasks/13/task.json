@@ -1,0 +1,8 @@
+{
+    "id": 13,
+    "name": "conflicting-properties",
+    "htmlEntry": "index.html",
+    "cssEntry": "style.css",
+    "articleEntry": "article.md",
+    "expectEntry": "expect.json"
+}

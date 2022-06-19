@@ -1,0 +1,65 @@
+/* Используемые цвета:
+
+#777777
+#ffffff
+#fffebc
+#b2fdd0
+#ffbaba
+
+*/
+
+.formula {
+    margin: 10px;
+    width: 500px;
+    border-collapse: collapse;
+    display: table;
+}
+
+.column-group {
+    display: table-column-group;  
+    background-color: #b2fdd0;
+}
+
+.column {
+    display: table-column;  
+}
+
+.column-last {
+    background-color: #ffbaba;
+}
+
+.formula p {
+    margin: 0;
+    padding: 10px;
+    font-size: 20px;
+    display: table-caption;
+    caption-side: bottom;
+    text-align: center;
+}
+
+.content {
+    display: table-row-group;
+}
+
+header {
+    display: table-header-group; 
+    background-color: #ffffff; 
+}
+
+.content > ul,
+header > ul {
+    display: table-row;  
+}
+
+header li,
+.content li {
+    display: table-cell;
+    text-align: center;
+    border: 1px solid #777777;
+    padding: 5px;
+    vertical-align: middle;
+}
+
+.content-important {
+    background-color: #fffebc;   
+}

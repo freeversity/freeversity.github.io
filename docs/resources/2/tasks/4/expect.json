@@ -1,0 +1,9 @@
+{
+    "assertions": [
+        {
+            "title": "В теге `<head>` добавьте заголовок страницы с текстом `Сайт начинающего верстальщика`",
+            "name": "addTitleToHeadWithTextBeginnerSite",
+            "expect": "expect(document.querySelector('head title')).to.contain.text('Сайт начинающего верстальщика')"
+        }
+    ]
+}

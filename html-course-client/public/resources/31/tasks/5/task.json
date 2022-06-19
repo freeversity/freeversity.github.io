@@ -1,0 +1,8 @@
+{
+    "id": 5,
+    "name": "tv-fixing",
+    "svgEntry": "object.svg",
+    "cssEntry": "style.css",
+    "articleEntry": "article.md",
+    "refHtmlEntry": "ref.html"
+}

@@ -1,0 +1,151 @@
+{
+    "baseUrl": "/resources/3/assets/",
+    "title": "Text Markup",
+    "tasks": [
+        {
+            "id": 1,
+            "type": "task",
+            "entry": "/resources/3/tasks/1/task.json",
+            "name": "beginning-diary"
+        },
+        {
+            "id": 2,
+            "type": "task",
+            "entry": "/resources/3/tasks/2/task.json",
+            "name": "ul-unordered-list"
+        },
+        {
+            "id": 3,
+            "type": "task",
+            "entry": "/resources/3/tasks/3/task.json",
+            "name": "ol-ordered-list"
+        },
+        {
+            "id": 4,
+            "type": "task",
+            "entry": "/resources/3/tasks/4/task.json",
+            "name": "start-reversed-attrs"
+        },
+        {
+            "id": 5,
+            "type": "task",
+            "entry": "/resources/3/tasks/5/task.json",
+            "name": "nested-lists"
+        },
+        {
+            "id": 6,
+            "type": "task",
+            "entry": "/resources/3/tasks/6/task.json",
+            "name": "dl-dt-dd-definition-lists"
+        },
+        {
+            "id": 7,
+            "type": "task",
+            "entry": "/resources/3/tasks/7/task.json",
+            "name": "pre-preformatted-text"
+        },
+        {
+            "id": 8,
+            "type": "task",
+            "entry": "/resources/3/tasks/8/task.json",
+            "name": "escaped-html-symbols"
+        },
+        {
+            "id": 9,
+            "type": "task",
+            "entry": "/resources/3/tasks/9/task.json",
+            "name": "code-code-fragment"
+        },
+        {
+            "id": 10,
+            "type": "task",
+            "entry": "/resources/3/tasks/10/task.json",
+            "name": "combining-code-and-pre"
+        },
+        {
+            "id": 11,
+            "type": "task",
+            "entry": "/resources/3/tasks/11/task.json",
+            "name": "q-inline-quote"
+        },
+        {
+            "id": 12,
+            "type": "task",
+            "entry": "/resources/3/tasks/12/task.json",
+            "name": "blockquote-quote-in-block"
+        },
+        {
+            "id": 13,
+            "type": "task",
+            "entry": "/resources/3/tasks/13/task.json",
+            "name": "br-line-break"
+        },
+        {
+            "id": 14,
+            "type": "task",
+            "entry": "/resources/3/tasks/14/task.json",
+            "name": "sup-and-sub-superscript-and-subscript"
+        },
+        {
+            "id": 15,
+            "type": "task",
+            "entry": "/resources/3/tasks/15/task.json",
+            "name": "time-date-and-time"
+        },
+        {
+            "id": 16,
+            "type": "task",
+            "entry": "/resources/3/tasks/16/task.json",
+            "name": "em-and-i-stressing-attention"
+        },
+        {
+            "id": 17,
+            "type": "task",
+            "entry": "/resources/3/tasks/17/task.json",
+            "name": "strong-and-b-importance-and-highlighting"
+        },
+        {
+            "id": 18,
+            "type": "task",
+            "entry": "/resources/3/tasks/18/task.json",
+            "name": "del-and-ins-highlighting-changes"
+        },
+        {
+            "id": 19,
+            "type": "task",
+            "entry": "/resources/3/tasks/19/task.json",
+            "name": "dev-and-span-styling-containers"
+        },
+        {
+            "id": 20,
+            "type": "challenge",
+            "entry": "/resources/3/tasks/20/task.json",
+            "name": "acticle-markup"
+        }, {
+            "id": 21,
+            "type": "challenge",
+            "entry": "/resources/3/tasks/21/task.json",
+            "name": "art"
+        }, {
+            "id": 22,
+            "type": "challenge",
+            "entry": "/resources/3/tasks/22/task.json",
+            "name": "recipe-markup"
+        }, {
+            "id": 23,
+            "type": "challenge",
+            "entry": "/resources/3/tasks/23/task.json",
+            "name": "multilevel-shopping-list"
+        }, {
+            "id": 24,
+            "type": "challenge",
+            "entry": "/resources/3/tasks/24/task.json",
+            "name": "permanent-fixes"
+        }, {
+            "id": 25,
+            "type": "challenge",
+            "entry": "/resources/3/tasks/25/task.json",
+            "name": "weird-formula"
+        }
+    ]
+}

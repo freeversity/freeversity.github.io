@@ -9,12 +9,13 @@ export async function cloneNodeAsSvg(
     const clonedNode = node.cloneNode(true) as HTMLElement | SVGElement;
     const doc = node.ownerDocument;
     const win = doc.defaultView as Window;
+    const isSvg = node.tagName === 'svg';
 
-    if (outputWidth) {
+    if (!isSvg && outputWidth) {
         clonedNode.style.width = `${outputWidth}px`;
     }
 
-    if (outputHeight) {
+    if (!isSvg && outputHeight) {
         clonedNode.style.height = `${outputHeight}px`;
     }
 
@@ -26,7 +27,9 @@ export async function cloneNodeAsSvg(
         style.remove();
     }
 
-    if (node instanceof SVGElement) {
+    if (node.tagName === 'svg') {
+        clonedNode.prepend(embeddedStyles);
+
         return clonedNode as SVGElement;
     }
 

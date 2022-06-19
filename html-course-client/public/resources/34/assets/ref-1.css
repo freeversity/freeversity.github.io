@@ -1,0 +1,108 @@
+body {
+    width: 550px;
+}
+
+form {
+    margin: 0 auto;
+    padding: 20px;
+    width: 400px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px #cccccc;
+}
+
+fieldset {
+    padding: 10px;
+    border: 1px solid #34495e;
+    border-radius: 5px;
+}
+
+fieldset legend {
+    color: #34495e;
+}
+
+.half-width {
+    display: inline-block;
+    margin-right: -4px;
+    width: 50%;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+input[type="radio"], 
+input[type="checkbox"] {
+    display: none;
+}
+
+input + label {
+    color: #333333;
+    vertical-align: middle;
+}
+
+label[for^="checkbox"]::before,
+label[for^="radio"]::before {
+    content: "";
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    margin-right: 8px;
+    vertical-align: middle;
+    border: 3px solid #ffffff;
+    box-shadow: 0 0 0 3px #a0a0a0;
+}
+
+label[for^="radio"]::before {
+    border-radius: 50%;
+}
+
+
+input:checked + label::before,
+input:checked + label::before {
+    background-color: #1abc9c;
+    box-shadow: 0 0 0 3px #1abc9c;
+}
+
+input:checked + label,
+input:checked + label  {
+    color: #1abc9c;
+}
+
+input:disabled + label::before {
+    box-shadow: 0 0 0 3px #cecece;
+}
+
+input:disabled + label {
+    color: #cecece;
+}
+
+input {
+    width: 95%;
+    height: 24px;
+    margin-bottom: 10px;
+    padding: 2px 5px;
+    color: #000000;
+    border: 2px solid #bdc3c7;
+    border-radius: 5px;
+    vertical-align: middle;
+}
+
+input:invalid,
+input:required {
+    border-color: #e74c3c;
+}
+
+input:disabled {
+    color: #bdc3c7;
+    background-color: #f5f5f5;
+    border-color: #ecf0f1;
+}
+
+input:invalid {
+    color: #c0392b;
+    background-color: #f2a097;
+    border-color: #e74c3c;
+}

@@ -1,0 +1,9 @@
+{
+    "id": 18,
+    "name": "businesses-list",
+    "htmlEntry": "index.html",
+    "markupReadonly": true,
+    "cssEntry": "style.css",
+    "articleEntry": "article.md",
+    "refHtmlEntry": "ref.html"
+}

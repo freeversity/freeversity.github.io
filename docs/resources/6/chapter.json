@@ -1,0 +1,140 @@
+{
+    "baseUrl": "/resources/6/assets/",
+    "title": "Text Styling",
+    "tasks": [
+        {
+            "id": 1,
+            "type": "task",
+            "entry": "/resources/6/tasks/1/task.json",
+            "name": "font-size-css-prop"
+        },
+        {
+            "id": 2,
+            "type": "task",
+            "entry": "/resources/6/tasks/2/task.json",
+            "name": "relative-font-size"
+        },
+        {
+            "id": 3,
+            "type": "task",
+            "entry": "/resources/6/tasks/3/task.json",
+            "name": "line-height-css-prop"
+        },
+        {
+            "id": 4,
+            "type": "task",
+            "entry": "/resources/6/tasks/4/task.json",
+            "name": "relative-line-height"
+        },
+        {
+            "id": 5,
+            "type": "task",
+            "entry": "/resources/6/tasks/5/task.json",
+            "name": "font-family-css-prop"
+        },
+        {
+            "id": 6,
+            "type": "task",
+            "entry": "/resources/6/tasks/6/task.json",
+            "name": "font-weight-css-prop"
+        },
+        {
+            "id": 7,
+            "type": "task",
+            "entry": "/resources/6/tasks/7/task.json",
+            "name": "text-align-css-prop"
+        },
+        {
+            "id": 8,
+            "type": "task",
+            "entry": "/resources/6/tasks/8/task.json",
+            "name": "text-align-for-non-text-alignment"
+        },
+        {
+            "id": 9,
+            "type": "task",
+            "entry": "/resources/6/tasks/9/task.json",
+            "name": "vertical-align-css-prop"
+        },
+        {
+            "id": 10,
+            "type": "task",
+            "entry": "/resources/6/tasks/10/task.json",
+            "name": "using-background-for-text-styling"
+        },
+        {
+            "id": 11,
+            "type": "task",
+            "entry": "/resources/6/tasks/11/task.json",
+            "name": "text-color"
+        },
+        {
+            "id": 12,
+            "type": "task",
+            "entry": "/resources/6/tasks/12/task.json",
+            "name": "using-margins-for-text-styling"
+        },
+        {
+            "id": 13,
+            "type": "task",
+            "entry": "/resources/6/tasks/13/task.json",
+            "name": "white-space-css-prop"
+        },
+        {
+            "id": 14,
+            "type": "task",
+            "entry": "/resources/6/tasks/14/task.json",
+            "name": "pre-formatted-text-styling"
+        },
+        {
+            "id": 15,
+            "type": "task",
+            "entry": "/resources/6/tasks/15/task.json",
+            "name": "text-decoration-for-underline-and-other-effects"
+        },
+        {
+            "id": 16,
+            "type": "task",
+            "entry": "/resources/6/tasks/16/task.json",
+            "name": "font-style-css-prop"
+        },
+        {
+            "id": 17,
+            "type": "task",
+            "entry": "/resources/6/tasks/17/task.json",
+            "name": "text-transform-css-prop"
+        },
+        {
+            "id": 18,
+            "type": "task",
+            "entry": "/resources/6/tasks/18/task.json",
+            "name": "improving-the-footer"
+        },
+        {
+            "id": 19,
+            "type": "challenge",
+            "entry": "/resources/6/tasks/19/task.json",
+            "name": "styling-an-article"
+        }, {
+            "id": 20,
+            "type": "challenge",
+            "entry": "/resources/6/tasks/20/task.json",
+            "name": "typography-caveates"
+        }, {
+            "id": 21,
+            "type": "challenge",
+            "entry": "/resources/6/tasks/21/task.json",
+            "name": "fix-what-you-can"
+        }, {
+            "id": 22,
+            "type": "challenge",
+            "entry": "/resources/6/tasks/22/task.json",
+            "name": "decorative-underline"
+        }, {
+            "id": 23,
+            "type": "challenge",
+            "entry": "/resources/6/tasks/23/task.json",
+            "name": "fix-what-you-can-v2"
+        }
+    ]
+}

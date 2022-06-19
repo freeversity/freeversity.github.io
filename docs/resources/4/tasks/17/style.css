@@ -1,0 +1,9 @@
+body {
+  width: 550px;
+  margin: 0;
+  padding: 0;
+}
+
+.container img {
+  margin: 20px;
+}

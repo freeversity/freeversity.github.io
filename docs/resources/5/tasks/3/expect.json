@@ -1,0 +1,14 @@
+{
+    "assertions": [
+        {
+            "title": "Добавьте в правило для `nav` свойство `padding` со значением `20px`",
+            "name": "addPadding20PxToNavRule",
+            "expect": "expect(document).to.have.cssRule('nav', 'padding', '20px');"
+        },
+        {
+            "title": "а затем свойство `color` со значением `#ffffff`",
+            "name": "addColoWhiteToNavRule",
+            "expect": "expect(document).to.have.cssRule('nav', 'color', '#ffffff');"
+        }
+    ]
+}

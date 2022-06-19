@@ -1,0 +1,4 @@
+.palette div {
+    min-width: 35px;
+    min-height: 35px;
+}

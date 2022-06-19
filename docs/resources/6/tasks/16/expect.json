@@ -1,0 +1,16 @@
+{
+    "assertions": [
+        {
+            "title": "Для тегов `em` и `i` отмените курсивное начертание с помощью свойства `font-style` со значением `normal`,",
+            "name": "removeDefaultFontStyleForemAndI",
+            "expect": "expect(document.querySelector('em')).to.have.css('fontStyle', 'normal');expect(document.querySelector('i')).to.have.css('fontStyle', 'normal');"
+        },
+        {
+            "title": "А для класса `.italic` с помощью `font-style` задайте курсивное начертание.",
+            "name": "setFontStyleItalicForItalicClass",
+            "expect": "expect(document).to.have.cssRule('.italic', 'fontStyle', 'italic');"
+        }
+    ]
+}
+
+

@@ -1,0 +1,25 @@
+{
+    "assertions": [
+        {
+            "title": "Добавьте альтернативный текст `alt=\"Анимация GIF\"` первой картинке.",
+            "name": "addAltTextToGifAnimation",
+            "expect": "expect(document.querySelector('img[src=\"files/gifka.gif\"]')).to.have.attr('alt', 'Анимация GIF');"
+        },
+        {
+            "title": "Теперь добавьте атрибут `alt` со значением `Портрет котика` второй картинке.",
+            "name": "addAltTextToPngImage",
+            "expect": "expect(document.querySelector('img[src=\"files/portrait.png\"]')).to.have.attr('alt', 'Портрет котика');"
+        },
+        {
+            "title": "К третьей добавьте альтернативный текст `Инструктор Кекс`.",
+            "name": "addAltTextToJpgImage",
+            "expect": "expect(document.querySelector('img[src=\"files/instructor-keks.jpg\"]')).to.have.attr('alt', 'Инструктор Кекс');"
+        },
+        {
+            "title": "Сломайте путь ко второй картинке, удалив у неё атрибут src",
+            "name": "breakSrcLinkOnPngImage",
+            "expect": "expect(document.querySelector('img[alt=\"Портрет котика\"]')).not.to.have.attr('src', 'files/portrait.png');"
+        }
+    ],
+    "strict": true
+}

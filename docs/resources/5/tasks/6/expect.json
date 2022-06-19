@@ -1,0 +1,9 @@
+{
+    "assertions": [
+        {
+            "title": "Для `nav` добавьте свойство `border` со значением `5px solid #2d508f`",
+            "name": "addBorderToNavRule",
+            "expect": "expect(document).to.have.cssRule('nav', 'border', '5px solid #2d508f');"
+        }
+    ]
+}

@@ -1,0 +1,9 @@
+{
+    "id": 8,
+    "name": "stroke-width-and-opacity",
+    "svgEntry": "object.svg",
+    "cssEntry": "style.css",
+    "articleEntry": "article.md",
+    "refHtmlEntry": "ref.html",
+    "refWidth": 350
+}

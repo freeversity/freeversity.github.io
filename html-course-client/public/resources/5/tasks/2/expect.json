@@ -1,0 +1,15 @@
+{
+    "assertions": [
+        {
+            "title": "В CSS-правиле на `25` строке замените заглушку `selector` на селектор `.avatar`",
+            "name": "renameFirstSelectorStubToDotAvatar",
+            "expect": "expect(document).to.have.cssRule('.avatar', 'borderRadius', '10px');"
+        },
+        {
+            "title": "а затем на `35` строке замените заглушку `selector` на селектор `nav a` (да, с пробелом, позже расскажем почему)",
+            "name": "renameScondSelectorStubToNavSpaceA",
+            "expect": "expect(document).to.have.cssRule('nav a', 'color', '#ffffff');"
+        }
+    ]
+}
+

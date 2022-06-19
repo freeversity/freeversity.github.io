@@ -1,0 +1,22 @@
+{
+    "baseUrl": "/resources/18/assets/",
+    "title": "Document Block Model",
+    "tasks": [
+        {
+            "id": 8,
+            "type": "challenge",
+            "entry": "/resources/18/tasks/8/task.json",
+            "name": "the-first-challenge"
+        }, {
+            "id": 16,
+            "type": "challenge",
+            "entry": "/resources/18/tasks/16/task.json",
+            "name": "the-second-challenge"
+        }, {
+            "id": 23,
+            "type": "challenge",
+            "entry": "/resources/18/tasks/23/task.json",
+            "name": "the-final-challenge"
+        }
+    ]
+}

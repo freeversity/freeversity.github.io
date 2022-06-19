@@ -1,0 +1,7 @@
+{
+    "id": 2,
+    "name": "html-basic-tags",
+    "htmlEntry": "index.html",
+    "articleEntry": "article.md",
+    "expectEntry": "expect.json"
+}

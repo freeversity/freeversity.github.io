@@ -1,0 +1,8 @@
+{
+    "id": 3,
+    "name": "ol-ordered-list",
+    "htmlEntry": "day-3.html",
+    "cssEntry": "style.css",
+    "articleEntry": "article.md",
+    "expectEntry": "expect.json"
+}

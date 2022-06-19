@@ -1,0 +1,24 @@
+{
+    "assertions": [
+        {
+            "title": "После второго абзаца в `<article>` добавьте упорядоченный список `<ol>` и заключите в него весь неразмеченный текст.",
+            "name": "addOlAfterArticleWithUnmarkedText",
+            "expect": "expect(document.querySelector('article p:nth-of-type(2) + ol')).to.contain.text('Покормить кота').and.contain.text('Полить кактус').and.contain.text('Выключить свет').and.contain.text('Выйти из дома по делам')"
+        },
+        {
+            "title": "В список добавьте элемент с текстом `Покормить кота`",
+            "name": "wrapFeedTheCatWithLi",
+            "expect": "expect(document.querySelector('ol li:first-child')).to.contain.text('Покормить кота')"
+        },
+        {
+            "title": "затем элемент с текстом `Полить кактус`",
+            "name": "wrapWaterTheCactiWithLi",
+            "expect": "expect(document.querySelector('ol li:nth-child(2)')).to.contain.text('Полить кактус')"
+        },
+        {
+            "title": "и ещё один элемент с текстом `Выключить свет`",
+            "name": "wrapTurnOffTheLightWithLi",
+            "expect": "expect(document.querySelector('ol li:nth-child(3)')).to.contain.text('Выключить свет')"
+        }
+    ]
+}

@@ -1,0 +1,8 @@
+{
+    "id": 27,
+    "name": "building-a-grid",
+    "htmlEntry": "index.html",
+    "cssEntry": "style.css",
+    "articleEntry": "article.md",
+    "refHtmlEntry": "ref.html"
+}

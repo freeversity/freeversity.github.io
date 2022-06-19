@@ -1,0 +1,15 @@
+{
+    "assertions": [
+        {
+            "name": "addImgToHeaderAfterP",
+            "title": "Добавьте тег `<img>` в `<header>` после тега `<p>`",
+            "expect": "expect(document.querySelector('header p + img')).to.exist"
+        },
+        {
+            "name": "addSrcToTheImg",
+            "title": "Добавьте этому тегу атрибут `src` со значением `img/gloevk-examples.png`",
+            "expect": "expect(document.querySelector('header p + img')).to.have.attribute('src', 'img/gloevk-examples.png')"
+
+        }
+    ]
+}

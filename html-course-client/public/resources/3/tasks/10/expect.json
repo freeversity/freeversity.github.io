@@ -1,0 +1,14 @@
+{
+    "assertions": [
+        {
+            "title": "Оберните пример кода на строках 24-27 в тег `<pre>`",
+            "name": "wrap2427LinesWithPre",
+            "expect": "expect(document.querySelector('article p:nth-of-type(3) + pre')).to.contain.text('<blockquote>').and.contain.text('<p>Ум ценится дорого, когда дешевеет сила.</p>').and.contain.text('<cite>Джейсон Стэтхэм</cite>').and.contain.text('</blockquote>')"
+        },
+        {
+            "title": "Затем текст внутри `<pre>` оберните в `<code>`",
+            "name": "wrapTextWithinPreWithCode",
+            "expect": "expect(document.querySelector('article p:nth-of-type(3) + pre code')).to.contain.text('<blockquote>').and.contain.text('<p>Ум ценится дорого, когда дешевеет сила.</p>').and.contain.text('<cite>Джейсон Стэтхэм</cite>').and.contain.text('</blockquote>')"
+        }
+    ]
+}

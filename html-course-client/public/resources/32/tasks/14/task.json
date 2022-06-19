@@ -1,0 +1,9 @@
+{
+    "id": 14,
+    "name": "sunrise",
+    "svgEntry": "object.svg",
+    "cssEntry": "style.css",
+    "articleEntry": "article.md",
+    "refHtmlEntry": "ref.html",
+    "refWidth": 350
+}

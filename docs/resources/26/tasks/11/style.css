@@ -1,0 +1,49 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding-top: 30px;
+  padding-left: 15px;
+  width: 505px;
+  height: 260px;
+}
+
+.flag {
+  float: left;
+  margin-right: 15px;
+  margin-bottom: 30px;
+  width: 150px;
+  height: 100px;
+  border: 1px solid #aaaaaa;
+  background-color: #ffffff;
+}
+
+.ireland {
+  /* цвета: #009b48, #ffffff, #ff7900 */
+}
+
+.trinidad {
+  /* цвета: #ce1126, #ffffff, #000, #ce1126 */
+}
+
+.congo {
+  /* цвета: #009543, #fbde4a, #dc241f */
+}
+
+.mauritius {
+  /* цвета: #ea2839, #1a206d,  #ffd500, #00a551 */
+}
+
+.botswana {
+  /* цвета: #449ed3, #ffffff, #000000 */
+}
+
+.madagaskar {
+  /* цвета: #fc3d32, #007e3a */
+
+  background-position: 50px 0;
+  background-repeat: no-repeat;
+}

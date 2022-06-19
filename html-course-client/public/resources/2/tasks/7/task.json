@@ -1,0 +1,7 @@
+{
+    "id": 7,
+    "name": "page-section",
+    "htmlEntry": "index.html",
+    "articleEntry": "article.md",
+    "expectEntry": "expect.json"
+}

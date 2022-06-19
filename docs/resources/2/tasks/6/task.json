@@ -1,0 +1,7 @@
+{
+    "id": 6,
+    "name": "header-and-footer",
+    "htmlEntry": "index.html",
+    "articleEntry": "article.md",
+    "expectEntry": "expect.json"
+}

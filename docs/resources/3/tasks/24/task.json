@@ -1,0 +1,9 @@
+{
+    "id": 24,
+    "name": "permanent-fixes",
+    "htmlEntry": "index.html",
+    "cssEntry": "style.css",
+    "cssReadonly": true,
+    "articleEntry": "article.md",
+    "refHtmlEntry": "ref.html"
+}

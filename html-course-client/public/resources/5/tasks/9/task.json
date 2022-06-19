@@ -1,0 +1,8 @@
+{
+    "id": 9,
+    "name": "tags-and-classes-selectors",
+    "htmlEntry": "index.html",
+    "cssEntry": "style.css",
+    "articleEntry": "article.md",
+    "expectEntry": "expect.json"
+}

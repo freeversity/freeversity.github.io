@@ -1,0 +1,20 @@
+svg {
+    border: 1px solid #dddddd;
+  }
+  
+  polygon {
+    fill: transparent;
+    stroke: yellowgreen;
+    stroke-width: 5px;
+  }
+  
+  polygon:nth-child(2) {
+    stroke: gold;
+    stroke-width: 10px;
+  }
+  
+  polygon:nth-child(3) {
+    stroke: lightseagreen;
+    stroke-width: 30px;
+    stroke-opacity: 0.5;
+  }

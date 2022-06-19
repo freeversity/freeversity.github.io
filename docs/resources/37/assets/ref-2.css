@@ -1,0 +1,36 @@
+article {
+    width: 470px;
+    display: table;
+    border: 5px solid #686868;
+    border-collapse: separate;
+    border-spacing: 15px;
+    margin: 10px;
+    background-image: url("img/wood.png");
+}
+
+ul {
+    display: table-row;  
+}
+
+ul:first-child li {
+    background-image: url("img/wall-1.png");
+}
+
+ul:last-child li {
+    background-image: url("img/wall-2.png");
+}
+
+li {
+    display: table-cell;  
+    border: 10px solid #686868;
+    text-align: center;
+    vertical-align: center;
+    padding: 20px;
+}
+
+li:nth-child(1) {
+    width: 70px;  
+}
+li:nth-child(3) {
+    width: 110px;  
+}

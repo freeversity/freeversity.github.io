@@ -1,0 +1,9 @@
+{
+    "id": 25,
+    "name": "weird-formula",
+    "htmlEntry": "index.html",
+    "cssEntry": "style.css",
+    "cssReadonly": true,
+    "articleEntry": "article.md",
+    "refHtmlEntry": "ref.html"
+}

@@ -1,0 +1,32 @@
+{
+    "assertions": [
+        {
+            "title": "Оберните слово `Скачать` в ссылку с адресом `files/recipe.pdf`",
+            "name": "wrapDownloadWithLinkToPdfFile",
+            "type": "expect",
+            "expect": "expect(document.querySelector('article p:nth-of-type(2) a[href=\"files/recipe.pdf\"]:not([download])')).to.have.rendered.text('Скачать')"
+        },
+        {
+            "title": "Перейдите по ссылке и затем вернитесь обратно.",
+            "name": "goForwardByLink",
+            "type": "expect",
+            "expect": "expect(document.location.pathname).to.equal('/resources/4/assets/files/recipe.pdf')"
+        },
+        {
+            "title": "Добавьте ссылке атрибут `download`",
+            "name": "addDownloadAttr",
+            "type": "expect",
+            "expect": "expect(document.querySelector('article p:nth-of-type(2) a[href=\"files/recipe.pdf\"]')).to.have.attr('download', true)"
+        },
+        {
+            "title": "Перейдите по ссылке ещё раз.",
+            "name": "goForwardByLinkOnceAgain",
+            "type": "action",
+            "eventType": "click",
+            "target": "a[href=\"files/recipe.pdf\"][download]"
+        }
+    ]
+}
+
+
+

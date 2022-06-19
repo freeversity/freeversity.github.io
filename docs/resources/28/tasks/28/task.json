@@ -1,0 +1,8 @@
+{
+    "id": 28,
+    "name": "dropdown-menu",
+    "htmlEntry": "index.html",
+    "cssEntry": "style.css",
+    "articleEntry": "article.md",
+    "refHtmlEntry": "ref.html"
+}

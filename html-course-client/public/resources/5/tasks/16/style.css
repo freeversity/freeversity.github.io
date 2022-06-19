@@ -1,0 +1,31 @@
+body {
+  width: 500px;
+}
+body {
+  width: 550px;
+  margin: 0;
+  padding: 0 10px;
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+h1 {
+  font-size: 26px;
+}
+
+p {
+  width: 550px;
+  padding: 15px 20px;
+  color: black;
+}
+
+selector {
+  border: 5px solid orange;
+}
+
+selector {
+  margin-right: 10px;
+  vertical-align: top;
+  border-radius: 20px;
+}

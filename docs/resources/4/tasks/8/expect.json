@@ -1,0 +1,9 @@
+{
+    "assertions": [
+        {
+            "title": "Добавьте картинку с адресом `files/instructor-keks.jpg` в конец записи блога.",
+            "name": "addJpgToTheEndOfArticle",
+            "expect": "expect(document.querySelector('article img:last-child')).to.have.attr('src', 'files/instructor-keks.jpg');"
+        }
+    ]
+}

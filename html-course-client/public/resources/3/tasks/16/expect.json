@@ -1,0 +1,15 @@
+{
+    "assertions": [
+        {
+            "title": "Оберните текст в первом абзаце, начинающийся со слов `а что, если` и заканчивающийся на `делать роботы`, в тег `<i>`.",
+            "name": "wrapTextWithITag",
+            "expect": "expect(document.querySelector('article p:nth-of-type(1) i')).to.have.text('а что, если верстальщики станут никому не нужны и уже скоро всё будут делать роботы')"
+        },
+        {
+            "title": "Оберните слово `прекрасная` во втором абзаце в тег `<em>`.",
+            "name": "wrapTextWithEmTag",
+            "expect": "expect(document.querySelector('article p:nth-of-type(2) em')).to.have.text('прекрасная')"
+        }
+    ]
+}
+

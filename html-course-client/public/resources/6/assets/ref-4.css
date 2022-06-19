@@ -1,0 +1,22 @@
+body {
+    width: 550px;
+    margin: 0;
+    padding: 0 10px;
+  
+    font-family: "Arial", sans-serif;
+    font-size: 26px;
+  }
+  
+  p {
+    text-align: center;
+  }
+  
+  a {
+    color: #0088cc;
+    border: 3px solid #0088cc;
+    text-decoration: overline;
+    text-decoration-style: dashed;
+    border-top: none;
+    border-bottom-style: dotted;
+  }
+  

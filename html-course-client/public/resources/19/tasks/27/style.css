@@ -1,0 +1,21 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 450px;
+  height: 335px;
+
+  font-size: 10px;
+  font-family: "Arial", sans-serif;
+  color: white;
+}
+
+/*
+  Используемые цвета:
+  #34495e – мокрый асфальт
+  #c0392b – красный
+  #3498db – синий
+*/

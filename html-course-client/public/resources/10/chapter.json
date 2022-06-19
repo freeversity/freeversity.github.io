@@ -1,0 +1,11 @@
+{
+    "baseUrl": "/resources/10/assets/",
+    "title": "HTML & CSS Capabilities",
+    "tasks": [{
+            "id": 20,
+            "type": "challenge",
+            "entry": "/resources/9/tasks/20/task.json",
+            "name": "another-homepage-option"
+        }
+    ]
+}

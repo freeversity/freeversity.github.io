@@ -1,0 +1,24 @@
+{
+    "assertions": [
+        {
+            "title": "В абзаце оберните слово `опасно` в `<span>` с атрибутом `class=\"danger-text\"`.",
+            "name": "wrapDangerWordWithSpanDanger",
+            "expect": "expect(document.querySelector('article p:nth-of-type(1) span.danger-text')).to.have.text('опасно')"
+        },
+        {
+            "title": "В списке определений оберните первый термин и его описание в `<div>` с атрибутом `class=\"danger-block\"`.",
+            "name": "wrapFirstTermWithDangerDiv",
+            "expect": "expect(document.querySelector('article dl div.danger-block:first-child')).to.contain.html('<dt>Диватоз</dt>').and.contain.html('<dd>Острый страх семантики</dd>')"
+        },
+        {
+            "title": "По аналогии оберните следующий термин и его определения.",
+            "name": "wrapNextTermWithDangerDiv",
+            "expect": "expect(document.querySelector('article dl div.danger-block:nth-child(2)')).to.contain.html('<dt>Таблицефобия</dt>').and.contain.html('<dd>Избегание таблиц</dd>').and.contain.html('<dd>Стремление сверстать таблицу на дивах</dd>')"
+        },
+        {
+            "title": "Последний термин с определением (Классянка) оберните в `<div>`` с атрибутом `class=\"no-danger-block\"`.",
+            "name": "wrapLastTermWithNoDangerDiv",
+            "expect": "expect(document.querySelector('article dl div.no-danger-block:nth-child(3)')).to.contain.html('<dt>Классянка</dt>').and.contain.html('<dd>Навязывание классов каждому тегу</dd>')"
+        }
+    ]
+}

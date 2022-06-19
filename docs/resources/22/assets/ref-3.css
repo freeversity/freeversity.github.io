@@ -1,0 +1,26 @@
+.grid {
+    display: grid;
+    gap: 10px;
+    grid-template-rows: 50px 100px 140px;
+    grid-template-columns: repeat(4, 130px);
+    grid-template-areas:
+    "header header header header"
+    "gnome elf troll popular"
+    "video video unboxing popular";
+}
+
+.site-heading {
+    grid-area: header;  
+}
+
+.video {
+    grid-area: video;    
+}
+
+.description {
+    grid-area: unboxing;  
+}
+
+.sidebar {
+    grid-area: popular;
+}

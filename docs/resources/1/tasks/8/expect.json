@@ -1,0 +1,19 @@
+{
+    "assertions": [
+        {
+            "name": "addH2EmptyRule",
+            "title": "Добавьте новое пустое CSS-правило для всех подзаголовков `h2`",
+            "expect": "expect(document).to.have.cssRule('h2')"
+        },
+        {
+            "name": "addBorderBottomToH2Rule",
+            "title": "Затем добавьте в него свойство `border-bottom` со значением `2px solid #cccccc`",
+            "expect": "expect(document).to.have.cssRule('h2', 'borderBottom', '2px solid #cccccc')"
+        },
+        {
+            "name": "addPaddingBottomToH2Rule",
+            "title": "и свойство `padding-bottom` со значением `12px;`",
+            "expect": "expect(document).to.have.cssRule('h2', 'paddingBottom', '12px')"
+        }
+    ]
+}

@@ -1,0 +1,21 @@
+{
+    "intro": "helpFixCssMistakes",
+    "introTitle": "Помогите Кексу исправить ошибки в стилях страницы:",
+    "assertions": [
+        {
+            "name": "firstMistakeWithMissingBackground",
+            "title": "Первую ошибку с пропавшим фоном для всей страницы,",
+            "expect": "expect(document).to.have.cssRule('body', 'background')"
+        },
+        {
+            "name": "secondMistakeWithMissingSkillsListStyles",
+            "title": "вторую ошибку с потерянными стилями для всех элементов в списке навыков,",
+            "expect": "expect(document).to.have.cssRule('.skills-item', 'paddingLeft')"
+        },
+        {
+            "name": "thirdMistakeWithCorruptedAdvantagesBackground",
+            "title": "третью ошибку с испорченным фоном преимуществ.",
+            "expect": "expect(document).to.have.cssRule('.features p', 'background-repeat', 'no-repeat')"
+        }
+    ]
+}

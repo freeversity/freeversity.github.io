@@ -1,0 +1,9 @@
+{
+    "assertions": [
+        {
+            "title": "Добавьте картинку с адресом `files/gifka.gif` в запись блога.",
+            "name": "addGifAnimationToTheArticle",
+            "expect": "expect(document.querySelector('article p:nth-of-type(2) + img')).to.have.attr('src', 'files/gifka.gif');"
+        }
+    ]
+}

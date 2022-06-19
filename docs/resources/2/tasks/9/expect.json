@@ -1,0 +1,19 @@
+{
+    "assertions": [
+        {
+            "title": "В шапку сайта добавьте тег `<nav>` с текстом `На главную`",
+            "name": "addNavToHeaderWithToHomePageText",
+            "expect": "expect(document.querySelector('header > nav')).to.have.rendered.text('На главную')"
+        },
+        {
+            "title": "Раскомментируйте текст в теге `<main>`",
+            "name": "uncommentTextInsideMain",
+            "expect": "expect(document.querySelector('main')).to.have.rendered.text('День первый. Как я забыл покормить кота. Кто бы мог подумать, что семантика это так важно, мне срочно нужно было об этом поговорить. Взгляд упал на кота. Кот издал настойчивое «Мяу». И я понял — пришло время для первой записи в блог. И покормить кота.')"
+        },
+        {
+            "title": "а затем оберните его целиком в тег `<article>`",
+            "name": "wrapMainContentWithArticle",
+            "expect": "expect(document.querySelector('main > article')).to.have.rendered.text('День первый. Как я забыл покормить кота. Кто бы мог подумать, что семантика это так важно, мне срочно нужно было об этом поговорить. Взгляд упал на кота. Кот издал настойчивое «Мяу». И я понял — пришло время для первой записи в блог. И покормить кота.')"
+        }
+    ]
+}

@@ -1,0 +1,21 @@
+{
+    "assertions": [
+        {
+            "title": "Оберните в тег `<a>` весь текст внутри первого элемента списка.",
+            "name": "wrapFirstLiContentWithATag",
+            "expect": "expect(document.querySelector('ul li:first-child a')).to.have.rendered.text('День первый. Как я забыл покормить кота')"
+        },
+        {
+            "title": "Добавьте ссылке атрибут `href` c адресом `day-1.html`.",
+            "name": "addDay1HrefToATag",
+            "expect": "expect(document.querySelector('ul li:first-child a')).to.have.attr('href', 'day-1.html')"
+        },
+        {
+            "title": "А теперь перейдите по ссылке (щёлкнув по ней в мини-браузере).",
+            "name": "clickDay1Link",
+            "expect": "expect(document.location.pathname).to.equal('/resources/4/assets/day-1.html')"
+        }
+    ]
+}
+
+

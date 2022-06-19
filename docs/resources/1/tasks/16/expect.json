@@ -1,0 +1,25 @@
+{
+    "intro": "helpFixMarkupMistakes",
+    "introTitle": "Помогите Кексу исправить ошибки в разметке его новой страницы:",
+    "assertions": [
+        {
+            "name": "firstMistakeWithHeaderImg",
+            "title": "Первую ошибку с отсутствием картинки в шапке,",
+            "expect": "expect(document.querySelector('img[src=\"img/keks.png\"]')).to.exist"
+        },
+        {
+            "name": "secondMistakeWithBrokenAdvantages",
+            "title": "вторую ошибку со сломанными преимуществами,",
+            "expect": "expect(document.querySelector('.features')).to.exist;\nexpect(document.querySelector('.feature-kitten')).to.exist;\nexpect(document.querySelector('.feature-train')).to.exist;\nexpect(document.querySelector('.feature-cat')).to.exist;"
+        },
+        {
+            "name": "thirdMistakeWithRedundantMarginsAndMarkers",
+            "title": "третью ошибку с лишним отступом и маркерами в списке навыков.",
+            "expect": "expect(document.querySelector('ul.skills-list')).to.exist"
+        }
+    ]
+}
+
+
+
+

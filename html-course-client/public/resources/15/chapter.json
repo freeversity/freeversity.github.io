@@ -1,0 +1,12 @@
+{
+    "baseUrl": "/resources/15/assets/",
+    "title": "Inheritance and Cascade",
+    "tasks": [
+        {
+            "id": 18,
+            "type": "challenge",
+            "entry": "/resources/9/tasks/10/task.json",
+            "name": "cleaning-up"
+        }
+    ]
+}

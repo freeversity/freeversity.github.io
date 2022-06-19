@@ -1,0 +1,76 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 400px;
+  height: 300px;
+}
+
+.puzzle {
+  width: 300px;
+  margin: 0 auto;
+  padding-top: 5px;
+}
+
+.puzzle div {
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+.block1 {
+  float: left;
+  width: 70px;
+  height: 220px;
+  background-color: skyblue;
+}
+
+.block2 {
+  float: right;
+  width: 220px;
+  height: 70px;
+  background-color: skyblue;
+}
+
+.block3 {
+  width: 70px;
+  height: 70px;
+  background-color: purple;
+}
+
+.block4 {
+  float: left;
+  width: 70px;
+  height: 145px;
+  background-color: tomato;
+}
+
+.block5 {
+  float: right;
+  width: 70px;
+  height: 145px;
+  background-color: tomato;
+}
+
+.block6 {
+  float: right;
+  width: 70px;
+  height: 70px;
+  background-color: gold;
+}
+
+.block7 {
+  float: right;
+  width: 145px;
+  height: 70px;
+  background-color: lightgreen;
+}
+
+.block8 {
+  float: left;
+  width: 145px;
+  height: 70px;
+  background-color: lightgreen;
+}

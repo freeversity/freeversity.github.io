@@ -1,0 +1,24 @@
+.markdown-container {
+    code, pre {
+        background-color: #eee;
+        border-radius: 3px;
+        padding: 0 5px;
+        border: 1px solid #ccc;
+    }
+
+    code {
+        font-size: 0.8em;
+    }
+
+    pre {
+        padding: 10px 15px;
+        margin: 10px 20px;
+    }
+
+    pre code {
+        background-color: transparent;
+        border-radius: 0;
+        padding: 0;
+        border: none;
+    }
+}

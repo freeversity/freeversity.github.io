@@ -1,0 +1,16 @@
+{
+    "assertions": [
+        {
+            "title": "Перед словом `cite` в первом абзаце поставьте символ-мнемонику `&lt`; а после слова — `&gt;`",
+            "name": "addLtAndGtEscapedCharssBeforeAndAfterCite",
+            "expect": "expect(document.querySelector('article p:nth-of-type(1)')).to.contain.text('<cite>')"
+        },
+        {
+            "title": "По аналогии оберните в `&lt;` и `&gt;` слово `blockquote`",
+            "name": "addLtAndGtEscapedCharssBeforeAndAfterBlockquote",
+            "expect": "expect(document.querySelector('article p:nth-of-type(1)')).to.contain.text('<blockquote>')"
+
+        }
+    ]
+}
+

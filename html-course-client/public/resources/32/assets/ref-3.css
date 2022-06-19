@@ -1,0 +1,24 @@
+svg {
+    border: 1px solid #dddddd;
+}
+
+polyline {
+    stroke: teal;
+    fill: transparent;
+    stroke-width: 80px;
+    stroke-linecap: square;
+}
+
+polyline:nth-child(2) {
+    stroke: lightseagreen;
+    stroke-width: 50px;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+polyline:nth-child(3) {
+    stroke: gold;
+    stroke-width: 10px;
+    stroke-linecap: butt;
+    stroke-linejoin: bevel;
+}

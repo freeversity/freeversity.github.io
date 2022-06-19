@@ -1,0 +1,32 @@
+/*
+Используемые цвета: #000000 и #555555
+Используемые значения background-position для частей сюрикенов:
+
+70px -45px,
+-45px -80px,
+35px 70px,
+-80px 35px,
+35px -45px,
+-45px 35px
+*/
+
+.pattern {
+  height: 100%;
+  background-image: none;
+  background-size: 115px 115px;
+  background-repeat: repeat;
+}
+
+body {
+  min-width: 565px;
+  min-height: 298px;
+  background-image: url("bamboo.jpg");
+  background-repeat: repeat;
+  background-position: 0 0;
+}
+
+html,
+body {
+  margin: 0;
+  height: 335px;
+}

@@ -1,0 +1,12 @@
+{
+    "baseUrl": "/resources/14/assets/",
+    "title": "Selectors Introduction",
+    "tasks": [
+        {
+            "id": 18,
+            "type": "challenge",
+            "entry": "/resources/13/tasks/27/task.json",
+            "name": "interactive-investigation"
+        }
+    ]
+}

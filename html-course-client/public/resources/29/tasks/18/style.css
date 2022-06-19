@@ -1,0 +1,33 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 280px;
+  min-height: 250px;
+  padding-top: 50px;
+  padding-right: 10px;
+  padding-left: 10px;
+
+  font-size: 12px;
+  line-height: 1.2;
+  font-family: "Arial", sans-serif;
+  color: #7f8c8d;
+
+  background-color: #ecf0f1;
+}
+
+.post-stats .icon {
+  width: 15px;
+  height: 15px;
+}
+
+/*
+Все размеры, отступы, координаты, размеры шрифтов (не заданные в body) кратны 5 или 10.
+Адреса картинок:
+quotes.png
+post-challenge.png
+Картинка «кавычки» выровнена по центру
+*/

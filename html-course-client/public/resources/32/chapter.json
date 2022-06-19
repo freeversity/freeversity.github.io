@@ -1,0 +1,32 @@
+{
+    "baseUrl": "/resources/32/assets/",
+    "title": "SVG Styling",
+    "tasks": [
+        {
+            "id": 4,
+            "type": "challenge",
+            "entry": "/resources/32/tasks/4/task.json",
+            "name": "colorful-squares"
+        }, {
+            "id": 8,
+            "type": "challenge",
+            "entry": "/resources/32/tasks/8/task.json",
+            "name": "stroke-width-and-opacity"
+        }, {
+            "id": 11,
+            "type": "challenge",
+            "entry": "/resources/32/tasks/11/task.json",
+            "name": "zigzag"
+        }, {
+            "id": 14,
+            "type": "challenge",
+            "entry": "/resources/32/tasks/14/task.json",
+            "name": "sunrise"
+        }, {
+            "id": 20,
+            "type": "challenge",
+            "entry": "/resources/32/tasks/20/task.json",
+            "name": "lollipop"
+        }
+    ]
+}

@@ -1,0 +1,37 @@
+{
+    "baseUrl": "/resources/31/assets/",
+    "title": "SVG Basics",
+    "tasks": [
+        {
+            "id": 5,
+            "type": "challenge",
+            "entry": "/resources/31/tasks/5/task.json",
+            "name": "tv-fixing"
+        }, {
+            "id": 7,
+            "type": "challenge",
+            "entry": "/resources/31/tasks/7/task.json",
+            "name": "pyramids"
+        }, {
+            "id": 9,
+            "type": "challenge",
+            "entry": "/resources/31/tasks/9/task.json",
+            "name": "target"
+        }, {
+            "id": 11,
+            "type": "challenge",
+            "entry": "/resources/31/tasks/11/task.json",
+            "name": "surprised-emoji"
+        }, {
+            "id": 13,
+            "type": "challenge",
+            "entry": "/resources/31/tasks/13/task.json",
+            "name": "arithmetic-symbols"
+        }, {
+            "id": 15,
+            "type": "challenge",
+            "entry": "/resources/31/tasks/15/task.json",
+            "name": "air-baloons"
+        }
+    ]
+}

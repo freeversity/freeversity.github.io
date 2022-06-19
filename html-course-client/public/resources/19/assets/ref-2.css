@@ -1,0 +1,112 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 450px;
+  height: 335px;
+
+  font-size: 10px;
+  font-family: "Arial", sans-serif;
+  color: white;
+}
+
+.header,
+.promos,
+.main-section {
+  padding: 10px;
+}
+
+.header-content {
+  background-color: #c0392b;
+}
+
+.header,
+.promos,
+.footer {
+  background-color: #34495e;
+}
+
+.nav {
+  background-color: #3498db;
+}
+
+.promos-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.promo {
+  background-color: #c0392b;
+  height: 50px;
+  width: 160px;
+}
+
+.promo-1 {
+  float: left;  
+}
+
+.promo-2 {
+  float: right;  
+}
+
+.promos-list,
+.main-content {
+  max-width: 350px;
+  margin: 0 auto;
+}
+  
+.header-content,
+.nav-content,
+.footer-content {
+  max-width: 340px;
+  margin: 0 auto;
+}
+
+.header-content,
+.nav-content,
+.footer-content {
+  height: 25px;
+}
+
+.main,
+.aside {
+  background-color: #3498db;
+  height: 100px;
+}
+
+.aside {
+  width: 60px;
+  background-color: #3498db;
+}
+.aside-1 {
+  float: left; 
+  margin-right: 10px;
+}
+
+.main {
+  float: left;   
+  width: 180px;
+}
+
+.aside-2 {
+  float: right;  
+}
+
+.promo,
+.aside,
+.main,
+.header-content,
+.nav-content,
+.footer-content {
+  padding: 5px;
+}
+
+.clear-fix::after {
+  content: '';
+  display: block;
+  clear: both;
+}

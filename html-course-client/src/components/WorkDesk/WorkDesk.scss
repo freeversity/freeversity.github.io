@@ -1,4 +1,6 @@
-.workdesk{
+.workdesk {
+    position: relative;
+    
     &__wrapper {
         height: 100%;
         width: 100%;
@@ -6,18 +8,61 @@
     }
 
     &__article-container {
-        position: fixed;
-        display: none;
+        position: absolute;
+        opacity: 0;
         top: 0;
         left: 0;
         height: 100%;
         width: 100%;
         z-index: 1000;
-        background-color: #fff;
+        transform: translateX(-100vw);
+        transition: transform 0.3s, opacity 0.3s;
 
         &--visible {
-            display: block;
+            transform: translateX(0);
+            opacity: 1;
         }
+
+    }
+
+    &__article-backdrop {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #00000055;
+        transform: translateX(100vw);
+        pointer-events: none;
+    } 
+
+    &__article-container--visible &__article-backdrop {
+        transform: translateX(0);
+        transition: transform 0.3s;
+        pointer-events: all;
+    }
+
+    &__article-content {
+        background-color: #fff;
+        position: relative;
+        width: 100%;
+        max-width: 1024px;
+        height: 100%;
+    }
+
+    &__article-close-btn {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    &__article {
+        max-width: 800px;
+        width: 100%;
+        margin: 0 auto;
+        box-sizing: border-box;
+        padding: 20px;
+
     }
 
     &__sidepanel {

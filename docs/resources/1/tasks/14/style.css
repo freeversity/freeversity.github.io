@@ -1,0 +1,26 @@
+body {
+  width: 250px;
+  padding: 0;
+
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  color: #000000;
+}
+
+.large {
+  font-size: 20px;
+}
+
+.red {
+  color: red;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.bordered {
+  padding: 5px;
+  border: 1px solid #000000;
+}

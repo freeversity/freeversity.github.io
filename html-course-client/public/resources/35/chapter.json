@@ -1,0 +1,17 @@
+{
+    "baseUrl": "/resources/35/assets/",
+    "title": "Advanced Backgrounds and Borders",
+    "tasks": [
+        {
+            "id": 24,
+            "type": "challenge",
+            "entry": "/resources/35/tasks/24/task.json",
+            "name": "sea-wolf"
+        }, {
+            "id": 33,
+            "type": "challenge",
+            "entry": "/resources/35/tasks/33/task.json",
+            "name": "jewel-work"
+        }
+    ]
+}

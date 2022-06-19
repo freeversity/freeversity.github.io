@@ -1,0 +1,14 @@
+{
+    "assertions": [
+        {
+            "title": "Удалите атрибут `href` у ссылки `Вперёд`.",
+            "name": "removeHrefAttrFromForwardLink",
+            "expect": "expect(document.querySelector('.pagination a:last-child')).not.to.have.attr('href');"
+        },
+        {
+            "title": "Затем добавьте ей атрибут `title` c текстом `Фото в галерее закончились`.",
+            "name": "addTitleAttrToForwardLink",
+            "expect": "expect(document.querySelector('.pagination a:last-child')).to.have.attr('title', 'Фото в галерее закончились');"
+        }
+    ]
+}

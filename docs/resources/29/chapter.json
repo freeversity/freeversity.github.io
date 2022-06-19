@@ -1,0 +1,17 @@
+{
+    "baseUrl": "/resources/29/assets/",
+    "title": "Decorative Elements",
+    "tasks": [
+        {
+            "id": 9,
+            "type": "challenge",
+            "entry": "/resources/29/tasks/9/task.json",
+            "name": "course-card"
+        }, {
+            "id": 18,
+            "type": "challenge",
+            "entry": "/resources/29/tasks/18/task.json",
+            "name": "post-anounce"
+        }
+    ]
+}

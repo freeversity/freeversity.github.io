@@ -1,0 +1,63 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+}
+
+body {
+  min-width: 550px;
+  min-height: 250px;
+  padding: 10px;
+}
+
+.cards {
+  position: relative;
+  width: 380px;
+  text-align: left;
+}
+
+.cards li {
+  width: 37px;
+  height: 55px;
+}
+
+.cards li::before {
+  font-family: "Courier", monospace;
+}
+
+selector {
+  margin-left: -20px;
+}
+
+selector {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: block;
+  width: 37px;
+  height: 55px;
+  border: 1px dashed #33bb33;
+  border-radius: 5px;
+}
+
+selector {
+  background-color: #ffcc33;
+}
+
+selector {
+  background-color: #0099ff;
+}
+
+selector {
+  background-color: #ff3300;
+}
+
+selector {
+  background-color: #339933;
+}
+
+selector {
+  background-color: #996666;
+}

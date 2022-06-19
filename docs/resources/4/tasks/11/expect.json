@@ -1,0 +1,21 @@
+{
+    "assertions": [
+        {
+            "title": "Задайте ширину `width=\"250\"` и высоту `height=\"120\"` первой картинке.",
+            "name": "setWidth250AndHeight250ToFirstImg",
+            "expect": "expect(document.querySelector('img[src=\"files/gifka.gif\"]')).to.have.attr('width', '250');expect(document.querySelector('img[src=\"files/gifka.gif\"]')).to.have.attr('height', '120');"
+        },
+        {
+            "title": "Затем высоту `250` второй картинке.",
+            "name": "setHeight250ToSecondImg",
+            "expect": "expect(document.querySelector('img[src=\"files/portrait.png\"]')).to.have.attr('height', '250');"
+        },
+        {
+            "title": "А третьей ширину `250`",
+            "name": "setWidth250ToThirdImg",
+            "expect": "expect(document.querySelector('img[src=\"files/instructor-keks.jpg\"]')).to.have.attr('width', '250');"
+        }
+    ]
+}
+
+

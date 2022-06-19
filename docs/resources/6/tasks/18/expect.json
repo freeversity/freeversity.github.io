@@ -1,0 +1,21 @@
+{
+    "introTitle": "Для блока footer задайте:",
+    "intro": "setPropertiesForFooter",
+    "assertions": [
+        {
+            "title": "цвет текста `color` со значением `#aaaaaa`,",
+            "name": "setFooterColorToAAA",
+            "expect": "expect(document.querySelector('footer')).to.have.css('color', '#aaaaaa');"
+        },
+        {
+            "title": "рамку сверху `border-top` со значением `1px solid #aaaaaa`,",
+            "name": "setFooterBorderTopTo1PxSolidAAA",
+            "expect": "expect(document.querySelector('footer')).to.have.css('borderTop', '1px solid #aaaaaa');"
+        },
+        {
+            "title": "и внутренний отступ сверху `padding-top` со значением `10px`",
+            "name": "setFooterPaddingTopTo10px",
+            "expect": "expect(document.querySelector('footer')).to.have.css('paddingTop', '10px');"
+        }
+    ]
+}

@@ -1,0 +1,20 @@
+{
+    "assertions": [
+        {
+            "title": "Первому диву с классом `skills-level` задайте атрибут `style` со значением `width: 60%;`,",
+            "name": "setWidth60PercToFirstSkillsLevelDiv",
+            "expect": "expect(document.querySelector('.skills dd:first-of-type .skills-level')).to.have.style('width', '60%');"
+        },
+        {
+            "title": "второму диву — со значением `width: 20%;`,",
+            "name": "setWidth20PercToSecondSkillsLevelDiv",
+            "expect": "expect(document.querySelector('.skills dd:nth-of-type(2) .skills-level')).to.have.style('width', '20%');"
+        },
+        {
+            "title": "а третьему диву — со значением `width: 10%;`",
+            "name": "setWidth10PercToThirdSkillsLevelDiv",
+            "expect": "expect(document.querySelector('.skills dd:nth-of-type(3) .skills-level')).to.have.style('width', '10%');"
+        }
+    ]
+}
+

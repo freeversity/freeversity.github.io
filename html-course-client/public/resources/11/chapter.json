@@ -1,0 +1,22 @@
+{
+    "baseUrl": "/resources/11/assets/",
+    "title": "Tables Introduction",
+    "tasks": [
+        {
+            "id": 9,
+            "type": "challenge",
+            "entry": "/resources/9/tasks/9/task.json",
+            "name": "simple-but-neat-table"
+        }, {
+            "id": 17,
+            "type": "challenge",
+            "entry": "/resources/9/tasks/17/task.json",
+            "name": "a-bit-more-complex-table"
+        }, {
+            "id": 23,
+            "type": "challenge",
+            "entry": "/resources/9/tasks/23/task.json",
+            "name": "final-table"
+        }
+    ]
+}

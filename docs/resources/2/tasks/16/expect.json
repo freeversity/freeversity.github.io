@@ -1,0 +1,9 @@
+{
+    "assertions": [
+        {
+            "title": "Замените адрес подключённого файла стилей на `outlines-alternate.css`",
+            "name": "replaceStylesLinkToOutlinesAlternate",
+            "expect": "expect(document.querySelector('link[rel=stylesheet]')).to.have.attr('href', 'outlines-alternate.css');expect(document.querySelector('link[rel=stylesheet]')).not.to.have.attr('href', 'outlines.css')"
+        }
+    ]
+}

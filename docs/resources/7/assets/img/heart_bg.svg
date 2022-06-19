@@ -1,0 +1,21 @@
+<svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_i)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0 40.1443C0 3.69607 37.9329 -11.4476 60 9.5508C82.0671 -11.4476 120 3.69607 120 40.1443C120 93.1855 60 120 60 120C60 120 0 93.1855 0 40.1443Z" fill="#F5C7E8"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M115.779 63.8749C102.12 101.176 60 120 60 120C60 120 45.3918 113.472 30.5916 100.485C43.1004 76.2927 66.5878 60 93.5 60C101.273 60 108.76 61.359 115.779 63.8749Z" fill="#FCB4E8"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M48 50.0002C70.0914 50.0002 88 30.1018 88 5.55577C88 3.76367 87.9045 1.99633 87.7189 0.25971C78.1038 -0.929536 68.0074 1.93118 60 9.5508C44.5007 -5.19789 21.1744 -2.11676 8.66223 13.653C12.0882 34.3327 28.3974 50.0002 48 50.0002Z" fill="#FCD6F1"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M50.6311 114.994C36.1782 106.409 9.30945 86.8021 1.91254 56.3283C7.57195 52.3215 14.292 50 21.5 50C41.6584 50 58 68.1573 58 90.5556C58 99.7329 55.2565 108.198 50.6311 114.994Z" fill="#FCCFEF"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M51.8608 3.72885C48.2133 18.2421 36.2256 28.8889 22 28.8889C18.9423 28.8889 15.9881 28.397 13.1978 27.4806C11.0369 23.255 9.48133 18.5972 8.66223 13.653C19.1309 0.45877 37.1698 -3.853 51.8608 3.72885Z" fill="#FDE3F6"/>
+</g>
+<defs>
+<filter id="filter0_i" x="0" y="0" width="120" height="122" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="2"/>
+<feGaussianBlur stdDeviation="4"/>
+<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.854861 0 0 0 0 0.228472 0 0 0 0 0.683649 0 0 0 0.5 0"/>
+<feBlend mode="normal" in2="shape" result="effect1_innerShadow"/>
+</filter>
+</defs>
+</svg>

@@ -1,0 +1,23 @@
+a {
+    color:#3f445a;
+}
+
+a:not([href]) {
+    background-color:#e84e1b;
+    color:#5d1e09;
+}
+
+a[href="img/sleeping-cat.jpg"] {
+    background-color:#36f;
+    color:#001a66;
+}
+
+a[href="https://www.catsthemusical.com/"] {
+    background-color:#90f;
+    color:#3d0066;
+}
+
+a[href="https://keks-books.ru/the-unadulterated-cat.pdf"][download] {
+    background-color:#f90;
+    color:#663d00;
+}

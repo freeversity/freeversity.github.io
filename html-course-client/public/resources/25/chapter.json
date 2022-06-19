@@ -1,0 +1,17 @@
+{
+    "baseUrl": "/resources/25/assets/",
+    "title": "Box Shadow",
+    "tasks": [
+        {
+            "id": 9,
+            "type": "challenge",
+            "entry": "/resources/25/tasks/9/task.json",
+            "name": "bright-shadows"
+        }, {
+            "id": 17,
+            "type": "challenge",
+            "entry": "/resources/25/tasks/17/task.json",
+            "name": "sinister-shadows"
+        }
+    ]
+}

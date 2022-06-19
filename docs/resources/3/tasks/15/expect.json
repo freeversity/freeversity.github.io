@@ -1,0 +1,29 @@
+{
+    "assertions": [
+        {
+            "title": "Оберните в тег `<time>` текст 03:00",
+            "name": "wrap3AmWithTimeTag",
+            "expect": "expect(document.querySelector('article h1 + time')).to.have.rendered.text('03:00')"
+        },
+        {
+            "title": "а затем текст `сегодня ночью`",
+            "name": "wrapTonightWithTimeTag",
+            "expect": "expect(document.querySelector('article p:first-of-type time')).to.have.rendered.text('сегодня ночью')"
+
+        },
+        {
+            "title": "Добавьте первому `<time>` атрибут `datetime` со значением `2018-11-27T03:00`",
+            "name": "addDateTimeAttrToFirstTimeTag",
+            "expect": "expect(document.querySelector('article h1 + time')).to.have.attr('datetime', '2018-11-27T03:00');"
+
+        },
+        {
+            "title": "а второму — со значением `2018-11-27`",
+            "name": "addDateTimeAttrToSecondTimeTag",
+            "expect": "expect(document.querySelector('article p:first-of-type time')).to.have.attr('datetime', '2018-11-27');"
+        }
+    ]
+}
+
+
+

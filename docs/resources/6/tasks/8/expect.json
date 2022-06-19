@@ -1,0 +1,14 @@
+{
+    "assertions": [
+        {
+            "title": "Изображение `avatar` оберните в `div` с классом `avatar-container`,",
+            "name": "wrapAvatarImgWithAvatarContainerDiv",
+            "expect": "expect(document.querySelector('.avatar-container .avatar')).to.exist;"
+        },
+        {
+            "title": "а затем для класса `.avatar-container` задайте горизонтальное выравнивание по центру.",
+            "name": "setAvatarContainerTextAlignToCenter",
+            "expect": "expect(document).to.have.cssRule('.avatar-container', 'textAlign', 'center');"
+        }
+    ]
+}

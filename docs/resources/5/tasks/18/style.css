@@ -1,0 +1,11 @@
+ul {
+  font-size: 18px;
+}
+
+ul li {
+  border: 1px solid #000000;
+}
+
+ul p {
+  color: red;
+}

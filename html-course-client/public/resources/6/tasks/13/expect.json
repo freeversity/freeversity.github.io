@@ -1,0 +1,21 @@
+{
+    "assertions": [
+        {
+            "title": "Для заголовка `h1` задайте свойство `white-space` со значением `pre-wrap`,",
+            "name": "setH1TagWhiteSpaceToPreWrap",
+            "expect": "expect(document).to.have.cssRule('h1', 'whiteSpace', 'pre-wrap');"
+        },
+        {
+            "title": "затем в правиле для класса `.nowrap` — со значением `nowrap`,",
+            "name": "setNoWrapClassWhiteSpaceToNowrap",
+            "expect": "expect(document).to.have.cssRule('.nowrap', 'whiteSpace', 'nowrap');"
+        },
+        {
+            "title": "а в правиле `.like-pre` — со значением `pre`.",
+            "name": "setLikePreClassWhiteSpaceToPre",
+            "expect": "expect(document).to.have.cssRule('.like-pre', 'whiteSpace', 'pre');"
+        }
+    ]
+}
+
+

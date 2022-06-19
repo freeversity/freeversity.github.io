@@ -1,0 +1,15 @@
+{
+    "assertions": [
+        {
+            "title": "В каждом теге `dd` оберните содержимое в `<div>` с классом `skills-level`.",
+            "name": "wrapEachDdContentWithDivSkillsLevel",
+            "expect": "expect(document.querySelectorAll('.skills dd .skills-level')).to.have.length(3);"
+        },
+        {
+            "title": "В стилях раскомментируйте правило с селектором `.skills-level`.",
+            "name": "uncommentSkillsLevelRule",
+            "expect": "expect(document).to.have.cssRule('.skills-level');"
+        }
+    ]
+}
+

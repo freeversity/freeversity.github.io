@@ -1,0 +1,26 @@
+{
+    "assertions": [
+        {
+            "title": "Текст `День первый. Как я забыл покормить кота` сделайте заголовком первого уровня.",
+            "name": "makeTheFirstSentenceHeading",
+            "expect": "expect(document.querySelector('main > article h1:first-child')).to.have.rendered.text('День первый. Как я забыл покормить кота')"
+        },
+        {
+            "title": "В шапку сайта перед блоком навигации добавьте абзац с текстом `Блог`.",
+            "name": "addBlogParagraphToNav",
+            "expect": "expect(document.querySelector('header > p:first-child')).to.have.rendered.text('Блог')"
+        },
+        {
+            "title": "Разбейте оставшийся текст поста на два абзаца. В первый абзац включите текст, начинающийся с фразы `Кто бы мог` и заканчивающийся на слове `поговорить`.",
+            "name": "addTheFirstParagraphWithText",           
+            "expect": "expect(document.querySelector('main > article p:first-of-type')).to.have.rendered.text('Кто бы мог подумать, что семантика это так важно, мне срочно нужно было об этом поговорить.')"
+        },
+        {
+            "title": "Во второй абзац включите текст, начинающийся с `Взгляд упал` и заканчивающийся на `И покормить кота`.",
+            "name": "addTheSecondParagraphWithText",
+            "expect": "expect(document.querySelector('main > article p:nth-of-type(2)')).to.have.rendered.text('Взгляд упал на кота. Кот издал настойчивое «Мяу». И я понял — пришло время для первой записи в блог. И покормить кота.')"
+        }
+    ]
+}
+
+

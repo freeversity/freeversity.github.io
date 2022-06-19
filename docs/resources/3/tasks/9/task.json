@@ -1,0 +1,8 @@
+{
+    "id": 9,
+    "name": "code-code-fragment",
+    "htmlEntry": "day-6.html",
+    "cssEntry": "style.css",
+    "articleEntry": "article.md",
+    "expectEntry": "expect.json"
+}

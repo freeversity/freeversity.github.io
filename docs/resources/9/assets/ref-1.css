@@ -1,0 +1,45 @@
+.tabs-list {
+    margin: 0;
+    padding: 0;
+    width: 180px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .active {
+    align-self: flex-end;  
+  }
+  
+  .content {
+    width: 280px;
+    padding: 20px 30px;  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .title {
+    margin: 15px 0 5px;
+    order: 0;
+  }
+  
+  .image {
+    order: -1;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .author {
+    order: -1;
+    align-self: flex-start;  
+    margin-bottom: 15px;
+  }
+  
+  .message {
+    margin-top: 0;
+    margin-bottom: 20px;  
+  }
+  
+  
+  

@@ -1,0 +1,15 @@
+{
+    "assertions": [
+        {
+            "title": "Для класса `.page-title` задайте насыщенность `font-weight` со значением `bold`,",
+            "name": "setPageTitleFontWeightToBold",
+            "expect": "expect(document).to.have.cssRule('.page-title', 'fontWeight', 'bold');"
+        },
+        {
+            "title": "а для `h1` — со значением `400`.",
+            "name": "setH1FontWeightTo400",
+            "expect": "expect(document).to.have.cssRule('h1', 'fontWeight', '400');"
+        }
+    ]
+}
+

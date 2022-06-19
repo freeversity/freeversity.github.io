@@ -1,0 +1,22 @@
+{
+    "baseUrl": "/resources/36/assets/",
+    "title": "Advanced Text Styling",
+    "tasks": [
+        {
+            "id": 9,
+            "type": "challenge",
+            "entry": "/resources/36/tasks/9/task.json",
+            "name": "psycodelic-shadow"
+        }, {
+            "id": 25,
+            "type": "challenge",
+            "entry": "/resources/36/tasks/25/task.json",
+            "name": "why-so-serious"
+        }, {
+            "id": 26,
+            "type": "challenge",
+            "entry": "/resources/33/tasks/26/task.json",
+            "name": "playing-with-fonts"
+        }
+    ]
+}

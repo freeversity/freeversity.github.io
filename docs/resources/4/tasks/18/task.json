@@ -1,0 +1,9 @@
+{
+    "id": 18,
+    "name": "art-references",
+    "htmlEntry": "index.html",
+    "cssEntry": "style.css",
+    "cssReadonly": true,
+    "articleEntry": "article.md",
+    "refHtmlEntry": "ref.html"
+}

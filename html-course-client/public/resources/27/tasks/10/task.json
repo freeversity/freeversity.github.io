@@ -1,0 +1,8 @@
+{
+    "id": 10,
+    "name": "some-filters",
+    "htmlEntry": "index.html",
+    "cssEntry": "style.css",
+    "articleEntry": "article.md",
+    "refHtmlEntry": "ref.html"
+}

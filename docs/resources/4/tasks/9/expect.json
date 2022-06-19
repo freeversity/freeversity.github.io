@@ -1,0 +1,9 @@
+{
+    "assertions": [
+        {
+            "title": "Вставьте картинку с адресом `files/portrait.png` в запись блога.",
+            "name": "addPngPictureToTheArticle",
+            "expect": "expect(document.querySelector('article p:nth-of-type(2) + img')).to.have.attr('src', 'files/portrait.png');"
+        }
+    ]
+}

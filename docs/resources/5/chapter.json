@@ -1,0 +1,122 @@
+{
+    "baseUrl": "/resources/5/assets/",
+    "title": "CSS Basics",
+    "tasks": [
+        {
+            "id": 1,
+            "type": "task",
+            "entry": "/resources/5/tasks/1/task.json",
+            "name": "css-rules"
+        },
+        {
+            "id": 2,
+            "type": "task",
+            "entry": "/resources/5/tasks/2/task.json",
+            "name": "selectors"
+        },
+        {
+            "id": 3,
+            "type": "task",
+            "entry": "/resources/5/tasks/3/task.json",
+            "name": "properties-and-values"
+        },
+        {
+            "id": 4,
+            "type": "task",
+            "entry": "/resources/5/tasks/4/task.json",
+            "name": "inheritance"
+        },
+        {
+            "id": 5,
+            "type": "task",
+            "entry": "/resources/5/tasks/5/task.json",
+            "name": "inherited-properties"
+        },
+        {
+            "id": 6,
+            "type": "task",
+            "entry": "/resources/5/tasks/6/task.json",
+            "name": "uninherited-properties"
+        },
+        {
+            "id": 7,
+            "type": "task",
+            "entry": "/resources/5/tasks/7/task.json",
+            "name": "combined-properties"
+        },
+        {
+            "id": 8,
+            "type": "task",
+            "entry": "/resources/5/tasks/8/task.json",
+            "name": "relative-and-absolute-values"
+        },
+        {
+            "id": 9,
+            "type": "task",
+            "entry": "/resources/5/tasks/9/task.json",
+            "name": "tags-and-classes-selectors"
+        },
+        {
+            "id": 10,
+            "type": "task",
+            "entry": "/resources/5/tasks/10/task.json",
+            "name": "nested-selectors"
+        },
+        {
+            "id": 11,
+            "type": "task",
+            "entry": "/resources/5/tasks/11/task.json",
+            "name": "default-styles"
+        },
+        {
+            "id": 12,
+            "type": "task",
+            "entry": "/resources/5/tasks/12/task.json",
+            "name": "cascade"
+        },
+        {
+            "id": 13,
+            "type": "task",
+            "entry": "/resources/5/tasks/13/task.json",
+            "name": "conflicting-properties"
+        },
+        {
+            "id": 14,
+            "type": "task",
+            "entry": "/resources/5/tasks/14/task.json",
+            "name": "multiple-classes"
+        },
+        {
+            "id": 15,
+            "type": "task",
+            "entry": "/resources/5/tasks/15/task.json",
+            "name": "inline-style-attribute"
+        },
+        {
+            "id": 16,
+            "type": "challenge",
+            "entry": "/resources/5/tasks/16/task.json",
+            "name": "travel-gallery-styling"
+        }, {
+            "id": 17,
+            "type": "task",
+            "entry": "/resources/5/tasks/17/task.json",
+            "name": "stylization"
+        }, {
+            "id": 18,
+            "type": "challenge",
+            "entry": "/resources/5/tasks/18/task.json",
+            "name": "businesses-list"
+        }, {
+            "id": 19,
+            "type": "challenge",
+            "entry": "/resources/5/tasks/19/task.json",
+            "name": "classics"
+        }, {
+            "id": 20,
+            "type": "challenge",
+            "entry": "/resources/5/tasks/20/task.json",
+            "name": "new-travel-map-design"
+        }
+    ]
+}

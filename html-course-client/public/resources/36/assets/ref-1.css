@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    width: 570px;
+    background-color: #111111;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 200px;
+    font-family: "Arial", sans-serif;
+}
+
+p {
+    margin: 0;
+    padding-top: 60px;
+    text-align: center;
+}
+
+span {
+    margin-left: 60px;
+}
+
+span:first-child {
+    margin-left: 0;
+    text-shadow: 
+    5px -5px 0 #7fdbff,
+    10px -10px 0 #39cccc,
+    15px -15px 0 #3d9970,
+    20px -20px 0 #2ecc40,
+    25px -25px 0 #01ff70,
+    30px -30px 0 #ffdc00,
+    35px -35px 0 #ff851b,
+    40px -40px 0 #ff4136,
+    45px -45px 0 #f012be,
+    50px -50px 0 #b10dc9;
+}
+
+span:nth-child(2) {
+    text-shadow: 
+    0px -5px 0 #7fdbff,
+    0px -10px 0 #39cccc,
+    0px -15px 0 #3d9970,
+    0px -20px 0 #2ecc40,
+    0px -25px 0 #01ff70,
+    0px -30px 0 #ffdc00,
+    0px -35px 0 #ff851b,
+    0px -40px 0 #ff4136,
+    0px -45px 0 #f012be,
+    0px -50px 0 #b10dc9;
+}
+
+span:nth-child(3) {
+    text-shadow: 
+    -5px -5px 0 #7fdbff,
+    -10px -10px 0 #39cccc,
+    -15px -15px 0 #3d9970,
+    -20px -20px 0 #2ecc40,
+    -25px -25px 0 #01ff70,
+    -30px -30px 0 #ffdc00,
+    -35px -35px 0 #ff851b,
+    -40px -40px 0 #ff4136,
+    -45px -45px 0 #f012be,
+    -50px -50px 0 #b10dc9;
+}

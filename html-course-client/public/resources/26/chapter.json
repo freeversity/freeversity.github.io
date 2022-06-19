@@ -1,0 +1,27 @@
+{
+    "baseUrl": "/resources/26/assets/",
+    "title": "Linear Gradients",
+    "tasks": [
+        {
+            "id": 6,
+            "type": "challenge",
+            "entry": "/resources/26/tasks/6/task.json",
+            "name": "app-icons"
+        }, {
+            "id": 11,
+            "type": "challenge",
+            "entry": "/resources/26/tasks/11/task.json",
+            "name": "flags"
+        }, {
+            "id": 22,
+            "type": "challenge",
+            "entry": "/resources/26/tasks/22/task.json",
+            "name": "suriken-ornament"
+        }, {
+            "id": 23,
+            "type": "challenge",
+            "entry": "/resources/26/tasks/23/task.json",
+            "name": "satelites"
+        }
+    ]
+}

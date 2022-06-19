@@ -1,0 +1,9 @@
+{
+    "assertions": [
+        {
+            "title": "Оберните весь текст после первого абзаца в `<pre>`",
+            "name": "wrapAllTextInPre",
+            "expect": "expect(document.querySelector('article p:first-of-type + pre')).to.contain.text(' /\u005C\u005C_/\u005C\u005C\u005Cn( o.o )\u005Cn = ^ =\u005Cn')"
+        }
+    ]
+}

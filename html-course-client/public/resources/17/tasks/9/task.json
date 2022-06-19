@@ -1,0 +1,8 @@
+{
+    "id": 9,
+    "name": "the-first-deal",
+    "htmlEntry": "index.html",
+    "cssEntry": "style.css",
+    "articleEntry": "article.md",
+    "refHtmlEntry": "ref.html"
+}

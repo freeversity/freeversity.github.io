@@ -1,0 +1,9 @@
+{
+    "assertions": [
+        {
+            "title": "Добавьте аватарку `<img src=\"img/raccoon.jpg\">` на главную страницу, в самое начало основного содержания.",
+            "name": "addRacoonAvatarToTheVeryBegginningOfThePage",
+            "expect": "expect(document.querySelector('main img:first-child')).to.have.attr('src', 'img/raccoon.jpg')"
+        }
+    ]
+}

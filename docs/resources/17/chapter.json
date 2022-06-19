@@ -1,0 +1,22 @@
+{
+    "baseUrl": "/resources/17/assets/",
+    "title": "Advanced Selectors",
+    "tasks": [
+        {
+            "id": 9,
+            "type": "challenge",
+            "entry": "/resources/17/tasks/9/task.json",
+            "name": "the-first-deal"
+        }, {
+            "id": 19,
+            "type": "challenge",
+            "entry": "/resources/17/tasks/19/task.json",
+            "name": "pseudo-elements"
+        }, {
+            "id": 20,
+            "type": "challenge",
+            "entry": "/resources/17/tasks/20/task.json",
+            "name": "second-deal"
+        }
+    ]
+}

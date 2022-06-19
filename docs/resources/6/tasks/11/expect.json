@@ -1,0 +1,21 @@
+{
+    "assertions": [
+        {
+            "title": "В правиле для `del` задайте цвет текста `color` со значением `#ff4400`,",
+            "name": "setColorRedForDelTag",
+            "expect": "expect(document).to.have.cssRule('del', 'color', '#ff4400'); "
+        },
+        {
+            "title": "затем для `ins` — со значением `rgb(105, 178, 83)`.",
+            "name": "setColorGreenForInsTag",
+            "expect": "expect(document).to.have.cssRule('ins', 'color', 'rgb(105, 178, 83)'); "
+        },
+        {
+            "title": "А в правиле для `.blog-navigation` поменяйте значение фонового цвета `background-color` на `rgba(68, 112, 196, 0.7)`.",
+            "name": "setBackgroundColorToBlueForBlogNavigationClass",
+            "expect": "expect(document).to.have.cssRule('.blog-navigation', 'backgroundColor', 'rgba(68, 112, 196, 0.7)'); "
+        }
+    ]
+}
+
+

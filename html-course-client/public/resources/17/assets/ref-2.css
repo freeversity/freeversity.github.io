@@ -1,0 +1,77 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+  line-height: 30px;
+}
+
+body {
+  min-width: 550px;
+  min-height: 290px;
+  padding: 10px;
+}
+
+.two-cards {
+  width: 350px;
+  height: 250px;
+  padding: 10px;
+  text-align: center;
+}
+
+.two-cards div {
+  position: relative;
+  display: inline-block;
+  width: 120px;
+  height: 180px;
+  margin: 0 10px;
+  margin-top: 30px;
+  vertical-align: middle;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.8);
+  background-repeat: no-repeat;
+  background-size: 50px 50px;
+  background-position: 50% 50%;
+}
+
+.two-cards div::before,
+.two-cards div::after {
+  position: absolute;
+  width: 20px;
+  height: 50px;
+  font-size: 25px;
+  font-weight: bold;
+  background-position: 50% 100%;
+  background-size: 25px auto;
+  background-repeat: no-repeat;
+}
+
+.two-cards div::before {
+  top: 5px;
+  left: 5px;
+}
+
+.two-cards div::after {
+  transform: rotate(180deg);
+  bottom: 5px;
+  right: 5px;
+}
+
+.ace-heart {
+  color: red;
+}
+
+.ace-heart, 
+.ace-heart::before, 
+.ace-heart::after {
+  background-image: url("heart.svg");
+  content: "A";
+}
+
+.two-spade,
+.two-spade::before, 
+.two-spade::after {
+  background-image: url("spade.svg");
+  content: "2";
+}

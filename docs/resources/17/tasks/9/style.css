@@ -1,0 +1,46 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+}
+
+body {
+  min-width: 550px;
+  min-height: 250px;
+  padding: 10px;
+}
+
+.cards {
+  width: 500px;
+}
+
+.cards li::before {
+  font-family: "Courier", monospace;
+}
+
+selector {
+  margin-left: -15px;
+}
+
+selector {
+  width: 36px;
+  height: 54px;
+}
+
+selector {
+  margin-right: 30px;
+  margin-left: 15px;
+}
+
+selector {
+  background-color: #0099ff;
+}
+
+selector {
+  background-color: #ff3300;
+}
+
+selector {
+  background-color: #339933;
+}

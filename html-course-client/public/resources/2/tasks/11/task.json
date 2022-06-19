@@ -1,0 +1,7 @@
+{
+    "id": 11,
+    "name": "h1-h6-headings-in-html",
+    "htmlEntry": "index.html",
+    "articleEntry": "article.md",
+    "expectEntry": "expect.json"
+}

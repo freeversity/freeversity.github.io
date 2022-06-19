@@ -1,0 +1,8 @@
+{
+    "id": 7,
+    "name": "pre-preformatted-text",
+    "htmlEntry": "day-5.html",
+    "cssEntry": "style.css",
+    "articleEntry": "article.md",
+    "expectEntry": "expect.json"
+}

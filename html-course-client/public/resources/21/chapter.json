@@ -1,0 +1,22 @@
+{
+    "baseUrl": "/resources/21/assets/",
+    "title": "Advanced Flexbox",
+    "tasks": [
+        {
+            "id": 6,
+            "type": "challenge",
+            "entry": "/resources/21/tasks/6/task.json",
+            "name": "cubism"
+        }, {
+            "id": 14,
+            "type": "challenge",
+            "entry": "/resources/21/tasks/14/task.json",
+            "name": "coefficients-master"
+        }, {
+            "id": 28,
+            "type": "challenge",
+            "entry": "/resources/21/tasks/28/task.json",
+            "name": "flexible-flow"
+        }
+    ]
+}

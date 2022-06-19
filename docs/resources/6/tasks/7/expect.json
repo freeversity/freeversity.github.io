@@ -1,0 +1,20 @@
+{
+    "assertions": [
+        {
+            "title": "Для класса `.page-title` задайте горизонтальное выравнивание `text-align` со значением `right`,",
+            "name": "setPageTitleTextAlignToRight",
+            "expect": "expect(document).to.have.cssRule('.page-title', 'textAlign', 'right');"
+        },
+        {
+            "title": "затем смените значение на `left` (или же совсем удалите свойство),",
+            "name": "setPageTitleTextAlignToLeft",
+            "expect": "expect(document).to.have.cssRule('.page-title', 'textAlign', 'left');"
+        },
+        {
+            "title": "а потом поменяйте значение на `center`.",
+            "name": "setPageTitleTextAlignToCenter",
+            "expect": "expect(document).to.have.cssRule('.page-title', 'textAlign', 'center');"
+        }
+    ],
+    "strict": true
+}

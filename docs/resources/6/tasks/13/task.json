@@ -1,0 +1,8 @@
+{
+    "id": 13,
+    "name": "white-space-css-prop",
+    "htmlEntry": "day-6.html",
+    "cssEntry": "style.css",
+    "articleEntry": "article.md",
+    "expectEntry": "expect.json"
+}

@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+  }
+  
+  .doors-list {
+    display: flex;
+    justify-content: center;
+    padding: 20px 10px 40px;
+    margin: 0;
+  }
+  
+  .door {
+    flex-basis: 100px;
+    margin: 0 5px;
+  }
+  
+  .container {
+    width: 550px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .note-1 {
+    flex-basis: 150px;  
+    margin-right: 25px
+  }
+  
+  .note-2 {
+    flex-basis: 200px;  
+  }
+  
+  .note-3 {
+    flex-basis: 100px;  
+    margin-left: auto;
+    align-self: flex-end;
+  }
+  

@@ -1,0 +1,11 @@
+svg {
+    background-color: #ffffff;
+    background-image: url("branch.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    border: 1px solid #dddddd;
+}
+
+#leaf {
+    transform: translate(160px, 90px) rotate(60deg)
+}

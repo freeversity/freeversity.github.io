@@ -1,0 +1,16 @@
+{
+    "intro": "setStylesToBodyAttribute",
+    "introTitle": "Для тега body пропишите в атрибуте style:",
+    "assertions": [
+        {
+            "title": "цвет текста `color: #000000;`",
+            "name": "setColorBlack",
+            "expect": "expect(document.body).to.have.style('color', '#000000')"
+        },
+        {
+            "title": "размер шрифта `font-size: 14px;`",
+            "name": "setFontSize14",
+            "expect": "expect(document.body).to.have.style('font-size', '14px')"
+        }
+    ]
+}

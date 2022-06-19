@@ -1,0 +1,8 @@
+{
+    "id": 6,
+    "name": "dl-dt-dd-definition-lists",
+    "htmlEntry": "day-4.html",
+    "cssEntry": "style.css",
+    "articleEntry": "article.md",
+    "expectEntry": "expect.json"
+}

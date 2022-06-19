@@ -1,0 +1,21 @@
+/* Используемые цвета:
+
+#777777
+#ffffff
+#fffebc
+#b2fdd0
+#ffbaba
+
+*/
+
+.formula {
+  margin: 10px;
+  width: 500px;
+  border-collapse: collapse;
+}
+
+.formula p {
+  margin: 0;
+  padding: 10px;
+  font-size: 20px;
+}

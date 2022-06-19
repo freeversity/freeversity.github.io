@@ -1,0 +1,8 @@
+{
+    "id": 13,
+    "name": "br-line-break",
+    "htmlEntry": "day-7.html",
+    "cssEntry": "style.css",
+    "articleEntry": "article.md",
+    "expectEntry": "expect.json"
+}

@@ -1,0 +1,8 @@
+{
+    "id": 10,
+    "name": "combining-code-and-pre",
+    "htmlEntry": "day-6.html",
+    "cssEntry": "style.css",
+    "articleEntry": "article.md",
+    "expectEntry": "expect.json"
+}

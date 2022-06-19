@@ -1,0 +1,27 @@
+{
+    "baseUrl": "/resources/28/assets/",
+    "title": "Creating a Menu",
+    "tasks": [
+        {
+            "id": 9,
+            "type": "challenge",
+            "entry": "/resources/28/tasks/9/task.json",
+            "name": "vertical-menu"
+        }, {
+            "id": 15,
+            "type": "challenge",
+            "entry": "/resources/28/tasks/15/task.json",
+            "name": "multilevel-menu"
+        }, {
+            "id": 20,
+            "type": "challenge",
+            "entry": "/resources/28/tasks/20/task.json",
+            "name": "horizontal-menu"
+        }, {
+            "id": 28,
+            "type": "challenge",
+            "entry": "/resources/28/tasks/28/task.json",
+            "name": "dropdown-menu"
+        }
+    ]
+}

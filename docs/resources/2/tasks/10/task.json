@@ -1,0 +1,7 @@
+{
+    "id": 10,
+    "name": "aside-content",
+    "htmlEntry": "day-1.html",
+    "articleEntry": "article.md",
+    "expectEntry": "expect.json"
+}

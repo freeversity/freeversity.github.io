@@ -1,0 +1,163 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 565px;
+  height: 315px;
+  background-image: url("cosmos.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.moon {
+  position: absolute;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  box-shadow: 0 0 5px white;
+}
+
+/*
+Смешиваемые цвета для спутников
+
+Cплошные фоны:
+
+1. спутник - ?
+background-color: #ffdc00;
+
+2. спутник - ?
+background-color: #dddddd;
+
+3. спутник - ?
+background-color: #dddddd;
+
+4. спутник - ?
+background-color: #dddddd;
+
+5. спутник - ?
+background-color: #dddddd;
+
+Градиенты:
+
+6. спутник - ?
+Градиент №1
+linear-gradient(#ffdc00, #ffffff)
+
+7. спутник - ?
+Градиент №2
+linear-gradient(
+  rgba(0, 116, 217, 0.5),
+  rgba(221, 221, 221, 0.75)
+)
+
+8. спутник - ?
+Градиент №3
+linear-gradient(
+  rgba(221, 221, 221, 0.5),
+  rgba(221, 221, 221, 0.75)
+)
+
+9. спутник - ?
+Градиент №4
+linear-gradient(
+  rgba(255, 133, 27, 0.75),
+  rgba(0, 0, 0, 0.75),
+  rgba(255, 133, 27, 0.75)
+)
+
+10. спутник - ?
+Градиент №5
+linear-gradient(
+  rgba(0, 116, 217, 0.5),
+  rgba(255, 133, 27, 0.25),
+  rgba(0, 116, 217, 0.5)
+)
+
+11. спутник - ?
+Градиент №6
+linear-gradient(
+  rgba(0, 116, 217, 0.5),
+  rgba(255, 255, 255, 0.25),
+  rgba(0, 116, 217, 0.5)
+)
+
+12. спутник - ?
+Градиент №7
+linear-gradient(
+  rgba(255, 133, 27, 0.5),
+  rgba(255, 220, 0, 0.25),
+  rgba(255, 255, 255, 0.5)
+)
+
+13. спутник - ?
+Градиент №8
+linear-gradient(
+  to right,
+  rgba(0, 116, 217, 0.5),
+  rgba(255, 133, 27, 0.25),
+  rgba(0, 116, 217, 0.5)
+)
+
+14. спутник - ?
+Градиент №9
+linear-gradient(
+  to right,
+  rgba(0, 116, 217, 0.5),
+  rgba(255, 255, 255, 0.25),
+  rgba(0, 116, 217, 0.5)
+)
+
+15. спутник - ?
+Градиент №10
+linear-gradient(
+  to right,
+  rgba(255, 133, 27, 0.5),
+  rgba(255, 220, 0, 0.25),
+  rgba(255, 255, 255, 0.5)
+)
+*/
+
+.luna {
+  top: 10px;
+  left: 10px;
+  background-color: transparent;
+  background-image: none;
+}
+
+.umbriel {
+  top: 10px;
+  left: 180px;
+  background-color: transparent;
+  background-image: none;
+}
+
+.titan {
+  top: 10px;
+  left: 350px;
+  background-color: transparent;
+  background-image: none;
+}
+
+.io {
+  top: 165px;
+  left: 10px;
+  background-color: transparent;
+  background-image: none;
+}
+
+.europa {
+  top: 165px;
+  left: 180px;
+  background-color: transparent;
+  background-image: none;
+}
+
+.triton {
+  top: 165px;
+  left: 350px;
+  background-color: transparent;
+  background-image: none;
+}

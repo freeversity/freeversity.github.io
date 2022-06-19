@@ -1,0 +1,28 @@
+svg {
+    border: 1px solid #dddddd;
+}
+
+circle:nth-of-type(1) {
+    fill: gold;  
+}
+
+circle:nth-of-type(2) {
+    fill: transparent;
+    stroke: tomato;
+    stroke-width: 20;
+    stroke-dasharray: 45;
+}
+
+circle:nth-of-type(3) {
+    fill: transparent;
+    stroke: darkorange;
+    stroke-width: 20;
+    stroke-dasharray: 45;
+    stroke-dashoffset: 45;
+}
+
+circle:nth-of-type(4) {
+    fill: gold;
+    stroke: yellowgreen;
+    stroke-width: 20px;
+}

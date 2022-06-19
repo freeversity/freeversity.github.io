@@ -1,0 +1,8 @@
+{
+    "id": 11,
+    "name": "tour-program",
+    "htmlEntry": "index.html",
+    "cssEntry": "style.css",
+    "articleEntry": "article.md",
+    "refHtmlEntry": "ref.html"
+}

@@ -1,0 +1,8 @@
+{
+    "id": 12,
+    "name": "using-margins-for-text-styling",
+    "htmlEntry": "day-2.html",
+    "cssEntry": "style.css",
+    "articleEntry": "article.md",
+    "expectEntry": "expect.json"
+}

@@ -1,0 +1,9 @@
+{
+    "assertions": [
+        {
+            "title": "В CSS-редакторе раскомментируйте правило для тега `nav`, удалив символы `/*` и `*/`",
+            "name": "uncommentStyleLink",
+            "expect": "expect(document).to.have.cssRule('nav', 'marginBottom', '30px'); expect(document).to.have.cssRule('nav', 'backgroundColor', '#4470c4');"
+        }
+    ]
+}

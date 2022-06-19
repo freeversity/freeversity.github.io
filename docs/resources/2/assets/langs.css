@@ -1,0 +1,24 @@
+p:lang(ru){
+    background-color:#85cf7d;
+    color:#204a1c
+}
+
+p:lang(en){
+    background-color:#e84e1b;
+    color:#5d1e09
+}
+
+p:lang(de){
+    background-color:#36f;
+    color:#001a66
+}
+
+p:lang(fi){
+    background-color:#90f;
+    color:#3d0066
+}
+
+p:lang(fr){
+    background-color:#f90;
+    color:#663d00
+}

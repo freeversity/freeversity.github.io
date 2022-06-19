@@ -9,11 +9,16 @@ export interface AppRouterProps {
 }
 
 const AppRouter: FC<AppRouterProps> = ({className}) => (
-    <BrowserRouter>
+  <BrowserRouter>
     <Routes>
-      <Route path='/chapters/:chapterId/*' element={<ChapterRouter className={className}/>} />
-      <Route path='/' element={<Summary className={className}/>} />
-      {/* <Route path='/' element={<Summary />} /> */}
+      <Route 
+        path='/chapters/:chapterId/*' 
+        element={<ChapterRouter className={className}/>}       
+      />
+      <Route 
+        path='/' 
+        element={<Summary className={className}/>} 
+      />
     </Routes>
   </BrowserRouter>
 );

@@ -1,0 +1,27 @@
+{
+    "assertions": [
+        {
+            "title": "Оберните первую картинку в ссылку с адресом `photo-1.html`.",
+            "name": "wrapFirstImageWithALink",
+            "expect": "expect(document.querySelector('article p:nth-of-type(2) a:first-child')).to.have.attr('href', 'photo-1.html');expect(document.querySelector('article p:nth-of-type(2) a:first-child img[src=\"files/preview-1.jpg\"]')).to.exist"
+        },
+        {
+            "title": "Вторую с адресом `photo-2.html`.",
+            "name": "wrapSecondImageWithALink",
+            "expect": "expect(document.querySelector('article p:nth-of-type(2) a:nth-child(2)')).to.have.attr('href', 'photo-2.html');expect(document.querySelector('article p:nth-of-type(2) a:nth-child(2) img[src=\"files/preview-2.jpg\"]')).to.exist"
+        },
+        {
+            "title": "А третью с адресом `photo-3.html`.",
+            "name": "wrapThirdImageWithALink",
+            "expect": "expect(document.querySelector('article p:nth-of-type(2) a:nth-child(3)')).to.have.attr('href', 'photo-3.html');expect(document.querySelector('article p:nth-of-type(2) a:nth-child(3) img[src=\"files/preview-3.jpg\"]')).to.exist"
+        },
+        {
+            "title": "Нажмите на любую фотографию, чтобы перейти на отдельную страничку с ней.",
+            "name": "clickAnyLinkWithImage",
+            "type": "action",
+            "eventType": "click",
+            "target": "a[href^='photo']"
+        }
+    ],
+    "strict": true
+}

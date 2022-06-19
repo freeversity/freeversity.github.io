@@ -1,0 +1,17 @@
+{
+    "baseUrl": "/resources/8/assets/",
+    "title": "Microgrids, v.1",
+    "tasks": [
+        {
+            "id": 7,
+            "type": "challenge",
+            "entry": "/resources/8/tasks/7/task.json",
+            "name": "filmography"
+        }, {
+            "id": 19,
+            "type": "challenge",
+            "entry": "/resources/8/tasks/19/task.json",
+            "name": "stickers-collection"
+        }
+    ]
+}

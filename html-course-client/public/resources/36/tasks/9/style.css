@@ -1,0 +1,28 @@
+/*
+  Используемые цвета:
+  #7fdbff, #39cccc, #3d9970, #2ecc40, #01ff70, #ffdc00, #ff851b, #ff4136, #f012be, #b10dc9
+*/
+
+body {
+  margin: 0;
+  width: 570px;
+  background-color: #111111;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 200px;
+  font-family: "Arial", sans-serif;
+}
+
+p {
+  margin: 0;
+  padding-top: 60px;
+  text-align: center;
+}
+
+span {
+  margin-left: 60px;
+}
+
+span:first-child {
+  margin-left: 0;
+}

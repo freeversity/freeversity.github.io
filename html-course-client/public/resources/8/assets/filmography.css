@@ -1,0 +1,115 @@
+@font-face {
+	font-weight: 400;
+	font-family: "PT Sans";
+	font-style: normal;
+	font-display: swap;
+	src: local("PT Sans"),
+		url(fonts/ptsans.woff2) format("woff2"),
+		url(fonts/ptsans.woff) format("woff"),
+		url(fonts/PTSans-Regular.ttf) format("truetype")
+}
+
+@font-face {
+	font-weight: 400;
+	font-family: "PT Sans";
+	font-style: italic;
+	font-display: swap;
+	src: local("PT Sans Italic"),
+		url(fonts/PTSans-Italic.woff2) format("woff2"),
+		url(fonts/PTSans-Italic.ttf) format("truetype")
+}
+
+@font-face {
+	font-weight: 700;
+	font-family: "PT Sans";
+	font-style: normal;
+	font-display: swap;
+	src: local("PT Sans Bold"), 
+        url(fonts/ptsansbold.woff2) format("woff2"), 
+        url(fonts/ptsansbold.woff) format("woff"), 
+        url(fonts/PTSans-Bold.ttf) format("truetype")
+}
+
+body {
+	min-width: 500px;
+	margin: 0;
+	padding: 10px;
+	font-family: "PT Sans", "Arial", sans-serif;
+	font-weight: 400;
+	background: #e0e7ed
+}
+
+.movie {
+	background-color: #fff;
+	box-shadow: 0 6px 8px -2px rgba(55, 66, 75, .1);
+	border-radius: 4px
+}
+
+.movie-title {
+	position: relative;
+	margin: 0;
+	padding-left: 50px;
+	padding-right: 50px;
+	text-align: center;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 24px;
+	color: #4a6f9d
+}
+
+.movie-title::after,
+.movie-title::before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 20px;
+	height: 22px;
+	margin-left: 15px;
+	margin-right: 15px;
+	background-repeat: no-repeat
+}
+
+.movie-title::before {
+	left: 0;
+	background-image: url(img/quote-open.svg)
+}
+
+.movie-title::after {
+	right: 0;
+	background-image: url(img/quote-close.svg)
+}
+
+.tags-list {
+	list-style: none;
+	background-color: #f5f9fc
+}
+
+.tag {
+	position: relative;
+	padding-left: 25px;
+	background-color: #a8c9e1;
+	border: 1px solid #a8c9e1;
+	border-radius: 12px
+}
+
+.tag::before {
+	position: absolute;
+	content: "";
+	left: 8px;
+	top: 7px;
+	width: 9px;
+	height: 10px;
+	background-image: url(img/hash.svg);
+	background-repeat: no-repeat
+}
+
+.tag-link {
+	text-decoration: none;
+	font-style: italic;
+	font-size: 14px;
+	line-height: 14px;
+	color: #67a0cf;
+	background-color: #fff;
+	border-radius: 0 12px 12px 0
+}

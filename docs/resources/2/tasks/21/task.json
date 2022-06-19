@@ -1,0 +1,7 @@
+{
+    "id": 21,
+    "name": "seo-optimization",
+    "htmlEntry": "index.html",
+    "articleEntry": "article.md",
+    "expectEntry": "expect.json"
+}

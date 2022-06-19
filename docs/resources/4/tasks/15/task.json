@@ -1,0 +1,8 @@
+{
+    "id": 15,
+    "name": "anchors-with-empty-href-and-title-attr",
+    "htmlEntry": "photo-3.html",
+    "cssEntry": "style.css",
+    "articleEntry": "article.md",
+    "expectEntry": "expect.json"
+}

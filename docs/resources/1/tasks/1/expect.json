@@ -1,0 +1,9 @@
+{
+    "assertions": [
+        {
+            "title": "Удалите на 7 строке код `<link rel=\"stylesheet\" href=\"style.css\">`",
+            "name": "removeStylesheetLink",
+            "expect": "expect(document.querySelector('link[href=\"style.css\"]')).not.to.exist"
+        }
+    ]
+}

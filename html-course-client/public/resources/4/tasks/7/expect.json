@@ -1,0 +1,9 @@
+{
+    "assertions": [
+        {
+            "title": "Добавьте аватарку в формате SVG, заменив адрес картинки `img/raccoon.jpg` на `img/raccoon.svg`",
+            "name": "replaceRacoonAvatarToSvg",
+            "expect": "expect(document.querySelector('main img:first-child')).to.have.attr('src', 'img/raccoon.svg')"
+        }
+    ]
+}

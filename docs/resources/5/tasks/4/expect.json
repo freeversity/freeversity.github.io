@@ -1,0 +1,9 @@
+{
+    "assertions": [
+        {
+            "title": "В правиле для тега `body` замените значение свойства `font-family` с `\"Georgia\", serif` на `\"Arial\", sans-serif`",
+            "name": "replaceBodyFontFamilyWithArial",
+            "expect": "expect(document).to.have.cssRule('body', 'fontFamily', '\"Arial\", sans-serif'); expect(document).not.to.have.cssRule('body', 'fontFamily', '\"Georgia\", serif');"
+        }
+    ]
+}

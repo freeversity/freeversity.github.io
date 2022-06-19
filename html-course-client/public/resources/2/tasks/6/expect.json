@@ -1,0 +1,14 @@
+{
+    "assertions": [
+        {
+            "title": "Перед тегом `<main>` добавьте тег `<header>` с текстом `Шапка сайта`",
+            "name": "addHeaderWithTextToThePage",
+            "expect": "expect(document.querySelector('body > header:first-child')).to.have.rendered.text('Шапка сайта')"
+        },
+        {
+            "title": "а затем после `<main>` добавьте тег `<footer>` с текстом `Подвал сайта`",
+            "name": "addFooterWithTextToThePage",            
+            "expect": "expect(document.querySelector('body > footer:last-child')).to.have.rendered.text('Подвал сайта')"
+        }
+    ]
+}

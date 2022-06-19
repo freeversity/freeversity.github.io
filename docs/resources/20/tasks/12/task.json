@@ -1,0 +1,8 @@
+{
+    "id": 12,
+    "name": "a-simple-palette",
+    "htmlEntry": "index.html",
+    "cssEntry": "style.css",
+    "articleEntry": "article.md",
+    "refHtmlEntry": "ref.html"
+}

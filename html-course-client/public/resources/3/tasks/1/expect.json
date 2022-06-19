@@ -1,0 +1,14 @@
+{
+    "assertions": [
+        {
+            "title": "Отключите от страницы стили `outlines.css`, удалив тег `<link>`,",
+            "name": "removeOutlinesCssByRemovingLink",
+            "expect": "expect(document.querySelector('link[href=\"outlines.css\"]')).not.to.exist"
+        },
+        {
+            "title": "а затем подключите стили `style.css`",
+            "name": "attachStyleCssThen",
+            "expect": "expect(document.querySelector('style[id=\"style.css\"]')).to.exist"
+        }
+    ]
+}

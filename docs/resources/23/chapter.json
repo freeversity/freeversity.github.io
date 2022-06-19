@@ -1,0 +1,12 @@
+{
+    "baseUrl": "/resources/23/assets/",
+    "title": "Positioning",
+    "tasks": [
+        {
+            "id": 20,
+            "type": "challenge",
+            "entry": "/resources/23/tasks/20/task.json",
+            "name": "assemble-eternity"
+        }
+    ]
+}

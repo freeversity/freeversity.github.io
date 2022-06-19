@@ -1,0 +1,8 @@
+{
+    "id": 9,
+    "name": "target",
+    "svgEntry": "object.svg",
+    "cssEntry": "style.css",
+    "articleEntry": "article.md",
+    "refHtmlEntry": "ref.html"
+}

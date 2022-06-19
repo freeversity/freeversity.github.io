@@ -1,0 +1,25 @@
+{
+    "assertions": [
+        {
+            "title": "В разметке после изображения `.avatar` добавьте `span` с текстом `Аватар`",
+            "name": "addSpanWithTextAvatarAfterAvatarImg",
+            "expect": "expect(document.querySelector('.avatar + span')).to.have.rendered.text('Аватар');"
+        },
+        {
+            "title": "затем для правила с классом `.avatar` задайте вертикальное выравнивание `vertical-align` со значением `top`",
+            "name": "setVerticalAlignTopForAvatarClass",
+            "expect": "expect(document).to.have.cssRule('.avatar', 'verticalAlign', 'top');"
+        },
+        {
+            "title": "потом смените значение на `middle`",
+            "name": "setVerticalAlignMiddleForAvatarClass",
+            "expect": "expect(document).to.have.cssRule('.avatar', 'verticalAlign', 'middle');"
+        },
+        {
+            "title": "и, наконец, на `bottom`",
+            "name": "setVerticalAlignBottomForAvatarClass",
+            "expect": "expect(document).to.have.cssRule('.avatar', 'verticalAlign', 'bottom');"
+        }
+    ],
+    "strict": true
+}

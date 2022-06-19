@@ -1,0 +1,35 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 280px;
+  min-height: 280px;
+  padding: 10px;
+
+  font-size: 14px;
+  line-height: 1.4;
+  font-family: "Arial", sans-serif;
+
+  background-color: #ecf0f1;
+}
+
+.menu {
+  color: white;
+  width: 200px;
+  padding: 0;
+  list-style: none;
+}
+
+.item {
+  padding: 10px 15px;
+  background-color: #2980b9;
+  border-bottom: 2px solid #2c3e50;
+}
+
+.active {
+   background-color: #1abc9c;
+   border-color: #2ecc71;
+}

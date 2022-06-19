@@ -1,0 +1,39 @@
+{
+    "assertions": [
+        {
+            "title": "Добавьте ссылке с текстом `Введение` в оглавлении адрес `#intro`.",
+            "name": "addHashLinkToIntroAnchorTag",
+            "expect": "expect(document.querySelector('article ul li:first-child a')).to.have.attr('data-href', '#intro')"
+        },
+        {
+            "title": "Добавьте заголовку `Введение` в статье атрибут `id` со значением `intro`.",
+            "name": "addIdToIntroHeading",
+            "expect": "expect(document.querySelector('article article h3')).to.have.attr('id', 'intro');"
+        },
+        {
+            "title": "Щёлкните по ссылке `Введение`.",
+            "name": "clickIntroAnchorLink",
+            "type": "action",
+            "target": "a[href=\"#intro\"]",
+            "eventType": "click"
+        },
+        {
+            "title": "Добавьте ссылке с текстом `К оглавлению` в конце статьи адрес `#content`.",
+            "name": "addHashLinkToToSummaryAnchorTag",
+            "expect": "expect(document.querySelector('article article p:last-of-type a')).to.have.attr('data-href', '#content')"
+        },
+        {
+            "title": "Добавьте заголовку `Оглавление` в начале статьи атрибут `id` со значением `content`.",
+            "name": "addIdToSummaryHeading",
+            "expect": "expect(document.querySelector('article h3')).to.have.attr('id', 'content');"
+        },
+        {
+            "title": "Щёлкните по ссылке `К оглавлению`",
+            "name": "clickToSummaryAnchorLink",
+            "type": "action",
+            "target": "a[href=\"#content\"]",
+            "eventType": "click"
+        }
+    ],
+    "strict": true
+}

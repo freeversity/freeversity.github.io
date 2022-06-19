@@ -1,0 +1,8 @@
+{
+    "id": 18,
+    "name": "del-and-ins-highlighting-changes",
+    "htmlEntry": "day-11.html",
+    "cssEntry": "style.css",
+    "articleEntry": "article.md",
+    "expectEntry": "expect.json"
+}

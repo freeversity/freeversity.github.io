@@ -1,0 +1,24 @@
+{
+    "introTitle": "По аналогии с первым пунктом добавьте ещё три ссылки в оглавление блога.",
+    "intro": "adadThreeMoreAnchorsToBlogSummary",
+    "assertions": [
+        {
+            "title": "Ссылку с относительным адресом day-2.html во второй пункт.",
+            "name": "addDay2LinkToSecondItem",
+            "expect": "expect(document.querySelector('ul li:nth-child(2) a[href=\"day-2.html\"]')).to.have.rendered.text('День второй. Хочу быть верстальщиком')"
+        },
+        {
+            "title": "Ссылку с относительным адресом day-3.html в третий пункт.",
+            "name": "addDay3LinkToThirdItem",
+            "expect": "expect(document.querySelector('ul li:nth-child(3) a[href=\"day-3.html\"]')).to.have.rendered.text('День третий. Мой кот на меня обиделся')"
+        },
+        {
+            "title": "Ссылку с относительным адресом day-4.html в четвёртый пункт.",
+            "name": "addDay4LinkToForthItem",
+            "expect": "expect(document.querySelector('ul li:nth-child(4) a[href=\"day-4.html\"]')).to.have.rendered.text('День четвёртый. Как я чуть не заболел')"
+        }
+    ]
+}
+
+
+

@@ -1,0 +1,15 @@
+{
+    "assertions": [
+        {
+            "title": "Строку с первым давлением приведите к виду: p<sub>1</sub> = 1635Па,",
+            "name": "addSubsscsriptIndexToPressure",
+            "expect": "expect(document.querySelector('article p:nth-of-type(3)')).to.contain.html('p<sub>1</sub> = 1635Па')"
+        },
+        {
+            "title": "а строку со вторым давлением — к виду: p<sub>2</sub> = m<sub>2</sub> * g / S = 9кг * 9.81Н / 0.03м<sup>2</sup> = 2942Па",
+            "name": "firmatFormulaWithSubscriptsAndSuperscripts",
+            "expect": "expect(document.querySelector('article p:nth-of-type(4)')).to.contain.html('p<sub>2</sub> = m<sub>2</sub> * g / S = 9кг * 9.81Н / 0.03м<sup>2</sup> = 2942Па')"
+        }
+    ]
+}
+

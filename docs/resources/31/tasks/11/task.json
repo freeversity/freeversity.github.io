@@ -1,0 +1,8 @@
+{
+    "id": 11,
+    "name": "surprised-emoji",
+    "svgEntry": "object.svg",
+    "cssEntry": "style.css",
+    "articleEntry": "article.md",
+    "refHtmlEntry": "ref.html"
+}

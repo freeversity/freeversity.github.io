@@ -1,0 +1,8 @@
+{
+    "id": 5,
+    "name": "inherited-properties",
+    "htmlEntry": "index.html",
+    "cssEntry": "style.css",
+    "articleEntry": "article.md",
+    "expectEntry": "expect.json"
+}

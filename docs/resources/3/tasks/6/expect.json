@@ -1,0 +1,21 @@
+{
+    "assertions": [
+        {
+            "title": "После первого абзаца в `<article>` добавьте список описаний `<dl>` и заключите в него весь неразмеченный текст.",
+            "name": "wrapUnmarkedTextWithDl",
+            "expect": "expect(document.querySelector('article p:first-of-type + dl')).to.contain.text('Диватоз').and.contain.text('Острый страх семантики').and.contain.text('Таблицефобия').and.contain.text('Избегание таблиц').and.contain.text('Стремление сверстать таблицу на дивах').and.contain.text('Классянка').and.contain.text('Навязывание классов каждому тегу')"
+        },
+        {
+            "title": "В список добавьте термин `<dt>` с текстом `Диватоз` и его описание `<dd>` с текстом `Острый страх семантики`",
+            "name": "addFirstDtAndFirstDd",
+            "expect": "expect(document.querySelector('dl dt:first-of-type')).to.contain.text('Диватоз');expect(document.querySelector('dl dd:first-of-type')).to.contain.text('Острый страх семантики')"
+        },
+        {
+            "title": "Затем добавьте термин с текстом `Таблицефобия` и два его описания с текстами `Избегание таблиц` и `Стремление сверстать таблицу на дивах`",
+            "name": "addShipmentAtOrderDay",
+            "expect": "expect(document.querySelector('dl dt:nth-of-type(2)')).to.contain.text('Таблицефобия');expect(document.querySelector('dl dd:nth-of-type(2)')).to.contain.text('Избегание таблиц');expect(document.querySelector('dl dd:nth-of-type(3)')).to.contain.text('Стремление сверстать таблицу на дивах')"
+        }
+    ]
+}
+
+

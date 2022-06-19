@@ -1,0 +1,15 @@
+{
+    "assertions": [
+        {
+            "title": "Для `body` измените значение свойства `font-size` на `16px`",
+            "name": "setFontSize16PxForBody",
+            "expect": "expect(document).to.have.cssRule('body', 'fontSize', '16px'); expect(document).not.to.have.cssRule('body', 'fontSize', '14px');"
+        },
+        {
+            "title": "а затем значение свойства `line-height` на `26px` и посмотрите, что изменения отразились на всех элементах.",
+            "name": "setLineHeight20PxForBody",
+            "expect": "expect(document).to.have.cssRule('body', 'lineHeight', '26px'); expect(document).not.to.have.cssRule('body', 'lineHeight', '22px');"
+        }
+    ]
+}
+

@@ -1,0 +1,10 @@
+{
+    "id": 8,
+    "name": "building-bridges",
+    "htmlEntry": "index.html",
+    "cssEntry": "style.css",
+    "articleEntry": "article.md",
+    "refHtmlEntry": "ref.html",
+    "refWidth": 600
+    
+}

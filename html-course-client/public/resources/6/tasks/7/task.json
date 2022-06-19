@@ -1,0 +1,8 @@
+{
+    "id": 7,
+    "name": "text-align-css-prop",
+    "htmlEntry": "day-2.html",
+    "cssEntry": "style.css",
+    "articleEntry": "article.md",
+    "expectEntry": "expect.json"
+}

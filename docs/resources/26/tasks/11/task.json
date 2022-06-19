@@ -1,0 +1,9 @@
+{
+    "id": 11,
+    "name": "flags",
+    "htmlEntry": "index.html",
+    "cssEntry": "style.css",
+    "articleEntry": "article.md",
+    "refHtmlEntry": "ref.html",
+    "refWidth": 520
+}

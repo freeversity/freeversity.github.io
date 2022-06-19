@@ -1,4 +1,4 @@
-import {FC, useState} from 'react';
+import {FC, useEffect, useState} from 'react';
 import cx from 'classnames';
 import AceEditor from "react-ace";
 
@@ -19,34 +19,144 @@ import { TaskInspector } from '../TaskInspector/TaskInspector';
 import { ExpectType } from '../../pages/Task/Task';
 import { Markdown } from '../Markdown/Markdown';
 import { ChallengeInspector } from '../ChallengeInspector/ChallengeInspector';
+import {expect as expectFunc} from '../../expect'
 
 export interface WorkDeskProps {
-    initialHtml: string;
+    initialMarkup: string;
     initialCss?: string;
     className?: string
     baseUrl: string;
-    htmlFileName: string;
+    markupFileName: string;
     cssFileName?: string;
     article: string;
     expect?: ExpectType;
-    refHtml?: string;
+    refMarkup?: string;
+    refWidth?: number;
+    isSvg?: boolean;
+    articleShown?: boolean;
+    setArticleShown: (isShown: boolean) => void;
+    setNextTaskActive: (isActive: boolean) => void;
 }
 
 const WorkDesk: FC<WorkDeskProps> = ({
-    initialHtml,
-    htmlFileName,
+    initialMarkup,
+    markupFileName,
     initialCss,
     cssFileName,
     baseUrl,
     className,
     expect,
     article,
-    refHtml,
+    refMarkup,
+    refWidth,
+    isSvg,
+    articleShown,
+    setArticleShown,
+    setNextTaskActive,
 }) => {
-    const [articleShown, setArticleShown] = useState(false);
-    const [previewWindow, setPreviewWindow] = useState<Window | null>(null);
-    const [html, setHtml] = useState(initialHtml);
+    const [doneAsserts, setDoneAsserts] = useState<Set<string>>(new Set());
+    const [previewWindow, setPreviewWindow] = useState<
+        Window  | null
+    >(null);
+
+    const [markup, setMarkup] = useState(initialMarkup);
     const [css, setCss] = useState(initialCss ?? '');
+
+    const onIFrameReady = (previewFrame: HTMLIFrameElement) => {
+        const previewWindow = previewFrame.contentWindow as Window;
+
+        if (!previewWindow) return;
+
+        setPreviewWindow(previewFrame?.contentWindow);
+    }
+
+    useEffect(() => {
+        setNextTaskActive(!!expect && doneAsserts.size === expect.assertions.length);
+    }, [doneAsserts, setNextTaskActive, expect])
+
+    const onValidate = (previewFrame: HTMLIFrameElement) => {
+        const previewWindow = previewFrame.contentWindow as Window;
+
+        if (!previewWindow) return;
+
+        setPreviewWindow(previewFrame?.contentWindow);
+
+        const isStrict = expect!.strict;
+
+        const passedAsserts: (string | null)[] = expect!.assertions
+            .map((assertion, index, assertions) => {
+                switch (assertion.type) {
+                    case 'action': {
+                        const {target, eventType, name} = assertion;
+
+                        const handler = (e: Event) => {
+                            if (target && !(e.target as HTMLElement).closest(target)) {
+                              return;
+                            }
+
+                            if (!isStrict) {
+                                setDoneAsserts((doneAsserts) => new Set([...Array.from(doneAsserts), name]));
+                                return;
+                            }
+
+                            setDoneAsserts((doneAsserts) => { 
+                                if (!assertions.slice(0, index).every(({name}) => doneAsserts.has(name))) return doneAsserts;
+                                
+                                requestAnimationFrame(() => {
+                                    onValidate(previewFrame);
+                                });
+
+                                return new Set([...Array.from(doneAsserts), name]);
+                            });
+                        };
+
+                        previewWindow.addEventListener(eventType, handler);
+
+                        return null;
+                    }
+                    default: {
+                        const {onSuccess, name, onFailure, expect: expectBody } = assertion;
+
+                        const func = new Function('expect', 'document', expectBody);
+                        try {
+                            func.call(previewWindow, expectFunc, previewWindow.document);
+
+                            if (onSuccess) {
+                                const onSuccessFunc = new Function('document', onSuccess);
+                
+                                onSuccessFunc?.call(previewWindow, previewWindow.document);
+                            }
+                            
+                            return name;
+                        } catch (err) {
+                            console.log(err);
+                            if (onFailure) {
+                                const onFailureFunc = new Function('document', onFailure);
+                
+                                onFailureFunc?.call(previewWindow, previewWindow.document);
+
+                            }
+                            return null
+                        }
+                    }
+                }
+            });
+            
+
+        setDoneAsserts((doneAsserts) => {
+            const newAsserts = passedAsserts.filter((name, index, newAsserts): name is string => !!name && (
+                !isStrict || 
+                expect!.assertions.slice(0, index)
+                    .every(({name}) => doneAsserts.has(name)) ||
+                expect!.assertions.slice(0, index)
+                    .filter(({name}) => !doneAsserts.has(name))
+                    .every(({name}) => newAsserts.includes(name))
+            ));
+
+            return new Set([...Array.from(doneAsserts), ...newAsserts]);
+        });
+
+    }
 
     return (
         <div className={cx('workdesk', className)}>
@@ -56,42 +166,60 @@ const WorkDesk: FC<WorkDeskProps> = ({
                     {'workdesk__article-container--visible': articleShown}
                 )}
             >
-                <button onClick={() => setArticleShown(false)}>Close</button>
-                <Markdown>{article}</Markdown>
+                <div 
+                    className={cx('workdesk__article-backdrop')}
+                    onClick={() => setArticleShown(false)}
+                />
+                <div className={cx('workdesk__article-content')}>
+                    <button 
+                        className={cx(
+                            'workdesk__article-close-btn',
+                        )}
+                        onClick={() => setArticleShown(false)}                    
+                    >
+                        X
+                    </button>
+                    
+                    <article className={cx('workdesk__article')}>
+                        <Markdown>{article}</Markdown>
+                    </article>
+                </div>
+
             </div>
             <div className={cx('workdesk__wrapper')}>
-                <div className={cx('workdesk__sidepanel')}>
-                    <button  className={cx('workdesk__theory-btn')} onClick={() => setArticleShown(true)}>Theory</button>
-                </div>
                 <ReflexContainer orientation='vertical' className={'workdesk__split-pane'}>
                     <ReflexElement className={cx("workdesk__editors-pane")} minSize={200}>
                         <ReflexContainer className={cx("workdesk__editors-split-pane")} orientation='horizontal'>
                             <ReflexElement minSize={200} >
                                 <AceEditor
-                                    value={html}
+                                    defaultValue={markup}
                                     setOptions={{ useWorker: false }}
                                     className={cx('workdesk__editor')}
                                     mode='html' 
+                                    wrapEnabled                                    
                                     theme="tomorrow"
-                                    name={htmlFileName}
-                                    onChange={setHtml}
+                                    name={markupFileName}
+                                    onChange={setMarkup}
                                     height='100%'
                                     width='100%'
+                                    debounceChangePeriod={500}
                                 />
                             </ReflexElement>
                             {cssFileName && <ReflexSplitter/>}
                             {cssFileName && (
                                 <ReflexElement  minSize={200}>
                                     <AceEditor
-                                        value={css}
+                                        defaultValue={css}
                                         setOptions={{ useWorker: false }}
                                         className='workdesk__editor'
-                                        mode='css' 
+                                        mode='css'
                                         theme="tomorrow"
                                         name={cssFileName}
                                         onChange={setCss}
                                         height='100%'
+                                        wrapEnabled
                                         width='100%'
+                                        debounceChangePeriod={500}
                                     />
                                 </ReflexElement>
                             )}
@@ -102,35 +230,35 @@ const WorkDesk: FC<WorkDeskProps> = ({
 
                     <ReflexContainer className={cx("workdesk__editors-split-pane")} orientation='horizontal'>
                         
-                        <ReflexElement minSize={refHtml ? undefined: 500}>
+                        <ReflexElement minSize={refMarkup ? undefined : 500}>
                             <PreviewFrame 
                                 baseUrl={baseUrl}
-                                setPreviewWindow={setPreviewWindow}
-                                html={html} 
+                                onReady={ expect ? onValidate : onIFrameReady}
+                                markup={markup} 
                                 css={css} 
                                 cssFileName={cssFileName} 
-                                htmlFileName={htmlFileName} 
+                                markupFileName={markupFileName} 
                                 className={'workdesk__preview'} 
                             />
                         </ReflexElement>
                         <ReflexSplitter/> 
-                        <ReflexElement flex={refHtml ? 0.5 : 0.2}>
+                        <ReflexElement flex={refMarkup ? 0.5 : 0.2}>
                             {previewWindow && expect &&  (
                                 <TaskInspector 
+                                    doneAsserts={doneAsserts}
                                     className={'workdesk__inspector'} 
-                                    previewWindow={previewWindow}
                                     expect={expect}
-                                    html={html}
-                                    css={css}
                                 />
                             )}
-                            {previewWindow && refHtml &&  (
+                            {previewWindow && refMarkup &&  (
                                 <ChallengeInspector
                                     className={'workdesk__inspector'} 
                                     previewWindow={previewWindow}
-                                    refHtml={refHtml}
-                                    html={html}
+                                    refMarkup={refMarkup}
+                                    refWidth={refWidth}
+                                    markup={markup}
                                     css={css}
+                                    isSvg={isSvg}
                                 />
                             )}
                         </ReflexElement>

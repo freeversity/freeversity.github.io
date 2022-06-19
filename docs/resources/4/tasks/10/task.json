@@ -1,0 +1,8 @@
+{
+    "id": 10,
+    "name": "gif-image-type",
+    "htmlEntry": "day-14.html",
+    "cssEntry": "style.css",
+    "articleEntry": "article.md",
+    "expectEntry": "expect.json"
+}

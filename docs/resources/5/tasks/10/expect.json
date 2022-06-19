@@ -1,0 +1,26 @@
+{
+    "assertions": [
+        {
+            "title": "Смените селектор по тегу в правиле `nav a` на вложенный селектор `.blog-navigation a`",
+            "name": "replaceNavASelectorToBlogNavigationClassA",
+            "expect": "expect(document).to.have.cssRule('.blog-navigation a', 'color', '#ffffff');expect(document).not.to.have.cssRule('nav a')"
+        },
+        {
+            "title": "затем замените селектор в правиле `ul` на селектор `.blog-navigation ul`",
+            "name": "replaceUlSelectorToBlogNavigationClassUl",
+            "expect": "expect(document).to.have.cssRule('.blog-navigation ul', 'listStyle', 'none');expect(document).to.have.cssRule('.blog-navigation ul', 'paddingLeft', '0');expect(document).not.to.have.cssRule('ul')"
+        },
+        {
+            "title": "Раскомментируйте правило `.blog-navigation h2` в CSS-редакторе,",
+            "name": "uncommentBlogNavigationClassH2Rule",
+            "expect": "expect(document).to.have.cssRule('.blog-navigation h2', 'marginTop', '0');"
+        },
+        {
+            "title": "а затем раскомментируйте правило для `.blog-navigation li`",
+            "name": "uncommentBlogNavigationClassLiRule",
+            "expect": "expect(document).to.have.cssRule('.blog-navigation li', 'marginBottom', '5px');"
+        }
+    ]
+}
+
+

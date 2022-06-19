@@ -1,0 +1,17 @@
+{
+    "baseUrl": "/resources/7/assets/",
+    "title": "Grids",
+    "tasks": [
+        {
+            "id": 11,
+            "type": "challenge",
+            "entry": "/resources/7/tasks/10/task.json",
+            "name": "tour-program"
+        }, {
+            "id": 20,
+            "type": "challenge",
+            "entry": "/resources/7/tasks/20/task.json",
+            "name": "magic-door"
+        }
+    ]
+}

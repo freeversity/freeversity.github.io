@@ -1,0 +1,44 @@
+.land {
+    display: grid;
+    width: 540px;
+    gap: 20px;
+    grid-template-rows: repeat(3, 120px);
+    grid-template-columns: repeat(4, 120px);
+    grid-template-areas: 
+      "grass-1 grass-1 water-1 stone-1"
+      "stone-2 water-2 grass-2 stone-1"
+      "stone-2 sand-1 grass-2 lava-1";
+  }
+  
+  .element--1 {
+    grid-area: grass-1;
+  }
+  
+  .element--2 {
+    grid-area: grass-2;
+  }
+  
+  .element--3 {
+    grid-area: stone-1;
+  }
+  
+  .element--4 {
+    grid-area: stone-2;
+  }
+  
+  .element--5 {
+    grid-area: water-1;
+  }
+  
+  .element--6 {
+    grid-area: water-2;
+  }
+  
+  .element--7 {
+    grid-area: sand-1;
+  }
+  
+  .element--8 {
+    grid-area: lava-1;
+  }
+  

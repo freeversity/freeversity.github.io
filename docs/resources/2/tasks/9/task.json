@@ -1,0 +1,7 @@
+{
+    "id": 9,
+    "name": "independent-article",
+    "htmlEntry": "day-1.html",
+    "articleEntry": "article.md",
+    "expectEntry": "expect.json"
+}

@@ -1,0 +1,13 @@
+.stickers-list {
+    margin: 0;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-flow: dense;
+    grid-gap: 10px;
+  }
+  
+  .sticker:nth-child(3n) {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
