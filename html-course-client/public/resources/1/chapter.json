@@ -39,6 +39,7 @@
             "id": 6
         },
         {
+            "type": "task",
             "entry": "/resources/1/tasks/7/task.json",
             "name": "changing-props-in-css-rules",
             "id": 7
