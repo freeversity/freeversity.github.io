@@ -18,27 +18,26 @@ const TaskInspector: FC<TaskInspectorProps> = ({
 }) => {
   const items = expect.assertions.map(({name, title}) => (
     <li 
-       key={name}
-       className={cx(
-           'task-inspector__assert-item', 
-           {
+      key={name}
+      className={cx(
+          'task-inspector__assert-item', 
+          {
               'task-inspector__assert-item--done': doneAsserts.has(name),
               'task-inspector__assert-item--strict': expect.strict
           }
-       )}
-   >
-       <Markdown>{title}</Markdown>
-   </li>
-)) ;
+      )}
+    >
+      <Markdown>{title}</Markdown>
+    </li>
+  )) ;
 
-  
   return (
     <div 
       className={cx('task-inspector', className)} 
     >
       <div className={cx('task-inspector__wrapper')}>
           {expect.introTitle && (
-              <p>{expect.introTitle}</p>
+            <Markdown>{expect.introTitle}</Markdown>
           )}
           {!expect.strict && (
             <ul className={cx('task-inspector__assertion-list--loose')}>{items}</ul>

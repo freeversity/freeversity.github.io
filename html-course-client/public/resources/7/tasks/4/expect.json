@@ -1,0 +1,15 @@
+{
+    "assertions": [
+        {
+            "title": "Создайте правило для класса `page-header`",
+            "name": "createPageHeaderCssRule",
+            "expect": "expect(document).to.have.cssRule('.page-header', null, null, 'style[id=\"style.css\"]');"
+        },
+        {
+            "title": "Добавьте в это правило свойство `display` со значением `grid`.\nОбратите внимание, что изменилась ширина бокса с логотипом, а у заголовка появился отступ снизу.",
+            "name": "addDisplayGridPropertyToPageHeader",
+            "expect": "expect(document).to.have.cssRule('.page-header', 'display', 'grid', 'style[id=\"style.css\"]');"
+        }
+    ]
+}
+

@@ -1,0 +1,21 @@
+{
+    "assertions": [
+        {
+            "title": "На 5 строке подключите файл с декоративными стилями: `<link rel=\"stylesheet\" href=\"food-decorative.css\">`",
+            "name": "attachFoodDecorativeCssFile",
+            "expect": "expect(document.querySelector('link[rel=\"stylesheet\"][href=\"food-decorative.css\"]')).to.exist;"
+        },
+        {
+            "title": "На следующей строке подключите файл с подсветкой сетки — `food-outline.css`.\nПосмотрите, из каких сеточных элементов состоит страница.",
+            "name": "attachFoodOutlineCssFile",
+            "expect": "expect(document.querySelector('link[rel=\"stylesheet\"][href=\"food-outline.css\"]')).to.exist;"
+        },
+        {
+            "title": "Ниже подключите файл, в котором мы будем писать сеточные стили, — `style.css`",
+            "name": "attachStyleCssFile",
+            "expect": "expect(document.querySelector('[id=\"style.css\"]')).to.exist;"
+        }
+    ]
+}
+
+

@@ -5,10 +5,13 @@ export function cssRulePlugin(
     utils.addMethod(
         chai.Assertion.prototype, 
         'cssRule', 
-        function (this: any, selector: string, prop?: string, value?: string) {
+        function (this: any, selector: string, prop?: string, value?: string, ownerSelector?: string) {
             const doc = utils.flag(this, 'object') as Document;
 
-            const styleSheets = doc.styleSheets;
+            const styleSheets = ownerSelector ? [...doc.styleSheets].filter(({ownerNode}) => 
+                (ownerNode as Element)?.matches?.(ownerSelector)
+
+            ) : doc.styleSheets;
 
             if (!prop) {
                 const actual =  [...styleSheets].some((styleSheet) => {

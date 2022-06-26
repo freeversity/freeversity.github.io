@@ -3,11 +3,120 @@
     "title": "Grids",
     "tasks": [
         {
+            "id": 1,
+            "type": "task",
+            "entry": "/resources/7/tasks/1/task.json",
+            "name": "block-model"
+        },
+        {
+            "id": 2,
+            "type": "task",
+            "entry": "/resources/7/tasks/2/task.json",
+            "name": "document-flow"
+        },
+        {
+            "id": 3,
+            "type": "task",
+            "entry": "/resources/7/tasks/3/task.json",
+            "name": "grid-and-page-layout"
+        },
+        {
+            "id": 4,
+            "type": "task",
+            "entry": "/resources/7/tasks/4/task.json",
+            "name": "display-prop-and-display-type"
+        },
+        {
+            "id": 5,
+            "type": "task",
+            "entry": "/resources/7/tasks/5/task.json",
+            "name": "grid-template-columns-prop"
+        },
+        {
+            "id": 6,
+            "type": "task",
+            "entry": "/resources/7/tasks/6/task.json",
+            "name": "padding-prop"
+        },
+        {
+            "id": 7,
+            "type": "task",
+            "entry": "/resources/7/tasks/7/task.json",
+            "name": "margin-prop"
+        },
+        {
+            "id": 8,
+            "type": "task",
+            "entry": "/resources/7/tasks/8/task.json",
+            "name": "fr-unit-free-space-fraction"
+        },
+        {
+            "id": 9,
+            "type": "task",
+            "entry": "/resources/7/tasks/9/task.json",
+            "name": "grid-gap-prop"
+        },
+        {
+            "id": 10,
+            "type": "task",
+            "entry": "/resources/7/tasks/10/task.json",
+            "name": "finishing-first-page"
+        }, 
+        {
             "id": 11,
             "type": "challenge",
-            "entry": "/resources/7/tasks/10/task.json",
+            "entry": "/resources/7/tasks/11/task.json",
             "name": "tour-program"
-        }, {
+        }, 
+        {
+            "id": 12,
+            "type": "task",
+            "entry": "/resources/7/tasks/12/task.json",
+            "name": "unsing-flex"
+        },
+        {
+            "id": 13,
+            "type": "task",
+            "entry": "/resources/7/tasks/13/task.json",
+            "name": "width-prop"
+        },
+        {
+            "id": 14,
+            "type": "task",
+            "entry": "/resources/7/tasks/14/task.json",
+            "name": "justify-content-prop"
+        },
+        {
+            "id": 15,
+            "type": "task",
+            "entry": "/resources/7/tasks/15/task.json",
+            "name": "margin-auto"
+        },
+        {
+            "id": 16,
+            "type": "task",
+            "entry": "/resources/7/tasks/16/task.json",
+            "name": "adding-wrapper"
+        },
+        {
+            "id": 17,
+            "type": "task",
+            "entry": "/resources/7/tasks/17/task.json",
+            "name": "splitting-footer-into-columns"
+        },
+        {
+            "id": 18,
+            "type": "task",
+            "entry": "/resources/7/tasks/18/task.json",
+            "name": "aligning-footer-columns"
+        },
+        {
+            "id": 19,
+            "type": "task",
+            "entry": "/resources/7/tasks/19/task.json",
+            "name": "vertical-elemets-aligning"
+        },
+        {
             "id": 20,
             "type": "challenge",
             "entry": "/resources/7/tasks/20/task.json",

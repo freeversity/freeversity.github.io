@@ -1,0 +1,16 @@
+{
+    "assertions": [
+        {
+            "title": "Добавьте в правило для класса `page-header` свойство `grid-template-columns` со значением `100px 400px`. Логотип и заголовок встанут в ряд, причём заголовок наложится на логотип.",
+            "name": "addGridTemplateColumns100Px400PxRuleToPageHeaderClass",
+            "expect": "expect(document).to.have.cssRule('.page-header', 'gridTemplateColumns', '100px 400px');"
+        },
+        {
+            "title": "Замените `100px 400px` на `210px 200px`. Теперь логотип и заголовок расположатся почти как на макете.",
+            "name": "replaceGridTemplateColumnsWith210Px200Px",
+            "expect": "expect(document).to.have.cssRule('.page-header', 'gridTemplateColumns', '210px 200px');"
+        }
+    ],
+    "strict": true
+}
+

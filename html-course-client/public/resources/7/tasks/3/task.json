@@ -1,0 +1,9 @@
+{
+    "id": 3,
+    "name": "grid-and-page-layout",
+    "htmlEntry": "index.html",
+    "cssEntry": "style.css",
+    "cssReadonly": true,
+    "articleEntry": "article.md",
+    "expectEntry": "expect.json"
+}
