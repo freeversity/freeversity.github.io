@@ -1,0 +1,30 @@
+{
+    "introTitle": "Добавьте шапке внутренние отступы — `padding`:",
+    "intro": "addPaddingsToPageHeader",
+    "assertions": [
+        {
+            "title": "сверху — `10px`,",
+            "name": "setPaddingTop10Px",
+            "expect": "expect(document.querySelector('.page-header')).to.have.css('paddingTop', '10px');"
+        },
+        {
+            "title": "справа — `10px`,",
+            "name": "setPaddingRight10Px",
+            "expect": "expect(document.querySelector('.page-header')).to.have.css('paddingRight', '10px');"
+        },
+        {
+            "title": "снизу — `10px`,",
+            "name": "setPaddingBottom10Px",
+            "expect": "expect(document.querySelector('.page-header')).to.have.css('paddingBottom', '10px');"
+        },
+        {
+            "title": "слева — `20px`.",
+            "name": "setPaddingLeft20Px",
+            "expect": "expect(document.querySelector('.page-header')).to.have.css('paddingLeft', '20px');"
+        }
+    ]
+}
+
+
+
+

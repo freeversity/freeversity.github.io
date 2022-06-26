@@ -1,0 +1,30 @@
+{
+    "assertions": [
+        {
+            "title": "Создайте правило для тега `body`.",
+            "name": "createARuleForBodyTag",
+            "expect": "expect(document).to.have.cssRule('body', null, null, 'style[id=\"style.css\"]');"
+        },
+        {
+            "title": "Уберите у страницы внешний отступ по умолчанию: `margin: 0;`.",
+            "name": "setBodyMarginTo0",
+            "expect": "expect(document.querySelector('body')).to.have.css('margin', '0');"
+        },
+        {
+            "title": "Создайте правило для класса `features-list`.",
+            "name": "createARuleForFeaturesListClass",
+            "expect": "expect(document).to.have.cssRule('.features-list', null, null, 'style[id=\"style.css\"]');"
+        },
+        {
+            "title": "Уберите у списка внешние отступы `margin` сверху и снизу.",
+            "name": "removeTopAndBottomMarginForFeaturesList",
+            "expect": "expect(document.querySelector('.features-list')).to.have.css('marginTop', '0');expect(document.querySelector('.features-list')).to.have.css('marginBottom', '0');"
+        },
+        {
+            "title": "Задайте списку внутренние отступы `20px` со всех сторон.",
+            "name": "removePadding20PxForFeaturesList",
+            "expect": "expect(document.querySelector('.features-list')).to.have.css('padding', '20px');"
+        }
+    ],
+    "strict": true
+}

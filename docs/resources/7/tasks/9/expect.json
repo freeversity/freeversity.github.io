@@ -1,0 +1,22 @@
+{
+    "assertions": [
+        {
+            "title": "Добавьте списку преимуществ отступ между рядами `row-gap: 5px;`.",
+            "name": "setFeaturesListRowGapTo5Px",
+            "expect": "expect(document.querySelector('.features-list')).to.have.css('row-gap', '5px');"
+        },
+        {
+            "title": "А теперь добавьте отступ между колонками `column-gap: 15px;`.",
+            "name": "setFeaturesListColumnGapTo15Px",
+            "expect": "expect(document.querySelector('.features-list')).to.have.css('column-gap', '15px');"
+        },
+        {
+            "title": "Удалите `row-gap` и `column-gap` и добавьте списку преимуществ свойство `gap` со значением `10px`",
+            "name": "setFeaturesListGapTo10Px",
+            "expect": "expect(document.querySelector('.features-list')).to.have.css('gap', '10px');"
+        }
+    ],
+    "strict": true
+}
+
+

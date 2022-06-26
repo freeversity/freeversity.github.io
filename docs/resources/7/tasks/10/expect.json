@@ -1,0 +1,21 @@
+{
+    "assertions": [
+        {
+            "title": "Создайте правило для класса `page-footer`.",
+            "name": "addPageTitleClassToH1",
+            "expect": "expect(document).to.have.cssRule('.page-footer', null, null, 'style[id=\"style.css\"]');"
+        },
+        {
+            "title": "В этом правиле задайте внутренние отступы со всех сторон `20px`.",
+            "name": "removeLineHeightNormalFromH1",
+            "expect": "expect(document).to.have.cssRule('.page-footer', 'padding', '20px');"
+        },
+        {
+            "title": "В `index.html` на `6` строке удалите подключение файла `food-outline.css`.",
+            "name": "setLineHeight42PxToPageTitle",
+            "expect": "expect(document.querySelector('link[href=\"food-outline.css\"]')).not.to.exist;"
+        }
+    ]
+}
+
+

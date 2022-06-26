@@ -1,0 +1,24 @@
+{
+    "introTitle": "Посмотрите, как в зависимости от стилей может меняться сетка страницы.",
+    "title": "lookHowGridMayChangeDeependingOnStyles",
+    "assertions": [
+        {
+            "title": "На 13 строке добавьте тегу `<main>` второй класс `layout-1`.",
+            "name": "seteLayout1ClassToMain",
+            "expect": "expect(document.querySelector('.page-main')).to.have.class('layout-1');"
+        },
+        {
+            "title": "Замените `layout-1` на `layout-2`.",
+            "name": "seteLayout2ClassToMain",
+            "expect": "expect(document.querySelector('.page-main')).to.have.class('layout-2');expect(document.querySelector('main')).not.to.have.class('layout-1');"
+        },
+        {
+            "title": "А теперь замените `layout-2` на `layout-3`.",
+            "name": "seteLayout3ClassToMain",
+            "expect": "expect(document.querySelector('.page-main')).to.have.class('layout-3');expect(document.querySelector('main')).not.to.have.class('layout-2');"
+        }
+    ],
+    "strict": true
+}
+
+

@@ -1,0 +1,29 @@
+.page-header,
+.page-footer {
+  outline: 2px solid #ff974c;
+  outline-offset: -2px;
+}
+
+.page-footer {
+  padding: 3px 4px 2px;
+}
+
+.features-list {
+  outline: 2px solid #9779ec;
+  outline-offset: -2px;
+  padding-top: 3px;
+  padding-right: 3px;
+  padding-bottom: 3px;
+}
+
+.logo,
+.header-title,
+.copyright {
+  outline: 2px solid #f799ff;
+  outline-offset: -2px;
+}
+
+.feature {
+  outline: 2px solid #fe6767;
+  outline-offset: -2px;
+}

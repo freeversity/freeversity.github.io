@@ -1,0 +1,27 @@
+{
+    "assertions": [
+        {
+            "title": "Добавьте списку преимуществ свойство `display` со значением `grid`",
+            "name": "setFeaturesListDisplayGrid",
+            "expect": "expect(document.querySelector('.features-list')).to.have.css('display', 'grid');"
+        },
+        {
+            "title": "А теперь — свойство `grid-template-columns` со значением `2fr 1fr` Ширина первой колонки окажется в два раза больше ширины второй колонки.<br>_Убедитесь, что пропорции колонок сохраняются, изменив ширину мини-браузера._",
+            "name": "setFeaturesListGridTemplateColumns2Fr1Fr",
+            "expect": "expect(document).to.have.cssRule('.features-list', 'gridTemplateColumns', '2fr 1fr');"
+        },
+        {
+            "title": "Измените значение `grid-template-columns` на `100px 1fr` Ширина первой колонки станет `100px`, а вторая займёт всё оставшееся пространство.",
+            "name": "setFeaturesListGridTemplateColumns100Px1Fr",
+            "expect": "expect(document).to.have.cssRule('.features-list', 'gridTemplateColumns', '100px 1fr');"
+        },
+        {
+            "title": "Наконец, измените значение `grid-template-columns` на `1fr 1fr` Колонки поделят ширину родителя поровну.",
+            "name": "setFeaturesListGridTemplateColumns1Fr1Fr",
+            "expect": "expect(document).to.have.cssRule('.features-list', 'gridTemplateColumns', '1fr 1fr');"
+        }
+    ],
+    "strict": true
+}
+
+

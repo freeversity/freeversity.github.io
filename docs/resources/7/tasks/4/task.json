@@ -1,0 +1,9 @@
+{
+    "id": 4,
+    "name": "display-prop-and-display-type",
+    "htmlEntry": "index.html",
+    "markupReadonly": true,
+    "cssEntry": "style.css",
+    "articleEntry": "article.md",
+    "expectEntry": "expect.json"
+}

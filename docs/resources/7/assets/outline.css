@@ -1,0 +1,28 @@
+body>* {
+	outline: 2px solid #73c86a;
+	outline-offset: -2px;
+}
+
+.page-main {
+	outline-offset: 2px;
+}
+
+body>*>* {
+	outline: 2px solid #ff974c;
+	outline-offset: -1px;
+}
+
+body>*>*>* {
+	outline: 2px solid #66b5ff;
+	outline-offset: 1px;
+}
+
+body>*>*>*>* {
+	outline: 2px solid #f799ff;
+	outline-offset: -2px;
+}
+
+body>*>*>*>*>* {
+	outline: 2px solid #a6aabf;
+	outline-offset: -1px;
+}
