@@ -156,7 +156,7 @@ const ChallengeInspector: FC<ChallengeInspectorProps> = ({className, previewWind
                     >
                         Difference
                     </button>     
-                    <button 
+                    {process.env.NODE_ENV !== 'production' && <button 
                         onClick={onTabClick}
                         className={cx(
                             'challenge-inspector__header-btn', {
@@ -165,7 +165,7 @@ const ChallengeInspector: FC<ChallengeInspectorProps> = ({className, previewWind
                         data-tab={ChallengeTabs.REF_FRAME}
                     >
                         Ref Frame
-                    </button>               
+                    </button>   }            
                 </div>
                 <div className={cx('challenge-inspector__body')}>
                     <div 
