@@ -47,9 +47,10 @@ export interface TaskProps {
     tasks: ChapterType['tasks'];
 }
 
+const isProd = process.env.NODE_ENV === 'production';
 
 const Task: FC<TaskProps> = ({className, baseUrl, tasks}) => {
-    const [articleShown, setArticleShown] = useState(process.env.NODE_ENV === 'production');
+    const [articleShown, setArticleShown] = useState(isProd);
     const [task, setTask] = useState<TaskType>();
     const [nextTaskActive, setNextTaskActive] = useState<boolean>(false);
     const [isPending, setPending] = useState(true);
@@ -100,6 +101,7 @@ const Task: FC<TaskProps> = ({className, baseUrl, tasks}) => {
                 setIsSvg(!!svg);
 
                 setPending(false);
+                setArticleShown(isProd);
             })
             .catch((err) => {
                 console.error(err)
