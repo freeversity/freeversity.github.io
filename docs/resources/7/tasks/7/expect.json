@@ -13,7 +13,7 @@
         {
             "title": "Создайте правило для класса `features-list`.",
             "name": "createARuleForFeaturesListClass",
-            "expect": "expect(document).to.have.cssRule('.features-list', null, null, 'style[id=\"style.css\"]');"
+            "expect": "expect(document.querySelector('style[id=\"style.css\"]')).to.have.cssRule('.features-list');"
         },
         {
             "title": "Уберите у списка внешние отступы `margin` сверху и снизу.",

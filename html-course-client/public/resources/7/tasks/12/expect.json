@@ -1,19 +1,27 @@
 {
     "assertions": [
         {
-            "title": "Заголовку `h1` добавьте в разметке класс `page-title`",
-            "name": "addPageTitleClassToH1",
-            "expect": "expect(document.querySelector('h1')).to.have.class('page-title');"
+            "title": "На `5` строке подключите файл с декоративными стилями – `portfolio-decorative.css`.",
+            "name": "attachPortfolioDecorativeStyles",
+            "expect": "expect(document.querySelector('link[rel=\"stylesheet\"][href=\"portfolio-decorative.css\"]')).to.exist;"
         },
         {
-            "title": "затем уберите у `h1` заданную высоту строки `line-height: normal`",
-            "name": "removeLineHeightNormalFromH1",
-            "expect": "expect(document).not.to.have.cssRule('h1', 'lineHeight', 'normal');"
+            "title": "На следующей строке подключите файл с подсветкой сетки — `portfolio-outline.css`.<br>Посмотрите, из каких сеточных элементов состоит страница.",
+            "name": "attachPortfolioOutlineStyles",
+            "expect": "expect(document.querySelector('link[rel=\"stylesheet\"][href=\"portfolio-outline.css\"]')).to.exist;"
         },
         {
-            "title": "а потом задайте для класса `.page-title` высоту строки со значением `42px`",
-            "name": "setLineHeight42PxToPageTitle",
-            "expect": "expect(document).to.have.cssRule('.page-title', 'lineHeight', '42px');"
+            "title": "Ниже подключите файл для сеточных стилей — `style.css`.",
+            "name": "attachStyleCssStyles",
+            "expect": "expect(document.querySelector('style[id=\"style.css\"]')).to.exist;"
+        },
+        {
+            "title": "В `style.css` создайте правило для класса `page-main` и добавьте в него свойство `display` со значением `flex`. Основное содержимое выстроится в две колонки.",
+            "name": "addPageMainClassWithDisplayFlexRuleToStyleCss",
+            "expect": "expect(document.querySelector('style[id=\"style.css\"]')).to.have.cssRule('.page-main', 'display', 'flex');"
         }
     ]
 }
+
+
+

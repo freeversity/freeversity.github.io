@@ -1,19 +1,27 @@
 {
+    "introTitle": "Чтобы разница между свойствами была более явной, увеличьте ширину мини-браузера.",
+    "intro": "increasePreviewWidthToSeeTheDifference",
     "assertions": [
         {
-            "title": "Заголовку `h1` добавьте в разметке класс `page-title`",
-            "name": "addPageTitleClassToH1",
-            "expect": "expect(document.querySelector('h1')).to.have.class('page-title');"
+            "title": "Добавьте в правило для класса `page-main` свойство `justify-content` со значением `center`. Обе колонки сдвинутся в центр.",
+            "name": "setJustifyContentCenterToPageMain",
+            "expect": "expect(document).to.have.cssRule('.page-main', 'justifyContent', 'center');"
         },
         {
-            "title": "затем уберите у `h1` заданную высоту строки `line-height: normal`",
-            "name": "removeLineHeightNormalFromH1",
-            "expect": "expect(document).not.to.have.cssRule('h1', 'lineHeight', 'normal');"
+            "title": "Измените значение свойства `justify-content` на `space-around`. Свободное пространство распределится вокруг колонок.",
+            "name": "setJustifyContentSpaceAroundToPageMain",
+            "expect": "expect(document).to.have.cssRule('.page-main', 'justifyContent', 'space-around');"
         },
         {
-            "title": "а потом задайте для класса `.page-title` высоту строки со значением `42px`",
-            "name": "setLineHeight42PxToPageTitle",
-            "expect": "expect(document).to.have.cssRule('.page-title', 'lineHeight', '42px');"
+            "title": "Измените значение свойства `justify-content` на `space-between`. Свободное пространство распределится между колонками.",
+            "name": "setJustifyContentSpaceBetweenToPageMain",
+            "expect": "expect(document).to.have.cssRule('.page-main', 'justifyContent', 'space-between');"
         }
-    ]
+    ],
+    "strict": true
 }
+
+
+
+
+

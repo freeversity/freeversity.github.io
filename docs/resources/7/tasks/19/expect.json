@@ -1,19 +1,14 @@
 {
     "assertions": [
         {
-            "title": "Заголовку `h1` добавьте в разметке класс `page-title`",
-            "name": "addPageTitleClassToH1",
-            "expect": "expect(document.querySelector('h1')).to.have.class('page-title');"
+            "title": "Задайте классу `copyright` автоматический внешний отступ сверху. Копирайт прижмётся к нижней границе подвала.",
+            "name": "addMarginTopAutoToCopyright",
+            "expect": "expect(document).to.have.cssRule('.copyright', 'marginTop', 'auto');"
         },
         {
-            "title": "затем уберите у `h1` заданную высоту строки `line-height: normal`",
-            "name": "removeLineHeightNormalFromH1",
-            "expect": "expect(document).not.to.have.cssRule('h1', 'lineHeight', 'normal');"
-        },
-        {
-            "title": "а потом задайте для класса `.page-title` высоту строки со значением `42px`",
-            "name": "setLineHeight42PxToPageTitle",
-            "expect": "expect(document).to.have.cssRule('.page-title', 'lineHeight', '42px');"
+            "title": "В `index.html` на `6` строке удалите подключение файла `portfolio-outline.css`.",
+            "name": "removePortfolioOutlineCssLink",
+            "expect": "expect(document.querySelector('link[href=\"portfolio-outline.css\"]')).not.to.exist;"
         }
     ]
 }

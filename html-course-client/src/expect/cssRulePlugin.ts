@@ -6,12 +6,18 @@ export function cssRulePlugin(
         chai.Assertion.prototype, 
         'cssRule', 
         function (this: any, selector: string, prop?: string, value?: string, ownerSelector?: string) {
-            const doc = utils.flag(this, 'object') as Document;
+            const subj = utils.flag(this, 'object') as Document | HTMLElement;
 
-            const styleSheets = ownerSelector ? [...doc.styleSheets].filter(({ownerNode}) => 
-                (ownerNode as Element)?.matches?.(ownerSelector)
+            const doc = 'tagName' in subj ? subj.ownerDocument : subj;
+            const owner = 'tagName' in subj ? subj : undefined;
 
-            ) : doc.styleSheets;
+            const styleSheets = [...doc.styleSheets].filter(({ownerNode}) => {
+                if (owner) return ownerNode === owner;
+
+                if (ownerSelector) return (ownerNode as Element)?.matches?.(ownerSelector);
+
+                return true;
+            });
 
             if (!prop) {
                 const actual =  [...styleSheets].some((styleSheet) => {

@@ -1,19 +1,19 @@
 {
     "assertions": [
         {
-            "title": "Заголовку `h1` добавьте в разметке класс `page-title`",
-            "name": "addPageTitleClassToH1",
-            "expect": "expect(document.querySelector('h1')).to.have.class('page-title');"
+            "title": "Первой колонке (класс `contacts`) задайте ширину `160px` и автоматический внешний отступ справа.",
+            "name": "setContactsWidthTo160PxAndMarginRightAuto",
+            "expect": "expect(document).to.have.cssRule('.contacts', 'width', '160px');expect(document).to.have.cssRule('.contacts', 'marginRight', 'auto');"
         },
         {
-            "title": "затем уберите у `h1` заданную высоту строки `line-height: normal`",
-            "name": "removeLineHeightNormalFromH1",
-            "expect": "expect(document).not.to.have.cssRule('h1', 'lineHeight', 'normal');"
+            "title": "Второй колонке (класс `copyright`) задайте ширину `170px`.",
+            "name": "setCopyrightWidthTo170Px",
+            "expect": "expect(document).to.have.cssRule('.copyright', 'width', '170px');"
         },
         {
-            "title": "а потом задайте для класса `.page-title` высоту строки со значением `42px`",
-            "name": "setLineHeight42PxToPageTitle",
-            "expect": "expect(document).to.have.cssRule('.page-title', 'lineHeight', '42px');"
+            "title": "Третьей колонке (класс `logo`) задайте ширину `70px` и внешний отступ слева `20px`",
+            "name": "setLogoWidthTo70PxAndMarginLeftTo20Px",
+            "expect": "expect(document).to.have.cssRule('.logo', 'width', '70px');expect(document).to.have.cssRule('.logo', 'marginLeft', '20px');"
         }
     ]
 }

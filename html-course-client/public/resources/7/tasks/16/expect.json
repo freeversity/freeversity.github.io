@@ -1,19 +1,21 @@
 {
     "assertions": [
         {
-            "title": "Заголовку `h1` добавьте в разметке класс `page-title`",
-            "name": "addPageTitleClassToH1",
-            "expect": "expect(document.querySelector('h1')).to.have.class('page-title');"
+            "title": "Оберните всё содержимое подвала в тег `<div>` с классом `container`",
+            "name": "wrapFooterContentWithDivContainer",
+            "expect": "expect(document.querySelector('.page-footer .container')).to.contain(document.querySelector('.contacts')).and.contain(document.querySelector('.copyright')).and.contain(document.querySelector('.logo'));"
         },
         {
-            "title": "затем уберите у `h1` заданную высоту строки `line-height: normal`",
-            "name": "removeLineHeightNormalFromH1",
-            "expect": "expect(document).not.to.have.cssRule('h1', 'lineHeight', 'normal');"
+            "title": "В `style.css` создайте правило для класса `container` и в нём задайте обёртке ширину `550px`",
+            "name": "setWidth550PxToContainer",
+            "expect": "expect(document).to.have.cssRule('.container', 'width', '550px');"
         },
         {
-            "title": "а потом задайте для класса `.page-title` высоту строки со значением `42px`",
-            "name": "setLineHeight42PxToPageTitle",
-            "expect": "expect(document).to.have.cssRule('.page-title', 'lineHeight', '42px');"
+            "title": "Там же задайте автоматические внешние отступы по горизонтали, а внешние отступы по вертикали обнулите.",
+            "name": "setMargin0AutoToContainer",
+            "expect": "expect(document).to.have.cssRule('.container', 'margin', '0 auto')"
         }
     ]
 }
+
+

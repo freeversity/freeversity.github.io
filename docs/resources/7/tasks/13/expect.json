@@ -1,19 +1,21 @@
 {
     "assertions": [
         {
-            "title": "Заголовку `h1` добавьте в разметке класс `page-title`",
-            "name": "addPageTitleClassToH1",
-            "expect": "expect(document.querySelector('h1')).to.have.class('page-title');"
+            "title": "Создайте правило для класса `bio` и задайте в нём ширину `270px`",
+            "name": "addBioWidth270PxCssRule",
+            "expect": "expect(document).to.have.cssRule('.bio', 'width', '270px');"
         },
         {
-            "title": "затем уберите у `h1` заданную высоту строки `line-height: normal`",
-            "name": "removeLineHeightNormalFromH1",
-            "expect": "expect(document).not.to.have.cssRule('h1', 'lineHeight', 'normal');"
+            "title": "Создайте правило для класса `photo` и задайте  в нём ширину `200px`",
+            "name": "addPhotoWidth200PxCssRule",
+            "expect": "expect(document).to.have.cssRule('.photo', 'width', '200px');"
         },
         {
-            "title": "а потом задайте для класса `.page-title` высоту строки со значением `42px`",
-            "name": "setLineHeight42PxToPageTitle",
-            "expect": "expect(document).to.have.cssRule('.page-title', 'lineHeight', '42px');"
+            "title": "Добавьте в оба правила внутренние отступы со всех сторон `10px`",
+            "name": "addPadding10PxToBioAndPhotoRule",
+            "expect": "expect(document).to.have.cssRule('.bio', 'padding', '10px');expect(document).to.have.cssRule('.photo', 'padding', '10px');"
         }
     ]
 }
+
+

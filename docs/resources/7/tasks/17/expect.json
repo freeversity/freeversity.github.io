@@ -1,19 +1,14 @@
 {
     "assertions": [
         {
-            "title": "Заголовку `h1` добавьте в разметке класс `page-title`",
-            "name": "addPageTitleClassToH1",
-            "expect": "expect(document.querySelector('h1')).to.have.class('page-title');"
+            "title": "Задайте обёртке тип бокса `flex`. Содержимое подвала выстроится в три колонки.",
+            "name": "setDisplayFlexToContainer",
+            "expect": "expect(document.querySelector('.container')).to.have.css('display', 'flex');"
         },
         {
-            "title": "затем уберите у `h1` заданную высоту строки `line-height: normal`",
-            "name": "removeLineHeightNormalFromH1",
-            "expect": "expect(document).not.to.have.cssRule('h1', 'lineHeight', 'normal');"
-        },
-        {
-            "title": "а потом задайте для класса `.page-title` высоту строки со значением `42px`",
-            "name": "setLineHeight42PxToPageTitle",
-            "expect": "expect(document).to.have.cssRule('.page-title', 'lineHeight', '42px');"
+            "title": "Добавьте обёртке внутренние отступы со всех сторон `10px`",
+            "name": "setPadding10PxToContainer",
+            "expect": "expect(document.querySelector('.container')).to.have.css('padding', '10px');"
         }
     ]
 }

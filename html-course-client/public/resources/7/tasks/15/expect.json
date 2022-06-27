@@ -1,19 +1,22 @@
 {
     "assertions": [
         {
-            "title": "Заголовку `h1` добавьте в разметке класс `page-title`",
-            "name": "addPageTitleClassToH1",
-            "expect": "expect(document.querySelector('h1')).to.have.class('page-title');"
+            "title": "Задайте классу `page-main` ширину `550px`.",
+            "name": "setWidth550PxToPageMain",
+            "expect": "expect(document).to.have.cssRule('.page-main', 'width', '550px');"
         },
         {
-            "title": "затем уберите у `h1` заданную высоту строки `line-height: normal`",
-            "name": "removeLineHeightNormalFromH1",
-            "expect": "expect(document).not.to.have.cssRule('h1', 'lineHeight', 'normal');"
+            "title": "Добавьте автоматический внешний отступ слева.<br>Основное содержимое прижмётся к правому краю страницы.",
+            "name": "setMarginLeftAutoToPageMain",
+            "expect": "expect(document).to.have.cssRule('.page-main', 'marginLeft', 'auto');"
         },
         {
-            "title": "а потом задайте для класса `.page-title` высоту строки со значением `42px`",
-            "name": "setLineHeight42PxToPageTitle",
-            "expect": "expect(document).to.have.cssRule('.page-title', 'lineHeight', '42px');"
+            "title": "Теперь добавьте автоматический внешний отступ справа.<br>Основное содержимое выровняется по центру страницы.",
+            "name": "setMarginRightAutoToPageMain",
+            "expect": "expect(document).to.have.cssRule('.page-main', 'marginRight', 'auto');expect(document).to.have.cssRule('.page-main', 'marginLeft', 'auto');"
         }
-    ]
+    ],
+    "strict": true
 }
+
+
