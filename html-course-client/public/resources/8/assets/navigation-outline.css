@@ -1,0 +1,20 @@
+.navigation {
+    padding: 2px;
+}
+
+.logo {
+    outline: 2px solid #9779ec;
+    background-color: rgba(151, 121, 236, 0.1);
+}
+
+.navigation-list {
+    outline: 2px solid #9779ec;
+    background-color: rgba(151, 121, 236, 0.1);
+}
+
+.navigation-item {
+    margin: 1px;
+    outline: 2px solid #5ca055;
+    background-color: rgba(92, 160, 85, 0.3);
+    outline-offset: -2px;
+}

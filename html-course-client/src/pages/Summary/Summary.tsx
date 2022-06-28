@@ -57,8 +57,8 @@ const Summary: FC<SummaryProps> = ({className}) => {
                                         <h4 id={name}>{name}</h4>
                                         <ul>
                                             {chapters.map(({name, id}) => (
-                                                <li>
-                                                    <Link key={id} to={`/chapters/${id}`}>{name}</Link>
+                                                <li key={id}>
+                                                    <Link to={`/chapters/${id}`}>{name}</Link>
                                                 </li>
                                             ))}
                                         </ul>

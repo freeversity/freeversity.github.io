@@ -21,4 +21,15 @@
         padding: 0;
         border: none;
     }
+
+    img {
+        max-width: 100%;
+    }
+
+    .browser-view {
+        padding: 24px 32px;
+        border: 2px solid #d8d7e4;
+        border-top-width: 25px;
+        border-radius: 8px;
+    }
 }

@@ -3,11 +3,114 @@
     "title": "Microgrids, v.1",
     "tasks": [
         {
+            "id": 1,
+            "type": "task",
+            "entry": "/resources/8/tasks/1/task.json",
+            "name": "what-is-microgrid"
+        },
+        {
+            "id": 2,
+            "type": "task",
+            "entry": "/resources/8/tasks/2/task.json",
+            "name": "flex-inside-a-grid"
+        },
+        {
+            "id": 3,
+            "type": "task",
+            "entry": "/resources/8/tasks/3/task.json",
+            "name": "managing-margins"
+        },
+        {
+            "id": 4,
+            "type": "task",
+            "entry": "/resources/8/tasks/4/task.json",
+            "name": "vertical-margins-for-inline-elements"
+        },
+        {
+            "id": 5,
+            "type": "task",
+            "entry": "/resources/8/tasks/5/task.json",
+            "name": "align-items-prop"
+        },
+        {
+            "id": 6,
+            "type": "task",
+            "entry": "/resources/8/tasks/6/task.json",
+            "name": "flex-wrap-prop"
+        },
+        {
             "id": 7,
             "type": "challenge",
             "entry": "/resources/8/tasks/7/task.json",
             "name": "filmography"
-        }, {
+        }, 
+        {
+            "id": 8,
+            "type": "task",
+            "entry": "/resources/8/tasks/8/task.json",
+            "name": "creating-cards-list"
+        },
+        {
+            "id": 9,
+            "type": "task",
+            "entry": "/resources/8/tasks/9/task.json",
+            "name": "creating-a-list-with-justify-content"
+        },
+        {
+            "id": 10,
+            "type": "task",
+            "entry": "/resources/8/tasks/10/task.json",
+            "name": "creating-a-list-with-margin"
+        },
+        {
+            "id": 11,
+            "type": "task",
+            "entry": "/resources/8/tasks/11/task.json",
+            "name": "removing-redundant-margin"
+        },
+        {
+            "id": 12,
+            "type": "task",
+            "entry": "/resources/8/tasks/12/task.json",
+            "name": "testing-layout"
+        },
+        {
+            "id": 13,
+            "type": "task",
+            "entry": "/resources/8/tasks/13/task.json",
+            "name": "creating-list-with-gap"
+        },
+        {
+            "id": 14,
+            "type": "task",
+            "entry": "/resources/8/tasks/14/task.json",
+            "name": "auto-fit-value"
+        },
+        {
+            "id": 15,
+            "type": "task",
+            "entry": "/resources/8/tasks/15/task.json",
+            "name": "minmax-value"
+        },
+        {
+            "id": 16,
+            "type": "task",
+            "entry": "/resources/8/tasks/16/task.json",
+            "name": "grid-column-prop"
+        },
+        {
+            "id": 17,
+            "type": "task",
+            "entry": "/resources/8/tasks/17/task.json",
+            "name": "grid-row-prop"
+        },
+        {
+            "id": 18,
+            "type": "task",
+            "entry": "/resources/8/tasks/18/task.json",
+            "name": "grid-auto-flow-prop"
+        },
+        {
             "id": 19,
             "type": "challenge",
             "entry": "/resources/8/tasks/19/task.json",

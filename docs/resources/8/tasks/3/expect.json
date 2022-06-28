@@ -1,0 +1,24 @@
+{
+    "assertions": [
+        {
+            "title": "Обнулите у `navigation-list` внешние и внутренние отступы.",
+            "name": "resetNavigationListMarginsAndPaddings",
+            "expect": "expect(document.querySelector('.navigation-list')).to.have.css('margin', '0');expect(document.querySelector('.navigation-list')).to.have.css('padding', '0');"
+        },
+        {
+            "title": "Создайте правило для ссылок с классом `navigation-link` и задайте им внешние отступы `5px` со всех сторон.<br>Обратите внимание, отступы сверху и снизу у ссылок не появились.",
+            "name": "setNavigationLinkMarginsTo5Px",
+            "expect": "expect(document).to.have.cssRule('.navigation-link', 'margin', '5px');"
+        },
+        {
+            "title": "Добавьте `navigation-link` внутренние отступы `15px` со всех сторон.<br>Обратите внимание, фон у ссылки на главную страницу вышел за нижнюю границу навигации.",
+            "name": "setNavigationLinkPaddingsTo15Px",
+            "expect": "expect(document).to.have.cssRule('.navigation-link', 'padding', '15px');"
+        }
+    ]
+}
+
+
+
+
+

@@ -1,0 +1,85 @@
+@font-face {
+	font-weight: 400;
+	font-family: "PT Sans";
+	font-style: normal;
+	font-display: swap;
+	src: local("PT Sans"),
+url(fonts/ptsans.woff2) format("woff2"),
+url(fonts/ptsans.woff) format("woff"),
+url(fonts/PTSans-Regular.ttf) format("truetype");
+}
+
+@font-face {
+	font-weight:400;
+font-family:"PT Sans";
+font-style:italic;
+font-display:swap;
+src:local("PT Sans Italic"),
+url(fonts/PTSans-Italic.woff2) format("woff2"),
+url(fonts/PTSans-Italic.ttf) format("truetype");
+}
+
+@font-face {
+	font-weight:700;
+font-family:"PT Sans";
+font-style:normal;
+font-display:swap;
+src:local("PT Sans Bold"),
+url(fonts/ptsansbold.woff2) format("woff2"),
+url(fonts/ptsansbold.woff) format("woff"),
+url(fonts/PTSans-Bold.ttf) format("truetype");
+}
+
+html {
+	max-width: 960px;
+}
+
+body {
+	font-family: "PT Sans","Arial",sans-serif;
+	font-weight: 400;
+	color: #fff;
+	background-color: #550a45;
+	background-image: url(img/background.jpg);
+	background-repeat: no-repeat;
+	background-position: 50% 0;
+}
+
+.navigation {
+	border-bottom: 1px solid #fff;
+}
+
+.navigation-list {
+	list-style: none;
+}
+
+.navigation-link {
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #fff;
+	font-size: 14px;
+	line-height: 14px;
+	vertical-align: middle;
+	border-radius: 4px;
+}
+
+.navigation-link.current {
+	color: rgba(255,255,255,.8);
+	background-color: rgba(255,255,255,.3);
+}
+
+.navigation-link:active,.navigation-link:hover {
+	background-color: #b2370b;
+}
+
+.navigation-link:active {
+	opacity: .6;
+}
+
+.title {
+	margin-top: 170px;
+	text-align: center;
+	font-weight: 700;
+	font-size: 56px;
+	line-height: 64px;
+}

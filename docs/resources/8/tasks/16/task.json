@@ -1,0 +1,8 @@
+{
+    "id": 16,      
+    "name": "grid-column-prop",
+    "htmlEntry": "index.html",
+    "cssEntry": "style.css",
+    "articleEntry": "article.md",
+    "expectEntry": "expect.json"
+}

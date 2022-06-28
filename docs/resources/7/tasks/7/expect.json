@@ -3,7 +3,7 @@
         {
             "title": "Создайте правило для тега `body`.",
             "name": "createARuleForBodyTag",
-            "expect": "expect(document).to.have.cssRule('body', null, null, 'style[id=\"style.css\"]');"
+            "expect": "expect(document.querySelector('style[id=\"style.css\"]')).to.have.cssRule('body');"
         },
         {
             "title": "Уберите у страницы внешний отступ по умолчанию: `margin: 0;`.",

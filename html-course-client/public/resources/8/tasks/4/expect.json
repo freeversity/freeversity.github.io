@@ -1,0 +1,12 @@
+{
+    "assertions": [
+        {
+            "title": "Укажите для ссылок `navigation-link` тип бокса `block` У ссылок появятся вертикальные отступы, а фон у ссылки на текущую страницу перестанет выходить за белую линию.",
+            "name": "setNavigationLinkDisplayToBlock",
+            "expect": "expect(document.querySelector('.navigation-link')).to.have.css('display', 'block');"
+        }
+    ]
+}
+
+
+

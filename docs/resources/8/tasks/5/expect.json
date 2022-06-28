@@ -1,0 +1,31 @@
+{
+    "assertions": [
+        {
+            "title": "Добавьте в правило для `navigation` свойство `align-items` со значением `start` Логотип перестанет тянуться на всю высоту.",
+            "name": "setNavigationAlignItemsToStart",
+            "expect": "expect(document).to.have.cssRule('.navigation', 'alignItems', 'start');"
+        },
+        {
+            "title": "Измените значение `align-items` на `end`. Логотип переместится к низу контейнера.",
+            "name": "setNavigationAlignItemsToEnd",
+            "expect": "expect(document).to.have.cssRule('.navigation', 'alignItems', 'end');"
+        },
+        {
+            "title": "А теперь — на `center`. Логотип расположится по центру.",
+            "name": "setNavigationAlignItemsToCenter",
+            "expect": "expect(document).to.have.cssRule('.navigation', 'alignItems', 'center');"
+        },
+        {
+            "title": "В `index.html` раскомментируйте код на строках `26`-`34`. Появится горизонтальная полоса прокрутки.<br>_Прокрутите вправо. Последние ссылки вылезли за границы навигации._",
+            "name": "uncommentListItems",
+            "expect": "expect(document.querySelector('.navigation-item:nth-child(6)')).to.exist;"
+        }
+    ],
+    "strict": true
+}
+
+
+
+
+
+

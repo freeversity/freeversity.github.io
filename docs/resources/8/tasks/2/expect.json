@@ -1,0 +1,18 @@
+{
+    "assertions": [
+        {
+            "title": "Создайте правило для класса `navigation-list` и задайте в нём тип бокса `flex`",
+            "name": "setNavigationListDisplayToFlex",
+            "expect": "expect(document).to.have.cssRule('.navigation-list', 'display', 'flex');"
+        },
+        {
+            "title": "Добавьте `navigation-list` выравнивание по главной оси `space-between`",
+            "name": "setNavigationListJustifyContentToSpaceBetween",
+            "expect": "expect(document).to.have.cssRule('.navigation-list', 'justifyContent', 'space-between');"
+        }
+    ]
+}
+
+
+
+

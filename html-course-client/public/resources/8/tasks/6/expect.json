@@ -1,0 +1,18 @@
+{
+    "assertions": [
+        {
+            "title": "Добавьте в правило для `navigation-list` свойство `flex-wrap` со значением `wrap`.<br>Элементы списка перенесутся на новую строку.",
+            "name": "setNavigationListFlexWrapToWrap",
+            "expect": "expect(document.querySelector('.navigation-list')).to.have.css('flexWrap', 'wrap');"
+        },
+        {
+            "title": "В `index.html` на `6` строке удалите подключение файла `navigation-outline.css`.",
+            "name": "removeNavigationOutlineCssLink",
+            "expect": "expect(document.querySelector('link[href=\"navigation-outline.css\"]')).not.to.exist;"
+        }
+    ]
+}
+
+
+
+
