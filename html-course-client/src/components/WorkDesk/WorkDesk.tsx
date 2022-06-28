@@ -33,6 +33,8 @@ export interface WorkDeskProps {
     refMarkup?: string;
     refWidth?: number;
     isSvg?: boolean;
+    markupReadonly?: boolean;
+    cssReadonly?: boolean;
     articleShown?: boolean;
     setArticleShown: (isShown: boolean) => void;
     setNextTaskActive: (isActive: boolean) => void;
@@ -53,6 +55,8 @@ const WorkDesk: FC<WorkDeskProps> = ({
     articleShown,
     setArticleShown,
     setNextTaskActive,
+    markupReadonly,
+    cssReadonly
 }) => {
     const [doneAsserts, setDoneAsserts] = useState<Set<string>>(new Set());
     const [previewWindow, setPreviewWindow] = useState<
@@ -203,6 +207,7 @@ const WorkDesk: FC<WorkDeskProps> = ({
                                     height='100%'
                                     width='100%'
                                     debounceChangePeriod={500}
+                                    readOnly={markupReadonly}
                                 />
                             </ReflexElement>
                             {cssFileName && <ReflexSplitter/>}
@@ -220,6 +225,7 @@ const WorkDesk: FC<WorkDeskProps> = ({
                                         wrapEnabled
                                         width='100%'
                                         debounceChangePeriod={500}
+                                        readOnly={cssReadonly}
                                     />
                                 </ReflexElement>
                             )}

@@ -1,22 +1,25 @@
 {
     "assertions": [
         {
-            "title": "На `6` строке раскомментируйте подключение стилевого файла `outline.css`. На странице подсветятся боксы.",
-            "name": "uncommentOutlineCssLink",
-            "expect": "expect(document.querySelector('link[href=\"outline.css\"]')).to.exist;"
+            "title": "Измените значение `grid-template-columns` на `repeat(auto-fit, 140px)`. Колонок станет четыре.",
+            "name": "setCardsListGridTemplateColumnsToRepeatAutoFitBy140px",
+            "expect": "expect(document).to.have.cssRule('.cards-list', 'gridTemplateColumns', 'repeat(auto-fit, 140px)');"
         },
         {
-            "title": "На `20` строке добавьте новый абзац `<p>` с текстом `Новый бокс` В мини-браузере в первой карточке появится новый блочный бокс.",
-            "name": "addParagraphWithNewBoxText",
-            "expect": "expect(document.querySelector('article:first-child .article-text + p')).to.have.rendered.text('Новый бокс');"
+            "title": "Измените ширину body на `335px`. Колонок станет две.",
+            "name": "setBodyWidthTo335Px",
+            "expect": "expect(document.body).to.have.css('width', '335px');"
         },
         {
-            "title": "На `19` строке оберните слова `двухэтажный дом` в тег `<span>`. В первой карточке появится новый строчный бокс.",
-            "name": "wrapWordsWithSpanElement",
-            "expect": "expect(document.querySelector('article:first-child .article-text span')).to.have.text('двухэтажный дом');"
+            "title": "А теперь — на `640px`. Колонок снова станет три, но справа останется свободное пространство.",
+            "name": "setBodyWidthTo640Px",
+            "expect": "expect(document.body).to.have.css('width', '640px');"
         }
-    ]
+    ],
+    "strict": true
 }
+
+
 
 
 

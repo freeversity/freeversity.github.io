@@ -1,22 +1,31 @@
 {
     "assertions": [
         {
-            "title": "На `6` строке раскомментируйте подключение стилевого файла `outline.css`. На странице подсветятся боксы.",
-            "name": "uncommentOutlineCssLink",
-            "expect": "expect(document.querySelector('link[href=\"outline.css\"]')).to.exist;"
+            "title": "Добавьте карточке на строке `27` второй класс `wide`",
+            "name": "addClassWideToFifthCard",
+            "expect": "expect(document.querySelector('.card:nth-child(5)')).to.have.class('wide');"
         },
         {
-            "title": "На `20` строке добавьте новый абзац `<p>` с текстом `Новый бокс` В мини-браузере в первой карточке появится новый блочный бокс.",
-            "name": "addParagraphWithNewBoxText",
-            "expect": "expect(document.querySelector('article:first-child .article-text + p')).to.have.rendered.text('Новый бокс');"
+            "title": "В `style.css` создайте правило для класса `wide` и добавьте в него свойство `grid-column` со значением `span 3`. Карточка займёт три колонки.",
+            "name": "setWideGridColumnToSpan3",
+            "expect": "expect(document).to.have.cssRule('.wide', 'gridColumn', 'span 3');"
         },
         {
-            "title": "На `19` строке оберните слова `двухэтажный дом` в тег `<span>`. В первой карточке появится новый строчный бокс.",
-            "name": "wrapWordsWithSpanElement",
-            "expect": "expect(document.querySelector('article:first-child .article-text span')).to.have.text('двухэтажный дом');"
+            "title": "Измените значение `grid-column` на `span 2`. Карточка займёт две колонки.",
+            "name": "setWideGridColumnToSpan2",
+            "expect": "expect(document).to.have.cssRule('.wide', 'gridColumn', 'span 2');"
+        },
+        {
+            "title": "Измените ширину `body` на `490px`.",
+            "name": "setBodyWidthTo490Px",
+            "expect": "expect(document.body).to.have.css('width', '490px');"
         }
-    ]
+    ],
+    "strict": true
 }
+
+
+
 
 
 

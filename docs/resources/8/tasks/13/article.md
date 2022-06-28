@@ -1,164 +1,82 @@
-# Боксовая модель
+# Верстаем список с `gap`
 
-В этом тренажёре мы разберём продвинутые техники создания сайтов. В частности, поговорим о том, как располагать элементы на странице, то есть о сетках.
-
-В тренажёре [«Знакомство с HTML и CSS»](/#html-and-css-introduction) мы познакомились со многими тегами. Каждому из этих тегов на странице соответствует прямоугольная область, которая называется **боксом** (от английского _box_ — «коробка»).
-
-Бокс состоит из содержимого (`content`), внутренних отступов (`padding`), рамки (`border`) и внешних отступов (`margin`):
-
-![Схема бокса](/resources/7/assets/scheme1.svg)
-
-То, как бокс выглядит на странице, во многом зависит от его типа (или от типа его родителя). С боксами двух типов — блочными и строчными — мы уже работали в тренажёре [«Знакомство с HTML и CSS»](/#html-and-css-introduction), хоть и не упоминали их типы.
-
-Блочные боксы на странице начинаются с новой строки и растягиваются на всю ширину родительского элемента. Блочный тип по умолчанию имеют, например, теги `<p>`, `<div>` и `<h1>`.
+Мы посмотрели, как будет выглядеть список, если в ряду окажется две или четыре карточки. Так как мы убрали отступ у каждой третьей карточки, то третья и четвёртая карточки начали слипаться. Кроме того, справа у границы контейнера снова появился лишний отступ.
 
 <style>
-.scheme {
-  position: relative;
-  font-size: 14px;
-  line-height: 14px;
-  border: 1px solid transparent;
-  background-color: rgba(0, 0, 255, 0.1);
-  outline: 2px solid blue;
+.cards-list {
+  width: 650px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 20px;
+  padding-top: 45px;
+ }
+
+.card {
+  box-sizing: content-box;
+  width: 110px;
+  padding: 15px;
+  margin-right: 15px;
+  margin-bottom: 15px;
 }
 
-.scheme::before {
-  position: absolute;
-  content: "div";
-  top: -1px;
-  left: -1px;
-  padding: 5px;
-  color: white;
-
-  background-color: blue;
+.cards-list {
+  list-style: none;
+  font-family: "PT Sans", "Arial", sans-serif;
+  color: #085A75;
+  background-color: #D5D0C7;
 }
 
-.scheme h1 {
-  position: relative;
-  margin-top: 30px;
-  margin-bottom: 0;
-  padding: 5px;
-  padding-left: 30px;
-  background-color: rgba(0, 255, 0, 0.1);
-  outline: 2px solid green;
-  outline-offset: -1px;
+.card {
+  text-align: center;
+  background: #FFFFFF;
+  border-radius: 2px;
 }
 
-.scheme h1::before {
-  position: absolute;
-  content: "h1";
-  top: 0;
-  left: 0;
-  padding: 5px;
-  font-size: 14px;
-  line-height: 14px;
-  color: white;
-
-  background-color: green;
+.card:nth-child(3) {
+  margin-right: 0;
 }
 
-.scheme p {
-  position: relative;
-  margin-top: 15px;
-  padding: 5px;
-  padding-left: 30px;
-  background-color: rgba(255, 255, 0, 0.1);
-  outline: 2px solid gold;
-  outline-offset: -1px;
-}
-
-.scheme p::before {
-  position: absolute;
-  content: "p";
-  top: 0;
-  left: 0;
-  padding: 5px;
-  font-size: 14px;
-  color: white;
-
-  background-color: gold;
+.title {
+  margin: 5px 0;
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 400;
+  word-break: break-word;
 }
 </style>
-<div class="scheme"><h1>Заголовок</h1><p>Абзац</p></div>
+<div class="cards-list browser-view"><div class="card"><img src="/resources/8/assets/img/coffee-1.jpg" alt="Кофе: длинный путь от сбора ягод до вашей кружки" width="110" height="110"><div class="title">Кофе: длинный путь от&nbsp;сбора ягод до&nbsp;вашей кружки</div></div><div class="card"><img src="/resources/8/assets/img/coffee-2.jpg" alt="Лучшие машины для дома" width="110" height="110"><div class="title">Лучшие машины для дома</div></div><div class="card"><img src="/resources/8/assets/img/coffee-4.jpg" alt="Советы от бариста: как выбрать хорошее зерно?" width="110" height="110"><div class="title">Советы от&nbsp;бариста: как выбрать хорошее зерно?</div></div><div class="card"><img src="/resources/8/assets/img/coffee-5.jpg" alt="Рецепты на новогодние праздники" width="110" height="110"><div class="title">Рецепты на&nbsp;новогодние праздники</div></div></div>
 
-Строчные боксы располагаются друг за другом на одной строке, а их ширина зависит от их содержимого. По умолчанию строчными боксами являются, например, теги `<a>`, `<span>` и `<b>`.
+Мы не знаем, какой ширины окажется окно браузера у пользователя и какая карточка будет в ряду последней. Из-за этого мы не можем использовать `:nth-child`, чтобы убрать у неё отступ справа. Как быть?
 
-<style>
-.scheme-inline {
-  position: relative;
-  padding: 15px 10px;
-  font-size: 14px;
-  line-height: 14px;
-  border: 2px solid #aaaaaa;
+К сожалению, простого решения этой проблемы для флексов нет. А вот свойство `gap`, которое есть у гридов, придётся как нельзя кстати. Это свойство позволяет задавать отступы между элементами и не влияет на расстояние до границ контейнера.
+
+```
+.grid-container {
+  display: grid;
+  gap: 10px;
 }
+```
 
-.scheme-inline a,
-.scheme-inline span,
-.scheme-inline i {
-  display: inline-block;
+Напишем новые стили для списка карточек, на этот раз используя гриды.
+
+Так как при описании шаблона грид-контейнера мы указываем ширину колонок, то задавать ширину самим карточкам больше не нужно.
+
+![Макет списка карточек](/resources/8/assets/html2_7.png)
+
+Все колонки в списке должны быть одинаковой ширины. В этом случае удобно использовать значение-функцию `repeat` (от английского «повторить»). В скобках после `repeat` указывают количество колонок и их ширину. Значения разделяют запятой:
+
+```css
+grid-template-columns: repeat(количество колонок, ширина колонки);
+```
+
+Этот код разобьёт грид-контейнер на четыре колонки шириной `100px`:
+
+```css
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
 }
+```
 
-.scheme-inline a {
-  position: relative;
-  margin-right: 10px;
-  padding: 5px;
-  padding-left: 20px;
-  background-color: rgba(0, 0, 255, 0.1);
-  outline: 2px solid blue;
-}
-
-.scheme-inline a::before {
-  position: absolute;
-  content: "a";
-  top: 0;
-  left: 0;
-  bottom: 0;
-  color: white;
-  padding: 5px;
-  background-color: blue;
-}
-
-.scheme-inline span {
-  position: relative;
-  margin-right: 10px;
-  padding: 5px;
-  padding-left: 45px;
-  background-color: rgba(0, 255, 0, 0.1);
-  outline: 2px solid green;
-}
-
-.scheme-inline span::before {
-  position: absolute;
-  content: "span";
-  top: 0;
-  left: 0;
-  bottom: 0;
-  padding: 5px;
-  color: white;
-
-  background-color: green;
-}
-
-.scheme-inline b {
-  position: relative;
-  margin-bottom: 0;
-  padding: 3px 5px 3px 25px;
-  background-color: rgba(255, 255, 0, 0.1);
-  outline: 2px solid gold;
-}
-
-.scheme-inline b::before {
-  position: absolute;
-  content: "b";
-  top: 0;
-  left: 0;
-  bottom: 0;
-  padding: 5px;
-  color: white;
-
-  background-color: gold;
-}
-</style>
-<div class="scheme-inline"><a>Ссылка</a>&nbsp;<span>Произвольная строка текста</span>&nbsp;<b>Текст, выделенный полужирным</b></div>
-
-Хорошему верстальщику нужно уметь видеть боксы на странице. Потренируем этот навык. Подключим специальный стилевой файл для подсветки боксов, а после добавим на страницу новые боксы разных типов.
+Удалим весь код, который мы написали для реализации на флексах. После этого превратим список карточек в грид-контейнер и добавим отступы между карточками с помощью свойства `gap`. Используем `repeat`, чтобы разделить список на колонки, и попробуем задавать разные значения.

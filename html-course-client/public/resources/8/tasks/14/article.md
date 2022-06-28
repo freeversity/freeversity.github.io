@@ -1,164 +1,73 @@
-# Боксовая модель
+# Значение `auto-fit`
 
-В этом тренажёре мы разберём продвинутые техники создания сайтов. В частности, поговорим о том, как располагать элементы на странице, то есть о сетках.
+В прошлом задании мы использовали `repeat`, чтобы создать несколько колонок. Их количество было фиксированным: какое число указано в скобках, на столько колонок и разделялось содержимое контейнера. Но нам нужно сделать так, чтобы количество колонок зависело от ширины окна.
 
-В тренажёре [«Знакомство с HTML и CSS»](/#html-and-css-introduction) мы познакомились со многими тегами. Каждому из этих тегов на странице соответствует прямоугольная область, которая называется **боксом** (от английского _box_ — «коробка»).
+Для этого используем специальное значение `auto-fit`. Его пишут в скобках после `repeat` вместо числа колонок:
 
-Бокс состоит из содержимого (`content`), внутренних отступов (`padding`), рамки (`border`) и внешних отступов (`margin`):
+```css
+grid-template-columns: repeat(auto-fit, ширина колонки);
+```
 
-![Схема бокса](/resources/7/assets/scheme1.svg)
+Значение `auto-fit` указывает, что колонок должно быть столько, сколько может поместиться в грид-контейнере.
 
-То, как бокс выглядит на странице, во многом зависит от его типа (или от типа его родителя). С боксами двух типов — блочными и строчными — мы уже работали в тренажёре [«Знакомство с HTML и CSS»](/#html-and-css-introduction), хоть и не упоминали их типы.
+```css
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 100px);
+}
+```
 
-Блочные боксы на странице начинаются с новой строки и растягиваются на всю ширину родительского элемента. Блочный тип по умолчанию имеют, например, теги `<p>`, `<div>` и `<h1>`.
+Код в примере разделит контейнер на колонки шириной `100px`.
 
 <style>
-.scheme {
-  position: relative;
-  font-size: 14px;
-  line-height: 14px;
-  border: 1px solid transparent;
-  background-color: rgba(0, 0, 255, 0.1);
-  outline: 2px solid blue;
-}
+  .wrapper {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 20% 30% 40%;
+    column-gap: 5%;
+    text-align: center;
+    border: 1px solid #D5D8E3;
+    border-radius: 4px;
+    padding: 10px;
+    background-color: #fff;
+    color: #333333;
+  }
 
-.scheme::before {
-  position: absolute;
-  content: "div";
-  top: -1px;
-  left: -1px;
-  padding: 5px;
-  color: white;
+  .title {
+    grid-column: span 3;
+    padding-top: 0.5em;
+    padding-bottom: 1em;
+    font-weight: bold;
+    font-size: 1.5em;
+  }
 
-  background-color: blue;
-}
+  .container {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+    border: 1px solid #333333;
+  }
 
-.scheme h1 {
-  position: relative;
-  margin-top: 30px;
-  margin-bottom: 0;
-  padding: 5px;
-  padding-left: 30px;
-  background-color: rgba(0, 255, 0, 0.1);
-  outline: 2px solid green;
-  outline-offset: -1px;
-}
+  .column {
+    height: 150px;
+  }
 
-.scheme h1::before {
-  position: absolute;
-  content: "h1";
-  top: 0;
-  left: 0;
-  padding: 5px;
-  font-size: 14px;
-  line-height: 14px;
-  color: white;
+  .column-1 {
+    background-color: #b9e3b5;
+  }
 
-  background-color: green;
-}
+  .column-2 {
+    background-color: #fed799;
+  }
 
-.scheme p {
-  position: relative;
-  margin-top: 15px;
-  padding: 5px;
-  padding-left: 30px;
-  background-color: rgba(255, 255, 0, 0.1);
-  outline: 2px solid gold;
-  outline-offset: -1px;
-}
+  .column-3 {
+    background-color: #ccd9f0;
+  }
 
-.scheme p::before {
-  position: absolute;
-  content: "p";
-  top: 0;
-  left: 0;
-  padding: 5px;
-  font-size: 14px;
-  color: white;
-
-  background-color: gold;
-}
+  .column-4 {
+    background-color: #f0cce7;
+  }
 </style>
-<div class="scheme"><h1>Заголовок</h1><p>Абзац</p></div>
+<div class="wrapper"><div class="title">repeat (auto-fit, 100px)</div><div>width: 200px;</div><div>width: 300px;</div><div>width: 400px;</div><div class="container"><div class="column column-1"></div><div class="column column-2"></div></div><div class="container"><div class="column column-1"></div><div class="column column-2"></div><div class="column column-3"></div></div><div class="container"><div class="column column-1"></div><div class="column column-2"></div><div class="column column-3"></div><div class="column column-4"></div></div></div>
 
-Строчные боксы располагаются друг за другом на одной строке, а их ширина зависит от их содержимого. По умолчанию строчными боксами являются, например, теги `<a>`, `<span>` и `<b>`.
-
-<style>
-.scheme-inline {
-  position: relative;
-  padding: 15px 10px;
-  font-size: 14px;
-  line-height: 14px;
-  border: 2px solid #aaaaaa;
-}
-
-.scheme-inline a,
-.scheme-inline span,
-.scheme-inline i {
-  display: inline-block;
-}
-
-.scheme-inline a {
-  position: relative;
-  margin-right: 10px;
-  padding: 5px;
-  padding-left: 20px;
-  background-color: rgba(0, 0, 255, 0.1);
-  outline: 2px solid blue;
-}
-
-.scheme-inline a::before {
-  position: absolute;
-  content: "a";
-  top: 0;
-  left: 0;
-  bottom: 0;
-  color: white;
-  padding: 5px;
-  background-color: blue;
-}
-
-.scheme-inline span {
-  position: relative;
-  margin-right: 10px;
-  padding: 5px;
-  padding-left: 45px;
-  background-color: rgba(0, 255, 0, 0.1);
-  outline: 2px solid green;
-}
-
-.scheme-inline span::before {
-  position: absolute;
-  content: "span";
-  top: 0;
-  left: 0;
-  bottom: 0;
-  padding: 5px;
-  color: white;
-
-  background-color: green;
-}
-
-.scheme-inline b {
-  position: relative;
-  margin-bottom: 0;
-  padding: 3px 5px 3px 25px;
-  background-color: rgba(255, 255, 0, 0.1);
-  outline: 2px solid gold;
-}
-
-.scheme-inline b::before {
-  position: absolute;
-  content: "b";
-  top: 0;
-  left: 0;
-  bottom: 0;
-  padding: 5px;
-  color: white;
-
-  background-color: gold;
-}
-</style>
-<div class="scheme-inline"><a>Ссылка</a>&nbsp;<span>Произвольная строка текста</span>&nbsp;<b>Текст, выделенный полужирным</b></div>
-
-Хорошему верстальщику нужно уметь видеть боксы на странице. Потренируем этот навык. Подключим специальный стилевой файл для подсветки боксов, а после добавим на страницу новые боксы разных типов.
+Доработаем наш список карточек. Заменим фиксированное количество колонок на значение `auto-fit`. После этого изменим ширину `<body>` и посмотрим, как будет перестраиваться список.

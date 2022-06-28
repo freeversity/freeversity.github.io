@@ -1,22 +1,31 @@
 {
     "assertions": [
         {
-            "title": "На `6` строке раскомментируйте подключение стилевого файла `outline.css`. На странице подсветятся боксы.",
-            "name": "uncommentOutlineCssLink",
-            "expect": "expect(document.querySelector('link[href=\"outline.css\"]')).to.exist;"
+            "title": "Сделайте список `cards-list` флекс-контейнером.",
+            "name": "setCardsListDisplayToFlex",
+            "expect": "expect(document.querySelector('.cards-list')).to.have.css('display', 'flex');"
         },
         {
-            "title": "На `20` строке добавьте новый абзац `<p>` с текстом `Новый бокс` В мини-браузере в первой карточке появится новый блочный бокс.",
-            "name": "addParagraphWithNewBoxText",
-            "expect": "expect(document.querySelector('article:first-child .article-text + p')).to.have.rendered.text('Новый бокс');"
+            "title": "Задайте ему выравнивание по главной оси `space-between`.",
+            "name": "setCardsListJustifyContentToSpaceBetween",
+            "expect": "expect(document.querySelector('.cards-list')).to.have.css('justifyContent', 'space-between');"
         },
         {
-            "title": "На `19` строке оберните слова `двухэтажный дом` в тег `<span>`. В первой карточке появится новый строчный бокс.",
-            "name": "wrapWordsWithSpanElement",
-            "expect": "expect(document.querySelector('article:first-child .article-text span')).to.have.text('двухэтажный дом');"
+            "title": "В `index.html` раскомментируйте код на строках `24`-`31`. Новые карточки выпадут из контейнера.",
+            "name": "uncommentLines24To31WithMoreItems",
+            "expect": "expect(document.querySelector('.card:nth-child(5)')).to.exist;"
+        },
+        {
+            "title": "В `style.css` добавьте списку свойство `flex-wrap` со значением wrap.<br>Обратите внимание, карточки перенеслись на новый ряд, но в центре его образовалась «дырка».",
+            "name": "setCardsListFlexWrapToWrap",
+            "expect": "expect(document.querySelector('.cards-list')).to.have.css('flex-wrap', 'wrap');"
         }
-    ]
+    ],
+    "strict": true
 }
+
+
+
 
 
 

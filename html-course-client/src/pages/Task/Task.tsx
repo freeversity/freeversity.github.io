@@ -162,6 +162,8 @@ const Task: FC<TaskProps> = ({className, baseUrl, tasks}) => {
                                 article={article}
                                 setArticleShown={setArticleShown}
                                 setNextTaskActive={setNextTaskActive}
+                                cssReadonly={task.cssReadonly}
+                                markupReadonly={task.markupReadonly}
                             />
                         </>
                     )}

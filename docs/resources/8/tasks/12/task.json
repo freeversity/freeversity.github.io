@@ -2,6 +2,7 @@
     "id": 12,      
     "name": "testing-layout",
     "htmlEntry": "index.html",
+    "markupReeadonly": true,
     "cssEntry": "style.css",
     "articleEntry": "article.md",
     "expectEntry": "expect.json"

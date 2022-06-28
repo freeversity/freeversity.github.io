@@ -1,22 +1,43 @@
 {
     "assertions": [
         {
-            "title": "На `6` строке раскомментируйте подключение стилевого файла `outline.css`. На странице подсветятся боксы.",
-            "name": "uncommentOutlineCssLink",
-            "expect": "expect(document.querySelector('link[href=\"outline.css\"]')).to.exist;"
+            "title": "Удалите весь закомментированный код.",
+            "name": "removeAllCommentedCode",
+            "expect": "expect(document.querySelector('style[id=\"style.css\"]')).not.to.contain.text('/*');expect(document.querySelector('style[id=\"style.css\"]')).not.to.contain.text('*/')"
         },
         {
-            "title": "На `20` строке добавьте новый абзац `<p>` с текстом `Новый бокс` В мини-браузере в первой карточке появится новый блочный бокс.",
-            "name": "addParagraphWithNewBoxText",
-            "expect": "expect(document.querySelector('article:first-child .article-text + p')).to.have.rendered.text('Новый бокс');"
+            "title": "Сделайте `cards-list` грид-контейнером.",
+            "name": "setCardsListDisplayToGrid",
+            "expect": "expect(document.querySelector('.cards-list')).to.have.css('display', 'grid');"
         },
         {
-            "title": "На `19` строке оберните слова `двухэтажный дом` в тег `<span>`. В первой карточке появится новый строчный бокс.",
-            "name": "wrapWordsWithSpanElement",
-            "expect": "expect(document.querySelector('article:first-child .article-text span')).to.have.text('двухэтажный дом');"
+            "title": "Добавьте ему свойство `grid-template-columns` со значением `repeat(2, 295px)`.",
+            "name": "setCardsListGridTemplateColumnsToRepeat2By295Px",
+            "expect": "expect(document).to.have.cssRule('.cards-list', 'gridTemplateColumns', 'repeat(2, 295px)');"
+        },
+        {
+            "title": "Задайте отступ между рядами и колонками 15px Обратите внимание, справа нет лишнего отступа.",
+            "name": "setCardsListGapTo15px",
+            "expect": "expect(document).to.have.cssRule('.cards-list', 'gap', '15px');"
+        },
+        {
+            "title": "Измените значение grid-template-columns так, чтобы ширина колонок стала 140px.",
+            "name": "setCardsListGridTemplateColumnsToRepeat2By140Px",
+            "expect": "expect(document).to.have.cssRule('.cards-list', 'gridTemplateColumns', 'repeat(2, 140px)');"
+        },
+        {
+            "title": "А теперь так, чтобы колонок стало три.",
+            "name": "setCardsListGridTemplateColumnsToRepeat3By295Px",
+            "expect": "expect(document).to.have.cssRule('.cards-list', 'gridTemplateColumns', 'repeat(3, 140px)');"
         }
-    ]
+    ],
+    "strict": true
 }
+
+
+
+
+
 
 
 

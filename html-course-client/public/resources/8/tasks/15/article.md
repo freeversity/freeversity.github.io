@@ -1,164 +1,71 @@
-# Боксовая модель
+# Значение `minmax`
 
-В этом тренажёре мы разберём продвинутые техники создания сайтов. В частности, поговорим о том, как располагать элементы на странице, то есть о сетках.
+Мы сделали так, чтобы количество колонок в списке зависело от ширины страницы. Но если пространство по ширине не получается разделить на количество колонок без остатка, то справа остаётся много свободного места.
 
-В тренажёре [«Знакомство с HTML и CSS»](/#html-and-css-introduction) мы познакомились со многими тегами. Каждому из этих тегов на странице соответствует прямоугольная область, которая называется **боксом** (от английского _box_ — «коробка»).
+Чтобы от него избавиться, можно увеличить ширину колонок. Но фиксированная ширина проблему не решит — если страница ещё увеличится, то свободное пространство появится снова. Поэтому нужно, чтобы ширина колонок изменялась динамически и зависела от наличия свободного пространства.
 
-Бокс состоит из содержимого (`content`), внутренних отступов (`padding`), рамки (`border`) и внешних отступов (`margin`):
+Это можно сделать с помощью ещё одного значения-функции `minmax`. Его указывают в `repeat` вместо фиксированной ширины колонок. В скобках после `minmax` задают минимальный и максимальный размеры колонок, они разделяются запятой:
 
-![Схема бокса](/resources/7/assets/scheme1.svg)
+```css
+repeat(auto-fit, minmax(минимальный размер, максимальный размер));
+```
 
-То, как бокс выглядит на странице, во многом зависит от его типа (или от типа его родителя). С боксами двух типов — блочными и строчными — мы уже работали в тренажёре [«Знакомство с HTML и CSS»](/#html-and-css-introduction), хоть и не упоминали их типы.
+Код ниже позволит колонкам изменять ширину в зависимости от имеющегося в контейнере свободного пространства. При этом колонки не станут меньше `100px` и не растянутся больше, чем на `150px`:
 
-Блочные боксы на странице начинаются с новой строки и растягиваются на всю ширину родительского элемента. Блочный тип по умолчанию имеют, например, теги `<p>`, `<div>` и `<h1>`.
+```css
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 150px));
+}
+```
+
+В `minmax` в качестве максимального значения часто используют единицу измерения `fr`. Она позволяет колонкам увеличивать ширину до тех пор, пока свободного пространства в контейнере не хватит на ещё одну колонку.
 
 <style>
-.scheme {
-  position: relative;
-  font-size: 14px;
-  line-height: 14px;
-  border: 1px solid transparent;
-  background-color: rgba(0, 0, 255, 0.1);
-  outline: 2px solid blue;
-}
+  .wrapper {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 24% 35.5% 36.5%;
+    column-gap: 2%;
+    text-align: center;
+    border: 1px solid #D5D8E3;
+    border-radius: 4px;
+    padding: 10px;
+    background-color: #fff;
+    color: #333333;
+  }
 
-.scheme::before {
-  position: absolute;
-  content: "div";
-  top: -1px;
-  left: -1px;
-  padding: 5px;
-  color: white;
+  .title {
+    grid-column: span 3;
+    padding-top: 0.5em;
+    padding-bottom: 1em;
+    font-weight: bold;
+    font-size: 1.5em;
+  }
 
-  background-color: blue;
-}
+  .container {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+    border: 1px solid #333333;
+  }
 
-.scheme h1 {
-  position: relative;
-  margin-top: 30px;
-  margin-bottom: 0;
-  padding: 5px;
-  padding-left: 30px;
-  background-color: rgba(0, 255, 0, 0.1);
-  outline: 2px solid green;
-  outline-offset: -1px;
-}
+  .column {
+    height: 150px;
+  }
 
-.scheme h1::before {
-  position: absolute;
-  content: "h1";
-  top: 0;
-  left: 0;
-  padding: 5px;
-  font-size: 14px;
-  line-height: 14px;
-  color: white;
+  .column-1 {
+    background-color: #b9e3b5;
+  }
 
-  background-color: green;
-}
+  .column-2 {
+    background-color: #fed799;
+  }
 
-.scheme p {
-  position: relative;
-  margin-top: 15px;
-  padding: 5px;
-  padding-left: 30px;
-  background-color: rgba(255, 255, 0, 0.1);
-  outline: 2px solid gold;
-  outline-offset: -1px;
-}
-
-.scheme p::before {
-  position: absolute;
-  content: "p";
-  top: 0;
-  left: 0;
-  padding: 5px;
-  font-size: 14px;
-  color: white;
-
-  background-color: gold;
-}
+  .column-3 {
+    background-color: #ccd9f0;
+  }
 </style>
-<div class="scheme"><h1>Заголовок</h1><p>Абзац</p></div>
+<div class="wrapper"><div class="title">minmax (100px, 1fr)</div><div>width: 200px;</div><div>width: 299px;</div><div>width: 300px;</div><div class="container"><div class="column column-1"></div><div class="column column-2"></div></div><div class="container"><div class="column column-1"></div><div class="column column-2"></div></div><div class="container"><div class="column column-1"></div><div class="column column-2"></div><div class="column column-3"></div></div></div>
 
-Строчные боксы располагаются друг за другом на одной строке, а их ширина зависит от их содержимого. По умолчанию строчными боксами являются, например, теги `<a>`, `<span>` и `<b>`.
-
-<style>
-.scheme-inline {
-  position: relative;
-  padding: 15px 10px;
-  font-size: 14px;
-  line-height: 14px;
-  border: 2px solid #aaaaaa;
-}
-
-.scheme-inline a,
-.scheme-inline span,
-.scheme-inline i {
-  display: inline-block;
-}
-
-.scheme-inline a {
-  position: relative;
-  margin-right: 10px;
-  padding: 5px;
-  padding-left: 20px;
-  background-color: rgba(0, 0, 255, 0.1);
-  outline: 2px solid blue;
-}
-
-.scheme-inline a::before {
-  position: absolute;
-  content: "a";
-  top: 0;
-  left: 0;
-  bottom: 0;
-  color: white;
-  padding: 5px;
-  background-color: blue;
-}
-
-.scheme-inline span {
-  position: relative;
-  margin-right: 10px;
-  padding: 5px;
-  padding-left: 45px;
-  background-color: rgba(0, 255, 0, 0.1);
-  outline: 2px solid green;
-}
-
-.scheme-inline span::before {
-  position: absolute;
-  content: "span";
-  top: 0;
-  left: 0;
-  bottom: 0;
-  padding: 5px;
-  color: white;
-
-  background-color: green;
-}
-
-.scheme-inline b {
-  position: relative;
-  margin-bottom: 0;
-  padding: 3px 5px 3px 25px;
-  background-color: rgba(255, 255, 0, 0.1);
-  outline: 2px solid gold;
-}
-
-.scheme-inline b::before {
-  position: absolute;
-  content: "b";
-  top: 0;
-  left: 0;
-  bottom: 0;
-  padding: 5px;
-  color: white;
-
-  background-color: gold;
-}
-</style>
-<div class="scheme-inline"><a>Ссылка</a>&nbsp;<span>Произвольная строка текста</span>&nbsp;<b>Текст, выделенный полужирным</b></div>
-
-Хорошему верстальщику нужно уметь видеть боксы на странице. Потренируем этот навык. Подключим специальный стилевой файл для подсветки боксов, а после добавим на страницу новые боксы разных типов.
+В шаблоне списка укажем с помощью `minmax` минимальный и максимальный размеры колонок и понаблюдаем, как перестроится список, если изменить ширину страницы. После этого посмотрим, что случится, если добавить в список карточку, чьё содержимое шире колонки.

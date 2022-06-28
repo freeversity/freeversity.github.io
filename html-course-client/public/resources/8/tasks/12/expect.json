@@ -1,21 +1,17 @@
 {
     "assertions": [
         {
-            "title": "На `6` строке раскомментируйте подключение стилевого файла `outline.css`. На странице подсветятся боксы.",
-            "name": "uncommentOutlineCssLink",
-            "expect": "expect(document.querySelector('link[href=\"outline.css\"]')).to.exist;"
+            "title": "Измените ширину `body` на `350px`.<br>Теперь в ряду помещаются только две карточки. Справа у границы контейнера появился лишний отступ, а третья и четвёртая карточки слиплись.",
+            "name": "setBodyWidthTo350Px",
+            "expect": "expect(document.body).to.have.css('width', '350px');"
         },
         {
-            "title": "На `20` строке добавьте новый абзац `<p>` с текстом `Новый бокс` В мини-браузере в первой карточке появится новый блочный бокс.",
-            "name": "addParagraphWithNewBoxText",
-            "expect": "expect(document.querySelector('article:first-child .article-text + p')).to.have.rendered.text('Новый бокс');"
-        },
-        {
-            "title": "На `19` строке оберните слова `двухэтажный дом` в тег `<span>`. В первой карточке появится новый строчный бокс.",
-            "name": "wrapWordsWithSpanElement",
-            "expect": "expect(document.querySelector('article:first-child .article-text span')).to.have.text('двухэтажный дом');"
+            "title": "Измените ширину `body` на `645px`.<br>В первом ряду оказалось четыре карточки. Снова появился лишний отступ, а третья и четвёртая карточки слиплись.",
+            "name": "setBodyWidthTo645Px",
+            "expect": "expect(document.body).to.have.css('width', '350px');"
         }
-    ]
+    ],
+    "strict": true
 }
 
 

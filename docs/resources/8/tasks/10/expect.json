@@ -1,19 +1,14 @@
 {
     "assertions": [
         {
-            "title": "На `6` строке раскомментируйте подключение стилевого файла `outline.css`. На странице подсветятся боксы.",
-            "name": "uncommentOutlineCssLink",
-            "expect": "expect(document.querySelector('link[href=\"outline.css\"]')).to.exist;"
+            "title": "Измените значение свойства `justify-content` на `flex-start`",
+            "name": "setCardsListJustifyContentToFlexStart",
+            "expect": "expect(document.querySelector('.cards-list')).to.have.css('justifyContent', 'flex-start');"
         },
         {
-            "title": "На `20` строке добавьте новый абзац `<p>` с текстом `Новый бокс` В мини-браузере в первой карточке появится новый блочный бокс.",
-            "name": "addParagraphWithNewBoxText",
-            "expect": "expect(document.querySelector('article:first-child .article-text + p')).to.have.rendered.text('Новый бокс');"
-        },
-        {
-            "title": "На `19` строке оберните слова `двухэтажный дом` в тег `<span>`. В первой карточке появится новый строчный бокс.",
-            "name": "wrapWordsWithSpanElement",
-            "expect": "expect(document.querySelector('article:first-child .article-text span')).to.have.text('двухэтажный дом');"
+            "title": "Добавьте карточкам `card` внешние отступы справа и снизу `15px`. Карточки выстроятся по две в ряд.",
+            "name": "setCardMarginLeftAndBottomTo15Px",
+            "expect": "expect(document.querySelector('.card')).to.have.css('marginRight', '15px');expect(document.querySelector('.card')).to.have.css('marginBottom', '15px');"
         }
     ]
 }
