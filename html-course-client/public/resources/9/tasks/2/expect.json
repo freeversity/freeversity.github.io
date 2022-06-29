@@ -1,0 +1,26 @@
+{
+    "assertions": [
+        {
+            "title": "Сделайте элемент с классом `cards-list` флекс-контейнером.",
+            "name": "setCardsListDisplayToFlex",
+            "expect": "expect(document.querySelector('.cards-list')).to.have.css('display', 'flex');"
+        },
+        {
+            "title": "Добавьте карточкам с классом `card` внешний отступ справа `10px`.",
+            "name": "serCardMarginRightTo10Px",
+            "expect": "expect(document.querySelector('.card')).to.have.css('marginRight', '10px');"
+        },
+        {
+            "title": "С помощью псевдокласса `:nth-child(3)` уберите отступ справа у третьей карточки.",
+            "name": "set3rdCardMarginRightTo0",
+            "expect": "expect(document.querySelector('.card')).to.have.css('marginRight', '10px');expect(document.querySelector('.card:nth-child(3)')).to.have.css('marginRight', '0');"
+        }
+    ],
+    "strict": true
+}
+
+
+
+
+
+

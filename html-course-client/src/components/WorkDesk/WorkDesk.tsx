@@ -21,6 +21,10 @@ import { Markdown } from '../Markdown/Markdown';
 import { ChallengeInspector } from '../ChallengeInspector/ChallengeInspector';
 import {expect as expectFunc} from '../../expect'
 
+declare global {
+    interface Window { gtag: (type: string, name: string, data: any) => void; }
+}
+
 export interface WorkDeskProps {
     initialMarkup: string;
     initialCss?: string;
@@ -75,7 +79,9 @@ const WorkDesk: FC<WorkDeskProps> = ({
     }
 
     useEffect(() => {
-        setNextTaskActive(!!expect && doneAsserts.size === expect.assertions.length);
+        const isActive = !!expect && doneAsserts.size === expect.assertions.length;
+        
+        setNextTaskActive(isActive);
     }, [doneAsserts, setNextTaskActive, expect])
 
     const onValidate = (previewFrame: HTMLIFrameElement) => {

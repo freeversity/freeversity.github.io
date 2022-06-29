@@ -71,6 +71,12 @@ const Task: FC<TaskProps> = ({className, baseUrl, tasks}) => {
     const taskType = tasks[currentIndex].type;
 
     useEffect(() => {
+        if (nextTaskActive) {
+            window.gtag?.('event', 'task_done', {chapterId, taskId})
+        }
+    }, [nextTaskActive, chapterId, taskId])
+
+    useEffect(() => {
         fetch(`/resources/${chapterId}/tasks/${taskId}/task.json`)
             .then(req => req.json())
             .then((task: TaskType) => {

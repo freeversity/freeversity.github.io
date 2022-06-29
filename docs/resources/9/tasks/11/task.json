@@ -1,0 +1,8 @@
+{
+    "id": 11,      
+    "name": "creating-asymmetric-card",
+    "htmlEntry": "index.html",
+    "cssEntry": "style.css",
+    "articleEntry": "article.md",
+    "expectEntry": "expect.json"
+}

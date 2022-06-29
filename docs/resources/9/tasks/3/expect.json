@@ -1,0 +1,26 @@
+{
+    "assertions": [
+        {
+            "title": "Добавьте в правило для класса `cards-list` свойство `align-items` со значением `flex-start`. Первая и третья карточки перестанет тянуться на всю высоту контейнера.",
+            "name": "setCardsListAlignItemsToFlexStart",
+            "expect": "expect(document.querySelector('.cards-list')).to.have.css('alignItems', 'flex-start');"
+        },
+        {
+            "title": "Измените значение `align-items` на `flex-end` Карточки прижмутся к низу контейнера.",
+            "name": "setCardsListAlignItemsToFlexEnd",
+            "expect": "expect(document.querySelector('.cards-list')).to.have.css('alignItems', 'flex-end');"
+        },
+        {
+            "title": "А теперь — на `center`. Карточки расположатся по центру.",
+            "name": "setCardsListAlignItemsToFlexCenter",
+            "expect": "expect(document.querySelector('.cards-list')).to.have.css('alignItems', 'center');"
+        }
+    ],
+    "strict": true
+}
+
+
+
+
+
+

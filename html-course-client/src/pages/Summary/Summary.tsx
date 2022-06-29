@@ -17,6 +17,7 @@ export interface Course {
                 name: string;
                 id: number;
                 entry: string;
+                disabled?: boolean;
             })[]
 
         })[]
@@ -56,9 +57,10 @@ const Summary: FC<SummaryProps> = ({className}) => {
                                     <li key={name}>
                                         <h4 id={name}>{name}</h4>
                                         <ul>
-                                            {chapters.map(({name, id}) => (
+                                            {chapters.map(({name, id, disabled}) => (
                                                 <li key={id}>
-                                                    <Link to={`/chapters/${id}`}>{name}</Link>
+                                                    {disabled && <span>{name}</span>}
+                                                    {!disabled && <Link to={`/chapters/${id}`}>{name}</Link>}
                                                 </li>
                                             ))}
                                         </ul>

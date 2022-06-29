@@ -3,11 +3,120 @@
     "title": "Microgrids, v.2",
     "tasks": [
         {
+            "id": 1,
+            "type": "task",
+            "entry": "/resources/9/tasks/1/task.json",
+            "name": "beginning-creating-a-carousel"
+        },
+        {
+            "id": 2,
+            "type": "task",
+            "entry": "/resources/9/tasks/2/task.json",
+            "name": "adding-margins-between-cards"
+        },
+        {
+            "id": 3,
+            "type": "task",
+            "entry": "/resources/9/tasks/3/task.json",
+            "name": "auxillary-axis-and-align-items"
+        },
+        {
+            "id": 4,
+            "type": "task",
+            "entry": "/resources/9/tasks/4/task.json",
+            "name": "flex-direction-prop"
+        },
+        {
+            "id": 5,
+            "type": "task",
+            "entry": "/resources/9/tasks/5/task.json",
+            "name": "order-prop"
+        },
+        {
+            "id": 6,
+            "type": "task",
+            "entry": "/resources/9/tasks/6/task.json",
+            "name": "align-self-prop"
+        },
+        {
+            "id": 7,
+            "type": "task",
+            "entry": "/resources/9/tasks/7/task.json",
+            "name": "flex-elements-margins"
+        },
+        {
+            "id": 8,
+            "type": "task",
+            "entry": "/resources/9/tasks/8/task.json",
+            "name": "changing-image-size"
+        },
+        {
+            "id": 9,
+            "type": "task",
+            "entry": "/resources/9/tasks/9/task.json",
+            "name": "fixing-layout-with-max-width-and-height"
+        },
+        {
             "id": 10,
             "type": "challenge",
             "entry": "/resources/9/tasks/10/task.json",
             "name": "control-panel"
-        }, {
+        }, 
+        {
+            "id": 11,
+            "type": "task",
+            "entry": "/resources/9/tasks/11/task.json",
+            "name": "creating-asymmetric-card"
+        },
+        {
+            "id": 12,
+            "type": "task",
+            "entry": "/resources/9/tasks/12/task.json",
+            "name": "addin-a-third-column"
+        },
+        {
+            "id": 13,
+            "type": "task",
+            "entry": "/resources/9/tasks/13/task.json",
+            "name": "using-grid-areas"
+        },
+        {
+            "id": 14,
+            "type": "task",
+            "entry": "/resources/9/tasks/14/task.json",
+            "name": "describing-multiple-rows"
+        },
+        {
+            "id": 15,
+            "type": "task",
+            "entry": "/resources/9/tasks/15/task.json",
+            "name": "finishing-card-template"
+        },
+        {
+            "id": 16,
+            "type": "task",
+            "entry": "/resources/9/tasks/16/task.json",
+            "name": "align-self-with-grid"
+        },
+        {
+            "id": 17,
+            "type": "task",
+            "entry": "/resources/9/tasks/17/task.json",
+            "name": "changing-columns-width"
+        },
+        {
+            "id": 18,
+            "type": "task",
+            "entry": "/resources/9/tasks/18/task.json",
+            "name": "justify-self-prop"
+        },
+        {
+            "id": 19,
+            "type": "task",
+            "entry": "/resources/9/tasks/19/task.json",
+            "name": "testing-card-layout"
+        },
+        {
             "id": 20,
             "type": "challenge",
             "entry": "/resources/9/tasks/20/task.json",

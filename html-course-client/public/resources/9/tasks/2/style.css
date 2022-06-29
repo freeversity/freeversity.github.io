@@ -1,0 +1,13 @@
+.cards-list {
+  margin: 0;
+  padding: 0;
+}
+
+.card {
+  width: 120px;
+  padding: 15px;
+}
+
+.current {
+  width: 150px;
+}

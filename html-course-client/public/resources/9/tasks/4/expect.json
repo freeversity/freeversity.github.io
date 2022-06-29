@@ -1,0 +1,14 @@
+{
+    "assertions": [
+        {
+            "title": "Превратите карточки с классом `card` во флекс-контейнеры. Вёрстка сломается.",
+            "name": "setCardDisplayToFlex",
+            "expect": "expect(document.querySelector('.card')).to.have.css('display', 'flex');"
+        },
+        {
+            "title": "Добавьте карточкам свойство `flex-direction` со значением `column`. Элементы внутри карточек выстроятся сверху вниз.",
+            "name": "setCardFlexDirectionToColumn",
+            "expect": "expect(document.querySelector('.card')).to.have.css('flexDirection', 'column');"
+        }
+    ]
+}

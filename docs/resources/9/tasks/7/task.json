@@ -1,0 +1,8 @@
+{
+    "id": 7,      
+    "name": "flex-elements-margins",
+    "htmlEntry": "index.html",
+    "cssEntry": "style.css",
+    "articleEntry": "article.md",
+    "expectEntry": "expect.json"
+}

@@ -1,0 +1,25 @@
+{
+    "assertions": [
+        {
+            "title": "Создайте правило для класса `cards-list` и обнулите в нём внешние и внутренние отступы.",
+            "name": "removeCardsListPaddingsAndMargins",
+            "expect": "expect(document.querySelector('.cards-list')).to.have.css('padding', '0');expect(document.querySelector('.cards-list')).to.have.css('margin', '0');"
+        },
+        {
+            "title": "Создайте правило для класса `card` и задайте в нём ширину `120px` и внутренние отступы `15px` со всех сторон. Во второй карточке картинка выпадет из контейнера.",
+            "name": "setCardWidthTo120PxAndPaddingTo15Px",
+            "expect": "expect(document).to.have.cssRule('.card', 'width', '120px');expect(document).to.have.cssRule('.card', 'padding', '15px');"
+        },
+        {
+            "title": "Ниже создайте правило для класса `current` и задайте в нём ширину `150px`",
+            "name": "setCurrentClassWidthTo150Px",
+            "expect": "expect(document).to.have.cssRule('.current', 'width', '150px');"
+        }
+    ]
+}
+
+
+
+
+
+

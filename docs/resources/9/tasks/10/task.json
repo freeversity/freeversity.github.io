@@ -1,6 +1,6 @@
 {
-    "id": 19,
-    "name": "stickers-collection",
+    "id": 10,
+    "name": "control-panel",
     "htmlEntry": "index.html",
     "cssEntry": "style.css",
     "articleEntry": "article.md",
