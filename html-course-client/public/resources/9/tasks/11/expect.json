@@ -1,28 +1,24 @@
 {
     "assertions": [
         {
-            "title": "На `6` строке подключите файл `navigation-outline.css`.",
-            "name": "uncommentNavigationOutlineCssLink",
-            "expect": "expect(document.querySelector('link[href=\"navigation-outline.css\"]')).to.exist;"
+            "title": "Сделайте карточку грид-контейнером.",
+            "name": "setCardDisplaToGrid",
+            "expect": "expect(document.querySelector('.card')).to.have.css('display', 'grid');"
         },
         {
-            "title": "В `style.css` создайте правило для класса `navigation` и укажите в нём тип бокса `grid`",
-            "name": "createNavigationRuleInStyleCssAndSetDisplayGrid",
-            "expect": "expect(document.querySelector('style[id=\"style.css\"]')).to.have.cssRule('.navigation', 'display', 'grid');"
+            "title": "С помощью свойства `grid-template-columns` разделите карточку на две колонки шириной `260px`.",
+            "name": "setCardGridTemplateColumnsToTwoColumnsBy260px",
+            "expect": "expect(document.querySelector('.card')).to.have.css('gridTemplateColumns', '260px 260px');"
         },
         {
-            "title": "Разделите содержимое `navigation` на две колонки шириной `95px` и `1fr`",
-            "name": "setNavigationGridTemplateColumnTo9Ppx1Fr",
-            "expect": "expect(document).to.have.cssRule('.navigation', 'gridTemplateColumns', '95px 1fr');"
+            "title": "Добавьте отступы между рядами и колонками `20px`.",
+            "name": "setCardGapTo20Px",
+            "expect": "expect(document.querySelector('.card')).to.have.css('gap', '20px');"
         },
         {
-            "title": "Добавьте отступ `75px` между колонками.",
-            "name": "setColumnGapTo75px",
-            "expect": "expect(document).to.have.cssRule('.navigation', 'columnGap', '75px');"
+            "title": "Создайте правило для класса `title` и задайте в нём ширину `360px`. Заголовок и описание наложатся друг на друга.",
+            "name": "setTitleWidthTo360Px",
+            "expect": "expect(document.querySelector('.title')).to.have.css('width', '360px');"
         }
     ]
 }
-
-
-
-

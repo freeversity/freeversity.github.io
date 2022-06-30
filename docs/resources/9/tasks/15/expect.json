@@ -1,27 +1,18 @@
 {
     "assertions": [
         {
-            "title": "На `6` строке подключите файл `navigation-outline.css`.",
-            "name": "uncommentNavigationOutlineCssLink",
-            "expect": "expect(document.querySelector('link[href=\"navigation-outline.css\"]')).to.exist;"
+            "title": "Назначьте элементу с классом `description` грид-область `description`. Описание займёт две колонки.",
+            "name": "setDescriptionGridAreaToDescription",
+            "expect": "expect(document.querySelector('.description')).to.have.css('gridArea', 'description');"
         },
         {
-            "title": "В `style.css` создайте правило для класса `navigation` и укажите в нём тип бокса `grid`",
-            "name": "createNavigationRuleInStyleCssAndSetDisplayGrid",
-            "expect": "expect(document.querySelector('style[id=\"style.css\"]')).to.have.cssRule('.navigation', 'display', 'grid');"
-        },
-        {
-            "title": "Разделите содержимое `navigation` на две колонки шириной `95px` и `1fr`",
-            "name": "setNavigationGridTemplateColumnTo9Ppx1Fr",
-            "expect": "expect(document).to.have.cssRule('.navigation', 'gridTemplateColumns', '95px 1fr');"
-        },
-        {
-            "title": "Добавьте отступ `75px` между колонками.",
-            "name": "setColumnGapTo75px",
-            "expect": "expect(document).to.have.cssRule('.navigation', 'columnGap', '75px');"
+            "title": "Назначьте элементу с классом `disclaimer` грид-область `disclaimer`. Дисклеймер тоже растянется.",
+            "name": "setDisclaimerGridAreaToDisclaimer",
+            "expect": "expect(document.querySelector('.disclaimer')).to.have.css('gridArea', 'disclaimer');"
         }
     ]
 }
+
 
 
 

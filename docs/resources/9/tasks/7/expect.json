@@ -1,27 +1,30 @@
 {
     "assertions": [
         {
-            "title": "На `6` строке подключите файл `navigation-outline.css`.",
-            "name": "uncommentNavigationOutlineCssLink",
-            "expect": "expect(document.querySelector('link[href=\"navigation-outline.css\"]')).to.exist;"
+            "title": "Добавьте `image` внешний отступ снизу `15px`. ",
+            "name": "setImageMarginBottomTo15Px",
+            "expect": "expect(document.querySelector('.image')).to.have.css('marginBottom', '15px');"
         },
         {
-            "title": "В `style.css` создайте правило для класса `navigation` и укажите в нём тип бокса `grid`",
-            "name": "createNavigationRuleInStyleCssAndSetDisplayGrid",
-            "expect": "expect(document.querySelector('style[id=\"style.css\"]')).to.have.cssRule('.navigation', 'display', 'grid');"
+            "title": "У `title` обнулите внешний отступ сверху и задайте внешний отступ снизу `10px`.",
+            "name": "setTitleMarginTopTo0",
+            "expect": "expect(document.querySelector('.title')).to.have.css('marginTop', '0');expect(document.querySelector('.title')).to.have.css('marginBottom', '10px');"
         },
         {
-            "title": "Разделите содержимое `navigation` на две колонки шириной `95px` и `1fr`",
-            "name": "setNavigationGridTemplateColumnTo9Ppx1Fr",
-            "expect": "expect(document).to.have.cssRule('.navigation', 'gridTemplateColumns', '95px 1fr');"
+            "title": "Создайте правило для класса `description`. Обнулите в нём внешний отступ сверху и задайте внешний отступ снизу `5px`.",
+            "name": "setDescriptionMarginTopTo0AndMarginBottomTo5Px",
+            "expect": "expect(document.querySelector('.description')).to.have.css('marginTop', '0');expect(document.querySelector('.description')).to.have.css('marginBottom', '5px');"
         },
         {
-            "title": "Добавьте отступ `75px` между колонками.",
-            "name": "setColumnGapTo75px",
-            "expect": "expect(document).to.have.cssRule('.navigation', 'columnGap', '75px');"
+            "title": "Создайте правило для класса `add-link`. Задайте в нём внешний отступ сверху `10px` и внутренний отступ со всех сторон `5px`. Обратите внимание, что у ссылок сработали отступы по вертикали.",
+            "name": "setAddLinkMarginTo5AndMarginTopTo10px",
+            "expect": "expect(document.querySelector('.add-link')).to.have.css('marginTop', '10px');expect(document.querySelector('.add-link')).to.have.css('padding', '5px');"
         }
     ]
 }
+
+
+
 
 
 

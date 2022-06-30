@@ -1,27 +1,24 @@
 {
     "assertions": [
         {
-            "title": "На `6` строке подключите файл `navigation-outline.css`.",
-            "name": "uncommentNavigationOutlineCssLink",
-            "expect": "expect(document.querySelector('link[href=\"navigation-outline.css\"]')).to.exist;"
+            "title": "Добавьте в правило для `price` свойство `align-self` со значением `start`. Блок с ценой перестанет тянуться на всю высоту ряда.",
+            "name": "setPriceAlignSelfToStart",
+            "expect": "expect(document.querySelector('.price')).to.have.css('alignSelf', 'start');"
         },
         {
-            "title": "В `style.css` создайте правило для класса `navigation` и укажите в нём тип бокса `grid`",
-            "name": "createNavigationRuleInStyleCssAndSetDisplayGrid",
-            "expect": "expect(document.querySelector('style[id=\"style.css\"]')).to.have.cssRule('.navigation', 'display', 'grid');"
+            "title": "Добавьте в правило для `disclaimer` свойство `align-self` со значением `end`. Дисклеймер прижмётся к низу карточки.",
+            "name": "setDisclaimerAlignSelfToEnd",
+            "expect": "expect(document.querySelector('.disclaimer')).to.have.css('alignSelf', 'end');"
         },
         {
-            "title": "Разделите содержимое `navigation` на две колонки шириной `95px` и `1fr`",
-            "name": "setNavigationGridTemplateColumnTo9Ppx1Fr",
-            "expect": "expect(document).to.have.cssRule('.navigation', 'gridTemplateColumns', '95px 1fr');"
-        },
-        {
-            "title": "Добавьте отступ `75px` между колонками.",
-            "name": "setColumnGapTo75px",
-            "expect": "expect(document).to.have.cssRule('.navigation', 'columnGap', '75px');"
+            "title": "В `index.html` раскомментируйте код на строках `25`-`37`. Обратите внимание, во второй карточке цена выпала из контейнера.",
+            "name": "uncommentOneMoreCard",
+            "expect": "expect(document.querySelectorAll('.card')).to.have.length(2);"
         }
     ]
 }
+
+
 
 
 

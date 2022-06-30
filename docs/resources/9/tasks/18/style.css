@@ -1,6 +1,32 @@
-body {
-  margin: 0;
-  padding-right: 20px;
-  padding-left: 20px;
+.card {
+  width: 540px;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 260px 120px 120px;
+  grid-template-areas: "title title price"
+                       "options description description"
+                       "options disclaimer disclaimer";
+  gap: 20px;
 }
 
+.title {
+  grid-area: title;
+}
+
+.price {
+  grid-area: price;
+  align-self: start;
+}
+
+.options-list {
+  grid-area: options;
+}
+
+.description {
+  grid-area: description;
+}
+
+.disclaimer {
+  grid-area: disclaimer;
+  align-self: end;
+}

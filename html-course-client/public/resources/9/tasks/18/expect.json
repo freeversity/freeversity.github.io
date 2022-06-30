@@ -1,27 +1,25 @@
 {
     "assertions": [
         {
-            "title": "На `6` строке подключите файл `navigation-outline.css`.",
-            "name": "uncommentNavigationOutlineCssLink",
-            "expect": "expect(document.querySelector('link[href=\"navigation-outline.css\"]')).to.exist;"
+            "title": "Добавьте в правило для `price` свойство `justify-self` со значением `start`. Блоки с ценой перестанут тянуться и прижмутся к левому краю.",
+            "name": "setPriceJustifySelfToStart",
+            "expect": "expect(document.querySelector('.price')).to.have.css('justifySelf', 'start');"
         },
         {
-            "title": "В `style.css` создайте правило для класса `navigation` и укажите в нём тип бокса `grid`",
-            "name": "createNavigationRuleInStyleCssAndSetDisplayGrid",
-            "expect": "expect(document.querySelector('style[id=\"style.css\"]')).to.have.cssRule('.navigation', 'display', 'grid');"
+            "title": "Измените значение `justify-self` на `center`. Блоки с ценой расположатся по центру.",
+            "name": "setPriceJustifySelfToCenter",
+            "expect": "expect(document.querySelector('.price')).to.have.css('justifySelf', 'center');"
         },
         {
-            "title": "Разделите содержимое `navigation` на две колонки шириной `95px` и `1fr`",
-            "name": "setNavigationGridTemplateColumnTo9Ppx1Fr",
-            "expect": "expect(document).to.have.cssRule('.navigation', 'gridTemplateColumns', '95px 1fr');"
-        },
-        {
-            "title": "Добавьте отступ `75px` между колонками.",
-            "name": "setColumnGapTo75px",
-            "expect": "expect(document).to.have.cssRule('.navigation', 'columnGap', '75px');"
+            "title": "А теперь — на `end`. Блоки с ценой прижмутся к правому краю карточек.",
+            "name": "setPriceJustifySelfToEnd",
+            "expect": "expect(document.querySelector('.price')).to.have.css('justifySelf', 'end');"
         }
-    ]
+    ],
+    "strict": true
 }
+
+
 
 
 

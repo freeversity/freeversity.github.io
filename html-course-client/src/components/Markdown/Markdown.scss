@@ -1,4 +1,6 @@
 .markdown-container {
+    line-height: 1.4;
+    
     code, pre {
         background-color: #eee;
         border-radius: 3px;
@@ -31,5 +33,9 @@
         border: 2px solid #d8d7e4;
         border-top-width: 25px;
         border-radius: 8px;
+    }
+
+    li {
+        padding: 5px 0;
     }
 }

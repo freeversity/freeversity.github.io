@@ -1,28 +1,22 @@
 {
     "assertions": [
         {
-            "title": "На `6` строке подключите файл `navigation-outline.css`.",
-            "name": "uncommentNavigationOutlineCssLink",
-            "expect": "expect(document.querySelector('link[href=\"navigation-outline.css\"]')).to.exist;"
+            "title": "Создайте правило для класса `image` и добавьте в него свойство `order` со значением `1` Картинки станут последними элементами в карточках.",
+            "name": "setImageClassOrderTo1",
+            "expect": "expect(document.querySelector('.image')).to.have.css('order', '1');"
         },
         {
-            "title": "В `style.css` создайте правило для класса `navigation` и укажите в нём тип бокса `grid`",
-            "name": "createNavigationRuleInStyleCssAndSetDisplayGrid",
-            "expect": "expect(document.querySelector('style[id=\"style.css\"]')).to.have.cssRule('.navigation', 'display', 'grid');"
+            "title": "Измените значение order на `0`. Картинки вернутся на прежнее место.",
+            "name": "setImageClassOrderTo0",
+            "expect": "expect(document.querySelector('.image')).to.have.css('order', '0');"
         },
         {
-            "title": "Разделите содержимое `navigation` на две колонки шириной `95px` и `1fr`",
-            "name": "setNavigationGridTemplateColumnTo9Ppx1Fr",
-            "expect": "expect(document).to.have.cssRule('.navigation', 'gridTemplateColumns', '95px 1fr');"
-        },
-        {
-            "title": "Добавьте отступ `75px` между колонками.",
-            "name": "setColumnGapTo75px",
-            "expect": "expect(document).to.have.cssRule('.navigation', 'columnGap', '75px');"
+            "title": "Теперь измените значение на `-1`. Картинки станут первыми элементами.",
+            "name": "setImageClassOrderToNeg1",
+            "expect": "expect(document.querySelector('.image')).to.have.css('order', '-1');"
         }
-    ]
+    ],
+    "strict": true
 }
-
-
 
 

@@ -1,27 +1,26 @@
 {
+    "footnote": "",
+    "footnoteTitle": "",
     "assertions": [
         {
-            "title": "На `6` строке подключите файл `navigation-outline.css`.",
-            "name": "uncommentNavigationOutlineCssLink",
-            "expect": "expect(document.querySelector('link[href=\"navigation-outline.css\"]')).to.exist;"
+            "title": "Добавьте классу image свойство `max-width` со значением `100%`. Картинка перестанет выпадать, но слишком растянется по высоте.",
+            "name": "setImageMaxWidthTo100%",
+            "expect": "expect(document).to.have.cssRule('.image', 'maxWidth', '100%');"
         },
         {
-            "title": "В `style.css` создайте правило для класса `navigation` и укажите в нём тип бокса `grid`",
-            "name": "createNavigationRuleInStyleCssAndSetDisplayGrid",
-            "expect": "expect(document.querySelector('style[id=\"style.css\"]')).to.have.cssRule('.navigation', 'display', 'grid');"
+            "title": "Там же добавьте свойство `height` со значением `auto` Картинка перестанет деформироваться.",
+            "name": "setImageHeightTo100%",
+            "expect": "expect(document).to.have.cssRule('.image', 'height', 'auto');"
         },
         {
-            "title": "Разделите содержимое `navigation` на две колонки шириной `95px` и `1fr`",
-            "name": "setNavigationGridTemplateColumnTo9Ppx1Fr",
-            "expect": "expect(document).to.have.cssRule('.navigation', 'gridTemplateColumns', '95px 1fr');"
-        },
-        {
-            "title": "Добавьте отступ `75px` между колонками.",
-            "name": "setColumnGapTo75px",
-            "expect": "expect(document).to.have.cssRule('.navigation', 'columnGap', '75px');"
+            "title": "В `index.html` задайте изображениям в оставшихся двух карточках ширину и высоту `240`. Убедитесь, что вёрстка не сломалась.",
+            "name": "setOtherImagesWidthAndHeightTo240",
+            "expect": "expect(document.querySelector('.card:first-child .image')).to.have.attr('width', '240');expect(document.querySelector('.card:first-child .image')).to.have.attr('height', '240');expect(document.querySelector('.card:last-child .image')).to.have.attr('width', '240');expect(document.querySelector('.card:last-child .image')).to.have.attr('height', '240');"
         }
     ]
 }
+
+
 
 
 

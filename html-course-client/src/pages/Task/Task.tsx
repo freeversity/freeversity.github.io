@@ -25,6 +25,7 @@ export interface ExpectType {
     intro?: string;
     introTitle?: string;
     footnote?: string;
+    footnoteTitle?: string;
     assertions: ({
         name: string;
         type?: "expect";
@@ -70,11 +71,19 @@ const Task: FC<TaskProps> = ({className, baseUrl, tasks}) => {
 
     const taskType = tasks[currentIndex].type;
 
-    useEffect(() => {
-        if (nextTaskActive) {
-            window.gtag?.('event', 'task_done', {chapterId, taskId})
+    const onTaskDoneChange = (isDone: boolean) => {
+        if (nextTaskActive === isDone) return;
+
+        setNextTaskActive(isDone);
+
+        if (isDone) {
+            window.gtag?.('event', 'task_done', {
+                'event_category': 'engagement',
+                'event_label': 'method',
+                'value': `${chapterId}/${taskId} [${task!.name}]`
+            });
         }
-    }, [nextTaskActive, chapterId, taskId])
+    }
 
     useEffect(() => {
         fetch(`/resources/${chapterId}/tasks/${taskId}/task.json`)
@@ -120,6 +129,7 @@ const Task: FC<TaskProps> = ({className, baseUrl, tasks}) => {
             setCss(undefined);
             setExpect(undefined);
             setRefMarkup(undefined)
+            setNextTaskActive(false);
         }
     }, [chapterId, taskId, taskType]);
 
@@ -167,7 +177,7 @@ const Task: FC<TaskProps> = ({className, baseUrl, tasks}) => {
                                 initialCss={css}
                                 article={article}
                                 setArticleShown={setArticleShown}
-                                setNextTaskActive={setNextTaskActive}
+                                setNextTaskActive={onTaskDoneChange}
                                 cssReadonly={task.cssReadonly}
                                 markupReadonly={task.markupReadonly}
                             />

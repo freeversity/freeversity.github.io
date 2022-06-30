@@ -1,28 +1,14 @@
 {
     "assertions": [
         {
-            "title": "На `6` строке подключите файл `navigation-outline.css`.",
-            "name": "uncommentNavigationOutlineCssLink",
-            "expect": "expect(document.querySelector('link[href=\"navigation-outline.css\"]')).to.exist;"
+            "title": "Добавьте в шаблон карточки ещё два ряда:<br>`\"options description description\"`<br>`\"options disclaimer disclaimer\"`.",
+            "name": "addTwoMoreLinesIntoCardGridTemplateAreas",
+            "expect": "expect(document.querySelector('.card')).to.have.css('gridTemplateAreas', '\"title title price\" \"options description description\" \"options disclaimer disclaimer\"');"
         },
         {
-            "title": "В `style.css` создайте правило для класса `navigation` и укажите в нём тип бокса `grid`",
-            "name": "createNavigationRuleInStyleCssAndSetDisplayGrid",
-            "expect": "expect(document.querySelector('style[id=\"style.css\"]')).to.have.cssRule('.navigation', 'display', 'grid');"
-        },
-        {
-            "title": "Разделите содержимое `navigation` на две колонки шириной `95px` и `1fr`",
-            "name": "setNavigationGridTemplateColumnTo9Ppx1Fr",
-            "expect": "expect(document).to.have.cssRule('.navigation', 'gridTemplateColumns', '95px 1fr');"
-        },
-        {
-            "title": "Добавьте отступ `75px` между колонками.",
-            "name": "setColumnGapTo75px",
-            "expect": "expect(document).to.have.cssRule('.navigation', 'columnGap', '75px');"
+            "title": "Назначьте элементу с классом `options-list` грид-область `options`. Список опций переместится в первую колонку и растянется на два ряда.",
+            "name": "setOptionsListGridAreaToOptions",
+            "expect": "expect(document.querySelector('.options-list')).to.have.css('gridArea', 'options');"
         }
     ]
 }
-
-
-
-

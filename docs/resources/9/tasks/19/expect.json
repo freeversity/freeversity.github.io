@@ -1,28 +1,27 @@
 {
+    "introTitle": "Убедитесь, что вёрстка не ломается. Для этого раскомментируйте код:",
+    "title": "",
     "assertions": [
         {
-            "title": "На `6` строке подключите файл `navigation-outline.css`.",
-            "name": "uncommentNavigationOutlineCssLink",
-            "expect": "expect(document.querySelector('link[href=\"navigation-outline.css\"]')).to.exist;"
+            "title": "на `11` строке,",
+            "name": "uncommentAdditionalTitleText",
+            "expect": "expect(document.querySelector('.card:first-child .title')).to.have.rendered.text('Тариф «Бесконечный разговор» с дополнительным пакетом СМС и облачным хранилищем');"
         },
         {
-            "title": "В `style.css` создайте правило для класса `navigation` и укажите в нём тип бокса `grid`",
-            "name": "createNavigationRuleInStyleCssAndSetDisplayGrid",
-            "expect": "expect(document.querySelector('style[id=\"style.css\"]')).to.have.cssRule('.navigation', 'display', 'grid');"
+            "title": "на строках `14`-`15`,",
+            "name": "uncommentAdditionalParagraphs",            
+            "expect": "expect(document.querySelectorAll('.card:first-child .description p')).to.have.length(3);"
+
         },
         {
-            "title": "Разделите содержимое `navigation` на две колонки шириной `95px` и `1fr`",
-            "name": "setNavigationGridTemplateColumnTo9Ppx1Fr",
-            "expect": "expect(document).to.have.cssRule('.navigation', 'gridTemplateColumns', '95px 1fr');"
+            "title": "на `22` строке,",
+            "name": "uncommentAdditionalListItem",
+            "expect": "expect(document.querySelectorAll('.card:first-child .options-list .options-item')).to.have.length(5);"
         },
         {
-            "title": "Добавьте отступ `75px` между колонками.",
-            "name": "setColumnGapTo75px",
-            "expect": "expect(document).to.have.cssRule('.navigation', 'columnGap', '75px');"
+            "title": "на `27` строке.",
+            "name": "uncommentAdditionalDisclaimerText",
+            "expect": "expect(document.querySelector('.card:first-child .disclaimer')).to.contain.text('Перед подключением проконсультируйтесь со специалистом.');"
         }
     ]
 }
-
-
-
-
