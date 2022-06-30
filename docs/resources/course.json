@@ -70,8 +70,7 @@
                         {
                             "name": "microgrids-v2",
                             "id": 9,
-                            "entry": "/resources/9/chapter.json",
-                            "disabled": true
+                            "entry": "/resources/9/chapter.json"
                         }
                     ]
                 },

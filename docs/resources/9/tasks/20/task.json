@@ -2,6 +2,7 @@
     "id": 20,
     "name": "unidentified-rackoon-card",
     "htmlEntry": "index.html",
+    "markupDisabled": true,
     "cssEntry": "style.css",
     "articleEntry": "article.md",
     "refHtmlEntry": "ref.html"
