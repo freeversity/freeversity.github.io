@@ -1,0 +1,28 @@
+{
+    "assertions": [
+        {
+            "title": "Внутрь `.posts` после заголовка добавьте тег `article` с классом `featured-post`.",
+            "name": "addArticleFeaturePostsIntoPosts",
+            "expect": "expect(document.querySelector('.posts h2 + article.featured-post')).to.exist;"
+        },
+        {
+            "title": "Внутрь `.featured-post` добавьте тег `h3` с текстом `Заголовок поста`.",
+            "name": "addH3WithTextPostHeadingIntoFeaturedPosts",
+            "expect": "expect(document.querySelector('.posts article.featured-post h3')).to.have.rendered.text('Заголовок поста');"
+        },
+        {
+            "title": "Сразу после заголовка `h3` добавьте тег `p` c текстом `Анонс поста`.",
+            "name": "afterH3AddPWithBlogpostAnounceText",
+            "expect": "expect(document.querySelector('.posts article.featured-post h3 + p')).to.have.rendered.text('Анонс поста');"
+        }
+    ],
+    "strict": true
+}
+
+
+
+
+
+
+
+

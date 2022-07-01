@@ -1,10 +1,125 @@
 {
     "baseUrl": "/resources/10/assets/",
     "title": "HTML & CSS Capabilities",
-    "tasks": [{
+    "tasks": [
+        {
+            "id": 1,
+            "type": "task",
+            "entry": "/resources/10/tasks/1/task.json",
+            "name": "header-and-footer"
+        },
+        {
+            "id": 2,
+            "type": "task",
+            "entry": "/resources/10/tasks/2/task.json",
+            "name": "main-tag"
+        },
+        {
+            "id": 3,
+            "type": "task",
+            "entry": "/resources/10/tasks/3/task.json",
+            "name": "article-and-section"
+        },
+        {
+            "id": 4,
+            "type": "task",
+            "entry": "/resources/10/tasks/4/task.json",
+            "name": "h1-to-h6"
+        },
+        {
+            "id": 5,
+            "type": "task",
+            "entry": "/resources/10/tasks/5/task.json",
+            "name": "svg-images"
+        },
+        {
+            "id": 6,
+            "type": "task",
+            "entry": "/resources/10/tasks/6/task.json",
+            "name": "nav-tag"
+        },
+        {
+            "id": 7,
+            "type": "task",
+            "entry": "/resources/10/tasks/7/task.json",
+            "name": "finishing-footer"
+        },
+        {
+            "id": 8,
+            "type": "task",
+            "entry": "/resources/10/tasks/8/task.json",
+            "name": "custom-fonts"
+        },
+        {
+            "id": 9,
+            "type": "task",
+            "entry": "/resources/10/tasks/9/task.json",
+            "name": "font-face-rule"
+        },
+        {
+            "id": 10,
+            "type": "task",
+            "entry": "/resources/10/tasks/10/task.json",
+            "name": "aside-tag"
+        },
+        {
+            "id": 11,
+            "type": "task",
+            "entry": "/resources/10/tasks/11/task.json",
+            "name": "article-blogpost-anounce"
+        },
+        {
+            "id": 12,
+            "type": "task",
+            "entry": "/resources/10/tasks/12/task.json",
+            "name": "finishing-home-page"
+        },
+        {
+            "id": 13,
+            "type": "task",
+            "entry": "/resources/10/tasks/13/task.json",
+            "name": "internal-page-blogpost-structure"
+        },
+        {
+            "id": 14,
+            "type": "task",
+            "entry": "/resources/10/tasks/14/task.json",
+            "name": "time-tag"
+        },
+        {
+            "id": 15,
+            "type": "task",
+            "entry": "/resources/10/tasks/15/task.json",
+            "name": "figure-and-figcaption"
+        },
+        {
+            "id": 16,
+            "type": "task",
+            "entry": "/resources/10/tasks/16/task.json",
+            "name": "video-tag"
+        },
+        {
+            "id": 17,
+            "type": "task",
+            "entry": "/resources/10/tasks/17/task.json",
+            "name": "video-sources-and-media-types"
+        },
+        {
+            "id": 18,
+            "type": "task",
+            "entry": "/resources/10/tasks/18/task.json",
+            "name": "audio-tag"
+        },
+        {
+            "id": 19,
+            "type": "task",
+            "entry": "/resources/10/tasks/19/task.json",
+            "name": "audio-sources-and-media-types"
+        },
+        {
             "id": 20,
             "type": "challenge",
-            "entry": "/resources/9/tasks/20/task.json",
+            "entry": "/resources/10/tasks/20/task.json",
             "name": "another-homepage-option"
         }
     ]

@@ -1,0 +1,27 @@
+{
+    "assertions": [
+        {
+            "title": "Раскомментируйте код в разделе `profile`,",
+            "name": "uncommentCodeInProfileSection",
+            "expect": "expect(document.querySelectorAll('.profile p')).to.have.rendered.text(['Меня зовут Кекс. Я кот и веб-разработчик.', 'Живу в Санкт-Петербурге и работаю в HTML Academy консультантом по созданию учебных курсов.']);"
+        },
+        {
+            "title": "а также в `last-actions`",
+            "name": "uncommentCodeInLastActionsSection",
+            "expect": "expect(document.querySelectorAll('.last-actions ul li')).to.have.rendered.text(['Зачекинился на кухне\u005Cnчас назад', 'Принесли немного еды #catfood\u005Cnдва часа назад', 'Зачекинился в ванной\u005Cnвчера']);"
+        },
+        {
+            "title": "и в `featured-post`",
+            "name": "uncommentCodeInFeaturesPostSection",
+            "expect": "expect(document.querySelector('.featured-post h3 a')).to.have.rendered.text('Чешуя на градиентах');expect(document.querySelector('.featured-post p')).to.have.rendered.text('В этом посте я расскажу как делать повторяющийся чешуйчатый фон на CSS-градиентах. Будем использовать градиенты в сочетании со свойством background-size.');"
+        }
+    ]
+}
+
+
+
+
+
+
+
+

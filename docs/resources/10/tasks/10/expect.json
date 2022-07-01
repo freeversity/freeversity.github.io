@@ -1,0 +1,22 @@
+{
+    "assertions": [
+        {
+            "title": "Внутрь `.about-me` после заголовка добавьте тег `section` с классом `profile` и текстом `Личная информация`.",
+            "name": "addSectionWithProfileClassAndPersonalInfoTextIntoAboutMeSection",
+            "expect": "expect(document.querySelector('.about-me h1 + section.profile')).to.have.rendered.text('Личная информация')"
+        },
+        {
+            "title": "А сразу после блока `.profile` добавьте тег `aside` с классом `last-actions` и текстом `Последняя активность`.",
+            "name": "addAsideLastActionsAfterProfileBlock",
+            "expect": "expect(document.querySelector('.about-me .profile + aside.last-actions')).to.have.rendered.text('Последняя активность')"
+        }
+    ],
+    "strict": true
+}
+
+
+
+
+
+
+

@@ -1,0 +1,15 @@
+{
+    "assertions": [
+        {
+            "title": "Добавьте между хедером и футером элемент `main` c текстом `Основное содержание`.",
+            "name": "addMainElementBetweenHeaderAndFooter",
+            "expect": "expect(document.querySelector('body .page-header:first-child + main:nth-last-child(2)')).to.have.rendered.text('Основное содержание');"
+        }
+    ]
+}
+
+
+
+
+
+

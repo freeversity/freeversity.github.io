@@ -1,0 +1,21 @@
+{
+    "assertions": [
+        {
+            "title": "В блоке `.about-me` оберните текст `Обо мне` в тег `<h1>`,",
+            "name": "wrapTextInAboutMeWithH1Element",
+            "expect": "expect(document.querySelector('.about-me h1')).to.have.rendered.text('Обо мне');expect(document.querySelector('.about-me')).to.have.rendered.text('Обо мне');"
+        },
+        {
+            "title": "В блоке `.posts` оберните текст `Последние посты` в тег `<h2>`.",
+            "name": "wrapLastPostsInPostsSectionWithH2Element",
+            "expect": "expect(document.querySelector('.posts h2')).to.have.rendered.text('Последние посты');expect(document.querySelector('.posts')).to.have.rendered.text('Последние посты');"
+        }
+    ]
+}
+
+
+
+
+
+
+

@@ -1,0 +1,28 @@
+{
+    "assertions": [
+        {
+            "title": "Сначала удалите текст из `main`.",
+            "name": "removeTextFromMain",
+            "expect": "expect(document.querySelector('main')).to.have.rendered.text('');"
+        },
+        {
+            "title": "Затем добавьте внутрь main тег `article` с классом `about-me` и текстом `Обо мне`.",
+            "name": "addArticleWithClassAboutMeAndTextAbooutMe",
+            "expect": "expect(document.querySelector('main article.about-me')).to.have.rendered.text('Обо мне');"
+        },
+        {
+            "title": "А сразу после `article` добавьте тег `section` с классом `posts` и текстом `Последние посты`.",
+            "name": "addSectionAfterArticleWithClassPostAndTextLastPosts",
+            "expect": "expect(document.querySelector('main article.about-me + section.posts')).to.have.rendered.text('Последние посты');"
+        }
+    ],
+    "strict": true
+}
+
+
+
+
+
+
+
+

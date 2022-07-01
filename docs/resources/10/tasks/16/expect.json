@@ -1,0 +1,24 @@
+{
+    "assertions": [
+        {
+            "title": "Добавьте в содержание поста тег `video`.",
+            "name": "addVideoTagToBlogpostContent",
+            "expect": "expect(document.querySelector('.content video')).to.exist;"
+        },
+        {
+            "title": "Включите у видео управляющую панель,",
+            "name": "enableVideoControls",
+            "expect": "expect(document.querySelector('.content video')).to.have.attr('controls', '');"
+        },
+        {
+            "title": "включите предзагрузку мета-информации,",
+            "name": "enableMetadataPreloading",
+            "expect": "expect(document.querySelector('.content video')).to.have.attr('preload', 'metadata');"
+        },
+        {
+            "title": "и задайте видеоролику ширину `400` и высоту `225` пикселей.",
+            "name": "setVideoHeightTo225PxandWidthTo400Px",
+            "expect": "expect(document.querySelector('.content video')).to.have.attr('width', '400');expect(document.querySelector('.content video')).to.have.attr('height', '225');"
+        }
+    ]
+}
