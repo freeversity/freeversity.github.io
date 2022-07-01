@@ -1,0 +1,14 @@
+{
+    "assertions": [
+        {
+            "title": "Добавьте в аудио первый источник с типом `audio/mpeg` и адресом `sound.mp3`,",
+            "name": "addFirstAudioSourceForMp3",
+            "expect": "expect(document.querySelector('.content audio source[type=\"audio/mpeg\"][src=\"sound.mp3\"]')).to.exist;"
+        },
+        {
+            "title": "второй с типом `audio/ogg` и адресом `sound.oga`.",
+            "name": "addSecondAudioSourceForOgg",
+            "expect": "expect(document.querySelector('.content audio source[type=\"audio/ogg\"][src=\"sound.oga\"]')).to.exist;"
+        }
+    ]
+}

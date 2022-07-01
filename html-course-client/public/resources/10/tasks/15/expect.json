@@ -1,0 +1,27 @@
+{
+    "assertions": [
+        {
+            "title": "Добавьте в содержание поста тег `figure`,",
+            "name": "addFigureElementToBlogpostContent",
+            "expect": "expect(document.querySelector('.content figure')).to.exist;"
+        },
+        {
+            "title": "а внутрь него вставьте изображение с адресом `catfy.jpg`",
+            "name": "addImageIntoFigure",
+            "expect": "expect(document.querySelector('.content figure img')).to.have.attr('src', 'catfy.jpg');"
+        },
+        {
+            "title": "и подпись с текстом `Шерстяной наблюдатель`.",
+            "name": "addAltTextToImageInFigure",
+            "expect": "expect(document.querySelector('.content figure img + figcaption')).to.have.rendered.text('Шерстяной наблюдатель');"
+        }
+    ]
+}
+
+
+
+
+
+
+
+

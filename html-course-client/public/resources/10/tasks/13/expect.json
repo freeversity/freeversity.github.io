@@ -1,0 +1,25 @@
+{
+    "assertions": [
+        {
+            "title": "Внутрь основного содержания добавьте `<article>` с классом `post`.",
+            "name": "addArticlePostIntoMainContent",
+            "expect": "expect(document.querySelector('main article.post')).to.exist;"
+        },
+        {
+            "title": "Внутрь статьи добавьте заголовок первого уровня с текстом `Заголовок поста`.",
+            "name": "addH1WithTextBlogpostHeadingToActicle",
+            "expect": "expect(document.querySelector('main article.post h1')).to.have.rendered.text('Заголовок поста');"
+        },
+        {
+            "title": "Сразу после заголовка добавьте `<div>` с классом `intro` и текстом `Введение`.",
+            "name": "addDivIntroAndTextIntroAfterHeading",
+            "expect": "expect(document.querySelector('main article.post h1 + div.intro')).to.have.rendered.text('Введение');"
+        },
+        {
+            "title": "После блока `.intro` добавьте `<div>` с классом `content` и текстом `Содержание поста`.",
+            "name": "addDivContentAfterIntroDiv",
+            "expect": "expect(document.querySelector('main article.post .intro + div.content')).to.have.rendered.text('Содержание поста');"
+        }
+    ],
+    "strict": true
+}

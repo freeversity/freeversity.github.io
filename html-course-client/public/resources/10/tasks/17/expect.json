@@ -1,0 +1,19 @@
+{
+    "assertions": [
+        {
+            "title": "Добавьте в видео первый источник с типом `video/mp4` и адресом `uxtesting.mp4`,",
+            "name": "addFirtsVideoSourceForMp4",
+            "expect": "expect(document.querySelector('.content video source[type=\"video/mp4\"][src=\"uxtesting.mp4\"]')).to.exist;"
+        },
+        {
+            "title": "второй с типом `video/ogg` и адресом `uxtesting.ogv`,",
+            "name": "addSecondVideoSourceForOgg",
+            "expect": "expect(document.querySelector('.content video source[type=\"video/ogg\"][src=\"uxtesting.ogv\"]')).to.exist;"
+        },
+        {
+            "title": "третий с типом `video/webm` и адресом `uxtesting.webm`.",
+            "name": "addThirdVideoSourceForWebM",
+            "expect": "expect(document.querySelector('.content video source[type=\"video/webm\"][src=\"uxtesting.webm\"]')).to.exist;"
+        }
+    ]
+}

@@ -45,6 +45,9 @@ const TaskInspector: FC<TaskInspectorProps> = ({
           {expect.strict && (
             <ol className={cx('task-inspector__assertion-list--strict')}>{items}</ol>
           )}
+          {expect.footnoteTitle && (
+            <Markdown>{expect.footnoteTitle}</Markdown>
+          )}
       </div>
 
     </div>

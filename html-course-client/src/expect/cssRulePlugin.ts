@@ -1,3 +1,9 @@
+declare global {
+    interface Window {
+        CSSFontFaceRule: typeof CSSFontFaceRule;
+    }
+}
+
 export function cssRulePlugin(
     chai: Chai.ChaiStatic, 
     utils: Chai.ChaiUtils
@@ -9,6 +15,7 @@ export function cssRulePlugin(
             const subj = utils.flag(this, 'object') as Document | HTMLElement;
 
             const doc = 'tagName' in subj ? subj.ownerDocument : subj;
+            const win = doc.defaultView as Window;
             const owner = 'tagName' in subj ? subj : undefined;
 
             const styleSheets = [...doc.styleSheets].filter(({ownerNode}) => {
@@ -19,15 +26,25 @@ export function cssRulePlugin(
                 return true;
             });
 
+            const filterFunc = (rule: CSSRule) => {
+                if (selector === '@font-face') {
+                    return rule instanceof win.CSSFontFaceRule;
+                }
+
+                if (!('selectorText' in rule)) return false;
+                
+                return (
+                    (rule as CSSStyleRule).selectorText === selector
+                ) && (
+                    !prop || (
+                        (rule as CSSStyleRule).style[prop as any] !== ''
+                    )
+                )
+            }
+
             if (!prop) {
                 const actual =  [...styleSheets].some((styleSheet) => {
-                    return [...styleSheet.cssRules].some((rule) => {
-                        if ('selectorText' in rule) {
-                            return (rule as CSSStyleRule).selectorText === selector;
-                        }
-
-                        return false;
-                    });
+                    return [...styleSheet.cssRules].some(filterFunc);
                 });
                 const expected = true;
 
@@ -40,13 +57,7 @@ export function cssRulePlugin(
                 );
             } else if (!value) {
                 const actual =  [...styleSheets].some((styleSheet) => {
-                    const rule = [...styleSheet.cssRules].find((rule) => {
-                        if ('selectorText' in rule) {
-                            return (rule as CSSStyleRule).selectorText === selector;
-                        }
-
-                        return false;
-                    }) as CSSStyleRule;
+                    const rule = [...styleSheet.cssRules].find(filterFunc) as CSSStyleRule;
 
                     return !!rule && rule.style[prop as any] !== '';
                 });
@@ -79,15 +90,7 @@ export function cssRulePlugin(
                 testContainer.remove();
 
                 const actual =  [...styleSheets].some((styleSheet) => {
-                    const rules = [...styleSheet.cssRules].filter((rule) => {
-                        if (!('selectorText' in rule)) return false;
-                        
-                        return (
-                            (rule as CSSStyleRule).selectorText === selector
-                        ) && (
-                            (rule as CSSStyleRule).style[prop as any] !== ''
-                        );
-                    }).reverse() as CSSStyleRule[];
+                    const rules = [...styleSheet.cssRules].filter(filterFunc).reverse() as CSSStyleRule[];
 
                     if (!rules.length) return false;
 

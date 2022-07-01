@@ -1,0 +1,22 @@
+{
+    "footnote": "setImageSizesWithAttributes",
+    "footnoteTitle": "Размеры изображения задавайте с помощью атрибутов тега `<img>`, как в [этом задании](/chapters/4/tasks/11).",
+    "assertions": [
+        {
+            "title": "Добавьте в хедер `div` с классом `logo`.",
+            "name": "addDivWithClassLogoToHeader",
+            "expect": "expect(document.querySelector('.page-header div.logo')).to.exist"
+        },
+        {
+            "title": "Внутрь дива вставьте изображение с адресом `logo.svg`, шириной и высотой `90` пикселей.",
+            "name": "addSvgImageToLogoDiv90To90Px",
+            "expect": "expect(document.querySelector('.page-header div.logo img')).to.have.attr('src', 'logo.svg');expect(document.querySelector('.page-header div.logo img')).to.have.attr('width', '90');expect(document.querySelector('.page-header div.logo img')).to.have.attr('height', '90');"
+        },
+        {
+            "title": "Увеличьте ширину и высоту этого изображения до `300` пикселей.",
+            "name": "increaseLogoImageHeightTo300Px",
+            "expect": "expect(document.querySelector('.page-header div.logo img')).to.have.attr('width', '300');expect(document.querySelector('.page-header div.logo img')).to.have.attr('height', '300');"
+        }
+    ],
+    "strict": true
+}

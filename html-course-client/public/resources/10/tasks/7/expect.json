@@ -1,0 +1,26 @@
+{
+    "introTitle": "Внесите следующие правки в футер:",
+    "intro": "fixSomeIssuesInTheFooter",
+    "assertions": [
+        {
+            "title": "Оберните фото кота, его имя и адрес почты в `div` с классом `info`,",
+            "name": "wrapCatPhotoAndItsNameAndEmailWithDivInfo",
+            "expect": "expect(document.querySelector('.page-footer div.info img[src=\"keks.jpg\"][width=\"50\"][alt=\"Портрет Кекса\"]')).to.exist;expect(document.querySelector('.page-footer div.info')).to.contain.text('Кекс, keks@htmlacademy.ru');expect(document.querySelector('.page-footer div.info')).not.to.contain.text('© 2008—2014 Cat Energy');"
+        },
+        {
+            "title": "а информацию о копирайте в `div` с классом `copyright`",
+            "name": "wrapCopyrightInfoWithDivCopyright",
+            "expect": "expect(document.querySelector('.page-footer div.info + div.copyright')).to.have.rendered.text('© 2008—2014 Cat Energy');"
+        }
+    ],
+    "strict": true
+}
+
+
+
+
+
+
+
+
+

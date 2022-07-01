@@ -1,0 +1,22 @@
+{
+    "assertions": [
+        {
+            "title": "Добавьте в `body` элемент `header` с классом `page-header` и текстом `Хедер`,",
+            "name": "addHeaderElementWithHeaderText",
+            "expect": "expect(document.querySelector('body header.page-header:first-child')).to.have.rendered.text('Хедер');"
+        },
+        {
+            "title": "а сразу после него элемент `footer` с классом `page-footer` и текстом `Футер`.",
+            "name": "addFooterElementWithFooterText",
+            "expect": "expect(document.querySelector('body footer.page-footer:last-child')).to.have.rendered.text('Футер');"
+        }
+    ],
+    "strict": true
+}
+
+
+
+
+
+
+

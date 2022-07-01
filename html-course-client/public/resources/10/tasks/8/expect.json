@@ -1,0 +1,21 @@
+{
+    "assertions": [
+        {
+            "title": "Раскомментируйте тег `link` внутри `head`.",
+            "name": "uncommentLinkTagInHead",
+            "expect": "expect(document.querySelector('link[href=\"//fonts.googleapis.com/css?family=PT+Sans:400&subset=cyrillic\"][rel=\"stylesheet\"][type=\"text/css\"]')).to.exist"
+        },
+        {
+            "title": "Задайте для `body` шрифт `\"PT Sans\", \"Arial\", sans-serif`",
+            "name": "setBodyFontToPtSansArialSansSerif",
+            "expect": "expect(document.querySelector('body')).to.have.css('fontFamily', '\"PT Sans\", \"Arial\", sans-serif');"
+        }
+    ]
+}
+
+
+
+
+
+
+

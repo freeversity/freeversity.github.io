@@ -1,0 +1,20 @@
+{
+    "assertions": [
+        {
+            "title": "Добавьте в хедер после логотипа тег `nav` с классом `main-menu`.",
+            "name": "addNavElementWithClassMainMenuToHeaderAfterLogo",
+            "expect": "expect(document.querySelector('.page-header .logo + nav.main-menu')).to.exist"
+        },
+        {
+            "title": "Внутри `nav` создайте неупорядоченный список из `3` пунктов: `Главная`, `Посты`, `Обо мне`.",
+            "name": "createUnorderedListInNavWithThreeListItems",
+            "expect": "expect(document.querySelector('.page-header .logo + nav.main-menu ul')).to.exist;expect(document.querySelectorAll('.main-menu ul li')).to.have.rendered.text(['Главная', 'Посты', 'Обо мне']);"
+        },
+        {
+            "title": "Текст каждого пункта оберните в ссылку с произвольным адресом.",
+            "name": "wrapEachListItemTextWithAnchorWithHref",
+            "expect": "expect(document.querySelectorAll('.main-menu ul li a[href]:not([href=\"\"])')).to.have.rendered.text(['Главная', 'Посты', 'Обо мне']);"
+        }
+    ],
+    "strict": true
+}

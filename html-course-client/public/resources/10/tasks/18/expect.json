@@ -1,0 +1,19 @@
+{
+    "assertions": [
+        {
+            "title": "Добавьте в содержание поста тег `<audio>`,",
+            "name": "addAudioTagIntoBlogpostContent",
+            "expect": "expect(document.querySelector('.content audio')).to.exist;"
+        },
+        {
+            "title": "включите у него управляющую панель",
+            "name": "enableAudioControlsPanel",
+            "expect": "expect(document.querySelector('.content audio')).to.have.attr('controls', '');"
+        },
+        {
+            "title": "и предзагрузку мета-информации.",
+            "name": "enableAudioMetadataPreload",
+            "expect": "expect(document.querySelector('.content audio')).to.have.attr('preload', 'metadata');"
+        }
+    ]
+}
