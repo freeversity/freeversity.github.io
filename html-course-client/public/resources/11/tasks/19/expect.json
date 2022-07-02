@@ -1,0 +1,26 @@
+{
+    "assertions": [
+        {
+            "title": "В CSS для `td` добавьте свойства `color: brown;` и `background-color: lightyellow;`.",
+            "name": "setTdColorToBrownAndBackgroundColorToLightyellow",
+            "expect": "expect(document.querySelector('td')).to.have.css('color', 'brown');expect(document.querySelector('td')).to.have.css('background-color', 'lightyellow');"
+        },
+        {
+            "title": "Для `th` добавьте свойства `color: darkblue;` и `background-color: lightcyan;`.",
+            "name": "setThColorToDarkblueAndBackgroundColorToLightcyan",
+            "expect": "expect(document.querySelector('th')).to.have.css('color', 'darkblue');expect(document.querySelector('th')).to.have.css('background-color', 'lightcyan');"
+        }
+    ],
+    "footnote": "experimentWithBorderColors",
+    "footnoteTitle": "При желании поэкспериментируйте с цветом границ.",
+    "strict": true
+}
+
+
+
+
+
+
+
+
+

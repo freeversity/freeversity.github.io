@@ -1,0 +1,15 @@
+{
+    "assertions": [
+        {
+            "title": "Добавьте ячейке `1.1` атрибуты `colspan=\"2\"` и `rowspan=\"2\"`.",
+            "name": "setCell1.1ColspanTo2AndRowspanTo2",
+            "expect": "expect(document.querySelector('tr:first-child td:first-child')).to.have.attr('rowspan', '2');expect(document.querySelector('tr:first-child td:first-child')).to.have.attr('colspan', '2');"
+        },
+        {
+            "title": "Удалите ячейки с классом `pink` (розовые).",
+            "name": "addFooterElementWithFooterText",
+            "expect": "expect(document.querySelector('.pink')).not.to.exist;"
+        }
+    ],
+    "strict": true
+}

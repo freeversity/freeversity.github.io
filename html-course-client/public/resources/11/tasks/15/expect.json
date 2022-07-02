@@ -1,0 +1,20 @@
+{
+    "assertions": [
+        {
+            "title": "Добавьте ячейке `1.1` атрибут `rowspan=\"4\"` удалите ячейки с классом `pink` (розовые).",
+            "name": "set1.1CellRowSpanTo4AndRemovePinkCells",
+            "expect": "expect(document.querySelector('tr:first-child td:first-child')).to.have.attr('rowspan', '4');expect(document.querySelector('.pink')).not.to.exist;"
+        },
+        {
+            "title": "Ячейке `2.2` атрибут `rowspan=\"2\"` удалите ячейку с классом `green` (зелёную).",
+            "name": "set2.2CellRowSpanTo2AndRemoveGreenCells",
+            "expect": "expect(document.querySelector('tr:nth-child(2) td:first-child')).to.have.attr('rowspan', '2');expect(document.querySelector('.green')).not.to.exist;"
+        },
+        {
+            "title": "Ячейке `1.3` атрибут `rowspan=\"3\"` удалите ячейки с классом `blue` (синие).",
+            "name": "set1.3CellRowSpanTo3AndRemoveBloueCells",
+            "expect": "expect(document.querySelector('tr:first-child td:nth-child(3)')).to.have.attr('rowspan', '3');expect(document.querySelector('.blue')).not.to.exist;"
+        }
+    ],
+    "strict": true
+}

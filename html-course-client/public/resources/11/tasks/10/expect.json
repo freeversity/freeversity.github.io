@@ -1,0 +1,20 @@
+{
+    "assertions": [
+        {
+            "title": "Замените `<td>` на `<th>` в первой строке таблицы.",
+            "name": "replaceTdWithThOnFirstRow",
+            "expect": "expect(document.querySelectorAll('table tr:first-child th')).to.have.rendered.text(['Браузер', 'Посещения', 'Доля']);"
+        },
+        {
+            "title": "В CSS-редакторе для th добавьте свойство `padding: 10px;`.",
+            "name": "setThPaddingTo10Px",
+            "expect": "expect(document.querySelector('th')).to.have.css('padding', '10px');"
+        },
+        {
+            "title": "Для него же добавьте свойство `border: 1px solid black;`.",
+            "name": "setThBorderTo1PxSolidBlack",
+            "expect": "expect(document.querySelector('th')).to.have.css('border', '1px solid black');"
+        }
+    ],
+    "strict": true
+}

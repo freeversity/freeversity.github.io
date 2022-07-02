@@ -1,0 +1,26 @@
+{
+    "assertions": [
+        {
+            "title": "Добавьте в таблицу пятую строку со статистикой для браузера Opera,",
+            "name": "addFifthRowToATable",
+            "expect": "expect(document.querySelector('tr:nth-child(5) td:first-child:nth-last-child(2)')).to.have.rendered.text('Opera');expect(document.querySelector('tr:nth-child(5) td:last-child')).to.exist;"
+        },
+        {
+            "title": "шестую строку со статистикой для браузера Edge.",
+            "name": "addSixthRowToATable",
+            "expect": "expect(document.querySelector('tr:nth-child(6) td:first-child:nth-last-child(2)')).to.have.rendered.text('Edge');expect(document.querySelector('tr:nth-child(6) td:last-child')).to.exist;"
+        }
+    ],
+    "footnote": "pickAnyNumberOfVisits",
+    "footnoteTitle": "Количество посещений можете указать любое.",
+    "strict": true
+}
+
+
+
+
+
+
+
+
+

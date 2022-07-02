@@ -1,0 +1,25 @@
+{
+    "assertions": [
+        {
+            "title": "Для CSS-правила `.cell-1` добавьте свойство `vertical-align: top;`.",
+            "name": "setCell1VerticalAlignToTop",
+            "expect": "expect(document.querySelector('.cell-1')).to.have.css('verticalAlign', 'top');"
+        },
+        {
+            "title": "Затем поменяйте его на `vertical-align: bottom;`.",
+            "name": "setCell1VerticalAlignToBottom",
+            "expect": "expect(document.querySelector('.cell-1')).to.have.css('verticalAlign', 'bottom');"
+        },
+        {
+            "title": "Для `.column-2` свойство `text-align: right;`.",
+            "name": "setColumn2TextAlignToRight",
+            "expect": "expect(document.querySelector('.column-2')).to.have.css('textAlign', 'right');"
+        },
+        {
+            "title": "Для `.column-3` свойство `text-align: center;`.",
+            "name": "setColumn3TextAlignToCenter",
+            "expect": "expect(document.querySelector('.column-3')).to.have.css('textAlign', 'center');"
+        }
+    ],
+    "strict": true
+}

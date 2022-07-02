@@ -1,0 +1,16 @@
+{
+    "assertions": [
+        {
+            "title": "Уберите комментарий в коде HTML-редактора.",
+            "name": "uncommentHtmlCodeInEditor",
+            "expect": "expect(document.querySelectorAll('table tr td')).to.have.length(8);"
+        }
+    ]
+}
+
+
+
+
+
+
+

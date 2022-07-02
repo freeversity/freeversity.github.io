@@ -1,0 +1,28 @@
+{
+    "assertions": [
+        {
+            "title": "В CSS для `.row-1` добавьте свойство `background-color: pink;`.",
+            "name": "setRow1BackogroundColorToPink",
+            "expect": "expect(document.querySelector('.row-1')).to.have.css('backgroundColor', 'pink');"
+        },
+        {
+            "title": "Для `.row-2` добавьте `background-color: lightgreen;`.",
+            "name": "setRow2BackogroundColorToLightgreen",
+            "expect": "expect(document.querySelector('.row-2')).to.have.css('backgroundColor', 'lightgreen');"
+        },
+        {
+            "title": "Для `.row-3` добавьте `background-color: lightblue;`.",
+            "name": "setRow3BackogroundColorToLightblue",
+            "expect": "expect(document.querySelector('.row-3')).to.have.css('backgroundColor', 'lightblue');"
+        }
+    ]
+}
+
+
+
+
+
+
+
+
+

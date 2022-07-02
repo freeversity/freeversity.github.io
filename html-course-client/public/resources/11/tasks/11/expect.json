@@ -1,0 +1,35 @@
+{
+    "assertions": [
+        {
+            "title": "Создайте заголовок таблицы `Распределение браузеров` с помощью тега `<caption>`.",
+            "name": "createTableCaptionWithTextBrowserDistribution",
+            "expect": "expect(document.querySelector('table caption:first-child')).to.have.rendered.text('Распределение браузеров');"
+        },
+        {
+            "title": "В CSS-редакторе для `caption` добавьте свойство `caption-side: bottom;`,",
+            "name": "setCaptionCaptionSideToBottom",
+            "expect": "expect(document.querySelector('caption')).to.have.css('captionSide', 'bottom');"
+        },
+        {
+            "title": "затем для него же добавьте свойство `text-align: right;`.",
+            "name": "setCaptionCaptionSideToRight",
+            "expect": "expect(document.querySelector('caption')).to.have.css('textAlign', 'right');"
+        },
+        {
+            "title": "Измените `text-align: right;` на `text-align: left;`.",
+            "name": "setCaptionCaptionSideToLeft",
+            "expect": "expect(document.querySelector('caption')).to.have.css('textAlign', 'left');"
+        }
+    ],
+    "strict": true
+}
+
+
+
+
+
+
+
+
+
+

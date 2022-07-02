@@ -1,0 +1,16 @@
+{
+    "assertions": [
+        {
+            "title": "Пропишите в пустых атрибутах `style` значение `width: 70%` у первой `<th>` и `width: 15%` у второй и третьей `<th>`.",
+            "name": "set",
+            "expect": "expect(document.querySelector('th:first-child')).to.have.style('width', '70%');expect(document.querySelector('th:nth-child(2)')).to.have.style('width', '15%');expect(document.querySelector('th:nth-child(3)')).to.have.style('width', '15%');"
+        }
+    ]
+}
+
+
+
+
+
+
+

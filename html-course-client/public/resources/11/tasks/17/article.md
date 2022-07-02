@@ -9,3 +9,9 @@
 - Цвета рамок: `lightgray` и `black`.
 - Стили для `body` менять не надо.
 - Размеры отступов кратны `5`.
+
+<details>
+<summary>Разбор задания</summary>
+<video width="500" src="/resources/11/assets/a-bit-more-complex-table.mp4" controls>
+</video>
+</details>

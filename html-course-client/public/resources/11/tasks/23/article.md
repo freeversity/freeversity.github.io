@@ -12,3 +12,9 @@
 - Размеры отступов кратны `5`.
 - Цвет текста задаётся с помощью CSS-свойства `color`.
 - Тег `caption` использовать не нужно.
+
+<details>
+<summary>Разбор задания</summary>
+<video width="500" src="/resources/11/assets/final-table.mp4" controls>
+</video>
+</details>

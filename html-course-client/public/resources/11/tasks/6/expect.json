@@ -1,0 +1,29 @@
+{
+    "assertions": [
+        {
+            "title": "В CSS у ячейки удалите свойство `border`,",
+            "name": "removeBorderPropForTableCell",
+            "expect": "expect(document).not.to.have.cssRule('td', 'border');"
+        },
+        {
+            "title": "затем раскомментируйте свойство `border-bottom`,",
+            "name": "uncommentBorderBottomPropForTableCell",
+            "expect": "expect(document.querySelector('td')).to.have.css('borderBottom', '2px solid lightgray');"
+        },
+        {
+            "title": "затем удалите `border-bottom` и раскомментируйте `border-left`.",
+            "name": "removeBorderBottomAndUncommentBorderLeftForTableCell",
+            "expect": "expect(document.querySelector('td')).not.to.have.css('borderBottom', '2px solid lightgray');expect(document.querySelector('td')).to.have.css('borderLeft', '2px solid lightgray');"
+        }
+    ],
+    "strict": true
+}
+
+
+
+
+
+
+
+
+

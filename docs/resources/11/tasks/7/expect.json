@@ -1,0 +1,35 @@
+{
+    "assertions": [
+        {
+            "title": "Сначала в HTML-редакторе измените значение атрибута `cellpadding` на `5`.",
+            "name": "setTableCellPaddingTo5",
+            "expect": "expect(document.querySelector('table')).to.have.attr('cellpadding', '5');"
+        },
+        {
+            "title": "Затем удалите этот атрибут.",
+            "name": "removeTableCellpaddingAttribute",
+            "expect": "expect(document.querySelector('table')).not.to.have.attr('cellpadding');"
+        },
+        {
+            "title": "В CSS-редакторе для td добавьте свойство `padding: 5px;`.",
+            "name": "setTdPaddingTo5Px",
+            "expect": "expect(document.querySelector('td')).to.have.css('padding', '5px');"
+        },
+        {
+            "title": "А ниже него добавьте свойство `padding-right: 30px;`.",
+            "name": "setTdPaddingRightTo30Px",
+            "expect": "expect(document.querySelector('td')).to.have.css('paddingRight', '30px');"
+        }
+    ],
+    "strict": true
+}
+
+
+
+
+
+
+
+
+
+

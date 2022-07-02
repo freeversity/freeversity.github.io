@@ -1,0 +1,20 @@
+{
+    "assertions": [
+        {
+            "title": "Добавьте ячейке с надписью `Браузер` атрибут `rowspan=\"2\"`. Смотрите, как сместилась ячейка снизу.",
+            "name": "addRowspanAttr2ToBrowserCell",
+            "expect": "expect(document.querySelector('table tr:first-child th:first-child')).to.have.attr('rowspan', '2');"
+        },
+        {
+            "title": "Удалите ячейку c классом `pink` и розовым фоном во второй строке.",
+            "name": "removePinkCellFromTheTable",
+            "expect": "expect(document.querySelector('table tr:nth-child(2) th:first-child:nth-last-child(3)')).not.to.exist;"
+        },
+        {
+            "title": "Измените значение свойства `border-collapse` таблицы с `separate` на `collapse`.",
+            "name": "setTableBorderCollapseToCollapse",
+            "expect": "expect(document.querySelector('table')).to.have.css('border-collapse', 'collapse');"
+        }
+    ],
+    "strict": true
+}

@@ -1,0 +1,17 @@
+{
+    "assertions": [
+        {
+            "title": "Добавьте в таблицу третий столбец `Операционная система`",
+            "name": "addThirdColumnWithOS",
+            "expect": "expect(document.querySelector('table tr:first-child td:nth-child(3)')).to.have.rendered.text('Операционная система');expect(document.querySelectorAll('table td:nth-child(3)')).to.have.length(4);"
+        },
+        {
+            "title": "и четвёртый столбец `Посещаемость в процентах`.",
+            "name": "addForthColumnWithVisitingPercent",
+            "expect": "expect(document.querySelector('table tr:first-child td:nth-child(4)')).to.have.rendered.text('Посещаемость в процентах');expect(document.querySelectorAll('table td:nth-child(4)')).to.have.length(4);"
+        }
+    ],
+    "footnote": "valuesInFirstRowShouldBeAsItIsInTask",
+    "footnoteTitle": "Значения в первой строке каждого столбца должны быть как в задании, значения в остальных ячейках можете указать любые.",
+    "strict": true
+}

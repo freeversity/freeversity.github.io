@@ -1,0 +1,22 @@
+{
+    "assertions": [
+        {
+            "title": "В CSS-редакторе задайте для таблицы свойство `border-collapse: collapse` чтобы рамки ячеек схлопнулись.",
+            "name": "setBorderCollapseCollapseForTable",
+            "expect": "expect(document.querySelector('table')).to.have.css('borderCollapse', 'collapse');"
+        },
+        {
+            "title": "Затем в CSS-редакторе увеличьте ширину рамки _таблицы_ до `6px`.",
+            "name": "increaseBorderWidthTo6Px",
+            "expect": "expect(document.querySelector('table')).to.have.css('borderWidth', '6px');"
+        }
+    ],
+    "strict": true
+}
+
+
+
+
+
+
+

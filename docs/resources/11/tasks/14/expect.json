@@ -1,0 +1,20 @@
+{
+    "assertions": [
+        {
+            "title": "Добавьте ячейке `1.2` атрибут `colspan=\"2\"`. Удалите ячейку с классом `pink` в первой строке.",
+            "name": "set1.2CellColSpanTo2AndRemovePinkCellInFirstRow",
+            "expect": "expect(document.querySelector('tr:first-child td:nth-child(2):nth-last-child(2)')).to.have.attr('colspan', '2');expect(document.querySelector('tr:first-child .pink')).not.to.exist;"
+        },
+        {
+            "title": "Добавьте ячейке `2.2` атрибут `colspan=\"3\"`, удалите ячейки с классом `pink` во второй строке.",
+            "name": "set2.2CellColSpanTo3AndRemovePinkCellsInSecondRow",
+            "expect": "expect(document.querySelector('tr:nth-child(2) td:nth-child(2):last-child')).to.have.attr('colspan', '3');expect(document.querySelector('tr:nth-child(2) .pink')).not.to.exist;"
+        },
+        {
+            "title": "Добавьте ячейке `3.1` атрибут colspan=\"4\", удалите ячейки с классом `pink` в третьей строке.",
+            "name": "set3.1CellColSpanTo4AndRemovePinkCellsInThirdRow",
+            "expect": "expect(document.querySelector('tr:nth-child(3) td:first-child:last-child')).to.have.attr('colspan', '4');expect(document.querySelector('tr:nth-child(3) .pink')).not.to.exist;"
+        }
+    ],
+    "strict": true
+}

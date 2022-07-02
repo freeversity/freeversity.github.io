@@ -1,0 +1,15 @@
+{
+    "assertions": [
+        {
+            "title": "Добавьте ячейке с надписью `Посещения` атрибут `colspan=\"2\"`. Обратите внимание, что в таблице добавился лишний столбец.",
+            "name": "setVisitsCellAttrColspan2",
+            "expect": "expect(document.querySelector('table tr:first-child th:nth-child(2)')).to.have.attr('colspan', '2');"
+        },
+        {
+            "title": "Затем удалите пустую ячейку с розовым фоном сразу после ячейки `Посещения`. Лишний столбец должен исчезнуть.",
+            "name": "removeAnEmptyCellAfterVisitsCells",
+            "expect": "expect(document.querySelector('table tr:first-child th:nth-child(3)')).not.to.exist;"
+        }
+    ],
+    "strict": true
+}

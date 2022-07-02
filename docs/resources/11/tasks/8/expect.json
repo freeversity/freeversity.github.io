@@ -1,0 +1,20 @@
+{
+    "assertions": [
+        {
+            "title": "В HTML-редакторе измените значение атрибута `cellspacing` на `5`.",
+            "name": "setTableCellspacingAttrTo5",
+            "expect": "expect(document.querySelector('table')).to.have.attr('cellspacing', '5');"
+        },
+        {
+            "title": "Затем удалите этот атрибут.",
+            "name": "removeeTableCellSpacingAttr",
+            "expect": "expect(document.querySelector('table')).not.to.have.attr('cellspacing');"
+        },
+        {
+            "title": "В CSS-редакторе для `table` добавьте свойство `border-spacing: 5px;`.",
+            "name": "setTableBordeSpacingTo5Px",
+            "expect": "expect(document.querySelector('table')).to.have.css('borderSpacing', '5px');"
+        }
+    ],
+    "strict": true
+}

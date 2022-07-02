@@ -3,19 +3,141 @@
     "title": "Tables Introduction",
     "tasks": [
         {
+            "id": 1,
+            "type": "task",
+            "entry": "/resources/11/tasks/1/task.json",
+            "name": "simplest-table"
+        }, 
+        {
+            "id": 2,
+            "type": "task",
+            "entry": "/resources/11/tasks/2/task.json",
+            "name": "adding-rows"
+        }, 
+        {
+            "id": 3,
+            "type": "task",
+            "entry": "/resources/11/tasks/3/task.json",
+            "name": "adding-columns"
+        }, 
+        {
+            "id": 4,
+            "type": "task",
+            "entry": "/resources/11/tasks/4/task.json",
+            "name": "defining-bordrs-with-css"
+        }, 
+        {
+            "id": 5,
+            "type": "task",
+            "entry": "/resources/11/tasks/5/task.json",
+            "name": "improving-borders-appearance"
+        }, 
+        {
+            "id": 6,
+            "type": "task",
+            "entry": "/resources/11/tasks/6/task.json",
+            "name": "horizontal-and-vertical-borders"
+        }, 
+        {
+            "id": 7,
+            "type": "task",
+            "entry": "/resources/11/tasks/7/task.json",
+            "name": "cell-padding"
+        }, 
+        {
+            "id": 8,
+            "type": "task",
+            "entry": "/resources/11/tasks/8/task.json",
+            "name": "cell-spacing"
+        }, 
+        {
             "id": 9,
             "type": "challenge",
-            "entry": "/resources/9/tasks/9/task.json",
+            "entry": "/resources/11/tasks/9/task.json",
             "name": "simple-but-neat-table"
-        }, {
+        }, 
+        {
+            "id": 10,
+            "type": "task",
+            "entry": "/resources/11/tasks/10/task.json",
+            "name": "heading-cells"
+        }, 
+        {
+            "id": 11,
+            "type": "task",
+            "entry": "/resources/11/tasks/11/task.json",
+            "name": "table-heading"
+        }, 
+        {
+            "id": 12,
+            "type": "task",
+            "entry": "/resources/11/tasks/12/task.json",
+            "name": "row-span"
+        }, 
+        {
+            "id": 13,
+            "type": "task",
+            "entry": "/resources/11/tasks/13/task.json",
+            "name": "column-span"
+        }, 
+        {
+            "id": 14,
+            "type": "task",
+            "entry": "/resources/11/tasks/14/task.json",
+            "name": "colspan-exercising"
+        }, 
+        {
+            "id": 15,
+            "type": "task",
+            "entry": "/resources/11/tasks/15/task.json",
+            "name": "rowspan-exercising"
+        }, 
+        {
+            "id": 16,
+            "type": "task",
+            "entry": "/resources/11/tasks/16/task.json",
+            "name": "colspan-and-rowspan-exercising"
+        }, 
+        {
             "id": 17,
             "type": "challenge",
-            "entry": "/resources/9/tasks/17/task.json",
+            "entry": "/resources/11/tasks/17/task.json",
             "name": "a-bit-more-complex-table"
-        }, {
+        }, 
+        {
+            "id": 18,
+            "type": "task",
+            "entry": "/resources/11/tasks/18/task.json",
+            "name": "cell-content-aligning"
+        }, 
+        {
+            "id": 19,
+            "type": "task",
+            "entry": "/resources/11/tasks/19/task.json",
+            "name": "adding-colors"
+        }, 
+        {
+            "id": 20,
+            "type": "task",
+            "entry": "/resources/11/tasks/20/task.json",
+            "name": "coloring-rows"
+        }, 
+        {
+            "id": 21,
+            "type": "task",
+            "entry": "/resources/11/tasks/21/task.json",
+            "name": "setting-table-sizes"
+        }, 
+        {
+            "id": 22,
+            "type": "task",
+            "entry": "/resources/11/tasks/22/task.json",
+            "name": "setting-cells-and-columns-sizes"
+        }, 
+        {
             "id": 23,
             "type": "challenge",
-            "entry": "/resources/9/tasks/23/task.json",
+            "entry": "/resources/11/tasks/23/task.json",
             "name": "final-table"
         }
     ]

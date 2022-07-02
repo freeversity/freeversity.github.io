@@ -1,0 +1,7 @@
+{
+    "id": 3,      
+    "name": "adding-columns",
+    "htmlEntry": "index.html",
+    "articleEntry": "article.md",
+    "expectEntry": "expect.json"
+}

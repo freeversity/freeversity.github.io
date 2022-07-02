@@ -1,0 +1,29 @@
+{
+    "assertions": [
+        {
+            "title": "С помощью CSS задайте ширину таблицы `300px`.",
+            "name": "setTableWidthTo300Px",
+            "expect": "expect(document).to.have.cssRule('table', 'width', '300px');"
+        },
+        {
+            "title": "Затем измените ширину таблицы на `100%`.",
+            "name": "setTableWidthTo100%",
+            "expect": "expect(document).to.have.cssRule('table', 'width', '100%');"
+        },
+        {
+            "title": "Задайте высоту таблицы `250px`.",
+            "name": "setTableWidthTo250Px",
+            "expect": "expect(document).to.have.cssRule('table', 'width', '250px');"
+        }
+    ],
+    "strict": true
+}
+
+
+
+
+
+
+
+
+
