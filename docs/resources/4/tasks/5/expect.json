@@ -3,7 +3,7 @@
         {
             "title": "Добавьте ссылке с текстом `Введение` в оглавлении адрес `#intro`.",
             "name": "addHashLinkToIntroAnchorTag",
-            "expect": "expect(document.querySelector('article ul li:first-child a')).to.have.attr('data-href', '#intro')"
+            "expect": "expect(document.querySelector('article ul li:first-child a')).to.have.attr('href', '#intro')"
         },
         {
             "title": "Добавьте заголовку `Введение` в статье атрибут `id` со значением `intro`.",
@@ -20,7 +20,7 @@
         {
             "title": "Добавьте ссылке с текстом `К оглавлению` в конце статьи адрес `#content`.",
             "name": "addHashLinkToToSummaryAnchorTag",
-            "expect": "expect(document.querySelector('article article p:last-of-type a')).to.have.attr('data-href', '#content')"
+            "expect": "expect(document.querySelector('article article p:last-of-type a')).to.have.attr('href', '#content')"
         },
         {
             "title": "Добавьте заголовку `Оглавление` в начале статьи атрибут `id` со значением `content`.",

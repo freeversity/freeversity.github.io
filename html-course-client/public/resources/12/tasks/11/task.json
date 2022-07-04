@@ -3,6 +3,7 @@
     "name": "registration-form",
     "htmlEntry": "index.html",
     "cssEntry": "style.css",
+    "cssReadonly": true,
     "articleEntry": "article.md",
     "refHtmlEntry": "ref.html"
 }

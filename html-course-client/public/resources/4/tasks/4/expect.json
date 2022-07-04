@@ -16,7 +16,7 @@
             "title": "Добавьте ссылке атрибут `download`",
             "name": "addDownloadAttr",
             "type": "expect",
-            "expect": "expect(document.querySelector('article p:nth-of-type(2) a[href=\"files/recipe.pdf\"]')).to.have.attr('download', true)"
+            "expect": "expect(document.querySelector('article p:nth-of-type(2) a[href=\"files/recipe.pdf\"]')).to.have.attr('download', '')"
         },
         {
             "title": "Перейдите по ссылке ещё раз.",
@@ -25,7 +25,8 @@
             "eventType": "click",
             "target": "a[href=\"files/recipe.pdf\"][download]"
         }
-    ]
+    ],
+    "strict": true
 }
 
 

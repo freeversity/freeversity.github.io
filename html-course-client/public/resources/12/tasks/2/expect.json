@@ -1,0 +1,30 @@
+{
+    "assertions": [
+        {
+            "title": "Добавьте в таблицу пятую строку со статистикой для браузера `Opera`,",
+            "name": "addFifthRowForOpera",
+            "expect": "expect(document.querySelector('table')).to.have.attr('border', '5');"
+        },
+        {
+            "title": "шестую строку со статистикой для браузера `Edge`.",
+            "name": "addSixthRowForOpera",
+            "expect": "expect(document.querySelector('table')).not.to.have.attr('border');"
+        }
+    ],
+    "footnote": "removeBothCommentSymbolsToUncomment",
+    "footnoteTitle": "Количество посещений можете указать любое.",
+    "strict": true
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

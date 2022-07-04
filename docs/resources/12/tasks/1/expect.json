@@ -1,0 +1,20 @@
+{
+    "assertions": [
+        {
+            "title": "Уберите комментарий в коде HTML-редактора.",
+            "name": "uncommentHtmlCode",
+            "expect": "expect(document.querySelector('table')).to.have.attr('border', '5');"
+        }
+    ]
+}
+
+
+
+
+
+
+
+
+
+
+

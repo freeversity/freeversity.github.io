@@ -3,11 +3,108 @@
     "title": "Forms Introduction",
     "tasks": [
         {
+            "id": 1,
+            "type": "task",
+            "entry": "/resources/12/tasks/1/task.json",
+            "name": "the-first-form"
+        }, 
+        {
+            "id": 2,
+            "type": "task",
+            "entry": "/resources/12/tasks/2/task.json",
+            "name": "text-input"
+        }, 
+        {
+            "id": 3,
+            "type": "task",
+            "entry": "/resources/12/tasks/3/task.json",
+            "name": "id-and-default-value"
+        }, 
+        {
+            "id": 4,
+            "type": "task",
+            "entry": "/resources/12/tasks/4/task.json",
+            "name": "input-label"
+        }, 
+        {
+            "id": 5,
+            "type": "task",
+            "entry": "/resources/12/tasks/5/task.json",
+            "name": "connecting-label-and-input-by-id"
+        }, 
+        {
+            "id": 6,
+            "type": "task",
+            "entry": "/resources/12/tasks/6/task.json",
+            "name": "adding-one-more-input"
+        }, 
+        {
+            "id": 7,
+            "type": "task",
+            "entry": "/resources/12/tasks/7/task.json",
+            "name": "password-input"
+        }, 
+        {
+            "id": 8,
+            "type": "task",
+            "entry": "/resources/12/tasks/8/task.json",
+            "name": "submit-button"
+        }, 
+        {
+            "id": 9,
+            "type": "task",
+            "entry": "/resources/12/tasks/9/task.json",
+            "name": "teextarea"
+        }, 
+        {
+            "id": 10,
+            "type": "task",
+            "entry": "/resources/12/tasks/10/task.json",
+            "name": "checkbox-input"
+        }, 
+        {
             "id": 11,
             "type": "challenge",
             "entry": "/resources/12/tasks/11/task.json",
             "name": "registration-form"
-        }, {
+        }, 
+        {
+            "id": 12,
+            "type": "task",
+            "entry": "/resources/12/tasks/12/task.json",
+            "name": "radio-button-input"
+        }, 
+        {
+            "id": 13,
+            "type": "task",
+            "entry": "/resources/12/tasks/13/task.json",
+            "name": "radio-buttons-group"
+        }, 
+        {
+            "id": 14,
+            "type": "task",
+            "entry": "/resources/12/tasks/14/task.json",
+            "name": "select-input"
+        }, 
+        {
+            "id": 15,
+            "type": "task",
+            "entry": "/resources/12/tasks/15/task.json",
+            "name": "multiselect-input"
+        }, 
+        {
+            "id": 16,
+            "type": "task",
+            "entry": "/resources/12/tasks/16/task.json",
+            "name": "file-upload-field"
+        }, 
+        {
+            "id": 17,
+            "type": "task",
+            "entry": "/resources/12/tasks/17/task.json",
+            "name": "hidden-input"
+        }, 
+        {
             "id": 18,
             "type": "challenge",
             "entry": "/resources/12/tasks/18/task.json",

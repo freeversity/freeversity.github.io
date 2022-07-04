@@ -90,7 +90,8 @@
                         {
                             "name": "forms-introduction",
                             "id": 12,
-                            "entry": "/resources/12/chapter.json"
+                            "entry": "/resources/12/chapter.json",
+                            "disabled": true
                         },
                         {
                             "name": "advanced-forms",
