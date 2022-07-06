@@ -1,30 +1,18 @@
 {
     "assertions": [
         {
-            "title": "Измените значение атрибута `border` на `5` в HTML-редакторе.",
-            "name": "seteTableBorderAttrTo5",
-            "expect": "expect(document.querySelector('table')).to.have.attr('border', '5');"
+            "title": "Добавьте второе текстовое поле с именем `password` и идентификатором `password-field` после первого поля.",
+            "name": "addSecondTextInputWithPasswordNameAndIdPasswordField",
+            "expect": "expect(document.querySelector('form input:last-of-type:not(first-of-type)')).to.have.attr('id', 'password-field');expect(document.querySelector('form input:last-of-type:not(first-of-type)')).to.have.attr('name', 'password');expect(document.querySelector('form input:last-of-type:not(first-of-type)')).to.have.attr('type', 'text');"
         },
         {
-            "title": "Затем удалите этот атрибут.",
-            "name": "removeTableBorderAttr",
-            "expect": "expect(document.querySelector('table')).not.to.have.attr('border');"
-        },
-        {
-            "title": "В CSS-редакторе раскомментируйте стили для таблицы,",
-            "name": "uncommentTableStylesInCssEditor",
-            "expect": "expect(document.querySelector('table')).to.have.css('border', '3px solid black');"
-        },
-        {
-            "title": "затем раскомментируйте стили для ячейки.",
-            "name": "uncommentCellStylesInCssEditor",
-            "expect": "expect(document.querySelector('td')).to.have.css('border', '3px solid lightgray');"
+            "title": "Добавьте подпись `Ваш пароль` и свяжите её со вторым полем с помощью атрибута `for`.",
+            "name": "addYourPasswordLabelAndConnectItWithForAttr",
+            "expect": "expect(document.querySelector('form br + br + label')).to.have.rendered.text('Ваш пароль');expect(document.querySelector('form br + br + label')).to.have.attr('for', 'password-field');"
         }
-    ],
-    "footnote": "removeBothCommentSymbolsToUncomment",
-    "footnoteTitle": "Комментарии в CSS — это `/*` и `*/`, удаляйте обе строчки.",
-    "strict": true
+    ]
 }
+
 
 
 

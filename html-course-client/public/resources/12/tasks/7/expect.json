@@ -1,29 +1,11 @@
 {
     "assertions": [
         {
-            "title": "Измените значение атрибута `border` на `5` в HTML-редакторе.",
-            "name": "seteTableBorderAttrTo5",
-            "expect": "expect(document.querySelector('table')).to.have.attr('border', '5');"
-        },
-        {
-            "title": "Затем удалите этот атрибут.",
-            "name": "removeTableBorderAttr",
-            "expect": "expect(document.querySelector('table')).not.to.have.attr('border');"
-        },
-        {
-            "title": "В CSS-редакторе раскомментируйте стили для таблицы,",
-            "name": "uncommentTableStylesInCssEditor",
-            "expect": "expect(document.querySelector('table')).to.have.css('border', '3px solid black');"
-        },
-        {
-            "title": "затем раскомментируйте стили для ячейки.",
-            "name": "uncommentCellStylesInCssEditor",
-            "expect": "expect(document.querySelector('td')).to.have.css('border', '3px solid lightgray');"
+            "title": "Поменяйте у поля ввода пароля тип поля на `password`.",
+            "name": "setInputTypeToPasword",
+            "expect": "expect(document.querySelector('input[name=password]')).to.have.attr('type', 'password');"
         }
-    ],
-    "footnote": "removeBothCommentSymbolsToUncomment",
-    "footnoteTitle": "Комментарии в CSS — это `/*` и `*/`, удаляйте обе строчки.",
-    "strict": true
+    ]
 }
 
 

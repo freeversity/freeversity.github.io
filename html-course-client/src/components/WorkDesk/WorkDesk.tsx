@@ -251,6 +251,7 @@ const WorkDesk: FC<WorkDeskProps> = ({
                                 cssFileName={cssFileName} 
                                 markupFileName={markupFileName} 
                                 className={'workdesk__preview'} 
+                                scripts={expect?.scripts}
                             />
                         </ReflexElement>
                         <ReflexSplitter/> 

@@ -1,20 +1,24 @@
 {
     "assertions": [
         {
-            "title": "Добавьте в таблицу пятую строку со статистикой для браузера `Opera`,",
-            "name": "addFifthRowForOpera",
-            "expect": "expect(document.querySelector('table')).to.have.attr('border', '5');"
+            "title": "Добавьте в форму поле ввода с помощью тега `<input>`,",
+            "name": "addInputToForm",
+            "expect": "expect(document.querySelector('form input')).to.exist;"
         },
         {
-            "title": "шестую строку со статистикой для браузера `Edge`.",
-            "name": "addSixthRowForOpera",
-            "expect": "expect(document.querySelector('table')).not.to.have.attr('border');"
+            "title": "задайте ему тип `text`",
+            "name": "setInputTypeToText",
+            "expect": "expect(document.querySelector('form input')).to.have.attr('type', 'text');"
+        },
+        {
+            "title": "и имя `login`.",
+            "name": "setInputNameToLogin",
+            "expect": "expect(document.querySelector('form input')).to.have.attr('name', 'login');"
         }
     ],
-    "footnote": "removeBothCommentSymbolsToUncomment",
-    "footnoteTitle": "Количество посещений можете указать любое.",
     "strict": true
 }
+
 
 
 

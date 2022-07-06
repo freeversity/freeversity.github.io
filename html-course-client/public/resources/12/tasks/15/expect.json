@@ -1,30 +1,36 @@
 {
     "assertions": [
         {
-            "title": "Измените значение атрибута `border` на `5` в HTML-редакторе.",
-            "name": "seteTableBorderAttrTo5",
-            "expect": "expect(document.querySelector('table')).to.have.attr('border', '5');"
+            "title": "Сделайте раскрывающийся список мультиселектом.",
+            "name": "makeSelectMultiSelect",
+            "expect": "expect(document.querySelector('form select')).to.have.attr('multiple', '');"
         },
         {
-            "title": "Затем удалите этот атрибут.",
-            "name": "removeTableBorderAttr",
-            "expect": "expect(document.querySelector('table')).not.to.have.attr('border');"
+            "title": "Увеличьте его размер до `7`.",
+            "name": "increaseMultiselectSizeTo7",
+            "expect": "expect(document.querySelector('form select')).to.have.attr('size', '7');"
         },
         {
-            "title": "В CSS-редакторе раскомментируйте стили для таблицы,",
-            "name": "uncommentTableStylesInCssEditor",
-            "expect": "expect(document.querySelector('table')).to.have.css('border', '3px solid black');"
-        },
-        {
-            "title": "затем раскомментируйте стили для ячейки.",
-            "name": "uncommentCellStylesInCssEditor",
-            "expect": "expect(document.querySelector('td')).to.have.css('border', '3px solid lightgray');"
+            "title": "Сделайте, чтобы по умолчанию было отмечено `Воскресенье`.",
+            "name": "makeSundaySelectedByDefault",
+            "expect": "expect(document.querySelector('form select option:checked')).to.have.text('Воскресенье');"
         }
     ],
-    "footnote": "removeBothCommentSymbolsToUncomment",
-    "footnoteTitle": "Комментарии в CSS — это `/*` и `*/`, удаляйте обе строчки.",
+    "scripts": [
+        {
+            "type": "handler", 
+            "target": "form", 
+            "eventType": "submit", 
+            "handler": "e.preventDefault(); const params = [...document.querySelectorAll('form input:not([type=submit]):not([type=radio]:not(:checked)), form select option:checked, form textarea')].map((input) => `${encodeURI(input.name ?? input.parentElement.name)}=${encodeURI(input.type === 'checkbox' ? input.checked : input.value)}`).join('&'); window.location = '/resources/12/assets/submitted-form.html?' + params;"
+        }
+    ],
+    "footnote": "trySendingAFormWithDifferentOptionsSelected",
+    "footnoteTitle": "Попробуйте отправить форму, когда выбрано несколько вариантов.",
     "strict": true
 }
+
+
+
 
 
 

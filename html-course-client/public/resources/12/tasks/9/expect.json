@@ -1,30 +1,33 @@
 {
     "assertions": [
         {
-            "title": "Измените значение атрибута `border` на `5` в HTML-редакторе.",
-            "name": "seteTableBorderAttrTo5",
-            "expect": "expect(document.querySelector('table')).to.have.attr('border', '5');"
+            "title": "Добавьте в форму многострочное текстовое поле с именем `comment` и идентификатором `comment-field`.",
+            "name": "addTextareaWithNameeCommentAndIdCommentField",
+            "expect": "expect(document.querySelector('form p + textarea')).to.have.attr('name', 'comment');expect(document.querySelector('form p + textarea')).to.have.attr('id', 'comment-field');"
         },
         {
-            "title": "Затем удалите этот атрибут.",
-            "name": "removeTableBorderAttr",
-            "expect": "expect(document.querySelector('table')).not.to.have.attr('border');"
+            "title": "Задайте этому полю высоту `10` строк.",
+            "name": "setTextareaHeightTo10",
+            "expect": "expect(document.querySelector('form p + textarea')).to.have.attr('rows', '10');"
         },
         {
-            "title": "В CSS-редакторе раскомментируйте стили для таблицы,",
-            "name": "uncommentTableStylesInCssEditor",
-            "expect": "expect(document.querySelector('table')).to.have.css('border', '3px solid black');"
-        },
-        {
-            "title": "затем раскомментируйте стили для ячейки.",
-            "name": "uncommentCellStylesInCssEditor",
-            "expect": "expect(document.querySelector('td')).to.have.css('border', '3px solid lightgray');"
+            "title": "И исходное значение `Текст` комментария.",
+            "name": "setTextareaInitialValueToText",
+            "expect": "expect(document.querySelector('form p + textarea')).to.have.text('Текст');"
         }
     ],
-    "footnote": "removeBothCommentSymbolsToUncomment",
-    "footnoteTitle": "Комментарии в CSS — это `/*` и `*/`, удаляйте обе строчки.",
+    "scripts": [
+        {
+            "type": "handler", 
+            "target": "form", 
+            "eventType": "submit", 
+            "handler": "e.preventDefault(); const params = [...document.querySelectorAll('form input:not([type=submit]), form select, form textarea')].map((input) => `${encodeURI(input.name)}=${encodeURI(input.value)}`).join('&'); window.location = '/resources/12/assets/submitted-form.html?' + params;"
+        }
+    ],
     "strict": true
 }
+
+
 
 
 

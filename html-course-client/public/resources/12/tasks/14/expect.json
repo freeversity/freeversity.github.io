@@ -1,30 +1,36 @@
 {
     "assertions": [
         {
-            "title": "Измените значение атрибута `border` на `5` в HTML-редакторе.",
-            "name": "seteTableBorderAttrTo5",
-            "expect": "expect(document.querySelector('table')).to.have.attr('border', '5');"
+            "title": "Добавьте в форму раскрывающийся список с именем `year`.",
+            "name": "addSelectToAFormWithNameYear",
+            "expect": "expect(document.querySelector('form p + select')).to.have.attr('name', 'year');"
         },
         {
-            "title": "Затем удалите этот атрибут.",
-            "name": "removeTableBorderAttr",
-            "expect": "expect(document.querySelector('table')).not.to.have.attr('border');"
+            "title": "Добавьте в этот список вариант со значением `2000` и подписью `2000 год`.",
+            "name": "addOprion2000ToSelect",
+            "expect": "expect(document.querySelector('form p + select option:first-child')).to.have.attr('value', '2000');expect(document.querySelector('form p + select option:first-child')).to.have.text('2000 год');"
         },
         {
-            "title": "В CSS-редакторе раскомментируйте стили для таблицы,",
-            "name": "uncommentTableStylesInCssEditor",
-            "expect": "expect(document.querySelector('table')).to.have.css('border', '3px solid black');"
-        },
-        {
-            "title": "затем раскомментируйте стили для ячейки.",
-            "name": "uncommentCellStylesInCssEditor",
-            "expect": "expect(document.querySelector('td')).to.have.css('border', '3px solid lightgray');"
+            "title": "И второй вариант со значением `2001` и подписью `2001 год`.",
+            "name": "addOprion2001ToSelect",
+            "expect": "expect(document.querySelector('form p + select option:nth-child(2)')).to.have.attr('value', '2001');expect(document.querySelector('form p + select option:nth-child(2)')).to.have.text('2001 год');"
         }
     ],
-    "footnote": "removeBothCommentSymbolsToUncomment",
-    "footnoteTitle": "Комментарии в CSS — это `/*` и `*/`, удаляйте обе строчки.",
+    "scripts": [
+        {
+            "type": "handler", 
+            "target": "form", 
+            "eventType": "submit", 
+            "handler": "e.preventDefault(); const params = [...document.querySelectorAll('form input:not([type=submit]):not([type=radio]:not(:checked)), form select, form textarea')].map((input) => `${encodeURI(input.name)}=${encodeURI(input.type === 'chcekbox' ? input.checked : input.value)}`).join('&'); window.location = '/resources/12/assets/submitted-form.html?' + params;"
+        }
+    ],
+    "footnote": "trySendingAForm",
+    "footnoteTitle": "Попробуйте отправить форму.",
     "strict": true
 }
+
+
+
 
 
 

@@ -39,7 +39,13 @@ export interface ExpectType {
         type: "action";
         eventType: string;
         target: string;
-    })[]
+    })[];
+    scripts: ({
+        type: "handler",
+        target: string;
+        eventType: string;
+        handler: string;
+    })[];
 }
 
 export interface TaskProps {
@@ -71,6 +77,15 @@ const Task: FC<TaskProps> = ({className, baseUrl, tasks}) => {
 
     const taskType = tasks[currentIndex].type;
 
+    useEffect(() => {
+        window.gtag('config', 'G-NKBY28H61Z', {
+            'page_location': window.location.pathname,
+            custom_map: {
+              dimension1: 'value' 
+            }
+          });
+    }, [chapterId, taskId])
+
     const onTaskDoneChange = (isDone: boolean) => {
         if (nextTaskActive === isDone) return;
 
@@ -78,9 +93,9 @@ const Task: FC<TaskProps> = ({className, baseUrl, tasks}) => {
 
         if (isDone) {
             window.gtag?.('event', 'task_done', {
+                'page_location': window.location.pathname,
                 'event_category': 'engagement',
                 'event_label': 'method',
-                'value': `${chapterId}/${taskId} [${task!.name}]`
             });
         }
     }

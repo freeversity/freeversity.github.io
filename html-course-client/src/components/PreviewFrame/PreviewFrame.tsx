@@ -11,6 +11,12 @@ export interface PreviewFrameProps {
   cssFileName?: string;
   baseUrl: string;
   className?: string;
+  scripts?: ({
+    type: "handler",
+    target: string;
+    eventType: string;
+    handler: string;
+  })[];
   onReady?: (iFrame: HTMLIFrameElement) => void;
 }
 
@@ -21,6 +27,7 @@ const PreviewFrame: FC<PreviewFrameProps> = ({
   cssFileName,
   baseUrl,
   className,
+  scripts,
   onReady
 }) => {
   const [framePathName, setFramePathName] = useState<string>('srcdoc');
@@ -80,8 +87,12 @@ const PreviewFrame: FC<PreviewFrameProps> = ({
 
   const onLoad = () => {
     let pathName: string;
+    let win: Window;
+    let doc: Document;
     try {
       pathName = iFrameRef.current?.contentWindow?.location.pathname!;
+      win = iFrameRef.current!.contentWindow!;
+      doc = win.document;
     } catch {
       pathName = 'RESTRICTED'
     }
@@ -99,10 +110,27 @@ const PreviewFrame: FC<PreviewFrameProps> = ({
           const doc = iFrameRef.current!.contentWindow!.document;
 
           doc.location.hash = '';
-          doc.location.hash = hashLink     
+          doc.location.hash = hashLink;    
         });
       }
-  
+    }
+
+    for (let script of scripts ?? []) {
+      switch (script.type) {
+        case 'handler': {
+          const { target, eventType, handler} = script;
+
+          const parsedHandler = new Function('document', 'window', 'e', handler);
+
+          iFrameRef.current!.contentWindow!.addEventListener(eventType, (e) => {
+            if ((e!.target! as HTMLElement).closest(target)) {
+              parsedHandler.call(win, doc, win, e);
+            }
+          });
+        }
+
+      }
+
     }
 
     if (framePathName !== pathName) {

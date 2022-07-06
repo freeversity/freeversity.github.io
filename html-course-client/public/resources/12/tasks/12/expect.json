@@ -1,38 +1,23 @@
 {
     "assertions": [
         {
-            "title": "Измените значение атрибута `border` на `5` в HTML-редакторе.",
+            "title": "Добавьте в форму радиокнопку с именем `question-one`.",
             "name": "seteTableBorderAttrTo5",
-            "expect": "expect(document.querySelector('table')).to.have.attr('border', '5');"
+            "expect": "expect(document.querySelector('form p + label input[type=radio]')).to.have.attr('name', 'question-one');"
         },
         {
-            "title": "Затем удалите этот атрибут.",
+            "title": "Задайте радиокнопке значение `p`.",
             "name": "removeTableBorderAttr",
-            "expect": "expect(document.querySelector('table')).not.to.have.attr('border');"
-        },
-        {
-            "title": "В CSS-редакторе раскомментируйте стили для таблицы,",
-            "name": "uncommentTableStylesInCssEditor",
-            "expect": "expect(document.querySelector('table')).to.have.css('border', '3px solid black');"
-        },
-        {
-            "title": "затем раскомментируйте стили для ячейки.",
-            "name": "uncommentCellStylesInCssEditor",
-            "expect": "expect(document.querySelector('td')).to.have.css('border', '3px solid lightgray');"
+            "expect": "expect(document.querySelector('form p + label input[type=radio]')).to.have.attr('value', 'p');"
         }
     ],
-    "footnote": "removeBothCommentSymbolsToUncomment",
-    "footnoteTitle": "Комментарии в CSS — это `/*` и `*/`, удаляйте обе строчки.",
+    "scripts": [
+        {
+            "type": "handler", 
+            "target": "form", 
+            "eventType": "submit", 
+            "handler": "e.preventDefault(); const params = [...document.querySelectorAll('form input:not([type=submit]):not([type=radio]:not(:checked)), form select, form textarea')].map((input) => `${encodeURI(input.name)}=${encodeURI(input.type === 'chcekbox' ? input.checked : input.value)}`).join('&'); window.location = '/resources/12/assets/submitted-form.html?' + params;"
+        }
+    ],
     "strict": true
 }
-
-
-
-
-
-
-
-
-
-
-

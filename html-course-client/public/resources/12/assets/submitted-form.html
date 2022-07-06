@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="result">
+
+    </div>
+    <script>
+        const params = location.search.slice(1).split('&').map((pair) => pair.split('=')).filter((value) => !!value[0]);
+
+        const resultContainer = document.getElementById('result');
+
+        resultContainer.innerHTML = params.length ? `
+            <ul>
+                ${Object.entries(params
+                    .reduce((params, [key, value]) => {
+                        if (!params[key]) {
+                            params[key] = [];
+                        }
+
+                        params[key].push(value);
+
+                        return params;
+                    }, {}))
+                    .map(([key, value]) => (
+                    `<li>${decodeURI(key)}: ${decodeURI(value)}</li>`
+                )).join('')}
+            </ul>
+        ` : 'No data :C';
+
+    </script>
+</body>
+</html>

@@ -1,30 +1,27 @@
 {
     "assertions": [
         {
-            "title": "Измените значение атрибута `border` на `5` в HTML-редакторе.",
-            "name": "seteTableBorderAttrTo5",
-            "expect": "expect(document.querySelector('table')).to.have.attr('border', '5');"
+            "title": "Добавьте к полю для ввода логина идентификатор `login-field`.",
+            "name": "addIdLoginFieldToLoginInput",
+            "expect": "expect(document.querySelector('tr:first-child td input')).to.have.attr('id', 'login-field');"
         },
         {
-            "title": "Затем удалите этот атрибут.",
-            "name": "removeTableBorderAttr",
-            "expect": "expect(document.querySelector('table')).not.to.have.attr('border');"
+            "title": "Оберните текст `Ваш логин` в тег `<label>`. Тег `<label>` должен оказаться внутри тега `<td>`.",
+            "name": "wrapLoginFieldWithLabelInsideTd",
+            "expect": "expect(document.querySelector('tr:first-child td:first-child label')).to.have.rendered.text('Ваш логин');"
         },
         {
-            "title": "В CSS-редакторе раскомментируйте стили для таблицы,",
-            "name": "uncommentTableStylesInCssEditor",
-            "expect": "expect(document.querySelector('table')).to.have.css('border', '3px solid black');"
-        },
-        {
-            "title": "затем раскомментируйте стили для ячейки.",
-            "name": "uncommentCellStylesInCssEditor",
-            "expect": "expect(document.querySelector('td')).to.have.css('border', '3px solid lightgray');"
+            "title": "Затем свяжите подпись с полем ввода логина с помощью атрибута `for`.",
+            "name": "connectLoginInputWithLabelUsingForAttr",
+            "expect": "expect(document.querySelector('tr:first-child td:first-child label')).to.have.attr('for', 'login-field');"
         }
     ],
-    "footnote": "removeBothCommentSymbolsToUncomment",
-    "footnoteTitle": "Комментарии в CSS — это `/*` и `*/`, удаляйте обе строчки.",
+    "footnote": "clickLabelToCheckInputFocus",
+    "footnoteTitle": "Не забудьте попробовать нажать на подпись, чтобы проверить, что поле активируется.",
     "strict": true
 }
+
+
 
 
 
