@@ -1,0 +1,36 @@
+{
+    "assertions": [
+        {
+            "title": "Добавьте на страницу пустую форму,",
+            "name": "addEmptyFormToThePage",
+            "expect": "expect(document.querySelector('h1 + form')).to.exist;"
+        },
+        {
+            "title": "затем задайте ей адрес отправки `https://echo.htmlacademy.ru/courses`",
+            "name": "setFormActionToUrl",
+            "expect": "expect(document.querySelector('h1 + form')).to.have.attr('action', 'https://echo.htmlacademy.ru/courses');"
+        },
+        {
+            "title": "и метод отправки данных — `post`.",
+            "name": "setFormMethodToPost",
+            "expect": "expect(document.querySelector('h1 + form')).to.have.attr('method', 'post');"
+        }
+    ],
+    "footnote": "nothingWillBeShownAfterEmptyFormAdded",
+    "footnoteTitle": "После добавления пустой формы в браузере ничего не отобразится, но мы исправим это в следующем задании.",
+    "strict": true
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

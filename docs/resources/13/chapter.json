@@ -3,6 +3,162 @@
     "title": "Advanced Forms",
     "tasks": [
         {
+            "id": 1,
+            "type": "task",
+            "entry": "/resources/13/tasks/1/task.json",
+            "name": "reset-input"
+        },
+        {
+            "id": 2,
+            "type": "task",
+            "entry": "/resources/13/tasks/2/task.json",
+            "name": "simple-button"
+        },
+        {
+            "id": 3,
+            "type": "task",
+            "entry": "/resources/13/tasks/3/task.json",
+            "name": "image-button"
+        },
+        {
+            "id": 4,
+            "type": "task",
+            "entry": "/resources/13/tasks/4/task.json",
+            "name": "alternative-button"
+        },
+        {
+            "id": 5,
+            "type": "task",
+            "entry": "/resources/13/tasks/5/task.json",
+            "name": "required-fields"
+        },
+        {
+            "id": 6,
+            "type": "task",
+            "entry": "/resources/13/tasks/6/task.json",
+            "name": "date-input"
+        },
+        {
+            "id": 7,
+            "type": "task",
+            "entry": "/resources/13/tasks/7/task.json",
+            "name": "time-input"
+        },
+        {
+            "id": 8,
+            "type": "task",
+            "entry": "/resources/13/tasks/8/task.json",
+            "name": "available-values-list"
+        },
+        {
+            "id": 9,
+            "type": "task",
+            "entry": "/resources/13/tasks/9/task.json",
+            "name": "numeric-input"
+        },
+        {
+            "id": 10,
+            "type": "task",
+            "entry": "/resources/13/tasks/10/task.json",
+            "name": "search-input"
+        },
+        {
+            "id": 11,
+            "type": "task",
+            "entry": "/resources/13/tasks/11/task.json",
+            "name": "auto-focus"
+        },
+        {
+            "id": 12,
+            "type": "task",
+            "entry": "/resources/13/tasks/12/task.json",
+            "name": "alternative-date-inputs"
+        },
+        {
+            "id": 13,
+            "type": "task",
+            "entry": "/resources/13/tasks/13/task.json",
+            "name": "range-input"
+        },
+        {
+            "id": 14,
+            "type": "task",
+            "entry": "/resources/13/tasks/14/task.json",
+            "name": "output-area"
+        },
+        {
+            "id": 15,
+            "type": "task",
+            "entry": "/resources/13/tasks/15/task.json",
+            "name": "inputs-grouping"
+        },
+        {
+            "id": 16,
+            "type": "task",
+            "entry": "/resources/13/tasks/16/task.json",
+            "name": "input-patterns"
+        },
+        {
+            "id": 17,
+            "type": "task",
+            "entry": "/resources/13/tasks/17/task.json",
+            "name": "tel-input"
+        },
+        {
+            "id": 18,
+            "type": "task",
+            "entry": "/resources/13/tasks/18/task.json",
+            "name": "input-placeholder"
+        },
+        {
+            "id": 19,
+            "type": "task",
+            "entry": "/resources/13/tasks/19/task.json",
+            "name": "email-input"
+        },
+        {
+            "id": 20,
+            "type": "task",
+            "entry": "/resources/13/tasks/20/task.json",
+            "name": "color-input"
+        },
+        {
+            "id": 21,
+            "type": "task",
+            "entry": "/resources/13/tasks/21/task.json",
+            "name": "select-options-grouping"
+        },
+        {
+            "id": 22,
+            "type": "task",
+            "entry": "/resources/13/tasks/22/task.json",
+            "name": "disabling-fields"
+        },
+        {
+            "id": 23,
+            "type": "task",
+            "entry": "/resources/13/tasks/23/task.json",
+            "name": "inputs-auto-filling"
+        },
+        {
+            "id": 24,
+            "type": "task",
+            "entry": "/resources/13/tasks/24/task.json",
+            "name": "switching-between-inputs"
+        },
+        {
+            "id": 25,
+            "type": "task",
+            "entry": "/resources/13/tasks/25/task.json",
+            "name": "localStorage"
+        },
+        {
+            "id": 26,
+            "type": "task",
+            "entry": "/resources/13/tasks/26/task.json",
+            "name": "checking-localStorage"
+        },
+        {
             "id": 27,
             "type": "challenge",
             "entry": "/resources/13/tasks/27/task.json",
