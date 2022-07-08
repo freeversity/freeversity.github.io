@@ -20,6 +20,7 @@ import { ExpectType } from '../../pages/Task/Task';
 import { Markdown } from '../Markdown/Markdown';
 import { ChallengeInspector } from '../ChallengeInspector/ChallengeInspector';
 import {expect as expectFunc} from '../../expect'
+import debounce from 'lodash/debounce';
 
 declare global {
     interface Window { gtag: (type: string, name: string, data: any) => void; }
@@ -97,9 +98,9 @@ const WorkDesk: FC<WorkDeskProps> = ({
             .map((assertion, index, assertions) => {
                 switch (assertion.type) {
                     case 'action': {
-                        const {target, eventType, name} = assertion;
+                        const {target, eventType, name, expect: expectBody, debounce: debounceTimeout} = assertion;
 
-                        const handler = (e: Event) => {
+                        let handler = (e: Event) => {
                             if (target && !(e.target as HTMLElement).closest(target)) {
                               return;
                             }
@@ -109,16 +110,28 @@ const WorkDesk: FC<WorkDeskProps> = ({
                                 return;
                             }
 
-                            setDoneAsserts((doneAsserts) => { 
-                                if (!assertions.slice(0, index).every(({name}) => doneAsserts.has(name))) return doneAsserts;
-                                
-                                requestAnimationFrame(() => {
-                                    onValidate(previewFrame);
-                                });
+                            const func = expectBody ? new Function('expect', 'document', expectBody) : () => {};
 
-                                return new Set([...Array.from(doneAsserts), name]);
-                            });
+                            try {
+                                func.call(previewWindow, expectFunc, previewWindow.document);
+
+                                setDoneAsserts((doneAsserts) => { 
+                                    if (!assertions.slice(0, index).every(({name}) => doneAsserts.has(name))) return doneAsserts;
+                                    
+                                    requestAnimationFrame(() => {
+                                        onValidate(previewFrame);
+                                    });
+    
+                                    return new Set([...Array.from(doneAsserts), name]);
+                                });
+                            } catch (err) {
+                                console.error(err);
+                            }
                         };
+
+                        if (debounceTimeout !== undefined) {
+                            handler = debounce(handler, debounceTimeout);
+                        }
 
                         previewWindow.addEventListener(eventType, handler);
 

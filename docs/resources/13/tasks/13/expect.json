@@ -1,25 +1,33 @@
 {
     "assertions": [
         {
-            "title": "Добавьте на страницу пустую форму,",
-            "name": "addEmptyFormToThePage",
-            "expect": "expect(document.querySelector('h1 + form')).to.exist;"
+            "title": "Добавьте поле-ползунок для выбора количества дней.",
+            "name": "addRangeInput",
+            "expect": "expect(document.querySelector('label[for=dayscount] + input[type=range]')).to.exist;"
         },
         {
-            "title": "затем задайте ей адрес отправки `https://echo.htmlacademy.ru/courses`",
-            "name": "setFormActionToUrl",
-            "expect": "expect(document.querySelector('h1 + form')).to.have.attr('action', 'https://echo.htmlacademy.ru/courses');"
+            "title": "Установите минимальное и максимальное значения `1` и `14` соответственно.",
+            "name": "setRangeInputMinTo1AndMaxTo14",
+            "expect": "expect(document.querySelector('label[for=dayscount] + input[type=range]')).to.have.attr('min', '1');expect(document.querySelector('label[for=dayscount] + input[type=range]')).to.have.attr('max', '14');"
         },
         {
-            "title": "и метод отправки данных — `post`.",
-            "name": "setFormMethodToPost",
-            "expect": "expect(document.querySelector('h1 + form')).to.have.attr('method', 'post');"
+            "title": "Установите значение шага равное `1`.",
+            "name": "setRangeInputStepTo1",
+            "expect": "expect(document.querySelector('label[for=dayscount] + input[type=range]')).to.have.attr('step', '1');"
         }
     ],
-    "footnote": "nothingWillBeShownAfterEmptyFormAdded",
-    "footnoteTitle": "После добавления пустой формы в браузере ничего не отобразится, но мы исправим это в следующем задании.",
+    "scripts": [
+        {
+            "type": "handler", 
+            "target": "form", 
+            "eventType": "submit", 
+            "handler": "e.preventDefault(); const params = [...document.querySelectorAll('form input:not([type=submit]):not([type=radio]:not(:checked)):not([type=reset]):not([type=button]):not([type=image]), form select option:checked, form textarea')].map((input) => `${encodeURIComponent(input.name ?? input.parentElement.name)}=${encodeURIComponent(input.type === 'checkbox' ? input.checked : input.value)}`).join('&'); window.location = '/resources/12/assets/submitted-form.html?' + params;"
+        }
+    ],
     "strict": true
 }
+
+
 
 
 

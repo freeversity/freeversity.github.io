@@ -16,7 +16,7 @@
             "type": "handler", 
             "target": "form", 
             "eventType": "submit", 
-            "handler": "e.preventDefault(); const params = [...document.querySelectorAll('form input:not([type=submit]):not([type=radio]:not(:checked)), form select option:checked, form textarea')].map((input) => `${encodeURI(input.name ?? input.parentElement.name)}=${encodeURI(input.type === 'checkbox' ? input.checked : input.value)}`).join('&'); window.location = '/resources/12/assets/submitted-form.html?' + params;"
+            "handler": "e.preventDefault(); const params = [...document.querySelectorAll('form input:not([type=submit]):not([type=radio]:not(:checked)), form select option:checked, form textarea')].map((input) => `${encodeURIComponent(input.name ?? input.parentElement.name)}=${encodeURIComponent(input.type === 'checkbox' ? input.checked : input.value)}`).join('&'); window.location = '/resources/12/assets/submitted-form.html?' + params;"
         }
     ],
     "strict": true

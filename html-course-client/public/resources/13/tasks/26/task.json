@@ -1,8 +1,0 @@
-{
-    "id": 26,      
-    "name": "checking-localStorage",
-    "htmlEntry": "index.html",
-    "cssEntry": "style.css",
-    "articleEntry": "article.md",
-    "expectEntry": "expect.json"
-}

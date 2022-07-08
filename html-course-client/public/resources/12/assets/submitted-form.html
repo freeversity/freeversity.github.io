@@ -28,7 +28,7 @@
                         return params;
                     }, {}))
                     .map(([key, value]) => (
-                    `<li>${decodeURI(key)}: ${decodeURI(value)}</li>`
+                    `<li>${decodeURIComponent(key)}: ${decodeURIComponent(value)}</li>`
                 )).join('')}
             </ul>
         ` : 'No data :C';

@@ -1,36 +1,31 @@
 {
     "assertions": [
         {
-            "title": "Добавьте на страницу пустую форму,",
-            "name": "addEmptyFormToThePage",
-            "expect": "expect(document.querySelector('h1 + form')).to.exist;"
+            "title": "Добавьте поле поиска.",
+            "name": "addSearchInput",
+            "expect": "expect(document.querySelector('label[for=search] + input[type=search]')).to.exist;"
         },
         {
-            "title": "затем задайте ей адрес отправки `https://echo.htmlacademy.ru/courses`",
-            "name": "setFormActionToUrl",
-            "expect": "expect(document.querySelector('h1 + form')).to.have.attr('action', 'https://echo.htmlacademy.ru/courses');"
+            "title": "Добавьте атрибуты `name` и `id`, а затем установите значение этих атрибутов `search`.",
+            "name": "setSearchInputNameAndIdToSearch",
+            "expect": "expect(document.querySelector('label[for=search] + input[type=search]')).to.have.attr('name', 'search');expect(document.querySelector('label[for=search] + input[type=search]')).to.have.attr('id', 'search');"
         },
         {
-            "title": "и метод отправки данных — `post`.",
-            "name": "setFormMethodToPost",
-            "expect": "expect(document.querySelector('h1 + form')).to.have.attr('method', 'post');"
+            "title": "Введите значение и отправьте форму на сервер.",
+            "name": "enterValueAndSendTheForm",
+            "type": "action",
+            "eventType": "submit",
+            "target": "form",
+            "expect": "expect(document.querySelector('label[for=search] + input[type=search]').value).not.to.equal('');"
         }
     ],
-    "footnote": "nothingWillBeShownAfterEmptyFormAdded",
-    "footnoteTitle": "После добавления пустой формы в браузере ничего не отобразится, но мы исправим это в следующем задании.",
+    "scripts": [
+        {
+            "type": "handler", 
+            "target": "form", 
+            "eventType": "submit", 
+            "handler": "e.preventDefault(); const params = [...document.querySelectorAll('form input:not([type=submit]):not([type=radio]:not(:checked)):not([type=reset]):not([type=button]):not([type=image]), form select option:checked, form textarea')].map((input) => `${encodeURIComponent(input.name ?? input.parentElement.name)}=${encodeURIComponent(input.type === 'checkbox' ? input.checked : input.value)}`).join('&'); window.location = '/resources/12/assets/submitted-form.html?' + params;"
+        }
+    ],
     "strict": true
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-

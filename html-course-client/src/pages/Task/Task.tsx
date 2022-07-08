@@ -39,6 +39,8 @@ export interface ExpectType {
         type: "action";
         eventType: string;
         target: string;
+        expect?: string;
+        debounce?: number;
     })[];
     scripts: ({
         type: "handler",
@@ -75,7 +77,7 @@ const Task: FC<TaskProps> = ({className, baseUrl, tasks}) => {
     const nextTaskId = tasks[currentIndex + 1]?.id;
     const prevTaskId = tasks[currentIndex - 1]?.id;
 
-    const taskType = tasks[currentIndex].type;
+    const taskType = tasks[currentIndex]?.type;
 
     useEffect(() => {
         window.gtag('config', 'G-NKBY28H61Z', {

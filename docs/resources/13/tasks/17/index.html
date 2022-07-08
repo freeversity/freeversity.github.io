@@ -1,13 +1,27 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
   <head>
+    <title>Поле ввода телефона</title>
     <meta charset="utf-8">
-    <title>Тег form</title>
+    <link rel="stylesheet" href="keksik-style.css">
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <h1>Форма входа</h1>
-
-    <!-- Добавьте форму сюда -->
+    <header class="page-header">Форма личных данных</header>
+    <main>
+      <form action="https://echo.htmlacademy.ru/courses" method="post">
+        <fieldset>
+          <legend>Заявление на получение визы</legend>
+          <label for="passport">Номер котопаспорта</label>
+          <input type="text" id="passport" name="passport" pattern="[0-9]{3}-[0-9]{5}" value="322-22332" required>
+          <label for="tel">Номер телефона</label>
+          <!-- Поле ввода номера -->
+        </fieldset>
+        <div class="buttons">
+          <input type="submit" value="Оформить">
+        </div>
+      </form>
+    </main>
+    <footer class="page-footer"></footer>
   </body>
 </html>

@@ -1,8 +1,9 @@
 {
-    "id": 25,      
-    "name": "localStorage",
+    "id": 27,
+    "name": "per-aspera-ad-astra",
     "htmlEntry": "index.html",
     "cssEntry": "style.css",
+    "cssReadonly": true,
     "articleEntry": "article.md",
-    "expectEntry": "expect.json"
+    "refHtmlEntry": "ref.html"
 }

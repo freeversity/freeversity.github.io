@@ -1,13 +1,48 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
   <head>
+    <title>Поле ввода числового значения</title>
     <meta charset="utf-8">
-    <title>Тег form</title>
+    <link rel="stylesheet" href="keksik-style.css">
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <h1>Форма входа</h1>
-
-    <!-- Добавьте форму сюда -->
+    <header class="page-header">Форма доставки</header>
+    <main>
+      <form action="https://echo.htmlacademy.ru/courses" method="post">
+        <label for="name">Имя</label>
+        <input type="text" id="name" name="name" value="Кекс" required>
+        <label for="address">Адрес доставки</label>
+        <textarea id="address" name="address" rows="2" required>ул. Хвостенко, д. 1</textarea>
+        <div class="half-width">
+          <label for="date">Дата доставки</label>
+          <input type="date" id="date" name="date" value="2014-12-12">
+        </div>
+        <div class="half-width">
+          <label for="time">Время доставки</label>
+          <input type="time" id="time" name="time" value="12:00">
+        </div>
+        <div class="half-width">
+          <label for="dish">Блюдо</label>
+          <input type="text" list="dishes" id="dish" name="dish" value="Курочка">
+          <datalist id="dishes">
+            <option value="Мясо"></option>
+            <option value="Рыба"></option>
+            <option value="Курочка"></option>
+            <option value="Индейка"></option>
+            <option value="Мыши"></option>
+            <option value="Молоко"></option>
+          </datalist>
+        </div>
+        <div class="half-width">
+          <label for="amount">Количество</label>
+          <!-- Поле для ввода числового значения -->
+        </div>
+        <div class="buttons">
+          <input type="submit" value="Заказать">
+        </div>
+      </form>
+    </main>
+    <footer class="page-footer"></footer>
   </body>
 </html>

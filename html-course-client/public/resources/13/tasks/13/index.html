@@ -1,13 +1,34 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
   <head>
+    <title>Выбор из диапазона</title>
     <meta charset="utf-8">
-    <title>Тег form</title>
+    <link rel="stylesheet" href="keksik-style.css">
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <h1>Форма входа</h1>
-
-    <!-- Добавьте форму сюда -->
+    <header class="page-header">Форма бронирования отеля</header>
+    <main>
+      <form action="https://echo.htmlacademy.ru/courses" method="post">
+        <label for="search">Название города</label>
+        <input type="search" id="search" name="search" value="Осло, Норвегия">
+        <div class="one-third-width">
+          <label for="day">Число</label>
+          <input type="number" min="1" max="31" id="day" name="day" value="17">
+        </div>
+        <div class="two-third-width">
+          <label for="month">Месяц</label>
+          <input type="month" id="month" name="month" value="2014-09">
+        </div>
+        <div class="half-width">
+          <label for="dayscount">Количество дней</label>
+          1 <!-- Поле-ползунок --> 14
+        </div>
+        <div class="buttons">
+          <input type="submit" value="Забронировать">
+        </div>
+      </form>
+    </main>
+    <footer class="page-footer"></footer>
   </body>
 </html>

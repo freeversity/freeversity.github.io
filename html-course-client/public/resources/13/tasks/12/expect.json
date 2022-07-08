@@ -1,25 +1,41 @@
 {
     "assertions": [
         {
-            "title": "Добавьте на страницу пустую форму,",
-            "name": "addEmptyFormToThePage",
-            "expect": "expect(document.querySelector('h1 + form')).to.exist;"
+            "title": "Добавьте поле для выбора числа с типом `number` и задайте ему минимальное значение `1` и максимальное — `31`.",
+            "name": "addNumericInputWithMin1AndMax31",
+            "expect": "expect(document.querySelector('label[for=day] + input[type=number]')).to.have.attr('min', '1');expect(document.querySelector('label[for=day] + input[type=number]')).to.have.attr('max', '31');"
         },
         {
-            "title": "затем задайте ей адрес отправки `https://echo.htmlacademy.ru/courses`",
-            "name": "setFormActionToUrl",
-            "expect": "expect(document.querySelector('h1 + form')).to.have.attr('action', 'https://echo.htmlacademy.ru/courses');"
+            "title": "Добавьте поле для выбора месяца с типом `month`.",
+            "name": "addMonthInput",
+            "expect": "expect(document.querySelector('label[for=month] + input[type=month]')).to.exist;"
         },
         {
-            "title": "и метод отправки данных — `post`.",
-            "name": "setFormMethodToPost",
-            "expect": "expect(document.querySelector('h1 + form')).to.have.attr('method', 'post');"
+            "title": "Задайте этим полям имена `day` и `month` соответственно.",
+            "name": "setNumericInputNameToDayAndMonthToMonth",
+            "expect": "expect(document.querySelector('label[for=day] + input[type=number]')).to.have.attr('name', 'day');expect(document.querySelector('label[for=month] + input[type=month]')).to.have.attr('name', 'month');"
+        },
+        {
+            "title": "Попробуйте выбрать значения и нажмите на кнопку «Забронировать». Обратите внимание в каком виде приходят данные на сервер.",
+            "name": "selectValuesAndSubmitForm",
+            "type": "action",
+            "eventType": "submit",
+            "target": "form",
+            "expect": "expect(document.querySelector('label[for=day] + input[type=number]').value).not.to.equal('');expect(document.querySelector('label[for=month] + input[type=month]').value).not.to.equal('');"
         }
     ],
-    "footnote": "nothingWillBeShownAfterEmptyFormAdded",
-    "footnoteTitle": "После добавления пустой формы в браузере ничего не отобразится, но мы исправим это в следующем задании.",
+    "scripts": [
+        {
+            "type": "handler", 
+            "target": "form", 
+            "eventType": "submit", 
+            "handler": "e.preventDefault(); const params = [...document.querySelectorAll('form input:not([type=submit]):not([type=radio]:not(:checked)):not([type=reset]):not([type=button]):not([type=image]), form select option:checked, form textarea')].map((input) => `${encodeURIComponent(input.name ?? input.parentElement.name)}=${encodeURIComponent(input.type === 'checkbox' ? input.checked : input.value)}`).join('&'); window.location = '/resources/12/assets/submitted-form.html?' + params;"
+        }
+    ],
     "strict": true
 }
+
+
 
 
 

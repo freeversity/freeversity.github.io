@@ -148,18 +148,6 @@
         },
         {
             "id": 25,
-            "type": "task",
-            "entry": "/resources/13/tasks/25/task.json",
-            "name": "localStorage"
-        },
-        {
-            "id": 26,
-            "type": "task",
-            "entry": "/resources/13/tasks/26/task.json",
-            "name": "checking-localStorage"
-        },
-        {
-            "id": 27,
             "type": "challenge",
             "entry": "/resources/13/tasks/27/task.json",
             "name": "per-aspera-ad-astra"
