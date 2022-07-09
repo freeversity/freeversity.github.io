@@ -1,0 +1,29 @@
+{
+    "intro": "competitorIsDefeated",
+    "introTitle": "К сожалению, наш спортсмен выбывает из борьбы за третье место.",
+    "assertions": [
+        {
+            "title": "Биатлонист попал по всем мишеням, кроме третьей и четвёртой.<br>![Образец попадания по мишеням](/resources/14/assets/task-10.png)",
+            "name": "allHitExcept3And4",
+            "expect": "expect(document.querySelectorAll('li:not(:nth-child(3)):not(:nth-child(4))')).to.have.css('backgroundColor', 'white');expect(document.querySelectorAll('li:nth-child(3), li:nth-child(4)')).to.have.css('backgroundColor', 'red');"
+        }
+    ]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

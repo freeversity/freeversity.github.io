@@ -1,0 +1,26 @@
+{
+    "intro": "improveResultsTableWithHovering",
+    "introTitle": "Усовершенствуйте таблицу результатов, добавив подсветку строк и очков:",
+    "assertions": [
+        {
+            "title": "В CSS-правило с селектором tr:hover добавьте свойство `background-color: #fcf8e3;`.",
+            "name": "setTrBgColorToYellow",
+            "type": "action",
+            "target": "tr",
+            "eventType": "mouseover",
+            "debounce": 50,
+            "expect": "expect(document.querySelector('tr:hover')).to.have.css('backgroundColor', '#fcf8e3');"
+        },
+        {
+            "title": "В strong:hover свойство `color: #0088cc;`.",
+            "name": "setBoldColorToBlueOnHover",            
+            "type": "action",
+            "target": "strong",
+            "eventType": "mouseover",
+            "debounce": 50,
+            "expect": "expect(document.querySelector('strong:hover')).to.have.css('color', '#0088cc');"
+        }
+    ],
+    "footnote": "hoverOnRowsAndPointsForCheckingHighlighting",
+    "footnoteTitle": "Наведите курсор мыши на строки таблицы и на очки биатлонистов для проверки работы подсветки."
+}

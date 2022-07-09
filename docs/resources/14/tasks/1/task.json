@@ -1,0 +1,7 @@
+{
+    "id": 1,      
+    "name": "hard-times-without-selectors",
+    "htmlEntry": "index.html",
+    "articleEntry": "article.md",
+    "expectEntry": "expect.json"
+}

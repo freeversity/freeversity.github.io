@@ -1,0 +1,35 @@
+{
+    "intro": "competitionForSecondPlace",
+    "introTitle": "Начались «разборки» за второе место.",
+    "assertions": [
+        {
+            "title": "Первый биатлонист закрыл все мишени, кроме четвёртой.",
+            "name": "firstLineHitAllExcept4",
+            "expect": "expect(document.querySelectorAll('.shooter-1 li:not(:nth-child(4))')).to.have.css('backgroundColor', 'white');expect(document.querySelectorAll('.shooter-1 li:nth-child(4)')).to.have.css('backgroundColor', 'red');"
+        },
+        {
+            "title": "А второй промахнулся по второй, а на четвёртой произошла ошибка техники.<br>![Образец попадания по мишеням](/resources/14/assets/task-7.png)",
+            "name": "secondHitAllExcept2And4IsFailed",
+            "expect": "expect(document.querySelectorAll('.shooter-2 li:not(:nth-child(2)):not(:nth-child(4))')).to.have.css('backgroundColor', 'white');expect(document.querySelectorAll('.shooter-2 li:nth-child(4)')).to.have.css('backgroundColor', 'yellow');expect(document.querySelectorAll('.shooter-2 li:nth-child(2)')).to.have.css('backgroundColor', 'red');"
+        }
+    ]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

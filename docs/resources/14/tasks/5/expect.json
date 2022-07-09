@@ -1,0 +1,33 @@
+{
+    "intro": "duelIsBeingHappening",
+    "introTitle": "На огневом рубеже дуэль.",
+    "assertions": [
+        {
+            "title": "Первый биатлонист закрыл все мишени, кроме второй и пятой.",
+            "name": "firstLineAllHitExcept2And5",
+            "expect": "expect(document.querySelectorAll('.shooter-1 .first, .shooter-1 .third, .shooter-1 .fourth')).to.have.css('backgroundColor', 'white');expect(document.querySelectorAll('.shooter-1 .second, .shooter-1 .fifth')).to.have.css('backgroundColor', 'red');"
+        },
+        {
+            "title": "А второй промахнулся по первой, но затем отстрелялся чисто.<br>![Образец попадания по мишеням](/resources/14/assets/task-5.png)",
+            "name": "secondLineAllHitExcept1",
+            "expect": "expect(document.querySelectorAll('.shooter-2 .first')).to.have.css('backgroundColor', 'red');expect(document.querySelectorAll('.shooter-2 li:not(.first)')).to.have.css('backgroundColor', 'white');"
+        }
+    ]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

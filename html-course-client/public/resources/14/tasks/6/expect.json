@@ -1,0 +1,30 @@
+{
+    "title": "leaderIsBeingChanged",
+    "titleIntro": "И снова лидер меняется.",
+    "assertions": [
+        {
+            "title": "Биатлонист закрыл все мишени, кроме второй и пятой.<br>![Образец попадания по мишеням](/resources/14/assets/task-6.png)",
+            "name": "allHitExcept2And5",
+            "expect": "expect(document.querySelectorAll('.first + li, .fourth + li')).to.have.css('backgroundColor', 'red');expect(document.querySelectorAll('.first, .fourth, .first + li + li')).to.have.css('backgroundColor', 'white');"
+        }
+    ]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

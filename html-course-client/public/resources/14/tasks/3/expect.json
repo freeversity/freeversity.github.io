@@ -1,0 +1,33 @@
+{
+    "intro": "onlyThreeTargetsBeenShot",
+    "introTitle": "Биатлонист поразил только три мишени: первую, вторую и четвёртую.",
+    "assertions": [
+        {
+            "title": "Для класса `hit` задайте свойство `background-color: white;` (1, 2, 4 мишени закрыты).",
+            "name": "setHitClassBackogroundColorToWhite",
+            "expect": "expect(document.querySelectorAll('.hit')).to.have.css('backgroundColor', 'white');"
+        },
+        {
+            "title": "Для класса `miss` задайте свойство `background-color: red;` (3, 5 мишени — мимо).",
+            "name": "setMissClassBackogroundColorToRed",
+            "expect": "expect(document.querySelectorAll('.miss')).to.have.css('backgroundColor', 'red');"
+        }
+    ]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -105,15 +105,15 @@ const WorkDesk: FC<WorkDeskProps> = ({
                               return;
                             }
 
-                            if (!isStrict) {
-                                setDoneAsserts((doneAsserts) => new Set([...Array.from(doneAsserts), name]));
-                                return;
-                            }
-
                             const func = expectBody ? new Function('expect', 'document', expectBody) : () => {};
 
                             try {
                                 func.call(previewWindow, expectFunc, previewWindow.document);
+
+                                if (!isStrict) {
+                                    setDoneAsserts((doneAsserts) => new Set([...Array.from(doneAsserts), name]));
+                                    return;
+                                }
 
                                 setDoneAsserts((doneAsserts) => { 
                                     if (!assertions.slice(0, index).every(({name}) => doneAsserts.has(name))) return doneAsserts;

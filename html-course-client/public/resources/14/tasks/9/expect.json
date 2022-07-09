@@ -1,0 +1,29 @@
+{
+    "intro": "leaderStressedOut",
+    "introTitle": "Лидер гонки не справился с волнением.",
+    "assertions": [
+        {
+            "title": "Биатлонист промахнулся по первой мишени, попал по всем остальным, на последней мишени техника дала сбой.<br>![Образец попадания по мишеням](/resources/14/assets/task-9.png)",
+            "name": "addEmptyFormToThePage",
+            "expect": "expect(document.querySelectorAll('li:not(:first-child):not(:last-child)')).to.have.css('backgroundColor', 'white');expect(document.querySelectorAll('li:first-child')).to.have.css('backgroundColor', 'red');expect(document.querySelectorAll('li:last-child')).to.have.css('backgroundColor', 'yellow');"
+        }
+    ]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

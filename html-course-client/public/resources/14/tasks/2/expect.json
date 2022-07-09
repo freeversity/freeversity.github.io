@@ -1,0 +1,23 @@
+{
+    "assertions": [
+        {
+            "title": "Закройте все мишени. С помощью селектора по имени тега задайте всем элементам списка свойство `background-color: white;`.",
+            "name": "setAllTargetsBgColorToWhiteWithTagSelector",
+            "expect": "expect(document.querySelectorAll('li')).to.have.css('backgroundColor', 'white');"
+        }
+    ]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

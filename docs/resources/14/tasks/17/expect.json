@@ -1,0 +1,29 @@
+{
+    "assertions": [
+        {
+            "title": "Задайте фон полю «Имя»: `background-color: #fcf8e3;`.",
+            "name": "setNameBgColorToYellow",
+            "expect": "expect(document.querySelector('#fullname')).to.have.css('backgroundColor', '#fcf8e3');"
+        },
+        {
+            "title": "Задайте ширину полю «Год»: `width: 100px;`.",
+            "name": "setYearWidthTo100Px",
+            "expect": "expect(document.querySelector('#year')).to.have.css('width', '100px');"
+        }
+    ]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -3,10 +3,118 @@
     "title": "Selectors Introduction",
     "tasks": [
         {
+            "id": 1,
+            "type": "task",
+            "entry": "/resources/14/tasks/1/task.json",
+            "name": "hard-times-without-selectors"
+        },
+        {
+            "id": 2,
+            "type": "task",
+            "entry": "/resources/14/tasks/2/task.json",
+            "name": "tag-selectors"
+        },
+        {
+            "id": 3,
+            "type": "task",
+            "entry": "/resources/14/tasks/3/task.json",
+            "name": "class-selectors"
+        },
+        {
+            "id": 4,
+            "type": "task",
+            "entry": "/resources/14/tasks/4/task.json",
+            "name": "practicing-class-selectors"
+        },
+        {
+            "id": 5,
+            "type": "task",
+            "entry": "/resources/14/tasks/5/task.json",
+            "name": "context-selectors"
+        },
+        {
+            "id": 6,
+            "type": "task",
+            "entry": "/resources/14/tasks/6/task.json",
+            "name": "neighboring-selectors"
+        },
+        {
+            "id": 7,
+            "type": "task",
+            "entry": "/resources/14/tasks/7/task.json",
+            "name": "context-and-neighboring-selectors"
+        },
+        {
+            "id": 8,
+            "type": "task",
+            "entry": "/resources/14/tasks/8/task.json",
+            "name": "child-selectors"
+        },
+        {
+            "id": 9,
+            "type": "task",
+            "entry": "/resources/14/tasks/91/task.json",
+            "name": "pseudo-selectors"
+        },
+        {
+            "id": 10,
+            "type": "task",
+            "entry": "/resources/14/tasks/10/task.json",
+            "name": "pseudo-class-nth-child"
+        },
+        {
+            "id": 11,
+            "type": "task",
+            "entry": "/resources/14/tasks/11/task.json",
+            "name": "nth-child-and-context-selectors"
+        },
+        {
+            "id": 12,
+            "type": "task",
+            "entry": "/resources/14/tasks/12/task.json",
+            "name": "pseudo-classs-hover"
+        },
+        {
+            "id": 13,
+            "type": "task",
+            "entry": "/resources/14/tasks/13/task.json",
+            "name": "dynamic-effects-on-hover"
+        },
+        {
+            "id": 14,
+            "type": "task",
+            "entry": "/resources/14/tasks/14/task.json",
+            "name": "pseudo-classes-link-visited-active"
+        },
+        {
+            "id": 15,
+            "type": "task",
+            "entry": "/resources/14/tasks/15/task.json",
+            "name": "pseudo-class-focus"
+        },
+        {
+            "id": 16,
+            "type": "task",
+            "entry": "/resources/14/tasks/16/task.json",
+            "name": "attribute-selectors"
+        },
+        {
+            "id": 17,
+            "type": "task",
+            "entry": "/resources/14/tasks/17/task.json",
+            "name": "selectors-by-id"
+        },
+        {
             "id": 18,
             "type": "challenge",
-            "entry": "/resources/13/tasks/27/task.json",
+            "entry": "/resources/14/tasks/18/task.json",
             "name": "interactive-investigation"
+        },
+        {
+            "id": 19,
+            "type": "challenge",
+            "entry": "/resources/14/tasks/19/task.json",
+            "name": "duel"
         }
     ]
 }

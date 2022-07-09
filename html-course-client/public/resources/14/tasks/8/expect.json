@@ -1,0 +1,33 @@
+{
+    "intro": "fixResultsTable",
+    "introTitle": "Исправьте таблицу результатов:",
+    "assertions": [
+        {
+            "title": "Нижние рамки должны остаться только у элементов списка первого уровня.",
+            "name": "borderBottomShouldBeOnlyForFirstLevelListItems",
+            "expect": "expect(document.querySelectorAll('.places > li')).to.have.css('borderBottom', '2px solid #cccccc');expect(document.querySelectorAll('ul:not(.places) li')).not.to.have.css('borderBottom', '2px solid #cccccc');"
+        },
+        {
+            "title": "Выделение жирным должно остаться только у фамилий.",
+            "name": "onlySurnamesShouldBeBold",
+            "expect": "expect(document.querySelectorAll('.places > li > span')).to.have.css('fontWeight', 'bold');expect(document.querySelectorAll('ul:not(.places) > li > span')).not.to.have.css('fontWeight', 'bold');"
+        }
+    ]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,16 @@
+{
+    "intro": "higlightFocusedInputs",
+    "introTitle": "Подсветим поля в фокусе.",
+    "assertions": [
+        {
+            "title": "В CSS-правило с селектором `form input:focus` добавьте свойство `border-color: #0088cc;`.",
+            "name": "setInputBorderColorOnFocusToBlue",
+            "type": "action",
+            "target": "input",
+            "eventType": "focusin",
+            "expect": "expect(document.querySelector('input:focus')).to.have.css('border-color', '#0088cc');"
+        }
+    ],
+    "footnote": "setCursorIntoAnyFieldForCheck",
+    "footnoteTitle": "Поставьте курсор внутрь любого поля для проверки работы селекторов."
+}

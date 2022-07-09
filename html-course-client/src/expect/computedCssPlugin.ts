@@ -6,29 +6,40 @@ export function computedCssPlugin(
         chai.Assertion.prototype, 
         'css', 
         function (this: any, prop: string, value: string) {
-            const elem = utils.flag(this, 'object') as HTMLElement | SVGElement;
-            const win = elem?.ownerDocument.defaultView as Window;
+            const elemsObject = utils.flag(this, 'object') as HTMLElement | SVGElement | NodeList;
 
-            const testElem = elem.cloneNode() as HTMLElement | SVGElement;
-            testElem.style[prop as any] = value;
+            let elems: Array<HTMLElement | SVGElement>;
 
-            const testContainer = win.document.createElement('div');
-            testContainer.style.display = 'none';
+            if (!elemsObject || 'ownerDocument' in elemsObject) {
+                elems = [elemsObject];
+            } else {
+                elems = [...elemsObject] as Array<HTMLElement | SVGElement>;
+            }
 
-            testContainer.append(testElem);
-            win.document.body.append(testContainer);
+            elems.forEach((elem) => {
+                const win = elem?.ownerDocument.defaultView as Window;
 
-            const expected = win.getComputedStyle(testElem)[prop as any];
-            const actual = win.getComputedStyle(elem)[prop as any];
-
-            testContainer.remove();
-
-            this.assert(
-                actual === expected, 
-                `expected #{this} to have "${value}" as "${prop}"`, 
-                `expected #{this} to not have "${value}" as "${prop}"`,
-                expected,
-                actual,
-            );
+                const testElem = elem.cloneNode() as HTMLElement | SVGElement;
+                testElem.style[prop as any] = value;
+    
+                const testContainer = win.document.createElement('div');
+                testContainer.style.display = 'none';
+    
+                testContainer.append(testElem);
+                win.document.body.append(testContainer);
+    
+                const expected = win.getComputedStyle(testElem)[prop as any];
+                const actual = win.getComputedStyle(elem)[prop as any];
+    
+                testContainer.remove();
+    
+                this.assert(
+                    actual === expected, 
+                    `expected #{this} to have "${value}" as "${prop}"`, 
+                    `expected #{this} to not have "${value}" as "${prop}"`,
+                    expected,
+                    actual,
+                );
+            })
     });
 }

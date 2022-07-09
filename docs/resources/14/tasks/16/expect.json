@@ -1,0 +1,19 @@
+{
+    "assertions": [
+        {
+            "title": "Задайте фон полю с атрибутом `required`: `background-color: #fcf8e3;`.",
+            "name": "setRequiredFieldBgColorToYellow",
+            "expect": "expect(document.querySelectorAll('input:required')).to.have.css('backgroundColor', '#fcf8e3');"
+        },
+        {
+            "title": "Задайте фон полю для ввода пароля: `background-color: #f2dede;`.",
+            "name": "setPasswordInputBgColorToLightRed",
+            "expect": "expect(document.querySelectorAll('input[type=password]')).to.have.css('backgroundColor', '#f2dede');"
+        },
+        {
+            "title": "Задайте цвет рамок для кнопки: `border-color: green;`.",
+            "name": "setButtonBorderColorToGreen",
+            "expect": "expect(document.querySelectorAll('input[type=submit]')).to.have.css('borderColor', 'green');"
+        }
+    ]
+}

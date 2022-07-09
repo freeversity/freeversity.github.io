@@ -1,0 +1,23 @@
+{
+    "assertions": [
+        {
+            "title": "Закройте все мишени, добавив к каждому элементу списка атрибут `style` со значением `background-color: white;`",
+            "name": "setAllTargetsBgColorToWhiteWithStyleAttr",
+            "expect": "expect(document.querySelectorAll('li')).to.have.style('backgroundColor', 'white');"
+        }
+    ]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

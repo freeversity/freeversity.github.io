@@ -1,0 +1,25 @@
+{
+    "assertions": [
+        {
+            "title": "Задайте ещё не посещённым ссылкам цвет `color: black;`.",
+            "name": "setForUnvisitedLinksColorBlack",
+            "expect": "expect(document.querySelectorAll('a:link')).to.have.css('color', 'black');"
+        },
+        {
+            "title": "Посещённым ссылкам цвет `color: #cccccc;`.",
+            "name": "setForVisiteedLinksColorGray",
+            "expect": "expect(document).to.have.cssRule('a:visited', 'color', '#cccccc');"
+        },
+        {
+            "title": "Активным ссылкам цвет `color: green;`.",
+            "name": "setForActiveLinksColorGreen",      
+            "type": "action",
+            "target": "a",
+            "eventType": "mousedown",
+            "expect": "expect(document.querySelector('a:active')).to.have.css('color', 'green');"
+        }
+    ],
+    "footnote": "clickAnyLinkForCheck",
+    "footnoteTitle": "Нажмите на любую ссылку для проверки работы селекторов.",
+    "strict": true
+}

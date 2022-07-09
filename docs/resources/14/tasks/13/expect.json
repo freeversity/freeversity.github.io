@@ -1,0 +1,43 @@
+{
+    "intro": "showHiddenCountryOnHover",
+    "introTitle": "Теперь в таблице результатов страна спрятана по умолчанию. Нужно сделать так, чтобы при наведении на строку таблицы:",
+    "assertions": [
+        {
+            "title": "Появлялась страна: свойство `display: inline;`.",
+            "name": "countryToShowWithDisplayInline",
+            "type": "action",
+            "target": "tr",
+            "eventType": "mouseover",
+            "debounce": 50,
+            "expect": "expect(document.querySelector('tr:hover em')).to.have.css('display', 'inline');"
+        },
+        {
+            "title": "Подсвечивались очки: свойство `color: #0088cc;`.",
+            "name": "pointToHighlightWithBlueColor",
+            "type": "action",
+            "target": "tr",
+            "eventType": "mouseover",
+            "debounce": 50,
+            "expect": "expect(document.querySelector('tr:hover strong')).to.have.css('color', '#0088cc');"
+        }
+    ],
+    "footnote": "hoverRowsForCheckingHighlighting",
+    "footnoteTitle": "Наведите курсор мыши на строки таблицы для проверки работы селекторов."
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -5,8 +5,14 @@
         {
             "id": 18,
             "type": "challenge",
-            "entry": "/resources/9/tasks/10/task.json",
+            "entry": "/resources/15/tasks/18/task.json",
             "name": "cleaning-up"
+        },
+        {
+            "id": 19,
+            "type": "challenge",
+            "entry": "/resources/15/tasks/19/task.json",
+            "name": "hacked-cat-profile"
         }
     ]
 }

@@ -1,0 +1,27 @@
+{
+    "intro": "leaderResult",
+    "intoTitle": "Лидер гонки преследования на первой стойке.",
+    "assertions": [
+        {
+            "title": "Поразил первую мишень, вторая дала сбой, затем два досадных промаха, но пятая мишень закрыта.<br>![Образец попадания по мишеням](/resources/14/assets/task-4.png)",
+            "name": "firstAndLastBeenHitSecondFailed",
+            "expect": "expect(document.querySelectorAll('.first, .fifth')).to.have.css('backgroundColor', 'white');expect(document.querySelectorAll('.second')).to.have.css('backgroundColor', 'yellow');expect(document.querySelectorAll('.third, .fourth')).to.have.css('backgroundColor', 'red');"
+        }
+    ]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
