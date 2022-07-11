@@ -1,27 +1,22 @@
-.movie {
-    display: grid;
-    grid-template-columns: 1fr 235px;
-    margin-bottom: 10px;
-  }
-  
-  .movie-title {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .tags-list {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 15px;
-    margin: 0;
-  }
-  
-  .tag {
-    margin: 5px;  
-  }
-  
-  .tag-link {
-    padding: 5px 10px;
-    display: block;
-  }
+.movie{
+  display: grid;
+  grid-template-columns: 1fr 235px;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+.tags-list {
+  margin:0;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 15px;
+}
+
+.tag{
+  margin: 5px;
+}
+
+.tag-link{
+  padding: 5px 10px;
+  display: block;
+}

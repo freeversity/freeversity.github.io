@@ -1,0 +1,35 @@
+{
+    "assertions": [
+        {
+            "title": "Для `.block1` задайте внутренние отступы `10px` и рамку `1px solid #1abc9c`.",
+            "name": "setBlock1PaddingTo10PxAndBorderTo1PxSolidAqua",
+            "expect": "expect(document.querySelectorAll('.block1')).to.have.css('padding', '10px');expect(document.querySelectorAll('.block1')).to.have.css('border', '1px solid #1abc9c');"
+        },
+        {
+            "title": "Для `ul` внутри `.block2` установите цвет фона `background-color: #3498db;`.",
+            "name": "setBlock2UlBgColorToBlue",
+            "expect": "expect(document.querySelectorAll('.block2 ul')).to.have.css('backgroundColor', '#3498db');"
+        },
+        {
+            "title": "Для `li` внутри `.block2` — цвет фона `#e74c3c`.",
+            "name": "setBlock2LiBgColorToRed",
+            "expect": "expect(document.querySelectorAll('.block2 li')).to.have.css('backgroundColor', '#e74c3c');"
+        }
+    ]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,30 @@
+{
+    "assertions": [
+        {
+            "title": "Для всего текста на сайте установите цвет текста `color: #2980b9;` и размер шрифта `font-size: 12px;`.",
+            "name": "setColorBlueForAllPage",
+            "expect": "expect(document.querySelectorAll('body')).to.have.css('color', '#2980b9');expect(document.querySelectorAll('body')).to.have.css('fontSize', '12px');"
+        },
+        {
+            "title": "Переопределите цвет элементов списка на `#1abc9c`.",
+            "name": "setLiColorToAqua",
+            "expect": "expect(document.querySelectorAll('li')).to.have.css('color', '#1abc9c');"
+        }
+    ],
+    "strict": true
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

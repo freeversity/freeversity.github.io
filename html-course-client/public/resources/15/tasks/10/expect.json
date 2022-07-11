@@ -1,0 +1,26 @@
+{
+    "assertions": [
+        {
+            "title": "Помогите Рудольфу взять реванш и вернуть свою прелесть.",
+            "name": "moveAChickenToRudolfByIncreasingSelectorSpecificity",
+            "expect": "expect(document.querySelector('.chicken')).to.have.css('marginLeft', '120px');"
+        }
+    ],
+    "globalAssertion": "expect(document.querySelector('style[id=\"style.css\"]')).to.have.cssRule(null, {marginLeft: '120px'});expect(document.querySelector('style[id=\"style.css\"]').sheet.rules).to.have.length(1);",
+    "footnote": "youMustntChangeCssRules",
+    "footnoteTitle": "**Изменять значения свойств и селекторы в CSS нельзя.**"
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,35 @@
+{
+    "assertions": [
+        {
+            "title": "Для всех `p` задайте размер шрифта `11px`.",
+            "name": "setPFontSizeTo11Px",
+            "expect": "expect(document.querySelectorAll('p')).to.have.css('fontSize', '11px');"
+        },
+        {
+            "title": "Для блока `.block1` установите цвет текста `#1abc9c`.",
+            "name": "setBlock1ColorToAqua",
+            "expect": "expect(document.querySelectorAll('.block1')).to.have.css('color', '#1abc9c');"
+        },
+        {
+            "title": "Для элементов с классом `.message` установите внутренний отступ `5px`, рамку `1px solid #95a5a6` и цвет текста `#95a5a6`.",
+            "name": "setMessagePaddingTo5PxAndBorderTo1PxSolidGrayAndColorToGray",
+            "expect": "expect(document.querySelectorAll('.message')).to.have.css('padding', '5px');expect(document.querySelectorAll('.message')).to.have.css('border', '1px solid #95a5a6');expect(document.querySelectorAll('.message')).to.have.css('color', '#95a5a6');"
+        }
+    ]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

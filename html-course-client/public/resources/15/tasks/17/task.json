@@ -1,0 +1,9 @@
+{
+    "id": 17,      
+    "name": "cross-inheritance",
+    "htmlEntry": "index.html",
+    "cssEntry": "style.css",
+    "cssReadonly": true,
+    "articleEntry": "article.md",
+    "expectEntry": "expect.json"
+}

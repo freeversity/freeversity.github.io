@@ -31,6 +31,35 @@ async function applyNodeEmbedStyles(
 
         const styles = win.getComputedStyle(node);
 
+        let relatedRules: CSSStyleRule[] | undefined;
+
+        for (let styleProp of node.style) {
+            const styleValue = node.style[styleProp as any];
+            
+            relatedRules = relatedRules ?? [...node.ownerDocument.styleSheets].reduce<CSSStyleRule[]>((rules, styleSheet) => {
+                if (!('cssRules' in styleSheet)) return rules;
+
+                for (let rule of styleSheet.cssRules) {
+                    if (!('selectorText' in rule) || !('style' in rule)) continue;
+
+                    if (node.matches((rule as CSSStyleRule).selectorText)) {
+                        rules.push(rule as CSSStyleRule);
+                    }
+                }
+
+                return rules;
+            }, []);
+
+            const shouldRemoveProp = relatedRules.some((rule) => {
+                return rule.style[styleProp as any] !== styleValue && rule.style.getPropertyPriority(styleProp) === 'important';
+            })
+
+            if (shouldRemoveProp) {
+                clonedNode.style[styleProp as any] = '';
+            }
+
+        }
+
         clonedNode.style.color = styles.color;
 
         switch (node.tagName) {

@@ -94,6 +94,8 @@ const WorkDesk: FC<WorkDeskProps> = ({
 
         const isStrict = expect!.strict;
 
+        const globalAssert = expect!.globalAssertion ? new Function('expect', 'document', expect!.globalAssertion) : () => {};
+
         const passedAsserts: (string | null)[] = expect!.assertions
             .map((assertion, index, assertions) => {
                 switch (assertion.type) {
@@ -108,6 +110,7 @@ const WorkDesk: FC<WorkDeskProps> = ({
                             const func = expectBody ? new Function('expect', 'document', expectBody) : () => {};
 
                             try {
+                                globalAssert.call(previewWindow, expectFunc, previewWindow.document);
                                 func.call(previewWindow, expectFunc, previewWindow.document);
 
                                 if (!isStrict) {
@@ -142,6 +145,7 @@ const WorkDesk: FC<WorkDeskProps> = ({
 
                         const func = new Function('expect', 'document', expectBody);
                         try {
+                            globalAssert.call(previewWindow, expectFunc, previewWindow.document);
                             func.call(previewWindow, expectFunc, previewWindow.document);
 
                             if (onSuccess) {

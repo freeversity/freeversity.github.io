@@ -2,38 +2,71 @@
 <html>
   <head>
     <base href="/resources/15/assets/">
-    <title>Испытание: наведение порядка</title>
+    <title>Взломанный котопрофайл</title>
     <meta charset="utf-8">
 
     <style>
-      div .cat-foodlove {
-        background-image: url("cat-vampire.svg");
-        background-color: fuchsia;
+      /* Будешь знать, как сувать лапы, куда не надо, шерстяной неудачник! */
+
+      #info-title,
+      .profile .button {
+        background: #4dfe15;
       }
 
-      #scary {
-        background-image: url("cat-skull.svg");
+      .profile div.fact {
+        background: #ff00dc;
       }
 
-      .gallery .cat-fat {
-        background-image: url("cat-fish.svg");
-        width: 90px;
-        height: 80px;
+      .profile .fact div {
+        color: #02f801;
       }
 
-      div.cat-cage {
-        background-image: url("cat-hiss.svg");
-        border-color: lawngreen;
+      .photo a {
+        margin: 0;
+        height: 20px;
+        text-align: right;
+      }
+
+      #miska {
+        margin-right: 50px;
       }
     </style>
-    <link rel="stylesheet" href="ref-1.css">
+    <link rel="stylesheet" href="ref-2.css">
   </head>
   <body>
-    <div class="gallery">
-      <div class="picture cat-foodlove">Мечты о еде</div>
-      <div class="picture cat-slippers" id="scary">Где тапки?</div>
-      <div class="picture cat-fat">После обеда</div>
-      <div class="picture cat-cage" style="color: red;">Люблю птиц</div>
-    </div>
+    <main class="profile">
+      <section class="photo">
+        <img src="cat-walk.svg" alt="Фото Феликса">
+        <a class="button stroke" href="/">Погладить</a>
+        <a class="button feed" href="/">Накормить</a>
+        <a class="button startle" href="/">Напугать</a>
+      </section>
+      <section class="info">
+        <h2 id="info-title">Общая информация</h2>
+        <div class="fact">
+          <div class="title">Имя</div>
+          <div class="value">Феликс</div>
+        </div>
+        <div class="fact">
+          <div class="title">Позывные</div>
+          <div class="value">Кто в тапки нассал?</div>
+        </div>
+        <div class="fact">
+          <div class="title">Вероисповедание</div>
+          <div class="value">Верю в холодильник</div>
+        </div>
+        <div class="fact">
+          <div class="title">Политические</div>
+          <div class="value">Продам всё за еду</div>
+        </div>
+        <h2 style="margin-top: -50px; padding: 0;">Альбомы</h2>
+        <div class="albums">
+          <img src="cat-drink.svg" alt="Феликс пьёт">
+          <img id="miska" src="cat-hungry.svg" alt="Феликс ест">
+          <img src="cat-sing.svg" alt="Феликс поёт">
+          <img src="cat-pirate.svg" alt="Феликс грустит">
+        </div>
+      </section>
+    </main>
   </body>
 </html>

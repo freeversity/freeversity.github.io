@@ -1,0 +1,73 @@
+@font-face {
+	font-weight: 400;
+	font-family: "PT Sans";
+	font-style: normal;
+	src: local("PT Sans"),url(ptsans.woff2) format("woff2"),url(ptsans.woff) format("woff");
+}
+
+body {
+	font-family: "PT Sans",sans-serif;
+}
+
+.battle,h1 {
+	margin: 20px auto;
+	width: 360px;
+}
+
+.battle,.cat,h1 {
+	text-align: center;
+}
+
+h1 {
+	font-size: 24px;
+	color: #2c3e50;
+}
+
+.battle,.cat {
+	box-shadow: 0 0 3px #999;
+}
+
+.battle {
+	position: relative;
+	padding: 20px;
+}
+
+.battle::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.cat {
+	width: 100px;
+	height: 200px;
+	padding: 10px;
+	color: #fff;
+	background-repeat: no-repeat;
+	background-position: 50% 88%;
+	border-radius: 5px;
+	background-size: 64px;
+}
+
+.cat-keksik {
+	float: left;
+	background-color: #2980b9;
+	background-image: url(cat-walk.svg);
+}
+
+.cat-rudolf {
+	float: right;
+	background-color: #c0392b;
+	background-image: url(cat-grumpy.svg);
+}
+
+.chicken {
+	position: absolute;
+	top: 65px;
+	left: 160px;
+	width: 80px;
+	height: 80px;
+	background: white url(chicken.png) no-repeat 50% 50%;
+	border-radius: 50%;
+	box-shadow: 0 0 3px #cb7628;
+}

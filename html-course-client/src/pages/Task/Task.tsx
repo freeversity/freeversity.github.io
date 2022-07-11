@@ -24,6 +24,7 @@ export interface ExpectType {
     strict?: boolean;
     intro?: string;
     introTitle?: string;
+    globalAssertion?: string;
     footnote?: string;
     footnoteTitle?: string;
     assertions: ({

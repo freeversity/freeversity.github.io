@@ -1,0 +1,22 @@
+{
+    "intro": "setSecondListElemsPropsToInherit",
+    "introTitle": "Для элементов списка `.second-list` задайте значение `inherit`:",
+    "assertions": [
+        {
+            "title": "Свойству `border`.",
+            "name": "setBorderToInherit",
+            "expect": "expect(document).to.have.cssRule('.second-list li', 'border', 'inherit');"
+        },
+        {
+            "title": "Свойству `margin`.",
+            "name": "setMarginToInherit",
+            "expect": "expect(document).to.have.cssRule('.second-list li', 'margin', 'inherit');"
+        },
+        {
+            "title": "Свойству `padding`.",
+            "name": "setPaddingToInherit",
+            "expect": "expect(document).to.have.cssRule('.second-list li', 'padding', 'inherit');"
+        }
+    ]
+}
+

@@ -1,0 +1,33 @@
+{
+    "intro": "evaluateSelectorsSpecificityForThreeExamples",
+    "introTitle": "Рассчитайте значение специфичностей для трёх примеров и введите ответы в поля (нули в начале значения указывать не нужно).",
+    "assertions": [
+        {
+            "title": "Первый ответ указан правильно.",
+            "name": "firstIsCorrect",            
+            "type": "action",
+            "target": "input[name=exercise_1]",
+            "eventType": "input",
+            "debounce": 200,
+            "expect": "expect(document.querySelector('input[name=exercise_1]').value).to.equal('22');"
+        },
+        {
+            "title": "Второй ответ указан правильно.",
+            "name": "secondIsCorrect",
+            "type": "action",
+            "target": "input[name=exercise_2]",
+            "eventType": "input",
+            "debounce": 200,
+            "expect": "expect(document.querySelector('input[name=exercise_2]').value).to.equal('212');"
+        },
+        {
+            "title": "Третий ответ указан правильно.",
+            "name": "thirdIsCorrect",
+            "type": "action",
+            "target": "input[name=exercise_3]",
+            "eventType": "input",
+            "debounce": 200,
+            "expect": "expect(document.querySelector('input[name=exercise_3]').value).to.equal('121');"
+        }
+    ]
+}

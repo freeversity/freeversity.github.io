@@ -1,0 +1,10 @@
+{
+    "id": 15,      
+    "name": "specificity-evaluation",
+    "htmlEntry": "index.html",
+    "markupReadonly": true,
+    "cssEntry": "style.css",
+    "cssReadonly": true,
+    "articleEntry": "article.md",
+    "expectEntry": "expect.json"
+}
