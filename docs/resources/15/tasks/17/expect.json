@@ -1,0 +1,29 @@
+{
+    "assertions": [
+        {
+            "title": "Для всех тегов `div` внутри блока `.cats` установите класс `cat`.",
+            "name": "aaddCatsDivClassCat",
+            "expect": "expect(document.querySelectorAll('.cats div.cat')).to.have.length(4);"
+        },
+        {
+            "title": "Для каждого кота установите соответствующий ему класс `cat-keksik`, `cat-rudolf`, `cat-snezhok`, `cat-adolf`.",
+            "name": "setSpecificCatsClassesForEachCatBox",
+            "expect": "expect(document.querySelector('.cat-keksik')).to.have.rendered.text('Кексик');expect(document.querySelector('.cat-rudolf')).to.have.rendered.text('Рудольф');expect(document.querySelector('.cat-snezhok')).to.have.rendered.text('Снежок');expect(document.querySelector('.cat-adolf')).to.have.rendered.text('Адольф');"
+        }
+    ]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

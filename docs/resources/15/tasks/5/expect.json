@@ -1,0 +1,24 @@
+{
+    "assertions": [
+        {
+            "title": "Задайте `body` размер шрифта `12px` и выравнивание текста по центру `text-align: center;`.",
+            "name": "setBodyFontSizeTo12PxAndTextAlignToCenter",
+            "expect": "expect(document.body).to.have.css('fontSize', '12px');expect(document.body).to.have.css('textAlign', 'center');"
+        },
+        {
+            "title": "Для `.block1` задайте стиль текста курсивом `font-style: italic;`.",
+            "name": "setBlock1FontStyleToItalic",
+            "expect": "expect(document.querySelectorAll('.block1')).to.have.css('fontStyle', 'italic');"
+        },
+        {
+            "title": "Для `.block2` задайте стиль курсора при наведении `cursor: pointer;`.",
+            "name": "setBlock2CursorToPointer",
+            "expect": "expect(document.querySelectorAll('.block2')).to.have.css('cursor', 'pointer');"
+        },
+        {
+            "title": "Для `ul` внутри `.block2` задайте квадратные маркеры `list-style-type: square;`.",
+            "name": "setBlock2UlListStyleTypeToSquare",
+            "expect": "expect(document.querySelectorAll('.block2 ul')).to.have.css('listStyleType', 'square');"
+        }
+    ]
+}

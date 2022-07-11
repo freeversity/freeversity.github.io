@@ -1,0 +1,23 @@
+{
+    "assertions": [
+        {
+            "title": "Скопируйте кусок CSS-кода из блока с теорией и проверьте какого цвета будет коробка.",
+            "name": "checkBoxColorByCopyingCssFromArticle",
+            "expect": "expect(document).to.have.cssRule('span', {backgroundColor: '#27ae60'});expect(document).to.have.cssRule('div span', {backgroundColor: '#2980b9'});expect(document).to.have.cssRule('#floor .cat-in-box', {backgroundColor: '#34495e'});expect(document).to.have.cssRule('.cat-in-box', {backgroundColor: '#8e44ad'});expect(document).to.have.cssRule('#floor span', {backgroundColor: '#c0392b'});expect(document).to.have.cssRule('div .cat-in-box', {backgroundColor: '#e67e22'});"
+        }
+    ]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

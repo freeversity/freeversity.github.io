@@ -3,6 +3,108 @@
     "title": "Inheritance and Cascade",
     "tasks": [
         {
+            "id": 1,
+            "type": "task",
+            "entry": "/resources/15/tasks/1/task.json",
+            "name": "hierarchical-tree"
+        },
+        {
+            "id": 2,
+            "type": "task",
+            "entry": "/resources/15/tasks/2/task.json",
+            "name": "inheritance"
+        },
+        {
+            "id": 3,
+            "type": "task",
+            "entry": "/resources/15/tasks/3/task.json",
+            "name": "inheritance-explained"
+        },
+        {
+            "id": 4,
+            "type": "task",
+            "entry": "/resources/15/tasks/4/task.json",
+            "name": "another-piece-of-inheritance"
+        },
+        {
+            "id": 5,
+            "type": "task",
+            "entry": "/resources/15/tasks/5/task.json",
+            "name": "inherited-properties"
+        },
+        {
+            "id": 6,
+            "type": "task",
+            "entry": "/resources/15/tasks/6/task.json",
+            "name": "uninherited-properties"
+        },
+        {
+            "id": 7,
+            "type": "task",
+            "entry": "/resources/15/tasks/7/task.json",
+            "name": "explicit-inheritance"
+        },
+        {
+            "id": 8,
+            "type": "task",
+            "entry": "/resources/15/tasks/8/task.json",
+            "name": "cascade"
+        },
+        {
+            "id": 9,
+            "type": "task",
+            "entry": "/resources/15/tasks/9/task.json",
+            "name": "fight-for-a-chicken"
+        },
+        {
+            "id": 10,
+            "type": "task",
+            "entry": "/resources/15/tasks/10/task.json",
+            "name": "fight-for-a-chicken-round-two"
+        },
+        {
+            "id": 11,
+            "type": "task",
+            "entry": "/resources/15/tasks/11/task.json",
+            "name": "fight-for-a-chicken-round-three"
+        },
+        {
+            "id": 12,
+            "type": "task",
+            "entry": "/resources/15/tasks/12/task.json",
+            "name": "fight-for-a-chicken-battle-intensifies"
+        },
+        {
+            "id": 13,
+            "type": "task",
+            "entry": "/resources/15/tasks/13/task.json",
+            "name": "fight-for-a-chicken-dirty-trick"
+        },
+        {
+            "id": 14,
+            "type": "task",
+            "entry": "/resources/15/tasks/14/task.json",
+            "name": "one-more-specificity-exercise"
+        },
+        {
+            "id": 15,
+            "type": "task",
+            "entry": "/resources/15/tasks/15/task.json",
+            "name": "specificity-evaluation"
+        },
+        {
+            "id": 16,
+            "type": "task",
+            "entry": "/resources/15/tasks/16/task.json",
+            "name": "code-order-exercise"
+        },
+        {
+            "id": 17,
+            "type": "task",
+            "entry": "/resources/15/tasks/17/task.json",
+            "name": "cross-inheritance"
+        },
+        {
             "id": 18,
             "type": "challenge",
             "entry": "/resources/15/tasks/18/task.json",

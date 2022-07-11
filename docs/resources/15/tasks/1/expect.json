@@ -1,0 +1,22 @@
+{
+    "assertions": [
+        {
+            "title": "Напишите HTML-код, описывающий вот такое дерево:<br>![Схема документа](/resources/15/assets/scheme_practice.svg)",    
+            "name": "writeHtmlForDrownTree",
+            "expect": "expect(document.querySelector('html head:nth-child(1) title')).to.exist;expect(document.querySelector('html body:nth-child(2) div.empty:nth-child(2):nth-last-child(2) + ul li.first + li + li:last-child')).to.exist;expect(document.querySelector('html body:nth-child(2) div:nth-child(1):nth-last-child(3) h1 + p:last-child')).to.exist;"
+        }
+    ]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

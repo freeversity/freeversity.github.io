@@ -1,0 +1,19 @@
+{
+    "assertions": [
+        {
+            "title": "Задайте `body` цвет текста `#7f8c8d` и высоту строки `line-height: 16px;`.",
+            "name": "setBodyColorToGrayAndLineHeightTo16Px",
+            "expect": "expect(document.body).to.have.css('color', '#7f8c8d');expect(document.body).to.have.css('lineHeight', '16px');"
+        },
+        {
+            "title": "Задайте ссылкам цвет `#3498db`.",
+            "name": "setAColorToBlue",
+            "expect": "expect(document.querySelectorAll('a')).to.have.css('color', '#3498db');"
+        },
+        {
+            "title": "Тегу `ul` задайте рамки `border: 1px solid #1abc9c;` и внутренние отступы `padding: 25px;`.",
+            "name": "setUlBorderTo1PxSolidAquaAndPaddingTo25Px",
+            "expect": "expect(document.querySelectorAll('ul')).to.have.css('border', '1px solid #1abc9c');expect(document.querySelectorAll('ul')).to.have.css('padding', '25px');"
+        }
+    ]
+}

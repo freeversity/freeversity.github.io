@@ -1,0 +1,36 @@
+{
+    "assertions": [
+        {
+            "title": "Для всего сайта установите цвет текста `#7f8c8d` и размер шрифта `12px`.",
+            "name": "setAllPageColorToGrayAndFontSizeTo12Px",
+            "expect": "expect(document.querySelectorAll('body')).to.have.css('color', '#7f8c8d');expect(document.querySelectorAll('body')).to.have.css('fontSize', '12px');"
+        },
+        {
+            "title": "У элементов с классом `selected` измените цвет текста на `#e74c3c`.",
+            "name": "setSelectedElementsColorToRed",
+            "expect": "expect(document.querySelectorAll('.selected')).to.have.css('color', '#e74c3c');"
+        },
+        {
+            "title": "Для тега `span`, лежащего внутри тега `p` с классом `selected`, установите цвет текста `#3498db`.",
+            "name": "setSelectedPSpanColorToBlue",
+            "expect": "expect(document.querySelectorAll('p.selected span')).to.have.css('color', '#3498db');"
+        }
+    ],
+    "strict": true
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
