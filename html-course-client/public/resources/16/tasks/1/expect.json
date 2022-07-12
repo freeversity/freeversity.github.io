@@ -1,0 +1,26 @@
+{
+    "intro": "setBackgroundColor",
+    "introTitle": "Задайте цвет фона:",
+    "assertions": [
+        {
+            "title": "первому блоку — `#2ecc71`,",
+            "name": "setFirstBlockBgColorToGreen",
+            "expect": "expect(document.querySelectorAll('.block1')).to.have.css('backgroundColor', '#2ecc71');"
+        },
+        {
+            "title": "второму блоку — `#3498db`,",
+            "name": "setSecondBlockBgColorToBlue",
+            "expect": "expect(document.querySelectorAll('.block2')).to.have.css('backgroundColor', '#3498db');"
+        },
+        {
+            "title": "третьему блоку — `#e74c3c`,",
+            "name": "setThirdBlockBgColorToRed",
+            "expect": "expect(document.querySelectorAll('.block3')).to.have.css('backgroundColor', '#e74c3c');"
+        },
+        {
+            "title": "четвёртому блоку — `#e67e22`.",
+            "name": "setFourthBlockBgColorToBrown",
+            "expect": "expect(document.querySelectorAll('.block4')).to.have.css('backgroundColor', '#e67e22');"
+        }
+    ]
+}

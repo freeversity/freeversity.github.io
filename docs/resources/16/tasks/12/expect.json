@@ -1,0 +1,16 @@
+{
+    "intro": "setBlockBgImagesWithNoRepeat",
+    "introTitle": "Задайте блокам неповторяющиеся фоновые картинки:",
+    "assertions": [
+        {
+            "title": "`cat_purr.gif` — первому блоку,",
+            "name": "setFirstBlockBgImageToCatPurrGif",
+            "expect": "expect(document.querySelectorAll('.block1')).to.have.css('background-image', 'url(\"cat_purr.gif\")');expect(document.querySelectorAll('.block1')).to.have.css('background-repeat', 'no-repeat');"
+        },
+        {
+            "title": "`cat_walk.gif` — второму блоку.",
+            "name": "setSecondBlockBgImageToCatWalkGif",
+            "expect": "expect(document.querySelectorAll('.block2')).to.have.css('background-image', 'url(\"cat_walk.gif\")');expect(document.querySelectorAll('.block2')).to.have.css('background-repeat', 'no-repeat');"
+        }
+    ]
+}

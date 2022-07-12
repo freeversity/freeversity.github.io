@@ -1,0 +1,31 @@
+{
+    "assertions": [
+        {
+            "title": "Сначала задайте элементам с классом `block` фоновое изображение `cat_cage.jpg`",
+            "name": "setBlockBgImageToCaatCageJpg",
+            "expect": "expect(document.querySelectorAll('.block')).to.have.css('background-image', 'url(\"cat_cage.jpg\")');"
+        },
+        {
+            "title": "Затем задайте им же другое изображение более низкого качества `cat_cage_low.jpg`",
+            "name": "setBlockBgImageToCaatCageLowJpg",
+            "expect": "expect(document.querySelectorAll('.block')).to.have.css('background-image', 'url(\"cat_cage_low.jpg\")');"
+        }
+    ],
+    "strict": true
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

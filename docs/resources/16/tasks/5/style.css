@@ -1,0 +1,29 @@
+body {
+  padding: 10px;
+  text-align: center;
+}
+
+.block {
+  display: inline-block;
+  width: 120px;
+  height: 120px;
+  margin: 5px;
+
+  background-color: #34495e;
+  background-image: url("logo.svg");
+  background-repeat: no-repeat;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px #999999;
+}
+
+.block1 {
+}
+
+.block2 {
+}
+
+.block3 {
+}
+
+.block4 {
+}

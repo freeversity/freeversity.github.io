@@ -1,0 +1,24 @@
+{
+    "assertions": [
+        {
+            "title": "Задайте элементам с классом `block` фоновое изображение `cat_cage.png`.",
+            "name": "setBlockBgImageToCatCagePng",
+            "expect": "expect(document.querySelectorAll('.block')).to.have.css('background-image', 'url(\"cat_cage.png\")');"
+        }
+    ]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

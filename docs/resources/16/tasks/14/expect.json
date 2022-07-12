@@ -1,0 +1,21 @@
+{
+    "intro": "setRepeatedXBgImages",
+    "introTitle": "Задайте повторяющиеся по горизонтали фоновые картинки:",
+    "assertions": [
+        {
+            "title": "`stitch.png` — первому блоку,",
+            "name": "setFirstBlockBgImageToStitchPng",
+            "expect": "expect(document.querySelector('.block1')).to.have.css('background-image', 'url(\"stitch.png\")');expect(document.querySelector('.block1')).to.have.css('background-repeat', 'repeat-x');"
+        },
+        {
+            "title": "`zigzag.png` — второму блоку,",
+            "name": "setSecondBlockBgImageToZigzagPng",
+            "expect": "expect(document.querySelector('.block3')).to.have.css('background-image', 'url(\"zigzag.png\")');expect(document.querySelector('.block2')).to.have.css('background-repeat', 'repeat-x');"
+        },
+        {
+            "title": "`shadow.png` — третьему блоку.",
+            "name": "setThirdBlockBgImageToShadowPng",
+            "expect": "expect(document.querySelector('.block3')).to.have.css('background-image', 'url(\"shadow.png\")');expect(document.querySelector('.block3')).to.have.css('background-repeat', 'repeat-x');"
+        }
+    ]
+}

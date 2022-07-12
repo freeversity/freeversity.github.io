@@ -1,0 +1,30 @@
+{
+    "assertions": [
+        {
+            "title": "Задайте первому блоку фон: цвет фона `#e74c3c`, картинка `cat_eyes.png`, без повторения, расположение картинки `10px` слева и `5px` сверху.",
+            "name": "setFirstBlockBgRedCatEyes10Px5Px",
+            "expect": "expect(document.querySelector('.block1')).to.have.css('background', '#e74c3c url(\"cat_eyes.png\") no-repeat 10px 5px');"
+        },
+        {
+            "title": "Задайте второму блоку фон: цвет фона `#2980b9`, картинка `cat_fish.png`, без повторения, расположение картинки `10px` слева и `5px` сверху.",
+            "name": "setFirstBlockBgBlueCatFish10Px5Px",
+            "expect": "expect(document.querySelector('.block2')).to.have.css('background', '#2980b9 url(\"cat_fish.png\") no-repeat 10px 5px');"
+        }
+    ]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

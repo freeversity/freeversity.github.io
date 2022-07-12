@@ -1,0 +1,26 @@
+body {
+    padding: 10px;
+    text-align: center;
+}
+
+.block {
+    display: inline-block;
+    width: 192px;
+    height: 192px;
+    margin: 5px;
+
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px #999999;
+}
+
+.block1 {
+}
+
+.block2 {
+}
+
+.block3 {
+}
+
+.block4 {
+}

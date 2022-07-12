@@ -1,0 +1,27 @@
+{
+    "assertions": [
+        {
+            "title": "Задайте для `body` «неподвижный» режим фонового изображения.",
+            "name": "setBodyBgAattachmentFixed",
+            "expect": "expect(document.querySelectorAll('body')).to.have.css('backgroundAttachment', 'fixed');"
+        }
+    ],
+    "footnote": "checkFixedBgByScrollingPreview",
+    "footnoteTitle": "Проверьте, как ведёт себя фоновое изображение, прокручивая окно мини-браузера."
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

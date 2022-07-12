@@ -1,0 +1,26 @@
+{
+    "intro": "setBackogrundImages",
+    "introTitle": "Добавьте блокам фоновые картинки:",
+    "assertions": [
+        {
+            "title": "`cat_box.png` — первому блоку,",
+            "name": "setFirstBlockBgImageToCatBox",
+            "expect": "expect(document.querySelector('.block1')).to.have.css('backgroundImage', 'url(\"cat_box.png\")');"
+        },
+        {
+            "title": "`cat_fish.png` — второму блоку,",
+            "name": "setSecondBlockBgImageToCatFish",
+            "expect": "expect(document.querySelector('.block2')).to.have.css('backgroundImage', 'url(\"cat_fish.png\")');"
+        },
+        {
+            "title": "`cat_drunk.png` — третьему блоку,",
+            "name": "setThirdBlockBgImageToCatDrunk",
+            "expect": "expect(document.querySelector('.block3')).to.have.css('backgroundImage', 'url(\"cat_drunk.png\")');"
+        },
+        {
+            "title": "`cat_tied.png` — четвёртому блоку.",
+            "name": "setFourthBlockBgImageToCatTied",
+            "expect": "expect(document.querySelector('.block4')).to.have.css('backgroundImage', 'url(\"cat_tied.png\")');"
+        }
+    ]
+}

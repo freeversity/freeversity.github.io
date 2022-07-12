@@ -3,11 +3,96 @@
     "title": "Backgrounds Introduction",
     "tasks": [
         {
+            "id": 1,
+            "type": "task",
+            "entry": "/resources/16/tasks/1/task.json",
+            "name": "background-color"
+        }, 
+        {
+            "id": 2,
+            "type": "task",
+            "entry": "/resources/16/tasks/2/task.json",
+            "name": "background-image"
+        }, 
+        {
+            "id": 3,
+            "type": "task",
+            "entry": "/resources/16/tasks/3/task.json",
+            "name": "background-repeat"
+        }, 
+        {
+            "id": 4,
+            "type": "task",
+            "entry": "/resources/16/tasks/4/task.json",
+            "name": "background-position"
+        }, 
+        {
+            "id": 5,
+            "type": "task",
+            "entry": "/resources/16/tasks/5/task.json",
+            "name": "more-about-background-position"
+        }, 
+        {
+            "id": 6,
+            "type": "task",
+            "entry": "/resources/16/tasks/6/task.json",
+            "name": "background-attachment"
+        }, 
+        {
+            "id": 7,
+            "type": "task",
+            "entry": "/resources/16/tasks/7/task.json",
+            "name": "background-prop"
+        }, 
+        {
             "id": 8,
             "type": "challenge",
-            "entry": "/resources/8/tasks/10/task.json",
-            "name": "backgrounds-introduction"
-        }, {
+            "entry": "/resources/16/tasks/8/task.json",
+            "name": "catsmix"
+        }, 
+        {
+            "id": 9,
+            "type": "task",
+            "entry": "/resources/16/tasks/9/task.json",
+            "name": "jpeg-image-type"
+        }, 
+        {
+            "id": 10,
+            "type": "task",
+            "entry": "/resources/16/tasks/10/task.json",
+            "name": "png-8-image-type"
+        }, 
+        {
+            "id": 11,
+            "type": "task",
+            "entry": "/resources/16/tasks/11/task.json",
+            "name": "png-24-image-type"
+        }, 
+        {
+            "id": 12,
+            "type": "task",
+            "entry": "/resources/16/tasks/12/task.json",
+            "name": "gif-image-type"
+        }, 
+        {
+            "id": 13,
+            "type": "task",
+            "entry": "/resources/16/tasks/13/task.json",
+            "name": "multiple-backgrounds"
+        }, 
+        {
+            "id": 14,
+            "type": "task",
+            "entry": "/resources/16/tasks/14/task.json",
+            "name": "background-repeat-effects"
+        }, 
+        {
+            "id": 15,
+            "type": "task",
+            "entry": "/resources/16/tasks/15/task.json",
+            "name": "sprites"
+        }, 
+        {
             "id": 16,
             "type": "challenge",
             "entry": "/resources/16/tasks/16/task.json",

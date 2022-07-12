@@ -1,0 +1,21 @@
+{
+    "intro": "setIconsBgPosition",
+    "introTitle": "Задайте расположение фона:",
+    "assertions": [
+        {
+            "title": "`-407px -96px` — элементу с классом `icon-add`,",
+            "name": "setIconAddBgPositionToNeg407PxNeg96Px",
+            "expect": "expect(document.querySelector('.icon-add')).to.have.css('background-position', '-407px -96px');"
+        },
+        {
+            "title": "`-96px -72px` — элементу с классом `icon-edit`,",
+            "name": "setIconEditBgPositionToNeg96PxNeg72Px",
+            "expect": "expect(document.querySelector('.icon-edit')).to.have.css('background-position', '-96px -72px');"
+        },
+        {
+            "title": "`-456px 0` — элементу с классом `icon-remove`.",
+            "name": "setIconRemoveBgPositionToNeg456Px0",
+            "expect": "expect(document.querySelector('.icon-remove')).to.have.css('background-position', '-456px 0');"
+        }
+    ]
+}

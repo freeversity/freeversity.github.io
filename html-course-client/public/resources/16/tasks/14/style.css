@@ -1,0 +1,25 @@
+body {
+  padding-top: 40px;
+}
+
+.block {
+  height: 70px;
+  margin: 30px 50px;
+
+  background-color: #3498db;
+  background-repeat: no-repeat;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px #999999;
+}
+
+.block1 {
+  background-position: -30px 30px;
+}
+
+.block2 {
+  background-position: 0 0;
+}
+
+.block3 {
+  background-position: 0 100%;
+}

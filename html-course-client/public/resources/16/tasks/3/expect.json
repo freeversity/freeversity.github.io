@@ -1,0 +1,26 @@
+{
+    "intro": "setBackgroundRepeat",
+    "introTitle": "Задайте блокам режим повторения фона:",
+    "assertions": [
+        {
+            "title": "по горизонтали — первому блоку,",
+            "name": "setFirstBlockBgRepeatToRepeatX",
+            "expect": "expect(document.querySelector('.block1')).to.have.css('backgroundRepeat', 'repeat-x');"
+        },
+        {
+            "title": "по вертикали — второму блоку,",
+            "name": "setSecondBlockBgRepeatToRepeatY",
+            "expect": "expect(document.querySelector('.block2')).to.have.css('backgroundRepeat', 'repeat-y');"
+        },
+        {
+            "title": "без повторения — третьему блоку,",
+            "name": "setThirdBlockBgRepeatToNoRepeat",
+            "expect": "expect(document.querySelector('.block3')).to.have.css('backgroundRepeat', 'no-repeat');"
+        },
+        {
+            "title": "во все стороны — четвёртому блоку.",
+            "name": "setFourthBlockBgRepeatToRepeat",
+            "expect": "expect(document.querySelector('.block4')).to.have.css('backgroundRepeat', 'repeat');"
+        }
+    ]
+}

@@ -1,0 +1,26 @@
+{
+    "intro": "setBackgroundPosition",
+    "introTitle": "Задайте блокам расположение фона:",
+    "assertions": [
+        {
+            "title": "`35px 15px` — первому блоку,",
+            "name": "setFirstBlockBgPositionTo35Px15Px",
+            "expect": "expect(document.querySelector('.block1')).to.have.css('backgroundPosition', '35px 15px');"
+        },
+        {
+            "title": "`-95px 15px` — второму блоку,",
+            "name": "setSecondBlockBgPositionToNeg95Px15Px",
+            "expect": "expect(document.querySelector('.block2')).to.have.css('backgroundPosition', '-95px 15px');"
+        },
+        {
+            "title": "`-20px 50%` — третьему блоку,",
+            "name": "setThirdBlockBgPositionToNeg20Px50Perc",
+            "expect": "expect(document.querySelector('.block3')).to.have.css('backgroundPosition', '-20px 50%');"
+        },
+        {
+            "title": "`100% 50%` — четвёртому блоку.",
+            "name": "setFourthBlockBgPositionTo100Perc50Perc",
+            "expect": "expect(document.querySelector('.block4')).to.have.css('backgroundPosition', '100% 50%');"
+        }
+    ]
+}

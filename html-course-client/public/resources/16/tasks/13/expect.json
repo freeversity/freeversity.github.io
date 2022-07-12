@@ -1,0 +1,40 @@
+{
+    "intro": "completeCatOnFarmMiniature",
+    "introTitle": "Соберём миниатюру «Кот на ферме». Задайте неповторяющиеся фоновые картинки:",
+    "assertions": [
+        {
+            "title": "`cows.jpg` — первому блоку,",
+            "name": "setFirstBlockBgImageToCowsJpg",
+            "expect": "expect(document.querySelector('.block1')).to.have.css('background-image', 'url(\"cows.jpg\")');expect(document.querySelector('.block1')).to.have.css('background-repeat', 'no-repeat');"
+        },
+        {
+            "title": "`cat_walk.png` — второму блоку, позиция фона `190px 195px`,",
+            "name": "setSecondBlockBgImageToCatWalkPngAndPosition190Px195Px",
+            "expect": "expect(document.querySelector('.block2')).to.have.css('background-image', 'url(\"cat_walk.png\")');expect(document.querySelector('.block2')).to.have.css('background-repeat', 'no-repeat');expect(document.querySelector('.block2')).to.have.css('background-position', '190px 195px');"
+        },
+        {
+            "title": "`fence.png` — третьему блоку.",
+            "name": "setThirdBlockBgImageToFencePng",
+            "expect": "expect(document.querySelector('.block3')).to.have.css('background-image', 'url(\"fence.png\")');expect(document.querySelector('.block3')).to.have.css('background-repeat', 'no-repeat');"
+        }
+    ]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

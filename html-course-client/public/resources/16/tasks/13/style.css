@@ -1,0 +1,17 @@
+body {
+  padding-top: 80px;
+}
+
+.block1 {
+  width: 256px;
+  margin: 0 auto;
+
+  box-shadow: 1px 1px 3px #999999;
+}
+
+.block2 {
+}
+
+.block3 {
+  height: 256px;
+}

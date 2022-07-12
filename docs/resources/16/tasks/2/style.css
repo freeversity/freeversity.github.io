@@ -1,0 +1,30 @@
+body {
+    padding: 10px;
+    text-align: center;
+}
+
+.block {
+    display: inline-block;
+    width: 192px;
+    height: 192px;
+    margin: 5px;
+
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px #999999;
+}
+
+.block1 {
+    background-color: #2ecc71;
+}
+
+.block2 {
+    background-color: #3498db;
+}
+
+.block3 {
+    background-color: #e74c3c;
+}
+
+.block4 {
+    background-color: #e67e22;
+}
