@@ -1,0 +1,21 @@
+{
+    "intro": "setCardAfterProps",
+    "introTitle": "Добавьте карте `.card` псевдоэлемент `after` и задайте ему:",
+    "assertions": [
+        {
+            "title": "содержание `A` (в латинской раскладке),",
+            "name": "setCardPseudoElemContentToA",
+            "expect": "expect(document).to.have.cssRule('.card::after', 'content', '\"A\"');"
+        },
+        {
+            "title": "размер шрифта `30px`,",
+            "name": "setCardPseudoElemFontSizeTo30Px",
+            "expect": "expect(document).to.have.cssRule('.card::after', 'fontSize', '30px');"
+        },
+        {
+            "title": "цвет текста `#e50000`.",
+            "name": "setCardPseudoElemColorToRed",
+            "expect": "expect(document).to.have.cssRule('.card::after', 'color', '#e50000');"
+        }
+    ]
+}

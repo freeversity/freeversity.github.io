@@ -1,0 +1,15 @@
+{
+    "assertions": [
+        {
+            "title": "Сделайте написание первой строки абзацев курсивным.",
+            "name": "setFirstLineFontStyleToItalic",
+            "expect": "expect(document).to.have.cssRule('p::first-line', 'fontStyle', 'italic');"
+        },
+        {
+            "title": "Задайте первой букве абзацев размер шрифта и высоту строки `30px` свойство `float: left` цвет текста `red` внешний отступ справа `5px` и шрифт `\"Times New Roman\", serif`.",
+            "name": "setFirstLettelFontSizeTo30PxFloatToLeftColorToRedAndFontFamilyTNRSerif",
+            "expect": "expect(document).to.have.cssRule('p::first-letter', 'fontSize', '30px');expect(document).to.have.cssRule('p::first-letter', 'lineHeight', '30px');expect(document).to.have.cssRule('p::first-letter', 'float', 'left');expect(document).to.have.cssRule('p::first-letter', 'color', 'red');expect(document).to.have.cssRule('p::first-letter', 'fontFamily', '\"Times New Roman\", serif');expect(document).to.have.cssRule('p::first-letter', 'marginRight', '5px');"
+        }
+    ]
+}
+

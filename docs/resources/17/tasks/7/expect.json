@@ -1,0 +1,19 @@
+{
+    "assertions": [
+        {
+            "title": "Задайте всем картам чётных строк цвет фона `#ff3300`.",
+            "name": "setAllCardsOnEvenLinesBgColorToRed",
+            "expect": "expect(document.querySelectorAll('.cards:nth-of-type(even) li')).to.have.css('backgroundColor', '#ff3300');expect(document.querySelectorAll('.cards:not(:nth-of-type(even)) li')).not.to.have.css('backgroundColor', '#ff3300');"
+        },
+        {
+            "title": "Задайте третьей карте третьей строки цвет фона `#339933`.",
+            "name": "setThrirdCardOnThirdLineBgColorToGreen",
+            "expect": "expect(document.querySelectorAll('.cards:nth-of-type(3) li:nth-child(3)')).to.have.css('backgroundColor', '#339933');expect(document.querySelectorAll('.cards:not(:nth-of-type(3)) li, .cards li:not(:nth-child(3))')).not.to.have.css('backgroundColor', '#339933');"
+        },
+        {
+            "title": "Задайте нечётным картам первой строки цвет фона `#0099ff`.",
+            "name": "setAllOddCardsOfFirstLineBgColorToBlue",
+            "expect": "expect(document.querySelectorAll('.cards:nth-of-type(1) li:nth-child(odd)')).to.have.css('backgroundColor', '#0099ff');expect(document.querySelectorAll('.cards:not(:nth-of-type(1)) li, .cards li:not(:nth-child(odd))')).not.to.have.css('backgroundColor', '#0099ff');"
+        }
+    ]
+}

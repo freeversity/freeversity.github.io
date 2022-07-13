@@ -1,0 +1,9 @@
+{
+    "id": 2,      
+    "name": "not-pseudoclass",
+    "htmlEntry": "index.html",
+    "cssEntry": "style.css",
+    "markupReadonly": true,
+    "articleEntry": "article.md",
+    "expectEntry": "expect.json"
+}

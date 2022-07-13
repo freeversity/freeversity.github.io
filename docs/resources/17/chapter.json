@@ -3,16 +3,120 @@
     "title": "Advanced Selectors",
     "tasks": [
         {
+            "id": 1,
+            "type": "task",
+            "entry": "/resources/17/tasks/1/task.json",
+            "name": "combining-selectors"
+        }, 
+        {
+            "id": 2,
+            "type": "task",
+            "entry": "/resources/17/tasks/2/task.json",
+            "name": "not-pseudoclass"
+        }, 
+        {
+            "id": 3,
+            "type": "task",
+            "entry": "/resources/17/tasks/3/task.json",
+            "name": "combining-not-pseudoclass"
+        }, 
+        {
+            "id": 4,
+            "type": "task",
+            "entry": "/resources/17/tasks/4/task.json",
+            "name": "nth-last-child-pseudoclass"
+        }, 
+        {
+            "id": 5,
+            "type": "task",
+            "entry": "/resources/17/tasks/5/task.json",
+            "name": "first-of-type-pseudoclass"
+        }, 
+        {
+            "id": 6,
+            "type": "task",
+            "entry": "/resources/17/tasks/6/task.json",
+            "name": "last-of-type-pseudoclass"
+        }, 
+        {
+            "id": 7,
+            "type": "task",
+            "entry": "/resources/17/tasks/7/task.json",
+            "name": "nth-of-type-pseudoclass"
+        }, 
+        {
+            "id": 8,
+            "type": "task",
+            "entry": "/resources/17/tasks/8/task.json",
+            "name": "nth-last-of-type-pseudoclass"
+        }, 
+        {
             "id": 9,
             "type": "challenge",
             "entry": "/resources/17/tasks/9/task.json",
             "name": "the-first-deal"
-        }, {
+        }, 
+        {
+            "id": 10,
+            "type": "task",
+            "entry": "/resources/17/tasks/10/task.json",
+            "name": "further-elements-selector"
+        }, 
+        {
+            "id": 11,
+            "type": "task",
+            "entry": "/resources/17/tasks/11/task.json",
+            "name": "empty-pseudoclass"
+        }, 
+        {
+            "id": 12,
+            "type": "task",
+            "entry": "/resources/17/tasks/12/task.json",
+            "name": "only-child-pseudoclass"
+        }, 
+        {
+            "id": 13,
+            "type": "task",
+            "entry": "/resources/17/tasks/13/task.json",
+            "name": "only-of-type-pseudoclass"
+        }, 
+        {
+            "id": 14,
+            "type": "task",
+            "entry": "/resources/17/tasks/14/task.json",
+            "name": "before-pseudoelement"
+        }, 
+        {
+            "id": 15,
+            "type": "task",
+            "entry": "/resources/17/tasks/15/task.json",
+            "name": "after-pseudoelement"
+        }, 
+        {
+            "id": 16,
+            "type": "task",
+            "entry": "/resources/17/tasks/16/task.json",
+            "name": "pseudoelements-positioning"
+        }, 
+        {
+            "id": 17,
+            "type": "task",
+            "entry": "/resources/17/tasks/17/task.json",
+            "name": "pseudoelements-backgrounds"
+        }, 
+        {
+            "id": 18,
+            "type": "task",
+            "entry": "/resources/17/tasks/18/task.json",
+            "name": "first-line-and-first-letter-pseudoelements"
+        }, 
+        {
             "id": 19,
             "type": "challenge",
             "entry": "/resources/17/tasks/19/task.json",
             "name": "pseudo-elements"
-        }, {
+        }, 
+        {
             "id": 20,
             "type": "challenge",
             "entry": "/resources/17/tasks/20/task.json",

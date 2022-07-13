@@ -1,0 +1,15 @@
+{
+    "assertions": [
+        {
+            "title": "Для единственной строки карт в блоке `.group` задайте внутренний отступ `10px` и пунктирную (`dashed`) рамку толщиной `2px` цветом `#55bb99`.",
+            "name": "setSingleLineInGroupBlockPaddingTo10PxAndBorderTo2PxDashedAqua",
+            "expect": "expect(document.querySelectorAll('.cards:only-child')).to.have.css('padding', '10px');expect(document.querySelectorAll('.cards:only-child')).to.have.css('border', '2px dashed #55bb99');expect(document.querySelectorAll('.cards:not(:only-child)')).not.to.have.css('padding', '10px');expect(document.querySelectorAll('.cards:not(:only-child)')).not.to.have.css('border', '2px dashed #55bb99');"
+        },
+        {
+            "title": "Задайте цвет текста `#339966` для абзаца, который является единственным в блоке `.paper`.",
+            "name": "setSinglePInPaperBlockColorToDarkAqua",
+            "expect": "expect(document.querySelectorAll('.paper p:only-of-type')).to.have.css('color', '#339966');expect(document.querySelectorAll('.paper p:not(:only-of-type)')).not.to.have.css('color', '#339966');"
+        }
+    ]
+}
+

@@ -29,9 +29,11 @@ export function computedCssPlugin(
                 win.document.body.append(testContainer);
     
                 const expected = win.getComputedStyle(testElem)[prop as any];
+
+                testContainer.remove();
+                
                 const actual = win.getComputedStyle(elem)[prop as any];
     
-                testContainer.remove();
     
                 this.assert(
                     actual === expected, 

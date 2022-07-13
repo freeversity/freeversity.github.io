@@ -1,0 +1,15 @@
+{
+    "assertions": [
+        {
+            "title": "Задайте единственной в строке карте ширину `60px`, высоту `90px`.",
+            "name": "setSingleCardInLineWidthTo60PxAndHeightTo90Px",
+            "expect": "expect(document.querySelectorAll('li:only-child')).to.have.css('width', '60px');expect(document.querySelectorAll('li:only-child')).to.have.css('height', '90px');expect(document.querySelectorAll('li:not(:only-child)')).not.to.have.css('width', '60px');expect(document.querySelectorAll('li:not(:only-child)')).not.to.have.css('height', '90px');"
+        },
+        {
+            "title": "Строке карт, единственной в блоке `.group`, задайте внутренний отступ `10px` и пунктирную (`dashed`) рамку толщиной `2px` цветом `#55bb99`.",
+            "name": "setSingleCardsLineInGroupBlockPaddingTo10PxAndBorderTo2PxDashedAqua",
+            "expect": "expect(document.querySelectorAll('.cards:only-child')).to.have.css('padding', '10px');expect(document.querySelectorAll('.cards:only-child')).to.have.css('border', '2px dashed #55bb99');expect(document.querySelectorAll('.cards:not(:only-child)')).not.to.have.css('padding', '10px');expect(document.querySelectorAll('.cards:not(:only-child)')).not.to.have.css('border', '2px dashed #55bb99');"
+        }
+    ]
+}
+

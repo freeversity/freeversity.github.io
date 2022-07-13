@@ -1,0 +1,21 @@
+{
+    "assertions": [
+        {
+            "title": "Задайте карте, идущей сразу за королём `.king` цвет фона `#ff3300`",
+            "name": "setCardNextAfterKingBgColorToRed",
+            "expect": "expect(document.querySelectorAll('.king + li')).to.have.css('backgroundColor', '#ff3300');expect(document.querySelectorAll('li:first-child, li:not(.king) + li')).not.to.have.css('backgroundColor', '#ff3300');"
+        },
+        {
+            "title": "Задайте цвет фона `#339933` тузам `.ace` стоящим на любой позиции после червового валета `.heart.jack`",
+            "name": "setAllAcesAfterJackOfHeartsBgColorToGreen",
+            "expect": "expect(document.querySelectorAll('.heart.jack ~ .ace')).to.have.css('backgroundColor', '#339933');expect(document.querySelectorAll('li:not(.ace), .cards:nth-last-of-type(n+3) li, .cards:nth-of-type(3) li:nth-last-child(n +2), .cards:nth-of-type(4) li:nth-last-child(n+5)')).not.to.have.css('backgroundColor', '#339933');"
+        },
+        {
+            "title": "Задайте цвет фона `#0099ff` червовому валету `.heart.jack` стоящему на любой позиции после крестового короля `.club.king`",
+            "name": "setJackOfHeartsAfterKingOfClubBgColorToBlue",
+            "expect": "expect(document.querySelectorAll('.club.king ~ .heart.jack')).to.have.css('backgroundColor', '#0099ff');expect(document.querySelectorAll('.cards:nth-child(even) li, .cards:first-child li:not(:last-child), .cards:nth-child(3) li:not(:nth-last-child(3))')).not.to.have.css('backgroundColor', '#0099ff');"
+        }
+    ]
+}
+
+

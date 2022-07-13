@@ -1,0 +1,19 @@
+{
+    "assertions": [
+        {
+            "title": "Задайте цвет фона `#ff3300` пиковым `.spade` дамам `.queen`.",
+            "name": "setQueenOfSpadeBgColorToRed",
+            "expect": "expect(document.querySelectorAll('.spade.queen')).to.have.css('backgroundColor', '#ff3300');expect(document.querySelectorAll('li:not(.spade.queen)')).not.to.have.css('backgroundColor', '#ff3300');"
+        },
+        {
+            "title": "Задайте цвет фона `#339933` червям `.heart` которые стоят на первом месте в своей строке.",
+            "name": "setFirstHeartsInLineBgColorToGreen",
+            "expect": "expect(document.querySelectorAll('.heart:first-child')).to.have.css('backgroundColor', '#339933');expect(document.querySelectorAll('li:not(.heart:first-child)')).not.to.have.css('backgroundColor', '#339933');"
+        },
+        {
+            "title": "Задайте цвет фона `#0099ff` бубновым `.diamond` тузам `.ace` которые стоят на последнем месте в своей строке.",
+            "name": "setDiamondAcesLastInLineBgColorToBlue",
+            "expect": "expect(document.querySelectorAll('.diamond.ace:last-child')).to.have.css('backgroundColor', '#0099ff');expect(document.querySelectorAll('li:not(.diamond.ace:last-child)')).not.to.have.css('backgroundColor', '#0099ff');"
+        }
+    ]
+}

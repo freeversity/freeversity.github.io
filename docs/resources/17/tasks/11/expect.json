@@ -1,0 +1,21 @@
+{
+    "assertions": [
+        {
+            "title": "Выделите строку, в которой нет ни одной карты: задайте высоту `70px` и пунктирную (`dashed`) рамку толщиной `2px` цветом `#55bb99`.",
+            "name": "setEmptyLineHeightTo70PxAndBorderTo2PxDashedAqua",
+            "expect": "expect(document.querySelectorAll('.cards:empty')).to.have.css('height', '70px');expect(document.querySelectorAll('.cards:empty')).to.have.css('border', '2px dashed #55bb99');expect(document.querySelectorAll('.cards:not(:empty)')).not.to.have.css('height', '70px');expect(document.querySelectorAll('.cards:not(:empty)')).not.to.have.css('border', '2px dashed #55bb99');"
+        },
+        {
+            "title": "Увеличьте размер всех _непустых_ карт: ширина `60px`, высота `90px`.",
+            "name": "setAllNotEmptyCardsWidthTo60PxAndHeightTo90Px",
+            "expect": "expect(document.querySelectorAll('.cards li:not(:empty)')).to.have.css('width', '60px');expect(document.querySelectorAll('.cards li:not(:empty)')).to.have.css('height', '90px');expect(document.querySelectorAll('.cards li:empty')).not.to.have.css('width', '60px');expect(document.querySelectorAll('.cards li:empty')).not.to.have.css('height', '90px');"
+        },
+        {
+            "title": "Установите `display: block` для `span` в этих непустых картах.",
+            "name": "setNotEmptyCardsSpansDisplayToBlock",
+            "expect": "expect(document.querySelectorAll('.cards li span')).to.have.css('display', 'block');"
+        }
+    ]
+}
+
+

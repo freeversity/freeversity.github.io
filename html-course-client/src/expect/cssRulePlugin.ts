@@ -34,7 +34,7 @@ export function cssRulePlugin(
                 if (!('selectorText' in rule)) return false;
                 
                 return (
-                    (rule as CSSStyleRule).selectorText === selector
+                    selector.split(', ').every((selector) => (rule as CSSStyleRule).selectorText.split(', ').includes(selector))
                 ) && (
                     typeof prop !== 'string' || (
                         (rule as CSSStyleRule).style[prop as any] !== ''

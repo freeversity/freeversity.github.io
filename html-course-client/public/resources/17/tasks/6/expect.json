@@ -1,0 +1,22 @@
+{
+    "assertions": [
+        {
+            "title": "Задайте последней карте каждой строки цвет фона `#ff3300`.",
+            "name": "setLastCardOfLineBgColorToRed",
+            "expect": "expect(document.querySelectorAll('.cards li:last-child')).to.have.css('backgroundColor', '#ff3300');expect(document.querySelectorAll('.cards li:not(:last-child)')).not.to.have.css('backgroundColor', '#ff3300');"
+        },
+        {
+            "title": "Затем задайте всем картам в последней строке цвет фона `#339933`.",
+            "name": "setAllCardsInLastLineBgColorToGreen",
+            "expect": "expect(document.querySelectorAll('.cards:last-of-type li')).to.have.css('backgroundColor', '#339933');expect(document.querySelectorAll('.cards:not(:last-of-type) li')).not.to.have.css('backgroundColor', '#339933');"
+        },
+        {
+            "title": "Затем задайте карте на пересечении выделенной строки и столбца цвет фона `#0099ff`.",
+            "name": "setCardOnCrossingOfHightlightedRowAndColumnBgColorToBlue",
+            "expect": "expect(document.querySelectorAll('.cards:last-of-type li:last-child')).to.have.css('backgroundColor', '#0099ff');expect(document.querySelectorAll('.cards:not(:last-of-type) li, .cards li:not(:last-child)')).not.to.have.css('backgroundColor', '#0099ff');"
+        }
+    ],
+    "strict": true
+}
+
+

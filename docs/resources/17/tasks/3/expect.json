@@ -1,0 +1,22 @@
+{
+    "assertions": [
+        {
+            "title": "Задайте цвет фона `#ff3300` первым картам в каждой строке, но не пикам `.spade`.",
+            "name": "setAllFirstInLineNotSpadeBgColorToRed",
+            "expect": "expect(document.querySelectorAll('li:first-child:not(.spade)')).to.have.css('backgroundColor', '#ff3300');expect(document.querySelectorAll('li:not(:first-child), .spade')).not.to.have.css('backgroundColor', '#ff3300');"
+        },
+        {
+            "title": "Задайте цвет фона `#339933` картам, которые не являются ни тузом `.ace`, ни бубной `.diamond` и расположены в центре каждой строки.",
+            "name": "setAllCentralInLineNotAceOrDiamondBgColorToGreen",
+            "expect": "expect(document.querySelectorAll('li:nth-child(4):not(.ace):not(.diamond)')).to.have.css('backgroundColor', '#339933');expect(document.querySelectorAll('li:not(:nth-child(4)), .ace, .diamond')).not.to.have.css('backgroundColor', '#339933');"
+        },
+        {
+            "title": "Задайте цвет фона `#0099ff` червям `.heart`, стоящим не на первой позиции в каждой строке, и не являющимся дамой `.queen` и валетом `.jack`",
+            "name": "setAllHeartsNotFirstInLineAndNotQueenOrJackBgColorToBlue",
+            "expect": "expect(document.querySelectorAll('.heart:not(:first-child):not(.queen):not(.jack)')).to.have.css('backgroundColor', '#0099ff');expect(document.querySelectorAll('li:not(.heart), li:first-child, .queen, .jack')).not.to.have.css('backgroundColor', '#0099ff');"
+        }
+    ],
+    "strict": true
+}
+
+

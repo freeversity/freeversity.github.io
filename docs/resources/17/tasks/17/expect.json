@@ -1,0 +1,18 @@
+{
+    "assertions": [
+        {
+            "title": "Задайте карте фоновое изображение `heart.svg` без повторения с позицией `50% 50%`",
+            "name": "setCardBgImageToHeartSvgWithNoRepearAndBgPosition50Perc50Perc",
+            "expect": "expect(document.querySelector('.card')).to.have.css('backgroundImage', 'url(\"heart.svg\")');expect(document.querySelector('.card')).to.have.css('backgroundRepeat', 'no-repeat');expect(document.querySelector('.card')).to.have.css('backgroundPosition', '50% 50%');"
+        },
+        {
+            "title": "Задайте псевдоэлементам фоновое изображение `heart.svg` без повторения с позицией `50% 100%`.",
+            "name": "setCardPseudoelementsBgImageToHeartSvgWithNoRepearAndBgPosition50Perc100Perc",
+            "expect": "expect(document).to.have.cssRule('.card::before', 'backgroundImage', 'url(\"heart.svg\")');expect(document).to.have.cssRule('.card::after', 'backgroundImage', 'url(\"heart.svg\")');expect(document).to.have.cssRule('.card::after', 'backgroundRepeat', 'no-repeat');expect(document).to.have.cssRule('.card::before', 'backgroundRepeat', 'no-repeat');expect(document).to.have.cssRule('.card::before', 'backgroundPosition', '50% 100%');expect(document).to.have.cssRule('.card::after', 'backgroundPosition', '50% 100%');"
+        }
+    ],
+    "footnote": "dontChangeBgSizeAndColor",
+    "footnoteTitle": "Цвет фона и размер фона не изменяйте и не переопределяйте."
+}
+
+

@@ -1,0 +1,22 @@
+{
+    "assertions": [
+        {
+            "title": "Задайте первой карте каждой строки цвет фона `#ff3300`.",
+            "name": "setAllFirstCardsInLineBgColorToRed",
+            "expect": "expect(document.querySelectorAll('.cards li:first-child')).to.have.css('backgroundColor', '#ff3300');expect(document.querySelectorAll('.cards li:not(:first-child)')).not.to.have.css('backgroundColor', '#ff3300');"
+        },
+        {
+            "title": "Затем задайте всем картам первой строки цвет фона `#339933`.",
+            "name": "setAllFirstLineCardsBgColotToGreen",
+            "expect": "expect(document.querySelectorAll('.cards:first-of-type li')).to.have.css('backgroundColor', '#339933');expect(document.querySelectorAll('.cards:not(:first-of-type) li')).not.to.have.css('backgroundColor', '#339933');"
+        },
+        {
+            "title": "Затем задайте карте на пересечении выделенной строки и столбца цвет фона `#0099ff`.",
+            "name": "setCardOnCrossingOfHightlightedRowAndColumnBgColorToBlue",
+            "expect": "expect(document.querySelectorAll('.cards:first-of-type li:first-child')).to.have.css('backgroundColor', '#0099ff');expect(document.querySelectorAll('.cards:not(:first-of-type) li, .cards li:not(:first-child)')).not.to.have.css('backgroundColor', '#0099ff');"
+        }
+    ],
+    "strict": true
+}
+
+

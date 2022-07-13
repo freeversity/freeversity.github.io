@@ -1,0 +1,15 @@
+{
+    "assertions": [
+        {
+            "title": "Задайте для `.card::before` абсолютное позиционирование, паддинг снизу `20px`, координаты слева и сверху `5px`.",
+            "name": "setCardBeforePositionToAbsolutePaddingBottomTo20PxTopTo5PxAndLeftTo5Px",
+            "expect": "expect(document).to.have.cssRule('.card::before', 'paddingBottom', '20px');expect(document).to.have.cssRule('.card::before', 'position', 'absolute');expect(document).to.have.cssRule('.card::before', 'left', '5px');expect(document).to.have.cssRule('.card::before', 'top', '5px');"
+        },
+        {
+            "title": "А для `.card::after` абсолютное позиционирование, паддинг снизу `20px`, координаты справа и снизу `5px`.",
+            "name": "setCardAfterPositionToAbsolutePaddingBottomTo20PxBottomTo5PxAndRightTo5Px",
+            "expect": "expect(document).to.have.cssRule('.card::after', 'paddingBottom', '20px');expect(document).to.have.cssRule('.card::after', 'position', 'absolute');expect(document).to.have.cssRule('.card::after', 'right', '5px');expect(document).to.have.cssRule('.card::after', 'bottom', '5px');"
+        }
+    ]
+}
+

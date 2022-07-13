@@ -1,0 +1,22 @@
+{
+    "assertions": [
+        {
+            "title": "Всем картам, кроме королей `.king`, задайте цвет фона `#808080`.",
+            "name": "setAllNotKingsBgColorToGray",
+            "expect": "expect(document.querySelectorAll('.king')).not.to.have.css('backgroundColor', '#808080');expect(document.querySelectorAll('li:not(.king)')).to.have.css('backgroundColor', '#808080');"
+        },
+        {
+            "title": "Всем картам, кроме бубновых `.diamond`, задайте цвет текста `#0099ff`.",
+            "name": "setAllNotDiamongCardsBgColorToBlue",
+            "expect": "expect(document.querySelectorAll('.diamond')).not.to.have.css('backgroundColor', '#0099ff');expect(document.querySelectorAll('li:not(.diamond)')).to.have.css('backgroundColor', '#0099ff');"
+        },
+        {
+            "title": "Всем картам, кроме первых в строках, задайте шрифт `\"Arial\", sans-serif`",
+            "name": "setAllNotFirstInLineCardsFontFamilyToArialSansSerif",
+            "expect": "expect(document.querySelectorAll('.li:first-child')).not.to.have.css('fontFamily', '\"Arial\", sans-serif');expect(document.querySelectorAll('li:not(:first-child)')).to.have.css('fontFamily', '\"Arial\", sans-serif');"
+        }
+    ],
+    "strict": true
+}
+
+
