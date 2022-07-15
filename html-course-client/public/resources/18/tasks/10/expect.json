@@ -1,0 +1,31 @@
+{
+    "assertions": [
+        {
+            "title": "Второму блоку задайте `margin-top: 20px;`.",
+            "name": "setSecondBlockMarginTopTo20Px",
+            "expect": "expect(document.querySelector('.block-2')).to.have.css('marginTop', '20px');"
+        },
+        {
+            "title": "Первому блоку задайте `margin-top: 40px;`.",
+            "name": "setFirstBlockMarginTopTo40Px",
+            "expect": "expect(document.querySelector('.block-1')).to.have.css('marginTop', '40px');"
+        },
+        {
+            "title": "затем ему же задайте `border: 1px solid white;`.",
+            "name": "setFirstBlockBorderTo1PxSolidWhite",
+            "expect": "expect(document.querySelector('.block-1')).to.have.css('border', '1px solid white');"
+        },
+        {
+            "title": "и `padding-top: 20px;`.",
+            "name": "setFirstBlockPaddingTop20Px",
+            "expect": "expect(document.querySelector('.block-1')).to.have.css('padding-top', '20px');"
+        }
+    ],
+    "strict": true,
+    "footnote": "payAttentionToMarginBetweenFirstAndSecondBlock",
+    "footnoteTitle": "Обратите внимание на отступ от края первого блока до второго блока. Он будет размером 40px (2 клеточки)."
+}
+
+
+
+

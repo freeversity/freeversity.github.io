@@ -1,0 +1,25 @@
+{
+    "intro": "changeColumnsStyles",
+    "introTitle": "Измените отображение элементов с классом `column`:",
+    "assertions": [
+        {
+            "title": "Добавьте свойство `display: inline-block;`.",
+            "name": "setColumnDisplayToInlineBloc",
+            "expect": "expect(document.querySelectorAll('.column')).to.have.css('display', 'inline-block');"
+        },
+        {
+            "title": "Добавьте свойство `vertical-align: bottom;`.",
+            "name": "setColumnVerticalAlignToBottom",
+            "expect": "expect(document.querySelectorAll('.column')).to.have.css('verticalAlign', 'bottom');"
+        },
+        {
+            "title": "Задайте ширину `100px`.",
+            "name": "setColumnWidthTo100Px",
+            "expect": "expect(document.querySelectorAll('.column')).to.have.css('width', '100px');"
+        }
+    ]
+}
+
+
+
+

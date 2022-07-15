@@ -1,0 +1,15 @@
+{
+    "assertions": [
+        {
+            "title": "Задайте полям формы ширину `100%`,",
+            "name": "setFormInputsWidthTo100%",
+            "expect": "expect(document).to.have.cssRule('input[type=\"text\"]', 'width', '100%');"
+        },
+        {
+            "title": "вертикальные внутренние отступы — `10px` горизонтальные внутренние отступы — `20px`",
+            "name": "setVerticalPaddingsTo10PxAndHorizontalPaddingsTo20Px",
+            "expect": "expect(document.querySelectorAll('input[type=\"text\"]')).to.have.css('padding', '10px 20px');"
+        }
+    ]
+}
+

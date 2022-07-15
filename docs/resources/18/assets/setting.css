@@ -1,0 +1,39 @@
+body,html {
+	padding: 0;
+}
+
+body {
+	margin: 0;
+	background-color: #fff;
+	background-image: linear-gradient(#ccc 1px,transparent 1px),linear-gradient(90deg,#ccc 1px,transparent 1px),linear-gradient(#fff 1px,transparent 1px),linear-gradient(90deg,#fff 1px,transparent 1px),linear-gradient(#ddd 1px,transparent 1px),linear-gradient(90deg,#ddd 1px,transparent 1px);
+	background-position: -1px -1px,-1px -1px,0 0,0 0,-1px -1px,-1px -1px;
+	background-size: 100px 100px,100px 100px,5px 5px,5px 5px,20px 20px,20px 20px;
+	color: #000;
+	font-size: 14px;
+	font-family: "Arial",sans-serif;
+	line-height: 20px;
+}
+
+div,h1,h2,p {
+	border-color: #6a6a6a;
+	background-image: linear-gradient(to left,#9fd8ef,#9fd8ef),linear-gradient(to left,rgba(136,123,215,.5),rgba(136,123,215,.5));
+	background-clip: content-box,padding-box;
+	box-shadow: 0 0 2px #000;
+	font-weight: 400;
+}
+
+h1 {
+	font-size: 25px;
+	line-height: 30px;
+}
+
+h2 {
+	font-size: 20px;
+	line-height: 25px;
+}
+
+em,span,strong {
+	background-image: linear-gradient(to left,yellow,yellow),linear-gradient(to left,rgba(136,123,215,.5),rgba(136,123,215,.5));
+	background-clip: content-box,padding-box;
+	box-shadow: 0 0 2px #000;
+}

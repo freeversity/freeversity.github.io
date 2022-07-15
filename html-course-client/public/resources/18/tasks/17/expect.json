@@ -1,0 +1,18 @@
+{
+    "intro": "changeBoxesDisplay",
+    "introTitle": "Измените привычное поведение боксов знакомых тегов:",
+    "assertions": [
+        {
+            "title": "задайте для тегов `<p>` свойство `display: inline;`,",
+            "name": "setPDisplayToInline",
+            "expect": "expect(document.querySelectorAll('p')).to.have.css('display', 'inline');"
+        },
+        {
+            "title": "а для тегов `<strong>` — `display: block;`.",
+            "name": "setStrongDisplayToBlock",
+            "expect": "expect(document.querySelectorAll('strong')).to.have.css('display', 'block');"
+        }
+    ]
+}
+
+

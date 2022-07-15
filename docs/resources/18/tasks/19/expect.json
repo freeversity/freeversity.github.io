@@ -1,0 +1,9 @@
+{
+    "assertions": [
+        {
+            "title": "Измените тип бокса элемента с классом `table` на _табличный_.",
+            "name": "setTableDisplayToTable",
+            "expect": "expect(document.querySelectorAll('.table')).to.have.css('display', 'table');"
+        }
+    ]
+}

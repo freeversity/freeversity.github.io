@@ -1,0 +1,22 @@
+{
+    "assertions": [
+        {
+            "title": "Задайте всем блокам ширину `200px`.",
+            "name": "seetAllBlocksWidthTo200Px",
+            "expect": "expect(document.querySelectorAll('.block')).to.have.css('width', '200px');"
+        },
+        {
+            "title": "Задайте второму и третьему блоку внутренние отступы справа и слева `20px`.",
+            "name": "setSecondAndThridBlockPaddingLeftAndRightTo20px",
+            "expect": "expect(document.querySelectorAll('.block2, .block3')).to.have.css('padding-left', '20px');expect(document.querySelectorAll('.block2, .block3')).to.have.css('padding-right', '20px');"
+        },
+        {
+            "title": "Задайте третьему блоку ширину рамок `10px`.",
+            "name": "setThirdBlockBorderWidthTo10px",
+            "expect": "expect(document.querySelectorAll('.block3')).to.have.css('borderWidth', '10px');"
+        }
+    ],
+    "strict": true
+}
+
+

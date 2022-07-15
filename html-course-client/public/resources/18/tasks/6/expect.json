@@ -1,0 +1,25 @@
+{
+    "intro": "setBordersToBs",
+    "introTitle": "Добавьте в указанные CSS-правила свойство `border`:",
+    "assertions": [
+        {
+            "title": "для класса `b1` — `border: 5px dashed gray;`,",
+            "name": "setB1BorderTo5PxDashedGray",
+            "expect": "expect(document.querySelector('.b1')).to.have.css('border', '5px dashed gray');"
+        },
+        {
+            "title": "для класса `b2` — `border: 5px dotted gray;`,",
+            "name": "setB2BorderTo5PxDottedGray",
+            "expect": "expect(document.querySelector('.b2')).to.have.css('border', '5px dotted gray');"
+        },
+        {
+            "title": "для класса `b3` — `border: 10px solid gray;`.",
+            "name": "setB3BorderTo10PxSolidGray",
+            "expect": "expect(document.querySelector('.b3')).to.have.css('border', '10px solid gray');"
+        }
+    ]
+}
+
+
+
+

@@ -1,0 +1,27 @@
+{
+    "assertions": [
+        {
+            "title": "Измените тип бокса элемента с классом `cell` на тип _ячейка таблицы_.",
+            "name": "setCellDisplayToTableCell",
+            "expect": "expect(document.querySelectorAll('.cell')).to.have.css('display', 'table-cell');"
+        },
+        {
+            "title": "Добавьте в таблицу ещё одну строку с четырьмя ячейками.",
+            "name": "addOneMoreRowWith4Cells",
+            "expect": "expect(document.querySelectorAll('.row:nth-child(3) .cell')).to.have.length(4);"
+        },
+        {
+            "title": "Задайте для элемента с классом `table` нулевые внутренние отступы.",
+            "name": "setTablePaddingTo0",
+            "expect": "expect(document.querySelectorAll('.table')).to.have.css('padding', '0');"
+        },
+        {
+            "title": "Добавьте для элемента с классом `table` свойство `border-spacing: 5px;`",
+            "name": "setTableBorderSpacingTo5Px",
+            "expect": "expect(document.querySelectorAll('.table')).to.have.css('borderSpacing', '5px');"
+        }
+    ]
+}
+
+
+

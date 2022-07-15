@@ -3,16 +3,138 @@
     "title": "Document Block Model",
     "tasks": [
         {
+            "id": 1,
+            "type": "task",
+            "entry": "/resources/18/tasks/1/task.json",
+            "name": "block-box"
+        }, 
+        {
+            "id": 2,
+            "type": "task",
+            "entry": "/resources/18/tasks/2/task.json",
+            "name": "inline-box"
+        }, 
+        {
+            "id": 3,
+            "type": "task",
+            "entry": "/resources/18/tasks/3/task.json",
+            "name": "width-and-height"
+        }, 
+        {
+            "id": 4,
+            "type": "task",
+            "entry": "/resources/18/tasks/4/task.json",
+            "name": "padding"
+        }, 
+        {
+            "id": 5,
+            "type": "task",
+            "entry": "/resources/18/tasks/5/task.json",
+            "name": "margin"
+        }, 
+        {
+            "id": 6,
+            "type": "task",
+            "entry": "/resources/18/tasks/6/task.json",
+            "name": "borders"
+        }, 
+        {
+            "id": 7,
+            "type": "task",
+            "entry": "/resources/18/tasks/7/task.json",
+            "name": "standard-block-model"
+        }, 
+        {
             "id": 8,
             "type": "challenge",
             "entry": "/resources/18/tasks/8/task.json",
             "name": "the-first-challenge"
-        }, {
+        }, 
+        {
+            "id": 9,
+            "type": "task",
+            "entry": "/resources/18/tasks/9/task.json",
+            "name": "margin-collapsing"
+        }, 
+        {
+            "id": 10,
+            "type": "task",
+            "entry": "/resources/18/tasks/10/task.json",
+            "name": "margin-falling-out"
+        }, 
+        {
+            "id": 11,
+            "type": "task",
+            "entry": "/resources/18/tasks/11/task.json",
+            "name": "aligning-element"
+        }, 
+        {
+            "id": 12,
+            "type": "task",
+            "entry": "/resources/18/tasks/12/task.json",
+            "name": "inline-elements-and-block-model"
+        }, 
+        {
+            "id": 13,
+            "type": "task",
+            "entry": "/resources/18/tasks/13/task.json",
+            "name": "width-100-perc-and-auto"
+        }, 
+        {
+            "id": 14,
+            "type": "task",
+            "entry": "/resources/18/tasks/14/task.json",
+            "name": "width-100-perc-caveats"
+        }, 
+        {
+            "id": 15,
+            "type": "task",
+            "entry": "/resources/18/tasks/15/task.json",
+            "name": "box-sizing"
+        }, 
+        {
             "id": 16,
             "type": "challenge",
             "entry": "/resources/18/tasks/16/task.json",
             "name": "the-second-challenge"
-        }, {
+        }, 
+        {
+            "id": 17,
+            "type": "task",
+            "entry": "/resources/18/tasks/17/task.json",
+            "name": "display"
+        }, 
+        {
+            "id": 18,
+            "type": "task",
+            "entry": "/resources/18/tasks/18/task.json",
+            "name": "display-inline-block"
+        }, 
+        {
+            "id": 19,
+            "type": "task",
+            "entry": "/resources/18/tasks/19/task.json",
+            "name": "display-table"
+        }, 
+        {
+            "id": 20,
+            "type": "task",
+            "entry": "/resources/18/tasks/20/task.json",
+            "name": "display-table-row"
+        }, 
+        {
+            "id": 21,
+            "type": "task",
+            "entry": "/resources/18/tasks/21/task.json",
+            "name": "display-table-cell"
+        }, 
+        {
+            "id": 22,
+            "type": "task",
+            "entry": "/resources/18/tasks/22/task.json",
+            "name": "display-none"
+        }, 
+        {
             "id": 23,
             "type": "challenge",
             "entry": "/resources/18/tasks/23/task.json",

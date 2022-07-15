@@ -1,0 +1,15 @@
+{
+    "assertions": [
+        {
+            "title": "Добавьте на страницу два `<p>`",
+            "name": "addTwoPsToPage",
+            "expect": "expect(document.querySelectorAll('p')).to.have.length(2);"
+        },
+        {
+            "title": "и два `<div>`.",
+            "name": "addTwoDivsToPage",
+            "expect": "expect(document.querySelectorAll('div')).to.have.length(3);"
+        }
+    ]
+}
+

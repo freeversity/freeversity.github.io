@@ -1,0 +1,21 @@
+body {
+  padding: 20px;
+}
+
+.column {
+  margin-bottom: 20px;
+  margin-right: 20px;
+  padding: 10px;
+}
+
+.column-1 {
+  height: 40px;
+}
+
+.column-2 {
+  height: 60px;
+}
+
+.column-3 {
+  height: 80px;
+}

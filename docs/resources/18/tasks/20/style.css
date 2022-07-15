@@ -1,0 +1,21 @@
+div {
+  margin: 5px;
+  padding: 5px;
+  border: 1px dotted white;
+}
+
+.table {
+  display: table;
+  background-color: #d9edf7;
+  border-color: #3a87ad;
+}
+
+.row {
+  background-color: #f2dede;
+  border-color: #b94a48;
+}
+
+.cell {
+  background-color: #fbeed5;
+  border-color: #c09853;
+}

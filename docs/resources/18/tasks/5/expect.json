@@ -1,0 +1,23 @@
+{
+    "intro": "setMarginsToMs",
+    "introTitle": "Добавьте в указанные CSS-правила свойство `margin`:",
+    "assertions": [
+        {
+            "title": "для класса `m1` — `margin: 10px;`,",
+            "name": "setM1MarginTo10Px",
+            "expect": "expect(document.querySelector('.m1')).to.have.css('margin', '10px');"
+        },
+        {
+            "title": "для класса `m2` — `margin: 10px 20px;`,",
+            "name": "setM2MarginTo10Px20Px",
+            "expect": "expect(document.querySelector('.m2')).to.have.css('margin', '10px 20px');"
+        },
+        {
+            "title": "для класса `m3` — `margin: 10px 20px 30px;`.",
+            "name": "setM3MarginTo10Px20Px30Px",
+            "expect": "expect(document.querySelector('.m3')).to.have.css('margin', '10px 20px 30px');"
+        }
+    ],
+    "footnote": "noticeInlineElementsBehaviour",
+    "footnoteTitle": "Обратите внимание на поведение строчных элементов."
+}

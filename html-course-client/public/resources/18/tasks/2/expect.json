@@ -1,0 +1,14 @@
+{
+    "assertions": [
+        {
+            "title": "Добавьте на страницу два `em`",
+            "name": "addTwoEmsToPage",
+            "expect": "expect(document.querySelectorAll('em')).to.have.length(4);"
+        },
+        {
+            "title": "и два `span` с текстом.",
+            "name": "addTwoSpansToPage",
+            "expect": "expect(document.querySelectorAll('span')).to.have.length(4);"
+        }
+    ]
+}

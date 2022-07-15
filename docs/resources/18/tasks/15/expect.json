@@ -1,0 +1,9 @@
+{
+    "assertions": [
+        {
+            "title": "Задайте полям формы свойство `box-sizing` со значением `border-box`.",
+            "name": "setFormInputsBoxSizingToBorderBox",
+            "expect": "expect(document.querySelectorAll('input[type=\"text\"]')).to.have.css('boxSizing', 'border-box');"
+        }
+    ]
+}

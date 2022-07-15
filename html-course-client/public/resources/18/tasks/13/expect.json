@@ -1,0 +1,18 @@
+{
+    "assertions": [
+        {
+            "title": "Задайте элементам с классом `block-1` внутренние отступы размером `20px`.",
+            "name": "setBlock1PaddingTo20Px",
+            "expect": "expect(document.querySelectorAll('.block-1')).to.have.css('padding', '20px');"
+        },
+        {
+            "title": "И элементам с классом `block-2` внутренние отступы размером `20px`.",
+            "name": "setBlock2PaddingTo20Px",
+            "expect": "expect(document.querySelectorAll('.block-2')).to.have.css('padding', '20px');"
+        }
+    ],
+    "footnote": "considerBlockWidthChanging",
+    "footnoteTitle": "Обратите внимание, как изменилась ширина блоков."
+}
+
+

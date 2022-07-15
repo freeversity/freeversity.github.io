@@ -1,0 +1,15 @@
+{
+    "assertions": [
+        {
+            "title": "Задайте блоку ширину `100px`.",
+            "name": "setBlockWidthTo100Px",
+            "expect": "expect(document.querySelector('.block')).to.have.css('width', '100px');"
+        },
+        {
+            "title": "Отцентруйте блок.",
+            "name": "centerTheBlock",
+            "expect": "expect(document).to.have.cssRule('.block', 'marginLeft', 'auto');expect(document).to.have.cssRule('.block', 'marginRight', 'auto');"
+        }
+    ]
+}
+

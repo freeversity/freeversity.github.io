@@ -1,0 +1,9 @@
+{
+    "assertions": [
+        {
+            "title": "Измените тип бокса элемента с классом `row` на тип _строка таблицы_.",
+            "name": "setRowDisplayToTableRow",
+            "expect": "expect(document.querySelectorAll('.row')).to.have.css('display', 'table-row');"
+        }
+    ]
+}

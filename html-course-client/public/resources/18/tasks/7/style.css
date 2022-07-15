@@ -1,0 +1,15 @@
+.block {
+  width: 100px;
+  height: 40px;
+  margin: 20px;
+}
+
+.block2 {
+
+}
+
+.block3 {
+  border-width: 0;
+  border-style: solid;
+  border-color: #6a6a6a;
+}

@@ -1,0 +1,23 @@
+{
+    "intro": "setPaddingsToPs",
+    "introTitle": "Добавьте в указанные CSS-правила свойство `padding`:",
+    "assertions": [
+        {
+            "title": "для класса `p1` — `padding: 10px;`,",
+            "name": "setP1PaddingTo10Px",
+            "expect": "expect(document.querySelector('.p1')).to.have.css('padding', '10px');"
+        },
+        {
+            "title": "для класса `p2` — `padding: 10px 20px;`,",
+            "name": "setP2PaddingTo10Px20Px",
+            "expect": "expect(document.querySelector('.p2')).to.have.css('padding', '10px 20px');"
+        },
+        {
+            "title": "для класса `p3` — `padding: 10px 20px 30px;`.",
+            "name": "setP3PaddingTo10Px20Px30Px",
+            "expect": "expect(document.querySelector('.p3')).to.have.css('padding', '10px 20px 30px');"
+        }
+    ],
+    "footnote": "noticeInlineElementsBehaviour",
+    "footnoteTitle": "Обратите внимание на поведение строчных элементов."
+}

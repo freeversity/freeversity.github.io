@@ -1,0 +1,21 @@
+{
+    "intro": "setEmPropsTo",
+    "introTitle": "Для тега `em` задайте следующие свойства:",
+    "assertions": [
+        {
+            "title": "`padding: 10px;`,",
+            "name": "setEmPaddingTo10Px",
+            "expect": "expect(document.querySelectorAll('em')).to.have.css('padding', '10px');"
+        },
+        {
+            "title": "`margin: 10px;`,",
+            "name": "setEmMarginTo10Px",
+            "expect": "expect(document.querySelectorAll('em')).to.have.css('margin', '10px');"
+        },
+        {
+            "title": "`border-width: 2px`;",
+            "name": "setEmBorderWidthTo2Px",
+            "expect": "expect(document.querySelectorAll('em')).to.have.css('borderWidth', '2px');"
+        }
+    ]
+}

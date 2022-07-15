@@ -1,0 +1,18 @@
+{
+    "assertions": [
+        {
+            "title": "Задайте элементам с классом `example` ширину `100px`",
+            "name": "setExamplesWidthTo100Px",
+            "expect": "expect(document.querySelectorAll('.example')).to.have.css('width', '100px');"
+        },
+        {
+            "title": "и высоту `100px`.",
+            "name": "setExamplesHeightTo100Px",
+            "expect": "expect(document.querySelectorAll('.example')).to.have.css('height', '100px');"
+        }
+    ],
+    "footnote": "noticeSpanBehaviour",
+    "footnoteTitle": "Обратите внимание на «выпадание» текста и поведение тега `span`."
+}
+
+

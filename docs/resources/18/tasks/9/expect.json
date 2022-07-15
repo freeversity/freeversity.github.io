@@ -1,0 +1,20 @@
+{
+    "intro": "setMarginsToBlocks",
+    "introTitle": "Задайте внешние отступы для блоков:",
+    "assertions": [
+        {
+            "title": "первому блоку задайте нижний отступ размером `20px;`",
+            "name": "setFirstBlockMarginBottomTo20Px",
+            "expect": "expect(document.querySelector('.block-1')).to.have.css('marginBottom', '20px');"
+        },
+        {
+            "title": "второму блоку задайте верхний отступ размером `40px`.",
+            "name": "setSecondBlockMarginTopTo40Px",            
+            "expect": "expect(document.querySelector('.block-2')).to.have.css('marginTop', '40px');"
+
+        }
+    ]
+}
+
+
+

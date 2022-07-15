@@ -1,0 +1,29 @@
+{
+    "assertions": [
+        {
+            "title": "Скройте элемент с классом `row-2` с помощью `display`.",
+            "name": "setRow2WithDisplayToNone",
+            "expect": "expect(document.querySelector('.row-2')).to.have.css('display', 'none');expect(document.querySelector('.row:not(.row-2)')).not.to.have.css('display', 'none');"
+        },
+        {
+            "title": "Затем удалите у row-2 свойство display и скройте элемент с помощью `visibility`.",
+            "name": "setRow2VisibilityToHidden",
+            "expect": "expect(document.querySelector('.row-2')).to.have.css('visibility', 'hidden');expect(document.querySelector('.row-2')).not.to.have.css('display', 'none');"
+        },
+        {
+            "title": "Скройте элемент с классом `cell-3-1` с помощью `display`.",
+            "name": "setCell31DisplayToNone",
+            "expect": "expect(document.querySelector('.cell-3-1')).to.have.css('display', 'none');;expect(document.querySelector('.cell:not(.cell-3-1)')).not.to.have.css('display', 'none');"
+        },
+        {
+            "title": "Затем удалите у `cell-3-1` свойство `display` и скройте элемент с помощью `visibility`.",
+            "name": "setCell31VisibilityToHidden",
+            "expect": "expect(document.querySelector('.cell-3-1')).to.have.css('visibility', 'hidden');expect(document.querySelector('.cell-3-1')).not.to.have.css('display', 'none');"
+        }
+    ],
+    "strict": true
+}
+
+
+
+
