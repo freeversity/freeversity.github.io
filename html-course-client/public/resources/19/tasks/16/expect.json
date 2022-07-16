@@ -1,0 +1,17 @@
+{
+    "assertions": [
+        {
+            "title": "Добавьте диву с классом `columns-container` класс `clearfix`.",
+            "name": "addColumnsContainerClassClearfix",
+            "expect": "expect(document.querySelector('.columns-container')).to.have.class('clearfix');"
+        },
+        {
+            "title": "Затем замените класс `clearfix` на `clearfix-visible`, чтобы увидеть псевдоэлемент-распорку.",
+            "name": "replaceClearfixClasWithClearfixVisible",
+            "expect": "expect(document.querySelector('.columns-container')).not.to.have.class('clearfix');expect(document.querySelector('.columns-container')).to.have.class('clearfix-visible');"
+        }
+    ],
+    "strict": true
+}
+
+

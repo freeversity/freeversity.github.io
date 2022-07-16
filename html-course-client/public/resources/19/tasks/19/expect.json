@@ -1,0 +1,20 @@
+{
+    "assertions": [
+        {
+            "title": "Задайте для `.content` маргин слева `170px`.",
+            "name": "setContentMarginLeftTo170Px",
+            "expect": "expect(document.querySelector('.content')).to.have.css('marginLeft', '170px');"
+        },
+        {
+            "title": "Измените ширину `.wrapper` на `350px`,",
+            "name": "setWrapperWidthTo350Px",
+            "expect": "expect(document.querySelector('.wrapper')).to.have.css('width', '350px');"
+        },
+        {
+            "title": "а затем на `550px`.",
+            "name": "setWrapperWidthTo550Px",
+            "expect": "expect(document.querySelector('.wrapper')).to.have.css('width', '550px');"
+        }
+    ],
+    "strict": true
+}

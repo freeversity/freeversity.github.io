@@ -1,0 +1,24 @@
+{
+    "assertions": [
+        {
+            "title": "`.block1` задайте флоат влево, маргин справа `10px`.",
+            "name": "setBlock1FloatToLeftAndMarginRightTo10Px",
+            "expect": "expect(document.querySelector('.block1')).to.have.css('float', 'left');expect(document.querySelector('.block1')).to.have.css('marginRight', '10px');"
+        },
+        {
+            "title": "А затем `.block1` задайте высоту `100px`.",
+            "name": "setBlock1HeightTo100Px",
+            "expect": "expect(document.querySelector('.block1')).to.have.css('height', '100px');"
+        },
+        {
+            "title": "`.block2` задайте флоат влево.",
+            "name": "setBlock2FloatToLeft",
+            "expect": "expect(document.querySelector('.block2')).to.have.css('float', 'left');"
+        },
+        {
+            "title": "`.block3` задайте флоат вправо.",
+            "name": "setBlock3FloatToRight",
+            "expect": "expect(document.querySelector('.block3')).to.have.css('float', 'right');"
+        }
+    ]
+}

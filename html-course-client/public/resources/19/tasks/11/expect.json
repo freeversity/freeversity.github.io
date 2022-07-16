@@ -1,0 +1,24 @@
+{
+    "assertions": [
+        {
+            "title": "Последовательно задайте блокам `1-3` флоат влево.",
+            "name": "setBlock1To3FloatToLeft",
+            "expect": "expect(document.querySelectorAll('.block1, .block2, .block3')).to.have.css('float', 'left');"
+        },
+        {
+            "title": "А блокам `4-6` флоат вправо.",
+            "name": "setBlock4To6FloatToRight",
+            "expect": "expect(document.querySelectorAll('.block4, .block5, .block6')).to.have.css('float', 'right');"
+        },
+        {
+            "title": "Блокам `1` и `2` задайте маргин справа `10px`",
+            "name": "setBlock1And2MarginRightTo10Px",
+            "expect": "expect(document.querySelectorAll('.block1, .block2')).to.have.css('marginRight', '10px');expect(document.querySelectorAll('.block3')).not.to.have.css('marginRight', '10px');"
+        },
+        {
+            "title": "Блокам `4` и `5` задайте маргин слева `10px`",
+            "name": "setBlock4And5MarginLeftTo10Px",
+            "expect": "expect(document.querySelectorAll('.block4, .block5')).to.have.css('marginLeft', '10px');expect(document.querySelectorAll('.block6')).not.to.have.css('marginLeft', '10px');"
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "assertions": [
+        {
+            "title": "Задайте для колонок внутри `.features` маргин справа `20px`.",
+            "name": "setFeaturesColumnMarginRightTo20Px",
+            "expect": "expect(document.querySelectorAll('.features .layout-column')).to.have.css('marginRight', '20px');"
+        },
+        {
+            "title": "Затем обнулите маргин справа у последней колонки внутри `.features`.",
+            "name": "setLastFeaturesColumnMarginRightTo0",
+            "expect": "expect(document.querySelector('.features .layout-column:last-of-type')).to.have.css('marginRight', '0');expect(document.querySelectorAll('.features .layout-column:not(:last-of-type)')).to.have.css('marginRight', '20px');"
+        }
+    ],
+    "strict": true
+}
+
+

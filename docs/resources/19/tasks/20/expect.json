@@ -1,0 +1,22 @@
+{
+    "assertions": [
+        {
+            "title": "Задайте первой колонке в `.header` флоат влево и ширину `280px`,",
+            "name": "setFirstHeaderColumnFloatToLeftAndWidthTo280Px",
+            "expect": "expect(document.querySelector('.header .layout-column-1')).to.have.css('float', 'left');expect(document.querySelector('.header .layout-column-1')).to.have.css('width', '280px');"
+        },
+        {
+            "title": "второй колонке в `.header` флоат вправо и ширину `130px`.",
+            "name": "setSecondHeaderColumnFloatToRightAndWidthTo130Px",
+            "expect": "expect(document.querySelector('.header .layout-column-2')).to.have.css('float', 'right');expect(document.querySelector('.header .layout-column-2')).to.have.css('width', '130px');"
+        },
+        {
+            "title": "Добавьте элементу с классом `header` класс `clearfix`.",
+            "name": "addClearFixClassToHeader",
+            "expect": "expect(document.querySelector('.header')).to.have.class('clearfix');"
+        }
+    ]
+}
+
+
+

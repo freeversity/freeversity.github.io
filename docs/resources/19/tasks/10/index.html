@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>float и выпадание из потока</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="setting.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Прохождение сквозь блоки</h1>
+      <div class="block block1">
+        .block1
+      </div>
+      <p>Следующие за float'ным <em>блочные</em> боксы подтягиваются вверх и занимают его место, как если бы float'нутого бокса в потоке не было.</p>
+      <p><em>Строчные</em> же боксы внутри подвинувшихся наверх блоков начинают обтекать float'нутый бокс со свободной стороны.</p>
+
+      <h1>Выпадание из родителя</h1>
+      <div class="columns-container">
+        <div class="block block2">
+          .block2<br>
+          Первая колонка
+        </div>
+        <div class="block block3">
+          .block3
+          Вторая колонка
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

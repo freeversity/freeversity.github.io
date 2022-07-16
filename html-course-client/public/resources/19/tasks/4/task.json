@@ -1,0 +1,8 @@
+{
+    "id": 4,      
+    "name": "creating-new-document-flow",
+    "htmlEntry": "index.html",
+    "cssEntry": "style.css",
+    "articleEntry": "article.md",
+    "expectEntry": "expect.json"
+}

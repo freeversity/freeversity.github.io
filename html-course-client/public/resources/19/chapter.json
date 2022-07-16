@@ -3,16 +3,193 @@
     "title": "Grids",
     "tasks": [
         {
+            "id": 1,
+            "type": "task",
+            "entry": "/resources/19/tasks/1/task.json",
+            "name": "managing-document-flow"
+        }, 
+        {
+            "id": 2,
+            "type": "task",
+            "entry": "/resources/19/tasks/2/task.json",
+            "name": "managing-document-flow-step-2"
+        }, 
+        {
+            "id": 3,
+            "type": "task",
+            "entry": "/resources/19/tasks/3/task.json",
+            "name": "managing-document-flow-step-3"
+        }, 
+        {
+            "id": 4,
+            "type": "task",
+            "entry": "/resources/19/tasks/4/task.json",
+            "name": "creating-new-document-flow"
+        }, 
+        {
+            "id": 5,
+            "type": "task",
+            "entry": "/resources/19/tasks/5/task.json",
+            "name": "creating-new-document-flow-step-2"
+        }, 
+        {
+            "id": 6,
+            "type": "task",
+            "entry": "/resources/19/tasks/6/task.json",
+            "name": "creating-new-document-flow-step-3"
+        }, 
+        {
+            "id": 7,
+            "type": "task",
+            "entry": "/resources/19/tasks/7/task.json",
+            "name": "creating-new-document-flow-final-step"
+        }, 
+        {
+            "id": 8,
+            "type": "task",
+            "entry": "/resources/19/tasks/8/task.json",
+            "name": "float-prop"
+        }, 
+        {
+            "id": 9,
+            "type": "task",
+            "entry": "/resources/19/tasks/9/task.json",
+            "name": "float-and-width"
+        }, 
+        {
+            "id": 10,
+            "type": "task",
+            "entry": "/resources/19/tasks/10/task.json",
+            "name": "float-and-falling-out-flow"
+        }, 
+        {
+            "id": 11,
+            "type": "task",
+            "entry": "/resources/19/tasks/11/task.json",
+            "name": "float-next-to-float"
+        }, 
+        {
+            "id": 12,
+            "type": "task",
+            "entry": "/resources/19/tasks/12/task.json",
+            "name": "to-many-floats"
+        }, 
+        {
             "id": 13,
             "type": "challenge",
             "entry": "/resources/19/tasks/13/task.json",
             "name": "float-puzzle"
-        }, {
+        }, 
+        {
+            "id": 14,
+            "type": "task",
+            "entry": "/resources/19/tasks/14/task.json",
+            "name": "clear-prop"
+        }, 
+        {
+            "id": 15,
+            "type": "task",
+            "entry": "/resources/19/tasks/15/task.json",
+            "name": "fixing-float-falling-out-with-clear-both"
+        }, 
+        {
+            "id": 16,
+            "type": "task",
+            "entry": "/resources/19/tasks/16/task.json",
+            "name": "fixing-float-falling-out-with-pseudo-clear-both"
+        }, 
+        {
+            "id": 17,
+            "type": "task",
+            "entry": "/resources/19/tasks/17/task.json",
+            "name": "simplest-grid-1"
+        }, 
+        {
+            "id": 18,
+            "type": "task",
+            "entry": "/resources/19/tasks/18/task.json",
+            "name": "simplest-grid-2"
+        }, 
+        {
+            "id": 19,
+            "type": "task",
+            "entry": "/resources/19/tasks/19/task.json",
+            "name": "simplest-grid-final"
+        }, 
+        {
+            "id": 20,
+            "type": "task",
+            "entry": "/resources/19/tasks/20/task.json",
+            "name": "more-complex-grid-1"
+        }, 
+        {
+            "id": 21,
+            "type": "task",
+            "entry": "/resources/19/tasks/21/task.json",
+            "name": "more-complex-grid-2"
+        }, 
+        {
+            "id": 22,
+            "type": "task",
+            "entry": "/resources/19/tasks/22/task.json",
+            "name": "more-complex-grid-3"
+        }, 
+        {
+            "id": 23,
+            "type": "task",
+            "entry": "/resources/19/tasks/23/task.json",
+            "name": "more-complex-grid-adding-content"
+        }, 
+        {
+            "id": 24,
+            "type": "task",
+            "entry": "/resources/19/tasks/24/task.json",
+            "name": "last-grid-1"
+        }, 
+        {
+            "id": 25,
+            "type": "task",
+            "entry": "/resources/19/tasks/25/task.json",
+            "name": "last-grid-2"
+        }, 
+        {
+            "id": 26,
+            "type": "task",
+            "entry": "/resources/19/tasks/26/task.json",
+            "name": "last-grid-finished"
+        }, 
+        {
             "id": 27,
             "type": "challenge",
             "entry": "/resources/19/tasks/27/task.json",
             "name": "buiilding-a-grid"
-        }, {
+        }, 
+
+        {
+            "id": 28,
+            "type": "task",
+            "entry": "/resources/19/tasks/28/task.json",
+            "name": "advanced-inline-block"
+        }, 
+        {
+            "id": 29,
+            "type": "task",
+            "entry": "/resources/19/tasks/29/task.json",
+            "name": "float-vs-inline-block"
+        }, 
+        {
+            "id": 30,
+            "type": "task",
+            "entry": "/resources/19/tasks/30/task.json",
+            "name": "inline-block-simple-grid"
+        }, 
+        {
+            "id": 31,
+            "type": "task",
+            "entry": "/resources/19/tasks/31/task.json",
+            "name": "inline-block-and-spaces"
+        }, 
+        {
             "id": 32,
             "type": "challenge",
             "entry": "/resources/19/tasks/32/task.json",

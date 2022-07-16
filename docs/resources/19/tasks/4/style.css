@@ -1,0 +1,15 @@
+.container {
+  width: 300px;
+  margin: 10px auto;
+}
+
+.block {
+  margin-bottom: 10px;
+  padding: 10px;
+  color: #cc0000;
+  background-color: rgba(255, 234, 171, 0.5);
+  border: 2px dashed #cccccc;
+}
+
+.column1 {
+}

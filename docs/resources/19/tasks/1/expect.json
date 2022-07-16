@@ -1,0 +1,22 @@
+{
+    "intro": "setColumn1Props",
+    "introTitle": "Для блока `.column1` задайте:",
+    "assertions": [
+        {
+            "title": "свойство `float` со значением `left`;",
+            "name": "setColumn1FloatToLeft",
+            "expect": "expect(document.querySelector('.column1')).to.have.css('float', 'left');"
+        },
+        {
+            "title": "ширину `120px`;",
+            "name": "setColumn1WidthTo120Px",
+            "expect": "expect(document.querySelector('.column1')).to.have.css('width', '120px');"
+        },
+        {
+            "title": "минимальную высоту `50px`.",
+            "name": "setColumn1MinHeightTo50Px",
+            "expect": "expect(document.querySelector('.column1')).to.have.css('minHeight', '50px');"
+        }
+    ]
+}
+

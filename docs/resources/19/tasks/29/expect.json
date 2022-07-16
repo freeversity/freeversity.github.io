@@ -1,0 +1,32 @@
+{
+    "introTitle": "У элементов с классом `.block`:",
+    "intro": "setBlockProps",
+    "assertions": [
+        {
+            "title": "отключите режим обтекания,",
+            "name": "removeBlocksFloating",
+            "expect": "expect(document.querySelectorAll('.block')).to.have.css('float', 'none');"
+        },
+        {
+            "title": "поменяйте тип на блочно-строчный,",
+            "name": "setBlockDisplayToInlineBlock",
+            "expect": "expect(document.querySelectorAll('.block')).to.have.css('display', 'inline-block');"
+        },
+        {
+            "title": "установите вертикальное выравнивание по верхнему краю.",
+            "name": "setBlockVerticalAlignToTop",
+            "expect": "expect(document.querySelectorAll('.block')).to.have.css('verticalAlign', 'top');"
+        },
+        {
+            "title": "Затем увеличьте маргин снизу до 20px.",
+            "name": "setBlockMarginBottomTo20Px",
+            "expect": "expect(document.querySelectorAll('.block')).to.have.css('marginBottom', '0 10px 20px 0');"
+        }
+    ]
+}
+
+
+
+
+
+

@@ -1,0 +1,16 @@
+{
+    "assertions": [
+        {
+            "title": "Задайте сайдбару флоат влево.",
+            "name": "setSidebarFloatToLeft",
+            "expect": "expect(document.querySelector('.sidebar')).to.have.css('float', 'left');"
+        },
+        {
+            "title": "Задайте сайдбару ширину 150px.",
+            "name": "setSidebarWidthTo150px",
+            "expect": "expect(document.querySelector('.sidebar')).to.have.css('width', '150px');"
+        }
+    ]
+}
+
+

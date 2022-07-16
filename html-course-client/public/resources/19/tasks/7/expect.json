@@ -1,0 +1,14 @@
+{
+    "intro": "finalStep",
+    "introTitle": "Финальный и самый сложный шаг.",
+    "assertions": [
+        {
+            "title": "Для блока `.footer` задайте свойство `clear` со значением `both`.`",
+            "name": "setFooterClearToBoth",
+            "expect": "expect(document.querySelector('.footer')).to.have.css('clear', 'both');"
+        }
+    ]
+}
+
+
+

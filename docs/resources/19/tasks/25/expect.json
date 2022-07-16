@@ -1,0 +1,16 @@
+{
+    "assertions": [
+        {
+            "title": "Задайте для `.layout-positioner` ширину `430px` и автоматические горизонтальные отступы.",
+            "name": "setLayoutPositionerWidthTo430PxAndMarghHorizontalToAuto",
+            "expect": "expect(document.querySelectorAll('layout-positioner')).to.have.css('width', '430px');expect(document).to.have.cssRule('.layout-positioner', 'marginLeft', 'auto');expect(document).to.have.cssRule('.layout-positioner', 'marginRight', 'auto');"
+        },
+        {
+            "title": "Удалите лишний класс clearfix у хедера, футера и блока особенностей.",
+            "name": "removeClearfixFromHeaderFooterAndFeatures",
+            "expect": "expect(document.querySelector('.header')).not.to.have.class('clearfix');expect(document.querySelector('.features')).not.to.have.class('clearfix');expect(document.querySelector('.footer')).not.to.have.class('clearfix');"
+        }
+    ]
+}
+
+

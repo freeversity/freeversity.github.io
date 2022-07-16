@@ -1,0 +1,28 @@
+{
+    "assertions": [
+        {
+            "title": "Удалите в HTML-коде блок с классом `wrapper`.",
+            "name": "removeWrapperBlock",
+            "expect": "expect(document.querySelectorAll('body > div')).to.have.length(3);"
+        },
+        {
+            "title": "Оберните содержимое блока `header` в `div` с классом `layout-positioner`.",
+            "name": "wrapHeaderContentWidthDivLayoutPositioner",
+            "expect": "expect(document.querySelectorAll('.header > .layout-positioner > .layout-column')).to.have.length(2);"
+        },
+        {
+            "title": "Повторите эту же операцию для блоков `features`",
+            "name": "wrapFeaturesContentWidthDivLayoutPositioner",
+            "expect": "expect(document.querySelectorAll('.features > .layout-positioner > .layout-column')).to.have.length(3);"
+        },
+        {
+            "title": "и `footer`.",
+            "name": "wrapFooterContentWidthDivLayoutPositioner",
+            "expect": "expect(document.querySelectorAll('.footer > .layout-positioner')).to.have.rendered.text('Футер');"
+        }
+    ]
+}
+
+
+
+

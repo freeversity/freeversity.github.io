@@ -1,0 +1,23 @@
+{
+    "assertions": [
+        {
+            "title": "**1 способ:** задайте для `.catalog` нулевой размер шрифта,",
+            "name": "setCatalogFontSizeTo0",
+            "expect": "expect(document.querySelector('.catalog')).to.have.css('fontSize', '0');"
+        },
+        {
+            "title": "а для `.item` размер шрифта `16px`, убедитесь, что маргин справа для него равен `20px`.",
+            "name": "ssetItemFontSizeTo16PxAndMarginRightTo20Px",
+            "expect": "expect(document.querySelectorAll('.item')).to.have.css('fontSize', '16px');expect(document.querySelectorAll('.item:not(:nth-child(3n))')).to.have.css('marginRight', '20px');"
+        },
+        {
+            "title": "**2 способ**: верните `.catalog` размер шрифта `16px` и уменьшите у `.item` маргин справа до `15px`.",
+            "name": "setCatalogFontSizeTo16PxAndSetItemMarginRightTo15Px",
+            "expect": "expect(document.querySelector('.catalog')).to.have.css('fontSize', '16px');expect(document.querySelectorAll('.item:not(:nth-child(3n))')).to.have.css('marginRight', '15px');"
+        }
+    ],
+    "strict": true
+}
+
+
+

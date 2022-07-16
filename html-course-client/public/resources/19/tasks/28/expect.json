@@ -1,0 +1,28 @@
+{
+    "assertions": [
+        {
+            "title": "Задайте элементам с классом `block` блочно-строчный тип.",
+            "name": "setBlockDisplayToInlineBlock",
+            "expect": "expect(document.querySelectorAll('.block')).to.have.css('display', 'inline-block');"
+        },
+        {
+            "title": "Затем задайте контейнеру _горизонтальное_ выравнивание текста по центру,",
+            "name": "setContainerTextAlignToCenter",
+            "expect": "expect(document.querySelector('.container')).to.have.css('textAlign', 'center');"
+        },
+        {
+            "title": "а блокам выравнивание текста по левому краю.",
+            "name": "setBlockTextAlignToLeft",
+            "expect": "expect(document.querySelectorAll('.block')).to.have.css('textAlign', 'left');"
+        },
+        {
+            "title": "Задайте блокам _вертикальное_ выравнивание посередине: `middle`.",
+            "name": "setBlockVerticalAlignToMiddle",
+            "expect": "expect(document.querySelectorAll('.block')).to.have.css('verticalAlign', 'middle');"
+        }
+    ]
+}
+
+
+
+

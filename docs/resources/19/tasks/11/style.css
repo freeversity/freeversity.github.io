@@ -1,0 +1,20 @@
+h1 {
+  margin-top: 0;
+  font-size: 20px;
+}
+
+.container {
+  width: 400px;
+  min-height: 100px; /* прячем эффект выпадания флоатов */
+  margin: 20px auto;
+  padding: 10px;
+  box-shadow: 0 0 2px #cccccc;
+}
+
+.block {
+  margin-bottom: 10px;
+  padding: 10px;
+  color: white;
+  background-color: #3498db;
+  border: 2px solid #34495e;
+}

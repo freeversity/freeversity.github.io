@@ -1,0 +1,8 @@
+{
+    "id": 26,      
+    "name": "last-grid-finished",
+    "htmlEntry": "index.html",
+    "cssEntry": "style.css",
+    "articleEntry": "article.md",
+    "expectEntry": "expect.json"
+}

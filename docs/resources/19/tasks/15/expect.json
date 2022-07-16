@@ -1,0 +1,23 @@
+{
+    "assertions": [
+        {
+            "title": "Добавьте внутрь дива с классом `columns-container` див-распорку с классом `clearfix`.",
+            "name": "addDivClearfixIntoColumnsContainer",
+            "expect": "expect(document.querySelector('.columns-container .clearfix:last-child')).to.exist;"
+        },
+        {
+            "title": "Задайте для `.clearfix` запрет на обтекание с обеих сторон,",
+            "name": "setClearFixClearToBoth",
+            "expect": "expect(document.querySelector('.clearfix')).to.have.css('clear', 'both');"
+        },
+        {
+            "title": "а затем задайте `.clearfix` нулевую высоту.",
+            "name": "setClearFixHeightTo0",
+            "expect": "expect(document.querySelector('.clearfix')).to.have.css('height', '0');"
+        }
+    ],
+    "strict": true
+}
+
+
+

@@ -1,0 +1,35 @@
+{
+    "assertions": [
+        {
+            "title": "`.block1` задайте ширину `200px`.",
+            "name": "setBlock1WidthTo200Px",
+            "expect": "expect(document.querySelector('.block1')).to.have.css('width', '200px');"
+        },
+        {
+            "title": "`.block4` задайте маргин слева `30px`.",
+            "name": "setBlock4MarrginLeftTo30Px",
+            "expect": "expect(document.querySelector('.block4')).to.have.css('marginLeft', '30px');"
+        },
+        {
+            "title": "Задайте высоту `50px` для `.block1` и `.block4`.",
+            "name": "setBlock1AndBlock4HeightTo50Px",
+            "expect": "expect(document.querySelectorAll('.block1, .block4')).to.have.css('height', '50px');expect(document.querySelectorAll('.block:not(.block1):not(.block4)')).not.to.have.css('height', '50px');"
+        },
+        {
+            "title": "`.block6` задайте ширину `200px`.",
+            "name": "setBlock6WidthTo200Px",
+            "expect": "expect(document.querySelector('.block6')).to.have.css('width', '200px');"
+        },
+        {
+            "title": "А потом увеличьте её до `300px`.",
+            "name": "increaseBlock6WidthTo300px",
+            "expect": "expect(document.querySelector('.block6')).to.have.css('width', '300px');"
+        }
+    ],
+    "strict": true
+}
+
+
+
+
+

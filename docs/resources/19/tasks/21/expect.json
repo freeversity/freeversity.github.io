@@ -1,0 +1,14 @@
+{
+    "assertions": [
+        {
+            "title": "Задайте для колонок внутри `.features` флоат влево и ширину `130px`.",
+            "name": "setFeaturesColumnsFloatToLeftAndWidthTo130Px",
+            "expect": "expect(document.querySelectorAll('.features .layout-column')).to.have.css('float', 'left');expect(document.querySelectorAll('.features .layout-column')).to.have.css('width', '130px');"
+        },
+        {
+            "title": "Добавьте элементу с классом features класс `clearfix`.",
+            "name": "addClearfixClassToFeatures",
+            "expect": "expect(document.querySelector('.features')).to.have.class('clearfix');"
+        }
+    ]
+}

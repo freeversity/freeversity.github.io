@@ -1,0 +1,22 @@
+{
+    "assertions": [
+        {
+            "title": "`.block1` и изображению задайте флоат влево.",
+            "name": "setBlock1AndImgFloatToLeft",
+            "expect": "expect(document.querySelectorAll('.block1, img')).to.have.css('float', 'left');"
+        },
+        {
+            "title": "`.block2` задайте флоат вправо.",
+            "name": "setBlock2FloatToRight",
+            "expect": "expect(document.querySelector('.block2')).to.have.css('float', 'right');"
+        },
+        {
+            "title": "Чтобы текст не прилипал, задайте маргин справа `10px` изображению и `.block1`, маргин слева `10px` для `.block2`.",
+            "name": "setImgAndBlock1MarginRightTo10PxAndBlock2MarginLeftTo10Px",
+            "expect": "expect(document.querySelectorAll('.block1, img')).to.have.css('marginRight', '10px');expect(document.querySelector('.block2')).to.have.css('marginLeft', '10px');"
+        }
+    ]
+}
+
+
+

@@ -1,0 +1,22 @@
+{
+    "assertions": [
+        {
+            "title": "Для `.block1` задайте флоат влево.",
+            "name": "setBlock1FloatToLeft",
+            "expect": "expect(document.querySelector('.block1')).to.have.css('float', 'left');"
+        },
+        {
+            "title": "Для `.block2` задайте флоат вправо.",
+            "name": "setBlock2FloatToRight",
+            "expect": "expect(document.querySelector('.block2')).to.have.css('float', 'right');"
+        },
+        {
+            "title": "Обоим блокам задайте ширину 100px.",
+            "name": "setBothBlocksWidthTo100Px",
+            "expect": "expect(document.querySelectorAll('.block1, .block2')).to.have.css('width', '100px');"
+        }
+    ]
+}
+
+
+

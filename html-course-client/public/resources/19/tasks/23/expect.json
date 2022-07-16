@@ -1,0 +1,22 @@
+{
+    "assertions": [
+        {
+            "title": "У класса `.hidden` измените значение `display` на `block`.",
+            "name": "setHiddenDisplayToBlock",
+            "expect": "expect(document.querySelectorAll('.hidden')).to.have.css('display', 'block');"
+        },
+        {
+            "title": "Удалите рамки у всех колонок.",
+            "name": "removeAllColumnBorders",
+            "expect": "expect(document.querySelectorAll('.layout-column')).to.have.css('borderWidth', '0');"
+        },
+        {
+            "title": "Удалите фон у колонок в хедере.",
+            "name": "removeHeaderColumnsBackogroundColor",
+            "expect": "expect(document.querySelectorAll('.header .layout-column')).to.have.css('background-color', 'none');"
+        }
+    ]
+}
+
+
+

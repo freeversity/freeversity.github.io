@@ -1,0 +1,28 @@
+{
+    "assertions": [
+        {
+            "title": "Добавьте элементу с классом `content-container` класс `clearfix`.",
+            "name": "addClearFixClassToContentContainer",
+            "expect": "expect(document.querySelector('.content-container')).to.have.class('clearfix');"
+        },
+        {
+            "title": "Добавьте CSS-правилу `.clearfix::after` свойство `content` со значением `\"\"`.",
+            "name": "setClearfixAfterContentToEmptyString",
+            "expect": "expect(document).to.have.cssRule('.clearfix::after', 'content', '\"\"');"
+        },
+        {
+            "title": "Туда же добавьте свойство `display` со значением `table`",
+            "name": "setClearfixAfterDisplayToTable",
+            "expect": "expect(document).to.have.cssRule('.clearfix::after', 'display', 'table');"
+        },
+        {
+            "title": "и свойство `clear` со значением `both`.",
+            "name": "setClearfixAfterClearToBoth",
+            "expect": "expect(document).to.have.cssRule('.clearfix::after', 'clear', 'both');"
+        }
+    ]
+}
+
+
+
+

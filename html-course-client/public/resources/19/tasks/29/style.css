@@ -1,0 +1,24 @@
+.container {
+  width: 400px;
+  margin: 20px auto;
+  padding: 10px;
+  box-shadow: 0 0 2px #cccccc;
+}
+
+.container::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.block {
+  display: table;
+  float: left;
+  width: 90px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  color: white;
+  background-color: #3498db;
+  border: 2px solid #34495e;
+}

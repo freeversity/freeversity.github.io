@@ -1,0 +1,27 @@
+{
+    "intro": "setColumn3Props",
+    "introTitle": "Для блока `.column3` задайте:",
+    "assertions": [
+        {
+            "title": "свойство `clear` со значением `both`;",
+            "name": "setColumn3ClearToBoth",
+            "expect": "expect(document.querySelector('.column3')).to.have.css('clear', 'both');"
+        },
+        {
+            "title": "ширину `150px`;",
+            "name": "setColumn3WidthTo150Px",
+            "expect": "expect(document.querySelector('.column3')).to.have.css('width', '150px');"
+        },
+        {
+            "title": "минимальную высоту `50px`.",
+            "name": "setColumn3MinHeightTo50Px",
+            "expect": "expect(document.querySelector('.column3')).to.have.css('minHeight', '50px');"
+        },
+        {
+            "title": "маргины справа и слева со значением `auto`.",
+            "name": "setColumn3HorizontalMarginToAuto",
+            "expect": "expect(document).to.have.cssRule('.column3', 'marginLeft', 'auto');expect(document).to.have.cssRule('.column3', 'marginRight', 'auto');expect(document.querySelector('.column3')).to.have.css('marginBottom', '10px');"
+        }
+    ]
+}
+
