@@ -140,12 +140,14 @@
                         {
                             "name": "advanced-flexbox",
                             "id": 21,
-                            "entry": "/resources/21/chapter.json"
+                            "entry": "/resources/21/chapter.json",
+                            "unfinished": true
                         },
                         {
                             "name": "grids-introduction",
                             "id": 22,
-                            "entry": "/resources/22/chapter.json"
+                            "entry": "/resources/22/chapter.json",
+                            "unfinished": true
                         }
                     ]
                 },
@@ -155,27 +157,32 @@
                         {
                             "name": "positioning",
                             "id": 23,
-                            "entry": "/resources/23/chapter.json"
+                            "entry": "/resources/23/chapter.json",
+                            "unfinished": true
                         },
                         {
                             "name": "2d-transforms",
                             "id": 24,
-                            "entry": "/resources/24/chapter.json"
+                            "entry": "/resources/24/chapter.json",
+                            "unfinished": true
                         },
                         {
                             "name": "box-shadows",
                             "id": 25,
-                            "entry": "/resources/25/chapter.json"
+                            "entry": "/resources/25/chapter.json",
+                            "unfinished": true
                         },
                         {
                             "name": "linear-gradients",
                             "id": 26,
-                            "entry": "/resources/26/chapter.json"
+                            "entry": "/resources/26/chapter.json",
+                            "unfinished": true
                         },
                         {
                             "name": "css-filters",
                             "id": 27,
-                            "entry": "/resources/27/chapter.json"
+                            "entry": "/resources/27/chapter.json",
+                            "unfinished": true
                         }
                     ]
                 },
@@ -185,17 +192,20 @@
                         {
                             "name": "creating-menu",
                             "id": 28,
-                            "entry": "/resources/28/chapter.json"
+                            "entry": "/resources/28/chapter.json",
+                            "unfinished": true
                         },
                         {
                             "name": "decorative-elements",
                             "id": 29,
-                            "entry": "/resources/29/chapter.json"
+                            "entry": "/resources/29/chapter.json",
+                            "unfinished": true
                         },
                         {
                             "name": "decorative-effects",
                             "id": 30,
-                            "entry": "/resources/30/chapter.json"
+                            "entry": "/resources/30/chapter.json",
+                            "unfinished": true
                         }
                     ]
                 },
@@ -205,17 +215,20 @@
                         {
                             "name": "svg-introduction",
                             "id": 31,
-                            "entry": "/resources/31/chapter.json"
+                            "entry": "/resources/31/chapter.json",
+                            "unfinished": true
                         },
                         {
                             "name": "svg-styling",
                             "id": 32,
-                            "entry": "/resources/32/chapter.json"
+                            "entry": "/resources/32/chapter.json",
+                            "unfinished": true
                         },
                         {
                             "name": "svg-sizes",
                             "id": 33,
-                            "entry": "/resources/33/chapter.json"
+                            "entry": "/resources/33/chapter.json",
+                            "unfinished": true
                         }
                     ]
                 }
@@ -230,22 +243,26 @@
                         {
                             "name": "selectors-niceties",
                             "id": 34,
-                            "entry": "/resources/34/chapter.json"
+                            "entry": "/resources/34/chapter.json",
+                            "unfinished": true
                         },
                         {
                             "name": "advanced-background-and-borders",
                             "id": 35,
-                            "entry": "/resources/35/chapter.json"
+                            "entry": "/resources/35/chapter.json",
+                            "unfinished": true
                         },
                         {
                             "name": "advanced-text-styling",
                             "id": 36,
-                            "entry": "/resources/36/chapter.json"
+                            "entry": "/resources/36/chapter.json",
+                            "unfinished": true
                         },
                         {
                             "name": "css-tables",
                             "id": 37,
-                            "entry": "/resources/37/chapter.json"
+                            "entry": "/resources/37/chapter.json",
+                            "unfinished": true
                         }
                     ]
                 }

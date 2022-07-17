@@ -1,0 +1,29 @@
+{
+    "assertions": [
+        {
+            "title": "Блоку `.pictures` задайте раскладку флексбокса,",
+            "name": "setPicturesDisplayToFlex",
+            "expect": "expect(document.querySelector('.pictures')).to.have.css('display', 'flex');"
+        },
+        {
+            "title": "а затем для блока `.picture` задайте `margin: auto`",
+            "name": "setPictureMarginToAuto",
+            "expect": "expect(document).to.have.cssRule('.picture', 'margin', 'auto');"
+        },
+        {
+            "title": "Измените размер картинки `.picture img` на `40px`",
+            "name": "setPictureImageWidthTo40Px",
+            "expect": "expect(document.querySelector('.picture')).to.have.css('width', '40px');"
+        },
+        {
+            "title": "а потом в HTML-редакторе добавьте ещё один блок `.picture` с такой же картинкой.",
+            "name": "addOneMorePictureBlockToPictures",
+            "expect": "expect(document.querySelectorAll('.pictures > div.picture > img[src=\"img/toy.png\"]')).to.have.length(2);"
+        }
+    ],
+    "strict": true
+}
+
+
+
+

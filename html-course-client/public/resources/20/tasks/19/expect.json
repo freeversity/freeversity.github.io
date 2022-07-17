@@ -1,0 +1,23 @@
+{
+    "assertions": [
+        {
+            "title": "Для коврика Кекса `.keks` задайте порядковый номер `-1`,",
+            "name": "setKeksRugOrderToNeg1",
+            "expect": "expect(document.querySelector('.keks')).to.have.css('order', '-1');"
+        },
+        {
+            "title": "затем для коврика Семёна `.simeon` — порядковый номер `-2`,",
+            "name": "setSimeonRugOrderToNeg2",
+            "expect": "expect(document.querySelector('.simeon')).to.have.css('order', '-2');"
+        },
+        {
+            "title": "а для коврика Рудольфа `.rudolf` — номер `1`.",
+            "name": "setRudolfRugOrderTo1",
+            "expect": "expect(document.querySelector('.rudolf')).to.have.css('order', '1');"
+        }
+    ],
+    "strict": true
+}
+
+
+

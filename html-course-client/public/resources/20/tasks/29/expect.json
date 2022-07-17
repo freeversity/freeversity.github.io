@@ -1,0 +1,26 @@
+{
+    "assertions": [
+        {
+            "title": "Блоку `.sort-list` задайте раскладку флексбокса",
+            "name": "setSortListDisplayToFlex",
+            "expect": "expect(document.querySelector('.sort-list')).to.have.css('display', 'flex');"
+        },
+        {
+            "title": "и направление главной оси сверху вниз.",
+            "name": "setSortListFlexDireectionToColumn",
+            "expect": "expect(document.querySelector('.sort-list')).to.have.css('flexDirection', 'column');"
+        },
+        {
+            "title": "При выделенном состоянии чекбокса `.input-sort` для блока `.sort-list` задайте направление главной оси снизу вверх.",
+            "name": "setSortListFlexDirectionToColumnReverseWhenCheckboxChecked",
+            "expect": "expect(document).to.have.cssRule('.input-sort:checked ~ .sort-list', 'flexDirection', 'column-reverse');"
+        }
+    ],
+    "strict": true,
+    "footnote": "switchCheckboxForSorting",
+    "footnoteTitle": "Переключайте чекбокс, чтобы сортировать элементы списка."
+}
+
+
+
+

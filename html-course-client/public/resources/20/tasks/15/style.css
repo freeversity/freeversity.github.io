@@ -1,0 +1,20 @@
+.room {
+  display: flex;
+  flex-wrap: wrap;
+  height: 150px;
+}
+
+.rug {
+  min-height: 20px;
+  width: 80px;
+}
+
+.room-1 {
+  align-content: stretch;
+  align-items: flex-end;
+}
+
+.room-2 {
+  align-content: stretch;
+  align-items: flex-start;
+}

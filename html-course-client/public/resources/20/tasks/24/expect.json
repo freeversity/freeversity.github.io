@@ -1,0 +1,16 @@
+{
+    "assertions": [
+        {
+            "title": "В `.menu` между двумя `div` с текстом `Рыба` и `Молоко` добавьте ещё один `div` со ссылкой с текстом `Сметана`.",
+            "name": "setSourSauceDivBetweenFishDivAndMilkDiv",
+            "expect": "expect(document.querySelector('.menu div:nth-child(3):nth-last-child(3) a')).to.have.rendered.text('Сметана');"
+        },
+        {
+            "title": "Затем задайте меню ширину `80%`.",
+            "name": "setMenuWidthTo100Perc",
+            "expect": "expect(document).to.have.cssRule('.menu', 'width', '80%');"
+        }
+    ]
+}
+
+

@@ -1,0 +1,10 @@
+{
+    "assertions": [
+        {
+            "title": "Блоку `.room` задайте свойство `display` со значением `flex`.",
+            "name": "setRoomDisplayToFlex",
+            "expect": "expect(document.querySelector('.room')).to.have.css('display', 'flex');"
+        }
+    ]
+}
+

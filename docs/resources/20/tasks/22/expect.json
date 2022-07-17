@@ -1,0 +1,30 @@
+{
+    "assertions": [
+        {
+            "title": "У блоков `.picture` уберите `margin: auto`,",
+            "name": "removePictureMarginAuto",
+            "expect": "expect(document).not.to.have.cssRule('.picture', 'margin', 'auto');"
+        },
+        {
+            "title": "затем блоку `.pictures` задайте распределение флекс-элементов по центру главной оси,",
+            "name": "setPicturesJustifyContentToCenter",
+            "expect": "expect(document.querySelector('.pictures')).to.have.css('justify-content', 'center');"
+        },
+        {
+            "title": "и выравнивание по центру поперечной оси.",
+            "name": "setPicturesAlignItemsToCenter",            
+            "expect": "expect(document.querySelector('.pictures')).to.have.css('align-items', 'center');"
+
+        },
+        {
+            "title": "Затем замените распределение по главной оси на `space-around`.",
+            "name": "setPicturesJustifyContentToSpaceAround",
+            "expect": "expect(document.querySelector('.pictures')).to.have.css('justify-content', 'space-around');"
+        }
+    ],
+    "strict": true
+}
+
+
+
+

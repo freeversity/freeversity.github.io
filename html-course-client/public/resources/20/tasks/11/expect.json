@@ -1,0 +1,24 @@
+{
+    "intro": "setRugsAlignSelfToBaseline",
+    "introTitle": "Задайте выравнивание флекс-элементов по базовой линии текста:",
+    "assertions": [
+        {
+            "title": "для коврика Семёна `.text-simeon`,",
+            "name": "setSemenRugAlignSelfToBaseline",
+            "expect": "expect(document.querySelector('.text-simeon')).to.have.css('alignSelf', 'baseline');"
+        },
+        {
+            "title": "для коврика Кекса `.text-keks`.",
+            "name": "setKeksRugAlignSelfToBaseline",
+            "expect": "expect(document.querySelector('.text-keks')).to.have.css('alignSelf', 'baseline');"
+        }
+    ],
+    "scripts": [{
+        "type": "exec",
+        "body": "const room = document.querySelector('.room'); const {width, height, top, left} = room.getBoundingClientRect(); const div = document.createElement('div'); div.style.top = top + 'px'; div.style.left = left + 'px'; div.style.width = width + 'px'; div.style.height = height + 'px'; div.classList.add('axis-container'); div.innerHTML = `<div class='axis-main axis-main-${window.getComputedStyle(room).flexDirection}'></div><div class='axis-cross axis-cross-${window.getComputedStyle(room).flexDirection}'></div>`;document.body.prepend(div);"
+    }]
+}
+
+
+
+

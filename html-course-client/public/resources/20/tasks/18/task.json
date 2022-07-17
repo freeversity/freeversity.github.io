@@ -1,0 +1,8 @@
+{
+    "id": 18,      
+    "name": "align-content-stretch-and-rest-of-values",
+    "htmlEntry": "index.html",
+    "cssEntry": "style.css",
+    "articleEntry": "article.md",
+    "expectEntry": "expect.json"
+}

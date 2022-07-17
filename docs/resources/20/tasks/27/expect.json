@@ -1,0 +1,28 @@
+{
+    "assertions": [
+        {
+            "title": "Блоку `.post aside` задайте раскладку флексбокса,",
+            "name": "setPostAsideDisplayFlex",
+            "expect": "expect(document.querySelector('.post aside')).to.have.css('display', 'flex');"
+        },
+        {
+            "title": "направление главной оси сверху вниз,",
+            "name": "setPostAsideFlexDirectionToColumn",
+            "expect": "expect(document.querySelector('.post aside')).to.have.css('flexDirection', 'column');"
+        },
+        {
+            "title": "равномерное распределение флекс-элементов по главной оси без отступов по краям,",
+            "name": "setPostAsideJustifyContentToSpaceBetween",
+            "expect": "expect(document.querySelector('.post aside')).to.have.css('justifyContent', 'space-between');"
+        },
+        {
+            "title": "а затем внешний отступ справа `20px`.",
+            "name": "setPostAsideMarginRightTo20Px",
+            "expect": "expect(document.querySelector('.post aside')).to.have.css('marginRight', '20px');"
+        }
+    ]
+}
+
+
+
+

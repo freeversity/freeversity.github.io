@@ -1,0 +1,39 @@
+{
+    "assertions": [
+        {
+            "title": "Для `.room` задайте выравнивание рядов в начале оси,",
+            "name": "setRoomAlignContentToFlexStart",
+            "expect": "expect(document.querySelector('.room')).to.have.css('align-content', 'flex-start');"
+        },
+        {
+            "title": "в конце оси,",
+            "name": "setRoomAlignContentToFlexEnd",
+            "expect": "expect(document.querySelector('.room')).to.have.css('align-content', 'flex-end');"
+        },
+        {
+            "title": "равномерное выравнивание без отступов по краям,",
+            "name": "setRoomAlignContentToSpaceBetween",
+            "expect": "expect(document.querySelector('.room')).to.have.css('align-content', 'space-between');"
+        },
+        {
+            "title": "равномерное выравнивание с половинными отступами по краям,",
+            "name": "setRoomAlignContentToSpaceAround",
+            "expect": "expect(document.querySelector('.room')).to.have.css('align-content', 'space-around');"
+        },
+        {
+            "title": "равномерное выравнивание с одинаковыми отступами между рядами и по краям.",
+            "name": "setRoomAlignContentToSpaceEvenly",
+            "expect": "expect(document.querySelector('.room')).to.have.css('align-content', 'space-evenly');"
+        }
+    ],
+    "strict": true,
+    "scripts": [{
+        "type": "exec",
+        "body": "const rooms = document.querySelectorAll('.room'); for (let room of rooms) { const {width, height, top, left} = room.getBoundingClientRect(); const div = document.createElement('div'); div.style.top = top + 'px'; div.style.left = left + 'px'; div.style.width = width + 'px'; div.style.height = height + 'px'; div.classList.add('axis-container'); div.innerHTML = `<div class='axis-main axis-main-${window.getComputedStyle(room).flexDirection}'></div><div class='axis-cross axis-cross-${window.getComputedStyle(room).flexDirection}'></div>`;document.body.prepend(div);}"
+    }]
+}
+
+
+
+
+

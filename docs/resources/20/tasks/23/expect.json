@@ -1,0 +1,16 @@
+{
+    "assertions": [
+        {
+            "title": "Блоку `.menu` задайте раскладку флексбокса,",
+            "name": "setMenuDisplayToFlex",
+            "expect": "expect(document.querySelector('.menu')).to.have.css('display', 'flex');"
+        },
+        {
+            "title": "а затем равномерное распределение элементов по главной оси с половинными отступами по краям.",
+            "name": "setMenuJustifyContentToSpaceAround",
+            "expect": "expect(document.querySelector('.menu')).to.have.css('justify-content', 'space-around');"
+        }
+    ]
+}
+
+

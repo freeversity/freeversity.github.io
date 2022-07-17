@@ -1,0 +1,14 @@
+.room {
+  display: flex;
+  height: 150px;
+}
+
+.room-1 {
+  flex-direction: row;
+  justify-content: center;
+}
+
+.room-2 {
+  flex-direction: row;
+  justify-content: center;
+}

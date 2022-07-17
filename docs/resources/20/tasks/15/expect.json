@@ -1,0 +1,26 @@
+{
+    "assertions": [
+        {
+            "title": "Для `.room-1` задайте `align-content` в начале поперечной оси,",
+            "name": "setRoom1AlignContentToFlexStart",
+            "expect": "expect(document.querySelector('.room-1')).to.have.css('alignContent', 'flex-start');"
+        },
+        {
+            "title": "а для `.room-2` — `align-content` в конце поперечной оси.",
+            "name": "setRoom2AlignContentToFlexEnd",
+            "expect": "expect(document.querySelector('.room-2')).to.have.css('alignContent', 'flex-end');"
+        },
+        {
+            "title": "Затем увеличьте ширину коврика `.rug` до `120px` чтобы в блоках стало два ряда элементов.",
+            "name": "setRugWidthTo120Px",
+            "expect": "expect(document.querySelector('.rug')).to.have.css('width', '120px');"
+        }
+    ],
+    "scripts": [{
+        "type": "exec",
+        "body": "const rooms = document.querySelectorAll('.room'); for (let room of rooms) { const {width, height, top, left} = room.getBoundingClientRect(); const div = document.createElement('div'); div.style.top = top + 'px'; div.style.left = left + 'px'; div.style.width = width + 'px'; div.style.height = height + 'px'; div.classList.add('axis-container'); div.innerHTML = `<div class='axis-main axis-main-${window.getComputedStyle(room).flexDirection}'></div><div class='axis-cross axis-cross-${window.getComputedStyle(room).flexDirection}'></div>`;document.body.prepend(div);}"
+    }],
+    "footnote": "noticeHowRowsAlignmentAffectsElementsAlignment",
+    "footnoteTitle": "Смотрите, как выравнивание рядов переопределило выравнивание элементов.",
+    "strict": true
+}

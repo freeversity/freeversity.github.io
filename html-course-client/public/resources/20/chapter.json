@@ -3,19 +3,189 @@
     "title": "Flexbox Introduction",
     "tasks": [
         {
+            "id": 1,
+            "type": "task",
+            "entry": "/resources/20/tasks/1/task.json",
+            "name": "display-flex-and-flex-element"
+        }, 
+        {
+            "id": 2,
+            "type": "task",
+            "entry": "/resources/20/tasks/2/task.json",
+            "name": "flex-direction-and-main-axis"
+        }, 
+        {
+            "id": 3,
+            "type": "task",
+            "entry": "/resources/20/tasks/3/task.json",
+            "name": "flexbox-auxiliary-axis"
+        }, 
+        {
+            "id": 4,
+            "type": "task",
+            "entry": "/resources/20/tasks/4/task.json",
+            "name": "justify-content-prop"
+        }, 
+        {
+            "id": 5,
+            "type": "task",
+            "entry": "/resources/20/tasks/5/task.json",
+            "name": "justify-content-flex-start-flex-end"
+        }, 
+        {
+            "id": 6,
+            "type": "task",
+            "entry": "/resources/20/tasks/6/task.json",
+            "name": "justify-space-between-space-around-space-evenly"
+        }, 
+        {
+            "id": 7,
+            "type": "task",
+            "entry": "/resources/20/tasks/7/task.json",
+            "name": "align-items-prop"
+        }, 
+        {
+            "id": 8,
+            "type": "task",
+            "entry": "/resources/20/tasks/8/task.json",
+            "name": "align-items-flex-start-flex-end"
+        }, 
+        {
+            "id": 9,
+            "type": "task",
+            "entry": "/resources/20/tasks/9/task.json",
+            "name": "align-items-baseline"
+        }, 
+        {
+            "id": 10,
+            "type": "task",
+            "entry": "/resources/20/tasks/10/task.json",
+            "name": "display-flex-and-flex-element"
+        }, 
+        {
+            "id": 11,
+            "type": "task",
+            "entry": "/resources/20/tasks/11/task.json",
+            "name": "align-self-prop"
+        }, 
+        {
             "id": 12,
             "type": "challenge",
             "entry": "/resources/20/tasks/12/task.json",
             "name": "a-simple-palette"
-        }, {
+        }, 
+        {
+            "id": 13,
+            "type": "task",
+            "entry": "/resources/20/tasks/13/task.json",
+            "name": "flex-wrap-prop"
+        }, 
+        {
+            "id": 14,
+            "type": "task",
+            "entry": "/resources/20/tasks/14/task.json",
+            "name": "flex-wrap-reverse-wrap"
+        }, 
+        {
+            "id": 15,
+            "type": "task",
+            "entry": "/resources/20/tasks/15/task.json",
+            "name": "align-content-prop"
+        }, 
+        {
+            "id": 16,
+            "type": "task",
+            "entry": "/resources/20/tasks/16/task.json",
+            "name": "align-content-stretch-and-align-items"
+        }, 
+        {
+            "id": 17,
+            "type": "task",
+            "entry": "/resources/20/tasks/17/task.json",
+            "name": "align-content-non-stretch-and-align-items"
+        }, 
+        {
+            "id": 18,
+            "type": "task",
+            "entry": "/resources/20/tasks/18/task.json",
+            "name": "align-content-stretch-and-rest-of-values"
+        }, 
+        {
+            "id": 19,
+            "type": "task",
+            "entry": "/resources/20/tasks/19/task.json",
+            "name": "order-prop"
+        }, 
+        {
             "id": 20,
             "type": "challenge",
             "entry": "/resources/20/tasks/20/task.json",
             "name": "a-bit-more-complex-palette"
-        }, {
-            "id": 32,
+        }, 
+        {
+            "id": 21,
+            "type": "task",
+            "entry": "/resources/20/tasks/21/task.json",
+            "name": "aligning-container-width-margin-auto"
+        }, 
+        {
+            "id": 22,
+            "type": "task",
+            "entry": "/resources/20/tasks/22/task.json",
+            "name": "flex-alignment"
+        }, 
+        {
+            "id": 23,
+            "type": "task",
+            "entry": "/resources/20/tasks/23/task.json",
+            "name": "responsive-horizontal-menu-1"
+        }, 
+        {
+            "id": 24,
+            "type": "task",
+            "entry": "/resources/20/tasks/24/task.json",
+            "name": "responsive-horizontal-menu-2"
+        }, 
+        {
+            "id": 25,
+            "type": "task",
+            "entry": "/resources/20/tasks/25/task.json",
+            "name": "responsive-horizontal-menu-3"
+        }, 
+        {
+            "id": 26,
+            "type": "task",
+            "entry": "/resources/20/tasks/26/task.json",
+            "name": "vertical-icons-column"
+        }, 
+        {
+            "id": 27,
+            "type": "task",
+            "entry": "/resources/20/tasks/27/task.json",
+            "name": "vertical-icons-column-2"
+        }, 
+        {
+            "id": 28,
+            "type": "task",
+            "entry": "/resources/20/tasks/28/task.json",
+            "name": "vertical-icons-column-3"
+        }, 
+        {
+            "id": 29,
+            "type": "task",
+            "entry": "/resources/20/tasks/29/task.json",
+            "name": "sorting-elements-with-css"
+        }, 
+        {
+            "id": 30,
+            "type": "task",
+            "entry": "/resources/20/tasks/30/task.json",
+            "name": "blocks-vertical-alignment-with-flexbox"
+        },
+        {
+            "id": 31,
             "type": "challenge",
-            "entry": "/resources/20/tasks/32/task.json",
+            "entry": "/resources/20/tasks/31/task.json",
             "name": "complex-palettes"
         }
     ]

@@ -19,13 +19,14 @@ const Chapter: FC<ChapterProps> = ({className, isPending, chapter}) => {
             {chapter && (
                 <>
                     <h2>{chapter.title}</h2>
-                    <ul>
+                    <Link to='/'>{'<'}- Back to summary</Link>
+                    <ol>
                         {chapter.tasks.map(({name, id}) => (
                             <li key={id}>
                                 <Link to={`tasks/${id}`}>{name}</Link>
                             </li>
                         ))}
-                    </ul>
+                    </ol>
                 </>
             )}
 

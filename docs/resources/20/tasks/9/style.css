@@ -1,0 +1,23 @@
+.room {
+  display: flex;
+  height: 150px;
+  justify-content: center;
+}
+
+.room-1 {
+  align-items: center;
+}
+
+.room-2 {
+  align-items: center;
+}
+
+.rug {
+  min-height: auto;
+}
+
+.rug p {
+  margin: 30px 0;
+  text-align: center;
+  background-color: rgba(69, 185, 244, 0.25);
+}

@@ -1,0 +1,7 @@
+.pictures {
+  display: flex;
+}
+
+.picture {
+  margin: auto;
+}

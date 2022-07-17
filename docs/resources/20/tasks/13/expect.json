@@ -1,0 +1,22 @@
+{
+    "assertions": [
+        {
+            "title": "Коврикам `.rug` задайте ширину `120px`,",
+            "name": "setRugWidthTo120Px",
+            "expect": "expect(document.querySelectorAll('.rug')).to.have.css('width', '120px');"
+        },
+        {
+            "title": "затем в блок `.room` последним добавьте кота Массимо: блок с классами `rug` и `massimo`,",
+            "name": "addToRoomMassimoRugDiv",
+            "expect": "expect(document.querySelector('.room .rug.massimo:last-child:nth-child(4)')).to.exist;"
+        },
+        {
+            "title": "а после этого для `.room` задайте перенос флекс-элементов на новую строку.",
+            "name": "setRoomFlexWrapWrap",
+            "expect": "expect(document.querySelector('.room')).to.have.css('flexWrap', 'wrap');"
+        }
+    ]
+}
+
+
+

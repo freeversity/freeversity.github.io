@@ -1,0 +1,7 @@
+.columns {
+}
+
+.columns section {
+  float: left;
+  width: 140px;
+}

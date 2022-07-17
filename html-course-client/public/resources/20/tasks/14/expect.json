@@ -1,0 +1,27 @@
+{
+    "assertions": [
+        {
+            "title": "Добавьте ещё двух котов: Марти — блок с классами `rug` и `marty`, и Черныша — блок с классами `rug` и `blacky`,",
+            "name": "addMartyRugAndBlackyRugToRoom",
+            "expect": "expect(document.querySelector('.room .rug.marty:nth-last-child(2):nth-child(5)')).to.exist;expect(document.querySelector('.room .rug.blacky:last-child:nth-child(6)')).to.exist;"
+        },
+        {
+            "title": "затем для `.room` задайте перенос флекс-элементов на новую строку в обратном направлении `wrap-reverse`,",
+            "name": "setRoomFlexWrapToWrapReverse",
+            "expect": "expect(document.querySelector('.room')).to.have.css('flexWrap', 'wrap-reverse');"
+        },
+        {
+            "title": "а потом задайте всем коврикам ширину `180px`.",
+            "name": "setRugWidthTo180Px",
+            "expect": "expect(document.querySelectorAll('.rug')).to.have.css('width', '180px');"
+        }
+    ],
+    "scripts": [{
+        "type": "exec",
+        "body": "const room = document.querySelector('.room'); const {width, height, top, left} = room.getBoundingClientRect(); const div = document.createElement('div'); div.style.top = top + 'px'; div.style.left = left + 'px'; div.style.width = width + 'px'; div.style.height = height + 'px'; div.classList.add('axis-container'); div.innerHTML = `<div class='axis-main axis-main-${window.getComputedStyle(room).flexDirection}'></div><div class='axis-cross axis-cross-${window.getComputedStyle(room).flexDirection}'></div>`;document.body.prepend(div);"
+    }],
+    "strict": true
+}
+
+
+

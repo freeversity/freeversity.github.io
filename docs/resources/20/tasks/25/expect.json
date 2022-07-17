@@ -1,0 +1,29 @@
+{
+    "assertions": [
+        {
+            "title": "Вырежьте блок `.logo` и вставьте его внутрь меню вместо `div` с текстом `Сметана`.",
+            "name": "mveLogoIntoMenuIsteadOfDivWithSourSauce",
+            "expect": "expect(document.querySelector('.menu > div.logo:nth-child(3):nth-last-child(3) > img[src=\"img/keksby.svg\"]')).to.exist;expect(document.querySelector('header > .logo')).not.to.exist;"
+        },
+        {
+            "title": "Затем для `.menu` задайте центральное выравнивание элементов по поперечной оси.",
+            "name": "setMenuAlignItemsToCenter",
+            "expect": "expect(document.querySelector('.menu')).to.have.css('alignItems', 'center');"
+        },
+        {
+            "title": "Блоку `.logo` задайте порядковый номер флекс-элемента `-1`,",
+            "name": "setLogoOrderToNeg1",
+            "expect": "expect(document.querySelector('.logo')).to.have.css('order', '-1');"
+        },
+        {
+            "title": "а потом `1`.",
+            "name": "setLogoOrderTo1",
+            "expect": "expect(document.querySelector('.logo')).to.have.css('order', '1');"
+        }
+    ],
+    "strict": true
+}
+
+
+
+

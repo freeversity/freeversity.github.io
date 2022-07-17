@@ -1,0 +1,33 @@
+{
+    "assertions": [
+        {
+            "title": "В блоке `.room-2` разверните главную ось справа налево.",
+            "name": "setRoom2FlexDirectionToRowReverse",
+            "expect": "expect(document.querySelector('.room-2')).to.have.css('flexDirection', 'row-reverse');"
+        },
+        {
+            "title": "Обоим блокам задайте распределение элементов в начале главной оси,",
+            "name": "setBothRoomsJustifyContentToFlexStart",
+            "expect": "expect(document.querySelectorAll('.room')).to.have.css('justifyContent', 'flex-start');"
+        },
+        {
+            "title": "затем только первому блоку — в конце главной оси,",
+            "name": "setRoom1JustifyContentToFlexEnd",
+            "expect": "expect(document.querySelector('.room-1')).to.have.css('justifyContent', 'flex-end');"
+        },
+        {
+            "title": "и снова обоим блокам — в конце главной оси.",
+            "name": "setBothRoomsJustifyContentToFlexEnd",
+            "expect": "expect(document.querySelectorAll('.room')).to.have.css('justifyContent', 'flex-end');"
+        }
+    ],
+    "strict": true,
+    "scripts": [{
+        "type": "exec",
+        "body": "const rooms = document.querySelectorAll('.room'); for (let room of rooms) { const {width, height, top, left} = room.getBoundingClientRect(); const div = document.createElement('div'); div.style.top = top + 'px'; div.style.left = left + 'px'; div.style.width = width + 'px'; div.style.height = height + 'px'; div.classList.add('axis-container'); div.innerHTML = `<div class='axis-main axis-main-${window.getComputedStyle(room).flexDirection}'></div>`;document.body.prepend(div);}"
+    }]
+}
+
+
+
+

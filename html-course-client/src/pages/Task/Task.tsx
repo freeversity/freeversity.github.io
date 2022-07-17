@@ -48,6 +48,9 @@ export interface ExpectType {
         target: string;
         eventType: string;
         handler: string;
+    } | {
+        type: "exec",
+        body: string,
     })[];
 }
 

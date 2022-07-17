@@ -1,0 +1,16 @@
+{
+    "assertions": [
+        {
+            "title": "Блоку `.columns` задайте раскладку флексбокса",
+            "name": "setColumnDisplayToFlex",
+            "expect": "expect(document.querySelector('.columns')).to.have.css('display', 'flex');"
+        },
+        {
+            "title": "и перенос флекс-элементов на новую строку.",
+            "name": "setColumnFlexWrapToWrap",
+            "expect": "expect(document.querySelector('.columns')).to.have.css('flexWrap', 'wrap');"
+        }
+    ]
+}
+
+

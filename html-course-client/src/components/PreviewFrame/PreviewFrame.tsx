@@ -1,6 +1,7 @@
 import {FC, useMemo, useRef, useState} from 'react';
 import cx from 'classnames';
 import './PreviewFrame.scss';
+import { ExpectType } from '../../pages/Task/Task';
 
 const domParser = new DOMParser();
 
@@ -11,12 +12,7 @@ export interface PreviewFrameProps {
   cssFileName?: string;
   baseUrl: string;
   className?: string;
-  scripts?: ({
-    type: "handler",
-    target: string;
-    eventType: string;
-    handler: string;
-  })[];
+  scripts?: ExpectType['scripts'];
   onReady?: (iFrame: HTMLIFrameElement) => void;
 }
 
@@ -87,8 +83,8 @@ const PreviewFrame: FC<PreviewFrameProps> = ({
 
   const onLoad = () => {
     let pathName: string;
-    let win: Window;
-    let doc: Document;
+    let win: Window | undefined;
+    let doc: Document | undefined;
     try {
       pathName = iFrameRef.current?.contentWindow?.location.pathname!;
       win = iFrameRef.current!.contentWindow!;
@@ -127,6 +123,14 @@ const PreviewFrame: FC<PreviewFrameProps> = ({
               parsedHandler.call(win, doc, win, e);
             }
           });
+          break;
+        }
+        case 'exec': {
+          const { body } = script;
+
+          const parsedScript = new Function('document', 'window', body);
+
+          parsedScript.call(win, doc, win);
         }
 
       }

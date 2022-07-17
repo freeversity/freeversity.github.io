@@ -1,0 +1,13 @@
+.room {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rug {
+  height: 150px;
+}
+
+.keks {
+  height: 250px;
+}

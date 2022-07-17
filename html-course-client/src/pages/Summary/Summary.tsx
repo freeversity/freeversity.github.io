@@ -18,6 +18,7 @@ export interface Course {
                 id: number;
                 entry: string;
                 disabled?: boolean;
+                unfinished?: boolean;
             })[]
 
         })[]
@@ -56,14 +57,14 @@ const Summary: FC<SummaryProps> = ({className}) => {
                                 {sections.map(({name, chapters}) => (
                                     <li key={name}>
                                         <h4 id={name}>{name}</h4>
-                                        <ul>
-                                            {chapters.map(({name, id, disabled}) => (
+                                        <ol>
+                                            {chapters.map(({name, id, disabled, unfinished}) => (
                                                 <li key={id}>
                                                     {disabled && <span>{name}</span>}
-                                                    {!disabled && <Link to={`/chapters/${id}`}>{name}</Link>}
+                                                    {!disabled && <Link to={`/chapters/${id}`} className={cx({unfinished})}>{name}</Link>}
                                                 </li>
                                             ))}
-                                        </ul>
+                                        </ol>
                                     </li>
                                 ))}
                             </ul>

@@ -1,0 +1,33 @@
+{
+    "intro": "setRoomFlexDirectionAgain",
+    "introTitle": "Для блока .room задайте ещё раз направление главной оси:",
+    "assertions": [
+        {
+            "title": "сверху вниз,",
+            "name": "setRoomFlexDirectionToColumnAgain",
+            "expect": "expect(document.querySelector('.room')).to.have.css('flexDirection', 'column');"
+        },
+        {
+            "title": "справа налево,",
+            "name": "setRoomFlexDirectionToRowReverseAgain",
+            "expect": "expect(document.querySelector('.room')).to.have.css('flexDirection', 'row-reverse');"
+        },
+        {
+            "title": "а затем слева направо.",
+            "name": "setRoomFlexDirectionToRow",
+            "expect": "expect(document.querySelector('.room')).to.have.css('flexDirection', 'row');"
+        }
+    ],
+    "scripts": [{
+        "type": "exec",
+        "body": "const room = document.querySelector('.room'); const {width, height, top, left} = room.getBoundingClientRect(); const div = document.createElement('div'); div.style.top = top + 'px'; div.style.left = left + 'px'; div.style.width = width + 'px'; div.style.height = height + 'px'; div.classList.add('axis-container'); div.innerHTML = `<div class='axis-main axis-main-${window.getComputedStyle(room).flexDirection}'></div><div class='axis-cross axis-cross-${window.getComputedStyle(room).flexDirection}'></div>`;document.body.prepend(div);"
+    }],
+    "strict": true
+}
+
+
+
+
+
+
+

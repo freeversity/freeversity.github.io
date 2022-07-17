@@ -1,0 +1,7 @@
+.post {
+  display: flex;
+}
+
+.post aside {
+  order: -1;
+}

@@ -1,0 +1,16 @@
+{
+    "assertions": [
+        {
+            "title": "Блоку `.post` задайте раскладку флексбокса,",
+            "name": "setPostToDisplayFlex",
+            "expect": "expect(document.querySelector('.post')).to.have.css('display', 'flx');"
+        },
+        {
+            "title": "а затем для `aside` внутри `.post` задайте порядковый номер флекс-элемента `-1`.",
+            "name": "setAsideOrderToNeg1",
+            "expect": "expect(document.querySelector('.post aside')).to.have.css('order', '-1');"
+        }
+    ]
+}
+
+

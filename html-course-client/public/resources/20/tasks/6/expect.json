@@ -1,0 +1,29 @@
+{
+    "assertions": [
+        {
+            "title": "В каждый из блоков `.room` последним добавьте кота Семёна: блок с классами `rug` и `simeon`",
+            "name": "addSemenRugBlockToBothRooms",
+            "expect": "expect(document.querySelectorAll('.room .simeon.rug:last-child:nth-child(3)')).to.have.length(2);"
+        },
+        {
+            "title": "Блоку `.room-1` задайте равномерное распределение вдоль главной оси без отступов по краям,",
+            "name": "setRoom1JustifyContentToSpaceBetween",
+            "expect": "expect(document.querySelector('.room-1')).to.have.css('justifyContent', 'space-between');"
+        },
+        {
+            "title": "а блоку .room-2 — равномерное распределение с половинными отступами по краям.",
+            "name": "setRoom2JustifyContentToSpaceAround",
+            "expect": "expect(document.querySelector('.room-2')).to.have.css('justifyContent', 'space-around');"
+        },
+        {
+            "title": "Затем измените распределение у .room-1, чтобы отступы между элементами и краями контейнера были одинаковыми.",
+            "name": "setRoom1JustifyContentToSpaceEvenly",
+            "expect": "expect(document.querySelector('.room-1')).to.have.css('justifyContent', 'space-evenly');"
+        }
+    ],
+    "strict": true,
+    "scripts": [{
+        "type": "exec",
+        "body": "const rooms = document.querySelectorAll('.room'); for (let room of rooms) { const {width, height, top, left} = room.getBoundingClientRect(); const div = document.createElement('div'); div.style.top = top + 'px'; div.style.left = left + 'px'; div.style.width = width + 'px'; div.style.height = height + 'px'; div.classList.add('axis-container'); div.innerHTML = `<div class='axis-main axis-main-${window.getComputedStyle(room).flexDirection}'></div>`;document.body.prepend(div);}"
+    }]
+}

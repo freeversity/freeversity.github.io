@@ -1,0 +1,28 @@
+{
+    "assertions": [
+        {
+            "title": "Коврикам `.rug` задайте высоту `150px`,",
+            "name": "setRugsHeightTo150Px",
+            "expect": "expect(document.querySelectorAll('.rug')).to.have.css('height', '150px');"
+        },
+        {
+            "title": "затем для блока `.room` задайте выравнивание флекс-элементов по центру поперечной оси,",
+            "name": "setRoomAlignItemsToCenter",
+            "expect": "expect(document.querySelector('.room')).to.have.css('alignItems', 'center');"
+        },
+        {
+            "title": "а после этого коврику Кекса `.keks` задайте высоту `250px`.",
+            "name": "setKeksRugHeightTo250Px",
+            "expect": "expect(document.querySelector('.keks')).to.have.css('height', '250px');"
+        }
+    ],
+    "scripts": [{
+        "type": "exec",
+        "body": "const room = document.querySelector('.room'); const {width, height, top, left} = room.getBoundingClientRect(); const div = document.createElement('div'); div.style.top = top + 'px'; div.style.left = left + 'px'; div.style.width = width + 'px'; div.style.height = height + 'px'; div.classList.add('axis-container'); div.innerHTML = `<div class='axis-main axis-main-${window.getComputedStyle(room).flexDirection}'></div><div class='axis-cross axis-cross-${window.getComputedStyle(room).flexDirection}'></div>`;document.body.prepend(div);"
+    }],
+    "strict": true
+}
+
+
+
+
