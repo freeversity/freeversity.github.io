@@ -140,8 +140,7 @@
                         {
                             "name": "advanced-flexbox",
                             "id": 21,
-                            "entry": "/resources/21/chapter.json",
-                            "unfinished": true
+                            "entry": "/resources/21/chapter.json"
                         },
                         {
                             "name": "grids-introduction",
