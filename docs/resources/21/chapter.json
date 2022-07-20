@@ -3,16 +3,168 @@
     "title": "Advanced Flexbox",
     "tasks": [
         {
+            "id": 1,
+            "type": "task",
+            "entry": "/resources/21/tasks/1/task.json",
+            "name": "flex-elements-and-block-model"
+        }, 
+        {
+            "id": 2,
+            "type": "task",
+            "entry": "/resources/21/tasks/2/task.json",
+            "name": "margin-peculiarities"
+        }, 
+        {
+            "id": 3,
+            "type": "task",
+            "entry": "/resources/21/tasks/3/task.json",
+            "name": "margins-and-alignment"
+        }, 
+        {
+            "id": 4,
+            "type": "task",
+            "entry": "/resources/21/tasks/4/task.json",
+            "name": "margin-and-flex-direction"
+        }, 
+        {
+            "id": 5,
+            "type": "task",
+            "entry": "/resources/21/tasks/5/task.json",
+            "name": "flex-basis-prop"
+        }, 
+        {
             "id": 6,
             "type": "challenge",
             "entry": "/resources/21/tasks/6/task.json",
             "name": "cubism"
-        }, {
+        }, 
+        {
+            "id": 7,
+            "type": "task",
+            "entry": "/resources/21/tasks/7/task.json",
+            "name": "flex-grow-prop"
+        }, 
+        {
+            "id": 8,
+            "type": "task",
+            "entry": "/resources/21/tasks/8/task.json",
+            "name": "proportional-elements-stretching"
+        }, 
+        {
+            "id": 9,
+            "type": "task",
+            "entry": "/resources/21/tasks/9/task.json",
+            "name": "flex-grow-evaluation"
+        }, 
+        {
+            "id": 10,
+            "type": "task",
+            "entry": "/resources/21/tasks/10/task.json",
+            "name": "flex-shrink-prop"
+        }, 
+        {
+            "id": 11,
+            "type": "task",
+            "entry": "/resources/21/tasks/11/task.json",
+            "name": "proportional-elements-shrinking"
+        }, 
+        {
+            "id": 12,
+            "type": "task",
+            "entry": "/resources/21/tasks/12/task.json",
+            "name": "flex-shrink-evaluation"
+        }, 
+        {
+            "id": 13,
+            "type": "task",
+            "entry": "/resources/21/tasks/13/task.json",
+            "name": "flex-shrink-and-min-width"
+        }, 
+        {
             "id": 14,
             "type": "challenge",
             "entry": "/resources/21/tasks/14/task.json",
             "name": "coefficients-master"
-        }, {
+        }, 
+        {
+            "id": 15,
+            "type": "task",
+            "entry": "/resources/21/tasks/15/task.json",
+            "name": "flex-combined-prop"
+        }, 
+        {
+            "id": 16,
+            "type": "task",
+            "entry": "/resources/21/tasks/16/task.json",
+            "name": "flex-shrink-in-multiline-container"
+        }, 
+        {
+            "id": 17,
+            "type": "task",
+            "entry": "/resources/21/tasks/17/task.json",
+            "name": "flex-grow-in-multiline-container"
+        }, 
+        {
+            "id": 18,
+            "type": "task",
+            "entry": "/resources/21/tasks/18/task.json",
+            "name": "flex-basis-100%-and-flex-wrap"
+        }, 
+        {
+            "id": 19,
+            "type": "task",
+            "entry": "/resources/21/tasks/19/task.json",
+            "name": "title-and-description-with-flexbox"
+        }, 
+        {
+            "id": 20,
+            "type": "task",
+            "entry": "/resources/21/tasks/20/task.json",
+            "name": "title-and-description-with-flexbox-2"
+        }, 
+        {
+            "id": 21,
+            "type": "task",
+            "entry": "/resources/21/tasks/21/task.json",
+            "name": "flexible-menu-with-wrapping"
+        }, 
+        {
+            "id": 22,
+            "type": "task",
+            "entry": "/resources/21/tasks/22/task.json",
+            "name": "flexible-menu-with-wrapping-2"
+        }, 
+        {
+            "id": 23,
+            "type": "task",
+            "entry": "/resources/21/tasks/24/task.json",
+            "name": "inputs-with-dynamic-length"
+        }, 
+        {
+            "id": 24,
+            "type": "task",
+            "entry": "/resources/21/tasks/24/task.json",
+            "name": "course-card"
+        }, 
+        {
+            "id": 25,
+            "type": "task",
+            "entry": "/resources/21/tasks/25/task.json",
+            "name": "course-card-2"
+        }, 
+        {
+            "id": 26,
+            "type": "task",
+            "entry": "/resources/21/tasks/26/task.json",
+            "name": "course-card-3"
+        }, 
+        {
+            "id": 27,
+            "type": "task",
+            "entry": "/resources/21/tasks/27/task.json",
+            "name": "many-cards"
+        }, 
+        {
             "id": 28,
             "type": "challenge",
             "entry": "/resources/21/tasks/28/task.json",

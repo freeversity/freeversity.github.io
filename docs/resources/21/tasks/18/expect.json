@@ -1,0 +1,18 @@
+{
+    "assertions": [
+        {
+            "title": "Для всех скейтов задайте базовый размер флекс-элемента `100%`,",
+            "name": "setAllSkatesFlexBasisTo100Perc",
+            "expect": "expect(document.querySelectorAll('.skate')).to.have.css('flexBasis', '100%');"
+        },
+        {
+            "title": "затем полянке `.spot` задайте перенос флекс-элементов на новую строку.",
+            "name": "setSpotFlexWrapToWrap",
+            "expect": "expect(document.querySelector('.spot')).to.have.css('flexWrap', 'wrap');"
+        }
+    ],
+    "strict": true
+}
+
+
+

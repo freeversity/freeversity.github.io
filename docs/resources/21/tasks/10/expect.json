@@ -1,0 +1,29 @@
+{
+    "assertions": [
+        {
+            "title": "Скейтбордам на первой поляне `.spot-1 .skate` задайте базовый размер флекс-элементов `300px`",
+            "name": "ssetSpot1SkatesFlexBasisTo300Px",
+            "expect": "expect(document.querySelectorAll('.spot-1 .skate')).to.have.css('flexBasis', '300px');"
+        },
+        {
+            "title": "На вторую поляну добавьте скейт с Голубым Енотом.",
+            "name": "addRacoonBlueSkateToSpot2",
+            "expect": "expect(document.querySelector('.spot-2 div.skate.racoon-blue:last-child:nth-child(3)')).to.exist;"
+        },
+        {
+            "title": "Затем задайте нулевой коэффициент сжатия скейту Коричневого Енота `.racoon-brown`",
+            "name": "setRacoonBrownFlexShrinkTo0",
+            "expect": "expect(document.querySelector('.racoon-brown')).to.have.css('flexShrink', '0');"
+        },
+        {
+            "title": "и всем скейтам на второй поляне.",
+            "name": "setSpot2SkatesFlexShrinkTo0",
+            "expect": "expect(document.querySelector('.spot-2 .skate')).to.have.css('flexShrink', '0');"
+        }
+    ],
+    "strict": true
+}
+
+
+
+

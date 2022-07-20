@@ -1,0 +1,28 @@
+{
+    "assertions": [
+        {
+            "title": "Для спанов внутри блока `.card-title` задайте фоновый цвет `#c8dcff` и сплошную рамку толщиной `1px` и цветом `#999999`.",
+            "name": "setCardTitleSpansBgColorToBlueAndBorderTo1PxSolidGray",
+            "expect": "expect(document.querySelectorAll('.card-title span')).to.have.css('backgroundColor', '#c8dcff');expect(document.querySelectorAll('.card-title span')).to.have.css('border', '1px solid #999999');"
+        },
+        {
+            "title": "Затем для `.card-title` задайте раскладку флексбокса",
+            "name": "setCardTitleDisplayToFlex",
+            "expect": "expect(document.querySelector('.card-title')).to.have.css('display', 'flex');"
+        },
+        {
+            "title": "и выравнивание флекс-элементов в конце поперечной оси.",
+            "name": "setCardTitleAlignItemsToFlexEnd",
+            "expect": "expect(document.querySelector('.card-title')).to.have.css('align-items', 'flex-end');"
+        },
+        {
+            "title": "Блоку `.card-title-main` задайте коэффициент растягивания `1`.",
+            "name": "seteCardTitleMainFlexGrowTo1",
+            "expect": "expect(document.querySelector('.card-title-main')).to.have.css('flexGrow', '1');"
+        }
+    ]
+}
+
+
+
+

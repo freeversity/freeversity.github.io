@@ -1,0 +1,23 @@
+{
+    "assertions": [
+        {
+            "title": "Увеличьте базовый размер всех скейтбордов до `500px`.",
+            "name": "setAllSkatesFlexBasisTo500Px",
+            "expect": "expect(document.querySelectorAll('.skate')).to.have.css('flexBasis', '500px');"
+        },
+        {
+            "title": "Разрешите перенос флекс-элементов на новую строку в блоке `.spot`.",
+            "name": "setSpotFlexWrapTooWrap",
+            "expect": "expect(document.querySelector('.spot')).to.have.css('flexWrap', 'wrap');"
+        },
+        {
+            "title": "Затем задайте всем скейтам нулевой коэффициент сжатия.",
+            "name": "setAllSkatesFlexShrinkTo0",
+            "expect": "expect(document.querySelectorAll('.skate')).to.have.css('flexShrink', '0');"
+        }
+    ],
+    "strict": true
+}
+
+
+

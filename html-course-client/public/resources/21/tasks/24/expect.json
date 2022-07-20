@@ -1,0 +1,28 @@
+{
+    "assertions": [
+        {
+            "title": "Для `.card` задайте раскладку флексбокса,",
+            "name": "setCardDisplayToFlex",
+            "expect": "expect(document.querySelector('.card')).to.have.css('display', 'flex');"
+        },
+        {
+            "title": "направление главной оси сверху вниз.",
+            "name": "setCardFlexDirectionToColumn",
+            "expect": "expect(document.querySelector('.card')).to.have.css('flexDirection', 'column');"
+        },
+        {
+            "title": "Затем раскладку флексбокса задайте `.card-meta`,",
+            "name": "serCardMetaDisplayToFlex",
+            "expect": "expect(document.querySelector('.card-meta')).to.have.css('display', 'flex');"
+        },
+        {
+            "title": "а для `.card-category` задайте коэффициент растягивания `1`.",
+            "name": "setCardCateegoryFlexGrowTo1",
+            "expect": "expect(document.querySelector('.card-category')).to.have.css('flexGrow', '1');"
+        }
+    ]
+}
+
+
+
+

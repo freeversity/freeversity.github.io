@@ -1,0 +1,35 @@
+{
+    "assertions": [
+        {
+            "title": "Блоку `.input-container` задайте раскладку флексбокса,",
+            "name": "setInputContainerDisplayToFlex",
+            "expect": "expect(document.querySelector('.input-container')).to.have.css('display', 'flex');"
+        },
+        {
+            "title": "а для `.input` задайте коэффициент растягивания `1`.",
+            "name": "setInputFlexGrowTo1",
+            "expect": "expect(document.querySelectorAll('.input')).to.have.css('flexGrow', '1');"
+        },
+        {
+            "title": "Затем уменьшите ширину `.input-container` до `200px`,",
+            "name": "setInputContainerWidthTo200Px",
+            "expect": "expect(document.querySelector('.input-container')).to.have.css('width', '200px');"
+        },
+        {
+            "title": "для `.add-on` задайте нулевой коэффициент сжатия,",
+            "name": "setAddOnFlexShrinkTo0",
+            "expect": "expect(document.querySelector('.add-on')).to.have.css('flexShrink', '0');"
+        },
+        {
+            "title": "а для `.input` задайте минимальную ширину `50px`.",
+            "name": "setInputMinWidthTo50Px",
+            "expect": "expect(document.querySelectorAll('.input')).to.have.css('minWidth', '50px');"
+        }
+    ],
+    "strict": true
+}
+
+
+
+
+

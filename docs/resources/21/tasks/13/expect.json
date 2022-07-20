@@ -1,0 +1,23 @@
+{
+    "assertions": [
+        {
+            "title": "Коричневому Еноту `.racoon-brown` задайте нулевой коэффициент сжатия.",
+            "name": "setRacoonBrownFlexShrinkTo0",
+            "expect": "expect(document.querySelector('.racoon-brown')).to.have.css('flexShrink', '0');"
+        },
+        {
+            "title": "Затем Зелёному Еноту `.racoon-green` задайте минимальную ширину `50px`",
+            "name": "setRacoonGreenMinWithTo50Px",
+            "expect": "expect(document.querySelector('.racoon-green')).to.have.css('minWidth', '50px');"
+        },
+        {
+            "title": "и внутренние отступы `25px`.",
+            "name": "setRacoonGreenPaddingTo25Px",
+            "expect": "expect(document.querySelector('.racoon-green')).to.have.css('padding', '25px');"
+        }
+    ],
+    "strict": true
+}
+
+
+

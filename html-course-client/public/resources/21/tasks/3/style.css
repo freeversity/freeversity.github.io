@@ -1,0 +1,17 @@
+.spot {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.skate {
+  margin: 10px;
+  min-width: 50px;
+  min-height: 50px;
+}
+
+.skate-2 {
+}
+
+.skate-3 {
+}

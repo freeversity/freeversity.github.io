@@ -1,0 +1,30 @@
+{
+    "assertions": [
+        {
+            "title": "Добавьте на полянку `.spot` последним скейт с Зелёным Енотом — див с классами `skate` и `racoon-green`.",
+            "name": "addRacoonGreenToSpot",
+            "expect": "expect(document.querySelector('.spot div.racoon-green.skate:last-child:nth-child(4)')).to.exist"
+        },
+        {
+            "title": "Блоку `.spot` задайте перенос флекс-элементов на новую строку,",
+            "name": "setSpotFlexWrapToWrap",
+            "expect": "expect(document.querySelector('.spot')).to.have.css('flexWrap', 'wrap');"
+        },
+        {
+            "title": "а затем зелёному еноту коэффициент растягивания `1`.",
+            "name": "setRacoonGreenFlexGrowTo1",
+            "expect": "expect(document.querySelector('.racoon-green')).to.have.css('flexGrow', '1');"
+        },
+        {
+            "title": "И, наконец, после Зелёного Енота добавьте скейт с Коричневым Енотом — див с классами `skate` и `racoon-brown`.",
+            "name": "addRacoonBrownToSpotAfterRacoonGreen",
+            "expect": "expect(document.querySelector('.spot div.racoon-brown.skate:last-child:nth-child(5)')).to.exist"
+        }
+    ],
+    "strict": true
+}
+
+
+
+
+

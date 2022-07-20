@@ -1,0 +1,20 @@
+{
+    "intro": "setFlexGrow1To",
+    "introTitle": "Задайте коэффициент растягивания `flex-grow` равный `1`:",
+    "assertions": [
+        {
+            "title": "скейту Зелёного Енота `.racoon-green`",
+            "name": "setRacoonGreenFlexGrowTo1",
+            "expect": "expect(document.querySelector('.racoon-green')).to.have.css('flexGrow', '1');expect(document.querySelector('.racoon-brown')).not.to.have.css('flexGrow', '1');"
+        },
+        {
+            "title": "и скейту Оранжевого Енота `.racoon-orange`.",
+            "name": "setRacoonOrangeFlexGrowTo1",
+            "expect": "expect(document.querySelector('.racoon-orange')).to.have.css('flexGrow', '1');expect(document.querySelector('.racoon-gray')).not.to.have.css('flexGrow', '1');"
+        }
+    ]
+}
+
+
+
+

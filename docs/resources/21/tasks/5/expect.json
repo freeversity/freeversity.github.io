@@ -1,0 +1,27 @@
+{
+    "assertions": [
+        {
+            "title": "Скейту Оранжевого Енота `.racoon-orange` задайте ширину `300px` и высоту `100px`.",
+            "name": "setRacoonOrangeWidthTo300PxAndHeightTo100Px",
+            "expect": "expect(document.querySelector('.racoon-orange')).to.have.css('width', '300px');expect(document.querySelector('.racoon-orange')).to.have.css('height', '100px');"
+        },
+        {
+            "title": "Затем задайте ему же базовый размер `100%`.",
+            "name": "setRacoonOrangeFlexBasisTo100%",
+            "expect": "expect(document.querySelector('.racoon-orange')).to.have.css('flexBasis', '100%');"
+        },
+        {
+            "title": "После этого поменяйте направление главной оси `.spot` на `column`. Смотрите, как ширина и высота меняются при повороте оси из-за заданного базового размера.",
+            "name": "setSpotFlexDirectionToColumn",
+            "expect": "expect(document.querySelector('.spot')).to.have.css('flexDirection', 'column');"
+        }
+    ],
+    "strict": true,
+    "scripts": [{
+        "type": "exec",
+        "body": "const rooms = document.querySelectorAll('.spot'); for (let room of rooms) { const {width, height, top, left} = room.getBoundingClientRect(); const div = document.createElement('div'); div.style.top = top + 'px'; div.style.left = left + 'px'; div.style.width = width + 'px'; div.style.height = height + 'px'; div.classList.add('axis-container'); div.innerHTML = `<div class='axis-main axis-main-${window.getComputedStyle(room).flexDirection}'></div><div class='axis-cross axis-cross-${window.getComputedStyle(room).flexDirection}'></div>`;document.body.prepend(div);}"
+    }]
+}
+
+
+

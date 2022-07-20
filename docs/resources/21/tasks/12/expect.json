@@ -1,0 +1,13 @@
+{
+    "assertions": [
+        {
+            "title": "Задайте енотам значения `flex-shrink` так, чтобы их ширина стала равной ширине «линеек».",
+            "name": "setRacconsFlexShrinkToMatchRulers",
+            "expect": "expect(document).to.have.cssRule('.racoon-green', {flexShrink: 1, flexBasis: '100px'});expect(document).to.have.cssRule('.racoon-brown', {flexShrink: 1, flexBasis: '300px'});"
+        }
+    ],
+    "footnote": "yoouMayChangeFlexShrinkOnly",
+    "footnoteTitle": "В этом задании можно менять только значения `flex-shrink`"
+}
+
+

@@ -1,0 +1,19 @@
+{
+    "assertions": [
+        {
+            "title": "Для блока `.cards` задайте раскладку флексбокса,",
+            "name": "setCardDisplayTooFlex",
+            "expect": "expect(document.querySelector('.cards')).to.have.css('display', 'flex');"
+        },
+        {
+            "title": "затем карточкам `.card` задайте внешний отступ `10px`.",
+            "name": "setCardMarginTo10Px",
+            "expect": "expect(document.querySelectorAll('.card')).to.have.css('margin', '10px');"
+        }
+    ]
+}
+
+
+
+
+

@@ -1,0 +1,33 @@
+.cards {
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  max-width: 70%;
+}
+
+.card-meta {
+  display: flex;
+}
+
+.card-category {
+  flex-grow: 1;
+}
+
+.card-img {
+  width: 100%;
+}
+
+/* Декоративные обводки */
+
+.cards {
+  outline: 2px solid rgba(0, 0, 255, 0.3);
+  outline-offset: 2px;
+}
+
+.card {
+  outline: 2px solid rgba(255, 0, 0, 0.3);
+  outline-offset: -2px;
+}

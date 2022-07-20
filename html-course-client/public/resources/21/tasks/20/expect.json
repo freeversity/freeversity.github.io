@@ -1,0 +1,22 @@
+{
+    "assertions": [
+        {
+            "title": "Замените текст `Кекс любит флекс` на `Инструктор Кекс и удивительный флекс`,",
+            "name": "replaceKeksLoveFlexTitleToKeksAndMarvelousFlex",
+            "expect": "expect(document.querySelector('.card:nth-child(2) .card-title-main')).to.have.rendered.text('Инструктор Кекс и удивительный флекс');"
+        },
+        {
+            "title": "а затем блоку `.card-title` задайте перенос флекс-элементов на новую строку.",
+            "name": "setCardTitleFlexWrapToWrap",
+            "expect": "expect(document.querySelectorAll('.card-title')).to.have.css('flexWrap', 'wrap');"
+        },
+        {
+            "title": "Уберите у дочерних спанов `.card-title` рамку и фоновый цвет.",
+            "name": "removeCardTitleSpansBgColorAndBorder",
+            "expect": "expect(document.querySelectorAll('.card-title span')).not.to.have.css('backgroundColor', '#c8dcff');expect(document.querySelectorAll('.card-title span')).not.to.have.css('border', '1px solid #999999');"
+        }
+    ]
+}
+
+
+

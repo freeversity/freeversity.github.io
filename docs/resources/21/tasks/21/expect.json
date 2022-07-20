@@ -1,0 +1,23 @@
+{
+    "assertions": [
+        {
+            "title": "Для` .menu` задайте раскладку флексбокса,",
+            "name": "setMenuDisplayToFlex",
+            "expect": "expect(document.querySelector('.menu')).to.have.css('display', 'flex');"
+        },
+        {
+            "title": "затем добавьте в меню последним пунктом ещё один див со ссылкой с текстом `Акула`.",
+            "name": "addItemWithAnchorTextShark",
+            "expect": "expect(document.querySelector('.menu div:last-child:nth-child(6) a[href]:not([href=\"\"])')).to.have.rendered.text('Акула');"
+        },
+        {
+            "title": "После этого задайте меню перенос флекс-элементов на новую строку.",
+            "name": "setMenuFlexWrapToWrap",
+            "expect": "expect(document.querySelector('.menu')).to.have.css('flexWrap', 'wrap');"
+        }
+    ],
+    "strict": true
+}
+
+
+

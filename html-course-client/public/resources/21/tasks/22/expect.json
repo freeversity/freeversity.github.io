@@ -1,0 +1,29 @@
+{
+    "assertions": [
+        {
+            "title": "Для всех дочерних дивов в `.menu` задайте коэффициент растягивания `1`,",
+            "name": "setmenuDivsFlexGrowTo1",
+            "expect": "expect(document.querySelector('.menu > div')).to.have.css('flexGrow', '1');"
+        },
+        {
+            "title": "а затем добавьте в меню последним ещё один див со ссылкой с текстом `Сом`.",
+            "name": "addItemToMenuWithAnchorAndTextCatfish",
+            "expect": "expect(document.querySelector('.menu div:last-child:nth-child(7) a[href]:not([href=\"\"])')).to.have.rendered.text('Сом');"
+        },
+        {
+            "title": "После этого задайте блоку `.menu` ширину `300px`,",
+            "name": "setMenuWidthTo300Px",
+            "expect": "expect(document.querySelector('.menu')).to.have.css('width', '300px');"
+        },
+        {
+            "title": "а затем `200px`.",
+            "name": "setMenuWidthTo200Px",
+            "expect": "expect(document.querySelector('.menu')).to.have.css('width', '200px');"
+        }
+    ],
+    "strict": true
+}
+
+
+
+

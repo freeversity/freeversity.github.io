@@ -1,0 +1,8 @@
+{
+    "id": 23,      
+    "name": "inputs-with-dynamic-length",
+    "htmlEntry": "index.html",
+    "cssEntry": "style.css",
+    "articleEntry": "article.md",
+    "expectEntry": "expect.json"
+}

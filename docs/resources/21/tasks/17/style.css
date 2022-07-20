@@ -1,0 +1,13 @@
+.spot {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 450px;
+  height: auto;
+}
+
+.skate {
+  flex-basis: 120px;
+}
+
+.racoon-green {
+}

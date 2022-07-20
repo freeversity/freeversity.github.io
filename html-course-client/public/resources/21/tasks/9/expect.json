@@ -1,0 +1,19 @@
+{
+    "assertions": [
+        {
+            "title": "Задайте енотам на верхней поляне `.spot-1` значения `flex-grow` так, чтобы их ширина стала равной ширине «линеек».",
+            "name": "setSpot1SkatesFlexGrowToMatchWidth100PxAnd200Px",
+            "expect": "expect(document).to.have.cssRule('.spot-1 .racoon-green', {flexGrow: 1});expect(document).to.have.cssRule('.spot-1 .racoon-brown', {flexGrow: 2});"
+        },
+        {
+            "title": "Сделайте то же самое с енотами на нижней поляне `.spot-2`.",
+            "name": "setSpot2SkatesFlexGrowToMatchWidth200PxAn300Px",
+            "expect": "expect(document).to.have.cssRule('.spot-2 .racoon-green', {flexGrow: 2});expect(document).to.have.cssRule('.spot-2 .racoon-brown', {flexGrow: 3});"
+        }
+    ],
+    "footnote": "youMayChangeFlexGrowOnly",
+    "footnoteTitle": "В этом задании можно менять только значения `flex-grow`."
+}
+
+
+

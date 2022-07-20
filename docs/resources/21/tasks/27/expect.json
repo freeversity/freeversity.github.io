@@ -1,0 +1,29 @@
+{
+    "assertions": [
+        {
+            "title": "Разрешите перенос флекс-элементов в блоке `.cards`.",
+            "name": "setCardsFlexWrapToWrap",
+            "expect": "expect(document.querySelector('.cards')).to.have.css('flexWrap', 'wrap');"
+        },
+        {
+            "title": "Затем у карточки `.card` удалите максимальную ширину, задайте ей базовый размер `300px`",
+            "name": "removeCardMaxWidthAndSetFlexBasisTo300Px",
+            "expect": "expect(document).not.to.have.cssRule('.card', 'maxWidth');expect(document.querySelectorAll('.card')).to.have.css('flexBasis', '300px');"
+        },
+        {
+            "title": "и коэффициент растягивания `1`.",
+            "name": "setCardFlexGrowTo1",
+            "expect": "expect(document.querySelectorAll('.card')).to.have.css('flexGrow', '1');"
+        },
+        {
+            "title": "После этого уменьшите ширину `.cards` до `700px`. Обратите внимание, как перестроятся карточки.",
+            "name": "setCardsWidthTo700Px",
+            "expect": "expect(document.querySelector('.cards')).to.have.css('width', '700px');"
+        }
+    ],
+    "strict": true
+}
+
+
+
+

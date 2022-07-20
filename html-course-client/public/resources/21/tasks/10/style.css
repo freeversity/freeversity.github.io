@@ -1,0 +1,15 @@
+.spot {
+  display: flex;
+  width: 450px;
+}
+
+.spot-1 .skate {
+  flex-basis: 150px;
+}
+
+.spot-1 .racoon-brown {
+}
+
+.spot-2 .skate {
+  flex-basis: 150px;
+}

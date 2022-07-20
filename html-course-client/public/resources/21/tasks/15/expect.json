@@ -1,0 +1,23 @@
+{
+    "assertions": [
+        {
+            "title": "С помощью свойства `flex` задайте всем скейтбордам `.skate` коэффициент растягивания `0`, коэффициент сжатия `1`, базовый размер `200px`.",
+            "name": "setAllSkatesFlex0And1And200Px",
+            "expect": "expect(document.querySelectorAll('.skate')).to.have.css('flex', '0 1 200px');"
+        },
+        {
+            "title": "Оранжевому еноту задайте коэффициент растягивания `1`, коэффициент сжатия `0`, базовый размер `200px`,",
+            "name": "setRacoonOrangeFlexTo1And0And200Px",
+            "expect": "expect(document.querySelectorAll('.racoon-orange')).to.have.css('flex', '1 0 200px');"
+        },
+        {
+            "title": "а затем смените коэффициент сжатия на `2`.",
+            "name": "setRacoonOrangeFlexTo1And2And200Px",
+            "expect": "expect(document.querySelectorAll('.racoon-orange')).to.have.css('flex', '1 2 200px');"
+        }
+    ],
+    "strict": true
+}
+
+
+

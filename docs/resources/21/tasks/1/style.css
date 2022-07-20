@@ -1,0 +1,24 @@
+.spot {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.skate {
+  min-width: 40px;
+  min-height: 120px;
+  border-color: white;
+  border-top-left-radius: 75% 25%;
+  border-top-right-radius: 75% 25%;
+  border-bottom-right-radius: 75% 25%;
+  border-bottom-left-radius: 75% 25%;
+  background-clip: content-box;
+}
+
+.skate::after {
+  left: 50%;
+  margin-left: -10px;
+}
+
+.skate-2 {
+}

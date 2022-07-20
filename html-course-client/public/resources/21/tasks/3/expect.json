@@ -1,0 +1,29 @@
+{
+    "assertions": [
+        {
+            "title": "Измените у `.spot` выравнивание флекс-элементов вдоль поперечной оси на `stretch`.",
+            "name": "setSpotAlignItemsToStretch",
+            "expect": "expect(document.querySelectorAll('.spot')).to.have.css('alignItems', 'stretch');"
+        },
+        {
+            "title": "Затем задайте `margin-top: auto;` второму скейту.",
+            "name": "setSkate2MarginTopToAuto",
+            "expect": "expect(document).to.have.cssRule('.skate-2', 'marginTop', 'auto');"
+        },
+        {
+            "title": "Третьему скейту сначала задайте собственное выравнивание в конце поперечной оси,",
+            "name": "setSkate3AlignSelfToFlexEnd",
+            "expect": "expect(document.querySelector('.skate-3')).to.have.css('alignSelf', 'flex-end');"
+        },
+        {
+            "title": "а потом задайте `margin-bottom: auto;`.",
+            "name": "setSkate3MarginBottomToAuto",
+            "expect": "expect(document).to.have.cssRule('.skate-3', 'marginBottom', 'auto');"
+        }
+    ],
+    "strict": true
+}
+
+
+
+

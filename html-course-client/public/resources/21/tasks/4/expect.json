@@ -1,0 +1,27 @@
+{
+    "assertions": [
+        {
+            "title": "Измените у `.spot` направление главной оси на `column`.",
+            "name": "setSpotFlexDirectionToColumn",
+            "expect": "expect(document.querySelector('.spot')).to.have.css('flexDirection', 'column');"
+        },
+        {
+            "title": "Затем у второго скейта удалите свойство `margin-top` и добавьте свойство `margin-left: auto;`.",
+            "name": "removeSkate2MarginTopAndAddMarginLeftAuto",
+            "expect": "expect(document).not.to.have.cssRule('.skate-2', 'marginTop', 'auto');expect(document).to.have.cssRule('.skate-2', 'marginLeft', 'auto');"
+        },
+        {
+            "title": "У третьего скейта удалите свойство `margin-bottom` и добавьте свойство `margin-right: auto`;.",
+            "name": "removeSkate3MarginBottomAndAddMarginRightAuto",
+            "expect": "expect(document).not.to.have.cssRule('.skate-3', 'marginBottom', 'auto');expect(document).to.have.cssRule('.skate-3', 'marginRight', 'auto');"
+        }
+    ],
+    "strict": true,
+    "scripts": [{
+        "type": "exec",
+        "body": "const rooms = document.querySelectorAll('.spot'); for (let room of rooms) { const {width, height, top, left} = room.getBoundingClientRect(); const div = document.createElement('div'); div.style.top = top + 'px'; div.style.left = left + 'px'; div.style.width = width + 'px'; div.style.height = height + 'px'; div.classList.add('axis-container'); div.innerHTML = `<div class='axis-main axis-main-${window.getComputedStyle(room).flexDirection}'></div><div class='axis-cross axis-cross-${window.getComputedStyle(room).flexDirection}'></div>`;document.body.prepend(div);}"
+    }]
+}
+
+
+

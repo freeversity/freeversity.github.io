@@ -1,0 +1,38 @@
+.input-container {
+  margin: 30px 0;
+  width: 450px;
+  outline: 2px dashed rgba(0, 128, 0, 0.2);
+  outline-offset: 5px;
+}
+
+.add-on {
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 8px 12px;
+  min-width: 40px;
+  min-height: 36px;
+  border: 2px solid #cccccc;
+  background-color: #eeeeee;
+  color: #666666;
+  vertical-align: top;
+}
+
+.input {
+  padding: 8px 12px;
+  border: 2px solid #cccccc;
+}
+
+.input:not(:first-child) {
+  border-left: 0;
+}
+
+.input:not(:last-child) {
+  border-right: 0;
+}
+
+.input-container a {
+  margin: 0 10px;
+  color: #666666;
+  font-size: 12px;
+  line-height: 36px;
+}

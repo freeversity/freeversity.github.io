@@ -1,0 +1,19 @@
+.card {
+  margin-bottom: 20px;
+  line-height: 1.3;
+}
+
+.card-title {
+  display: flex;
+  align-items: flex-end;
+  margin-top: 0;
+}
+
+.card-title span {
+  border: 1px solid #999999;
+  background-color: #c8dcff;
+}
+
+.card-title-main {
+  flex-grow: 1;
+}
