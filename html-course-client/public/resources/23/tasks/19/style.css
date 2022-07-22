@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  padding: 20px;
+}
+
+.block {
+  padding: 10px;
+  text-align: right;
+  color: white;
+  opacity: 0.8;
+}
+
+.block-1 {
+  width: 350px;
+  height: 350px;
+  background-color: #3a78a1;
+}
+
+.block-2 {
+  position: absolute;
+  top: 20px;
+  width: 250px;
+  height: 250px;
+  background-color: #e74c3c;
+}
+
+.block-3 {
+  position: absolute;
+  top: 20px;
+  width: 150px;
+  height: 150px;
+  background-color: #27ae60;
+}

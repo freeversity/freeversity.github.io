@@ -3,6 +3,120 @@
     "title": "Positioning",
     "tasks": [
         {
+            "id": 1,
+            "type": "task",
+            "entry": "/resources/23/tasks/1/task.json",
+            "name": "document-flow"
+        },
+        {
+            "id": 2,
+            "type": "task",
+            "entry": "/resources/23/tasks/2/task.json",
+            "name": "relative-positioning"
+        },
+        {
+            "id": 3,
+            "type": "task",
+            "entry": "/resources/23/tasks/3/task.json",
+            "name": "relative-positioning-and-top-prop"
+        },
+        {
+            "id": 4,
+            "type": "task",
+            "entry": "/resources/23/tasks/4/task.json",
+            "name": "relative-positioning-and-left-prop"
+        },
+        {
+            "id": 5,
+            "type": "task",
+            "entry": "/resources/23/tasks/5/task.json",
+            "name": "relative-positioning-and-bottom-prop"
+        },
+        {
+            "id": 6,
+            "type": "task",
+            "entry": "/resources/23/tasks/6/task.json",
+            "name": "relative-positioning-and-right-prop"
+        },
+        {
+            "id": 7,
+            "type": "task",
+            "entry": "/resources/23/tasks/7/task.json",
+            "name": "relative-positioning-in-practice"
+        },
+        {
+            "id": 8,
+            "type": "task",
+            "entry": "/resources/23/tasks/8/task.json",
+            "name": "absolute-positioning"
+        },
+        {
+            "id": 9,
+            "type": "task",
+            "entry": "/resources/23/tasks/9/task.json",
+            "name": "absolute-positioning-and-inline-elements"
+        },
+        {
+            "id": 10,
+            "type": "task",
+            "entry": "/resources/23/tasks/10/task.json",
+            "name": "absolute-positioning-and-left-prop"
+        },
+        {
+            "id": 11,
+            "type": "task",
+            "entry": "/resources/23/tasks/11/task.json",
+            "name": "absolute-positioning-and-top-prop"
+        },
+        {
+            "id": 12,
+            "type": "task",
+            "entry": "/resources/23/tasks/12/task.json",
+            "name": "absolute-positioning-and-right-prop"
+        },
+        {
+            "id": 13,
+            "type": "task",
+            "entry": "/resources/23/tasks/13/task.json",
+            "name": "absolute-positioning-and-bottom-prop"
+        },
+        {
+            "id": 14,
+            "type": "task",
+            "entry": "/resources/23/tasks/14/task.json",
+            "name": "coordinates-start-point"
+        },
+        {
+            "id": 15,
+            "type": "task",
+            "entry": "/resources/23/tasks/15/task.json",
+            "name": "practice-with-setting-coordinates"
+        },
+        {
+            "id": 16,
+            "type": "task",
+            "entry": "/resources/23/tasks/16/task.json",
+            "name": "implicit-start-point"
+        },
+        {
+            "id": 17,
+            "type": "task",
+            "entry": "/resources/23/tasks/17/task.json",
+            "name": "absolute-positioning-in-practice"
+        },
+        {
+            "id": 18,
+            "type": "task",
+            "entry": "/resources/23/tasks/18/task.json",
+            "name": "fixed-positioning"
+        },
+        {
+            "id": 19,
+            "type": "task",
+            "entry": "/resources/23/tasks/19/task.json",
+            "name": "z-index-prop"
+        },
+        {
             "id": 20,
             "type": "challenge",
             "entry": "/resources/23/tasks/20/task.json",

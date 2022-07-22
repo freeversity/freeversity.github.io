@@ -1,0 +1,17 @@
+{
+    "intro": "setBlockAbsoluteTopTo",
+    "introTitle": "Задайте блоку с классом `block-absolute` свойство `top`:",
+    "assertions": [
+        {
+            "title": "со значением `10px`,",
+            "name": "setBlockAbsoluteTopTo10Px",
+            "expect": "expect(document.querySelector('.block-absolute')).to.have.css('top', '10px');"
+        },
+        {
+            "title": "затем измените значение на -20px.",
+            "name": "setBlockAbsoluteTopToNeg20Px",
+            "expect": "expect(document.querySelector('.block-absolute')).to.have.css('top', '-20px');"
+        }
+    ],
+    "strict": true
+}

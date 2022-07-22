@@ -1,0 +1,21 @@
+{
+    "assertions": [
+        {
+            "title": "Задайте блоку с классом `block-relative` свойство `bottom` со значением `10px`.",
+            "name": "setBlockRelativeBottomTo10Px",
+            "expect": "expect(document.querySelector('.block-relative')).to.have.css('bottom', '10px');"
+        },
+        {
+            "title": "Затем измените значение свойства на `-10px`.",
+            "name": "setBlockRelativeBottomToNeg10Px",
+            "expect": "expect(document.querySelector('.block-relative')).to.have.css('bottom', '-10px');"
+        }
+    ],
+    "strict": true
+}
+
+
+
+
+
+

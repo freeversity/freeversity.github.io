@@ -1,0 +1,26 @@
+{
+    "assertions": [
+        {
+            "title": "Задайте блоку `2` `z-index` со значением `100`.",
+            "name": "setBlock2ZIndexTo100",
+            "expect": "expect(document.querySelector('.block-2')).to.have.css('zIndex', '100');"
+        },
+        {
+            "title": "Задайте блоку `1` относительное позиционирование",
+            "name": "setBlock1PositionToAbsolute",
+            "expect": "expect(document.querySelector('.block-1')).to.have.css('position', 'relative');"
+        },
+        {
+            "title": "и `z-index` со значением `200`.",
+            "name": "setBlock1ZIndexTo200",
+            "expect": "expect(document.querySelector('.block-1')).to.have.css('zIndex', '200');"
+        }
+    ]
+}
+
+
+
+
+
+
+

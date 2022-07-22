@@ -1,0 +1,22 @@
+{
+    "intro": "setPropsToBlockRelative",
+    "introTitle": "Задайте блоку с классом `block-relative`:",
+    "assertions": [
+        {
+            "title": "свойство `left` со значением `10px`,",
+            "name": "setBlockRelativeLeftTo10Px",
+            "expect": "expect(document.querySelector('.block-relative')).to.have.css('left', '10px');"
+        },
+        {
+            "title": "затем измените значение на `-10px`,",
+            "name": "setBlockRelativeLeftToNeg10Px",
+            "expect": "expect(document.querySelector('.block-relative')).to.have.css('left', '-10px');"
+        },
+        {
+            "title": "затем задайте блоку высоту `100px`.",
+            "name": "setBlockRelativeHeightTo100Px",
+            "expect": "expect(document.querySelector('.block-relative')).to.have.css('height', '100px');"
+        }
+    ],
+    "strict": true
+}

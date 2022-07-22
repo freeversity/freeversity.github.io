@@ -1,0 +1,26 @@
+{
+    "assertions": [
+        {
+            "title": "Задайте элементу с классом `achievement` внутренний отступ слева `80px`.",
+            "name": "setAchievementPaddingLeftTo80Px",
+            "expect": "expect(document.querySelector('.achievement')).to.have.css('paddingLeft', '80px');"
+        },
+        {
+            "title": "Задайте элементу с классом `badge` абсолютное позиционирование",
+            "name": "setBadgePositionToAbsolute",
+            "expect": "expect(document.querySelector('.badge')).to.have.css('position', 'absolute');"
+        },
+        {
+            "title": "и координату слева `20px`.",
+            "name": "setBadgeLeftTo20Px",
+            "expect": "expect(document.querySelector('.badge')).to.have.css('left', '20px');"
+        }
+    ]
+}
+
+
+
+
+
+
+

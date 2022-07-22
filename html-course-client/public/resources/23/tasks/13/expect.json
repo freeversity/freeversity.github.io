@@ -1,0 +1,17 @@
+{
+    "intro": "setBlockAbsoluteBottomTo",
+    "introTitle": "Задайте блоку с классом `block-absolute` свойство `bottom`:",
+    "assertions": [
+        {
+            "title": "со значением `10px`,",
+            "name": "setBlockAbsoluteBottomTo10Px",
+            "expect": "expect(document.querySelector('.block-absolute')).to.have.css('bottom', '10px');"
+        },
+        {
+            "title": "затем измените значение на -50px.",
+            "name": "setBlockAbsoluteBottomToNeg50Px",
+            "expect": "expect(document.querySelector('.block-absolute')).to.have.css('bottom', '-50px');"
+        }
+    ],
+    "strict": true
+}

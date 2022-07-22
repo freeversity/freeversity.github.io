@@ -1,0 +1,17 @@
+{
+    "intro": "setBlockAbsoluteLeftTo",
+    "introTitle": "Задайте блоку с классом `block-absolute` свойство `left`:",
+    "assertions": [
+        {
+            "title": "со значением `10px`,",
+            "name": "setBlockAbsoluteLeftTo10Px",
+            "expect": "expect(document.querySelector('.block-absolute')).to.have.css('left', '10px');"
+        },
+        {
+            "title": "затем измените значение на -50px.",
+            "name": "setBlockAbsoluteLeftToNeg50Px",
+            "expect": "expect(document.querySelector('.block-absolute')).to.have.css('left', '-50px');"
+        }
+    ],
+    "strict": true
+}

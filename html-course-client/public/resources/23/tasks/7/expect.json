@@ -1,0 +1,30 @@
+{
+    "intro": "setPropsToImgs",
+    "introTitle": "Задайте для изображений следующие CSS-свойства:",
+    "assertions": [
+        {
+            "title": "относительное позиционирование,",
+            "name": "setImgPositionToRelative",
+            "expect": "expect(document.querySelectorAll('.frame img')).to.have.css('position', 'relative');"
+        },
+        {
+            "title": "координату сверху -5px,",
+            "name": "setImgTopToNeg5Px",
+            "expect": "expect(document.querySelectorAll('.frame img')).to.have.css('top', '-5px');"
+        },
+        {
+            "title": "координату слева -5px.",
+            "name": "setImgLeftToNeg5Px",
+            "expect": "expect(document.querySelectorAll('.frame img')).to.have.css('left', '-5px');"
+        }
+    ]
+}
+
+
+
+
+
+
+
+
+

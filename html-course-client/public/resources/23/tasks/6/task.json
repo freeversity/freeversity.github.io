@@ -1,0 +1,8 @@
+{
+    "id": 6,      
+    "name": "relative-positioning-and-right-prop",
+    "htmlEntry": "index.html",
+    "cssEntry": "style.css",
+    "articleEntry": "article.md",
+    "expectEntry": "expect.json"
+}

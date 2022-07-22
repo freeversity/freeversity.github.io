@@ -1,0 +1,26 @@
+{
+    "intro": "setPropsToBlockFixed",
+    "introTitle": "Задайте блоку с классом `block-fixed`:",
+    "assertions": [
+        {
+            "title": "фиксированное позиционирование,",
+            "name": "setBlockFixedPositionToFixed",
+            "expect": "expect(document.querySelector('.block-fixed')).to.have.css('position', 'fixed');"
+        },
+        {
+            "title": "координату слева `10px`",
+            "name": "setBlockFixedLeftTo10Px",
+            "expect": "expect(document.querySelector('.block-fixed')).to.have.css('left', '10px');"
+        },
+        {
+            "title": "и координату сверху `10px`",
+            "name": "setBlockFixedTopTo10Px",
+            "expect": "expect(document.querySelector('.block-fixed')).to.have.css('top', '10px');"
+        }
+    ],
+    "strict": true
+}
+
+
+
+

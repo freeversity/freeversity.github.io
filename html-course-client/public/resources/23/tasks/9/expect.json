@@ -1,0 +1,26 @@
+{
+    "intro": "setPropsToInlineAbsolute",
+    "introTitle": "Задайте элементу с классом `inline-absolute`:",
+    "assertions": [
+        {
+            "title": "абсолютное позиционирование,",
+            "name": "setInlineAbsolutePositionToAbsolute",
+            "expect": "expect(document.querySelector('.inline-absolute')).to.have.css('position', 'absolute');"
+        },
+        {
+            "title": "ширину `200px`,",
+            "name": "setInlineAbsoluteWidthTo200px",
+            "expect": "expect(document.querySelector('.inline-absolute')).to.have.css('width', '200px');"
+        },
+        {
+            "title": "высоту `100px`.",
+            "name": "setInlineAbsoluteHeightTo100px",
+            "expect": "expect(document.querySelector('.inline-absolute')).to.have.css('height', '100px');"
+        }
+    ],
+    "strict": true
+}
+
+
+
+

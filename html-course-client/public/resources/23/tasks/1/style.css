@@ -1,0 +1,8 @@
+.outline {
+  margin: 5px;
+  padding: 5px;
+}
+
+.column {
+  display: inline-block;
+}

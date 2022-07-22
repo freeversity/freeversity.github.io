@@ -155,8 +155,7 @@
                         {
                             "name": "positioning",
                             "id": 23,
-                            "entry": "/resources/23/chapter.json",
-                            "unfinished": true
+                            "entry": "/resources/23/chapter.json"
                         },
                         {
                             "name": "2d-transforms",

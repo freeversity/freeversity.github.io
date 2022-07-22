@@ -1,0 +1,31 @@
+{
+    "intro": "setReltivePositionToElems",
+    "introTitle": "Последовательно задайте относительное позиционирование следующим элементам:",
+    "assertions": [
+        {
+            "title": "элементу `body`,",
+            "name": "setBodyPositionToRelative",
+            "expect": "expect(document.querySelector('body')).to.have.css('position', 'relative');"
+        },
+        {
+            "title": "элементу с классом `block-1`,",
+            "name": "ssetBlock1PositionToRelative",
+            "expect": "expect(document.querySelector('.block-1')).to.have.css('position', 'relative');"
+        },
+        {
+            "title": "элементу с классом `block-2`.",
+            "name": "getBlock2PositionToRelative",
+            "expect": "expect(document.querySelector('.block-2')).to.have.css('position', 'relative');"
+        }
+    ],
+    "strict": true
+}
+
+
+
+
+
+
+
+
+

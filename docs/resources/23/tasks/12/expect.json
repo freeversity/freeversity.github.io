@@ -1,0 +1,17 @@
+{
+    "intro": "setBlockAbsoluteRightTo",
+    "introTitle": "Задайте блоку с классом `block-absolute` свойство `right`:",
+    "assertions": [
+        {
+            "title": "со значением `10px`,",
+            "name": "setBlockAbsoluteRightTo10Px",
+            "expect": "expect(document.querySelector('.block-absolute')).to.have.css('right', '10px');"
+        },
+        {
+            "title": "затем измените значение на -50px.",
+            "name": "setBlockAbsoluteRightToNeg50Px",
+            "expect": "expect(document.querySelector('.block-absolute')).to.have.css('right', '-50px');"
+        }
+    ],
+    "strict": true
+}

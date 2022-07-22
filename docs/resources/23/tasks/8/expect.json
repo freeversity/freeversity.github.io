@@ -1,0 +1,14 @@
+{
+    "assertions": [
+        {
+            "title": "Задайте блоку с классом `block-absolute` абсолютное позиционирование.",
+            "name": "setBlockAbsolutePositionToAbsolute",
+            "expect": "expect(document.querySelector('.block-absolute')).to.have.css('position', 'absolute');"
+        }
+    ]
+}
+
+
+
+
+

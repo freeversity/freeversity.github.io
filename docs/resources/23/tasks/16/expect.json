@@ -1,0 +1,26 @@
+{
+    "intro": "setPropsToInlineAbsolute",
+    "introTitle": "Задайте элементам с классом `inline-absolute`:",
+    "assertions": [
+        {
+            "title": "абсолютное позиционирование,",
+            "name": "setInlineAbsolutePositionToAbsolute",
+            "expect": "expect(document.querySelector('.inline-absolute')).to.have.css('position', 'absolute');"
+        },
+        {
+            "title": "внешний отступ сверху (`margin`) `-15px`,",
+            "name": "setInlineAbsoluteMarginTopToNeg15Px",
+            "expect": "expect(document.querySelector('.inline-absolute')).to.have.css('marginTop', '-15px');"
+        },
+        {
+            "title": "внешний отступ слева (`margin`) `15px`.",
+            "name": "setInlineAbsoluteMarginLeftTo15Px",
+            "expect": "expect(document.querySelector('.inline-absolute')).to.have.css('marginLeft', '15px');"
+        }
+    ],
+    "strict": true
+}
+
+
+
+

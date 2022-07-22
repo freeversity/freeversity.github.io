@@ -1,0 +1,36 @@
+{
+    "intro": "positionBlockAbsoluteInEachCorner",
+    "introTitle": "Поочередно расположите абсолютно спозиционированный блок `block-absolute` в каждом из четырех углов. Отступы от краев угла должны быть нулевыми.",
+    "assertions": [
+        {
+            "title": "Левый верхний угол.",
+            "name": "topLefCorner",
+            "expect": "expect(document.querySelector('.block-absolute')).to.have.css('top', '0');expect(document.querySelector('.block-absolute')).to.have.css('left', '0');expect(document.querySelector('.block-absolute')).not.to.have.css('right', '0');expect(document.querySelector('.block-absolute')).not.to.have.css('bottom', '0');"
+        },
+        {
+            "title": "Правый верхний угол.",
+            "name": "topRightCorner",
+            "expect": "expect(document.querySelector('.block-absolute')).to.have.css('top', '0');expect(document.querySelector('.block-absolute')).not.to.have.css('left', '0');expect(document.querySelector('.block-absolute')).to.have.css('right', '0');expect(document.querySelector('.block-absolute')).not.to.have.css('bottom', '0');"
+        },
+        {
+            "title": "Левый нижний угол.",
+            "name": "bottomLeftCorner",
+            "expect": "expect(document.querySelector('.block-absolute')).not.to.have.css('top', '0');expect(document.querySelector('.block-absolute')).to.have.css('left', '0');expect(document.querySelector('.block-absolute')).not.to.have.css('right', '0');expect(document.querySelector('.block-absolute')).to.have.css('bottom', '0');"
+        },
+        {
+            "title": "Правый нижний угол.",
+            "name": "bottomRightCorner",
+            "expect": "expect(document.querySelector('.block-absolute')).not.to.have.css('top', '0');expect(document.querySelector('.block-absolute')).not.to.have.css('left', '0');expect(document.querySelector('.block-absolute')).to.have.css('right', '0');expect(document.querySelector('.block-absolute')).to.have.css('bottom', '0');"
+        }
+    ]
+}
+
+
+
+
+
+
+
+
+
+

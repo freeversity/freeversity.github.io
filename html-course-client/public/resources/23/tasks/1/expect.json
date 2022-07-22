@@ -1,0 +1,24 @@
+{
+    "intro": "highlightElementsToSeeDocumentFlow",
+    "introTitle": "Подсветите элементы, чтобы увидеть, как формируется поток документа. Для этого:",
+    "assertions": [
+        {
+            "title": "Задайте элементу с классом `outline` свойства `background-color: rgba(0, 0, 0, 0.1);`",
+            "name": "setOutlineBackgroundColorToRgba0000dot1",
+            "expect": "expect(document.querySelector('.outline')).to.have.css('backgroundColor', 'rgba(0, 0, 0, 0.1)');"
+        },
+        {
+            "title": "и `border: 1px dotted #666666;`.",
+            "name": "setOutlineBorderTo1PxDottedGray",
+            "expect": "expect(document.querySelector('.outline')).to.have.css('border', '1px dotted #666666');"
+        }
+    ]
+}
+
+
+
+
+
+
+
+

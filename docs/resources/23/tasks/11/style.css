@@ -1,0 +1,21 @@
+body {
+  padding: 20px;
+}
+
+.block {
+  margin-bottom: 20px;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  background-color: #3a78a1;
+}
+
+.block-absolute {
+  position: absolute;
+  left: 10px;
+  width: 100px;
+  margin-bottom: 20px;
+  padding: 10px;
+  color: white;
+  background-color: rgba(255, 0, 0, 0.5);
+}

@@ -1,0 +1,14 @@
+{
+    "assertions": [
+        {
+            "title": "Задайте блоку с классом `block-relative` относительное позиционирование.",
+            "name": "setBlockRelativePositionToRelative",
+            "expect": "expect(document.querySelector('.block-relative')).to.have.css('position', 'relative');"
+        }
+    ]
+}
+
+
+
+
+
