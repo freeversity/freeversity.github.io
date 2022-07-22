@@ -1,0 +1,11 @@
+.land {
+  display: grid;
+  grid-template-columns: 125px 125px 125px 125px;
+  grid-template-rows: 125px 125px 125px 125px;
+}
+
+.element {
+  grid-row-start: 3;
+  grid-column-start: 3;
+  grid-column-end: 5;
+}

@@ -1,0 +1,8 @@
+{
+    "id": 12,      
+    "name": "grid-items-auto-coordinates-for-columns-and-rows",
+    "htmlEntry": "index.html",
+    "cssEntry": "style.css",
+    "articleEntry": "article.md",
+    "expectEntry": "expect.json"
+}

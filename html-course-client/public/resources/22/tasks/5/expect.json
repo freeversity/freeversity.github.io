@@ -1,0 +1,19 @@
+{
+    "assertions": [
+        {
+            "title": "Для элемента `.element--rocks` задайте координаты по столбцам: начало `3` и конец `5`,",
+            "name": "setElementRocksGridColumnStartTo3AndGridColumnEndTo5",
+            "expect": "expect(document.querySelector('.element--rocks')).to.have.css('gridColumn', '3/5');"
+        },
+        {
+            "title": "а затем координаты по рядам: начало — первая линия с начала грида и конец — вторая линия с конца грида.",
+            "name": "setElementRocksGridRowStartTo1AndGridRowEndToNeg2",
+            "expect": "expect(document.querySelector('.element--rocks')).to.have.css('gridRow', '1/-2');"
+        }
+    ]
+}
+
+
+
+
+

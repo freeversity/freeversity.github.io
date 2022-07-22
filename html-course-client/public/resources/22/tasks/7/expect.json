@@ -1,0 +1,26 @@
+{
+    "assertions": [
+        {
+            "title": "Элементу `.element--water` задайте `z-index` со значением `1`,",
+            "name": "setElementWaterZIndexTo1",
+            "expect": "expect(document.querySelector('.element--water')).to.have.css('zIndex', '1');"
+        },
+        {
+            "title": "Элементу `.element--grass` — со значением `2`,",
+            "name": "setElementGrassZIndexTo2",
+            "expect": "expect(document.querySelector('.element--grass')).to.have.css('zIndex', '2');"
+        },
+        {
+            "title": "а затем элементу `.element--rocks` — тоже со значением `2`.",
+            "name": "setElementRocksZIndexTo2",
+            "expect": "expect(document.querySelector('.element--rocks')).to.have.css('zIndex', '2');"
+        }
+    ],
+    "strict": true
+}
+
+
+
+
+
+

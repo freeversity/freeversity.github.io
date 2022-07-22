@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Раскладка каталога интернет-магазина: создаём внутренний грид</title>
+    <link href="lopatkin.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="inner-grid">
+      <header class="site-header">
+        <nav class="site-nav">
+          <a class="logo">
+            <img src="logo.svg" width="40" height="40" alt="">
+            Lopatkin
+          </a>
+          <a href="#">О нас</a>
+          <a href="#">Каталог</a>
+          <a href="#">Блог</a>
+        </nav>
+      </header>
+
+      <main class="catalog-grid">
+        <h1 class="visually-hidden">Каталог садового барахла</h1>
+
+        <section class="filter">
+          <h2>Фильтр</h2>
+          <form class="filter-form" action="https://echo.htmlacademy.ru/courses">
+            <fieldset>
+              <legend>Цена:</legend>
+              <p class="filter-price">
+                <label>
+                  <input type="radio" name="prices" value="1">
+                  1–1000
+                </label>
+                <label>
+                  <input type="radio" name="prices" value="2">
+                  1001–5000
+                </label>
+              </p>
+            </fieldset>
+            <fieldset>
+              <legend>Марка:</legend>
+              <p class="filter-brands">
+                <label>
+                  <input type="checkbox" name="brand-lopatkin" value="1">
+                  Lopatkin
+                </label>
+                <label>
+                  <input type="checkbox" name="brand-sadovnik" value="1">
+                  Садовник
+                </label>
+                <label>
+                  <input type="checkbox" name="brand-gnomhouse" value="1">
+                  Gnom house
+                </label>
+                <label>
+                  <input type="checkbox" name="brand-gorshochkin" value="1">
+                  Горшочкин
+                </label>
+                <label>
+                  <input type="checkbox" name="brand-natrave" value="1">
+                  На траве
+                </label>
+              </p>
+            </fieldset>
+            <button type="submit">Отправить</button>
+          </form>
+        </section>
+
+        <section class="sort">
+          <h2>Сортировка</h2>
+          <ul>
+            <li><a href="#">по цене</a></li>
+            <li><a href="#">по рейтингу</a></li>
+          </ul>
+        </section>
+
+        <article class="good">
+          <h2 class="good-name">Стол из бруса</h2>
+          <img src="chairs.jpg" width="168" height="70" alt="Стол из бруса">
+        </article>
+
+        <article class="good">
+          <h2 class="good-name">Фигурный камень</h2>
+          <img src="stones.jpg" width="168" height="70" alt="Фигурный камень">
+        </article>
+
+        <article class="good">
+          <h2 class="good-name">Садовый гном</h2>
+          <img src="gnomes.png" width="168" height="70" alt="Садовый гном">
+        </article>
+
+        <article class="good">
+          <h2 class="good-name">Горшок</h2>
+          <img src="pots.jpg" width="168" height="70" alt="Горшок">
+        </article>
+
+        <article class="good">
+          <h2 class="good-name">Листорез</h2>
+          <img src="tools.jpg" width="168" height="70" alt="Листорез">
+        </article>
+
+        <article class="good">
+          <h2 class="good-name">Светильник</h2>
+          <img src="light.jpg" width="168" height="70" alt="Светильник">
+        </article>
+      </main>
+
+      <footer class="site-footer">
+        <a class="vkontakte" href="https://vk.com/htmlacademy">Вконтакте</a>
+        <a class="facebook" href="https://www.facebook.com/htmlacademy">Фейсбук</a>
+        <a class="instagram" href="https://instagram.com/htmlacademy">Инстаграм</a>
+      </footer>
+    </div>
+  </body>
+</html>

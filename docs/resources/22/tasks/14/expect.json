@@ -1,0 +1,25 @@
+{
+    "assertions": [
+        {
+            "title": "Для элемента `.element--water` задайте координаты по столбцам от `1` до `4` линии грида.",
+            "name": "setElementWaterGridColumnTo1To4",
+            "expect": "expect(document.querySelector('.element--water')).to.have.css('gridColumn', '1/4');"
+        },
+        {
+            "title": "Для элемента `.element--grass` задайте координаты по рядам от `2` до `4` линии.",
+            "name": "setElementGrassGridRowTo2To4",
+            "expect": "expect(document.querySelector('.element--grass')).to.have.css('gridRow', '2/4');"
+        },
+        {
+            "title": "Для элемента `.element--sand` — по столбцам от `2` до `4` линии.",
+            "name": "setElementSandGridColumnTo2To4",
+            "expect": "expect(document.querySelector('.element--sand')).to.have.css('gridColumn', '2/4');"
+        }
+    ]
+}
+
+
+
+
+
+

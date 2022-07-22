@@ -1,0 +1,8 @@
+{
+    "id": 15,      
+    "name": "flexible-columns-width",
+    "htmlEntry": "index.html",
+    "cssEntry": "style.css",
+    "articleEntry": "article.md",
+    "expectEntry": "expect.json"
+}

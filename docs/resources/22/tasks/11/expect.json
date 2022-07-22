@@ -1,0 +1,26 @@
+{
+    "assertions": [
+        {
+            "title": "Для контейнера `.land` задайте свойство `grid-template-columns: 100px;`,",
+            "name": "setLandGridTemplateColumnsTo100Px",
+            "expect": "expect(document.querySelector('.land')).to.have.css('gridTemplateColumns', '100px');"
+        },
+        {
+            "title": "затем замените значение на `100px 300px`",
+            "name": "setLandGridTemplateColumnsTo100Px300Px",
+            "expect": "expect(document.querySelector('.land')).to.have.css('gridTemplateColumns', '100px 300px');"
+        },
+        {
+            "title": "и потом на `100px 300px 100px`.",
+            "name": "setLandGridTemplateColumnsTo100Px300Px100Px",
+            "expect": "expect(document.querySelector('.land')).to.have.css('gridTemplateColumns', '100px 300px 100px');"
+        }
+    ],
+    "strict": true
+}
+
+
+
+
+
+

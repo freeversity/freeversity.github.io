@@ -1,0 +1,19 @@
+{
+    "assertions": [
+        {
+            "title": "Для элемента `.element` задайте координаты по столбцам: начало `1` и конец `3`,",
+            "name": "setElementGridColumnStartTo1AndGridColumnEndTo3",
+            "expect": "expect(document.querySelector('.element')).to.have.css('gridColumn', '1/3');"
+        },
+        {
+            "title": "а затем координаты по рядам: начало `2` и конец `4`.",
+            "name": "setElementGridRowStartTo2AndGridRowEndTo4",
+            "expect": "expect(document.querySelector('.element')).to.have.css('gridRow', '2/4');"
+        }
+    ]
+}
+
+
+
+
+

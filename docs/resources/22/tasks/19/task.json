@@ -2,6 +2,7 @@
     "id": 19,
     "name": "growing-a-park",
     "htmlEntry": "index.html",
+    "markupReadonly": true,
     "cssEntry": "style.css",
     "articleEntry": "article.md",
     "refHtmlEntry": "ref.html"

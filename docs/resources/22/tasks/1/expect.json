@@ -1,0 +1,19 @@
+{
+    "assertions": [
+        {
+            "title": "Для элемента `.element` задайте координату начала по столбцам `grid-column-start: 2;`",
+            "name": "setElementGridColumnStartTo2",
+            "expect": "expect(document.querySelector('.element')).to.have.css('gridColumnStart', '2');"
+        },
+        {
+            "title": "и координату начала по рядам `grid-row-start: 3;`.",
+            "name": "setElementGridRowStartTo3",
+            "expect": "expect(document.querySelector('.element')).to.have.css('gridRowStart', '3');"
+        }
+    ]
+}
+
+
+
+
+

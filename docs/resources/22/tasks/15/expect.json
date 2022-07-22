@@ -1,0 +1,27 @@
+{
+    "assertions": [
+        {
+            "title": "В грид-контейнере `.land` смените размер первого столбца со `100px` на `auto`,",
+            "name": "setLandGridTemplateColumnsToAuto100Px100Px",
+            "expect": "expect(document).to.have.cssRule('.land', 'gridTemplateColumns', 'auto 100px 100px');"
+        },
+        {
+            "title": "затем задайте автоматический размер второму столбцу",
+            "name": "setLandGridTemplateColumnsToAutoAuto100Px",
+            "expect": "expect(document).to.have.cssRule('.land', 'gridTemplateColumns', 'auto auto 100px');"
+        },
+        {
+            "title": "и третьему столбцу.",
+            "name": "setLandGridTemplateColumnsToAutoAutoAuto",
+            "expect": "expect(document).to.have.cssRule('.land', 'gridTemplateColumns', 'auto auto auto');"
+        }
+    ],
+    "strict": true
+}
+
+
+
+
+
+
+

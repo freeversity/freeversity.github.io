@@ -1,0 +1,5 @@
+.land {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: 100px auto 100px;
+}

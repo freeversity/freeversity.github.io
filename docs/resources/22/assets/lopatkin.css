@@ -1,0 +1,288 @@
+@font-face {
+	font-weight: 400;
+	font-family: "PT Sans";
+	font-style: normal;
+	font-display: swap;
+	src: local("PT Sans"),url(fonts/ptsans.woff2) format("woff2"),url(fonts/ptsans.woff) format("woff");
+}
+
+@font-face {
+	font-weight:700;font-family:"PT Sans";font-style:normal;font-display:swap;src:local("PT Sans"),url(fonts/ptsansbold.woff2) format("woff2"),url(fonts/ptsansbold.woff) format("woff");
+}
+
+body,html {
+	height: 100%;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+	font-family: "PT Sans","Arial",sans-serif;
+	color: #32425c;
+	background-color: #f2f6f8;
+}
+
+ul {
+	list-style-type: none;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+.logo,.site-header {
+	display: flex;
+	align-items: center;
+}
+
+.site-header {
+	padding: 10px;
+	color: #f9f5f0;
+}
+
+.logo {
+	position: relative;
+	width: 150px;
+	margin-right: 40px;
+	font-size: 20px;
+}
+
+.logo img {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.sidebar {
+	padding: 15px;
+	outline: 1px solid #bdc8db;
+	outline-offset: -1px;
+}
+
+.site-nav {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.site-nav a {
+	margin-right: 30px;
+}
+
+.button {
+	position: relative;
+	max-width: 70px;
+	padding: 5px 10px;
+	text-align: center;
+	color: #fff;
+	border-radius: 3px;
+	background-color: #ee3643;
+}
+
+.button--promo {
+	position: absolute;
+	left: 15px;
+	bottom: 15px;
+	min-width: 100px;
+}
+
+.promo {
+	position: relative;
+}
+
+.promo img {
+	display: block;
+	width: 360px;
+	height: 200px;
+	object-position: center;
+}
+
+.blog {
+	padding: 15px;
+	background-color: #fff;
+}
+
+.blog-item {
+	display: flex;
+	flex-direction: column;
+}
+
+.blog-item h2,.filter h2,.sidebar h2 {
+	font-size: 20px;
+	margin: 0 0 10px;
+}
+
+.blog-item img,.promo img {
+	object-fit: cover;
+	max-width: 100%;
+}
+
+.blog-item:not(:last-child) {
+	margin-bottom: 15px;
+	padding-bottom: 15px;
+	border-bottom: 1px dashed #9cadc9;
+}
+
+.site-footer,.site-header {
+	background-color: #32425c;
+}
+
+.site-footer {
+	display: flex;
+	align-items: center;
+	padding: 10px;
+	margin: 0;
+	list-style: none;
+}
+
+.site-footer a {
+	margin-right: 10px;
+}
+
+.facebook,.instagram,.vkontakte {
+	background-position: center;
+	background-repeat: no-repeat;
+	display: block;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background-color: #212a3a;
+	font-size: 0;
+	color: #fff;
+}
+
+.vkontakte {
+	background-image: url(icon-vkontakte.svg);
+	background-size: 20px 12px;
+}
+
+.facebook {
+	background-image: url(icon-facebook.svg);
+	background-size: 12px 20px;
+}
+
+.instagram {
+	background-image: url(icon-instagram.svg);
+	background-size: 15px 15px;
+}
+
+.reviews {
+	padding: 0;
+	margin: 0;
+}
+
+.review-item:not(:last-child) {
+	margin-bottom: 10px;
+	border-bottom: 1px dashed #9cadc9;
+	padding-bottom: 10px;
+}
+
+.review-item cite {
+	display: block;
+	text-align: right;
+}
+
+.review-item p {
+	margin: 0;
+}
+
+.filter {
+	outline: 1px solid #bdc8db;
+	padding: 15px;
+}
+
+.filter-brands,.filter-price {
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+}
+
+.filter-brands label,.filter-price label {
+	margin-bottom: 5px;
+}
+
+.filter-form legend {
+	margin-bottom: 5px;
+	text-decoration: underline;
+}
+
+.filter-form fieldset:not(:last-child) {
+	border-bottom: 1px dashed #9cadc9;
+	padding-bottom: 10px;
+}
+
+.filter-form fieldset {
+	margin: 0 0 10px;
+	padding: 0;
+	border: 0;
+}
+
+.sort {
+	padding: 15px;
+	background-color: #fff;
+}
+
+.sort ul {
+	display: inline-flex;
+	justify-content: flex-start;
+	padding: 0;
+	margin: 0;
+	align-items: center;
+}
+
+.sort li {
+	border-bottom: 1px dotted #ee3643;
+}
+
+.sort p {
+	display: inline-block;
+	margin-left: 15px;
+}
+
+.sort li:first-of-type {
+	margin-right: 20px;
+	margin-left: 10px;
+}
+
+.sort h2 {
+	display: inline;
+	font-size: inherit;
+	margin: 0;
+}
+
+.sort h2::after {
+	content: ":";
+}
+
+.good {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid #bdc8db;
+}
+
+.good-name {
+	order: 1;
+	margin: 0;
+	font-size: 16px;
+}
+
+.good img {
+	object-fit: cover;
+	padding: 0;
+}
+
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	padding: 0;
+	overflow: hidden;
+	border: 0;
+	clip: rect(0,0,0,0);
+	clip-path: inset(100%);
+}

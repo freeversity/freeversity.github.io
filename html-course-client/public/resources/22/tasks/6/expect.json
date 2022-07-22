@@ -1,0 +1,24 @@
+{
+    "assertions": [
+        {
+            "title": "Для элемента `.element--grass` задайте координаты по столбцам и рядам с `1` до `-1`, чтобы элемент занимал весь контейнер.",
+            "name": "setElementGrassGridColumnStartTo1GridColumnEndToNeg1GridRowStartTo1GridRowEndToNeg1",
+            "expect": "expect(document.querySelector('.element--grass')).to.have.css('gridColumn', '1/-1');expect(document.querySelector('.element--grass')).to.have.css('gridRow', '1/-1');"
+        },
+        {
+            "title": "Для элемента `.element--water` задайте координаты по столбцам от `1` до `4` линии и по рядам от `2` до `4` линии.",
+            "name": "setElementWaterGridColumnStartTo1GridColumnEndTo4GridRowStartTo2GridRowEndTo4",
+            "expect": "expect(document.querySelector('.element--water')).to.have.css('gridColumn', '1/4');expect(document.querySelector('.element--water')).to.have.css('gridRow', '2/4');"
+        },
+        {
+            "title": "Для элемента `.element--rocks` задайте координаты по столбцам от `2` до `3` линии и по рядам от первой линии до первой линии с конца.",
+            "name": "setElementRocksGridColumnStartTo2GridColumnEndTo3GridRowStartTo1GridRowEndToNeg1",
+            "expect": "expect(document.querySelector('.element--rocks')).to.have.css('gridColumn', '2/3');expect(document.querySelector('.element--rocks')).to.have.css('gridRow', '1/-1');"
+        }
+    ]
+}
+
+
+
+
+

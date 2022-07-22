@@ -1,0 +1,8 @@
+.index-grid {
+  display: grid;
+  width: 550px;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 20px;
+  grid-template-columns: 170px 170px 170px;
+}

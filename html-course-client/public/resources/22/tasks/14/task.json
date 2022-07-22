@@ -1,0 +1,8 @@
+{
+    "id": 14,      
+    "name": "combining-auto-and-manual-coordinates-2",
+    "htmlEntry": "index.html",
+    "cssEntry": "style.css",
+    "articleEntry": "article.md",
+    "expectEntry": "expect.json"
+}

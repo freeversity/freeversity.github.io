@@ -1,0 +1,177 @@
+/* .world,body,html {
+	height: 100%;
+} */
+
+body {
+	margin: 0;
+	padding: 0;
+}
+.world, body, html {
+    height: 100%;
+}
+
+.world {
+	display: flex;
+	width: 100%;
+	background: #e5e5e5 url(cartographer.png) 0 0;
+}
+
+.world--exam {
+	width: 600px;
+    height: 400px;
+	background: 0 0;
+}
+
+.world--exam .land {
+	margin: 0;
+	box-shadow: none;
+}
+
+.world--exam .element {
+	background-size: 120px 120px;
+}
+
+.world--exam .element--bridge {
+	background-size: auto,auto,120px 120px;
+}
+
+.land {
+	position: relative;
+	width: 500px;
+	height: 500px;
+	margin: auto;
+	background-color: #fff;
+	outline: 1px solid #b2b2b2;
+	outline-offset: -1px;
+	box-shadow: #666 1px 1px,#636363 2px 2px,#616161 3px 3px,#5e5e5e 4px 4px,#5c5c5c 5px 5px,#595959 6px 6px,#575757 7px 7px,#545454 8px 8px,#525252 9px 9px,#4f4f4f 10px 10px,#4d4d4d 11px 11px,#4a4a4a 12px 12px,#474747 13px 13px,#454545 14px 14px,#424242 15px 15px,#404040 16px 16px,#3d3d3d 17px 17px,#3b3b3b 18px 18px,#383838 19px 19px,#363636 20px 20px,#333 20px 20px;
+}
+
+.land--rectangle {
+	width: 600px;
+	height: 400px;
+}
+
+.land--small {
+	width: 300px;
+	height: 300px;
+}
+
+.land--guided::before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 10;
+	background-image: repeating-linear-gradient(to bottom,transparent,transparent 124px,#b2b2b2 124px,#b2b2b2 125px),repeating-linear-gradient(to right,transparent,transparent 124px,#b2b2b2 124px,#b2b2b2 125px);
+	background-position: 0 1px,1px 0;
+}
+
+.land--rectangle.land--guided::before {
+	background-image: repeating-linear-gradient(to bottom,transparent,transparent 39px,#b2b2b2 39px,#b2b2b2 40px),repeating-linear-gradient(to right,transparent,transparent 59px,#b2b2b2 59px,#b2b2b2 60px);
+}
+
+.land--pattern {
+	background: url(light-grey-terrazzo.png) 0 0;
+}
+
+.element {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 0;
+	background-repeat: repeat;
+	background-size: 125px 125px;
+}
+
+.element--water {
+	background-image: url(tileset/water.svg);
+}
+
+.element--grass {
+	background-image: url(tileset/grass.svg);
+}
+
+.element--rocks {
+	background-image: url(tileset/rock.svg);
+}
+
+.element--lava {
+	background-image: url(tileset/lava.svg);
+}
+
+.element--sand {
+	background-image: url(tileset/sand.svg);
+}
+
+.element--simple {
+	background-size: 100px 100px;
+}
+
+.element--bridge,.element--simple {
+	position: relative;
+	counter-increment: item-counter;
+	overflow: hidden;
+}
+
+.element--bridge::after,.element--simple::after {
+	content: counter(item-counter);
+	width: 25px;
+	height: 25px;
+	font-size: 18px;
+	font-weight: 700;
+	font-family: "Courier New","Courier","Lucida Sans Typewriter","Lucida Typewriter",monospace;
+	background-clip: padding-box;
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #000;
+	background-color: rgba(255,255,255,.9);
+	mix-blend-mode: screen;
+}
+
+.element--bridge-1,.element--bridge-3 {
+	background-image: linear-gradient(to bottom,#deb887 0,#deb887 5px,transparent 5px),linear-gradient(to top,#deb887 0,#deb887 5px,transparent 5px),repeating-linear-gradient(to right,#906312 0,#906312 10px,#b57c17 10px,#b57c17 20px);
+}
+
+.element--bridge-2,.element--bridge-4 {
+	background-image: linear-gradient(to left,#deb887 0,#deb887 5px,transparent 5px),linear-gradient(to right,#deb887 0,#deb887 5px,transparent 5px),repeating-linear-gradient(to bottom,#906312 0,#906312 10px,#b57c17 10px,#b57c17 20px);
+}
+
+[class*=land--task-]::after {
+	background-image: repeating-linear-gradient(-45deg,transparent,transparent 10px,rgba(255,133,27,.3) 10px,rgba(255,133,27,.3) 20px);
+}
+
+.land--task-1::after,.land--task-2::after {
+	content: "";
+	grid-column: 2/3;
+	grid-row: 3/4;
+}
+
+.land--task-2::after {
+	grid-column: 3/5;
+}
+
+.land--task-3::after {
+	content: "";
+	grid-column: 1/3;
+	grid-row: 2/4;
+}
+
+.land--task-4::after,.land--task-5::after {
+	content: "";
+	position: absolute;
+	top: 75%;
+	left: 0;
+	width: 100%;
+	height: 25%;
+}
+
+.land--task-5::after {
+	top: 0;
+	left: 50%;
+	width: 50%;
+	height: 75%;
+}

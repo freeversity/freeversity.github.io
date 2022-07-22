@@ -1,0 +1,14 @@
+{
+    "assertions": [
+        {
+            "title": "Для контейнера `.land` смените интервал между рядами грида на `25px`.",
+            "name": "setLandRowGapTo25Px",
+            "expect": "expect(document.querySelectorAll('.land')).to.have.css('row-gap', '25px');"
+        },
+        {
+            "title": "а между столбцами — на `50px`.",
+            "name": "setLandColumnGapTo50Px",
+            "expect": "expect(document.querySelectorAll('.land')).to.have.css('column-gap', '50px');"
+        }
+    ]
+}

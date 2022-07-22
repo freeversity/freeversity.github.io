@@ -1,0 +1,13 @@
+{
+    "assertions": [
+        {
+            "title": "Для контейнера `.land` с помощью свойства `gap` задайте грид-интервал `10px` между столбцами и рядами грида.",
+            "name": "setLandGapTo10Px",
+            "expect": "expect(document.querySelector('.land')).to.have.css('gap', '10px');"
+        }
+    ]
+}
+
+
+
+

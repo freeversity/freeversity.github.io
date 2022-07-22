@@ -14,5 +14,6 @@
 
 <details>
 <summary>Подсказка</summary>
+
 Задавайте значения свойствам `grid-column-start/grid-column-end` и `grid-row-start/grid-row-end` от 1 до 5 только для первых четырёх элементов с классами `element--1`, `element--2`, `element--3` и `element--4`. Остальные элементы автоматически займут оставшиеся пустые ячейки грида.
 </details>

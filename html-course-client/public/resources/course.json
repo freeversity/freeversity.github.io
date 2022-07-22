@@ -145,8 +145,7 @@
                         {
                             "name": "grids-introduction",
                             "id": 22,
-                            "entry": "/resources/22/chapter.json",
-                            "unfinished": true
+                            "entry": "/resources/22/chapter.json"
                         }
                     ]
                 },

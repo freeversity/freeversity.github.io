@@ -1,0 +1,13 @@
+.index-grid {
+  display: grid;
+  width: 550px;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 20px;
+  grid-template-columns: 170px 170px 170px;
+}
+
+.site-header {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}

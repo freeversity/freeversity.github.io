@@ -3,16 +3,180 @@
     "title": "Grids Introduction",
     "tasks": [
         {
+            "id": 1,
+            "type": "task",
+            "entry": "/resources/22/tasks/8/task.json",
+            "name": "grid-coordinates-with-grid-row-start-and-grid-column-start"
+        }, 
+        {
+            "id": 2,
+            "type": "task",
+            "entry": "/resources/22/tasks/2/task.json",
+            "name": "grid-coordinates-with-grid-column-start-and-grid-column-end"
+        }, 
+        {
+            "id": 3,
+            "type": "task",
+            "entry": "/resources/22/tasks/3/task.json",
+            "name": "grid-coordinates-with-grid-row-start-and-grid-row-end"
+        }, 
+        {
+            "id": 4,
+            "type": "task",
+            "entry": "/resources/22/tasks/4/task.json",
+            "name": "negative-grid-column-start-and-grid-column-end"
+        }, 
+        {
+            "id": 5,
+            "type": "task",
+            "entry": "/resources/22/tasks/5/task.json",
+            "name": "negative-grid-row-start-and-grid-row-end"
+        }, 
+        {
+            "id": 6,
+            "type": "task",
+            "entry": "/resources/22/tasks/6/task.json",
+            "name": "grid-items-overlaping"
+        }, 
+        {
+            "id": 7,
+            "type": "task",
+            "entry": "/resources/22/tasks/7/task.json",
+            "name": "grid-items-overlaping-and-z-index"
+        }, 
+        {
             "id": 8,
             "type": "challenge",
             "entry": "/resources/22/tasks/8/task.json",
             "name": "building-bridges"
-        }, {
+        }, 
+        {
+            "id": 9,
+            "type": "task",
+            "entry": "/resources/22/tasks/9/task.json",
+            "name": "grid-template-areas"
+        }, 
+        {
+            "id": 10,
+            "type": "task",
+            "entry": "/resources/22/tasks/10/task.json",
+            "name": "grid-template-areas-and-empty-cells"
+        }, 
+        {
+            "id": 11,
+            "type": "task",
+            "entry": "/resources/22/tasks/11/task.json",
+            "name": "grid-items-auto-coordinates-for-columns"
+        }, 
+        {
+            "id": 12,
+            "type": "task",
+            "entry": "/resources/22/tasks/12/task.json",
+            "name": "grid-items-auto-coordinates-for-columns-and-rows"
+        }, 
+        {
+            "id": 13,
+            "type": "task",
+            "entry": "/resources/22/tasks/13/task.json",
+            "name": "combining-auto-and-manual-coordinates"
+        }, 
+        {
+            "id": 14,
+            "type": "task",
+            "entry": "/resources/22/tasks/14/task.json",
+            "name": "combining-auto-and-manual-coordinates-2"
+        }, 
+        {
+            "id": 15,
+            "type": "task",
+            "entry": "/resources/22/tasks/15/task.json",
+            "name": "flexible-columns-width"
+        }, 
+        {
+            "id": 16,
+            "type": "task",
+            "entry": "/resources/22/tasks/16/task.json",
+            "name": "flexible-columns-and-rows-width"
+        }, 
+        {
+            "id": 17,
+            "type": "task",
+            "entry": "/resources/22/tasks/17/task.json",
+            "name": "grid-gap-prop"
+        }, 
+        {
+            "id": 18,
+            "type": "task",
+            "entry": "/resources/22/tasks/18/task.json",
+            "name": "row-gap-and-column-gap"
+        }, 
+        {
             "id": 19,
             "type": "challenge",
             "entry": "/resources/22/tasks/19/task.json",
             "name": "growing-a-park"
-        }, {
+        }, 
+        {
+            "id": 20,
+            "type": "task",
+            "entry": "/resources/22/tasks/20/task.json",
+            "name": "simple-page-layout-grid-setup"
+        }, 
+        {
+            "id": 21,
+            "type": "task",
+            "entry": "/resources/22/tasks/21/task.json",
+            "name": "simple-page-layout-header"
+        }, 
+        {
+            "id": 22,
+            "type": "task",
+            "entry": "/resources/22/tasks/22/task.json",
+            "name": "simple-page-layout-promo"
+        }, 
+        {
+            "id": 23,
+            "type": "task",
+            "entry": "/resources/22/tasks/23/task.json",
+            "name": "simple-page-layout-aside"
+        }, 
+        {
+            "id": 24,
+            "type": "task",
+            "entry": "/resources/22/tasks/24/task.json",
+            "name": "simple-page-layout-blog"
+        }, 
+        {
+            "id": 25,
+            "type": "task",
+            "entry": "/resources/22/tasks/25/task.json",
+            "name": "simple-page-layout-finishing"
+        }, 
+        {
+            "id": 26,
+            "type": "task",
+            "entry": "/resources/22/tasks/26/task.json",
+            "name": "e-shop-layout-internal-grid"
+        }, 
+        {
+            "id": 27,
+            "type": "task",
+            "entry": "/resources/22/tasks/27/task.json",
+            "name": "e-shop-layout-sorting"
+        }, 
+        {
+            "id": 28,
+            "type": "task",
+            "entry": "/resources/22/tasks/28/task.json",
+            "name": "e-shop-layout-filtering"
+        }, 
+        {
+            "id": 29,
+            "type": "task",
+            "entry": "/resources/22/tasks/29/task.json",
+            "name": "e-shop-layout-finishing"
+        }, 
+        {
             "id": 30,
             "type": "challenge",
             "entry": "/resources/22/tasks/30/task.json",

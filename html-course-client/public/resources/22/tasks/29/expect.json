@@ -1,0 +1,13 @@
+{
+    "assertions": [
+        {
+            "title": "Раскомментируйте в HTML разметку товаров в конце `.catalog-grid`.",
+            "name": "uncommentHtmlMarkupInCatalogGrid",
+            "expect": "expect(document.querySelectorAll('article.good')).to.have.length(9);"
+        }
+    ]
+}
+
+
+
+

@@ -1,0 +1,25 @@
+{
+    "assertions": [
+        {
+            "title": "Для элемента `.catalog-grid` задайте отображение гридом,",
+            "name": "setCatalogGridDisplayToGrid",
+            "expect": "expect(document.querySelector('.catalog-grid')).to.have.css('display', 'grid');"
+        },
+        {
+            "title": "грид-интервал `20px` между столбцами и рядами грида,",
+            "name": "setCatalogGridGapTo20Px",
+            "expect": "expect(document.querySelector('.catalog-grid')).to.have.css('gap', '20px');"
+        },
+        {
+            "title": "а затем три столбца каждый размером `170px`.",
+            "name": "setCatalogGridGridTemplateColumnsTo170Px170Px170Px",
+            "expect": "expect(document.querySelector('.catalog-grid')).to.have.css('gridTemplateColumns', '170px 170px 170px');"
+        }
+    ]
+}
+
+
+
+
+
+

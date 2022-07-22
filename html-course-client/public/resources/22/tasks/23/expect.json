@@ -1,0 +1,13 @@
+{
+    "assertions": [
+        {
+            "title": "Для элемента `.sidebar` задайте координаты по столбцам от `3` до `4` линии грида и по рядам от `2` до `4` линии.",
+            "name": "setSidebarGridColumnTo3To4andGridRowTo2To4",
+            "expect": "expect(document.querySelector('.sidebar')).to.have.css('gridColumn', '3/4');expect(document.querySelector('.sidebar')).to.have.css('gridRow', '2/4');"
+        }
+    ]
+}
+
+
+
+

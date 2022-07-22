@@ -1,0 +1,20 @@
+{
+    "assertions": [
+        {
+            "title": "Для элемента `.blog` добавьте координаты по столбцам от `1` до `3` линии грида.",
+            "name": "setBlogGridColumnTo1To3",
+            "expect": "expect(document.querySelector('.blog')).to.have.css('gridColumn', '1/3');"
+        },
+        {
+            "title": "После этого раскомментируйте в разметке ещё одну статью внутри `.blog` и посмотрите, как ведёт себя раскладка грида.",
+            "name": "uncommentBlogItemInBlog",
+            "expect": "expect(document.querySelector('article.blog-item:nth-child(2) p')).to.have.rendered.text('Расставляем горшки по фен-шую.')"
+        }
+    ],
+    "strict": true
+}
+
+
+
+
+

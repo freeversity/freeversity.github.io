@@ -1,0 +1,13 @@
+{
+    "assertions": [
+        {
+            "title": "Для элемента `.filter` задайте координаты по рядам от `1` до `5` линии грида.",
+            "name": "setFilterGridRowTo1To5",
+            "expect": "expect(document.querySelector('.filter')).to.have.css('gridRow', '1/5');"
+        }
+    ]
+}
+
+
+
+

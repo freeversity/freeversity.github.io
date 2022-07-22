@@ -1,0 +1,8 @@
+{
+    "id": 24,      
+    "name": "simple-page-layout-blog",
+    "htmlEntry": "index.html",
+    "cssEntry": "style.css",
+    "articleEntry": "article.md",
+    "expectEntry": "expect.json"
+}

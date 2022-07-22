@@ -1,0 +1,26 @@
+{
+    "assertions": [
+        {
+            "title": "Для элемента `.index-grid` задайте отображение гридом,",
+            "name": "setIndexGridDisplayToGrid",
+            "expect": "expect(document.querySelector('.index-grid')).to.have.css('display', 'grid');"
+        },
+        {
+            "title": "грид-интервал `20px` между столбцами и рядами грида,",
+            "name": "setIndexGridGapTo20Px",
+            "expect": "expect(document.querySelector('.index-grid')).to.have.css('gap', '20px');"
+        },
+        {
+            "title": "а затем с помощью свойства `grid-template-columns` три столбца каждый размером `170px`.",
+            "name": "setIndexGridGridTemplateColumnTo170Px170Px170Px",
+            "expect": "expect(document.querySelector('.index-grid')).to.have.css('gridTemplateColumns', '170px 170px 170px');"
+        }
+    ],
+    "strict": true
+}
+
+
+
+
+
+

@@ -1,0 +1,13 @@
+{
+    "assertions": [
+        {
+            "title": "Для контейнера .land замените структуру грида на следующую:<br>`\"w w . .\"`<br>`\". . l l\"`<br>`\"g g . .\"`<br>`\". . r r\"`",
+            "name": "setLandGridTemplateAreasToWW....LLGG....RR",
+            "expect": "expect(document.querySelector('.land')).to.have.css('gridTemplateAreas', '\"w w . .\" \". . l l\" \"g g . .\" \". . r r\"');"
+        }
+    ]
+}
+
+
+
+

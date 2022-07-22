@@ -1,0 +1,19 @@
+{
+    "assertions": [
+        {
+            "title": "В грид-контейнер `.index-grid` добавьте ещё два ряда с размерами `auto` и `100px`,",
+            "name": "setIndexGridGridTemplateRowsToAuto200PxAuto100Px",
+            "expect": "expect(document).to.have.cssRule('.index-grid', 'grid-template-rows', 'auto 200px auto 100px');"
+        },
+        {
+            "title": "а затем для элемента `.site-footer` задайте координаты по столбцам от первой линии до первой линии грида с конца.",
+            "name": "setSiteFooterGridColumnTo1ToNeg1",
+            "expect": "expect(document.querySelector('.site-footer')).to.have.css('gridColumn', '1/-1');"
+        }
+    ],
+    "strict": true
+}
+
+
+
+

@@ -1,0 +1,20 @@
+{
+    "assertions": [
+        {
+            "title": "Для элемента `.element--grass` задайте координаты по рядам: начало `4` и конец `5`,",
+            "name": "setElementGrassGridRowStartTo4AndGridRowEndTo5",
+            "expect": "expect(document.querySelector('.element--grass')).to.have.css('gridRow', '4/5');"
+        },
+        {
+            "title": "а затем координаты по столбцам: начало — первая линия с начала грида и конец — первая линия с конца грида.",
+            "name": "setElementGrassGridColumnStartTo1AndGridColumnEndToNeg1",
+            "expect": "expect(document.querySelector('.element--grass')).to.have.css('gridColumn', '1/-1');"
+        },
+        {
+            "title": "После этого поменяйте координаты по столбцам на следующие: начало `-1`, а конец `1`.",
+            "name": "setElementGrassGridColumnStartToNeg1AndGridColumnEndTo1",
+            "expect": "expect(document.querySelector('.element--grass')).to.have.css('gridColumn', '-1/1');"
+        }
+    ],
+    "strict": true
+}

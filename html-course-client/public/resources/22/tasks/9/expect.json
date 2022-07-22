@@ -1,0 +1,14 @@
+{
+    "assertions": [
+        {
+            "title": "Для грид-контейнера `.land` с помощью свойства `grid-template-areas` задайте следующую структуру грида:<br>`\"w w l l\"`<br>`\"w w l l\"`<br>`\"g g l l\"`<br>`\"r r r r\"`",
+            "name": "setLandGridTemplateAreasToWWLLWWLLGGLLRRRR",
+            "expect": "expect(document.querySelector('.land')).to.have.css('gridTemplateAreas', '\"w w l l\" \"w w l l\" \"g g l l\" \"r r r r\"');"
+        },
+        {
+            "title": "Для элементов грида задайте с помощью свойства `grid-area` соответствующие названия областей:<br>для `.element--water` — символ `w`;<br>для `.element--grass` — символ `g`;<br>для `.element--lava` — символ `l`;<br>для `.element--rocks` — символ `r`.",
+            "name": "setElementWaterGridAreaToWElementGrassGridAreaToGElementLavaGridAreaToLElementRocksGridAreaToR",
+            "expect": "expect(document.querySelector('.element--water')).to.have.css('gridArea', 'w');expect(document.querySelector('.element--grass')).to.have.css('gridArea', 'g');expect(document.querySelector('.element--lava')).to.have.css('gridArea', 'l');expect(document.querySelector('.element--rocks')).to.have.css('gridArea', 'r');"
+        }
+    ]
+}

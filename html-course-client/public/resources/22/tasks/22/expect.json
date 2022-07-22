@@ -1,0 +1,19 @@
+{
+    "assertions": [
+        {
+            "title": "В грид контейнера `.index-grid` добавьте ещё два ряда: первый с автоматическим размером, а второй размером `200px`,",
+            "name": "setIndexGridgridTemplatRowsToAuto200Px",
+            "expect": "expect(document).to.have.cssRule('.index-grid', 'grid-template-rows', 'auto 200px');"
+        },
+        {
+            "title": "а затем для элемента `.promo` задайте координаты по столбцам от `1` до `3` линии грида.",
+            "name": "setPromoGridColumnTo1To3",
+            "expect": "expect(document.querySelector('.promo')).to.have.css('gridColumn', '1/3');"
+        }
+    ]
+}
+
+
+
+
+

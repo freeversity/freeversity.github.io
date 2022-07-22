@@ -2,6 +2,7 @@
     "id": 8,
     "name": "building-bridges",
     "htmlEntry": "index.html",
+    "markupReadonly": true,
     "cssEntry": "style.css",
     "articleEntry": "article.md",
     "refHtmlEntry": "ref.html",

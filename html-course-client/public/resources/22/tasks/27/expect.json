@@ -1,0 +1,20 @@
+{
+    "assertions": [
+        {
+            "title": "Для контейнера `.catalog-grid` задайте первый ряд размером `50px`,",
+            "name": "setCatalogGridGridTemplateRowsTo50px",
+            "expect": "expect(document).to.have.cssRule('.catalog-grid', 'gridTemplateRows', '50px');"
+        },
+        {
+            "title": "а затем для элемента `.sort` координаты по столбцам от `2` до `4` линии грида.",
+            "name": "setSortGridColumnTo2To4",
+            "expect": "expect(document.querySelector('.sort')).to.have.css('gridColumn', '2/4');"
+        }
+    ],
+    "strict": true
+}
+
+
+
+
+

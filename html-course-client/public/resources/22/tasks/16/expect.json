@@ -1,0 +1,13 @@
+{
+    "assertions": [
+        {
+            "title": "Для грид-контейнера `.land` задайте три ряда с размерами: `100px`, `auto`, `100px`.",
+            "name": "setLandGridTemplateRowTo100PxAuto100Px",
+            "expect": "expect(document).to.have.cssRule('.land', 'gridTemplateRows', '100px auto 100px');"
+        }
+    ]
+}
+
+
+
+

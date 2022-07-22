@@ -1,0 +1,26 @@
+.index-grid {
+  display: grid;
+  width: 550px;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 20px;
+  grid-template-columns: 170px 170px 170px;
+  grid-template-rows: auto 200px;
+}
+
+.site-header {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+.promo {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.sidebar {
+  grid-row-start: 2;
+  grid-row-end: 4;
+  grid-column-start: 3;
+  grid-column-end: 4;
+}

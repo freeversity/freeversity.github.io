@@ -1,0 +1,13 @@
+{
+    "assertions": [
+        {
+            "title": "Для элемента `.site-header` задайте координаты по столбцам от первой до последней линии грида.",
+            "name": "setSiteHeaderGridColumnTo1toNeg1",
+            "expect": "expect(document.querySelector('.site-header')).to.have.css('gridColumn', '1/-1');"
+        }
+    ]
+}
+
+
+
+

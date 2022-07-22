@@ -1,0 +1,26 @@
+{
+    "assertions": [
+        {
+            "title": "Для элемента `.land` задайте отображение гридом,",
+            "name": "setLandDisplaytoFlex",
+            "expect": "expect(document.querySelector('.land')).to.have.css('display', 'grid');"
+        },
+        {
+            "title": "затем с помощью свойства `grid-template-columns` задайте гриду три столбца: `100px`, `100px`, `100px`,",
+            "name": "setLandGridTemplateColumnsTo100Px100Px100Px",
+            "expect": "expect(document.querySelector('.land')).to.have.css('gridTemplateColumns', '100px 100px 100px');"
+        },
+        {
+            "title": "а с помощью свойства `grid-template-rows` три ряда: `100px`, `100px`, `100px`.",
+            "name": "setLandGridTemplateRowsTo100Px100Px100Px",
+            "expect": "expect(document.querySelector('.land')).to.have.css('gridTemplateRows', '100px 100px 100px');"
+        }
+    ],
+    "strict": true
+}
+
+
+
+
+
+

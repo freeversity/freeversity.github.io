@@ -1,0 +1,24 @@
+.land {
+  display: grid;
+  grid-template-areas:
+    "w w l l"
+    "w w l l"
+    "g g l l"
+    "r r r r";
+}
+
+.element--water {
+  grid-area: w;
+}
+
+.element--grass {
+  grid-area: g;
+}
+
+.element--lava {
+  grid-area: l;
+}
+
+.element--rocks {
+  grid-area: r;
+}

@@ -1,0 +1,31 @@
+.inner-grid {
+  display: grid;
+  width: 550px;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 20px;
+  grid-template-columns: 170px 170px 170px;
+  grid-template-rows: auto auto 100px;
+}
+
+.site-header {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+.site-footer {
+  grid-column-start: 1;
+  grid-column-end: -1;
+}
+
+.catalog-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 170px 170px 170px;
+  grid-template-rows: 50px;
+}
+
+.sort {
+  grid-column-start: 2;
+  grid-column-end: 4;
+}

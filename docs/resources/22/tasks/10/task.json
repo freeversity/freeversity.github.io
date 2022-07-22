@@ -1,0 +1,8 @@
+{
+    "id": 10,      
+    "name": "grid-template-areas-and-empty-cells",
+    "htmlEntry": "index.html",
+    "cssEntry": "style.css",
+    "articleEntry": "article.md",
+    "expectEntry": "expect.json"
+}
