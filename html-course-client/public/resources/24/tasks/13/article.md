@@ -1,0 +1,11 @@
+# Финальная битва
+
+Перфекционизм никогда до добра не доводил. Не довёл и сейчас — собранный кристалл оказался ловушкой. Дух побеждённого злодея вселился в душу Пендальфа и телепортировал его в непонятную и неизвестную комнату.
+
+А во время телепортации он успел изучить ещё одну интересную особенность `transform: scale`. А именно то, как ведёт себя объект при задании отрицательных числовых значений: при `scaleX(-1)`, например, оригинальный объект зеркально отражается по горизонтали, а при `scale(-1, -1)` — отражается и по оси `X`, и `Y`. Большее, чем `-1` значение ещё шире растянет отзеркалированный объект.
+
+Ниже представлены примеры подобных трансформаций:
+
+<div style="text-align: center; background-color: #ffffff;"><span style="margin: 15px 10px 15px 0; display: inline-block;"><span style="display: inline-block; height: 110px; width: 110px; border: 3px solid #000000; padding: 10px; transform: scaleX(1);">transform: scaleX(1);</span><br>transform: scaleX(1);</span><span style="margin: 15px 10px 15px 0; display: inline-block;"><span style="display: inline-block; height: 110px; width: 110px; border: 3px solid #000000; padding: 10px; transform: scaleX(-1);">transform: scaleX(-1);</span><br>transform: scaleX(-1);</span><span style="margin: 15px 10px 15px 0; display: inline-block;"><span style="display: inline-block; height: 110px; width: 110px; border: 3px solid #000000; padding: 10px; transform: scale(-1);">transform: scale(-1);</span><br>transform: scale(-1);</span><span style="margin: 15px 10px 0 25px; display: inline-block;"><span style="display: inline-block; height: 110px; width: 110px; border: 3px solid #000000; padding: 10px; transform: scaleX(-1.5);">transform: scaleX(-1.5);</span><br>transform: scaleX(-1.5);</span></div>
+
+Также в пути Пендальф успел прочитать брошюру «Битва с самим собой» и понял, что ему надо вызвать на дуэль своего двойника, но при этом никоим образом нельзя повреждать его, ведь тем самым он поразит себя. Как одолеть его — неизвестно, но пути назад уже не было, он решил искоренить древнее зло раз и навсегда...

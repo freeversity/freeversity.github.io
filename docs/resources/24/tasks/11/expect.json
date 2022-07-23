@@ -1,0 +1,27 @@
+{
+    "assertions": [
+        {
+            "title": "Призовите героя, добавив блоку `.hero` класс `summon`.",
+            "name": "addSummonClassToHero",
+            "expect": "expect(document.querySelector('.hero')).to.have.class('summon');"
+        },
+        {
+            "title": "Увеличьте героя в `1.5` раза с помощью функции `scale`,",
+            "name": "setHeroTransformToScale1.5",
+            "expect": "expect(document.querySelector('.hero')).to.have.css('transform', 'scale(1.5)');"
+        },
+        {
+            "title": "а затем передвиньте его вперёд на `100px`.",
+            "name": "setHeroTransformToScale1.5TranslateX100Px",
+            "expect": "expect(document.querySelector('.hero')).to.have.css('transform', 'scale(1.5) translateX(100px)');"
+        },
+        {
+            "title": "Опрокиньте `.overlord` на спину, используя функцию `transform: rotate`.",
+            "name": "setOverlordTranformToRotate90Deg",
+            "expect": "expect(document.querySelector('.overlord')).to.have.css('transform', 'rotate(90deg)');",
+            "onSuccess": "document.querySelector('.overlord').classList.add('hit');const diamond = document.createElement('div'); diamond.classList.add('broken-diamond'); document.querySelector('.world').append(diamond);",
+            "successTimeout": 1000
+        }
+    ],
+    "strict": true
+}

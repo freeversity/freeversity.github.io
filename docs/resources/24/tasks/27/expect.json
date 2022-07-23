@@ -1,0 +1,20 @@
+{
+    "assertions": [
+        {
+            "title": "Задайте элементам списка абсолютное позиционирование.",
+            "name": "setLisPositionToAbsolute",
+            "expect": "expect(document.querySelectorAll('.circle-menu li')).to.have.css('position', 'absolute');"
+        },
+        {
+            "title": "Свойства `top` и `left` со значением `-10px`.",
+            "name": "seetLisTopToneg10PxAndLeftToNeg10Px",
+            "expect": "expect(document.querySelectorAll('.circle-menu li')).to.have.css('top', '-10px');expect(document.querySelectorAll('.circle-menu li')).to.have.css('left', '-10px');"
+        },
+        {
+            "title": "А также `transform-origin` со значением `100% 100%`.",
+            "name": "setLisTransformOriginTo100Perc100Perc",
+            "expect": "expect(document).to.have.cssRule('.circle-menu li', 'transformOrigin', '100% 100%');"
+        }
+    ],
+    "strict": true
+}

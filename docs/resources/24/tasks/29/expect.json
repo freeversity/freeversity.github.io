@@ -1,0 +1,28 @@
+{
+    "assertions": [
+        {
+            "title": "Раскомментируйте CSS-правило для ссылок в меню.",
+            "name": "uncommentAnchorsCssRule",
+            "expect": "expect(document).to.have.cssRule('.circle-menu li a');"
+        },
+        {
+            "title": "Наклоните ссылки на `-30°`.",
+            "name": "setATransformToSkewXNeg30Deg",
+            "expect": "expect(document.querySelectorAll('.circle-menu li a')).to.have.css('transform', 'skewX(-30deg)');"
+        },
+        {
+            "title": "А затем дополнительно поверните их на `-60°`.",
+            "name": "setATransformToSkewXNeg30DegRotateNeg60Deg",
+            "expect": "expect(document.querySelectorAll('.circle-menu li a')).to.have.css('transform', 'skewX(-30deg) rotate(-60deg)');"
+        },
+        {
+            "title": "Добавьте ссылкам маргины сверху и слева `40px`.",
+            "name": "setAMarginTopAndBottomTo40Px",
+            "expect": "expect(document.querySelectorAll('.circle-menu li a')).to.have.css('marginLeft', '40px');expect(document.querySelectorAll('.circle-menu li a')).to.have.css('marginTop', '40px');"
+        }
+    ],
+    "strict": true
+}
+
+
+

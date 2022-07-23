@@ -1,0 +1,25 @@
+{
+    "assertions": [
+        {
+            "title": "Блоку `.picture` задайте свойство `transform` со значением `rotate(10deg)`.",
+            "name": "setPictureTransformToRotate10Deg",
+            "expect": "expect(document.querySelector('.picture')).to.have.css('transform', 'rotate(10deg)');"
+        },
+        {
+            "title": "Задайте свойство `transform-origin` со значением `top left`.",
+            "name": "setPictureTransformOriginToTopLeft",
+            "expect": "expect(document.querySelector('.picture')).to.have.css('transformOrigin', 'top left');"
+        },
+        {
+            "title": "Поменяйте значение `transform` на `rotate(20deg)`.",
+            "name": "setPictureTransformToRotate20Deg",
+            "expect": "expect(document.querySelector('.picture')).to.have.css('transform', 'rotate(20deg)');"
+        },
+        {
+            "title": "Поменяйте значение `transform-origin` на `right bottom`.",
+            "name": "setPictureTransformOriginToRightBottom",
+            "expect": "expect(document.querySelector('.picture')).to.have.css('transformOrigin', 'right bottom');"
+        }
+    ],
+    "strict": true
+}

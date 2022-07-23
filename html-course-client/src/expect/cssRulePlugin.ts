@@ -1,3 +1,5 @@
+import { getCssValue } from "./getCssValue";
+
 declare global {
     interface Window {
         CSSFontFaceRule: typeof CSSFontFaceRule;
@@ -62,23 +64,9 @@ export function cssRulePlugin(
                         const style = (rule as CSSStyleRule).style;
 
                         return Object.keys(prop).length === style.length && Object.entries(prop).every(([prop, value]) => {
-                            const testElem = doc.createElement('div') as HTMLElement | SVGElement;
-                            const testContainer = doc.createElement('div');
-                            testContainer.style.display = 'none';
+                            const expectedValue = getCssValue(prop, value, doc);
+                            const actual = getCssValue(prop, style[prop as any], doc);
             
-                            testContainer.append(testElem);
-                            doc.body.append(testContainer);
-            
-                            testElem.style[prop as any] = value;
-            
-                            const expectedValue = win.getComputedStyle(testElem)[prop as any];
-            
-                            testContainer.remove();
-            
-                            testElem.style[prop as any] = style[prop as any];
-            
-                            const actual = style[prop as any];
-        
                             return actual === expectedValue;
                         });
                     }) ;
@@ -97,23 +85,9 @@ export function cssRulePlugin(
                     const rule = [...styleSheet.cssRules].find(filterFunc) as CSSStyleRule;
 
                     return !!rule && Object.keys(prop).length === rule.style.length && Object.entries(prop).every(([prop, value]) => {
-                        const testElem = doc.createElement('div') as HTMLElement | SVGElement;
-                        const testContainer = doc.createElement('div');
-                        testContainer.style.display = 'none';
+                        const expectedValue = getCssValue(prop, value, doc);
+                        const actual = getCssValue(prop, rule.style[prop as any], doc);
         
-                        testContainer.append(testElem);
-                        doc.body.append(testContainer);
-        
-                        testElem.style[prop as any] = value;
-        
-                        const expectedValue = win.getComputedStyle(testElem)[prop as any];
-        
-                        testContainer.remove();
-        
-                        testElem.style[prop as any] = rule.style[prop as any];
-        
-                        const actual = rule.style[prop as any];
-    
                         return actual === expectedValue;
                     });
                 });
@@ -143,36 +117,14 @@ export function cssRulePlugin(
                 );
 
             } else {
-                const win = doc.defaultView as Window;
-
-                const testElem = doc.createElement('div') as HTMLElement | SVGElement;
-
-                const testContainer = doc.createElement('div');
-                testContainer.style.display = 'none';
-
-                testContainer.append(testElem);
-                doc.body.append(testContainer);
-
-                testElem.style[prop as any] = value;
-
-                const expectedValue = win.getComputedStyle(testElem)[prop as any];
-
-                testContainer.remove();
+                const expectedValue = getCssValue(prop, value, doc);
 
                 const actual =  [...styleSheets].some((styleSheet) => {
                     const rules = [...styleSheet.cssRules].filter(filterFunc).reverse() as CSSStyleRule[];
 
                     if (!rules.length) return false;
 
-                    const testContainer = doc.createElement('div');
-                    testContainer.style.display = 'none';
-    
-                    testContainer.append(testElem);
-                    doc.body.append(testContainer);
-    
-                    testElem.style[prop as any] = rules[0].style[prop as any];
-    
-                    const actual = win.getComputedStyle(testElem)[prop as any];
+                    const actual = getCssValue(prop, rules[0].style[prop as any], doc)
 
                     return actual === expectedValue;
                 });

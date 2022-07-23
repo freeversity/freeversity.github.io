@@ -160,8 +160,7 @@
                         {
                             "name": "2d-transforms",
                             "id": 24,
-                            "entry": "/resources/24/chapter.json",
-                            "unfinished": true
+                            "entry": "/resources/24/chapter.json"
                         },
                         {
                             "name": "box-shadows",

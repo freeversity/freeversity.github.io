@@ -1,0 +1,29 @@
+{
+    "assertions": [
+        {
+            "title": "Для `h1` задайте абсолютное позиционирование, координаты `top` — `10px`, `left` — `0`.",
+            "name": "setH1PositionToAbsoluteTopTo10PxAndLeftTo0",
+            "expect": "expect(document.querySelector('h1')).to.have.css('position', 'absolute');expect(document.querySelector('h1')).to.have.css('top', '10px');expect(document.querySelector('h1')).to.have.css('left', '0');"
+        },
+        {
+            "title": "Затем `article` задайте сплошную рамку слева `border-left` толщиной `40px` цвета <code style=\"color: #7fdbff\">#7fdbff</code>.",
+            "name": "setArticleBorderLeftTo40PxSolidBlue",
+            "expect": "expect(document.querySelector('article')).to.have.css('borderLeft', '40px solid #7fdbff');"
+        },
+        {
+            "title": "Для `h1` задайте `transform-origin` со значением `0 0` и поверните его на `90°` по часовой стрелке.",
+            "name": "setH1TransformOriginTo00AndTransformToRotate90Deg",
+            "expect": "expect(document.querySelector('h1')).to.have.css('transformOrigin', '0 0');expect(document.querySelector('h1')).to.have.css('transform', 'rotate(90deg)');"
+        }
+    ]
+}
+
+
+
+
+
+
+
+
+
+

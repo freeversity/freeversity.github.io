@@ -3,16 +3,192 @@
     "title": "2D-Transforms",
     "tasks": [
         {
+            "id": 1,
+            "type": "task",
+            "entry": "/resources/24/tasks/1/task.json",
+            "name": "translate-x"
+        }, 
+        {
+            "id": 2,
+            "type": "task",
+            "entry": "/resources/24/tasks/2/task.json",
+            "name": "translate-y"
+        }, 
+        {
+            "id": 3,
+            "type": "task",
+            "entry": "/resources/24/tasks/3/task.json",
+            "name": "fireball-practicing"
+        }, 
+        {
+            "id": 4,
+            "type": "task",
+            "entry": "/resources/24/tasks/4/task.json",
+            "name": "zoom-in-zoom-out"
+        }, 
+        {
+            "id": 5,
+            "type": "task",
+            "entry": "/resources/24/tasks/5/task.json",
+            "name": "town-protection"
+        }, 
+        {
+            "id": 6,
+            "type": "task",
+            "entry": "/resources/24/tasks/6/task.json",
+            "name": "journey-begins"
+        }, 
+        {
+            "id": 7,
+            "type": "task",
+            "entry": "/resources/24/tasks/7/task.json",
+            "name": "labyrinth"
+        }, 
+        {
+            "id": 8,
+            "type": "task",
+            "entry": "/resources/24/tasks/8/task.json",
+            "name": "battle-1"
+        }, 
+        {
+            "id": 9,
+            "type": "task",
+            "entry": "/resources/24/tasks/9/task.json",
+            "name": "battle-2"
+        }, 
+        {
             "id": 10,
             "type": "challenge",
             "entry": "/resources/24/tasks/10/task.json",
             "name": "misterious-map"
-        }, {
+        }, 
+        {
+            "id": 11,
+            "type": "task",
+            "entry": "/resources/24/tasks/11/task.json",
+            "name": "battle-3"
+        }, 
+        {
             "id": 12,
             "type": "challenge",
             "entry": "/resources/24/tasks/12/task.json",
             "name": "broken-crystall"
-        }, {
+        }, 
+        {
+            "id": 13,
+            "type": "task",
+            "entry": "/resources/24/tasks/13/task.json",
+            "name": "final-battle"
+        }, 
+        {
+            "id": 14,
+            "type": "task",
+            "entry": "/resources/24/tasks/14/task.json",
+            "name": "transform-origin-1"
+        }, 
+        {
+            "id": 15,
+            "type": "task",
+            "entry": "/resources/24/tasks/15/task.json",
+            "name": "transform-origin-2"
+        }, 
+        {
+            "id": 16,
+            "type": "task",
+            "entry": "/resources/24/tasks/16/task.json",
+            "name": "transform-origin-3"
+        }, 
+        {
+            "id": 17,
+            "type": "task",
+            "entry": "/resources/24/tasks/17/task.json",
+            "name": "transform-origin-4"
+        }, 
+        {
+            "id": 18,
+            "type": "task",
+            "entry": "/resources/24/tasks/18/task.json",
+            "name": "aligning-with-translate"
+        }, 
+        {
+            "id": 19,
+            "type": "task",
+            "entry": "/resources/24/tasks/19/task.json",
+            "name": "rotating-text-in-blocks"
+        }, 
+        {
+            "id": 20,
+            "type": "task",
+            "entry": "/resources/24/tasks/20/task.json",
+            "name": "rotating-text-on-background"
+        }, 
+        {
+            "id": 21,
+            "type": "task",
+            "entry": "/resources/24/tasks/21/task.json",
+            "name": "irregular-shadows"
+        }, 
+        {
+            "id": 22,
+            "type": "task",
+            "entry": "/resources/24/tasks/22/task.json",
+            "name": "button-hover-effects-1"
+        }, 
+        {
+            "id": 23,
+            "type": "task",
+            "entry": "/resources/24/tasks/23/task.json",
+            "name": "button-hover-effects-2"
+        }, 
+        {
+            "id": 24,
+            "type": "task",
+            "entry": "/resources/24/tasks/24/task.json",
+            "name": "button-hover-effects-3"
+        }, 
+        {
+            "id": 25,
+            "type": "task",
+            "entry": "/resources/24/tasks/25/task.json",
+            "name": "hover-effects-gallery"
+        }, 
+        {
+            "id": 26,
+            "type": "task",
+            "entry": "/resources/24/tasks/26/task.json",
+            "name": "deck-of-cards"
+        }, 
+        {
+            "id": 27,
+            "type": "task",
+            "entry": "/resources/24/tasks/27/task.json",
+            "name": "radial-menu-preparation"
+        }, 
+        {
+            "id": 28,
+            "type": "task",
+            "entry": "/resources/24/tasks/28/task.json",
+            "name": "radial-menu-1"
+        }, 
+        {
+            "id": 29,
+            "type": "task",
+            "entry": "/resources/24/tasks/29/task.json",
+            "name": "radial-menu-2"
+        }, 
+        {
+            "id": 30,
+            "type": "task",
+            "entry": "/resources/24/tasks/30/task.json",
+            "name": "radial-menu-3"
+        }, 
+        {
+            "id": 31,
+            "type": "task",
+            "entry": "/resources/24/tasks/31/task.json",
+            "name": "radial-menu-finishing"
+        }, 
+        {
             "id": 32,
             "type": "challenge",
             "entry": "/resources/24/tasks/32/task.json",

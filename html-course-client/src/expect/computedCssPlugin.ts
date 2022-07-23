@@ -1,3 +1,5 @@
+import { getCssValue } from "./getCssValue";
+
 export function computedCssPlugin(
     chai: Chai.ChaiStatic, 
     utils: Chai.ChaiUtils
@@ -17,26 +19,17 @@ export function computedCssPlugin(
             }
 
             elems.forEach((elem) => {
-                const win = elem?.ownerDocument.defaultView as Window;
+                const doc = elem.ownerDocument;
+                const win = elem.ownerDocument.defaultView!;
 
-                const testElem = elem.cloneNode() as HTMLElement | SVGElement;
-                testElem.style[prop as any] = value;
-    
-                const testContainer = win.document.createElement('div');
-                testContainer.style.display = 'none';
-    
-                testContainer.append(testElem);
-                win.document.body.append(testContainer);
-    
-                const expected = win.getComputedStyle(testElem)[prop as any];
+                const originalExpected = value;
+                const originalActual = win.getComputedStyle(elem)[prop as any];
 
-                testContainer.remove();
-                
-                const actual = win.getComputedStyle(elem)[prop as any];
-    
+                const expected = getCssValue(prop, value, doc);
+                const actual = getCssValue(prop, originalActual, doc);
     
                 this.assert(
-                    actual === expected, 
+                    originalExpected === originalActual || actual === expected, 
                     `expected #{this} to have "${value}" as "${prop}"`, 
                     `expected #{this} to not have "${value}" as "${prop}"`,
                     expected,

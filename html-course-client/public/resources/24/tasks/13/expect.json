@@ -1,0 +1,28 @@
+{
+    "assertions": [
+        {
+            "title": "Призовите двойника `.doppelganger` с помощью `visibility: visible` и `scaleX(-1)`",
+            "name": "setDoppelgangerVisibilityToVisibleAndTransformToScaleXNeg1",
+            "expect": "expect(document.querySelector('.doppelganger')).to.have.css('visibility', 'visible');expect(document.querySelector('.doppelganger')).to.have.css('transform', 'scaleX(-1)');",
+            "onSuccess": "document.querySelector('.diamond').classList.add('visible');",
+            "successTimeout": 500
+        },
+        {
+            "title": "Уменьшите до нужного размера и переместите кристалл `.diamond` в череп на стене так, чтобы он попал точно в паз.",
+            "name": "insertDiamondIntoSkullSocket",
+            "expect": "expect(document.querySelector('.diamond')).to.have.css('transform', 'translate(-210px, -210px) scale(-0.6)');",
+            "onSuccess": "document.querySelector('.doppelganger').classList.add('fade-hidden'); document.querySelector('.diamond').classList.add('active'); const scroll = document.createElement('div'); scroll.classList.add('scroll'); document.querySelector('.world').append(scroll);",
+            "successTimeout": 1000
+        }
+    ],
+    "strict": true
+}
+
+
+
+
+
+
+
+
+

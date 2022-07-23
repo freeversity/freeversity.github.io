@@ -1,0 +1,37 @@
+{
+    "assertions": [
+        {
+            "title": "Для `.btn-yellow:hover .hidden` задайте `opacity` равную `1`.",
+            "name": "setBtnYellowHoverHiddenOpacityTo1",
+            "type": "action",
+            "target": ".btn-yellow",
+            "eventType": "mouseover",
+            "debounce": 50,
+            "expect": "expect(document).to.have.cssRule('.btn-yellow:hover .hidden', 'opacity', '1');"
+        },
+        {
+            "title": "Для `.btn-yellow:hover .icon` задайте трансформацию `scale` со значением `10`.",
+            "name": "setBtnYellowHoverIconTransformToScale10",
+            "type": "action",
+            "target": ".btn-yellow",
+            "eventType": "mouseover",
+            "debounce": 50,
+            "expect": "expect(document).to.have.cssRule('.btn-yellow:hover .icon', 'transform', 'scale(10)');"
+        },
+        {
+            "title": "А также `opacity` равную `0`.",
+            "name": "setBtnYellowHoverIconOpacityTo0",
+            "type": "action",
+            "target": ".btn-yellow",
+            "eventType": "mouseover",
+            "debounce": 50,
+            "expect": "expect(document).to.have.cssRule('.btn-yellow:hover .icon', 'opacity', '0');"
+        }
+    ],
+    "footnote": "hoverYellowButtonAfterEachChange",
+    "footnoteTitle": "После каждого изменения наводите курсор на жёлтую кнопку для проверки.",
+    "strict": true
+}
+
+
+

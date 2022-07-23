@@ -1,0 +1,24 @@
+{
+    "assertions": [
+        {
+            "title": "Задайте для элементов списка `overflow: hidden`.",
+            "name": "setLisOverflowToHidden",
+            "expect": "expect(document.querySelectorAll('.circle-menu li')).to.have.css('overflow', 'hidden');"
+        },
+        {
+            "title": "Задайте списку `border-radius: 50%`.",
+            "name": "setUlBorderRadiusTo50Perc",
+            "expect": "expect(document).to.have.cssRule('.circle-menu ul', 'borderRadius', '50%');"
+        },
+        {
+            "title": "А затем тоже `overflow: hidden`.",
+            "name": "setUlOverflowToHidden",
+            "expect": "expect(document.querySelectorAll('.circle-menu ul')).to.have.css('overflow', 'hidden');"
+        },
+        {
+            "title": "Удалите тени и фоны у списка и элементов списка.",
+            "name": "removeUlAndLisBgAndShadows",
+            "expect": "expect(document.querySelectorAll('.circle-menu ul, .circle-menu li')).to.have.css('background', 'none');expect(document.querySelectorAll('.circle-menu ul, .circle-menu li')).to.have.css('boxShadow', 'none');"
+        }
+    ]
+}

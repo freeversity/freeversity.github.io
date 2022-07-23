@@ -1,0 +1,8 @@
+.picture {
+  transition: transform 1s ease;
+  transform: rotate(0deg);
+}
+
+.picture.active {
+  transform: rotate(360deg);
+}

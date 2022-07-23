@@ -1,0 +1,37 @@
+{
+    "assertions": [
+        {
+            "title": "Для `.btn-blue:hover .icon` задайте `opacity` равную `0`.",
+            "name": "setBtnBlueHoverIconOpacityTo0",
+            "type": "action",
+            "target": ".btn-blue",
+            "eventType": "mouseover",
+            "debounce": 50,
+            "expect": "expect(document).to.have.cssRule('.btn-blue:hover .icon', 'opacity', '0');"
+        },
+        {
+            "title": "Для `.btn-blue:hover .hidden` задайте трансформацию `scale` со значением `1` и `opacity` равную `1`.",
+            "name": "setBtnBlueHoverHiddenTransformToScale1AndOpacity1",
+            "type": "action",
+            "target": ".btn-blue",
+            "eventType": "mouseover",
+            "debounce": 50,
+            "expect": "expect(document).to.have.cssRule('.btn-blue:hover .hidden', 'transform', 'scale(1)');expect(document).to.have.cssRule('.btn-blue:hover .hidden', 'opacity', '1');"
+        },
+        {
+            "title": "Для `.btn-blue .hidden` задайте трансформацию `scale` со значением `0`.",
+            "name": "setBtnBlueHiddenTransformToScale0",
+            "type": "action",
+            "target": ".btn-blue",
+            "eventType": "mouseover",
+            "debounce": 50,
+            "expect": "expect(document).to.have.cssRule('.btn-blue .hidden', 'transform', 'scale(0)');"
+        }
+    ],
+    "footnote": "hoverBlueButtonAfterEachChange",
+    "footnoteTitle": "После каждого изменения наводите курсор на синюю кнопку для проверки.",
+    "strict": true
+}
+
+
+

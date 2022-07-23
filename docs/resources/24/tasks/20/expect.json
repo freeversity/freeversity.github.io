@@ -1,0 +1,29 @@
+{
+    "assertions": [
+        {
+            "title": "Заголовку `h1` задайте наклон на `15°` вправо.",
+            "name": "setH1TransformToSkewXNeg15Deg",
+            "expect": "expect(document.querySelector('h1')).to.have.css('transform', 'skewX(-15deg)');"
+        },
+        {
+            "title": "А для `span` внутри заголовка — наклон влево на `15°`.",
+            "name": "setH1SpanTransformToSkewX15Deg",
+            "expect": "expect(document.querySelector('h1 span')).to.have.css('transform', 'skewX(15deg)');"
+        },
+        {
+            "title": "Поверните `p` внутри `article` на `15°` против часовой стрелки.",
+            "name": "setArticlePTransformToRotateNeg15Deg",
+            "expect": "expect(document.querySelector('article p')).to.have.css('transform', 'rotate(-15deg)');"
+        }
+    ]
+}
+
+
+
+
+
+
+
+
+
+

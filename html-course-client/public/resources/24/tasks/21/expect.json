@@ -1,0 +1,29 @@
+{
+    "assertions": [
+        {
+            "title": "Псевдоэлемент `before` блока `shadow-box` поверните на `3°` против часовой стрелки.",
+            "name": "setShadowBoxBeforeTransformToRotateNeg3Deg",
+            "expect": "expect(document).to.have.cssRule('.shadow-box::before', 'transform', 'rotate(-3deg)');"
+        },
+        {
+            "title": "Затем псевдоэлемент `after` — по часовой на `3°`.",
+            "name": "setShadowBoxAfterTransformToRotate3Deg",
+            "expect": "expect(document).to.have.cssRule('.shadow-box::after', 'transform', 'rotate(3deg)');"
+        },
+        {
+            "title": "Задайте обоим псевдоэлементам `z-index` равный `-1`.",
+            "name": "setShadowBoxBeforeAndAfterZIndexToNeg1",
+            "expect": "expect(document).to.have.cssRule('.shadow-box::after, .shadow-box::after', 'zIndex', '-1');"
+        }
+    ]
+}
+
+
+
+
+
+
+
+
+
+

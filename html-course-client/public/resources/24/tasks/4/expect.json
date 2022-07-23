@@ -1,0 +1,23 @@
+{
+    "assertions": [
+        {
+            "title": "Уменьшите размеры фигурки бегемота `.hippo`, добавив ему трансформацию `transform: scale(0.25)`.",
+            "name": "setHippoTransformToScale025",
+            "expect": "expect(document.querySelector('.hippo')).to.have.css('transform', 'scale(0.25)');"
+        },
+        {
+            "title": "Увеличьте мышь `.mouse` в 3 раза: `transform: scale(3)`.",
+            "name": "setMouseTransformToScale3",
+            "expect": "expect(document.querySelector('.mouse')).to.have.css('transform', 'scale(3)');"
+        }
+    ]
+}
+
+
+
+
+
+
+
+
+

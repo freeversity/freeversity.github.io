@@ -1,0 +1,34 @@
+{
+    "intro": "moveWizzardToShadows",
+    "introTitle": "Перемещайте мага c помощью `transform: translate` к выходу из лабиринта по ключевым точкам последовательно:",
+    "assertions": [
+        {
+            "title": "На первую тень.",
+            "name": "moveWizardToFirstShadow",
+            "expect": "expect(document.querySelector('.wizard')).to.have.css('transform', 'translate(-20px, -150px)');"
+        },
+        {
+            "title": "На вторую тень.",
+            "name": "moveWizardToSecondShadow",
+            "expect": "expect(document.querySelector('.wizard')).to.have.css('transform', 'translate(290px, -260px)');"
+        },
+        {
+            "title": "И на третью тень.",
+            "name": "moveWizardToThirdShadow",
+            "expect": "expect(document.querySelector('.wizard')).to.have.css('transform', 'translate(490px, 0)');"
+        }
+    ],
+    "strict": true
+}
+
+
+
+
+
+
+
+
+
+
+
+

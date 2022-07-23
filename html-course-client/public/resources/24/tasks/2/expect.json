@@ -1,0 +1,25 @@
+{
+    "assertions": [
+        {
+            "title": "Добавьте блоку `.wizard` класс `levitate`, чтобы маг смог взлететь.",
+            "name": "addLevitateClassToWizard",
+            "expect": "expect(document.querySelector('.wizard')).to.have.class('levitate');"
+        },
+        {
+            "title": "Переместите мага на `200px` вверх с помощью свойства `translateY(-200px)`.",
+            "name": "setWizardTransformToTranslateYNeg200Px",
+            "expect": "expect(document.querySelector('.wizard')).to.have.css('transform', 'translateY(-200px)');"
+        },
+        {
+            "title": "Продвиньте его вперёд, добавив в цепочку свойств `translateX(280px)`.",
+            "name": "setWizardTransformToTranslateYNeg200PxTranslateX280Px",
+            "expect": "expect(document.querySelector('.wizard')).to.have.css('transform', 'translateY(-200px) translateX(280px)');"
+        },
+        {
+            "title": "А затем пропишите ещё `translateY(200px)` и посадите мага на землю.",
+            "name": "setWizardTransformToTranslateYNeg200PxTranslateX280PxTranslateY200Px",
+            "expect": "expect(document.querySelector('.wizard')).to.have.css('transform', 'translateY(-200px) translateX(280px) translateY(200px)');"
+        }
+    ],
+    "strict": true
+}

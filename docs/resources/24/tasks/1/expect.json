@@ -1,0 +1,24 @@
+{
+    "assertions": [
+        {
+            "title": "Добавьте блоку `.wizard` свойство `transform` со значением `translateX(250px)` и переместите мага вправо.",
+            "name": "setWizardTransformToTranslateX250Px",
+            "expect": "expect(document).to.have.cssRule('.wizard', 'transform', 'translateX(250px)');"
+        },
+        {
+            "title": "А затем верните его обратно, добавив к свойству трансформации ещё одно значение перемещения:<br>`transform: translateX(250px) translateX(-250px);`.",
+            "name": "setWizardTransformToTranslateX250PxTranslateXNeg250Px",
+            "expect": "expect(document).to.have.cssRule('.wizard', 'transform', 'translateX(250px) translateX(-250px)');"
+        }
+    ],
+    "strict": true
+}
+
+
+
+
+
+
+
+
+

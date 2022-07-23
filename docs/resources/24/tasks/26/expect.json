@@ -1,0 +1,19 @@
+{
+    "assertions": [
+        {
+            "title": "Поверните карту `.queen` на `10°` против часовой стрелки.",
+            "name": "setQueenTransformToRotateNeg10Deg",
+            "expect": "expect(document.querySelector('.queen')).to.have.css('transform', 'rotate(-10deg)');"
+        },
+        {
+            "title": "Затем карту `.jack` — на `20°` против часовой стрелки.",
+            "name": "setJackTransformToRotateNeg20Deg",
+            "expect": "expect(document.querySelector('.jack')).to.have.css('transform', 'rotate(-20deg)');"
+        },
+        {
+            "title": "И карту `.ten` — на `30°` против часовой стрелки.",
+            "name": "setTenTransformToRotateNe30Deg",
+            "expect": "expect(document.querySelector('.ten')).to.have.css('transform', 'rotate(-30deg)');"
+        }
+    ]
+}

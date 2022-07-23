@@ -1,0 +1,8 @@
+{
+    "id": 27,      
+    "name": "radial-menu-preparation",
+    "htmlEntry": "index.html",
+    "cssEntry": "style.css",
+    "articleEntry": "article.md",
+    "expectEntry": "expect.json"
+}

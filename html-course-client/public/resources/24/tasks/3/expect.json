@@ -1,0 +1,30 @@
+{
+    "assertions": [
+        {
+            "title": "С помощью функции `translateX` переместите `.fireball-1` вперёд на `310px` чтобы попасть в правую мишень снизу.",
+            "name": "setFireball1TransformToTranslateX310Px",
+            "expect": "expect(document.querySelector('.fireball-1')).to.have.css('transform', 'translateX(310px)');"
+        },
+        {
+            "title": "`.fireball-2` переместите вертикально вверх на `190px` чтобы поразить верхнюю мишень.",
+            "name": "setFireball2TransformToTranslateY190Px",
+            "expect": "expect(document.querySelector('.fireball-2')).to.have.css('transform', 'translateY(-190px)');"
+        },
+        {
+            "title": "Последний шар `.fireball-3` бросьте одновременно вперёд на `290px` и вверх на `190px` в правую верхнюю мишень.",
+            "name": "setFireball3TransformToTranslateX290PxTranslateY190Px",
+            "expect": "expect(document.querySelector('.fireball-3')).to.have.css('transform', 'translateY(-190px) translateX(290px)');"
+        }
+    ],
+    "onDone": "for (let target of document.querySelectorAll('.target, .fireball')) {target.classList.add('fade-hidden')}"
+}
+
+
+
+
+
+
+
+
+
+

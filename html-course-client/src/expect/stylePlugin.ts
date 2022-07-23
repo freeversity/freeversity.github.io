@@ -1,3 +1,5 @@
+import { getCssValue } from "./getCssValue";
+
 export function stylePlugin(
     chai: Chai.ChaiStatic, 
     utils: Chai.ChaiUtils
@@ -17,21 +19,11 @@ export function stylePlugin(
             }
 
             elems.forEach((elem) => {
-                const win = elem?.ownerDocument.defaultView as Window;
+                const doc = elem.ownerDocument;
 
-                const testElem = elem.cloneNode() as HTMLElement | SVGElement;
-                testElem.style[prop as any] = value;
+                const expected = getCssValue(prop, value, doc);
+                const actual = getCssValue(prop, elem.style[prop as any], doc);
     
-                const testContainer = win.document.createElement('div');
-                testContainer.style.display = 'none';
-    
-                testContainer.append(testElem);
-                win.document.body.append(testContainer);
-    
-                const expected = testElem.style[prop as any];
-                const actual = elem.style[prop as any];
-    
-                testContainer.remove();
     
                 this.assert(
                     actual === expected, 

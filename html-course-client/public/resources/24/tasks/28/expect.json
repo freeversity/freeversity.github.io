@@ -1,0 +1,15 @@
+{
+    "assertions": [
+        {
+            "title": "Наклоните первый элемент списка на `30°`.",
+            "name": "setFirstLiTransformToSkew30Deg",
+            "expect": "expect(document.querySelector('.circle-menu li:first-child')).to.have.css('transform', 'skewX(30deg)');"
+        },
+        {
+            "title": "Поверните второй элемент списка на `60°` и наклоните на `30°`.",
+            "name": "setFirstLiTransformToRotate60DegSkew30Deg",
+            "expect": "expect(document.querySelector('.circle-menu li:nth-child(2)')).to.have.css('transform', 'rotate(60deg) skewX(30deg)');"
+        }
+    ]
+}
+

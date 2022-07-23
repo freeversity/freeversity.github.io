@@ -25,6 +25,7 @@ export interface ExpectType {
     intro?: string;
     introTitle?: string;
     globalAssertion?: string;
+    onDone?: string;
     footnote?: string;
     footnoteTitle?: string;
     assertions: ({
@@ -33,6 +34,7 @@ export interface ExpectType {
         title: string;
         expect: string;
         onSuccess?: string;
+        successTimeout?: number;
         onFailure?: string;
     } | {
         title: string;

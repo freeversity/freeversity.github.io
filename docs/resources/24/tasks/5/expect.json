@@ -1,0 +1,34 @@
+{
+    "intro": "moveFence1Block",
+    "introTitle": "Перемещайте блок `.fence-1`:",
+    "assertions": [
+        {
+            "title": "Поверните по часовой стрелке на `90°`: `transform: rotate(90deg)`.",
+            "name": "setFence1TransformToRotate90Deg",
+            "expect": "expect(document.querySelector('.fence-1')).to.have.css('transform', 'rotate(90deg)');"
+        },
+        {
+            "title": "Переместите вверх на `25px`.",
+            "name": "setFence1TransformToRotate90DegTranslateY25Px",
+            "expect": "expect(document.querySelector('.fence-1')).to.have.css('transform', 'rotate(90deg) translateX(-25px)');"
+        },
+        {
+            "title": "И подвиньте вправо на `50px`, совместив с первой частью ограды.",
+            "name": "setFence1TransformToRotate90DegTranslateY25PxTranslateX50Px",
+            "expect": "expect(document.querySelector('.fence-1')).to.have.css('transform', 'rotate(90deg) translate(-25px, -50px)');"
+        }
+    ],
+    "strict": true
+}
+
+
+
+
+
+
+
+
+
+
+
+

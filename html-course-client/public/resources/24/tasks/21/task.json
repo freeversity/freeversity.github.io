@@ -1,0 +1,8 @@
+{
+    "id": 21,      
+    "name": "irregular-shadows",
+    "htmlEntry": "index.html",
+    "cssEntry": "style.css",
+    "articleEntry": "article.md",
+    "expectEntry": "expect.json"
+}

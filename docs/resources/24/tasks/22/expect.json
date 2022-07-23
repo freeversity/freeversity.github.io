@@ -1,0 +1,27 @@
+{
+    "intro": "setBtnGreenHoverIconProps",
+    "introTitle": "Добавьте для правила `.btn-green:hover .icon`:",
+    "assertions": [
+        {
+            "title": "Трансформацию поворота на `360°` по часовой стрелке.",
+            "name": "setBtnGreenHoverIconTransformToRotate360Deg",
+            "type": "action",
+            "target": ".btn-green",
+            "eventType": "mouseover",
+            "expect": "expect(document).to.have.cssRule('.btn-green:hover .icon', 'transform', 'rotate(360deg)');",
+            "debounce": 50
+        },
+        {
+            "title": "И трансформацию масштабирования со значением `1.2`.",
+            "name": "setBtnGreenHoverIconTransformToRotate360DegScale1.2",
+            "type": "action",
+            "target": ".btn-green",
+            "eventType": "mouseover",
+            "expect": "expect(document).to.have.cssRule('.btn-green:hover .icon', 'transform', 'rotate(360deg) scale(1.2)');",         
+            "debounce": 50
+        }
+    ],
+    "footnote": "hoverGreenButtonAfterEachChange",
+    "footnoteTitle": "После каждого изменения наводите курсор на зелёную кнопку для проверки.",
+    "strict": true
+}

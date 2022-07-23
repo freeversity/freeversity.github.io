@@ -1,0 +1,30 @@
+{
+    "assertions": [
+        {
+            "title": "Добавьте в меню третий элемент списка со ссылкой внутри.",
+            "name": "addThirdRadialMenuItem",
+            "expect": "expect(document.querySelector('.circle-menu li:nth-child(3):last-child > a[href=\"#\"]')).to.exist"
+        },
+        {
+            "title": "Поверните третий элемент списка на `120°`.",
+            "name": "setThirdLiTransformToRotate120Deg",
+            "expect": "expect(document.querySelector('.circle-menu li:nth-child(3)')).to.have.css('transform', 'rotate(120deg)');"
+        },
+        {
+            "title": "А затем наклоните его на `30°`.",
+            "name": "setThirdLiTransformToRotate120DegSkewX30Deg",
+            "expect": "expect(document.querySelector('.circle-menu li:nth-child(3)')).to.have.css('transform', 'rotate(120deg) skewX(30deg)');"
+        }
+    ],
+    "strict": true
+}
+
+
+
+
+
+
+
+
+
+

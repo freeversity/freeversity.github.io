@@ -81,9 +81,19 @@ const WorkDesk: FC<WorkDeskProps> = ({
 
     useEffect(() => {
         const isActive = !!expect && doneAsserts.size === expect.assertions.length;
-        
+
+        if (expect?.onDone && isActive) {
+            try {
+                const func = new Function('expect', 'document', expect?.onDone);
+    
+                func.call(previewWindow, expectFunc, previewWindow!.document);
+            } catch (e) {
+                console.error(e);
+            }
+        }
+
         setNextTaskActive(isActive);
-    }, [doneAsserts, setNextTaskActive, expect])
+    }, [doneAsserts, setNextTaskActive, expect, previewWindow])
 
     const onValidate = (previewFrame: HTMLIFrameElement) => {
         const previewWindow = previewFrame.contentWindow as Window;
@@ -141,7 +151,7 @@ const WorkDesk: FC<WorkDeskProps> = ({
                         return null;
                     }
                     default: {
-                        const {onSuccess, name, onFailure, expect: expectBody } = assertion;
+                        const {onSuccess, name, onFailure, expect: expectBody, successTimeout } = assertion;
 
                         const func = new Function('expect', 'document', expectBody);
                         try {
@@ -150,8 +160,15 @@ const WorkDesk: FC<WorkDeskProps> = ({
 
                             if (onSuccess) {
                                 const onSuccessFunc = new Function('document', onSuccess);
-                
-                                onSuccessFunc?.call(previewWindow, previewWindow.document);
+
+                                if (!successTimeout || doneAsserts.has(name)) {
+                                    onSuccessFunc?.call(previewWindow, previewWindow.document);
+                                } else {
+                                    previewWindow.setTimeout(() => {
+                                        onSuccessFunc?.call(previewWindow, previewWindow.document);
+                                    }, successTimeout);
+                                }
+                 
                             }
                             
                             return name;

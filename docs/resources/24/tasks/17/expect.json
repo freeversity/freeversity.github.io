@@ -1,0 +1,46 @@
+{
+    "intro": "setPictureTransformOrigin",
+    "introTitle": "У блока `.picture` меняйте значения `transform-origin` на:",
+    "assertions": [
+        {
+            "title": "`top left`.",
+            "name": "setPictureTransformOriginToTopLeft",
+            "type": "action",
+            "target": ".btn-activate",
+            "eventType": "click",
+            "expect": "expect(document.querySelector('.picture')).to.have.class('active');expect(document).to.have.cssRule('.picture', 'transformOrigin', 'top left');"
+        },
+        {
+            "title": "`top right`.",
+            "name": "setPictureTransformOriginToTopRight",
+            "type": "action",
+            "target": ".btn-activate",
+            "eventType": "click",
+            "expect": "expect(document.querySelector('.picture')).to.have.class('active');expect(document).to.have.cssRule('.picture', 'transformOrigin', 'top right');"
+        },
+        {
+            "title": "`bottom left`.",
+            "name": "setPictureTransformOriginToBottomLeft",
+            "type": "action",
+            "target": ".btn-activate",
+            "eventType": "click",
+            "expect": "expect(document.querySelector('.picture')).to.have.class('active');expect(document).to.have.cssRule('.picture', 'transformOrigin', 'bottom left');"
+        },
+        {
+            "title": "`50% 100%`.",
+            "name": "setPictureTransformOriginTo50Perc100Percs",
+            "type": "action",
+            "target": ".btn-activate",
+            "eventType": "click",
+            "expect": "expect(document.querySelector('.picture')).to.have.class('active');expect(document).to.have.cssRule('.picture', 'transformOrigin', '50% 100%');"
+        }
+    ],
+    "footnote": "clickActivateAfterEachChange",
+    "footnoteTitle": "После каждого изменения нажимайте кнопку «Запустить».",
+    "scripts": [{
+        "type": "handler", 
+        "target": ".btn-activate", 
+        "eventType": "click", 
+        "handler": "e.preventDefault(); document.querySelector('.picture-frame').classList.toggle('active');document.querySelector('.picture').classList.toggle('active')"
+    }]
+}

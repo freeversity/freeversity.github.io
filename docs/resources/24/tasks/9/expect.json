@@ -1,0 +1,26 @@
+{
+    "assertions": [
+        {
+            "title": "Наклоните монстра `.monster` на `30°` по горизонтали.",
+            "name": "setMonsterTransformToSkewX30Deg",
+            "expect": "expect(document.querySelector('.monster')).to.have.css('transform', 'skewX(30deg)');"
+        },
+        {
+            "title": "А затем добавьте ему на орехи и наклоните на `30°` по вертикали.",
+            "name": "setMonsterTransformToSkewX30DegSkewY30Deg",
+            "expect": "expect(document.querySelector('.monster')).to.have.css('transform', 'skewX(30deg) skewY(30deg)');",
+            "onSuccess": "document.querySelector('.monster').classList.add('fade-hidden');const scroll = document.createElement('div'); scroll.classList.add('scroll'); document.querySelector('.world').append(scroll);",
+            "successTimeout": 1000
+        }
+    ],
+    "strict": true
+}
+
+
+
+
+
+
+
+
+

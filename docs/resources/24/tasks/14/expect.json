@@ -1,0 +1,20 @@
+{
+    "assertions": [
+        {
+            "title": "Блоку `.picture` задайте свойство `transform` со значением `scale(0.5)`.",
+            "name": "setPictureTransformToScale0.5",
+            "expect": "expect(document.querySelector('.picture')).to.have.css('transform', 'scale(0.5)');"
+        },
+        {
+            "title": "Затем задайте свойство `transform-origin` со значением `top left`.",
+            "name": "setPictureTransformOriginToTopLeft",
+            "expect": "expect(document).to.have.cssRule('.picture' ,'transformOrigin', 'top left');"
+        },
+        {
+            "title": "и поменяйте значение `transform-origin` на `top right`.",
+            "name": "setPictureTransformOriginToTopRight",
+            "expect": "expect(document).to.have.cssRule('.picture' ,'transformOrigin', 'top right');"
+        }
+    ],
+    "strict": true
+}

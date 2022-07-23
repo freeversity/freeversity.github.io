@@ -1,0 +1,27 @@
+{
+    "assertions": [
+        {
+            "title": "Опрокиньте фигурку оборотня на спину с помощью заклинания `transform: rotate`.",
+            "name": "setWerewolfTransformToRotate90Deg",
+            "expect": "expect(document.querySelector('.werewolf')).to.have.css('transform', 'rotate(90deg)');",
+            "onSuccess": "document.querySelector('.werewolf').classList.add('target-area')",
+            "successTimeout": 1000
+        },
+        {
+            "title": "И бросьте огненный шар точно в появившуюся мишень.",
+            "name": "moveFireballOnTarget",
+            "expect": "expect(document.querySelector('.fireball')).to.have.css('transform', 'translate(250px, 90px)');",
+            "onSuccess": "for (let target of document.querySelectorAll('.werewolf, .fireball')) {target.classList.add('fade-hidden')}",
+            "successTimeout": 1000
+        }
+    ],
+    "strict": true
+}
+
+
+
+
+
+
+
+

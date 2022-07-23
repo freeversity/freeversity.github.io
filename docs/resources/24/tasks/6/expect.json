@@ -1,0 +1,21 @@
+{
+    "assertions": [
+        {
+            "title": "Переместите мага на `130px` вперёд.",
+            "name": "setWizardTransformToTranslateX130Px",
+            "expect": "expect(document.querySelector('.wizard')).to.have.css('transform', 'translateX(130px)');"
+        },
+        {
+            "title": "Уменьшите его в `2` раза.",
+            "name": "setWizardTransformToTranslateX130PxScale05",            
+            "expect": "expect(document.querySelector('.wizard')).to.have.css('transform', 'translateX(130px) scale(0.5)');"
+
+        },
+        {
+            "title": "И продвиньте вперёд на `570px`.",
+            "name": "setWizardTransformToTranslateX130PxScale05Translate570Px",
+            "expect": "expect(document.querySelector('.wizard')).to.have.css('transform', 'translateX(130px) scale(0.5) translateX(570px)');"
+        }
+    ],
+    "strict": true
+}

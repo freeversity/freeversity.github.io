@@ -1,0 +1,25 @@
+{
+    "assertions": [
+        {
+            "title": "Блоку `.picture` задайте свойство `left: 50%`.",
+            "name": "setPictureLeftTo50Perc",
+            "expect": "expect(document).to.have.cssRule('.picture', 'left', '50%');"
+        },
+        {
+            "title": "И свойство `top: 50%`.",
+            "name": "setPictureTopTo50Perc",
+            "expect": "expect(document).to.have.cssRule('.picture', 'top', '50%');"
+        },
+        {
+            "title": "Затем сместите его при помощи `translateX` на `-50%`.",
+            "name": "setPictureTransformToTranslatexNeg50Perc",
+            "expect": "expect(document.querySelector('.picture')).to.have.css('transform', 'translateX(-50%)');"
+        },
+        {
+            "title": "И на `-50%` с помощью `translateY`.",
+            "name": "setPictureTransformToTranslatexNeg50PercTranslateYNeg50Perc",
+            "expect": "expect(document.querySelector('.picture')).to.have.css('transform', 'translate(-50%, -50%)');"
+        }
+    ],
+    "strict": true
+}
