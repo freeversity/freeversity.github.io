@@ -1,0 +1,22 @@
+{
+    "intro": "setCircleThreeInsetShadows",
+    "introTitle": "Добавьте для `.circle` три _внутренние тени_. Каждую новую тень добавляйте в _начало списка_ теней.",
+    "assertions": [
+        {
+            "title": "Растяжение `10px`, цвет `black`, внутренняя.",
+            "name": "setCirscleBoxShadowToInset00010PxBlack",
+            "expect": "expect(document.querySelector('.circle')).to.have.css('boxShadow', 'inset 0 0 0 10px black');"
+        },
+        {
+            "title": "Растяжение `9px`, цвет `#6c6d70`, внутренняя.",
+            "name": "setCirscleBoxShadowToInset0009PxGrayInset00010PxBlack",
+            "expect": "expect(document.querySelector('.circle')).to.have.css('boxShadow', 'inset 0 0 0 9px #6c6d70, inset 0 0 0 10px black');"
+        },
+        {
+            "title": "Оба смещения `-5px`, размытие `5px`, растяжение `3px`, цвет `white`, внутренняя.",
+            "name": "setCirscleBoxShadowToInsetNeg5PxNeg5Px5Px3PxWhiteInset0009PxGrayInset00010PxBlack",
+            "expect": "expect(document.querySelector('.circle')).to.have.css('boxShadow', 'inset -5px -5px 5px 3px white, inset 0 0 0 9px #6c6d70, inset 0 0 0 10px black');"
+        }
+    ],
+    "strict": true
+}

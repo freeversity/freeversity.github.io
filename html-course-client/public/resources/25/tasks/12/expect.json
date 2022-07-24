@@ -1,0 +1,32 @@
+{
+    "intro": "setBtnDoubleShadow",
+    "introTitle": "Добавьте к кнопке две тени:",
+    "assertions": [
+        {
+            "title": "Первая тень: вертикальное смещение `-5px`, размытие `10px`, растяжение `-3px`, цвет `#3498db`.",
+            "name": "setBtnBoxShadowTo0Neg5Px10PxNeg3PxBlue",
+            "expect": "expect(document.querySelector('.btn')).to.have.css('boxShadow', '0 -5px 10px -3px #3498db');"
+        },
+        {
+            "title": "Вторая тень: вертикальное смещение `5px`, размытие `10px`, растяжение `-3px`, цвет `#2ecc71`.",
+            "name": "setBtnBoxShadowTo0Neg5Px10PxNeg3PxBlue05Px10PxNeg3PxGreen",
+            "expect": "expect(document.querySelector('.btn')).to.have.css('boxShadow', '0 -5px 10px -3px #3498db, 0 5px 10px -3px #2ecc71');"
+        }
+    ],
+    "footnote": "btnShadowHorizontalOffsetShouldBe0",
+    "footnoteTitle": "Горизонтальное смещение у обеих теней должно быть нулевым.",
+    "strict": true
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

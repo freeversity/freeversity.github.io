@@ -1,0 +1,38 @@
+.btn1 {
+  box-shadow: 0 0 5px 4px;
+}
+
+.btn2 {
+  box-shadow: 0 0 5px 4px;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  font-family: "Tahoma", sans-serif;
+}
+
+.light {
+  padding: 50px 0;
+  background-color: #2c3e50;
+}
+
+.dark {
+  padding: 50px 0;
+}
+
+.btn {
+  display: block;
+  margin: 50px auto;
+  padding: 15px 20px;
+  width: 150px;
+  border: none;
+  box-sizing: content-box;
+  background-color: #3498db;
+  color: yellow;
+  text-align: center;
+  text-transform: uppercase;
+  font: inherit;
+}

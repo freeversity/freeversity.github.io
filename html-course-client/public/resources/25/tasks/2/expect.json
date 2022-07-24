@@ -1,0 +1,25 @@
+{
+    "assertions": [
+        {
+            "title": "Сместите исходную тень (которую изначально не видно) влево на `5px`,",
+            "name": "setBtnBoxShadowToNeg5Px000Blue",
+            "expect": "expect(document.querySelector('.btn')).to.have.css('boxShadow', '-5px 0 0 0 #34495e');"
+        },
+        {
+            "title": "затем вправо на `5px`.",
+            "name": "setBtnBoxShadowTo5Px000Blue",
+            "expect": "expect(document.querySelector('.btn')).to.have.css('boxShadow', '5px 0 0 0 #34495e');"
+        }
+    ],
+    "strict": true
+}
+
+
+
+
+
+
+
+
+
+

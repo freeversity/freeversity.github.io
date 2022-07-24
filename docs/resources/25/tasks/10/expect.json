@@ -1,0 +1,23 @@
+{
+    "assertions": [
+        {
+            "title": "Поменяйте цвет тени первой кнопки на `rgba(39, 174, 96, 0.5)`.",
+            "name": "setBtn1BoxShadowTo00015PxSemiTransparentGreen",
+            "expect": "expect(document.querySelector('.btn1')).to.have.css('boxShadow', '0 0 0 15px rgba(39, 174, 96, 0.5)');"
+        },
+        {
+            "title": "Поменяйте цвет тени второй кнопки на `rgba(231, 76, 60, 0.5)`.",
+            "name": "setBtn2BoxShadowTo00015PxSemiTransparentRed",
+            "expect": "expect(document.querySelector('.btn2')).to.have.css('boxShadow', '0 0 0 15px rgba(231, 76, 60, 0.5)');"
+        }
+    ]
+}
+
+
+
+
+
+
+
+
+

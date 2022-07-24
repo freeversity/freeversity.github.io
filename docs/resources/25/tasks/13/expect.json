@@ -1,0 +1,35 @@
+{
+    "intro": "addThreeShadowsTooBtn",
+    "introTitle": "Добавьте к кнопке три тени. Горизонтальное, вертикальное смещение и размытие у всех теней должны быть нулевыми.",
+    "assertions": [
+        {
+            "title": "Первая: растяжение `5px`, цвет `#e74c3c`.",
+            "name": "setBtnBoxShadowTo0005PxRed",
+            "expect": "expect(document.querySelector('.btn')).to.have.css('boxShadow', '0 0 0 5px #e74c3c');"
+        },
+        {
+            "title": "Вторая: растяжение `10px`, цвет `#f1c40f`.",
+            "name": "setBtnBoxShadowTo0005PxRed00010PxYellow",
+            "expect": "expect(document.querySelector('.btn')).to.have.css('boxShadow', '0 0 0 5px #e74c3c, 0 0 0 10px #f1c40f');"
+        },
+        {
+            "title": "Третья: растяжение `15px`, цвет `#2ecc71`.",
+            "name": "setBtnBoxShadowTo0005PxRed00010PxYellow00015PxGreen",
+            "expect": "expect(document.querySelector('.btn')).to.have.css('boxShadow', '0 0 0 5px #e74c3c, 0 0 0 10px #f1c40f,  0 0 0 15px #2ecc71');"
+        }
+    ],
+    "strict": true
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

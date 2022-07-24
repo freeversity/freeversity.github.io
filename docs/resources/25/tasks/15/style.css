@@ -1,0 +1,15 @@
+body {
+  padding: 20px;
+  background-color: white;
+}
+
+.circle {
+  margin: 10px auto;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  box-shadow:
+    inset -5px -5px 5px 3px white,
+    inset 0 0 0 9px #6c6d70,
+    inset 0 0 0 10px black;
+}

@@ -1,0 +1,30 @@
+{
+    "assertions": [
+        {
+            "title": "Сделайте тень внутренней у первой кнопки,",
+            "name": "setBtn1BoxShadowToInset5Px5Px00Blue",
+            "expect": "expect(document.querySelector('.btn1')).to.have.css('boxShadow', 'inset 5px 5px 0 0 #34495e');"
+        },
+        {
+            "title": "и у второй,",
+            "name": "setBtn2BoxShadowToInset005Px0Blue",
+            "expect": "expect(document.querySelector('.btn2')).to.have.css('boxShadow', 'inset 0 0 5px 0 #34495e');"
+        },
+        {
+            "title": "и у третьей тоже.",
+            "name": "setBtn3BoxShadowToInset005Px3PxBlue",
+            "expect": "expect(document.querySelector('.btn3')).to.have.css('boxShadow', 'inset 0 0 5px 3px #34495e');"
+        }
+    ]
+}
+
+
+
+
+
+
+
+
+
+
+

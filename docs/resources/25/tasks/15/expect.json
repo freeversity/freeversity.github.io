@@ -1,0 +1,22 @@
+{
+    "intro": "setCircleThreeMoreInsetShadows",
+    "introTitle": "Добавьте ещё три _внутренние тени_. Каждую новую тень добавляйте в _начало списка_ теней.",
+    "assertions": [
+        {
+            "title": "Растяжение `5px` цвет `black` внутренняя.",
+            "name": "setCirscleBoxShadowToInset0005PxBlackInsetNeg5PxNeg5Px5Px3PxWhiteInset0009PxGrayInset00010PxBlack",
+            "expect": "expect(document.querySelector('.circle')).to.have.css('boxShadow', 'inset 0 0 0 5px black, inset -5px -5px 5px 3px white, inset 0 0 0 9px #6c6d70, inset 0 0 0 10px black');"
+        },
+        {
+            "title": "Растяжение `4px` цвет `#4f5054` внутренняя.",
+            "name": "setCirscleBoxShadowToInset0004PxGrayInset0005PxBlackInsetNeg5PxNeg5Px5Px3PxWhiteInset0009PxGrayInset00010PxBlack",
+            "expect": "expect(document.querySelector('.circle')).to.have.css('boxShadow', 'inset 0 0 0 4px #4f5054, inset 0 0 0 5px black, inset -5px -5px 5px 3px white, inset 0 0 0 9px #6c6d70, inset 0 0 0 10px black');"
+        },
+        {
+            "title": "Оба смещения `2px` размытие `2px` цвет `white` внутренняя.",
+            "name": "setCirscleBoxShadowToInset2Px2Px2Px0WhiteInset0004PxGrayInset0005PxBlackInsetNeg5PxNeg5Px5Px3PxWhiteInset0009PxGrayInset00010PxBlack",
+            "expect": "expect(document.querySelector('.circle')).to.have.css('boxShadow', 'inset 2px 2px 2px 0 white, inset 0 0 0 4px #4f5054, inset 0 0 0 5px black, inset -5px -5px 5px 3px white, inset 0 0 0 9px #6c6d70, inset 0 0 0 10px black');"
+        }
+    ],
+    "strict": true
+}

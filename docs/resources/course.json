@@ -165,8 +165,7 @@
                         {
                             "name": "box-shadows",
                             "id": 25,
-                            "entry": "/resources/25/chapter.json",
-                            "unfinished": true
+                            "entry": "/resources/25/chapter.json"
                         },
                         {
                             "name": "linear-gradients",

@@ -1,0 +1,24 @@
+{
+    "assertions": [
+        {
+            "title": "У первой кнопки измените цвет тени на `white`.",
+            "name": "setBtn1BoxShadowTo005Px4PxWhite",
+            "expect": "expect(document.querySelector('.btn1')).to.have.css('boxShadow', '0 0 5px 4px white');"
+        },
+        {
+            "title": "У второй кнопки измените цвет тени на `#2c3e50`.",
+            "name": "setBtn2BoxShadowTo005Px4PxBlue",
+            "expect": "expect(document.querySelector('.btn2')).to.have.css('boxShadow', '0 0 5px 4px #2c3e50');"
+        }
+    ]
+}
+
+
+
+
+
+
+
+
+
+

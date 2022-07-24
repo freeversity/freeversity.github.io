@@ -1,0 +1,24 @@
+{
+    "assertions": [
+        {
+            "title": "Задайте тени первой кнопки вертикальное смещение `5px` и растяжение `-3px`, размытие не меняйте.",
+            "name": "setBtn1BoxShadowTo05Px5PxNeg3PxBlue",
+            "expect": "expect(document.querySelector('.btn1')).to.have.css('boxShadow', '0 5px 5px -3px #34495e');"
+        },
+        {
+            "title": "Задайте тени второй кнопки вертикальное смещение `-30px`, размытие `30px` и растяжение `-30px`.",
+            "name": "setBtn2BoxShadowToInset0Neg30Px30PxNeg30PxBlue",
+            "expect": "expect(document.querySelector('.btn2')).to.have.css('boxShadow', 'inset 0 -30px 30px -30px #34495e');"
+        }
+    ]
+}
+
+
+
+
+
+
+
+
+
+

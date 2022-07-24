@@ -1,0 +1,20 @@
+{
+    "assertions": [
+        {
+            "title": "Задайте исходной тени размытие `5px`.",
+            "name": "setBtnBoxShadowTo005Px0Blue",
+            "expect": "expect(document.querySelector('.btn')).to.have.css('boxShadow', '0 0 5px 0 #34495e');"
+        },
+        {
+            "title": "Затем сместите её вниз на `70px`.",
+            "name": "setBtnBoxShadowTo070Px5Px0Blue",
+            "expect": "expect(document.querySelector('.btn')).to.have.css('boxShadow', '0 70px 5px 0 #34495e');"
+        },
+        {
+            "title": "Затем увеличьте размытие до `10px`.",
+            "name": "setBtnBoxShadowTo070Px10Px0Blue",
+            "expect": "expect(document.querySelector('.btn')).to.have.css('boxShadow', '0 70px 10px 0 #34495e');"
+        }
+    ],
+    "strict": true
+}

@@ -1,0 +1,19 @@
+body {
+  background-image: url("bg.jpg");
+  font-size: 18px;
+  font-family: "Tahoma", sans-serif;
+}
+
+.btn {
+  display: block;
+  margin: 100px auto;
+  padding: 15px 20px;
+  width: 150px;
+  border: none;
+  box-sizing: content-box;
+  background-color: #3498db;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  font: inherit;
+}

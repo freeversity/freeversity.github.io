@@ -1,0 +1,22 @@
+{
+    "assertions": [
+        {
+            "title": "Задайте исходной тени растяжение `5px`.",
+            "name": "setBtnBoxShadowTo0005PxBlue",
+            "expect": "expect(document.querySelector('.btn')).to.have.css('boxShadow', '0 0 0 5px #34495e');"
+        },
+        {
+            "title": "Затем сместите её вниз на `70px`.",
+            "name": "setBtnBoxShadowTo070Px05PxBlue",
+            "expect": "expect(document.querySelector('.btn')).to.have.css('boxShadow', '0 70px 0 5px #34495e');"
+        },
+        {
+            "title": "Затем задайте растяжение `-5px`.",
+            "name": "setBtnBoxShadowTo070Px0Neg5PxBlue",
+            "expect": "expect(document.querySelector('.btn')).to.have.css('boxShadow', '0 70px 0 -5px #34495e');"
+        }
+    ],
+    "strict": true
+}
+
+

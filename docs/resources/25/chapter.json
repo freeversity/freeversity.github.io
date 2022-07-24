@@ -3,11 +3,102 @@
     "title": "Box Shadow",
     "tasks": [
         {
+            "id": 1,
+            "type": "task",
+            "entry": "/resources/25/tasks/1/task.json",
+            "name": "box-shadow-prop"
+        }, 
+        {
+            "id": 2,
+            "type": "task",
+            "entry": "/resources/25/tasks/2/task.json",
+            "name": "shadow-horizontal-offset"
+        }, 
+        {
+            "id": 3,
+            "type": "task",
+            "entry": "/resources/25/tasks/3/task.json",
+            "name": "shadow-vertical-offset"
+        }, 
+        {
+            "id": 4,
+            "type": "task",
+            "entry": "/resources/25/tasks/4/task.json",
+            "name": "shadow-blur"
+        }, 
+        {
+            "id": 5,
+            "type": "task",
+            "entry": "/resources/25/tasks/5/task.json",
+            "name": "expanded-shadows"
+        }, 
+        {
+            "id": 6,
+            "type": "task",
+            "entry": "/resources/25/tasks/6/task.json",
+            "name": "blurred-and-expanded-shadows"
+        }, 
+        {
+            "id": 7,
+            "type": "task",
+            "entry": "/resources/25/tasks/7/task.json",
+            "name": "shadow-color"
+        }, 
+        {
+            "id": 8,
+            "type": "task",
+            "entry": "/resources/25/tasks/8/task.json",
+            "name": "inset-shadow"
+        }, 
+        {
             "id": 9,
             "type": "challenge",
             "entry": "/resources/25/tasks/9/task.json",
             "name": "bright-shadows"
-        }, {
+        }, 
+        {
+            "id": 10,
+            "type": "task",
+            "entry": "/resources/25/tasks/10/task.json",
+            "name": "semi-transparent-shadow"
+        }, 
+        {
+            "id": 11,
+            "type": "task",
+            "entry": "/resources/25/tasks/11/task.json",
+            "name": "one-side-shadow"
+        }, 
+        {
+            "id": 12,
+            "type": "task",
+            "entry": "/resources/25/tasks/12/task.json",
+            "name": "multiple-shadows"
+        }, 
+        {
+            "id": 13,
+            "type": "task",
+            "entry": "/resources/25/tasks/13/task.json",
+            "name": "multiple-borders"
+        }, 
+        {
+            "id": 14,
+            "type": "task",
+            "entry": "/resources/25/tasks/14/task.json",
+            "name": "shadow-art-1"
+        }, 
+        {
+            "id": 15,
+            "type": "task",
+            "entry": "/resources/25/tasks/15/task.json",
+            "name": "shadow-art-2"
+        }, 
+        {
+            "id": 16,
+            "type": "task",
+            "entry": "/resources/25/tasks/16/task.json",
+            "name": "shadow-art-3"
+        }, 
+        {
             "id": 17,
             "type": "challenge",
             "entry": "/resources/25/tasks/17/task.json",

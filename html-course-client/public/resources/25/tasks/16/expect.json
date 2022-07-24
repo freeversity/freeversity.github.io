@@ -1,0 +1,26 @@
+{
+    "intro": "addClassCircleToElements",
+    "introTitle": "Добавьте класс `circle` элементам с классами:",
+    "assertions": [
+        {
+            "title": "`c1,`",
+            "name": "addClassCircleToC1",
+            "expect": "expect(document.querySelector('.c1')).to.have.class('circle');"
+        },
+        {
+            "title": "`c2,`",
+            "name": "addClassCircleToC2",
+            "expect": "expect(document.querySelector('.c2')).to.have.class('circle');"
+        },
+        {
+            "title": "`c3,`",
+            "name": "addClassCircleToC3",
+            "expect": "expect(document.querySelector('.c3')).to.have.class('circle');"
+        },
+        {
+            "title": "`c4,`",
+            "name": "addClassCircleToC4",
+            "expect": "expect(document.querySelector('.c4')).to.have.class('circle');"
+        }
+    ]
+}

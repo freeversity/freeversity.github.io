@@ -1,0 +1,36 @@
+{
+    "assertions": [
+        {
+            "title": "Задайте первой кнопке размытие `6px`, растяжение `-2px`.",
+            "name": "setBtn1BoxShadowTo006PxNeg2PxBlue",
+            "expect": "expect(document.querySelector('.btn1')).to.have.css('boxShadow', '0 0 6px -2px #34495e');"
+        },
+        {
+            "title": "Второй кнопке размытие `6px`.",
+            "name": "setBtn2BoxShadowTo006Px0Blue",
+            "expect": "expect(document.querySelector('.btn2')).to.have.css('boxShadow', '0 0 6px 0 #34495e');"
+        },
+        {
+            "title": "Третьей кнопке размытие `6px`, растяжение `3px`.",
+            "name": "setBtn3BoxShadowTo006Px3PxBlue",
+            "expect": "expect(document.querySelector('.btn3')).to.have.css('boxShadow', '0 0 6px 3px #34495e');"
+        },
+        {
+            "title": "Четвёртой кнопке размытие `3px`, растяжение `6px`.",
+            "name": "setBtn4BoxShadowTo003Px6PxBlue",
+            "expect": "expect(document.querySelector('.btn4')).to.have.css('boxShadow', '0 0 3px 6px #34495e');"
+        }
+    ]
+}
+
+
+
+
+
+
+
+
+
+
+
+
