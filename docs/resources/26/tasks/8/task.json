@@ -1,0 +1,8 @@
+{
+    "id": 8,      
+    "name": "color-proportions-and-color-stops",
+    "htmlEntry": "index.html",
+    "cssEntry": "style.css",
+    "articleEntry": "article.md",
+    "expectEntry": "expect.json"
+}

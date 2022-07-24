@@ -1,0 +1,18 @@
+{
+    "assertions": [
+        {
+            "title": "Для кнопки `.glossy-blue` задайте градиент в направлении сверху вниз с цветами `#b8e1fc`, `#90bcea`, `#90bff0`, `#6ba8e5`, `#bdf3fd` и колорстопами `0%`, `35%`, `50%`, `51%`, `100%`.",
+            "name": "setGlosssyBlueBgImageLinearGradient",
+            "expect": "expect(document.querySelector('.glossy-blue')).to.have.css('backgroundImage', 'linear-gradient(#b8e1fc 0%, #90bcea 35%, #90bff0 50%, #6ba8e5 51%, #bdf3fd 100%)');"
+        }
+    ]
+}
+
+
+
+
+
+
+
+
+

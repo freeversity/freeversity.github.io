@@ -1,0 +1,26 @@
+{
+    "assertions": [
+        {
+            "title": "Сначала задайте для `.flag` линейный градиент сверху вниз из четырёх цветов: <code style=\"color: #fab900\">#fab900</code>, <code style=\"color: #529379\">#529379</code>, <code style=\"color: #096540\">#096540</code>, <code style=\"color: #be2a2a\">#be2a2a</code>.",
+            "name": "setFlagBgImageToLinearGradientToBottomYellowLightGreenGreenRed",
+            "expect": "expect(document.querySelector('.flag')).to.have.css('backgroundImage', 'linear-gradient(to bottom, #fab900, #529379, #096540, #be2a2a)');"
+        },
+        {
+            "title": "Затем задайте для этих цветов следующие позиции: `25%`, `50%`, `75%` и `100%`.",
+            "name": "setFlagBgImageToLinearGradientToBottomYellow25PercLightGreen50PercGreen75PercRed100Perc",
+            "expect": "expect(document.querySelector('.flag')).to.have.css('backgroundImage', 'linear-gradient(to bottom, #fab900 25%, #529379 50%, #096540 75%, #be2a2a 100%)');"
+        }
+    ],
+    "strict": true
+}
+
+
+
+
+
+
+
+
+
+
+

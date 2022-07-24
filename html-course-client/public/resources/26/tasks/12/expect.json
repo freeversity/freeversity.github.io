@@ -1,0 +1,24 @@
+{
+    "intro": "completeFlowerSharpColoring",
+    "introTitle": "Завершите раскраску цветка с помощью градиентов с резкими переходами:",
+    "assertions": [
+        {
+            "title": "Верхнему правому листку задайте градиент под углом `45°`.",
+            "name": "setTopRightPetalBgImageToLinearGradient45DegRed30PxBlack30PxBlack40PxRed40PxRed70PxBlack70Px",
+            "expect": "expect(document.querySelector('.leaf-top-right')).to.have.css('backgroundImage', 'linear-gradient(45deg, #f00000 30px, #000000 30px, #000000 40px, #ff0000 40px, #ff0000 70px, #000000 70px)');"
+        },
+        {
+            "title": "Нижнему правому листку задайте градиент под углом `135°`.",
+            "name": "setTopRightPetalBgImageToLinearGradient135DegRed30PxBlack30PxBlack40PxRed40PxRed70PxBlack70Px",
+            "expect": "expect(document.querySelector('.leaf-bottom-right')).to.have.css('backgroundImage', 'linear-gradient(135deg, #f00000 30px, #000000 30px, #000000 40px, #ff0000 40px, #ff0000 70px, #000000 70px)');"
+        },
+        {
+            "title": "Нижнему левому листку задайте градиент под углом `225°`.",
+            "name": "setTopRightPetalBgImageToLinearGradient225DegRed30PxBlack30PxBlack40PxRed40PxRed70PxBlack70Px",
+            "expect": "expect(document.querySelector('.leaf-bottom-left')).to.have.css('backgroundImage', 'linear-gradient(225deg, #f00000 30px, #000000 30px, #000000 40px, #ff0000 40px, #ff0000 70px, #000000 70px)');"
+        }
+    ],
+    "footnote": "flowerColorsSpecifiedInCssFileSizesAreSame",
+    "footnoteTitle": "Цвета листков указаны в комментариях в CSS. Размеры переходов такие же, как у первого листка."
+}
+

@@ -1,0 +1,31 @@
+{
+    "assertions": [
+        {
+            "title": "Увеличьте ширину и высоту блока `.pattern` до `200px`.",
+            "name": "setPatternWidthTo200PxAndHeightTo200Px",
+            "expect": "expect(document.querySelector('.pattern')).to.have.css('width', '200px');expect(document.querySelector('.pattern')).to.have.css('height', '200px');"
+        },
+        {
+            "title": "Затем задайте размер всех фоновых изображений `100px` по ширине и высоте.",
+            "name": "setAllBgSizesTo100Px100Px",
+            "expect": "expect(document.querySelector('.pattern')).to.have.css('backgroundSize', '100px 100px');"
+        },
+        {
+            "title": "И напоследок отключите повторение всех фоновых изображений.",
+            "name": "setAllBgReapeatToNoRepeat",
+            "expect": "expect(document.querySelector('.pattern')).to.have.css('backgroundRepeat', 'no-repeat');"
+        }
+    ],
+    "strict": true
+}
+
+
+
+
+
+
+
+
+
+
+

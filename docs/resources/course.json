@@ -170,8 +170,7 @@
                         {
                             "name": "linear-gradients",
                             "id": 26,
-                            "entry": "/resources/26/chapter.json",
-                            "unfinished": true
+                            "entry": "/resources/26/chapter.json"
                         },
                         {
                             "name": "css-filters",

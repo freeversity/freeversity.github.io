@@ -1,0 +1,27 @@
+{
+    "intro": "setContentGradients",
+    "introTitle": "Задайте для `.content` жёлто-зелёный градиент с направлениями:",
+    "assertions": [
+        {
+            "title": "<strong style=\"color:yellow;text-shadow:1px 1px 1px black;\">слева сверху</strong> <strong style=\"color:green;text-shadow:1px 1px 1px #aaa;line-height:35px;vertical-align:top;\">направо вниз</strong>",
+            "name": "setContentBgImageToLinearGradientToBottomRightYellowGreen",
+            "expect": "expect(document.querySelector('.content')).to.have.css('backgroundImage', 'linear-gradient(to bottom right, yellow, green)');"
+        },
+        {
+            "title": "<strong style=\"color:green;text-shadow:1px 1px 1px #aaa;\">налево вверх</strong> <strong style=\"color:yellow;text-shadow:1px 1px 1px black;line-height:35px;vertical-align:top;\">справа снизу</strong>",
+            "name": "setContentBgImageToLinearGradientToTopLeftYellowGreen",
+            "expect": "expect(document.querySelector('.content')).to.have.css('backgroundImage', 'linear-gradient(to top left, yellow, green)');"
+        },
+        {
+            "title": "<strong style=\"color:yellow;text-shadow:1px 1px 1px black;line-height:35px;vertical-align:top;\">слева снизу</strong> <strong style=\"color:green;text-shadow:1px 1px 1px #aaa;\">направо вверх</strong>",
+            "name": "setContentBgImageToLinearGradientToTopRightYellowGreen",
+            "expect": "expect(document.querySelector('.content')).to.have.css('backgroundImage', 'linear-gradient(to top right, yellow, green)');"
+        },
+        {
+            "title": "<strong style=\"color:green;text-shadow:1px 1px 1px #aaa;line-height:35px;vertical-align:top;\">налево вниз</strong> <strong style=\"color:yellow;text-shadow:1px 1px 1px black;\">справа сверху</strong>",
+            "name": "setContentBgImageToLinearGradientToBottomLeftYellowGreen",
+            "expect": "expect(document.querySelector('.content')).to.have.css('backgroundImage', 'linear-gradient(to bottom left, yellow, green)');"
+        }
+    ]
+}
+

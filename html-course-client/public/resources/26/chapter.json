@@ -3,21 +3,138 @@
     "title": "Linear Gradients",
     "tasks": [
         {
+            "id": 1,
+            "type": "task",
+            "entry": "/resources/26/tasks/1/task.json",
+            "name": "linear-gradient"
+        }, 
+        {
+            "id": 2,
+            "type": "task",
+            "entry": "/resources/26/tasks/2/task.json",
+            "name": "gradient-direction"
+        }, 
+        {
+            "id": 3,
+            "type": "task",
+            "entry": "/resources/26/tasks/3/task.json",
+            "name": "diagonal-gradient"
+        }, 
+        {
+            "id": 4,
+            "type": "task",
+            "entry": "/resources/26/tasks/4/task.json",
+            "name": "angled-gradient"
+        }, 
+        {
+            "id": 5,
+            "type": "task",
+            "entry": "/resources/26/tasks/5/task.json",
+            "name": "diagonal-vs-angles"
+        }, 
+        {
             "id": 6,
             "type": "challenge",
             "entry": "/resources/26/tasks/6/task.json",
             "name": "app-icons"
-        }, {
+        }, 
+        {
+            "id": 7,
+            "type": "task",
+            "entry": "/resources/26/tasks/7/task.json",
+            "name": "homogeneous-multicolor-gradient"
+        }, 
+        {
+            "id": 8,
+            "type": "task",
+            "entry": "/resources/26/tasks/8/task.json",
+            "name": "color-proportions-and-color-stops"
+        }, 
+        {
+            "id": 9,
+            "type": "task",
+            "entry": "/resources/26/tasks/9/task.json",
+            "name": "sharp-color-borders"
+        }, 
+        {
+            "id": 10,
+            "type": "task",
+            "entry": "/resources/26/tasks/10/task.json",
+            "name": "gradient-pseudo-columns"
+        }, 
+        {
             "id": 11,
             "type": "challenge",
             "entry": "/resources/26/tasks/11/task.json",
             "name": "flags"
-        }, {
+        }, 
+        {
+            "id": 12,
+            "type": "task",
+            "entry": "/resources/26/tasks/12/task.json",
+            "name": "pixel-color-transitions"
+        }, 
+        {
+            "id": 13,
+            "type": "task",
+            "entry": "/resources/26/tasks/13/task.json",
+            "name": "semi-transparent-gradients"
+        }, 
+        {
+            "id": 14,
+            "type": "task",
+            "entry": "/resources/26/tasks/14/task.json",
+            "name": "repeatable-linear-gradient"
+        }, 
+        {
+            "id": 15,
+            "type": "task",
+            "entry": "/resources/26/tasks/15/task.json",
+            "name": "building-complex-background-1"
+        }, 
+        {
+            "id": 16,
+            "type": "task",
+            "entry": "/resources/26/tasks/16/task.json",
+            "name": "building-complex-background-2"
+        }, 
+        {
+            "id": 17,
+            "type": "task",
+            "entry": "/resources/26/tasks/17/task.json",
+            "name": "building-complex-background-3"
+        }, 
+        {
+            "id": 18,
+            "type": "task",
+            "entry": "/resources/26/tasks/18/task.json",
+            "name": "building-complex-background-finishing"
+        }, 
+        {
+            "id": 19,
+            "type": "task",
+            "entry": "/resources/26/tasks/19/task.json",
+            "name": "buttons-1"
+        }, 
+        {
+            "id": 20,
+            "type": "task",
+            "entry": "/resources/26/tasks/20/task.json",
+            "name": "buttons-2"
+        }, 
+        {
+            "id": 21,
+            "type": "task",
+            "entry": "/resources/26/tasks/21/task.json",
+            "name": "buttons-3"
+        }, 
+        {
             "id": 22,
             "type": "challenge",
             "entry": "/resources/26/tasks/22/task.json",
             "name": "suriken-ornament"
-        }, {
+        }, 
+        {
             "id": 23,
             "type": "challenge",
             "entry": "/resources/26/tasks/23/task.json",

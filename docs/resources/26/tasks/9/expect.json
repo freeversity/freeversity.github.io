@@ -1,0 +1,31 @@
+{
+    "assertions": [
+        {
+            "title": "Измените позиции первого и второго цветов на `33%`.",
+            "name": "setFlagBgImageToLinearGradientToBottomYellow33PercLightGreen33PercGreen75PercRed100Perc",
+            "expect": "expect(document.querySelector('.flag')).to.have.css('backgroundImage', 'linear-gradient(to bottom, #fab900 33%, #529379 33%, #096540 75%, #be2a2a 100%)');"
+        },
+        {
+            "title": "Затем измените позиции третьего и четвёртого цветов на `66%`.",
+            "name": "setFlagBgImageToLinearGradientToBottomYellow33PercLightGreen33PercGreen66PercRed66Perc",
+            "expect": "expect(document.querySelector('.flag')).to.have.css('backgroundImage', 'linear-gradient(to bottom, #fab900 33%, #529379 33%, #096540 66%, #be2a2a 66%)');"
+        },
+        {
+            "title": "Затем измените второй цвет с `#529379` на `#096540`.",
+            "name": "setFlagBgImageToLinearGradientToBottomYellow33PercGreen33PercGreen66PercRed66Perc",
+            "expect": "expect(document.querySelector('.flag')).to.have.css('backgroundImage', 'linear-gradient(to bottom, #fab900 33%, #096540 33%, #096540 66%, #be2a2a 66%)');"
+        }
+    ],
+    "strict": true
+}
+
+
+
+
+
+
+
+
+
+
+

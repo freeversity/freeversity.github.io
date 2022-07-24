@@ -1,0 +1,35 @@
+{
+    "intro": "completeFlowerColoring",
+    "introTitle": "Завершите раскраску цветка с помощью градиентов:",
+    "assertions": [
+        {
+            "title": "Верхнему правому листку задайте градиент под углом `225°`.",
+            "name": "setTopRightPetalBgImageToLinearGradient225DegRedBlack",
+            "expect": "expect(document.querySelector('.leaf-top-right')).to.have.css('backgroundImage', 'linear-gradient(225deg, #ff0000, #000000)');"
+        },
+        {
+            "title": "Нижнему правому листку задайте градиент под углом `315°`.",
+            "name": "setBottomRightPetalBgImageToLinearGradient315DegRedBlack",
+            "expect": "expect(document.querySelector('.leaf-bottom-right')).to.have.css('backgroundImage', 'linear-gradient(315deg, #ff0000, #000000)');"
+        },
+        {
+            "title": "Нижнему левому листку задайте градиент под углом `45°`.",
+            "name": "setBottomLeftPetalBgImageToLinearGradient45DegRedBlack",
+            "expect": "expect(document.querySelector('.leaf-bottom-left')).to.have.css('backgroundImage', 'linear-gradient(45deg, #ff0000, #000000)');"
+        }
+    ],
+    "footnote": "flowerColorsSpecifiedInCssFile",
+    "footnoteTitle": "Цвета листков указаны в комментариях в CSS."
+}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,40 @@
+{
+    "intro": "replaceLinearGradientWidthRepeatingLinearGradient",
+    "introTitle": "Замените линейный градиент на повторяющийся у четырёх блоков.",
+    "assertions": [
+        {
+            "title": "Первый блок.",
+            "name": "replaceLinearGradientWidthRepeatingLinearGradientOnBox1",
+            "expect": "expect(document.querySelector('.gradient-1')).to.have.css('backgroundImage', 'repeating-linear-gradient(black 0, green 25px, yellow 50px)');"
+        },
+        {
+            "title": "Второй блок.",
+            "name": "replaceLinearGradientWidthRepeatingLinearGradientOnBox2",
+            "expect": "expect(document.querySelector('.gradient-2')).to.have.css('backgroundImage', 'repeating-linear-gradient(black 0, black 17px, green 17px, green 33px, yellow 33px, yellow 50px)');"
+        },
+        {
+            "title": "Третий блок.",
+            "name": "replaceLinearGradientWidthRepeatingLinearGradientOnBox3",
+            "expect": "expect(document.querySelector('.gradient-3')).to.have.css('backgroundImage', 'repeating-linear-gradient(black 0, green 25px, yellow 50px, black 75px)');"
+        },
+        {
+            "title": "Четвёртый блок.",
+            "name": "replaceLinearGradientWidthRepeatingLinearGradientOnBox4",
+            "expect": "expect(document.querySelector('.gradient-4')).to.have.css('backgroundImage', 'repeating-linear-gradient(black 0, green 25%, yellow 50%)');"
+        }
+    ]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

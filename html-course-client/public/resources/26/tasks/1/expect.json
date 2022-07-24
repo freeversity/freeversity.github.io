@@ -1,0 +1,18 @@
+{
+    "assertions": [
+        {
+            "title": "Добавьте блоку `.content` свойство `background-image` со значением `linear-gradient(yellow, green)`.",
+            "name": "setContentBgImageToLinearGradientYellowGreen",
+            "expect": "expect(document.querySelector('.content')).to.have.css('backgroundImage', 'linear-gradient(yellow, green)');"
+        }
+    ]
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,37 @@
+{
+    "assertions": [
+        {
+            "title": "Для `.columns` задайте линейный градиент слева направо из шести цветов: <code style=\"color:#e74c3c\">#e74c3c</code>, <code style=\"color:#e74c3c\">#e74c3c</code>, `transparent`, `transparent`, <code style=\"color:#3498db\">#3498db</code>, <code style=\"color:#3498db\">#3498db</code>. Да, цвета повторяются по два раза.",
+            "name": "setColumnsBgImageToLinearGradientToRightRedRedTransparentTransparentBlueBlue",
+            "expect": "expect(document.querySelector('.columns')).to.have.css('backgroundImage', 'linear-gradient(to right, #e74c3c, #e74c3c, transparent, transparent, #3498db, #3498db)');"
+        },
+        {
+            "title": "Затем задайте второму и третьему цвету позицию `45%` а четвёртому и пятому `55%`.",
+            "name": "setColumnsBgImageToLinearGradientToRightRedRed45PercTransparent45PercTransparent55PercBlue55PercBlue",
+            "expect": "expect(document.querySelector('.columns')).to.have.css('backgroundImage', 'linear-gradient(to right, #e74c3c, #e74c3c 45%, transparent 45%, transparent 55%, #3498db 55%, #3498db)');"
+        },
+        {
+            "title": "Затем увеличьте ширину `.container` до `400px`",
+            "name": "setContainerWidthTo400Px",
+            "expect": "expect(document.querySelector('.container')).to.have.css('width', '400px');"
+        },
+        {
+            "title": "И, наконец, добавьте класс `columns` для `body`",
+            "name": "addColumnsClassToBody",
+            "expect": "expect(document.querySelector('body')).to.have.class('columns');"
+        }
+    ],
+    "strict": true
+}
+
+
+
+
+
+
+
+
+
+
+
+

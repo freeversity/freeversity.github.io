@@ -1,0 +1,29 @@
+{
+    "intro": "addTwoGradientsToPattern",
+    "introTitle": "Добавьте блоку `.pattern` два градиента от цвета `white` к `transparent` с резким переходом на `25%`:",
+    "assertions": [
+        {
+            "title": "Первый градиент должен быть под углом `135°`,",
+            "name": "setPatternFirstGradient135Deg",
+            "expect": "expect(document.querySelector('.pattern')).to.have.css('backgroundImage', 'linear-gradient(135deg, white 25%, transparent 25%), linear-gradient(225deg, white 25%, transparent 25%), none');"
+        },
+        {
+            "title": "а второй градиент — под углом `225°`.",
+            "name": "setPatternSecondGradient225Deg",
+            "expect": "expect(document.querySelector('.pattern')).to.have.css('backgroundImage', 'linear-gradient(135deg, white 25%, transparent 25%), linear-gradient(225deg, white 25%, transparent 25%), linear-gradient(45deg, white 25%, transparent 25%)');"
+        }
+    ],
+    "strict": true
+}
+
+
+
+
+
+
+
+
+
+
+
+

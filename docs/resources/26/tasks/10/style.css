@@ -1,0 +1,38 @@
+body {
+  font-family: "PT Sans", sans-serif;
+}
+
+.columns {
+  background-image: none;
+}
+
+.container {
+  margin: 20px auto;
+  min-height: 380px;
+  width: 300px;
+  box-shadow: 1px 1px 3px #333333;
+  color: white;
+}
+
+.container::after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.left {
+  float: left;
+  width: 45%;
+  background-color: #e74c3c;
+}
+
+.right {
+  float: right;
+  width: 45%;
+  background-color: #3498db;
+}
+
+p {
+  margin: 10px 0;
+  padding: 0 10px;
+}

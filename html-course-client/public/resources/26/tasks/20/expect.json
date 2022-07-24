@@ -1,0 +1,18 @@
+{
+    "assertions": [
+        {
+            "title": "Для кнопки `.strong-brown` задайте градиент в направлении сверху вниз с цветами `#cc0630`, `#8f0222`, `#6d0019` и колорстопами `0%`, `75%`, `100%`.",
+            "name": "setStrongBrownBgImageToLinearGradientToBottomRed0PercCrimson75PercBrown100Perc",
+            "expect": "expect(document.querySelector('.strong-brown')).to.have.css('backgroundImage', 'linear-gradient(to bottom, #cc0630 0%, #8f0222 75%, #6d0019 100%)');"
+        }
+    ]
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,36 @@
+{
+    "assertions": [
+        {
+            "title": "Уменьшите размер всех фоновых изображений до `50px` по ширине и высоте.",
+            "name": "setallBgSizesTo50Px50Px",
+            "expect": "expect(document.querySelector('.pattern')).to.have.css('backgroundSize', '50px 50px');"
+        },
+        {
+            "title": "Затем для _первых двух_ фонов задайте расположение `25px 0`.",
+            "name": "setFirstToBgPositionTo20Px0",
+            "expect": "expect(document.querySelector('.pattern')).to.have.css('backgroundPosition', '25px 0, 25px 0, 0 0, 0 0');"
+        },
+        {
+            "title": "Затем задайте всем фоновым изображениям повторение по горизонтали.",
+            "name": "setAllBgReapeatToRepeatX",
+            "expect": "expect(document.querySelector('.pattern')).to.have.css('backgroundRepeat', 'repeat-x');"
+        },
+        {
+            "title": "И, наконец, включите им повторение во все стороны.",
+            "name": "setAllBgReapeatToRepeat",
+            "expect": "expect(document.querySelector('.pattern')).to.have.css('backgroundRepeat', 'repeat');"
+        }
+    ],
+    "strict": true
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,31 @@
+{
+    "assertions": [
+        {
+            "title": "Задайте градиенту блока `.gradient-diagonal` направление из левого нижнего в правый верхний угол.",
+            "name": "setGradientDiagonalBgImageToLinearGradientToTopRightYellowGreen",
+            "expect": "expect(document.querySelector('.gradient-diagonal')).to.have.css('backgroundImage', 'linear-gradient(to top right, green, yellow, green)');"
+        },
+        {
+            "title": "Задайте градиенту блока `.gradient-degrees` направление под углом `45°`.",
+            "name": "setGradientDiagonalBgImageToLinearGradient45DegYellowGreen",
+            "expect": "expect(document.querySelector('.gradient-degrees')).to.have.css('backgroundImage', 'linear-gradient(45deg, green, yellow, green)');"
+        },
+        {
+            "title": "Затем увеличьте высоту обоих блоков до `300px`.",
+            "name": "setBothBlocksWidthTo300Px",
+            "expect": "expect(document.querySelectorAll('.gradient')).to.have.css('height', '300px');"
+        }
+    ],
+    "strict": true
+}
+
+
+
+
+
+
+
+
+
+
+

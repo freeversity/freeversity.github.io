@@ -1,0 +1,10 @@
+{
+    "assertions": [
+        {
+            "title": "Добавьте блоку `.aurora` линейный градиент в направлении сверху вниз с цветами <code style=\"color: #063365;\">#063365</code>, <code style=\"color: #29b593;\">#29b593</code>, <code style=\"color: #4ecad2;\">#4ecad2</code>, <code style=\"color: #13a0f0\">#13a0f0</code>, <code style=\"color: #6d4bf6\">#6d4bf6</code>, <code style=\"color: #731cb7\">#731cb7</code>, <code style=\"color: #003f86\">#003f86</code>.",
+            "name": "setAuroraBgImageToLinearGradientBlueGreenAquaBlueVioletPurpleBlue",
+            "expect": "expect(document.querySelector('.aurora')).to.have.css('backgroundImage', 'linear-gradient(#063365, #29b593, #4ecad2, #13a0f0, #6d4bf6, #731cb7, #003f86)');"
+        }
+    ]
+}
+

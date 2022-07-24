@@ -1,0 +1,27 @@
+{
+    "intro": "setContentGradients",
+    "introTitle": "Задайте для `.content` жёлто-зелёный градиент с направлениями:",
+    "assertions": [
+        {
+            "title": "<strong style=\"color:yellow;text-shadow:1px 1px 1px black;\">слева</strong> <strong style=\"color:green;text-shadow:1px 1px 1px #aaa;\">направо</strong>",
+            "name": "setContentBgImageToLinearGradientToLeftYellowGreen",
+            "expect": "expect(document.querySelector('.content')).to.have.css('backgroundImage', 'linear-gradient(to right, yellow, green)');"
+        },
+        {
+            "title": "<strong style=\"color:green;text-shadow:1px 1px 1px #aaa;\">справа</strong> <strong style=\"color:yellow;text-shadow:1px 1px 1px black;\">налево</strong>",
+            "name": "setContentBgImageToLinearGradientToRightYellowGreen",
+            "expect": "expect(document.querySelector('.content')).to.have.css('backgroundImage', 'linear-gradient(to left, yellow, green)');"
+        },
+        {
+            "title": "<strong style=\"color:yellow;text-shadow:1px 1px 1px black;\">сверху</strong> <strong style=\"color:green;text-shadow:1px 1px 1px #aaa;\">вниз</strong>",
+            "name": "setContentBgImageToLinearGradientToBottomYellowGreen",
+            "expect": "expect(document.querySelector('.content')).to.have.css('backgroundImage', 'linear-gradient(to bottom, yellow, green)');"
+        },
+        {
+            "title": "<strong style=\"color:yellow;text-shadow:1px 1px 1px black;\">снизу</strong> <strong style=\"color:green;text-shadow:1px 1px 1px #aaa;\">вверх</strong>",
+            "name": "setContentBgImageToLinearGradientToTopYellowGreen",
+            "expect": "expect(document.querySelector('.content')).to.have.css('backgroundImage', 'linear-gradient(to top, yellow, green)');"
+        }
+    ]
+}
+

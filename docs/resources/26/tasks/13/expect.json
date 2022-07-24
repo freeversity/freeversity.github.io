@@ -1,0 +1,29 @@
+{
+    "intro": "addTwoGradientsToEmptySquares",
+    "introTitle": "Добавьте два градиента пустым угловым квадратам:",
+    "assertions": [
+        {
+            "title": "Верхнему правому квадрату задайте градиент под углом `225°`.",
+            "name": "setTopRightSquareBgImageToLinearGradient225Deg",
+            "expect": "expect(document.querySelector('.square-top-right')).to.have.css('backgroundImage', 'linear-gradient(225deg, rgba(255, 255, 255, 0.3) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.3) 50%, rgba(255, 255, 255, 0.3) 75%, transparent 75%)');"
+        },
+        {
+            "title": "Нижнему левому квадрату задайте градиент под углом `45°`.",
+            "name": "setBottomLeftSquareBgImageToLinearGradient45Deg",
+            "expect": "expect(document.querySelector('.square-bottom-left')).to.have.css('backgroundImage', 'linear-gradient(45deg, rgba(255, 255, 255, 0.5) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0.5) 75%, transparent 75%)');"
+        },
+        {
+            "title": "Затем измените цвет фона у блока `.squares` на `#8e44ad`.",
+            "name": "setSquarsBgColorToPurple",
+            "expect": "expect(document.querySelector('.squares')).to.have.css('backgroundColor', '#8e44ad');"
+        }
+    ],
+    "footnote": "transitionSizesAreTheSameAsForFirstTwoSquares",
+    "footnoteTitle": "Размеры переходов такие же, как у первых двух квадратов. Цвета указаны в CSS-коде."
+}
+
+
+
+
+
+

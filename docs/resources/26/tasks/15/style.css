@@ -1,0 +1,16 @@
+.pattern {
+  margin: 100px auto;
+  width: 100px;
+  height: 100px;
+  background-color: #333333;
+  background-image:
+    none,
+    none;
+  box-shadow: 1px 1px 3px #333333;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
