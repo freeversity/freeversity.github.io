@@ -3,11 +3,84 @@
     "title": "CSS Filters",
     "tasks": [
         {
-            "id": 10,
+            "id": 1,
+            "type": "task",
+            "entry": "/resources/27/tasks/1/task.json",
+            "name": "brightness-and-contrast"
+        }, 
+        {
+            "id": 2,
+            "type": "task",
+            "entry": "/resources/27/tasks/2/task.json",
+            "name": "grayscale-and-sepia"
+        }, 
+        {
+            "id": 3,
+            "type": "task",
+            "entry": "/resources/27/tasks/3/task.json",
+            "name": "invert-and-saturate"
+        }, 
+        {
+            "id": 4,
+            "type": "task",
+            "entry": "/resources/27/tasks/4/task.json",
+            "name": "hue-rotate"
+        }, 
+        {
+            "id": 5,
+            "type": "task",
+            "entry": "/resources/27/tasks/5/task.json",
+            "name": "blur-and-opacity"
+        }, 
+        {
+            "id": 6,
+            "type": "task",
+            "entry": "/resources/27/tasks/6/task.json",
+            "name": "drop-shadow"
+        }, 
+        {
+            "id": 7,
+            "type": "task",
+            "entry": "/resources/27/tasks/7/task.json",
+            "name": "box-shadow-vs-drop-shadow"
+        }, 
+        {
+            "id": 8,
+            "type": "task",
+            "entry": "/resources/27/tasks/8/task.json",
+            "name": "css-filters-and-text"
+        }, 
+        {
+            "id": 9,
             "type": "challenge",
-            "entry": "/resources/27/tasks/10/task.json",
+            "entry": "/resources/27/tasks/9/task.json",
             "name": "some-filters"
-        }, {
+        }, 
+        {
+            "id": 10,
+            "type": "task",
+            "entry": "/resources/27/tasks/10/task.json",
+            "name": "filters-combination"
+        }, 
+        {
+            "id": 11,
+            "type": "task",
+            "entry": "/resources/27/tasks/11/task.json",
+            "name": "drop-shadow-combination"
+        }, 
+        {
+            "id": 12,
+            "type": "task",
+            "entry": "/resources/27/tasks/12/task.json",
+            "name": "css-filteeers-animating"
+        }, 
+        {
+            "id": 13,
+            "type": "task",
+            "entry": "/resources/27/tasks/13/task.json",
+            "name": "css-filters-transitions"
+        }, 
+        {
             "id": 14,
             "type": "challenge",
             "entry": "/resources/27/tasks/14/task.json",

@@ -1,0 +1,37 @@
+{
+    "assertions": [
+        {
+            "title": "Изображению в блоке `.combo` задайте комбинацию фильтров `grayscale(1)`",
+            "name": "setComboImgFilterToGrayscale1",
+            "expect": "expect(document.querySelector('.combo img')).to.have.css('filter', 'grayscale(1)');"
+        },
+        {
+            "title": "и `blur(2px)`.",
+            "name": "setComboImgFilterToGrayscale1Blur2px",
+            "expect": "expect(document.querySelector('.combo img')).to.have.css('filter', 'grayscale(1) blur(2px)');"
+        },
+        {
+            "title": "По наведению на изображение задайте значение фильтра `none`.",
+            "name": "setComboImgHoverFilterToNone",
+            "expect": "expect(document).to.have.cssRule('.combo img:hover', 'filter', 'none');"
+        },
+        {
+            "title": "Затем добавьте изображению свойство `transition-duration` со значением `0.6s`.",
+            "name": "setComboImgTransitionDurationTo06s",
+            "expect": "expect(document.querySelector('.combo img')).to.have.css('transitionDuration', '0.6s');"
+        }
+    ],
+    "strict": true
+}
+
+
+
+
+
+
+
+
+
+
+
+

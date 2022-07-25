@@ -1,0 +1,22 @@
+{
+    "assertions": [
+        {
+            "title": "Изображению `.hue-rotate img` задайте фильтр `hue-rotate` со значением `90deg`,",
+            "name": "setHueRotateImgFilterToHueeRotate90Deg",
+            "expect": "expect(document.querySelector('.hue-rotate img')).to.have.css('filter', 'hue-rotate(90deg)');"
+        },
+        {
+            "title": "затем измените значение на `270deg`.",
+            "name": "setHueRotateImgFilterToHueeRotate270Deg",
+            "expect": "expect(document.querySelector('.hue-rotate img')).to.have.css('filter', 'hue-rotate(270deg)');"
+        },
+        {
+            "title": "Изображению `.hue-rotate-reverse img` задайте фильтр поворота цвета `-180deg`.",
+            "name": "setHueRotateReverseImgFilterToHueeRotateNeg180Deg",
+            "expect": "expect(document.querySelector('.hue-rotate-reverse img')).to.have.css('filter', 'hue-rotate(-180deg)');"
+        }
+    ],
+    "strict": true
+}
+
+

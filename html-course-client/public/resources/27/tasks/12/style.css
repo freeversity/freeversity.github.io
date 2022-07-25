@@ -1,0 +1,8 @@
+@keyframes rotate-colors {
+  100% {
+  }
+}
+
+.hue-animate img {
+  animation: rotate-colors 2s linear infinite;
+}

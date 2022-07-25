@@ -1,0 +1,31 @@
+{
+    "assertions": [
+        {
+            "title": "Изображению в блоке `.invert` задайте фильтр `invert` со значением `0.3`,",
+            "name": "setInvertFilterToInvert03",
+            "expect": "expect(document.querySelector('.invert img')).to.have.css('filter', 'invert(0.3)');"
+        },
+        {
+            "title": "затем измените значение инверсии на `1`,",
+            "name": "setInvertFilterToInvert1",
+            "expect": "expect(document.querySelector('.invert img')).to.have.css('filter', 'invert(1)');"
+        },
+        {
+            "title": "а для картинки в блоке `.saturate` фильтр `saturate` со значением `5`.",
+            "name": "setSaturateFilterToSaturate5",
+            "expect": "expect(document.querySelector('.saturate img')).to.have.css('filter', 'saturate(5)');"
+        }
+    ],
+    "strict": true
+}
+
+
+
+
+
+
+
+
+
+
+

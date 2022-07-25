@@ -1,8 +1,8 @@
 {
-    "id": 10,
-    "name": "some-filters",
+    "id": 10,      
+    "name": "filters-combination",
     "htmlEntry": "index.html",
     "cssEntry": "style.css",
     "articleEntry": "article.md",
-    "refHtmlEntry": "ref.html"
+    "expectEntry": "expect.json"
 }

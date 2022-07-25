@@ -1,0 +1,24 @@
+{
+    "assertions": [
+        {
+            "title": "Абзацу в блоке `.blur` задайте фильтр размытия со значением `2px`,",
+            "name": "setBlurPFilterToBlur2Px",
+            "expect": "expect(document.querySelector('.blur p')).to.have.css('filter', 'blur(2px)');"
+        },
+        {
+            "title": "а абзацу в блоке `.shadow` задайте фильтр тени со значением `2px 2px 2px black`.",
+            "name": "setShadowPFilterToDropShadow2Px2Px2PxBlack",
+            "expect": "expect(document.querySelector('.shadow p')).to.have.css('filter', 'drop-shadow(2px 2px 2px black)');"
+        }
+    ]
+}
+
+
+
+
+
+
+
+
+
+

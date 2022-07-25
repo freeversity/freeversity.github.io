@@ -1,0 +1,20 @@
+{
+    "assertions": [
+        {
+            "title": "Для блока `.bubble` задайте фильтр `drop-shadow` со значением `20px 20px 0px #0074d9`,",
+            "name": "setBubbleFilterToDropShadow20Px20Px0PxBlue",
+            "expect": "expect(document.querySelector('.bubble')).to.have.css('filter', 'drop-shadow(20px 20px 0px #0074d9)');"
+        },
+        {
+            "title": "затем замените горизонтальное смещение тени в фильтре на `200px`.",
+            "name": "setBubbleFilterToDropShadow200Px20Px0PxBlue",
+            "expect": "expect(document.querySelector('.bubble')).to.have.css('filter', 'drop-shadow(200px 20px 0px #0074d9)');"
+        },
+        {
+            "title": "Добавьте в правило второй фильтр `drop-shadow(0px 100px 0px #2ecc40)`.",
+            "name": "setBubbleFilterToDropShadow200Px20Px0PxBlueDropShadow0Px100Px0PxGreen",
+            "expect": "expect(document.querySelector('.bubble')).to.have.css('filter', 'drop-shadow(200px 20px 0px #0074d9) drop-shadow(0px 100px 0px #2ecc40)');"
+        }
+    ],
+    "strict": true
+}

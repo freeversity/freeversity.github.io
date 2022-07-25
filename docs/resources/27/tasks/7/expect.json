@@ -1,0 +1,31 @@
+{
+    "assertions": [
+        {
+            "title": "Изображению в блоке `.box-shadow` задайте тень `box-shadow: 0 0 10px red`,",
+            "name": "setBoxShadowBoxShadowTo0010PxRed",
+            "expect": "expect(document.querySelector('.box-shadow img')).to.have.css('box-shadow', '0 0 10px red');"
+        },
+        {
+            "title": "Для картинки в блоке `.filter-shadow` задайте фильтр `drop-shadow` со значением `0 0 10px red`.",
+            "name": "setFilterShadowFilterToDropShadow0010PxRed",
+            "expect": "expect(document.querySelector('.filter-shadow img')).to.have.css('filter', 'drop-shadow(0 0 10px red)');"
+        },
+        {
+            "title": "А затем обеим картинкам задайте белый цвет фона: `background-color: #ffffff`.",
+            "name": "setBothImagesBgColorToWhite",
+            "expect": "expect(document.querySelectorAll('.box-shadow img, .filter-shadow img')).to.have.css('backgroundColor', '#ffffff');"
+        }
+    ],
+    "strict": true
+}
+
+
+
+
+
+
+
+
+
+
+

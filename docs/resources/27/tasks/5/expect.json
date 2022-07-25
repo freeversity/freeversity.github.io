@@ -1,0 +1,24 @@
+{
+    "assertions": [
+        {
+            "title": "Изображению в блоке `.blur` задайте фильтр `blur` со значением `5px`",
+            "name": "setBlurFilterToBlur5Px",
+            "expect": "expect(document.querySelector('.blur img')).to.have.css('filter', 'blur(5px)');"
+        },
+        {
+            "title": "а для картинки в блоке `.opacity` фильтр `opacity` со значением `0.4`.",
+            "name": "setOpacityFilterToOpacity04",
+            "expect": "expect(document.querySelector('.opacity img')).to.have.css('filter', 'opacity(0.4)');"
+        }
+    ]
+}
+
+
+
+
+
+
+
+
+
+

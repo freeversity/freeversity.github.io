@@ -175,8 +175,7 @@
                         {
                             "name": "css-filters",
                             "id": 27,
-                            "entry": "/resources/27/chapter.json",
-                            "unfinished": true
+                            "entry": "/resources/27/chapter.json"
                         }
                     ]
                 },
@@ -231,6 +230,23 @@
         {
             "name": "advanced",
             "sections": [
+                {
+                    "name": "dynamic-effects",
+                    "chapters": [
+                        {
+                            "name": "css-transitions",
+                            "id": 38,
+                            "entry": "/resources/38/chapter.json",
+                            "disabled": true
+                        },
+                        {
+                            "name": "css-animations",
+                            "id": 39,
+                            "entry": "/resources/39/chapter.json",
+                            "disabled": true
+                        }
+                    ]
+                },
                 {
                     "name": "css-niceties",
                     "chapters": [

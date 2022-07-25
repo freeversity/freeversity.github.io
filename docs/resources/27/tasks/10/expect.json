@@ -1,0 +1,37 @@
+{
+    "assertions": [
+        {
+            "title": "Изображению в блоке `.multi-filter-1` задайте фильтр `hue-rotate(90deg)`,",
+            "name": "setMultiFilter1FilterToHueRotate90Deg",
+            "expect": "expect(document.querySelector('.multi-filter-1 img')).to.have.css('filter', 'hue-rotate(90deg)');"
+        },
+        {
+            "title": "затем добавьте второй фильтр `saturate(2)`",
+            "name": "setMultiFilter1FilterToHueRotate90DegSaturate2",
+            "expect": "expect(document.querySelector('.multi-filter-1 img')).to.have.css('filter', 'hue-rotate(90deg) saturate(2)');"
+        },
+        {
+            "title": "и затем третий фильтр `sepia(0.8)`.",
+            "name": "setMultiFilter1FilterToHueRotate90DegSaturate2Sepia08",
+            "expect": "expect(document.querySelector('.multi-filter-1 img')).to.have.css('filter', 'hue-rotate(90deg) saturate(2) sepia(0.8)');"
+        },
+        {
+            "title": "Изображению в блоке `.multi-filter-2` задайте комбинацию из трёх фильтров в таком порядке: `sepia(0.8)`, `hue-rotate(90deg)`, `saturate(2)`.",
+            "name": "setMultiFilter2FilterToSepia08HueRotate90DegSaturate2",
+            "expect": "expect(document.querySelector('.multi-filter-2 img')).to.have.css('filter', 'sepia(0.8) hue-rotate(90deg) saturate(2)');"
+        }
+    ],
+    "strict": true
+}
+
+
+
+
+
+
+
+
+
+
+
+

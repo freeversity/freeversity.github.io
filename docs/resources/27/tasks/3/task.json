@@ -1,0 +1,8 @@
+{
+    "id": 3,      
+    "name": "invert-and-saturate",
+    "htmlEntry": "index.html",
+    "cssEntry": "style.css",
+    "articleEntry": "article.md",
+    "expectEntry": "expect.json"
+}

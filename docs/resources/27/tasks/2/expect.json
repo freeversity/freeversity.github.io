@@ -1,0 +1,16 @@
+{
+    "assertions": [
+        {
+            "title": "Изображению в блоке `.grayscale` задайте фильтр `grayscale(1)`,",
+            "name": "setBrightnessImgFilterToGrayscale1",
+            "expect": "expect(document.querySelector('.grayscale img')).to.have.css('filter', 'grayscale(1)');"
+        },
+        {
+            "title": "а для картинки в блоке `.sepia` фильтр `sepia(1)`.",
+            "name": "setSepiaImgFilterToSepia1",
+            "expect": "expect(document.querySelector('.sepia img')).to.have.css('filter', 'sepia(1)');"
+        }
+    ]
+}
+
+

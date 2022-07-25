@@ -1,0 +1,8 @@
+{
+    "id": 2,      
+    "name": "grayscale-and-sepia",
+    "htmlEntry": "index.html",
+    "cssEntry": "style.css",
+    "articleEntry": "article.md",
+    "expectEntry": "expect.json"
+}

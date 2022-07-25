@@ -1,0 +1,18 @@
+{
+    "assertions": [
+        {
+            "title": "В кадре `100%` директивы `rotate-colors` задайте фильтр поворота цвета со значением `360deg`.",
+            "name": "setRotateColors100PercFilterToHueRotate360Deg",
+            "expect": "expect(document).to.have.keyframes('rotate-colors', '100%', {filter: 'hue-rotate(360deg)'});"
+        }
+    ]
+}
+
+
+
+
+
+
+
+
+

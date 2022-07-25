@@ -1,0 +1,23 @@
+{
+    "assertions": [
+        {
+            "title": "Изображению в блоке `.brightness` задайте фильтр `filter: brightness(2)`,",
+            "name": "setBrightnessImgFilterToBrightness2",
+            "expect": "expect(document.querySelector('.brightness img')).to.have.css('filter', 'brightness(2)');"
+        },
+        {
+            "title": "изображению в блоке `.contrast` — фильтр `contrast(2)`.",
+            "name": "setContrastImgFilterToContrast2",
+            "expect": "expect(document.querySelector('.contrast img')).to.have.css('filter', 'contrast(2)');"
+        }
+    ]
+}
+
+
+
+
+
+
+
+
+
