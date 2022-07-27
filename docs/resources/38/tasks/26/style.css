@@ -1,0 +1,17 @@
+.label-box {
+  position: relative;
+  width: 270px;
+}
+
+input {
+  box-sizing: border-box;
+  padding: 5px;
+  width: 270px;
+  font-size: 18px;
+}
+
+label {
+  color: #757575;
+  font-size: 18px;
+  pointer-events: none;
+}

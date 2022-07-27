@@ -1,0 +1,38 @@
+{
+    "assertions": [
+        {
+            "title": "Для `label::after` задайте ширину и высоту `16px`,",
+            "name": "setLabelAfterWidthAndHeightTo16Px",
+            "expect": "expect(document).to.have.cssRule('label::after', 'width', '16px');expect(document).to.have.cssRule('label::after', 'height', '16px');"
+        },
+        {
+            "title": "цвет фона `#00bad2`,",
+            "name": "setLabelAfterBgColorToBlue",
+            "expect": "expect(document).to.have.cssRule('label::after', 'backgroundColor', '#00bad2');"
+        },
+        {
+            "title": "трансформацию `transform: scale(1.1)`.",
+            "name": "setLabelAfterTransformToScale11",
+            "expect": "expect(document).to.have.cssRule('label::after', 'transform', 'scale(1.1)');"
+        }
+    ],
+    "scripts": [
+        {
+            "type": "handler", 
+            "target": "form", 
+            "eventType": "submit", 
+            "handler": "e.preventDefault(); const params = [...document.querySelectorAll('form input:not([type=submit]):not([type=radio]:not(:checked)), form select option:checked, form textarea')].map((input) => `${encodeURIComponent(input.name ?? input.parentElement.name)}=${encodeURIComponent(input.type === 'checkbox' ? input.checked : input.value)}`).join('&'); window.location = '/resources/38/assets/submitted-form.html?' + params;"
+        }
+    ]
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,28 @@
+{
+    "assertions": [
+        {
+            "title": "Для `.menu-icon-open span::before` задайте трансформацию `translate(45px, -14px)`,",
+            "name": "setMenuIconOpenSpanBeforeTransformToTranslate45PxNeg14Px",
+            "expect": "expect(document).to.have.cssRule('.menu-icon-open span::before', 'transform', 'translate(45px, -14px)');"
+        },
+        {
+            "title": "а затем дополнительно поверните `rotate(45deg)`.",
+            "name": "setMenuIconOpenSpanBeforeTransformToTranslate45PxNeg14PxRotate45Deg",
+            "expect": "expect(document).to.have.cssRule('.menu-icon-open span::before', 'transform', 'translate(45px, -14px) rotate(45deg)');"
+        },
+        {
+            "title": "Для `.menu-icon-open span::after` задайте трансформацию `translate(45px, 2px)`,",
+            "name": "setMenuIconOpenSpanAfterTransformToTranslate45PxNeg2Px",
+            "expect": "expect(document).to.have.cssRule('.menu-icon-open span::after', 'transform', 'translate(45px, 2px)');"
+        },
+        {
+            "title": "а затем дополнительно поверните `rotate(-45deg)`.",
+            "name": "setMenuIconOpenSpanAfterTransformToTranslate45PxNeg2PxRotateNeg45Deg",
+            "expect": "expect(document).to.have.cssRule('.menu-icon-open span::after', 'transform', 'translate(45px, 2px) rotate(-45deg)');"
+        }
+    ],
+    "strict": true
+}
+
+
+

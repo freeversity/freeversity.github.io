@@ -1,0 +1,28 @@
+{
+    "assertions": [
+        {
+            "title": "Раскомментируйте текстовое поле ввода и подпись к нему.",
+            "name": "uncommentTextInputAndItsLabel",
+            "expect": "expect(document.querySelector('.answers > div > input[type=text] + div.label-box > label')).to.exist;"
+        },
+        {
+            "title": "У поля ввода уберите все рамки с помощью `border: none` и задайте сплошную нижнюю рамку толщиной `1px` и цветом `#757575`.",
+            "name": "setTextInputBorderToNoneAndBorderBottomTo1PxSolidGray",
+            "expect": "expect(document.querySelector('input')).to.have.css('borderTop', 'none');expect(document.querySelector('input')).to.have.css('borderLeft', 'none');expect(document.querySelector('input')).to.have.css('borderRight', 'none');expect(document.querySelector('input')).to.have.css('borderBottom', '1px solid #757575');"
+        },
+        {
+            "title": "Для `label` задайте абсолютное позиционирование и координату `top: -36px`.",
+            "name": "setLabelPositionToAbsoluteAndTopToNeg36Px",
+            "expect": "expect(document.querySelector('label')).to.have.css('position', 'absolute');expect(document.querySelector('label')).to.have.css('top', '-36px');"
+        }
+    ],
+    "strict": true,
+    "scripts": [
+        {
+            "type": "handler", 
+            "target": "form", 
+            "eventType": "submit", 
+            "handler": "e.preventDefault(); const params = [...document.querySelectorAll('form input:not([type=submit]):not([type=radio]:not(:checked)), form select option:checked, form textarea')].map((input) => `${encodeURIComponent(input.name ?? input.parentElement.name)}=${encodeURIComponent(input.type === 'checkbox' ? input.checked : input.value)}`).join('&'); window.location = '/resources/38/assets/submitted-form.html?' + params;"
+        }
+    ]
+}

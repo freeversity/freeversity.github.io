@@ -1,0 +1,24 @@
+{
+    "assertions": [
+        {
+            "title": "Для `.menu-icon span` задайте высоту `12px` и цвет фона `#40d47e`.",
+            "name": "setMenuIconSpanHeightTo12PxAndBgColorToGreen",
+            "expect": "expect(document.querySelector('.menu-icon span')).to.have.css('height', '12px');expect(document.querySelector('.menu-icon span')).to.have.css('backgroundColor', '#40d47e');"
+        },
+        {
+            "title": "Затем задайте такую же высоту и фоновый цвет для `span::before` и `span::after`.",
+            "name": "setMenuIconSpanBeforeAndAfterHeightTo12PxAndBgColorToGreen",
+            "expect": "expect(document).to.have.cssRule('.menu-icon span::before, .menu-icon span::after', 'height', '12px');expect(document).to.have.cssRule('.menu-icon span::before, .menu-icon span::after', 'backgroundColor', '#40d47e');"
+        },
+        {
+            "title": "Потом только `span::before` задайте трансформацию `translate(0, -24px)`,",
+            "name": "setMenuIconSpanBeforeTransformToTranslate0Neg24Px",
+            "expect": "expect(document).to.have.cssRule('.menu-icon span::before', 'transform', 'translate(0, -24px)');"
+        },
+        {
+            "title": "а `span::after` — трансформацию `translate(0, 12px)`.",
+            "name": "setMenuIconSpanAfterTransformToTranslate0Neg12Px",
+            "expect": "expect(document).to.have.cssRule('.menu-icon span::after', 'transform', 'translate(0, 12px)');"
+        }
+    ]
+}

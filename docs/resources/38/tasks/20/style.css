@@ -1,0 +1,29 @@
+label {
+  position: relative;
+  display: inline-block;
+  max-width: 100px;
+  word-wrap: break-word;
+  cursor: pointer;
+}
+
+label::before,
+label::after {
+  position: absolute;
+  display: block;
+  content: "";
+}
+
+label::before {
+  top: 7px;
+  left: 108px;
+  width: 32px;
+  height: 1px;
+  border-top: 1px solid #5a5a5a;
+}
+
+label::after {
+}
+
+input[type="checkbox"] {
+  display: none;
+}

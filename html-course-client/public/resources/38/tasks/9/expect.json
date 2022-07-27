@@ -1,0 +1,28 @@
+{
+    "assertions": [
+        {
+            "title": "В блоке `.paper-btn-true` раскомментируйте радиокнопку и подпись к ней, в подпись добавьте текст `Правда`,",
+            "name": "uncommentPaperBtnTrueRadioAndLabel",
+            "expect": "expect(document.querySelector('.paper-btn-true input#yes-answer + label[for=yes-answer]')).to.exist;"
+        },
+        {
+            "title": "затем раскомментируйте радиокнопку и подпись в блоке `.paper-btn-false`, в подпись добавьте текст `Ложь`.",
+            "name": "uncommentPaperBtnFalseRadioAndLabel",
+            "expect": "expect(document.querySelector('.paper-btn-false input#no-answer + label[for=no-answer]')).to.exist;"
+        },
+        {
+            "title": "Скройте поля ввода внутри `.paper-btn` с помощью `display: none`.",
+            "name": "setPaperBtnsDisplayToNone",
+            "expect": "expect(document.querySelectorAll('.paper-btn input')).to.have.css('display', 'none');"
+        }
+    ],
+    "scripts": [
+        {
+            "type": "handler", 
+            "target": "form", 
+            "eventType": "submit", 
+            "handler": "e.preventDefault(); const params = [...document.querySelectorAll('form input:not([type=submit]):not([type=radio]:not(:checked)), form select option:checked, form textarea')].map((input) => `${encodeURIComponent(input.name ?? input.parentElement.name)}=${encodeURIComponent(input.type === 'checkbox' ? input.checked : input.value ?? input.id)}`).join('&'); window.location = '/resources/38/assets/submitted-form.html?' + params;"
+        }
+    ],
+    "strict": true
+}

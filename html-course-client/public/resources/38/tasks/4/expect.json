@@ -1,0 +1,31 @@
+{
+    "assertions": [
+        {
+            "title": "Квадратам `.square` задайте плавный переход для свойства `transform` длительностью `transition-duration: 500ms`,",
+            "name": "setSquareTransitionPropertyToTransformAndTransitionDurationTo500Ms",
+            "expect": "expect(document.querySelectorAll('.square')).to.have.css('transitionDuration', '500ms');"
+        },
+        {
+            "title": "Первому квадрату задайте задержку перехода `transition-delay: 50ms`, а второму — `100ms`,",
+            "name": "setSquare1TransitionDelayTo50MsAndSquare2TransitionDelayTo100Ms",
+            "expect": "expect(document.querySelector('.square:first-child')).to.have.css('transitionDuration', '50ms');expect(document.querySelector('.square:nth-child(2)')).to.have.css('transitionDuration', '100ms');"
+        },
+        {
+            "title": "затем третьему квадрату задайте задержку `150ms`, а четвёртому — `200ms`.",
+            "name": "setSquare3TransitionDelayTo150MsAndSquare4TransitionDelayTo200Ms",
+            "expect": "expect(document.querySelector('.square:nth-child(3)')).to.have.css('transitionDuration', '150ms');expect(document.querySelector('.square:nth-child(4)')).to.have.css('transitionDuration', '200ms');"
+        }
+    ],
+    "scripts": [{
+        "type": "handler",
+        "target": ".fab-play",
+        "eventType": "click",
+        "handler": "document.querySelectorAll('.square').forEach((elem) => elem.classList.toggle('square-active'))"
+    }],
+    "strict": true,
+    "footnote": "clickFabPlayToToggleSquareActiveClass",
+    "footnoteTitle": "Нажимайте на кнопку `.fab-play`, чтобы переключать класс `square-active` для квадратов."
+}
+
+
+

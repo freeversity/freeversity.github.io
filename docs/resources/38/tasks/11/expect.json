@@ -1,0 +1,27 @@
+{
+    "assertions": [
+        {
+            "title": "Для активного состояния кнопок задайте цвет текста `#f1f1f1` и тень `0 6px 20px 0 rgba(0, 0, 0, 0.4)`.",
+            "name": "setBtnsActiveColorToLightGray",
+            "expect": "expect(document).to.have.cssRule('.paper-btn input:checked ~ label', 'color', '#f1f1f1');expect(document).to.have.cssRule('.paper-btn input:checked ~ label', 'boxShadow', '0 6px 20px 0 rgba(0, 0, 0, 0.4)');"
+        },
+        {
+            "title": "А затем обеим кнопкам задайте плавный переход для свойства `box-shadow` длительностью `0.3s` с формой `cubic-bezier(0.4, 0, 0.2, 1)`.",
+            "name": "setBtnsActiveTransitionToBoxShadow03SCubisBezier040021",
+            "expect": "expect(document.querySelectorAll('.paper-btn label')).to.have.css('transition', 'box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1)');"
+        }
+    ],
+    "scripts": [
+    {
+        "type": "handler", 
+        "target": "form", 
+        "eventType": "submit", 
+        "handler": "e.preventDefault(); const params = [...document.querySelectorAll('form input:not([type=submit]):not([type=radio]:not(:checked)), form select option:checked, form textarea')].map((input) => `${encodeURIComponent(input.name ?? input.parentElement.name)}=${encodeURIComponent(input.type === 'checkbox' ? input.checked : input.value)}`).join('&'); window.location = '/resources/38/assets/submitted-form.html?' + params;"
+    }],
+    "footnote": "switchBetweenTrueAndFalse",
+    "footnoteTitle": "Переключайте кнопки «Правда» или «Ложь» для проверки результата."
+}
+
+
+
+

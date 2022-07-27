@@ -1,0 +1,29 @@
+{
+    "assertions": [
+        {
+            "title": "Измените ширину псевдоэлементов `.label-box::before`, `.label-box::after` на `0`,",
+            "name": "setLabelBoxBeforeAndLabelBoxAfterWidthTo0",
+            "expect": "expect(document).to.have.cssRule('.label-box::before, .label-box::after', 'width', '0');"
+        },
+        {
+            "title": "а при сфокусированном состоянии поля ввода задайте псевдоэлементам ширину `50%`,",
+            "name": "setInputFocusPseudoelementsWidth50Perc",
+            "expect": "expect(document).to.have.cssRule('input:focus ~ .label-box::before, input:focus ~ .label-box::after', 'width', '50%');"
+        },
+        {
+            "title": "И, наконец, псевдоэлементам `.label-box::before`, `.label-box::after` задайте плавный переход для свойства `width` длительностью `0.2s`.",
+            "name": "setLabelBoxBeforeAndLabelBoxAfterTransitionToWidth02S",
+            "expect": "expect(document).to.have.cssRule('.label-box::before, .label-box::after', 'transition', 'width 0.2s');"
+        }
+    ],
+    "footnote": "clickTextInputForChecking",
+    "footnoteTitle": "Нажимайте внутри и снаружи поля ввода для проверки результата.",
+    "scripts": [
+        {
+            "type": "handler", 
+            "target": "form", 
+            "eventType": "submit", 
+            "handler": "e.preventDefault(); const params = [...document.querySelectorAll('form input:not([type=submit]):not([type=radio]:not(:checked)), form select option:checked, form textarea')].map((input) => `${encodeURIComponent(input.name ?? input.parentElement.name)}=${encodeURIComponent(input.type === 'checkbox' ? input.checked : input.value)}`).join('&'); window.location = '/resources/38/assets/submitted-form.html?' + params;"
+        }
+    ]
+}

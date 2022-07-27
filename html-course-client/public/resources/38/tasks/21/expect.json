@@ -1,0 +1,29 @@
+{
+    "assertions": [
+        {
+            "title": "Для активного состояния ползунка задайте трансформацию перемещения `translateX(32px)`,",
+            "name": "setToggleActiveTransformToTranslateX32px",
+            "expect": "expect(document).to.have.cssRule('input[type=\"checkbox\"]:checked ~ label::after', 'transform', 'translateX(32px)');"
+        },
+        {
+            "title": "цвет фона и цвет рамок `#0f9d58`.",
+            "name": "setToggleActiveBgColorAndBordersColorToGreen",
+            "expect": "expect(document).to.have.cssRule('input[type=\"checkbox\"]:checked ~ label::after', 'backgroundColor', '#0f9d58');expect(document).to.have.cssRule('input[type=\"checkbox\"]:checked ~ label::after', 'borderColor', '#0f9d58');"
+        },
+        {
+            "title": "А затем в правиле `label::after` задайте переход для всех свойств длительностью `200ms` с формой `ease-in`.",
+            "name": "setlabelAfterTransitionTo200MsEaseIn",
+            "expect": "expect(document).to.have.cssRule('label::after', 'transition', '200ms ease-in');"
+        }
+    ],
+    "footnote": "switchTogglesToCheckResult",
+    "footnoteTitle": "Нажимайте на переключатели для проверки результата.",
+    "scripts": [
+        {
+            "type": "handler", 
+            "target": "form", 
+            "eventType": "submit", 
+            "handler": "e.preventDefault(); const params = [...document.querySelectorAll('form input:not([type=submit]):not([type=radio]:not(:checked)), form select option:checked, form textarea')].map((input) => `${encodeURIComponent(input.name ?? input.parentElement.name)}=${encodeURIComponent(input.type === 'checkbox' ? input.checked : input.value)}`).join('&'); window.location = '/resources/38/assets/submitted-form.html?' + params;"
+        }
+    ]
+}

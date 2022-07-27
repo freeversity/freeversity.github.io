@@ -1,0 +1,32 @@
+{
+    "assertions": [
+        {
+            "title": "Псевдоэлементу `.label-box::before` задайте: содержимое `content: \"\"`, абсолютное позиционирование, высоту `2px`, ширину `50%` и фоновый цвет `#757575`,",
+            "name": "setLabelBoxBeforeContentToEmptyPositionToAbsoluteHeightTo2PxWidthTo50PercAndBgColorToGray",
+            "expect": "expect(document).to.have.cssRule('.label-box::before', 'content', '\"\"');expect(document).to.have.cssRule('.label-box::before', 'position', 'absolute');expect(document).to.have.cssRule('.label-box::before', 'height', '2px');expect(document).to.have.cssRule('.label-box::before', 'width', '50%');expect(document).to.have.cssRule('.label-box::before', 'backgroundColor', '#757575');"
+        },
+        {
+            "title": "а затем координаты `bottom: 1px` и `left: 50%`.",
+            "name": "setLabelBoxBeforeBottomTo1PxAndLeftTo50Perc",
+            "expect": "expect(document).to.have.cssRule('.label-box::before', 'bottom', '1px');expect(document).to.have.cssRule('.label-box::before', 'left', '50%');"
+        },
+        {
+            "title": "Псевдоэлементу `.label-box::after` задайте: содержимое `content: \"\"`, абсолютное позиционирование, высоту `2px`, ширину `50%` и фоновый цвет `#757575`,",
+            "name": "setLabelBoxAfterContentToEmptyPositionToAbsoluteHeightTo2PxWidthTo50PercAndBgColorToGray",
+            "expect": "expect(document).to.have.cssRule('.label-box::after', 'content', '\"\"');expect(document).to.have.cssRule('.label-box::after', 'position', 'absolute');expect(document).to.have.cssRule('.label-box::after', 'height', '2px');expect(document).to.have.cssRule('.label-box::after', 'width', '50%');expect(document).to.have.cssRule('.label-box::after', 'backgroundColor', '#757575');"
+        },
+        {
+            "title": "а затем координаты `bottom: 1px` и `right: 50%`.",
+            "name": "setLabelBoxAfterBottomTo1PxAndLeftTo50Perc",
+            "expect": "expect(document).to.have.cssRule('.label-box::after', 'bottom', '1px');expect(document).to.have.cssRule('.label-box::after', 'right', '50%');"
+        }
+    ],
+    "scripts": [
+        {
+            "type": "handler", 
+            "target": "form", 
+            "eventType": "submit", 
+            "handler": "e.preventDefault(); const params = [...document.querySelectorAll('form input:not([type=submit]):not([type=radio]:not(:checked)), form select option:checked, form textarea')].map((input) => `${encodeURIComponent(input.name ?? input.parentElement.name)}=${encodeURIComponent(input.type === 'checkbox' ? input.checked : input.value)}`).join('&'); window.location = '/resources/38/assets/submitted-form.html?' + params;"
+        }
+    ]
+}

@@ -1,0 +1,27 @@
+label {
+  position: relative;
+  cursor: pointer;
+}
+
+label::before {
+  position: absolute;
+  top: 0;
+  left: -44px;
+  z-index: 1;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #5a5a5a;
+  content: "";
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"]:checked ~ label::before {
+  width: 21px;
+  height: 10px;
+  border-color: #00bad2;
+  border-top-style: none;
+  border-right-style: none;
+}

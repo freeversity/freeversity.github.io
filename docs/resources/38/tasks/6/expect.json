@@ -1,0 +1,35 @@
+{
+    "intro": "setSquareExperimentalTransitionTimingFunctions",
+    "introTitle": "Квадрату `.square-experimental` последовательно задайте следующие формы перехода:",
+    "assertions": [
+        {
+            "title": "`ease-in`,",
+            "name": "setSquareExperimentalTransitionTimingFunctionToEaseIn",
+            "expect": "expect(document.querySelectorAll('.square-experimental')).to.have.css('transition-timing-function', 'ease-in');"
+        },
+        {
+            "title": "`ease-out`,",
+            "name": "setSquareExperimentalTransitionTimingFunctionToEaseOut",
+            "expect": "expect(document.querySelectorAll('.square-experimental')).to.have.css('transition-timing-function', 'ease-out');"
+        },
+        {
+            "title": "`ease-in-out`.",
+            "name": "setSquareExperimentalTransitionTimingFunctionToEaseInOut",
+            "expect": "expect(document.querySelectorAll('.square-experimental')).to.have.css('transition-timing-function', 'ease-in-out');"
+        }
+    ],
+    "scripts": [{
+        "type": "handler",
+        "target": ".fab-play",
+        "eventType": "click",
+        "handler": "document.querySelectorAll('.square').forEach((elem) => elem.classList.toggle('square-active'))"
+    }],
+    "strict": true,
+    "footnote": "clickFabPlayToToggleSquareActiveClass",
+    "footnoteTitle": "Нажимайте на кнопку `.fab-play`, чтобы переключать класс `square-active` для квадратов."
+}
+
+
+
+
+

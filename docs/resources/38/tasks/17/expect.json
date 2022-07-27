@@ -1,0 +1,29 @@
+{
+    "assertions": [
+        {
+            "title": "В CSS-правиле `label::after` измените трансформацию на `transform: scale(0)`.",
+            "name": "setLabelAfterTransformToScale0",
+            "expect": "expect(document).to.have.cssRule('label::after', 'transform', 'scale(0)');"
+        },
+        {
+            "title": "Для активного состояния «закрывашки» задайте трансформацию `transform: scale(1.1)`.",
+            "name": "setActiveLabelAfterTransformToScale11",
+            "expect": "expect(document).to.have.cssRule('input[type=\"radio\"]:checked ~ label::after', 'transform', 'scale(1.1)');"
+        },
+        {
+            "title": "Наконец в правиле `label::after` задайте плавный переход для свойства `transform` длительностью `0.28s`.",
+            "name": "setLabelAfterTransitionTransform028S",
+            "expect": "expect(document).to.have.cssRule('label::after', 'transition', 'transform 0.28s');"
+        }
+    ],
+    "scripts": [
+        {
+            "type": "handler", 
+            "target": "form", 
+            "eventType": "submit", 
+            "handler": "e.preventDefault(); const params = [...document.querySelectorAll('form input:not([type=submit]):not([type=radio]:not(:checked)), form select option:checked, form textarea')].map((input) => `${encodeURIComponent(input.name ?? input.parentElement.name)}=${encodeURIComponent(input.type === 'checkbox' ? input.checked : input.value)}`).join('&'); window.location = '/resources/38/assets/submitted-form.html?' + params;"
+        }
+    ],
+    "footnote": "switchRadiosToCheckResult",
+    "footnoteTitle": "Переключайте радиокнопки для проверки результата."
+}

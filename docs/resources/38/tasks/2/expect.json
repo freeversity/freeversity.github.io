@@ -1,0 +1,25 @@
+{
+    "assertions": [
+        {
+            "title": "Активному состоянию кнопки `.btn-active` задайте цвет текста `#ffffff` и поворот `transform: rotate(45deg)`,",
+            "name": "setBtnActiveColorToWhiteAndTransformToRotate45Deg",
+            "expect": "expect(document).to.have.cssRule('.btn-active', 'color', '#ffffff');expect(document).to.have.cssRule('.btn-active', 'transform', 'rotate(45deg)');"
+        },
+        {
+            "title": "а затем измените у кнопки `.btn` длительность перехода `transition-duration на 200ms`.",
+            "name": "setbtnTransitionDurationTo200Ms",
+            "expect": "expect(document.querySelector('.btn')).to.have.css('transition-duration', '200ms');"
+        }
+    ],
+    "scripts": [{
+        "type": "handler",
+        "target": ".btn",
+        "eventType": "click",
+        "handler": "document.querySelector('.btn').classList.toggle('btn-active')"
+    }],
+    "strict": true,
+    "footnote": "clickBtnToSwitchBtnActiveClass",
+    "footnoteTitle": "Нажимайте на кнопку `.btn` в мини-браузере, чтобы увидеть плавный переход. При нажатии у кнопки переключается класс `btn-active`."
+}
+
+

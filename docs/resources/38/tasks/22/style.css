@@ -1,0 +1,17 @@
+.menu-icon span {
+  display: block;
+  width: 100%;
+}
+
+.menu-icon span::before,
+.menu-icon span::after {
+  display: block;
+  width: 100%;
+  content: "";
+}
+
+.menu-icon span::before {
+}
+
+.menu-icon span::after {
+}

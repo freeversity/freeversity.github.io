@@ -1,0 +1,11 @@
+.square {
+  left: 0;
+}
+
+.square-active {
+  left: 75%;
+  border-radius: 50%;
+}
+
+.square-experimental {
+}

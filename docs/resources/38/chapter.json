@@ -2,5 +2,179 @@
     "baseUrl": "/resources/38/assets/",
     "title": "CSS Transitions",
     "tasks": [
+        {
+            "id": 1,
+            "type": "task",
+            "name": "transition-duration-prop",
+            "entry": "/resources/38/tasks/1/task.json"
+        },
+        {
+            "id": 2,
+            "type": "task",
+            "name": "transition-duration-prop-2",
+            "entry": "/resources/38/tasks/2/task.json"
+        },
+        {
+            "id": 3,
+            "type": "task",
+            "name": "transition-property-prop",
+            "entry": "/resources/38/tasks//task.json"
+        },
+        {
+            "id": 4,
+            "type": "task",
+            "name": "transition-delay-prop",
+            "entry": "/resources/38/tasks/4/task.json"
+        },
+        {
+            "id": 5,
+            "type": "task",
+            "name": "transition-timing-function-prop",
+            "entry": "/resources/38/tasks/5/task.json"
+        },
+        {
+            "id": 6,
+            "type": "task",
+            "name": "transition-timing-function-prop-2",
+            "entry": "/resources/38/tasks/6/task.json"
+        },
+        {
+            "id": 7,
+            "type": "task",
+            "name": "transition-timing-function-prop-4",
+            "entry": "/resources/38/tasks/7/task.json"
+        },
+        {
+            "id": 8,
+            "type": "task",
+            "name": "transition-timing-function-prop-4",
+            "entry": "/resources/38/tasks/8/task.json"
+        },
+        {
+            "id": 9,
+            "type": "task",
+            "name": "paper-buttons-1",
+            "entry": "/resources/38/tasks/9/task.json"
+        },
+        {
+            "id": 10,
+            "type": "task",
+            "name": "paper-buttons-2",
+            "entry": "/resources/38/tasks/10/task.json"
+        },
+        {
+            "id": 11,
+            "type": "task",
+            "name": "paper-buttons-3",
+            "entry": "/resources/38/tasks/11/task.json"
+        },
+        {
+            "id": 12,
+            "type": "task",
+            "name": "checkboxes-1",
+            "entry": "/resources/38/tasks/12/task.json"
+        },
+        {
+            "id": 13,
+            "type": "task",
+            "name": "checkboxes-2",
+            "entry": "/resources/38/tasks/13/task.json"
+        },
+        {
+            "id": 14,
+            "type": "task",
+            "name": "checkboxes-3",
+            "entry": "/resources/38/tasks/14/task.json"
+        },
+        {
+            "id": 15,
+            "type": "task",
+            "name": "radio-buttons-1",
+            "entry": "/resources/38/tasks/15/task.json"
+        },
+        {
+            "id": 16,
+            "type": "task",
+            "name": "radio-buttons-2",
+            "entry": "/resources/38/tasks/16/task.json"
+        },
+        {
+            "id": 17,
+            "type": "task",
+            "name": "radio-buttons-3",
+            "entry": "/resources/38/tasks/17/task.json"
+        },
+        {
+            "id": 18,
+            "type": "task",
+            "name": "toggles-1",
+            "entry": "/resources/38/tasks/18/task.json"
+        },
+        {
+            "id": 19,
+            "type": "task",
+            "name": "toggles-2",
+            "entry": "/resources/38/tasks/19/task.json"
+        },
+        {
+            "id": 20,
+            "type": "task",
+            "name": "toggles-3",
+            "entry": "/resources/38/tasks/20/task.json"
+        },
+        {
+            "id": 21,
+            "type": "task",
+            "name": "toggles-4",
+            "entry": "/resources/38/tasks/21/task.json"
+        },
+        {
+            "id": 22,
+            "type": "task",
+            "name": "icon-transformer-1",
+            "entry": "/resources/38/tasks/22/task.json"
+        },
+        {
+            "id": 23,
+            "type": "task",
+            "name": "icon-transformer-2",
+            "entry": "/resources/38/tasks/23/task.json"
+        },
+        {
+            "id": 24,
+            "type": "task",
+            "name": "icon-transformer-3",
+            "entry": "/resources/38/tasks/24/task.json"
+        },
+        {
+            "id": 25,
+            "type": "task",
+            "name": "icon-transformer-4",
+            "entry": "/resources/38/tasks/25/task.json"
+        },
+        {
+            "id": 26,
+            "type": "task",
+            "name": "text-input-1",
+            "entry": "/resources/38/tasks/26/task.json"
+        },
+        {
+            "id": 27,
+            "type": "task",
+            "name": "text-input-2",
+            "entry": "/resources/38/tasks/27/task.json"
+        },
+        {
+            "id": 28,
+            "type": "task",
+            "name": "text-input-3",
+            "entry": "/resources/38/tasks/28/task.json"
+        },
+        {
+            "id": 29,
+            "type": "task",
+            "name": "text-input-4",
+            "entry": "/resources/38/tasks/29/task.json"
+        }
     ]
 }

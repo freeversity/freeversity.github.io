@@ -1,0 +1,35 @@
+{
+    "intro": "setActiveCheckboxProps",
+    "introTitle": "Для выделенного состояния «псевдочекбокса» задайте:",
+    "assertions": [
+        {
+            "title": "ширину `21px` и высоту `10px`,",
+            "name": "setActiveCheckboxWidthTo21PxAndHeightTo10Px",
+            "expect": "expect(document).to.have.cssRule('input[type=\"checkbox\"]:checked ~ label::before', 'width', '21px');expect(document).to.have.cssRule('input[type=\"checkbox\"]:checked ~ label::before', 'height', '10px');"
+        },
+        {
+            "title": "цвет рамки `#00bad2`,",
+            "name": "setActiveCheckboxBorderColorToBlue",
+            "expect": "expect(document).to.have.cssRule('input[type=\"checkbox\"]:checked ~ label::before', 'width', '21px');expect(document).to.have.cssRule('input[type=\"checkbox\"]:checked ~ label::before', 'borderColor', '#00bad2');"
+        },
+        {
+            "title": "стиль верхней и правой рамки `none`.",
+            "name": "setActiveCheckboxBorderTopAndBorderRightToNone",
+            "expect": "expect(document).to.have.cssRule('input[type=\"checkbox\"]:checked ~ label::before', 'borderRightStyle', 'none');expect(document).to.have.cssRule('input[type=\"checkbox\"]:checked ~ label::before', 'borderTopStyle', 'none');expect(document).not.to.have.cssRule('input[type=\"checkbox\"]:checked ~ label::before', 'borderBottomStyle', 'none');expect(document).not.to.have.cssRule('input[type=\"checkbox\"]:checked ~ label::before', 'borderLeftStyle', 'none');"
+        }
+    ],
+    "scripts": [
+    {
+        "type": "handler", 
+        "target": "form", 
+        "eventType": "submit", 
+        "handler": "e.preventDefault(); const params = [...document.querySelectorAll('form input:not([type=submit]):not([type=radio]:not(:checked)), form select option:checked, form textarea')].map((input) => `${encodeURIComponent(input.name ?? input.parentElement.name)}=${encodeURIComponent(input.type === 'checkbox' ? input.checked : input.value)}`).join('&'); window.location = '/resources/38/assets/submitted-form.html?' + params;"
+    }],
+    "footnote": "clickCheckboxForCheeckingResult",
+    "footnoteTitle": "Переключайте чекбоксы для проверки результата."
+}
+
+
+
+
+

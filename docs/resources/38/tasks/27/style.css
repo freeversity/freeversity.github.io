@@ -1,0 +1,25 @@
+.label-box {
+  position: relative;
+  width: 270px;
+}
+
+input {
+  box-sizing: border-box;
+  padding: 5px;
+  width: 270px;
+  border: none;
+  border-bottom: 1px solid #757575;
+  font-size: 18px;
+}
+
+label {
+  position: absolute;
+  top: -36px;
+  color: #757575;
+  font-size: 18px;
+  pointer-events: none;
+}
+
+input:focus ~ .label-box label,
+input:valid ~ .label-box label {
+}

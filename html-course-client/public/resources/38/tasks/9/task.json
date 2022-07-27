@@ -1,0 +1,8 @@
+{
+    "id": 9,      
+    "name": "paper-buttons-1",
+    "htmlEntry": "index.html",
+    "cssEntry": "style.css",
+    "articleEntry": "article.md",
+    "expectEntry": "expect.json"
+}

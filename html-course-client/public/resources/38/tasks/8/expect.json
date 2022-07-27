@@ -1,0 +1,25 @@
+{
+    "assertions": [
+        {
+            "title": "Квадрату `.square-experimental` задайте форму перехода `steps(5, start)`,",
+            "name": "setSquareExperimentalTimingFuncToSteps5Start",
+            "expect": "expect(document.querySelectorAll('.square-experimental')).to.have.css('transition-timing-function', 'steps(5, start)');"
+        },
+        {
+            "title": "а затем измените её на `steps(5, end)`.",
+            "name": "setSquareExperimentalTimingFuncToSteps5End",
+            "expect": "expect(document.querySelectorAll('.square-experimental')).to.have.css('transition-timing-function', 'steps(5, end)');"
+        }
+    ],
+    "scripts": [{
+        "type": "handler",
+        "target": ".fab-play",
+        "eventType": "click",
+        "handler": "document.querySelectorAll('.square').forEach((elem) => elem.classList.toggle('square-active'))"
+    }],
+    "strict": true,
+    "footnote": "clickFabPlayToToggleSquareActiveClass",
+    "footnoteTitle": "Нажимайте на кнопку `.fab-play`, чтобы переключать класс `square-active` для квадратов."
+}
+
+

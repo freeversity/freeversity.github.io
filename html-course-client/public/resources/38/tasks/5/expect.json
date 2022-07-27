@@ -1,0 +1,27 @@
+{
+    "assertions": [
+        {
+            "title": "Квадратам `.square` задайте плавный переход для всех свойств длительностью `3s`,",
+            "name": "setSquareTansitionDurationTo3s",
+            "expect": "expect(document.querySelectorAll('.square')).to.have.css('transitionDuration', '3s');"
+        },
+        {
+            "title": "а затем экспериментальному квадрату `.square-experimental` линейную форму перехода.",
+            "name": "setSquareExperimentalTransitionTimingFunctionToLinear",
+            "expect": "expect(document.querySelectorAll('.square-experimental')).to.have.css('transition-timing-function', 'linear');"
+        }
+    ],
+    "scripts": [{
+        "type": "handler",
+        "target": ".fab-play",
+        "eventType": "click",
+        "handler": "document.querySelectorAll('.square').forEach((elem) => elem.classList.toggle('square-active'))"
+    }],
+    "strict": true,
+    "footnote": "clickFabPlayToToggleSquareActiveClass",
+    "footnoteTitle": "Нажимайте на кнопку `.fab-play`, чтобы переключать класс `square-active` для квадратов."
+}
+
+
+
+

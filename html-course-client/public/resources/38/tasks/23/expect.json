@@ -1,0 +1,24 @@
+{
+    "assertions": [
+        {
+            "title": "Для `.menu-icon-open span::before` и `.menu-icon-open span::after` задайте ширину `60%`.",
+            "name": "setMenuIconOpenSpanAfterAndBeforeWidthTo60Perc",
+            "expect": "expect(document).to.have.cssRule('.menu-icon span::before, .menu-icon span::after', 'width', '60%');"
+        },
+        {
+            "title": "Для `.menu-icon-open span` задайте трансформацию `rotate(180deg)`.",
+            "name": "setMenuIconOpenSpanTransformToRotate180Deg",
+            "expect": "expect(document).to.have.cssRule('.menu-icon-open span', 'transform', 'rotate(180deg)');"
+        }
+    ]
+}
+
+
+
+
+
+
+
+
+
+

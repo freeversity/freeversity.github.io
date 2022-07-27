@@ -1,0 +1,13 @@
+.square {
+  left: 0;
+  transition: all linear 3s;
+}
+
+.square-active {
+  left: 75%;
+  border-radius: 50%;
+}
+
+.square-experimental {
+  background-color: #e74c3c;
+}

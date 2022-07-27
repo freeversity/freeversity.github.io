@@ -1,0 +1,17 @@
+{
+    "assertions": [
+        {
+            "title": "Кнопке `.btn` задайте `transition-duration: 1s.`",
+            "name": "setBtnTransitionDurationTo1S",
+            "expect": "expect(document.querySelector('.btn')).to.have.css('transitionDuration', '1s');"
+        }
+    ],
+    "scripts": [{
+        "type": "handler",
+        "target": ".btn",
+        "eventType": "click",
+        "handler": "document.querySelector('.btn').classList.toggle('btn-active')"
+    }],
+    "footnote": "clickBtnToSwitchBtnActiveClass",
+    "footnoteTitle": "Нажимайте на кнопку `.btn` в мини-браузере, чтобы увидеть плавный переход. При нажатии у кнопки переключается класс `btn-active`."
+}

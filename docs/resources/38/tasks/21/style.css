@@ -1,0 +1,39 @@
+label {
+  position: relative;
+  display: inline-block;
+  max-width: 100px;
+  word-wrap: break-word;
+  cursor: pointer;
+}
+
+label::before,
+label::after {
+  position: absolute;
+  display: block;
+  content: "";
+}
+
+label::before {
+  top: 7px;
+  left: 108px;
+  width: 32px;
+  height: 1px;
+  border-top: 1px solid #5a5a5a;
+}
+
+label::after {
+  top: 0;
+  left: 100px;
+  width: 12px;
+  height: 12px;
+  border: solid 2px #5a5a5a;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"]:checked ~ label::after {
+}

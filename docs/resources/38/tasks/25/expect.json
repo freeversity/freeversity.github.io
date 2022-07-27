@@ -1,0 +1,31 @@
+{
+    "intro": "setTransition07SEaseinOutToElems",
+    "introTitle": "Задайте плавный переход для всех свойств длительностью `0.7s` с формой `ease-in-out` для:",
+    "assertions": [
+        {
+            "title": "`.menu-icon span`,",
+            "name": "setMenuIconSpanTransitionTo07SEaseinOut",
+            "expect": "expect(document).to.have.cssRule('.menu-icon span', 'transition', '0.7s ease-in-out');"
+        },
+        {
+            "title": "`.menu-icon span::before` и `.menu-icon span::after`.",
+            "name": "setMenuIconSpanBeforeAndAfterTransitionTo07SEaseinOut",
+            "expect": "expect(document).to.have.cssRule('.menu-icon span::before, .menu-icon span::after', 'transition', '0.7s ease-in-out');"
+        }
+    ],
+    "scripts": [
+        {
+            "type": "handler", 
+            "target": ".menu-icon", 
+            "eventType": "click", 
+            "handler": "document.querySelector('.menu-icon').classList.toggle('menu-icon-open')"
+        }
+    ],
+    "footnote": "clickIconToToggleMenuIconOpenClass",
+    "footnoteTitle": "Нажимайте на иконку, чтобы переключать класс `menu-icon-open` для неё.",
+    "strict": true
+}
+
+
+
+

@@ -236,8 +236,7 @@
                         {
                             "name": "css-transitions",
                             "id": 38,
-                            "entry": "/resources/38/chapter.json",
-                            "disabled": true
+                            "entry": "/resources/38/chapter.json"
                         },
                         {
                             "name": "css-animations",

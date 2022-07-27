@@ -1,0 +1,20 @@
+.paper-btn {
+  display: inline-block;
+  margin: 58px 12px;
+}
+
+.paper-btn label {
+  display: inline-block;
+  width: 80px;
+  border-radius: 3px;
+  background-color: #f5f5f5;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  color: #616161;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 40px;
+  cursor: pointer;
+}
+
+.paper-btn input {
+}

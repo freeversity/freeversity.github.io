@@ -1,0 +1,39 @@
+{
+    "assertions": [
+        {
+            "title": "Кнопке `.btn` задайте плавный переход только для свойства `background-color`,",
+            "name": "setBtnTransitionPropertyBackgroundColor",
+            "expect": "expect(document.querySelector('.btn')).to.have.css('transitionProperty', 'background-color');"
+        },
+        {
+            "title": "потом задайте плавный переход только для свойства `transform`,",
+            "name": "setBtnTransitionPropertyTransform",
+            "expect": "expect(document.querySelector('.btn')).to.have.css('transitionProperty', 'transform');"
+        },
+        {
+            "title": "а затем — для обоих свойств одновременно `background-color`, `transform`.",
+            "name": "setBtnTransitionPropertyBackgroundColorTransform",
+            "expect": "expect(document.querySelector('.btn')).to.have.css('transitionProperty', 'background-color, transform');"
+        },
+        {
+            "title": "Измените длительность перехода для `.btn` на `1s, 3s`.",
+            "name": "setBtnTransitionDuration1S3S",
+            "expect": "expect(document.querySelector('.btn')).to.have.css('transitionDuration', '1s, 3s');"
+        }
+    ],
+    "scripts": [{
+        "type": "handler",
+        "target": ".btn",
+        "eventType": "click",
+        "handler": "document.querySelector('.btn').classList.toggle('btn-active')"
+    }],
+    "strict": true,
+    "footnote": "clickBtnToSwitchBtnActiveClass",
+    "footnoteTitle": "Нажимайте на кнопку `.btn` в мини-браузере, чтобы увидеть плавный переход. При нажатии у кнопки переключается класс `btn-active`."
+}
+
+
+
+
+
+

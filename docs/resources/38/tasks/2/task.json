@@ -1,0 +1,8 @@
+{
+    "id": 2,      
+    "name": "transition-duration-prop-2",
+    "htmlEntry": "index.html",
+    "cssEntry": "style.css",
+    "articleEntry": "article.md",
+    "expectEntry": "expect.json"
+}

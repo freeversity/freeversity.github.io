@@ -1,0 +1,26 @@
+{
+    "assertions": [
+        {
+            "title": "Для активного состояния кнопки «Правда» задайте цвет фона `#00e676`,",
+            "name": "setPaperBtnTrueCheckedLabelBgColorToGreen",
+            "expect": "expect(document).to.have.cssRule('.paper-btn-true input:checked ~ label', 'background-color', '#00e676');"
+        },
+        {
+            "title": "а для активного состояния кнопки «Ложь» — цвет фона `#ff5252`.",
+            "name": "setPaperBtnFalseCheckedLabelBgColorToRed",
+            "expect": "expect(document).to.have.cssRule('.paper-btn-false input:checked ~ label', 'background-color', '#ff5252');"
+        }
+    ],
+    "scripts": [
+        {
+            "type": "handler", 
+            "target": "form", 
+            "eventType": "submit", 
+            "handler": "e.preventDefault(); const params = [...document.querySelectorAll('form input:not([type=submit]):not([type=radio]:not(:checked)), form select option:checked, form textarea')].map((input) => `${encodeURIComponent(input.name ?? input.parentElement.name)}=${encodeURIComponent(input.type === 'checkbox' ? input.checked : input.value)}`).join('&'); window.location = '/resources/38/assets/submitted-form.html?' + params;"
+        }
+    ],
+    "footnote": "switchBetweenTrueAndFalse",
+    "footnoteTitle": "Переключайте кнопки «Правда» или «Ложь» для проверки результата."
+}
+
+

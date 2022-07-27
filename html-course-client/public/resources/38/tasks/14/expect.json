@@ -1,0 +1,25 @@
+{
+    "assertions": [
+        {
+            "title": "Для выделенного состояния «псевдочекбокса» задайте поворот `transform: rotate(-45deg)`.",
+            "name": "setActiveChackboxPseudoElementTransformToRotateNeg45Deg",
+            "expect": "expect(document).to.have.cssRule('input[type=\"checkbox\"]:checked ~ label::before', 'transform', 'rotate(-45deg)');"
+        },
+        {
+            "title": "А затем для `label::before` задайте плавный переход для всех свойств длительностью `0.3s` с формой `ease-in-out`.",
+            "name": "setActiveChackboxPseudoElementTransition03SEaseInOut",
+            "expect": "expect(document).to.have.cssRule('label::before', 'transition', '0.3s ease-in-out');"
+        }
+    ],
+    "scripts": [
+        {
+            "type": "handler", 
+            "target": "form", 
+            "eventType": "submit", 
+            "handler": "e.preventDefault(); const params = [...document.querySelectorAll('form input:not([type=submit]):not([type=radio]:not(:checked)), form select option:checked, form textarea')].map((input) => `${encodeURIComponent(input.name ?? input.parentElement.name)}=${encodeURIComponent(input.type === 'checkbox' ? input.checked : input.value)}`).join('&'); window.location = '/resources/38/assets/submitted-form.html?' + params;"
+        }
+    ],
+    "footnote": "clickCheckboxForCheeckingResult",
+    "footnoteTitle": "Переключайте чекбоксы для проверки результата."
+}
+

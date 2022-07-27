@@ -1,0 +1,8 @@
+.btn {
+  background-color: #ffffff;
+  transition-duration: 1s;
+}
+
+.btn-active {
+  background-color: #ff5252;
+}

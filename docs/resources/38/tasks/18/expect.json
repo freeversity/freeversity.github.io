@@ -1,0 +1,38 @@
+{
+    "assertions": [
+        {
+            "title": "Раскомментируйте чекбоксы и подписи к ним.",
+            "name": "uncommentChackboxesAndLabels",
+            "expect": "expect(document.querySelectorAll('.answers div > input#answer1 + label[for=answer1], .answers div > input#answer2 + label[for=answer2], .answers div > input#answer3 + label[for=answer3]')).to.have.length(3);"
+        },
+        {
+            "title": "В первую подпись добавьте текст `nextid`,",
+            "name": "setFirstCheckboxLabelToNextid",
+            "expect": "expect(document.querySelector('.answers div > input#answer1 + label[for=answer1]')).to.have.rendered.text('nextid');"
+        },
+        {
+            "title": "во вторую — текст `bgsound`,",
+            "name": "setSecondCheckboxLabelBgSound",
+            "expect": "expect(document.querySelector('.answers div > input#answer2 + label[for=answer2]')).to.have.rendered.text('bgsound');"
+        },
+        {
+            "title": "в третью — текст `hole`.",
+            "name": "setThirdCheckboxLabelHole",
+            "expect": "expect(document.querySelector('.answers div > input#answer3 + label[for=answer3]')).to.have.rendered.text('hole');"
+        },
+        {
+            "title": "Спрячьте чекбоксы с помощью `display: none`.",
+            "name": "setCheckBoxesDisplayToNone",
+            "expect": "expect(document.querySelectorAll('input')).to.have.css('display', 'none');"
+        }
+    ],
+    "strict": true,
+    "scripts": [
+        {
+            "type": "handler", 
+            "target": "form", 
+            "eventType": "submit", 
+            "handler": "e.preventDefault(); const params = [...document.querySelectorAll('form input:not([type=submit]):not([type=radio]:not(:checked)), form select option:checked, form textarea')].map((input) => `${encodeURIComponent(input.name ?? input.parentElement.name)}=${encodeURIComponent(input.type === 'checkbox' ? input.checked : input.value)}`).join('&'); window.location = '/resources/38/assets/submitted-form.html?' + params;"
+        }
+    ]
+}

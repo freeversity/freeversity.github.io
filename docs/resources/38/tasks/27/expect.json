@@ -1,0 +1,24 @@
+{
+    "assertions": [
+        {
+            "title": "При сфокусированном или валидном состоянии поля ввода задайте для `label` размер шрифта `14px` и трансформацию `translateY(-20px)`.",
+            "name": "setLabelFocusValidFontSize14PxAndTransformToTranslateNeeg20Px",
+            "expect": "expect(document).to.have.cssRule('input:focus ~ .label-box label, input:valid ~ .label-box label', 'fontSize', '14px');expect(document).to.have.cssRule('input:focus ~ .label-box label, input:valid ~ .label-box label', 'transform', 'translateY(-20px)');"
+        },
+        {
+            "title": "Затем в общее CSS-правило для `label` добавьте переход для всех свойств длительностью `0.2s`.",
+            "name": "setLabelTransitionTo02S",
+            "expect": "expect(document).to.have.cssRule('label', 'transition', '0.2s');"
+        }
+    ],
+    "footnote": "clickTextInputForChecking",
+    "footnoteTitle": "Нажимайте внутри и снаружи поля ввода для проверки результата.",
+    "scripts": [
+        {
+            "type": "handler", 
+            "target": "form", 
+            "eventType": "submit", 
+            "handler": "e.preventDefault(); const params = [...document.querySelectorAll('form input:not([type=submit]):not([type=radio]:not(:checked)), form select option:checked, form textarea')].map((input) => `${encodeURIComponent(input.name ?? input.parentElement.name)}=${encodeURIComponent(input.type === 'checkbox' ? input.checked : input.value)}`).join('&'); window.location = '/resources/38/assets/submitted-form.html?' + params;"
+        }
+    ]
+}

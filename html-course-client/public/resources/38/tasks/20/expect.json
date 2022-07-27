@@ -1,0 +1,32 @@
+{
+    "assertions": [
+        {
+            "title": "Для `label::after` задайте ширину и высоту `12px`,",
+            "name": "setLabelAfterWidthAndHeightTo12Px",
+            "expect": "expect(document).to.have.cssRule('label::after', 'width', '12px');expect(document).to.have.cssRule('label::after', 'height', '12px');"
+        },
+        {
+            "title": "сплошную рамку с толщиной `2px` и цветом `#5a5a5a`, скругление углов `border-radius: 50%`,",
+            "name": "setLabelAfterBorderTo2pxSolidGrayAndBorderRadius50Perc",
+            "expect": "expect(document).to.have.cssRule('label::after', 'border', '2px solid #5a5a5a');expect(document).to.have.cssRule('label::after', 'borderRadius', '50%');"
+        },
+        {
+            "title": "координаты `top: 0` и `left: 100px`,",
+            "name": "setLabelAfterTopTo0AndLeftTo100Px",
+            "expect": "expect(document).to.have.cssRule('label::after', 'top', '0');expect(document).to.have.cssRule('label::after', 'left', '100px');"
+        },
+        {
+            "title": "а затем цвет фона `#ffffff`.",
+            "name": "setLabelAfterBgColorToWhite",
+            "expect": "expect(document).to.have.cssRule('label::after', 'backgroundColor', '#ffffff');"
+        }
+    ],
+    "scripts": [
+        {
+            "type": "handler", 
+            "target": "form", 
+            "eventType": "submit", 
+            "handler": "e.preventDefault(); const params = [...document.querySelectorAll('form input:not([type=submit]):not([type=radio]:not(:checked)), form select option:checked, form textarea')].map((input) => `${encodeURIComponent(input.name ?? input.parentElement.name)}=${encodeURIComponent(input.type === 'checkbox' ? input.checked : input.value)}`).join('&'); window.location = '/resources/38/assets/submitted-form.html?' + params;"
+        }
+    ]
+}

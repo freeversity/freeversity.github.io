@@ -1,0 +1,31 @@
+{
+    "assertions": [
+        {
+            "title": "Квадратам `.square` задайте форму перехода `cubic-bezier(0, 0, 1, 1)`,",
+            "name": "setSquaresTimingFuncToCubicBezier0011",
+            "expect": "expect(document.querySelectorAll('.square')).to.have.css('transition-timing-function', 'cubic-bezier(0, 0, 1, 1)');"
+        },
+        {
+            "title": "затем только у `.square-experimental` замените её на `cubic-bezier(0.785, 0.135, 0.15, 0.86)`,",
+            "name": "setSquareExperimentalTimingFuncToCubicBezier07850135015086",
+            "expect": "expect(document.querySelectorAll('.square-experimental')).to.have.css('transition-timing-function', 'cubic-bezier(0.785, 0.135, 0.15, 0.86)');"
+        },
+        {
+            "title": "а затем на `cubic-bezier(0.175, 0.885, 0.32, 1)`.",
+            "name": "setSquareExperimentalTimingFuncToCubicBezier017508850321",
+            "expect": "expect(document.querySelectorAll('.square-experimental')).to.have.css('transition-timing-function', 'cubic-bezier(0.175, 0.885, 0.32, 1)');"
+        }
+    ],
+    "scripts": [{
+        "type": "handler",
+        "target": ".fab-play",
+        "eventType": "click",
+        "handler": "document.querySelectorAll('.square').forEach((elem) => elem.classList.toggle('square-active'))"
+    }],
+    "strict": true,
+    "footnote": "clickFabPlayToToggleSquareActiveClass",
+    "footnoteTitle": "Нажимайте на кнопку `.fab-play`, чтобы переключать класс `square-active` для квадратов."
+}
+
+
+
