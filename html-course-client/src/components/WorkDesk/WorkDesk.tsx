@@ -234,10 +234,10 @@ const WorkDesk: FC<WorkDeskProps> = ({
                             shortname='freeversity'
                             config={
                                 {
-                                    url: window.location.host,
+                                    url: `${window.location.protocol}//${window.location.host}`,
                                     identifier: `${chapterId}-${taskId}`,
                                     title: `${chapterId}-${taskId}`,
-                                    language: 'ua' //e.g. for Traditional Chinese (Taiwan)	
+                                    language: 'ua'
                                 }
                             }
                         />
