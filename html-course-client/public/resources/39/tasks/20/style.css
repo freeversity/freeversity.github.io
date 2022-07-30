@@ -1,0 +1,11 @@
+@keyframes move-plane {
+  to {
+    transform: translateX(-1000px);
+  }
+}
+
+@keyframes move-antenna {
+  to {
+    transform: rotate(-60deg);
+  }
+}

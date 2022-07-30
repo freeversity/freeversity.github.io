@@ -1,0 +1,21 @@
+{
+    "assertions": [
+        {
+            "title": "Создайте анимацию `move-clouds`, содержащую кадр `to` с трансформацией `translateX(-1000px)`,",
+            "name": "createMoveCloudsKeyframesWithToFrameTransformTranslateXNeg1000Px",
+            "expect": "expect(document).to.have.keyframes('move-clouds', '100%', 'transform', 'translateX(-1000px)');"
+        },
+        {
+            "title": "анимацию `move-sun`, содержащую кадр `to` с трансформацией `translate(350px, -400px)`,",
+            "name": "createMoveSunKeyframesWithToFrameTransformTranslate350PxNeg400Px",
+            "expect": "expect(document).to.have.keyframes('move-sun', '100%', 'transform', 'translate(350px, -400px)');"
+        },
+        {
+            "title": "анимацию `move-ship`, содержащую кадр `to` с трансформацией `translateX(1000px)`.",
+            "name": "createMoveShipKeyframesWithToFrameTransformTranslate1000Px",
+            "expect": "expect(document).to.have.keyframes('move-ship', '100%', 'transform', 'translateX(1000px)');"
+        }
+    ]
+}
+
+

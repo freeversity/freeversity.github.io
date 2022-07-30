@@ -1,0 +1,16 @@
+{
+    "assertions": [
+        {
+            "title": "Создайте анимацию `rotate`, содержащую кадр `to` с трансформацией поворота на `360deg`,",
+            "name": "createRotateKeyframesWithToFrameTransformRotate360Deg",
+            "expect": "expect(document).to.have.keyframes('rotate', '100%', 'transform', 'rotate(360deg)');"
+        },
+        {
+            "title": "затем добавьте эту анимацию стрелке `.arrow-small` с длительностью `1s`.",
+            "name": "setArrowSmallAnimationToRotate1S",
+            "expect": "expect(document.querySelector('.arrow-small')).to.have.css('animation', 'rotate 1s');"
+        }
+    ]
+}
+
+

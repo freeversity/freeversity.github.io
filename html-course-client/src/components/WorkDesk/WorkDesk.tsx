@@ -21,6 +21,8 @@ import { Markdown } from '../Markdown/Markdown';
 import { ChallengeInspector } from '../ChallengeInspector/ChallengeInspector';
 import {expect as expectFunc} from '../../expect'
 import debounce from 'lodash/debounce';
+import { DiscussionEmbed } from 'disqus-react';
+import { useParams } from 'react-router';
 
 declare global {
     interface Window { gtag: (type: string, name: string, data: any) => void; }
@@ -78,6 +80,8 @@ const WorkDesk: FC<WorkDeskProps> = ({
 
         setPreviewWindow(previewFrame?.contentWindow);
     }
+
+    const {chapterId, taskId} = useParams()
 
     useEffect(() => {
         const isActive = !!expect && doneAsserts.size === expect.assertions.length;
@@ -226,6 +230,17 @@ const WorkDesk: FC<WorkDeskProps> = ({
                     
                     <article className={cx('workdesk__article')}>
                         <Markdown>{article}</Markdown>
+                        <DiscussionEmbed
+                            shortname='freeversity'
+                            config={
+                                {
+                                    url: window.location.pathname,
+                                    identifier: `${chapterId}-${taskId}`,
+                                    title: `${chapterId}-${taskId}`,
+                                    language: 'ua' //e.g. for Traditional Chinese (Taiwan)	
+                                }
+                            }
+                        />
                     </article>
                 </div>
 

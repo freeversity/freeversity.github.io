@@ -1,0 +1,22 @@
+{
+    "assertions": [
+        {
+            "title": "Большой шестерёнке `.gear-big` задайте анимацию `clockwise` длительностью `2s`,",
+            "name": "setGearBigAnimationToClockwise2S",
+            "expect": "expect(document.querySelector('.gear-big')).to.have.css('animation', 'clockwise 2s');"
+        },
+        {
+            "title": "затем маленькой `.gear-small` анимацию `anticlockwise` длительностью `2s`,",
+            "name": "setGearSmallAnimationAnticlockwise2S",
+            "expect": "expect(document.querySelector('.gear-small')).to.have.css('animation', 'anticlockwise 2s');"
+        },
+        {
+            "title": "а потом смените направление анимации обеих шестерёнок на обратное.",
+            "name": "switchGearsRotateDirection",
+            "expect": "expect(document.querySelectorAll('.gear-big, .gear-small')).to.have.css('animation-direction', 'reverse');"
+        }
+    ],
+    "strict": true
+}
+
+

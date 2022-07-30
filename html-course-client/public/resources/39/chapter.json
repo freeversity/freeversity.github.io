@@ -2,5 +2,191 @@
     "baseUrl": "/resources/39/assets/",
     "title": "CSS Animations",
     "tasks": [
+        {
+            "id": 1,
+            "type": "task",
+            "name": "hello-animation",
+            "entry": "/resources/39/tasks/1/task.json"
+        },
+        {
+            "id": 2,
+            "type": "task",
+            "name": "keyframes-framing",
+            "entry": "/resources/39/tasks/2/task.json"
+        },
+        {
+            "id": 3,
+            "type": "task",
+            "name": "keyframes-from-to",
+            "entry": "/resources/39/tasks/3/task.json"
+        },
+        {
+            "id": 4,
+            "type": "task",
+            "name": "keyframes-grouping-frames",
+            "entry": "/resources/39/tasks/4/task.json"
+        },
+        {
+            "id": 5,
+            "type": "task",
+            "name": "multiframe-animation-1",
+            "entry": "/resources/39/tasks/5/task.json"
+        },
+        {
+            "id": 6,
+            "type": "task",
+            "name": "multiframe-animation-2",
+            "entry": "/resources/39/tasks/6/task.json"
+        },
+        {
+            "id": 7,
+            "type": "task",
+            "name": "water-journey",
+            "entry": "/resources/39/tasks/7/task.json"
+        },
+        {
+            "id": 8,
+            "type": "task",
+            "name": "animation-iteration-count",
+            "entry": "/resources/39/tasks/8/task.json"
+        },
+        {
+            "id": 9,
+            "type": "task",
+            "name": "animation-direction-1",
+            "entry": "/resources/39/tasks/9/task.json"
+        },
+        {
+            "id": 10,
+            "type": "task",
+            "name": "animation-direction-2",
+            "entry": "/resources/39/tasks/10/task.json"
+        },
+        {
+            "id": 11,
+            "type": "task",
+            "name": "animation-delay-1",
+            "entry": "/resources/39/tasks/11/task.json"
+        },
+        {
+            "id": 12,
+            "type": "task",
+            "name": "animation-delay-2",
+            "entry": "/resources/39/tasks/12/task.json"
+        },
+        {
+            "id": 13,
+            "type": "task",
+            "name": "animation-delay-3",
+            "entry": "/resources/39/tasks/13/task.json"
+        },
+        {
+            "id": 14,
+            "type": "task",
+            "name": "air-journey",
+            "entry": "/resources/39/tasks/14/task.json"
+        },
+        {
+            "id": 15,
+            "type": "task",
+            "name": "animation-fill-mode-1",
+            "entry": "/resources/39/tasks/15/task.json"
+        },
+        {
+            "id": 16,
+            "type": "task",
+            "name": "animation-fill-mode-2",
+            "entry": "/resources/39/tasks/16/task.json"
+        },
+        {
+            "id": 17,
+            "type": "task",
+            "name": "animation-fill-mode-3",
+            "entry": "/resources/39/tasks/17/task.json"
+        },
+        {
+            "id": 18,
+            "type": "task",
+            "name": "animation-fill-mode-4",
+            "entry": "/resources/39/tasks/18/task.json"
+        },
+        {
+            "id": 19,
+            "type": "task",
+            "name": "animation-fill-mode-5",
+            "entry": "/resources/39/tasks/19/task.json"
+        },
+        {
+            "id": 20,
+            "type": "task",
+            "name": "factory-launching-1",
+            "entry": "/resources/39/tasks/20/task.json"
+        },
+        {
+            "id": 21,
+            "type": "task",
+            "name": "factory-launching-2",
+            "entry": "/resources/39/tasks/21/task.json"
+        },
+        {
+            "id": 22,
+            "type": "task",
+            "name": "animation-play-state",
+            "entry": "/resources/39/tasks/22/task.json"
+        },
+        {
+            "id": 23,
+            "type": "task",
+            "name": "animation-timing-function-1",
+            "entry": "/resources/39/tasks/23/task.json"
+        },
+        {
+            "id": 24,
+            "type": "task",
+            "name": "animation-timing-function-2",
+            "entry": "/resources/39/tasks/24/task.json"
+        },
+        {
+            "id": 25,
+            "type": "task",
+            "name": "animation-timing-function-3",
+            "entry": "/resources/39/tasks/25/task.json"
+        },
+        {
+            "id": 26,
+            "type": "task",
+            "name": "animation-timing-function-4",
+            "entry": "/resources/39/tasks/26/task.json"
+        },
+        {
+            "id": 27,
+            "type": "task",
+            "name": "rocket-launch-1",
+            "entry": "/resources/39/tasks/27/task.json"
+        },
+        {
+            "id": 28,
+            "type": "task",
+            "name": "rocket-launch-2",
+            "entry": "/resources/39/tasks/28/task.json"
+        },
+        {
+            "id": 29,
+            "type": "task",
+            "name": "landing-1",
+            "entry": "/resources/39/tasks/29/task.json"
+        },
+        {
+            "id": 30,
+            "type": "task",
+            "name": "landing-2",
+            "entry": "/resources/39/tasks/30/task.json"
+        },
+        {
+            "id": 31,
+            "type": "task",
+            "name": "landing-3",
+            "entry": "/resources/39/tasks/31/task.json"
+        }
     ]
 }

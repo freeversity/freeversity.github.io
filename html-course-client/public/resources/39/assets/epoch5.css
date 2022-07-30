@@ -1,0 +1,119 @@
+body {
+	margin: 0;
+}
+
+.cosmic {
+	background: url(space_pattern.svg) 0 0;
+}
+
+.earth {
+	position: relative;
+	width: 150px;
+	height: 150px;
+	margin: 250px 50px 0;
+	background: url(earth.svg) no-repeat 0 0;
+}
+
+.fuel,.rocket {
+	position: absolute;
+}
+
+.rocket {
+	background: url(rocket.svg) no-repeat 0 0;
+	transform: rotate(45deg);
+	z-index: 2;
+	width: 50px;
+	height: 70px;
+}
+
+.rocket.departure {
+	top: -30px;
+	right: -10px;
+}
+
+.rocket.departure .fuel {
+	opacity: 0;
+}
+
+.rocket.arrival {
+	top: -55px;
+	left: -50px;
+}
+
+.fuel {
+	bottom: -40px;
+	left: 8px;
+	z-index: 1;
+	width: 100%;
+	height: 55px;
+	background: url(fire.svg) no-repeat 0 0;
+}
+
+.moon {
+	position: relative;
+	width: 100px;
+	height: 100px;
+	margin: 250px 200px 0;
+	background: url(moon.svg) no-repeat 0 0;
+}
+
+.flag {
+	position: absolute;
+	top: 10px;
+	left: 45px;
+	z-index: -1;
+	width: 25px;
+	height: 25px;
+	background: url(flagg.svg) no-repeat 0 0;
+}
+
+.planet {
+	position: relative;
+	width: 125px;
+	height: 85px;
+	margin: 200px 200px 0;
+	background: url(saturn.svg) no-repeat 0 0;
+}
+
+.satellite,.station {
+	position: absolute;
+	z-index: 2;
+}
+
+.station {
+	top: 15px;
+	background: url(station.svg) no-repeat 0 0;
+	left: 15px;
+	width: 55px;
+	height: 55px;
+	transform: rotate(135deg);
+}
+
+.satellite {
+	bottom: 45px;
+	left: 45px;
+	width: 40px;
+	height: 20px;
+	background: url(satellite.svg) no-repeat 0 0;
+	transform: rotate(-135deg);
+}
+
+.orbit-satellite,.orbit-station {
+	position: absolute;
+	border: 3px solid #373a4d;
+	border-radius: 50%;
+}
+
+.orbit-station {
+	top: 90px;
+	left: 115px;
+	width: 300px;
+	height: 300px;
+}
+
+.orbit-satellite {
+	top: 40px;
+	left: 65px;
+	width: 400px;
+	height: 400px;
+}

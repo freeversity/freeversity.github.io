@@ -1,0 +1,16 @@
+{
+    "assertions": [
+        {
+            "title": "Измените значение кадра `50%` на `50%, 80%`,",
+            "name": "set50PercFrameTo50Perc80Perc",
+            "expect": "expect(document).not.to.have.keyframes('lift-up', '50%');expect(document).to.have.keyframes('lift-up', '50%, 80%');"
+        },
+        {
+            "title": "а затем поменяйте трансформацию перемещения в кадре `50%, 80%` на `transform: translateY(-50px)`.",
+            "name": "set50Perc80PercFrameTransformToTranslateYNeg50Px",
+            "expect": "expect(document).to.have.keyframes('lift-up', '50%, 80%', 'transform', 'translateY(-50px)');"
+        }
+    ],
+    "strict": true
+}
+

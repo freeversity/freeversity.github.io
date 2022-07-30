@@ -1,0 +1,17 @@
+{
+    "assertions": [
+        {
+            "title": "Роботу `.constructor` задайте форму анимации `steps(5, start)`,",
+            "name": "setConstructorAnimationTimingFuncToSteps5Start",
+            "expect": "expect(document.querySelector('.constructor')).to.have.css('animationTimingFunction', 'steps(5, start)');"
+        },
+        {
+            "title": "а затем измените её на `steps(5, end)`.",
+            "name": "setConstructorAnimationTimingFuncToSteps5End",
+            "expect": "expect(document.querySelector('.constructor')).to.have.css('animationTimingFunction', 'steps(5, end)');"
+        }
+    ],
+    "globalAssertion": "expect(document.querySelector('.warrior')).to.have.css('animationTimingFunction', 'linear');",
+    "strict": true
+}
+

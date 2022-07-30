@@ -1,0 +1,15 @@
+{
+    "assertions": [
+        {
+            "title": "Создайте анимацию `fire`, содержащую кадр `to` со свойством `opacity: 0`",
+            "name": "createFireAnimationWithToFrameOpacity0",
+            "expect": "expect(document).to.have.keyframes('fire', '100%', 'opacity', '0');"
+        },
+        {
+            "title": "затем задайте эту анимацию топливу `.fuel`: длительность `1s` задержка начала `1s` с сохранением состояния после анимации.",
+            "name": "setFuelAnimationToFire1S1SForwards",
+            "expect": "expect(document.querySelector('.fuel')).to.have.css('animation', 'fire 1s 1s forwards');"
+        }
+    ],
+    "strict": true
+}

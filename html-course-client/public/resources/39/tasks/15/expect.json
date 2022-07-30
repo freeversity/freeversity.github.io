@@ -1,0 +1,18 @@
+{
+    "assertions": [
+        {
+            "title": "Обоим химикатам `.reagent` задайте анимацию `reaction` длительностью `3s` с задержкой начала в `2s`,",
+            "name": "setReagentAnimationToReaction3S2S",
+            "expect": "expect(document.querySelectorAll('.reagent')).to.have.css('animation', 'reaction 3s 2s');"
+        },
+        {
+            "title": "а затем экспериментальному химикату `.experimental-reagent` задайте сохранение состояния после анимации.",
+            "name": "setExperimentalReagentAnimationFillModeToForwards",
+            "expect": "expect(document.querySelector('.experimental-reagent')).to.have.css('animation-fill-mode', 'forwards');"
+        }
+    ],
+    "strict": true,
+    "globalAssertion": "expect(document.querySelector('.reagent:not(.experimental-reagent)')).to.have.css('animation', 'reaction 3s 2s');"
+}
+
+

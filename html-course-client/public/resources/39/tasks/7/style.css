@@ -1,0 +1,20 @@
+.ship {
+  animation-name: move-ship;
+  animation-duration: 40s;
+}
+
+.clouds {
+  animation-name: move-clouds;
+  animation-duration: 40s;
+}
+
+.sun-small {
+  animation-name: move-sun;
+  animation-duration: 10s;
+}
+
+@keyframes move-comet {
+  100% {
+    transform: translate(500px, 400px);
+  }
+}

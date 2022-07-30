@@ -1,0 +1,26 @@
+{
+    "intro": "setExperimentalReagentProps",
+    "introTitle": "Химикату в экспериментальной колбе `.experimental-reagent` задайте:",
+    "assertions": [
+        {
+            "title": "сохранение своего состояния после анимации,",
+            "name": "setExperimentalReagentAminationFillModeToForwards",
+            "expect": "expect(document.querySelector('.experimental-reagent')).to.have.css('animation-fill-mode', 'forwards');"
+        },
+        {
+            "title": "количество проигрываний анимации `2`",
+            "name": "setExperimentalReagentAnimationIterationCountTo2",
+            "expect": "expect(document.querySelector('.experimental-reagent')).to.have.css('animation-iteration-count', '2');"
+        },
+        {
+            "title": "и чередующееся направление анимации.",
+            "name": "setExperimentalReagentAnimationDirectionToAlternate",
+            "expect": "expect(document.querySelector('.experimental-reagent')).to.have.css('animation-direction', 'alternate');"
+        }
+    ],
+    "globalAssertion": "expect(document.querySelector('.reagent:not(.experimental-reagent)')).to.have.css('animation', 'reaction 3s 2s');"
+}
+
+
+
+

@@ -1,0 +1,25 @@
+{
+    "intro": "createLiftUpAnimation",
+    "introTitle": "Создайте `@`-правило с именем `lift-up`, содержащее ключевые кадры:",
+    "assertions": [
+        {
+            "title": "`from` с трансформацией `transform: translateY(0px)`;",
+            "name": "setLiftUpFromTransformToTranslateY0Px",
+            "expect": "expect(document).to.have.keyframes('lift-up', '0%', 'transform', 'translateY(0px)');"
+        },
+        {
+            "title": "`50%` с трансформацией `transform: translateY(-250px)`;",
+            "name": "setLiftUp50PercTransformToTranslateYNeg250Px",
+            "expect": "expect(document).to.have.keyframes('lift-up', '50%', 'transform', 'translateY(-250px)');"
+        },
+        {
+            "title": "`100%` с трансформацией `transform: translateY(-300px)`.",
+            "name": "setLiftUp100PercTransformToTranslateYNeg300Px",
+            "expect": "expect(document).to.have.keyframes('lift-up', '100%', 'transform', 'translateY(-300px)');"
+        }
+    ]
+}
+
+
+
+

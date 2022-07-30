@@ -1,0 +1,25 @@
+.rocket {
+  animation-name: fly;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+.fuel {
+  animation-name: fire;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fly {
+  to {
+    transform: translate(240px, 260px) rotate(-30deg);
+  }
+}
+
+@keyframes fire {
+  to {
+    opacity: 0;
+  }
+}

@@ -1,0 +1,16 @@
+.platform {
+  animation-name: lift-up;
+  animation-duration: 3s;
+}
+
+@keyframes lift-up {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-250px);
+  }
+  100% {
+    transform: translateY(-300px);
+  }
+}

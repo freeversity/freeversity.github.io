@@ -1,0 +1,157 @@
+body,html {
+	height: 100%;
+}
+
+body {
+	margin: 0;
+}
+
+.mechanical {
+	background: url(bg-2.svg) 0 0;
+	background-size: cover;
+}
+
+.mechanical-world {
+	position: relative;
+	margin: 0;
+	background-color: #025d50;
+}
+
+.mechanical-world::before {
+	content: "";
+	position: absolute;
+	top: -20px;
+	left: 0;
+	width: 200%;
+	height: 100%;
+	margin-left: -50%;
+	background-image: linear-gradient(to bottom,#2d0529 0,#2d0529 440px,#025d50 440px);
+	filter: blur(5px);
+}
+
+.mechanical-world>div {
+	position: relative;
+	width: 660px;
+	height: 345px;
+	margin: 0 auto;
+	padding-top: 90px;
+	overflow: hidden;
+	background: #490943 url(wrld2.svg) 0 110px no-repeat;
+}
+
+.clock {
+	position: relative;
+	width: 300px;
+	height: 300px;
+	margin: 150px auto;
+	background: url(clock.svg) 0 0 no-repeat;
+}
+
+.arrow {
+	position: absolute;
+	top: 102px;
+	left: 143px;
+	width: 56px;
+	height: 56px;
+	background: url(arrow.svg) 0 0 no-repeat;
+	transform-origin: 20% 92%;
+}
+
+.mechanism {
+	position: relative;
+	width: 300px;
+	height: 300px;
+	margin: 150px auto;
+	background: url(mechanism.svg) 0 0 no-repeat;
+}
+
+.gear,.gear-big {
+	position: absolute;
+}
+
+.gear-big {
+	top: 100px;
+	left: 75px;
+	width: 65px;
+	height: 65px;
+	background: url(gear-arrowed-large.svg) 0 0 no-repeat;
+}
+
+.gear-small {
+	position: absolute;
+	top: 165px;
+	left: 90px;
+	width: 50px;
+	height: 50px;
+	background: url(gear-arrowed-small.svg) 0 0 no-repeat;
+}
+
+.alarm-clock {
+	position: relative;
+	width: 300px;
+	height: 300px;
+	margin: 150px auto;
+	background: url(alarm-clock.svg) 0 0 no-repeat;
+}
+
+.alarm-clock.on-top {
+	margin-top: 30px;
+}
+
+.arrow-small,.bell {
+	position: absolute;
+}
+
+.bell {
+	top: 50px;
+	left: 127px;
+	width: 55px;
+	height: 55px;
+	background: url(bell.svg) 0 0 no-repeat;
+}
+
+.arrow-small {
+	top: 137px;
+	left: 144px;
+	width: 45px;
+	height: 45px;
+	background: url(arrow-sm.svg) 0 0 no-repeat;
+	transform-origin: 20% 80%;
+}
+
+.birds {
+	position: absolute;
+	top: 30px;
+	left: 20px;
+	width: 80px;
+	height: 80px;
+	background: url(birds.svg) 0 0 no-repeat;
+}
+
+.aerostat {
+	bottom: 10px;
+	left: 15px;
+	width: 140px;
+	height: 140px;
+	background: url(aerostat.svg) 0 0 no-repeat;
+}
+
+.aerostat,.ufo,.wind-mill {
+	position: absolute;
+}
+
+.wind-mill {
+	bottom: 75px;
+	background: url(wind-wheel.svg) 0 0 no-repeat;
+	left: 258px;
+	width: 140px;
+	height: 140px;
+}
+
+.ufo {
+	top: -100px;
+	left: -100px;
+	width: 100px;
+	height: 50px;
+	background: url(ufo.svg?a1) no-repeat 0 0;
+}

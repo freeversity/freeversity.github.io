@@ -1,0 +1,9 @@
+{
+    "assertions": [
+        {
+            "title": "Обоим роботам `.robot` задайте линейную форму анимации.",
+            "name": "setBothRobotsAnimationTimingFunctinoToLinear",
+            "expect": "expect(document.querySelectorAll('.robot')).to.have.css('animationTimingFunction', 'linear');"
+        }
+    ]
+}

@@ -1,0 +1,20 @@
+{
+    "intro": "setMegaenergyFillProps",
+    "introTitle": "Заряду в экспериментальном аккумуляторе `.mega-energy-fill` задайте:",
+    "assertions": [
+        {
+            "title": "количество проигрываний анимации `2`",
+            "name": "setMegaenergyFillAnimationIterationCountTo2",
+            "expect": "expect(document.querySelector('.mega-energy-fill')).to.have.css('animation-iteration-count', '2');"
+        },
+        {
+            "title": "и чередующееся направление анимации.",
+            "name": "setMegaenergyFillAnimationDirectionToAlternate",
+            "expect": "expect(document.querySelector('.mega-energy-fill')).to.have.css('animation-direction', 'alternate');"
+        }
+    ],
+    "globalAssertion": "expect(document.querySelector('.energy-fill:not(.mega-energy-fill)')).to.have.css('animation', 'power 2s 2s');"
+}
+
+
+

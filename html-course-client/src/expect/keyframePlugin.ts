@@ -56,7 +56,7 @@ export function keyframesPlugin(
 
             if (!prop) {
                 const actual = !!keyframeRule;
-                const expected = !keyframeRule;
+                const expected = true;
 
                 this.assert(
                     actual === expected,

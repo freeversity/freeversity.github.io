@@ -1,0 +1,23 @@
+{
+    "intro": "setConstructorAnimationTimingFunction",
+    "introTitle": "Роботу `.constructor` последовательно задайте следующие формы анимации:",
+    "assertions": [
+        {
+            "title": "`ease-in`,",
+            "name": "setConstructorAnimationTimingFunctionToEaseIn",
+            "expect": "expect(document.querySelector('.constructor')).to.have.css('animationTimingFunction', 'ease-in');"
+        },
+        {
+            "title": "`ease-out`,",
+            "name": "setConstructorAnimationTimingFunctionToEaseOut",
+            "expect": "expect(document.querySelector('.constructor')).to.have.css('animationTimingFunction', 'ease-out');"
+        },
+        {
+            "title": "`ease-in-out`.",
+            "name": "setConstructorAnimationTimingFunctionToEaseInOut",
+            "expect": "expect(document.querySelector('.constructor')).to.have.css('animationTimingFunction', 'ease-in-out');"
+        }
+    ],
+    "globalAssertion": "expect(document.querySelector('.warrior')).to.have.css('animationTimingFunction', 'linear');",
+    "strict": true
+}

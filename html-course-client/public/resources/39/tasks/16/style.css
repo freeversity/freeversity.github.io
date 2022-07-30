@@ -1,0 +1,26 @@
+@keyframes blink {
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes reaction {
+  0% {
+    background-color: #01ff70;
+  }
+
+  100% {
+    background-color: #ff4136;
+  }
+}
+
+.bubbles {
+  animation-name: blink;
+  animation-duration: 2s;
+}
+
+.reagent {
+  animation-name: reaction;
+  animation-duration: 3s;
+  animation-delay: 2s;
+}

@@ -1,0 +1,156 @@
+body,html {
+	height: 100%;
+}
+
+body {
+	margin: 0;
+}
+
+.scientific {
+	background: url(back-3.svg) 0 0;
+}
+
+.scientific-world {
+	position: relative;
+	margin: 0;
+	background-color: #30373e;
+}
+
+.scientific-world::before {
+	content: "";
+	position: absolute;
+	top: -20px;
+	left: 0;
+	width: 200%;
+	height: 100%;
+	margin-left: -50%;
+	background-image: linear-gradient(to bottom,#d29133 0,#d29133 436px,#30373e 436px);
+	filter: blur(5px);
+}
+
+.scientific-world>div {
+	position: relative;
+	width: 660px;
+	height: 345px;
+	margin: 0 auto;
+	padding-top: 90px;
+	overflow: hidden;
+	background: #fcb040 url(wrld3.svg) 0 70px no-repeat;
+}
+
+.bubbles {
+	content: "";
+	position: absolute;
+	top: -90px;
+	left: 33px;
+	width: 40px;
+	height: 70px;
+	background: url(bubbles.svg) 0 0 no-repeat;
+	opacity: 0;
+}
+
+.tube {
+	position: relative;
+	display: inline-block;
+	width: 126px;
+	height: 161px;
+	margin: 225px 0 0 20%;
+	background: url(test-tube.svg) 0 0 no-repeat;
+}
+
+.reagent,.sign {
+	position: absolute;
+}
+
+.reagent {
+	content: "";
+	z-index: -1;
+	clip-path: path("M40 51.5373L40 0L62 -1.74846e-06L62 51.5374L100.59 117.571C104.597 124.429 99.5878 133 91.5733 133L10.4267 133C2.41217 133 -2.59687 124.429 1.41037 117.571L40 51.5373Z");
+	top: 16px;
+	left: 12px;
+	width: 102px;
+	height: 133px;
+}
+
+.sign {
+	top: 30px;
+	left: 30px;
+	width: 100px;
+	height: 100px;
+	background: url(radiation.svg) 0 0 no-repeat;
+}
+
+.battery {
+	position: relative;
+	width: 200px;
+	height: 100px;
+	margin: 75px auto 0;
+	background: url(btry.svg) 0 0 no-repeat;
+}
+
+.energy-logo {
+	content: "";
+	position: absolute;
+	top: 25px;
+	left: 72px;
+	width: 50px;
+	height: 50px;
+	background: url(enrgy.svg) 0 0 no-repeat;
+}
+
+.energy-fill {
+	content: "";
+	top: 2px;
+	left: 24px;
+	z-index: -1;
+	width: 151px;
+	height: 95px;
+}
+
+.car,.energy-fill,.plane {
+	position: absolute;
+}
+
+.plane {
+	top: 10px;
+	background: url(plane.svg) 0 0 no-repeat;
+	left: 700px;
+	width: 130px;
+	height: 80px;
+}
+
+.car {
+	bottom: 0;
+	left: 500px;
+	width: 140px;
+	height: 60px;
+	background: url(car.svg) 0 0 no-repeat;
+}
+
+.antenna,.fog-1,.fog-2 {
+	position: absolute;
+	width: 50px;
+	height: 50px;
+}
+
+.antenna {
+	background: url(antenna.svg) 0 0 no-repeat;
+	transform-origin: 40% 80%;
+	top: 155px;
+	left: 135px;
+}
+
+.fog-1,.fog-2 {
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	opacity: 0;
+	top: 70px;
+	left: 400px;
+	background-image: url(fog-1.svg);
+}
+
+.fog-2 {
+	left: 480px;
+	height: 70px;
+	background-image: url(fog-2.svg);
+}

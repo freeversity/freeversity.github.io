@@ -1,0 +1,21 @@
+{
+    "assertions": [
+        {
+            "title": "Птицам `.birds` задайте анимацию `move-birds` длительностью `30s`,",
+            "name": "steBirdsAnimationToMoveBirds30S",
+            "expect": "expect(document.querySelector('.birds')).to.have.css('animation', 'move-birds 30s');"
+        },
+        {
+            "title": "затем мельнице `.wind-mill` задайте анимацию `move-wheel` длительностью `10s` с бесконечным числом проигрываний,",
+            "name": "setWindMillAnimationToMoveWheel10SInfinity",
+            "expect": "expect(document.querySelector('.wind-mill')).to.have.css('animation', 'move-wheel 10s infinite');"
+        },
+        {
+            "title": "а потом воздушному шару `.aerostat` задайте анимацию `move-aerostat` длительностью `20s` с задержкой начала анимации в `5s`.",
+            "name": "setAerostateAnimationToMoveAerostat20S5S",
+            "expect": "expect(document.querySelector('.aerostat')).to.have.css('animation', 'move-aerostat 20s 5s');"
+        }
+    ]
+}
+
+

@@ -1,0 +1,16 @@
+{
+    "assertions": [
+        {
+            "title": "Для кадра `50%` добавьте трансформацию поворота `rotate(90deg)` а для кадра `100%` — поворот до `360°`,",
+            "name": "setRotate50PercFramTransformToRotate90DegAnd100PercFrameTransformToRotate360Deg",
+            "expect": "expect(document).to.have.keyframes('rotate', '50%', 'transform', 'rotate(90deg)');expect(document).to.have.keyframes('rotate', '100%', 'transform', 'rotate(360deg)');"
+        },
+        {
+            "title": "затем для кадра `50%` измените поворот на `-90°`.",
+            "name": "setRotate50PercFramTransformToRotateNeg90",
+            "expect": "expect(document).to.have.keyframes('rotate', '50%', 'transform', 'rotate(-90deg)');"
+        }
+    ],
+    "strict": true
+}
+

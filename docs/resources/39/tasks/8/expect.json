@@ -1,0 +1,23 @@
+{
+    "assertions": [
+        {
+            "title": "Стрелке `.arrow` задайте анимацию `rotate` длительностью `2s`,",
+            "name": "setArrowAnimationToRotate2S",
+            "expect": "expect(document.querySelector('.arrow')).to.have.css('animation', 'rotate 2s');"
+        },
+        {
+            "title": "затем задайте `2` проигрывания анимации,",
+            "name": "setArrowAnimationIterationCountTo2",
+            "expect": "expect(document.querySelector('.arrow')).to.have.css('animation-iteration-count', '2');"
+        },
+        {
+            "title": "а потом поменяйте количество проигрываний на бесконечное.",
+            "name": "setArrowAnimationIterationCountToInfinity",
+            "expect": "expect(document.querySelector('.arrow')).to.have.css('animation-iteration-count', 'infinite');"
+        }
+    ],
+    "strict": true
+}
+
+
+

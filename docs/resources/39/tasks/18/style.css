@@ -1,0 +1,34 @@
+.energy-logo {
+  animation-name: vibrate;
+  animation-duration: 2s;
+}
+
+.energy-fill {
+  animation-name: power;
+  animation-duration: 2s;
+  animation-delay: 2s;
+}
+
+.mega-energy-fill {
+  animation-fill-mode: backwards;
+}
+
+@keyframes vibrate {
+  50% {
+    transform: scale(1.2);
+  }
+}
+
+@keyframes power {
+  0% {
+    width: 150px;
+    background-color: #01ff70;
+  }
+  50% {
+    background-color: #ffdc00;
+  }
+  100% {
+    width: 30px;
+    background-color: #ff4136;
+  }
+}

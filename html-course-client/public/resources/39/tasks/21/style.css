@@ -1,0 +1,35 @@
+@keyframes move-plane {
+  to {
+    transform: translateX(-1000px);
+  }
+}
+
+@keyframes move-antenna {
+  to {
+    transform: rotate(-60deg);
+  }
+}
+
+@keyframes move-car {
+  to {
+    transform: translateX(-350px);
+  }
+}
+
+@keyframes show-fog {
+  to {
+    opacity: 1;
+  }
+}
+
+.plane {
+  animation-name: move-plane;
+  animation-duration: 10s;
+}
+
+.antenna {
+  animation-name: move-antenna;
+  animation-duration: 2s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}

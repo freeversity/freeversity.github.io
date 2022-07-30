@@ -1,0 +1,27 @@
+@keyframes move-wheel {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes move-aerostat {
+  to {
+    transform: translate(350px, -1000px);
+  }
+}
+
+@keyframes move-birds {
+  to {
+    transform: translateX(1000px);
+  }
+}
+
+@keyframes move-ufo {
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translate(200px, 375px);
+  }
+}

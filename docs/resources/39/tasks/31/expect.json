@@ -1,0 +1,16 @@
+{
+    "assertions": [
+        {
+            "title": "Создайте анимацию `hoist`, содержащую кадр `to` со свойством `top: -25px`,",
+            "name": "createHoistAnimationWithToFrameTopNeg25Px",
+            "expect": "expect(document).to.have.keyframes('hoist', '100%', 'top', '-25px');"
+        },
+        {
+            "title": "затем задайте эту анимацию флагу `.flag`: длительность `1s`, задержка начала `2s`, форма `ease-in`, с сохранением состояния после анимации.",
+            "name": "setFlagAnimationToHoist1S2SEaseInForwards",
+            "expect": "expect(document.querySelector('.flag')).to.have.css('animation', 'hoist 1s ease-in 2s forwards');"
+        }
+    ],
+    "strict": true
+}
+

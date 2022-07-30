@@ -1,0 +1,14 @@
+{
+    "assertions": [
+        {
+            "title": "Создайте анимацию `ding`, содержащую ключевые кадры:<br>`33%` с трансформацией `translateX(-15px)`;<br>`66%` с трансформацией `translateX(15px)`.",
+            "name": "createDingKeyframesWith33PercFrameTransformTranslateXNeg15Px66PercFrameTransformTranslateX15Px",
+            "expect": "expect(document).to.have.keyframes('ding', '33%', 'transform', 'translateX(-15px)');expect(document).to.have.keyframes('ding', '66%', 'transform', 'translateX(15px)');"
+        },
+        {
+            "title": "Затем добавьте эту анимацию колокольчику `.bell` с длительностью `1s`.",
+            "name": "setBellAnimationToDing1S",
+            "expect": "expect(document.querySelector('.bell')).to.have.css('animation', 'ding 1s');"
+        }
+    ]
+}

@@ -1,0 +1,21 @@
+@keyframes clockwise {
+  to {
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes anticlockwise {
+  to {
+    transform: rotate(-180deg);
+  }
+}
+
+.gear-big {
+  animation-name: clockwise;
+  animation-duration: 2s;
+}
+
+.gear-small {
+  animation-name: anticlockwise;
+  animation-duration: 2s;
+}

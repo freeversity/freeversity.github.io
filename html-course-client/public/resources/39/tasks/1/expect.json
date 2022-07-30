@@ -1,0 +1,19 @@
+{
+    "intro": "uncommentCss",
+    "introTitle": "Раскомментируйте в CSS:",
+    "assertions": [
+        {
+            "title": "описание ключевых кадров анимации `@keyframes rotate`;",
+            "name": "uncommentRotateKeyframes",
+            "expect": "expect(document).to.have.keyframes('rotate', '0%');expect(document).to.have.keyframes('rotate', '100%');"
+        },
+        {
+            "title": "правило для класса `.wood-wheel`.",
+            "name": "uncommentWoodWheelRule",
+            "expect": "expect(document).to.have.cssRule('.wood-wheel', {animationName: 'rotate', animationDuration: '2s'});"
+        }
+    ]
+}
+
+
+

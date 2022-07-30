@@ -1,0 +1,8 @@
+.platform {
+  animation-name: lift-up;
+  animation-duration: 3s;
+}
+
+@keyframes lift-up {
+
+}

@@ -1,0 +1,22 @@
+{
+    "assertions": [
+        {
+            "title": "Обеим шестерёнкам задайте количество проигрываний анимации `2`,",
+            "name": "setBothGearsAnimationIterationCountTo2",
+            "expect": "expect(document.querySelectorAll('.gear-big, .gear-small')).to.have.css('animationIterationCount', '2');"
+        },
+        {
+            "title": "затем чередующееся направление анимации,",
+            "name": "setGearsAnimationDirectionToAlternate",
+            "expect": "expect(document.querySelectorAll('.gear-big, .gear-small')).to.have.css('animationDirection', 'alternate');"
+        },
+        {
+            "title": "а потом смените направление анимации на обратное чередующееся.",
+            "name": "setGearsAnimationDirectionToAlternateReverse",
+            "expect": "expect(document.querySelectorAll('.gear-big, .gear-small')).to.have.css('animationDirection', 'alternate-reverse');"
+        }
+    ],
+    "strict": true
+}
+
+

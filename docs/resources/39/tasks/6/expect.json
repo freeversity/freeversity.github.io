@@ -1,0 +1,17 @@
+{
+    "assertions": [
+        {
+            "title": "Cоздайте анимацию `move` с ключевыми кадрами:<br>`50%` со свойством `bottom: 0px`;<br>`100%` со свойством `bottom: -50px`.",
+            "name": "createMoveKeyframes50PercBottom0Px100PercBottomNeg50Px",
+            "expect": "expect(document).to.have.keyframes('move', '50%', 'bottom', '0px');expect(document).to.have.keyframes('move', '100%', 'bottom', '-50px');"
+        },
+        {
+            "title": "Блоку `.stone-wheel` добавьте вторую анимацию move длительностью `6s`.",
+            "name": "setStoneWheelAnimationToRotateMoveDithDuration6S",
+            "expect": "expect(document.querySelector('.stone-wheel')).to.have.css('animation', 'rotate 3s, move 6s');"
+        }
+    ]
+}
+
+
+

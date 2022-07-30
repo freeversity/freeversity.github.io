@@ -1,0 +1,31 @@
+{
+    "assertions": [
+        {
+            "title": "Создайте анимацию `move`, с ключевым кадром `to`, содержащим свойство `left: 400px`,",
+            "name": "createMoveKeyframesWithToFrameLeft400Px",
+            "expect": "expect(document).to.have.keyframes('move', '100%', 'left', '400px');"
+        },
+        {
+            "title": "затем назначьте эту анимацию роботам `.robot`.",
+            "name": "setRobotAnimationToMove",
+            "expect": "expect(document.querySelectorAll('.robot')).to.have.css('animationName', 'move');"
+        },
+        {
+            "title": "Создайте правило `.robot-paused`, ставящее анимацию на паузу.",
+            "name": "setRobotPausedAnimationPlayStateToPause",
+            "expect": "expect(document).to.have.cssRule('.robot-paused', 'animationPlayState', 'paused');"
+        }
+    ],
+    "scripts": [{
+        "type": "handler",
+        "target": ".robot",
+        "eventType": "click",
+        "handler": "event.target.closest('.robot')?.classList.toggle('robot-paused')"
+    }],
+    "strict": true,
+    "footnote": "switchRobotPausedClassByClickingRobots",
+    "footnoteTitle": "Класс `robot-paused` переключается при клике на роботов. Понажимайте по ним в процессе движения!"
+}
+
+
+

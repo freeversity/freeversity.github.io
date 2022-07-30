@@ -1,0 +1,17 @@
+{
+    "assertions": [
+        {
+            "title": "Создайте анимацию `fly` содержащую кадр `to` с трансформацией<br>`transform: translate(240px, 260px) rotate(-30deg)`,",
+            "name": "createFlyKeyframesWithToFrameTransformTranslate240Px260PxRotateNeg30Deg",
+            "expect": "expect(document).to.have.keyframes('fly', '100%', 'transform', 'translate(240px, 260px) rotate(-30deg)');"
+        },
+        {
+            "title": "затем задайте эту анимацию ракете `.rocket`: длительность `1.5s` форма `ease-out` с сохранением состояния после анимации.",
+            "name": "setRocketAnimationToFly15SEaseOutForwards",
+            "expect": "expect(document.querySelector('.rocket')).to.have.css('animation', 'fly 1.5s ease-out forwards');"
+        }
+    ],
+    "strict": true
+}
+
+

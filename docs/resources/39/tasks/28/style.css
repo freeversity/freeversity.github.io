@@ -1,0 +1,11 @@
+.fuel {
+  animation-name: fire;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fire {
+  to {
+    opacity: 1;
+  }
+}

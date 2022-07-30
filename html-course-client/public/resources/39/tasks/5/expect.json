@@ -1,0 +1,16 @@
+{
+    "assertions": [
+        {
+            "title": "Создайте анимацию `rotate` с одним ключевым кадром `50%`, содержащим трансформацию поворота `transform: rotate(360deg)`.",
+            "name": "createRotateKeyframesWith50PercFrameTrransformToRotate360Deg",
+            "expect": "expect(document).to.have.keyframes('rotate', '50%', 'transform', 'rotate(360deg)');"
+        },
+        {
+            "title": "Блоку `.stone-wheel` задайте свойства `animation-name: rotate` и `animation-duration: 3s`.",
+            "name": "setStoneWheelAnimationNameToRotateAndAnimationDurationTo3S",
+            "expect": "expect(document.querySelector('.stone-wheel')).to.have.css('animation', 'rotate 3s');"
+        }
+    ],
+    "strict": true
+}
+

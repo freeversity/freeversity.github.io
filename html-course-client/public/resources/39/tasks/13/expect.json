@@ -1,0 +1,25 @@
+{
+    "intro": "setBellAnimationProps",
+    "introTitle": "Колокольчику `.bell` задайте параметры анимации:",
+    "assertions": [
+        {
+            "title": "задержку начала `1s`,",
+            "name": "setBellAnimationDelayTo1S",
+            "expect": "expect(document.querySelector('.bell')).to.have.css('animationDelay', '1s');"
+        },
+        {
+            "title": "длительность `100ms`,",
+            "name": "setBellAnimationDurationTo100Ms",
+            "expect": "expect(document.querySelector('.bell')).to.have.css('animationDuration', '100ms');"
+        },
+        {
+            "title": "количество проигрываний анимации `10`.",
+            "name": "setBellAnimationIterationCountTo10",
+            "expect": "expect(document.querySelector('.bell')).to.have.css('animationIterationCount', '10');"
+        }
+    ]
+}
+
+
+
+

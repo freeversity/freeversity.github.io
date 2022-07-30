@@ -1,0 +1,21 @@
+{
+    "assertions": [
+        {
+            "title": "Автомобилю `.car` задайте анимацию `move-car`: длительность `4s`, задержка старта `5s`, c сохранением состояния после анимации.",
+            "name": "setCarAnimationToMoveCar4S5SForwards",
+            "expect": "expect(document.querySelector('.car')).to.have.css('animation', 'move-car 4s 5s forwards');"
+        },
+        {
+            "title": "Облакам дыма `.fog-1` и `.fog-2` — анимацию `show-fog`: длительность `1s`, `2` проигрывания, чередующееся направление.",
+            "name": "setFog1AndFog2AnimationToShowFog1S2Alternate",
+            "expect": "expect(document.querySelectorAll('.fog-1, .fog-2')).to.have.css('animation', 'show-fog 1s 2 alternate');"
+        },
+        {
+            "title": "У `.fog-1` задержка старта `9s`, у `.fog-2` — `10s`.",
+            "name": "setFog1AnimationDelayTo9SAndFog2AnimationDelayTo10S",
+            "expect": "expect(document.querySelector('.fog-1')).to.have.css('animation-delay', '9s');expect(document.querySelector('.fog-2')).to.have.css('animation-delay', '10s');"
+        }
+    ]
+}
+
+

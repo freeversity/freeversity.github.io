@@ -1,0 +1,17 @@
+{
+    "assertions": [
+        {
+            "title": "Заряду аккумуляторов `.energy-fill` задайте анимацию `power` длительностью `2s` с задержкой начала в `2s`,",
+            "name": "setEnergyFillAnimationToPower2S2SS",
+            "expect": "expect(document.querySelector('.energy-fill')).to.have.css('animation', 'power 2s 2s');"
+        },
+        {
+            "title": "а затем заряду в экспериментальном аккумуляторе `.mega-energy-fill` задайте отображение состояния до начала анимации.",
+            "name": "setMegaEnergyFillAnimationFillStateToBackwards",
+            "expect": "expect(document.querySelector('.mega-energy-fill')).to.have.css('animation-fill-mode', 'backwards');"
+        }
+    ],
+    "globalAssertion": "expect(document.querySelector('.energy-fill:not(.mega-energy-fill)')).to.have.css('animation', 'power 2s 2s');",
+    "strict": true
+}
+

@@ -1,0 +1,10 @@
+@keyframes rotate {
+  50% {
+    transform: rotate(360deg);
+  }
+}
+
+.stone-wheel {
+  animation-name: rotate;
+  animation-duration: 3s;
+}

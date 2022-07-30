@@ -1,0 +1,173 @@
+body,
+html {
+  height: 100%;
+}
+body {
+  margin: 0;
+}
+.ancient {
+  background: url(back-1.svg) 0 0;
+  background-size: cover;
+}
+.ancient-world {
+  position: relative;
+  margin: 0;
+  background-color: #166b7e;
+}
+.ancient-world::before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: 0;
+  width: 200%;
+  height: 100%;
+  margin-left: -50%;
+  background-image: linear-gradient(
+    to bottom,
+    #68a7a1 0,
+    #68a7a1 425px,
+    #056e7d 425px
+  );
+  filter: blur(5px);
+}
+.ancient-world > div {
+  position: relative;
+  width: 660px;
+  height: 345px;
+  margin: 0 auto;
+  padding-top: 100px;
+  overflow: hidden;
+  background: #80cdc6 url(wrld1.svg) 0 106px no-repeat;
+  box-shadow: 0 0 200px 30px rgba(10, 10, 10, 0.1);
+}
+.stone {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: 150px auto;
+  background: url(stone.svg) 0 0 no-repeat;
+}
+.barrow-wheel,
+.wood-wheel {
+  position: absolute;
+  top: 35px;
+  left: 35px;
+  width: 235px;
+  height: 235px;
+}
+.wood-wheel {
+  background: url(wood-wheel.svg) 0 0 no-repeat;
+}
+.barrow-wheel {
+  background: url(barrow-wheel.svg) 0 0 no-repeat;
+}
+.lift-bottom,
+.lift-top {
+  position: relative;
+  width: 95px;
+  margin: 0 auto;
+}
+.lift-top {
+  top: -10px;
+  height: 500px;
+}
+.lift-top::after,
+.lift-top::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 10px;
+  height: 100%;
+  background: url(rope-top.svg) 0 0 no-repeat;
+}
+.lift-top::before {
+  left: 0;
+}
+.lift-top::after {
+  right: 0;
+}
+.lift-bottom {
+  height: 200px;
+}
+.lift-bottom::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 20px;
+  height: 100%;
+  margin-left: -10px;
+  background: url(rope-bottom.svg) 0 0 no-repeat;
+}
+.lift-bottom .stone-wheel {
+  bottom: -50px;
+  left: -5px;
+  width: 100px;
+  height: 100px;
+}
+.platform {
+  position: absolute;
+  top: 420px;
+  left: -27px;
+  z-index: 1;
+  width: 149px;
+  height: 50px;
+  background: url(lift-platform.svg) 0 0 no-repeat;
+}
+.platform .stone-wheel {
+  bottom: 50px;
+  left: 37px;
+  width: 75px;
+  height: 75px;
+}
+.stone-wheel {
+  position: absolute;
+  background: url(stone-wheel.svg) 0 0 no-repeat;
+}
+.sun-small {
+  top: 200px;
+  left: -100px;
+  z-index: 1;
+  width: 60px;
+  height: 60px;
+  background: url(sun-small.svg) 0 0 no-repeat;
+}
+.clouds,
+.ship,
+.sun-small {
+  position: absolute;
+}
+.clouds {
+  top: 0;
+  right: 0;
+  z-index: 2;
+  background: url(clouds.svg) 0 0 no-repeat;
+  width: 350px;
+  height: 260px;
+}
+.ship {
+  bottom: 35px;
+  left: 20px;
+  width: 115px;
+  height: 115px;
+  background: url(wooden-ship.svg) 0 0 no-repeat;
+}
+.comet,
+.water {
+  position: absolute;
+  height: 50px;
+}
+.water {
+  bottom: -5px;
+  background: url(water.svg) 0 0 repeat-x;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+}
+.comet {
+  z-index: 10;
+  top: -100px;
+  left: 200px;
+  width: 100px;
+  background: url(comet.svg) no-repeat 0 0;
+}

@@ -1,0 +1,15 @@
+{
+    "assertions": [
+        {
+            "title": "Самолёту `.plane` задайте анимацию `move-plane` длительностью `10s`,",
+            "name": "setPlaneAnimationToMovePlane10S",
+            "expect": "expect(document.querySelector('.plane')).to.have.css('animation', 'move-plane 10s');"
+        },
+        {
+            "title": "затем спутниковой тарелке `.antenna` задайте анимацию `move-antenna` длительностью `2s` с задержкой начала в `2s` и c сохранением своего состояния после анимации.",
+            "name": "setAntennaAnimatioonToMoveAntenna2S2SForwards",
+            "expect": "expect(document.querySelector('.antenna')).to.have.css('animation', 'move-antenna 2s 2s forwards');"
+        }
+    ]
+}
+

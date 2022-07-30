@@ -1,0 +1,23 @@
+{
+    "assertions": [
+        {
+            "title": "Роботам `.robot` задайте форму анимации `cubic-bezier(0, 0, 1, 1)`,",
+            "name": "setRobotAnimationTimingFuncToCubicBezier0011",
+            "expect": "expect(document.querySelectorAll('.robot')).to.have.css('animationTimingFunction', 'cubic-bezier(0, 0, 1, 1)');"
+        },
+        {
+            "title": "затем только у `.constructor` замените её на `cubic-bezier(0.785, 0.135, 0.15, 0.86)`,",
+            "name": "setConstructorAnimationTimingFuncToCubicBezier07850135015086",
+            "expect": "expect(document.querySelector('.constructor')).to.have.css('animationTimingFunction', 'cubic-bezier(0.785, 0.135, 0.15, 0.86)');"
+        },
+        {
+            "title": "а затем на `cubic-bezier(0.175, 0.885, 0.32, 1)`.",
+            "name": "setConstructorAnimationTimingFuncToCubicBezier017508850321",
+            "expect": "expect(document.querySelector('.constructor')).to.have.css('animationTimingFunction', 'cubic-bezier(0.175, 0.885, 0.32, 1)');"
+        }
+    ],
+    "globalAssertion": "expect(document.querySelector('.warrior')).to.have.css('animationTimingFunction', 'cubic-bezier(0, 0, 1, 1)');",
+    "strict": true
+}
+
+

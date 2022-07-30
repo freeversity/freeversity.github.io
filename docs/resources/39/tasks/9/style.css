@@ -1,0 +1,11 @@
+@keyframes clockwise {
+  to {
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes anticlockwise {
+  to {
+    transform: rotate(-180deg);
+  }
+}
