@@ -1,0 +1,4 @@
+input:required {
+  background: url('required.png') no-repeat right 50%;
+  border: 1px solid #e74c3c;
+}

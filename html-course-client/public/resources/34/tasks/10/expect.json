@@ -1,0 +1,17 @@
+{
+    "assertions": [
+        {
+            "title": "Всем недоступным для редактирования элементам `input` установите цвет фона `#ecf0f1` и цвет текста `#bdc3c7`.",
+            "name": "setAllReadOnlyInputsBgColorToLightGrayAndColorToGray",
+            "expect": "expect(document.querySelectorAll('input:read-only')).to.have.css('backgroundColor', '#ecf0f1');expect(document.querySelectorAll('input:read-only')).to.have.css('color', '#bdc3c7');expect(document.querySelectorAll('input:not(:read-only)')).not.to.have.css('backgroundColor', '#ecf0f1');expect(document.querySelectorAll('input:not(:read-only)')).not.to.have.css('color', '#bdc3c7');"
+        },
+        {
+            "title": "У всех элементов `input`, которые доступны для чтения и редактирования, установите цвет текста `#3498db`.",
+            "name": "setAllReadWriteInputsBgColorToLightGrayAndColorToBlue",
+            "expect": "expect(document.querySelectorAll('input:read-write')).to.have.css('color', '#3498db');expect(document.querySelectorAll('input:not(:read-write)')).not.to.have.css('color', '#3498db');"
+        }
+    ]
+}
+
+
+

@@ -1,0 +1,27 @@
+{
+    "assertions": [
+        {
+            "title": "Всем элементам, у которых указаны корректные значения установите цвет текста `#2ecc71`",
+            "name": "setAllValidInputsColorToGreen",
+            "expect": "expect(document.querySelectorAll('input:valid')).to.have.css('color', '#2ecc71');expect(document.querySelectorAll('input:invalid')).not.to.have.css('color', '#2ecc71');"
+        },
+        {
+            "title": "Всем элементам, у которых значения не удовлетворяют требованиям установите цвет текста `#e74c3c`",
+            "name": "setAllInvalidInputsColorToRed",
+            "expect": "expect(document.querySelectorAll('input:invalid')).to.have.css('color', '#e74c3c');expect(document.querySelectorAll('input:valid')).not.to.have.css('color', '#e74c3c');"
+        }
+    ],
+    "footnote": "considerBtnChangesAfterFirstGoalCompleted",
+    "footnoteTitle": "Заметьте, что при выполнении первой цели выделяются не только поля для ввода, но и кнопка."
+}
+
+
+
+
+
+
+
+
+
+
+

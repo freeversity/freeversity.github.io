@@ -1,0 +1,9 @@
+{
+    "id": 8,      
+    "name": "catography-9-to-12",
+    "htmlEntry": "index.html",
+    "markupReadonly": true,
+    "cssEntry": "style.css",
+    "articleEntry": "article.md",
+    "expectEntry": "expect.json"
+}

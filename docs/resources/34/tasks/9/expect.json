@@ -1,0 +1,20 @@
+{
+    "assertions": [
+        {
+            "title": "Всем заблокированным элементам `input` установите прозрачность `opacity: 0.5` и цвет фона `#bdc3c7`.",
+            "name": "setAllDisabledInputsOpacityTo05AndBgColorToGray",
+            "expect": "expect(document.querySelectorAll('input:disabled')).to.have.css('opacity', '0.5');expect(document.querySelectorAll('input:disabled')).to.have.css('backgroundColor', '#bdc3c7');expect(document.querySelectorAll('input:enabled')).not.to.have.css('opacity', '0.5');expect(document.querySelectorAll('input:enabled')).not.to.have.css('backgroundColor', '#bdc3c7');"
+        },
+        {
+            "title": "Всем доступным элементам формы установите стиль рамки `1px solid #34495e`.",
+            "name": "setAllEnabledInputsBorderto1PxSolidDarkGray",
+            "expect": "expect(document.querySelectorAll('input:enabled')).to.have.css('border', '1px solid #34495e');expect(document.querySelectorAll('input:disabled')).not.to.have.css('border', '1px solid #34495e');"
+        },
+        {
+            "title": "Уберите у кнопки атрибут `disabled` и проверьте, что стили автоматически поменялись.",
+            "name": "removeButtonDisabledAttr",
+            "expect": "expect(document.querySelector('input[type=submit]')).not.to.have.attr('disabled');"
+        }
+    ],
+    "strict": true
+}

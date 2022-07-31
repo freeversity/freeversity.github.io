@@ -1,0 +1,21 @@
+{
+    "assertions": [
+        {
+            "title": "Всем элементам `input`, у которых значение атрибута `value` полностью совпадает со словом `Кекс` установите цвет текста `#3498db`",
+            "name": "setInputsWithValueMuffinColorToBlue",
+            "expect": "expect(document.querySelector('input[value=Кекс]')).to.have.css('color', '#3498db');"
+        },
+        {
+            "title": "Всем элементам `input`, у которых значение атрибута `value` начинается с подстроки `Кекс-` установите цвет текста `#e74c3c`",
+            "name": "setInputsWithValueMuffinOnStartColorToRed",
+            "expect": "expect(document.querySelector('input[value^=\"Кекс-\"]')).to.have.css('color', '#e74c3c');"
+        },
+        {
+            "title": "Теперь, используя новую запись, всем элементам `input`, у которых значение атрибута `value` содержит префикс `Кекс` установите цвет рамки поля `#2ecc71`",
+            "name": "setInputsWithValueMuffinAsPrefixColorToGreen",
+            "expect": "expect(document.querySelector('input[value|=Кекс]')).to.have.css('borderColor', '#2ecc71');"
+        }
+    ],
+    "strict": true,
+    "globalAssertion": "expect(document.querySelector('input:not([value=Кекс])')).not.to.have.css('color', '#3498db');expect(document.querySelector('input:not([value^=\"Кекс-\"])')).not.to.have.css('color', '#e74c3c');expect(document.querySelector('input:not([value|=Кекс])')).not.to.have.css('borderColor', '#2ecc71');"
+}

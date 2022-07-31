@@ -1,0 +1,15 @@
+{
+    "assertions": [
+        {
+            "title": "Всем обязательным для заполнения элементам `input` установите рамку `1px solid #e74c3c`.",
+            "name": "setRequiredInputsBorderTo1PxSolidRed",
+            "expect": "expect(document.querySelectorAll('input:required')).to.have.css('border', '1px solid #e74c3c');expect(document.querySelectorAll('input:optional')).not.to.have.css('border', '1px solid #e74c3c');"
+        },
+        {
+            "title": "У всех обязательных для заполнения элементов `input` укажите фоновое изображение `required.png` без повторения с позицией `100% 50%`.",
+            "name": "setRequiredInputsBgToRequiredPngNoRepeat100Perc50Perc",
+            "expect": "expect(document.querySelectorAll('input:required')).to.have.css('background', 'url(\"required.png\") no-repeat 100% 50%');expect(document.querySelectorAll('input:optional')).not.to.have.css('background', 'url(\"required.png\") no-repeat 100% 50%');"
+        }
+    ]
+}
+

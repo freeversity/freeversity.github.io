@@ -1,0 +1,9 @@
+{
+    "id": 12,      
+    "name": "optional",
+    "htmlEntry": "index.html",
+    "markupReadonly": true,
+    "cssEntry": "style.css",
+    "articleEntry": "article.md",
+    "expectEntry": "expect.json"
+}

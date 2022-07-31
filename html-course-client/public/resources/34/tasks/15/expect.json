@@ -1,0 +1,16 @@
+{
+    "assertions": [
+        {
+            "title": "Всем элементам, у которых указанные значения попадают в диапазон, установите цвет рамки `#2ecc71`.",
+            "name": "setAllInRangeInputsBorderColorToGreen",
+            "expect": "expect(document.querySelectorAll('input:in-range')).to.have.css('borderColor', '#2ecc71');expect(document.querySelectorAll('input:not(:in-range)')).not.to.have.css('borderColor', '#2ecc71');"
+        },
+        {
+            "title": "Всем элементам, у которых значения не удовлетворяют требованиям, установите цвет рамки `#e74c3c`.",
+            "name": "setAllOutOfRangeInputsBorderColorToRed",
+            "expect": "expect(document.querySelectorAll('input:out-of-range')).to.have.css('borderColor', '#e74c3c');expect(document.querySelectorAll('input:not(:out-of-range)')).not.to.have.css('borderColor', '#e74c3c');"
+        }
+    ]
+}
+
+

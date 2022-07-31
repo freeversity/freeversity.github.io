@@ -251,8 +251,7 @@
                         {
                             "name": "selectors-niceties",
                             "id": 34,
-                            "entry": "/resources/34/chapter.json",
-                            "unfinished": true
+                            "entry": "/resources/34/chapter.json"
                         },
                         {
                             "name": "advanced-background-and-borders",

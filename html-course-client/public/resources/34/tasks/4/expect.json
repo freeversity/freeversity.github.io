@@ -1,0 +1,19 @@
+{
+    "intro": "repeatActionsFromPreviousTask",
+    "introTitle": "Повторите действия из предыдущего задания и сравните результат",
+    "assertions": [
+        {
+            "title": "Всем элементам `input`, у которых значение атрибута `value` содержит слово `кекс` установите цвет текста `#3498db`.",
+            "name": "setInputsWithValuesWordmuffinIcludedColorToBlue",
+            "expect": "expect(document.querySelectorAll('input[value~=кекс]')).to.have.css('color', '#3498db');"
+        },
+        {
+            "title": "А если слово `Кекс`, то цвет текста должен быть `#e74c3c`.",
+            "name": "setInputsWithValuesWordMuffinIcludedColorToRed",
+            "expect": "expect(document.querySelectorAll('input[value~=Кекс]')).to.have.css('color', '#e74c3c');"
+        }
+    ],
+    "strict": true,
+    "globalAssertion": "expect(document.querySelectorAll('input:not([value~=кекс])')).not.to.have.css('color', '#3498db');expect(document.querySelectorAll('input:not([value~=Кекс])')).not.to.have.css('color', '#e74c3c');"
+}
+

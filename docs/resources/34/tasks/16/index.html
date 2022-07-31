@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Объединяй и властвуй</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="course.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header class="page-header">Форма личных данных</header>
+    <main>
+      <form action="https://echo.htmlacademy.ru/courses" method="post">
+        <fieldset>
+          <legend>Заявление на получение визы на кухню</legend>
+          <label>Имя кота</label>
+          <input type="text" name="name" value="Кексик" required>
+          <label>Номер котопаспорта</label>
+          <input type="text" name="passport" pattern="[0-9]{3}-[0-9]{5}" placeholder="Формат номера XXX-XXXXX" required>
+          <div class="half-width">
+            <label>Количество гостей</label>
+            <input type="number" name="guests">
+          </div>
+          <div class="half-width">
+            <label>Количество блюд</label>
+            <input type="number" name="meals" value="3" required>
+          </div>
+          <div class="half-width">
+            <label>Прозвище</label>
+            <input type="text" name="nickname" value="Кекс">
+          </div>
+          <div class="half-width">
+            <label>Подпись</label>
+            <input type="text" name="sign" required value="Кекс">
+          </div>
+        </fieldset>
+        <div class="buttons">
+          <input type="submit" value="Оформить">
+        </div>
+      </form>
+    </main>
+    <footer class="page-footer"></footer>
+  </body>
+</html>

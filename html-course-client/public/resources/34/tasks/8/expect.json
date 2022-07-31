@@ -1,0 +1,31 @@
+{
+    "assertions": [
+        {
+            "title": "Все фотографии в формате `gif` плохого качества, надо их выкинуть: установите им `display: none;`.",
+            "name": "setGifsImagesDisplayToNone",
+            "expect": "expect(document.querySelector('img[src$=\".gif\"]')).to.have.css('display', 'none');expect(document.querySelector('img:not([src$=\".gif\"])')).not.to.have.css('display', 'none');"
+        },
+        {
+            "title": "Все фотографии в формате `jpg` поставьте в рамку: добавьте рамку `5px solid #f6b267` и тень `box-shadow: 0 0 0 3px #b77d3e`.",
+            "name": "setJpgImagesBordersTo5PxSolidOrangeAndBoxShadowTo0003PxBrown",
+            "expect": "expect(document.querySelector('img[src$=\".jpg\"]')).to.have.css('border', '5px solid #f6b267');expect(document.querySelector('img[src$=\".jpg\"]')).to.have.css('boxShadow', '0 0 0 3px #b77d3e');expect(document.querySelector('img:not([src$=\".jpg\"])')).not.to.have.css('border', '5px solid #f6b267');expect(document.querySelector('img:not([src$=\".jpg\"])')).not.to.have.css('boxShadow', '0 0 0 3px #b77d3e');"
+        },
+        {
+            "title": "А для членов своей семьи в `jpg` Кекс решил раскрасить рамочки в другой цвет: цвет рамки `#2980b9` и цвет тени `#34495e` (остальные параметры как у других рамок).",
+            "name": "setJpgImagesOfMuffunsRelativesBorderColorToBlueAndBoxShadowTo0003PxGray",
+            "expect": "expect(document.querySelector('img[src$=\".jpg\"][alt*=Кекс]')).to.have.css('borderColor', '#2980b9');expect(document.querySelector('img[src$=\".jpg\"][alt*=Кекс]')).to.have.css('boxShadow', '0 0 0 3px #34495e');expect(document.querySelector('img:not([src$=\".jpg\"]):not([alt*=Кекс])')).not.to.have.css('borderColor', '#2980b9');expect(document.querySelector('img:not([src$=\".jpg\"]):not([alt*=Кекс])')).not.to.have.css('boxShadow', '0 0 0 3px #34495e');"
+        }
+    ],
+    "strict": true
+}
+
+
+
+
+
+
+
+
+
+
+

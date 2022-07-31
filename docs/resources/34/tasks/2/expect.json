@@ -1,0 +1,25 @@
+{
+    "assertions": [
+        {
+            "title": "Всем элементам `input`, у которых значение атрибута `value` заканчивается подстрокой `кекс` установите цвет текста `#3498db`.",
+            "name": "setInputsWithValuesmuffinAtEndColorToBlue",
+            "expect": "expect(document.querySelectorAll('input[value$=кекс]')).to.have.css('color', '#3498db');"
+        },
+        {
+            "title": "Если же значение атрибута заканчивается подстрокой `Кекс`, то цвет текста должен быть `#e74c3c`.",
+            "name": "setInputsWithValuesMuffinAtEndColorToRed",
+            "expect": "expect(document.querySelectorAll('input[value$=Кекс]')).to.have.css('color', '#e74c3c');"
+        }
+    ],
+    "globalAssertion": "expect(document.querySelectorAll('input:not([value$=кекс])')).not.to.have.css('color', '#3498db');expect(document.querySelectorAll('input:not([value$=Кекс])')).not.to.have.css('color', '#e74c3c');"
+}
+
+
+
+
+
+
+
+
+
+

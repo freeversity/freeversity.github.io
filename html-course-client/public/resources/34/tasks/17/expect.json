@@ -1,0 +1,33 @@
+{
+    "assertions": [
+        {
+            "title": "В CSS-правило, начинающееся с `#father:checked`, добавьте `display: none;` и поставьте первый флажок.",
+            "name": "removeBoxForFatherOnCheckboxChecked",
+            "expect": "expect(document).to.have.cssRule('#father:checked ~ .cat-in-box[title^=\"Отец\"]::before', 'display', 'none');"
+        },
+        {
+            "title": "В CSS-правило, начинающееся с `#rudolf:checked`, добавьте `display: none;` и поставьте второй флажок.",
+            "name": "removeBoxForRudolfOnCheckboxChecked",
+            "expect": "expect(document).to.have.cssRule('#rudolf:checked ~ .cat-in-box[title$=\"Рудольф\"]::before', 'display', 'none');"
+        },
+        {
+            "title": "В CSS-правило, начинающееся с `#snow:checked`, добавьте `display: none;` и поставьте третий флажок.",
+            "name": "removeBoxForSnowOnCheckboxChecked",
+            "expect": "expect(document).to.have.cssRule('#snow:checked ~ .cat-in-box[title$=\"Снежок\"]::before', 'display', 'none');"
+        }
+    ],
+    "footnote": "switchCheckboxesToSeeCatsBeenShownAndHidden",
+    "footnoteTitle": "Ставьте и снимайте флажки и смотрите, как коты появляются и исчезают."
+}
+
+
+
+
+
+
+
+
+
+
+
+

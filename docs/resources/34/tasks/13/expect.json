@@ -1,0 +1,14 @@
+{
+    "assertions": [
+        {
+            "title": "Всем элементам `label`, стоящим после отмеченных элементов `input`, установите цвет текста `#1abc9c`",
+            "name": "setLabelsAfterCheckedInputsColorToGreen",
+            "expect": "expect(document.querySelectorAll('input:checked + label')).to.have.css('color', '#1abc9c');expect(document.querySelectorAll('input:not(:checked) + label')).not.to.have.css('color', '#1abc9c');"
+        },
+        {
+            "title": "Используя селектор отрицания, всем элементам `input`, которые не отмечены `checked`, установите отступ справа `15px`",
+            "name": "setInputsNotCheckedMarginLeftTo25Px",
+            "expect": "expect(document.querySelectorAll('input:not(:checked)')).to.have.css('marginRight', '15px');expect(document.querySelectorAll('input:checked')).not.to.have.css('marginRight', '15px');"
+        }
+    ]
+}

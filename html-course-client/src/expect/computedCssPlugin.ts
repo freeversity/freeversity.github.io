@@ -9,6 +9,7 @@ export function computedCssPlugin(
         'css', 
         function (this: any, prop: string, value: string) {
             const elemsObject = utils.flag(this, 'object') as HTMLElement | SVGElement | NodeList;
+            const pseudo = utils.flag(this, 'message') as string | undefined;
 
             let elems: Array<HTMLElement | SVGElement>;
 
@@ -23,7 +24,7 @@ export function computedCssPlugin(
                 const win = elem.ownerDocument.defaultView!;
 
                 const originalExpected = value;
-                const originalActual = win.getComputedStyle(elem)[prop as any];
+                const originalActual = win.getComputedStyle(elem, pseudo)[prop as any];
 
                 const expected = getCssValue(prop, value, doc);
                 const actual = getCssValue(prop, originalActual, doc);

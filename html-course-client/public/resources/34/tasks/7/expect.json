@@ -1,0 +1,20 @@
+{
+    "assertions": [
+        {
+            "title": "Найдите всю семью Кекса. Ищите в названиях подстроку `Кекс`.",
+            "name": "openMuffinsRelativesBoxes",
+            "expect": "expect(document.querySelectorAll('[title*=Кекс]'), '::before').to.have.css('display', 'none');expect(document.querySelectorAll('.cat-in-box:not([title*=Кекс])'), '::before').not.to.have.css('display', 'none');"
+        },
+        {
+            "title": "Закройте коробки.",
+            "name": "closeAllBoxes",
+            "expect": "expect(document.querySelectorAll('.cat-in-box'), '::before').to.have.css('display', 'block');"
+        },
+        {
+            "title": "А теперь найдем его друзей. У них имя начинается с подстроки `Друг`.",
+            "name": "openMuffinsFriendsBoxes",
+            "expect": "expect(document.querySelectorAll('[title^=Друг]'), '::before').to.have.css('display', 'none');expect(document.querySelectorAll('.cat-in-box:not([title^=Друг])'), '::before').not.to.have.css('display', 'none');"
+        }
+    ],
+    "strict": true
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Псевдокласс :checked</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="course.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header class="page-header">Форма личных данных</header>
+    <main>
+      <form action="https://echo.htmlacademy.ru/courses" method="post">
+        <fieldset>
+          <legend>Заявление на получение обеда</legend>
+          <label>Имя кота</label>
+          <input type="text" name="name" value="Кексик">
+          <div class="half-width">
+            <label>Выберите мясо</label>
+            <input type="radio" value="1" id="rb-1" name="type"><label for="rb-1">Курица</label><br/>
+            <input type="radio" value="2" id="rb-2" name="type"><label for="rb-2">Кролик</label><br/>
+            <input type="radio" value="3" id="rb-3" name="type"><label for="rb-3">Говядина</label><br/>
+            <input type="radio" value="4" id="rb-4" name="type" checked><label for="rb-4">Индейка</label>
+          </div>
+          <div class="half-width">
+            <label>Дополнения</label>
+            <input type="checkbox" value="1" id="chb-1" name="add[]"><label for="chb-1">Ложка сметаны</label><br/>
+            <input type="checkbox" value="2" id="chb-2" name="add[]" checked><label for="chb-2">Соус</label><br/>
+            <input type="checkbox" value="3" id="chb-3" name="add[]" checked><label for="chb-3">Двойная порция</label><br/>
+            <input type="checkbox" value="4" id="chb-4" name="add[]"><label for="chb-4">Миска воды</label><br/>
+          </div>
+        </fieldset>
+        <div class="buttons">
+          <input type="submit" value="Оформить">
+        </div>
+      </form>
+    </main>
+    <footer class="page-footer"></footer>
+  </body>
+</html>

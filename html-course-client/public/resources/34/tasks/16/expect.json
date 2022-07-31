@@ -1,0 +1,26 @@
+{
+    "assertions": [
+        {
+            "title": "У всех обязательных для заполнения элементов `input` с типом `number` уберите картинку с фона.",
+            "name": "setAllRequiredNumericInputsBgImageeToNone",
+            "expect": "expect(document.querySelectorAll('input[type=number]:required')).to.have.css('backgroundImage', 'none');expect(document.querySelectorAll('input:required:not([type=number])')).not.to.have.css('backgroundImage', 'none');"
+        },
+        {
+            "title": "У всех обязательных для заполнения элементов `input`, которые заполнены корректно, установите цвет фона `#94e6b6` и цвет рамки `#2ecc71`.",
+            "name": "setAllValidRequiredInputsBgColorToLightGreenAndBorderColorToGreen",
+            "expect": "expect(document.querySelectorAll('input:valid:required')).to.have.css('backgroundColor', '#94e6b6');expect(document.querySelectorAll('input:valid:required')).to.have.css('borderColor', '#2ecc71');expect(document.querySelectorAll('input:not(:valid), input:not(:required)')).not.to.have.css('backgroundColor', '#94e6b6');expect(document.querySelectorAll('input:not(:valid), input:not(:required)')).not.to.have.css('borderColor', '#2ecc71');"
+        },
+        {
+            "title": "У всех обязательных для заполнения элементов `input`, которые заполнены корректно и содержат подстроку `Кекс` во введенном значении, установите цвет текста `#ffffff`.",
+            "name": "setAllRequiredValidInputsWithMuffinSubstringInValueColorToWhite",
+            "expect": "expect(document.querySelectorAll('input[value*=Кекс]:required:valid')).to.have.css('color', '#fff');expect(document.querySelectorAll('input:required:valid:not([value*=Кекс])')).not.to.have.css('color', '#fff');"
+        }
+    ],
+    "strict": true
+}
+
+
+
+
+
+

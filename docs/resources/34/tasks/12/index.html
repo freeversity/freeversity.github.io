@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Псевдокласс :optional</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="course.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header class="page-header">Форма личных данных</header>
+    <main>
+      <form action="https://echo.htmlacademy.ru/courses" method="post">
+        <fieldset>
+          <legend>Заявление на получение визы на кухню</legend>
+          <label>Имя кота</label>
+          <input type="text" name="name" value="Кексик">
+          <label>Номер котопаспорта</label>
+          <input type="text" name="passport" pattern="[0-9]{3}-[0-9]{5}" placeholder="Формат номера XXX-XXXXX" required>
+          <div class="half-width">
+            <label>Дата рождения</label>
+            <input type="text" name="birthday">
+          </div>
+          <div class="half-width">
+            <label>Посещения</label>
+            <select name="type">
+              <option value="Каждый час">Каждый час</option>
+              <option value="Каждые 3 часа">Каждые 3 часа</option>
+              <option value="2 раза в день" selected>2 раза в день</option>
+              <option value="1 раз в день">1 раз в день</option>
+            </select>
+          </div>
+        </fieldset>
+        <div class="buttons">
+          <input type="submit" value="Оформить">
+        </div>
+      </form>
+    </main>
+    <footer class="page-footer"></footer>
+  </body>
+</html>

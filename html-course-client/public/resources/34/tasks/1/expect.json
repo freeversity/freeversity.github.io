@@ -1,0 +1,20 @@
+{
+    "intro": "setInputsWithNamesStartedOnCatProps",
+    "introTitle": "Всем элементам `input`, у которых значение атрибута `name` начинается с `cat`:",
+    "assertions": [
+        {
+            "title": "Установите цвет рамки `#000000` и цвет текста `#3498db`.",
+            "name": "setInputsWithNamesStartedOnCatBorderColorBlackAndColorBlue",
+            "expect": "expect(document.querySelectorAll('input[name^=cat]')).to.have.css('borderColor', '#000');expect(document.querySelectorAll('input[name^=cat]')).to.have.css('color', '#3498db');"
+        },
+        {
+            "title": "Установите фоновое изображение `cat-paw.png` без повторения в позиции `100% 50%`.",
+            "name": "setInputsWithNamesStartedOnCatBgToCatPawPngNoRepeat100%50%",
+            "expect": "expect(document.querySelectorAll('input[name^=cat]')).to.have.css('background', 'url(\"cat-paw.png\") no-repeat 100% 50%');"
+        }
+    ],
+    "globalAssertion": "expect(document.querySelectorAll('input:not([name^=cat]')).not.to.have.css('borderColor', '#000');expect(document.querySelectorAll('input:not([name^=cat])')).not.to.have.css('color', '#3498db');expect(document.querySelectorAll('input:not([name^=cat])')).not.to.have.css('background', 'url(\"cat-paw.png\") no-repeat 100% 50%');"
+}
+
+
+

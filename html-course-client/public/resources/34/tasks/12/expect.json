@@ -1,0 +1,16 @@
+{
+    "assertions": [
+        {
+            "title": "Всем необязательным текстовым полям установите рамку `1px solid #3498db`. (У кнопки не должно ничего меняться)",
+            "name": "setAllOptionalTextInputBorderTo1PxSolidBlue",
+            "expect": "expect(document.querySelectorAll('input[type=text]:optional')).to.have.css('border', '1px solid #3498db');expect(document.querySelectorAll('input:not(:optional), input:not([type=text])')).not.to.have.css('border', '1px solid #3498db');"
+        },
+        {
+            "title": "Текстовым полям, которые являются необязательными для ввода укажите фоновое изображение `optional.png` без повторения с позицией `100% 50%`.",
+            "name": "setAllOptionalTextInputBgToOptionalPngNoReepeat100Perc50Perc",
+            "expect": "expect(document.querySelectorAll('input[type=text]:optional')).to.have.css('background', 'url(optional.png) no-repeat 100% 50%');expect(document.querySelectorAll('input:not(:optional), input:not([type=text])')).not.to.have.css('background', 'url(optional.png) no-repeat 100% 50%');"
+        }
+    ]
+}
+
+

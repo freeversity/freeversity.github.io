@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Псевдоклассы :read-only и :read-write</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="course.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header class="page-header">Форма личных данных</header>
+    <main>
+      <form action="https://echo.htmlacademy.ru/courses" method="post">
+        <fieldset>
+          <legend>Заявление на получение визы на кухню</legend>
+          <label>Имя кота</label>
+          <input type="text" name="name" value="Кексик" readonly>
+          <label>Номер котопаспорта</label>
+          <input type="text" name="passport" value="ILV-66893">
+          <div class="half-width">
+            <label>Дата рождения</label>
+            <input type="datetime" name="birthday" readonly value="18-07-2012">
+          </div>
+          <div class="half-width">
+            <label>Посещения</label>
+            <select name="type">
+              <option value="Каждый час">Каждый час</option>
+              <option value="Каждые 3 часа">Каждые 3 часа</option>
+              <option value="2 раза в день" selected>2 раза в день</option>
+              <option value="1 раз в день">1 раз в день</option>
+            </select>
+          </div>
+        </fieldset>
+        <div class="buttons">
+          <input type="submit" value="Оформить">
+        </div>
+      </form>
+    </main>
+    <footer class="page-footer"></footer>
+  </body>
+</html>

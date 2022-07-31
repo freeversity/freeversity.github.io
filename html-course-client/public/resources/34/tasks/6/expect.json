@@ -1,0 +1,22 @@
+{
+    "assertions": [
+        {
+            "title": "Для начала давайте заглянем сразу во все коробки и посмотрим кто там сидит. Откройте все коробки.",
+            "name": "openAllBoxes",
+            "expect": "expect(document.querySelectorAll('.cat-in-box'), '::before').to.have.css('display', 'none');"
+        },
+        {
+            "title": "Закройте коробки.",
+            "name": "closeAllBoxes",
+            "expect": "expect(document.querySelectorAll('.cat-in-box'), '::before').not.to.have.css('display', 'none');"
+        },
+        {
+            "title": "Найдем Кекса. Его имя в атрибуте `title` записано как `Кекс`.",
+            "name": "openMuffinsBox",
+            "expect": "expect(document.querySelectorAll('.cat-in-box[title=\"Кекс\"]'), '::before').to.have.css('display', 'none');expect(document.querySelectorAll('.cat-in-box:not([title=\"Кекс\"])'), '::before').not.to.have.css('display', 'none');"
+        }
+    ],
+    "strict": true
+}
+
+
