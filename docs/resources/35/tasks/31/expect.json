@@ -1,0 +1,26 @@
+{
+    "intro": "setArrowBeforeProps",
+    "introTitle": "Псевдоэлементам `.arrow::before`:",
+    "assertions": [
+        {
+            "title": "Задайте сплошную рамку толщиной `20px` и цветом `#0074d9`.",
+            "name": "setArrowBeforeBorderTo20PxSolidBlue",
+            "expect": "expect(document.querySelectorAll('.arrow'), '::before').to.have.css('border', '20px solid #0074d9');"
+        },
+        {
+            "title": "Затем измените толщину правой и левой сторон рамки на `10px`.",
+            "name": "setArrowBeforeBorderRightWidthAndBorderLeftWidthTo10Px",
+            "expect": "expect(document.querySelectorAll('.arrow'), '::before').to.have.css('borderRightWidth', '10px');expect(document.querySelectorAll('.arrow'), '::before').to.have.css('borderLeftWidth', '10px');"
+        },
+        {
+            "title": "Затем сделайте правую и левую стороны рамки прозрачными.",
+            "name": "setArrowBeforeBorderRightColorAndBorderLeftColorToTransparent",
+            "expect": "expect(document.querySelectorAll('.arrow'), '::before').to.have.css('borderLeftColor', 'transparent');expect(document.querySelectorAll('.arrow'), '::before').to.have.css('borderRightColor', 'transparent');"
+        }
+    ],
+    "strict": true
+}
+
+
+
+

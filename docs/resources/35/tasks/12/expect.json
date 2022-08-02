@@ -1,0 +1,17 @@
+{
+    "intro": "setPortraitBorderRadius",
+    "introTitle": "Задайте портрету скругление:",
+    "assertions": [
+        {
+            "title": "верхних левого и правого углов — `100px 50px`,",
+            "name": "setPortraitBorderRadiusTopLeftAndTopRightTo100Px50Px",
+            "expect": "expect(document.querySelector('.portrait')).to.have.css('borderTopLeftRadius', '100px 50px');expect(document.querySelector('.portrait')).to.have.css('borderTopRightRadius', '100px 50px');"
+        },
+        {
+            "title": "нижних левого и правого углов — `20% 50%`.",
+            "name": "setPortraitBorderRadiusBottomLeftAndBottomRightTo20Perc50Perc",
+            "expect": "expect(document.querySelector('.portrait')).to.have.css('borderBottomLeftRadius', '20% 50%');expect(document.querySelector('.portrait')).to.have.css('borderBottomRightRadius', '20% 50%');"
+        }
+    ]
+}
+

@@ -5,6 +5,7 @@ import { useParams } from "react-router";
 import { WorkDesk } from "../../components/WorkDesk/WorkDesk";
 import { ChapterType } from "../../routers/ChapterRouter";
 import { Link } from "react-router-dom";
+import { TaskHeader } from "../../components/TaskHeader/TaskHeader";
 
 export interface TaskType {
     id: number;
@@ -159,29 +160,13 @@ const Task: FC<TaskProps> = ({className, baseUrl, tasks}) => {
     return (
         <div className={cx('task', className)}>
             <div className={cx('task__wrapper', className)}>
-                <header className={cx('task__header')}>
-                    <Link to="/" className={cx('task__header-logo')}>{'<- Home'}</Link>
-                    <nav className={cx('task__nav')}>
-                        {prevTaskId && (
-                            <Link 
-                                className={cx('task__task-link', 'task__task-link--prev')} 
-                                to={`../tasks/${prevTaskId}`}
-                            >
-                                &lt;
-                            </Link>
-                        )}
-                        {task ? <h1 className={cx('task__heading')}>{task.name}</h1> : <div className={cx('task__heading')} />}
-                        {nextTaskId && (
-                            <Link 
-                                className={cx('task__task-link', 'task__task-link--prev', {'task__task-link--active': nextTaskActive})} 
-                                to={`../tasks/${nextTaskId}`}
-                            >
-                                &gt;
-                            </Link>
-                        )}
-                    </nav>
-                    <button className={cx('task__article-btn')} onClick={() => setArticleShown(!articleShown)}>Article</button>
-                </header>
+                <TaskHeader 
+                    taskName={task?.name}
+                    className={cx('task__header')}
+                    tasks={tasks}
+                    taskDone={nextTaskActive}
+                    onArticleToggle={() => {setArticleShown((isShown) => !isShown)}}
+                />
                 <main className={cx('task__content')}>
                     {isPending && 'Loading...'}
                     {task && markup && (expect || refMarkup) && article && (!task.cssEntry || css !== undefined) && (

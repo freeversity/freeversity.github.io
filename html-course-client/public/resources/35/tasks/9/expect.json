@@ -1,0 +1,22 @@
+{
+    "assertions": [
+        {
+            "title": "Задайте портрету повторение фона со значением `repeat space`,",
+            "name": "setPortraitBgRepeatToRepeatSpace",
+            "expect": "expect(document.querySelector('.portrait')).to.have.css('backgroundRepeat', 'repeat space');"
+        },
+        {
+            "title": "а затем `space`.",
+            "name": "setPortraitBgRepeatToSpace",
+            "expect": "expect(document.querySelector('.portrait')).to.have.css('backgroundRepeat', 'space');"
+        },
+        {
+            "title": "Затем задайте портрету ширину `500px`.",
+            "name": "setPortraitWidthTo500Px",
+            "expect": "expect(document.querySelector('.portrait')).to.have.css('width', '500px');"
+        }
+    ]
+}
+
+
+

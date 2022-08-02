@@ -1,0 +1,17 @@
+.portrait {
+  box-sizing: border-box;
+  padding: 20px;
+  width: 250px;
+  height: 250px;
+  border: 20px solid rgba(255, 255, 0, 0.4);
+  background: url("img/keks.jpg") no-repeat #ffffff;
+  background-size: 100% 100%;
+}
+
+.portrait-small {
+  background-origin: content-box;
+}
+
+.portrait-full {
+  background-origin: border-box;
+}

@@ -1,0 +1,34 @@
+{
+    "intro": "setArrowRoundAfterProps",
+    "introTitle": "Псевдоэлементу `.arrow-round::after`:",
+    "assertions": [
+        {
+            "title": "Задайте сплошную рамку толщиной `100px` и цветом `#ffffff`, цвет нижней стороны рамки — `#0074d9`.",
+            "name": "setArrowRoundAfterBorderTo100PxSolidWhiteAndBorderBottomColorToBlue",
+            "expect": "expect(document.querySelectorAll('.arrow-round'), '::after').to.have.css('borderTop', '100px solid #fff');expect(document.querySelectorAll('.arrow-round'), '::after').to.have.css('borderLeft', '100px solid #fff');expect(document.querySelectorAll('.arrow-round'), '::after').to.have.css('borderRight', '100px solid #fff');expect(document.querySelectorAll('.arrow-round'), '::after').to.have.css('borderBottom', '100px solid #0074d9');"
+        },
+        {
+            "title": "Задайте координаты `top: -45px` и `left: 130px`.",
+            "name": "setArrowRoundAfterTopToNeg45PxAndLeftTo130Px",
+            "expect": "expect(document.querySelectorAll('.arrow-round'), '::after').to.have.css('top', '-45px');expect(document.querySelectorAll('.arrow-round'), '::after').to.have.css('left', '130px');"
+        },
+        {
+            "title": "Обнулите толщину правой и верхней сторон рамки,",
+            "name": "setArrowRoundAfterBorderTopWidtthAndBorderRightWidthTo0",
+            "expect": "expect(document.querySelectorAll('.arrow-round'), '::after').to.have.css('borderRightWidth', '0');expect(document.querySelectorAll('.arrow-round'), '::after').to.have.css('borderTopWidth', '0');"
+        },
+        {
+            "title": "левую сторону рамки сделайте прозрачной.",
+            "name": "setArrowRoundAfterBorderLeftColorToTransparent",
+            "expect": "expect(document.querySelectorAll('.arrow-round'), '::after').to.have.css('borderLeftColor', 'transparent');"
+        }
+    ],
+    "strict": true
+}
+
+
+
+
+
+
+

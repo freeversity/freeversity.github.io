@@ -22,3 +22,14 @@ export function getCssValue(prop: string, value: string, doc: Document = documen
 
     return expectedValue;
 }
+
+
+export function ignoreCssValueTranspiling(prop: string) {
+    return {
+        'borderWidth': true,
+        'borderTopWidth': true,
+        'borderBottomWidth': true,
+        'borderLeftWidth': true,
+        'borderRightWidth': true,
+    }[prop];
+}

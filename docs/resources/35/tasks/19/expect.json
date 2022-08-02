@@ -1,0 +1,19 @@
+{
+    "assertions": [
+        {
+            "title": "Блоку `.portrait` задайте свойство `border-image-outset` со значением `30px`,",
+            "name": "setPortraitBorderImageOutsetTo30Px",
+            "expect": "expect(document.querySelector('.portrait')).to.have.css('borderImageOutset', '30px');"
+        },
+        {
+            "title": "а затем поменяйте значение на `60px`.",
+            "name": "setPortraitBorderImageOutsetTo60Px",
+            "expect": "expect(document.querySelector('.portrait')).to.have.css('borderImageOutset', '60px');"
+        }
+    ],
+    "strict": true
+}
+
+
+
+

@@ -1,0 +1,18 @@
+{
+    "assertions": [
+        {
+            "title": "Портрету `.portrait-content-box` задайте границы фона `content-box`,",
+            "name": "setPortraitContentBoxBgOriginToContentBox",
+            "expect": "expect(document.querySelector('.portrait-content-box')).to.have.css('backgroundOrigin', 'content-box');"
+        },
+        {
+            "title": "а затем портрету `.portrait-border-box` — `border-box`.",
+            "name": "setPortraitBorderBoxBgOriginToBorderBox",
+            "expect": "expect(document.querySelector('.portrait-border-box')).to.have.css('backgroundOrigin', 'border-box');"
+        }
+    ]
+}
+
+
+
+

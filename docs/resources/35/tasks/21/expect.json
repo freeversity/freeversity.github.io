@@ -1,0 +1,23 @@
+{
+    "assertions": [
+        {
+            "title": "Портрету задайте фоновое изображение рамки `img/eco-frame.png` и свойство `border-image-slice` со значением `60`,",
+            "name": "setPortraitBorderImageToEcoFramePngAndBorderImageSliceTo60",
+            "expect": "expect(document.querySelector('.portrait')).to.have.css('borderImageSource', 'url(\"img/eco-frame.png\"');expect(document.querySelector('.portrait')).to.have.css('borderImageSlice', '60');"
+        },
+        {
+            "title": "затем свойство `border-image-repeat` со значением `repeat`",
+            "name": "setPortraitBorderImageRepeatToRepeat",
+            "expect": "expect(document.querySelector('.portrait')).to.have.css('borderImageRepeat', 'repeat');"
+        },
+        {
+            "title": "и со значением `round`.",
+            "name": "setPortraitBorderImageRepeatToRound",
+            "expect": "expect(document.querySelector('.portrait')).to.have.css('borderImageRepeat', 'round');"
+        }
+    ],
+    "strict": true
+}
+
+
+

@@ -1,0 +1,8 @@
+{
+    "id": 4,      
+    "name": "background-origin",
+    "htmlEntry": "index.html",
+    "cssEntry": "style.css",
+    "articleEntry": "article.md",
+    "expectEntry": "expect.json"
+}

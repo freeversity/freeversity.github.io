@@ -1,4 +1,4 @@
-import { getCssValue } from "./getCssValue";
+import { getCssValue, ignoreCssValueTranspiling } from "./getCssValue";
 
 declare global {
     interface Window {
@@ -65,7 +65,7 @@ export function cssRulePlugin(
 
                         return Object.keys(prop).length === style.length && Object.entries(prop).every(([prop, value]) => {
                             const expectedValue = getCssValue(prop, value, doc);
-                            const actual = getCssValue(prop, style[prop as any], doc);
+                            const actual = ignoreCssValueTranspiling(prop) ? style[prop as any] : getCssValue(prop, style[prop as any], doc);
             
                             return actual === expectedValue;
                         });
@@ -86,7 +86,7 @@ export function cssRulePlugin(
 
                     return !!rule && Object.keys(prop).length === rule.style.length && Object.entries(prop).every(([prop, value]) => {
                         const expectedValue = getCssValue(prop, value, doc);
-                        const actual = getCssValue(prop, rule.style[prop as any], doc);
+                        const actual = ignoreCssValueTranspiling(prop) ? rule.style[prop as any] : getCssValue(prop, rule.style[prop as any], doc);
         
                         return actual === expectedValue;
                     });
@@ -124,7 +124,7 @@ export function cssRulePlugin(
 
                     if (!rules.length) return false;
 
-                    const actual = getCssValue(prop, rules[0].style[prop as any], doc)
+                    const actual = ignoreCssValueTranspiling(prop) ? rules[0].style[prop as any] : getCssValue(prop, rules[0].style[prop as any], doc)
 
                     return actual === expectedValue;
                 });

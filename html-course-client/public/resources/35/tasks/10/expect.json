@@ -1,0 +1,31 @@
+{
+    "assertions": [
+        {
+            "title": "Задайте портрету сплошную внешнюю рамку толщиной `20px` и цветом `silver`,",
+            "name": "setPortraitOutlineTo20PxSolidSilver",
+            "expect": "expect(document.querySelector('.portrait')).to.have.css('outline', '20px solid silver');"
+        },
+        {
+            "title": "затем измените её стиль на `ridge`.",
+            "name": "setPortraitOutlineTo20PxRidgeSilver",
+            "expect": "expect(document.querySelector('.portrait')).to.have.css('outline-style', 'ridge');"
+        },
+        {
+            "title": "Потом задайте отступ рамки `10px`,",
+            "name": "setPortraitOutlineOffsetTo10Px",
+            "expect": "expect(document.querySelector('.portrait')).to.have.css('outline-offset', '10px');"
+        },
+        {
+            "title": "а затем `-40px`.",
+            "name": "setPortraitOutlineOffsetToNeg40Px",
+            "expect": "expect(document.querySelector('.portrait')).to.have.css('outline-offset', '-40px');"
+        }
+    ],
+    "strict": true
+}
+
+
+
+
+
+

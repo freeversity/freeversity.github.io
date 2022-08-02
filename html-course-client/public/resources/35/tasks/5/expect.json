@@ -1,0 +1,31 @@
+{
+    "assertions": [
+        {
+            "title": "Портрету `.portrait-small` задайте свойство `background-clip` со значением `padding-box`,",
+            "name": "setPortraitSmallBgClipToPaddingBox",
+            "expect": "expect(document.querySelector('.portrait-small')).to.have.css('backgroundClip', 'padding-box');"
+        },
+        {
+            "title": "а затем `content-box`.",
+            "name": "setPortraitSmallBgClipToContentBox",
+            "expect": "expect(document.querySelector('.portrait-small')).to.have.css('backgroundClip', 'content-box');"
+        },
+        {
+            "title": "Портрету `.portrait-full` задайте `background-clip` со значением `padding-box`,",
+            "name": "setPortraitFullBgClipToPaddingBox",
+            "expect": "expect(document.querySelector('.portrait-full')).to.have.css('backgroundClip', 'padding-box');"
+        },
+        {
+            "title": "а затем `content-box`.",
+            "name": "setPortraitFullBgClipToContentBox",
+            "expect": "expect(document.querySelector('.portrait-full')).to.have.css('backgroundClip', 'content-box');"
+        }
+    ],
+    "strict": true
+}
+
+
+
+
+
+

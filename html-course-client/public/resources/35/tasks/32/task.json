@@ -1,0 +1,8 @@
+{
+    "id": 32,      
+    "name": "triangles-on-practice-2",
+    "htmlEntry": "index.html",
+    "cssEntry": "style.css",
+    "articleEntry": "article.md",
+    "expectEntry": "expect.json"
+}

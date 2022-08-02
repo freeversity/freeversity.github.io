@@ -1,0 +1,28 @@
+{
+    "assertions": [
+        {
+            "title": "Для `.arrow-down::before` обнулите толщину нижней рамки,",
+            "name": "setArrowDownBeforeBorderBottomWidthTo0",
+            "expect": "expect(document.querySelectorAll('.arrow-down'), '::before').to.have.css('borderBottomWidth', '0');"
+        },
+        {
+            "title": "затем для `.arrow-up::before` обнулите толщину верхней рамки.",
+            "name": "setArrowUpBeforeBorderTopWidthTo0",
+            "expect": "expect(document.querySelectorAll('.arrow-up'), '::before').to.have.css('borderTopWidth', '0');"
+        },
+        {
+            "title": "Для `.arrow::before` задайте свойство `display: inline-block`,",
+            "name": "setArrowBeforeDisplayToInlineBlock",
+            "expect": "expect(document.querySelectorAll('.arrow-down'), '::before').to.have.css('display', 'inline-block');"
+        },
+        {
+            "title": "а затем самим ссылкам `.arrow` обнулите размер шрифта.",
+            "name": "setArrowFontSizeTo0",
+            "expect": "expect(document.querySelectorAll('.arrow')).to.have.css('fontSize', '0');"
+        }
+    ]
+}
+
+
+
+

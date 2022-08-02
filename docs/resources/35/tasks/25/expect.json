@@ -1,0 +1,26 @@
+{
+    "assertions": [
+        {
+            "title": "Блоку `.square` задайте сплошную рамку толщиной `100px` и цветом `#ffffff`,",
+            "name": "setSquareBorderTo100PxBorderWhite",
+            "expect": "expect(document.querySelectorAll('.square')).to.have.css('border', '100px solid #fff');"
+        },
+        {
+            "title": "измените цвет левой стороны рамки на `#0074d9`, а правой — на `#2ecc40`,",
+            "name": "setSquareBorderLeftColorToBlueAndBorderRightColorToGreen",
+            "expect": "expect(document.querySelectorAll('.square')).to.have.css('borderLeftColor', '#0074d9');expect(document.querySelectorAll('.square')).to.have.css('borderRightColor', '#2ecc40');"
+        },
+        {
+            "title": "цвет верхней стороны — на `#ff4136`, нижней — `на #ffdc00`",
+            "name": "setSquareBorderTopColorToRedAndBorderRightColorToYellow",
+            "expect": "expect(document.querySelectorAll('.square')).to.have.css('borderTopColor', '#ff4136');expect(document.querySelectorAll('.square')).to.have.css('borderBottomColor', '#ffdc00');"
+        },
+        {
+            "title": "и, наконец, задайте `.square` нулевые ширину и высоту.",
+            "name": "setSquareWidthAndHeightTo0",
+            "expect": "expect(document.querySelectorAll('.square')).to.have.css('width', '0');expect(document.querySelectorAll('.square')).to.have.css('height', '0');"
+        }
+    ],
+    "strict": true
+}
+

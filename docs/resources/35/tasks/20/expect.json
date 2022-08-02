@@ -1,0 +1,31 @@
+{
+    "assertions": [
+        {
+            "title": "Портрету задайте фоновое изображение рамки `img/frame.png`,",
+            "name": "setPortraitBorderImageToFramePng",
+            "expect": "expect(document.querySelector('.portrait')).to.have.css('borderImageSource', 'url(\"img/frame.png\")');"
+        },
+        {
+            "title": "свойство `border-image-slice` со значением `100`,",
+            "name": "setPortraitBorderImageSliceTo100",
+            "expect": "expect(document.querySelector('.portrait')).to.have.css('borderImageSlice', '100');"
+        },
+        {
+            "title": "а затем со значением `100 fill`,",
+            "name": "setPortraitBorderImageSliceTo100Fill",
+            "expect": "expect(document.querySelector('.portrait')).to.have.css('borderImageSlice', '100 fill');"
+        },
+        {
+            "title": "а потом задайте `border-image-outset` со значением `10px`.",
+            "name": "setPortraitBorderImageOutsetTo10Px",
+            "expect": "expect(document.querySelector('.portrait')).to.have.css('borderImageOutset', '10px');"
+        }
+    ],
+    "strict": true
+}
+
+
+
+
+
+

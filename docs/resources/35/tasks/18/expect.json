@@ -1,0 +1,27 @@
+{
+    "intro": "setPortraitBorderImageWidth",
+    "introTitle": "Блоку `.portrait` задайте свойство `border-image-width` со значениями:",
+    "assertions": [
+        {
+            "title": "`80px`,",
+            "name": "setPortraitBorderImageWidthTo80Px",
+            "expect": "expect(document.querySelector('.portrait')).to.have.css('borderImageWidth', '80px');"
+        },
+        {
+            "title": "`20px 40px`,",
+            "name": "setPortraitBorderImageWidthTo20Px40Px",
+            "expect": "expect(document.querySelector('.portrait')).to.have.css('borderImageWidth', '20px 40px');"
+        },
+        {
+            "title": "`10px 25px 40px auto`.",
+            "name": "setPortraitBorderImageWidthTo10Px25Px40PxAuto",
+            "expect": "expect(document.querySelector('.portrait')).to.have.css('borderImageWidth', '10px 25px 40px auto');"
+        }
+    ],
+    "strict": true
+}
+
+
+
+
+

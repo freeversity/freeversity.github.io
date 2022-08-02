@@ -1,0 +1,25 @@
+{
+    "assertions": [
+        {
+            "title": "Блоку `.arrow-round` задайте сплошную рамку толщиной `50px` и цветом `#0074d9`,",
+            "name": "setArrowRoundBorderTo50PxSolidBlue",
+            "expect": "expect(document.querySelectorAll('.arrow-round')).to.have.css('border', '50px solid #0074d9');"
+        },
+        {
+            "title": "затем задайте скругление углов рамки со значением `50%`,",
+            "name": "setArrowRoundBorderRadiusTo50Perc",
+            "expect": "expect(document.querySelectorAll('.arrow-round')).to.have.css('borderRadius', '50%');"
+        },
+        {
+            "title": "а правой части рамки задайте прозрачный цвет `transparent`.",
+            "name": "setArrowRoundBorderRightColorToTransparent",
+            "expect": "expect(document.querySelectorAll('.arrow-round')).to.have.css('borderRightColor', 'transparent');"
+        }
+    ],
+    "strict": true
+}
+
+
+
+
+

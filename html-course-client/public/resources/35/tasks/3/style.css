@@ -1,0 +1,14 @@
+[class^="portrait"] {
+  background: url("img/keks.jpg") no-repeat #ffffff;
+  background-size: 100px auto;
+}
+
+.portrait-vertical {
+  width: 150px;
+  height: 200px;
+}
+
+.portrait-horizontal {
+  width: 200px;
+  height: 150px;
+}

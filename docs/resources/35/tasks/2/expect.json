@@ -1,0 +1,26 @@
+{
+    "intro": "setPortraitBgSize",
+    "introTitle": "Блоку `.portrait` задайте размер фона background-size:",
+    "assertions": [
+        {
+            "title": "`200px`,",
+            "name": "setPortraitBgSizeTo200Px",
+            "expect": "expect(document.querySelectorAll('.portrait')).to.have.css('backgroundSize', '200px');"
+        },
+        {
+            "title": "`100%`,",
+            "name": "setPortraitBgSizeTo100Perc",
+            "expect": "expect(document.querySelectorAll('.portrait')).to.have.css('backgroundSize', '100%');"
+        },
+        {
+            "title": "`100% 100%`.",
+            "name": "setPortraitBgSizeTo100Perc100Perc",
+            "expect": "expect(document.querySelectorAll('.portrait')).to.have.css('backgroundSize', '100% 100%');"
+        }
+    ],
+    "strict": true
+}
+
+
+
+

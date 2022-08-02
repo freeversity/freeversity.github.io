@@ -1,0 +1,19 @@
+{
+    "assertions": [
+        {
+            "title": "Портрету задайте скругление углов `50%`,",
+            "name": "setPortraitBorderRadiusTo50Perc",
+            "expect": "expect(document.querySelector('.portrait')).to.have.css('borderRadius', '50%');"
+        },
+        {
+            "title": "обрезку фона `content-box` и",
+            "name": "setPortraitBgClipToContentBox",
+            "expect": "expect(document.querySelector('.portrait')).to.have.css('backgroundClip', 'content-box');"
+        },
+        {
+            "title": "уберите внешнюю рамку `outline`.",
+            "name": "setPortraitOutlineToNone",
+            "expect": "expect(document.querySelector('.portrait')).to.have.css('outline', 'none');"
+        }
+    ]
+}

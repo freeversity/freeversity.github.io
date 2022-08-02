@@ -1,0 +1,16 @@
+.portrait {
+  box-sizing: border-box;
+  margin: 20px auto;
+  padding: 40px;
+  width: 400px;
+  height: 400px;
+  border: 40px solid rgba(0, 0, 0, 0.4);
+  background:
+    url("img/glasses.svg") no-repeat 75px 125px,
+    url("img/keks.jpg") no-repeat center #ffffff;
+  background-clip: padding-box;
+  background-origin: border-box;
+  background-size:
+    150px,
+    cover;
+}

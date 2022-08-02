@@ -1,0 +1,25 @@
+{
+    "assertions": [
+        {
+            "title": "Блоку `.portrait` задайте свойство `border-image-repeat` со значением `repeat repeat`,",
+            "name": "setPortraitBorderImageRepeatToRepeatRepeat",
+            "expect": "expect(document.querySelector('.portrait')).to.have.css('borderImageRepeat', 'repeat repeat');"
+        },
+        {
+            "title": "затем смените значение на `round repeat`,",
+            "name": "setPortraitBorderImageRepeatToRoundRepeat",
+            "expect": "expect(document.querySelector('.portrait')).to.have.css('borderImageRepeat', 'round repeat');"
+        },
+        {
+            "title": "потом смените ширину блока на `300px`,",
+            "name": "setPortraitWidthTo300Px",
+            "expect": "expect(document.querySelector('.portrait')).to.have.css('width', '300px');"
+        },
+        {
+            "title": "а высоту на `400px`.",
+            "name": "setPortraitHeightTo400Px",
+            "expect": "expect(document.querySelector('.portrait')).to.have.css('height', '400px');"
+        }
+    ],
+    "strict": true
+}

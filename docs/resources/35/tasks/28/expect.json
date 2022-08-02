@@ -1,0 +1,29 @@
+{
+    "assertions": [
+        {
+            "title": "Псевдоэлементу `.arrow-right-long::after` задайте сплошную рамку толщиной `40px` и цветом `#ffffff`,",
+            "name": "setArrowRightLongAfterBorderTo40PxSolidWhite",
+            "expect": "expect(document.querySelectorAll('.arrow-right-long'), '::after').to.have.css('border', '40px solid #ffffff');"
+        },
+        {
+            "title": "затем задайте ему позицию `top: -25px` и `right: -30px`,",
+            "name": "setArrowRightLongAfterTopToNeg25PxAndRightToNeg30Px",
+            "expect": "expect(document.querySelectorAll('.arrow-right-long'), '::after').to.have.css('top', '-25px');expect(document.querySelectorAll('.arrow-right-long'), '::after').to.have.css('right', '-30px');"
+        },
+        {
+            "title": "обнулите толщину правой стороны рамки, а левой задайте цвет `#0074d9`,",
+            "name": "setArrowRightLongAfterBorderWidthRightTo0AndBorderLeftColorToBlue",
+            "expect": "expect(document.querySelectorAll('.arrow-right-long'), '::after').to.have.css('borderRightWidth', '0');expect(document.querySelectorAll('.arrow-right-long'), '::after').to.have.css('borderLeftColor', '#0074d9');"
+        },
+        {
+            "title": "а затем верхнюю и нижнюю стороны рамки сделайте прозрачными.",
+            "name": "setArrowRightLongAfterBorderTopColorAndBorderBottomColorToTransparent",
+            "expect": "expect(document.querySelectorAll('.arrow-right-long'), '::after').to.have.css('borderTopColor', 'transparent');expect(document.querySelectorAll('.arrow-right-long'), '::after').to.have.css('borderBottomColor', 'transparent');"
+        }
+    ],
+    "strict": true
+}
+
+
+
+

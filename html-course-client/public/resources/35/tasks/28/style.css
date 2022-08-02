@@ -1,0 +1,12 @@
+.arrow-right-long {
+  position: relative;
+  margin: 150px auto;
+  width: 200px;
+  height: 30px;
+  background-color: #0074d9;
+}
+
+.arrow-right-long::after {
+  position: absolute;
+  content: "";
+}

@@ -1,4 +1,4 @@
-import { getCssValue } from "./getCssValue";
+import { getCssValue, ignoreCssValueTranspiling } from "./getCssValue";
 
 export function computedCssPlugin(
     chai: Chai.ChaiStatic, 
@@ -27,7 +27,7 @@ export function computedCssPlugin(
                 const originalActual = win.getComputedStyle(elem, pseudo)[prop as any];
 
                 const expected = getCssValue(prop, value, doc);
-                const actual = getCssValue(prop, originalActual, doc);
+                const actual = ignoreCssValueTranspiling(prop) ? originalActual : getCssValue(prop, originalActual, doc);
     
                 this.assert(
                     originalExpected === originalActual || actual === expected, 

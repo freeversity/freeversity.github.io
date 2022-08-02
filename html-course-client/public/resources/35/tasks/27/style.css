@@ -1,0 +1,14 @@
+[class^="arrow"] {
+  display: inline-block;
+  margin: 30px;
+  width: 0;
+  height: 0;
+}
+
+.arrow-top-right {
+  border: 100px solid #ffffff;
+}
+
+.arrow-bottom-left {
+  border: 100px solid #ffffff;
+}

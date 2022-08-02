@@ -1,0 +1,24 @@
+{
+    "assertions": [
+        {
+            "title": "Портрету добавьте верхним слоем фоновое изображение `img/glasses.svg`,",
+            "name": "addGlassesSvgToPortraitBg",
+            "expect": "expect(document.querySelector('.portrait')).to.have.css('backgroundImage', 'url(\"img/glasses.svg\"), url(\"img/keks.jpg\")');"
+        },
+        {
+            "title": "задайте ему размер `150px`",
+            "name": "setGlassesBgSizeTo150Px",
+            "expect": "expect(document.querySelector('.portrait')).to.have.css('backgroundSize', '150px, cover');"
+        },
+        {
+            "title": "и расположение `75px 125px`.",
+            "name": "setGlassesBgPositionTo75Px125Px",
+            "expect": "expect(document.querySelector('.portrait')).to.have.css('backgroundPosition', '75px 125px, center');"
+        }
+    ]
+}
+
+
+
+
+

@@ -3,11 +3,198 @@
     "title": "Advanced Backgrounds and Borders",
     "tasks": [
         {
+            "id": 1,
+            "type": "task",
+            "entry": "/resources/35/tasks/1/task.json",
+            "name": "preparation"
+        }, 
+        {
+            "id": 2,
+            "type": "task",
+            "entry": "/resources/35/tasks/2/task.json",
+            "name": "background-size-1"
+        }, 
+        {
+            "id": 3,
+            "type": "task",
+            "entry": "/resources/35/tasks/3/task.json",
+            "name": "background-size-2"
+        }, 
+        {
+            "id": 4,
+            "type": "task",
+            "entry": "/resources/35/tasks/4/task.json",
+            "name": "background-origin"
+        }, 
+        {
+            "id": 5,
+            "type": "task",
+            "entry": "/resources/35/tasks/5/task.json",
+            "name": "background-clip"
+        }, 
+        {
+            "id": 6,
+            "type": "task",
+            "entry": "/resources/35/tasks/6/task.json",
+            "name": "multiple-background"
+        }, 
+        {
+            "id": 7,
+            "type": "task",
+            "entry": "/resources/35/tasks/7/task.json",
+            "name": "backoground-positioning-target-corner"
+        }, 
+        {
+            "id": 8,
+            "type": "task",
+            "entry": "/resources/35/tasks/8/task.json",
+            "name": "background-repeat-round"
+        }, 
+        {
+            "id": 9,
+            "type": "task",
+            "entry": "/resources/35/tasks/9/task.json",
+            "name": "background-repeat-space"
+        }, 
+        {
+            "id": 10,
+            "type": "task",
+            "entry": "/resources/35/tasks/10/task.json",
+            "name": "outline"
+        }, 
+        {
+            "id": 11,
+            "type": "task",
+            "entry": "/resources/35/tasks/11/task.json",
+            "name": "border-radius-1"
+        }, 
+        {
+            "id": 12,
+            "type": "task",
+            "entry": "/resources/35/tasks/12/task.json",
+            "name": "border-radius-2"
+        }, 
+        {
+            "id": 13,
+            "type": "task",
+            "entry": "/resources/35/tasks/13/task.json",
+            "name": "border-image-source"
+        }, 
+        {
+            "id": 14,
+            "type": "task",
+            "entry": "/resources/35/tasks/14/task.json",
+            "name": "border-image-slice"
+        }, 
+        {
+            "id": 15,
+            "type": "task",
+            "entry": "/resources/35/tasks/15/task.json",
+            "name": "slicing-assymetrical-images"
+        }, 
+        {
+            "id": 16,
+            "type": "task",
+            "entry": "/resources/35/tasks/16/task.json",
+            "name": "border-image-repeat-1"
+        }, 
+        {
+            "id": 17,
+            "type": "task",
+            "entry": "/resources/35/tasks/17/task.json",
+            "name": "border-image-repeat-2"
+        }, 
+        {
+            "id": 18,
+            "type": "task",
+            "entry": "/resources/35/tasks/18/task.json",
+            "name": "border-image-width"
+        }, 
+        {
+            "id": 19,
+            "type": "task",
+            "entry": "/resources/35/tasks/19/task.json",
+            "name": "border-image-offset"
+        }, 
+        {
+            "id": 20,
+            "type": "task",
+            "entry": "/resources/35/tasks/20/task.json",
+            "name": "muffins-royal-border"
+        }, 
+        {
+            "id": 21,
+            "type": "task",
+            "entry": "/resources/35/tasks/21/task.json",
+            "name": "muffins-eco-border"
+        }, 
+        {
+            "id": 22,
+            "type": "task",
+            "entry": "/resources/35/tasks/22/task.json",
+            "name": "muffins-round-border-1"
+        }, 
+        {
+            "id": 23,
+            "type": "task",
+            "entry": "/resources/35/tasks/23/task.json",
+            "name": "muffins-round-border-2"
+        }, 
+        {
             "id": 24,
             "type": "challenge",
             "entry": "/resources/35/tasks/24/task.json",
             "name": "sea-wolf"
-        }, {
+        }, 
+        {
+            "id": 25,
+            "type": "task",
+            "entry": "/resources/35/tasks/25/task.json",
+            "name": "triangles-with-border-1"
+        }, 
+        {
+            "id": 26,
+            "type": "task",
+            "entry": "/resources/35/tasks/26/task.json",
+            "name": "triangles-with-border-2"
+        }, 
+        {
+            "id": 27,
+            "type": "task",
+            "entry": "/resources/35/tasks/27/task.json",
+            "name": "triangles-with-border-3"
+        }, 
+        {
+            "id": 28,
+            "type": "task",
+            "entry": "/resources/35/tasks/28/task.json",
+            "name": "arrow-with-border"
+        }, 
+        {
+            "id": 29,
+            "type": "task",
+            "entry": "/resources/35/tasks/29/task.json",
+            "name": "round-arrow-with-border-1"
+        }, 
+        {
+            "id": 30,
+            "type": "task",
+            "entry": "/resources/35/tasks/30/task.json",
+            "name": "round-arrow-with-border-2"
+        }, 
+        {
+            "id": 31,
+            "type": "task",
+            "entry": "/resources/35/tasks/31/task.json",
+            "name": "triangles-on-practice-1"
+        }, 
+        {
+            "id": 32,
+            "type": "task",
+            "entry": "/resources/35/tasks/32/task.json",
+            "name": "triangles-on-practice-2"
+        }, 
+        {
             "id": 33,
             "type": "challenge",
             "entry": "/resources/35/tasks/33/task.json",

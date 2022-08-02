@@ -1,0 +1,25 @@
+{
+    "assertions": [
+        {
+            "title": "Блоку `.portrait` задайте свойство `border-image-slice` со значением `120`,",
+            "name": "setPortraitBorderImageSliceTo120",
+            "expect": "expect(document.querySelector('.portrait')).to.have.css('borderImageSlice', '120');"
+        },
+        {
+            "title": "затем измените значение на `80`,",
+            "name": "setPortraitBorderImageSliceTo80",
+            "expect": "expect(document.querySelector('.portrait')).to.have.css('borderImageSlice', '80');"
+        },
+        {
+            "title": "и, наконец, на `50` и обратите внимание, как заполнятся фоном все стороны рамки.",
+            "name": "setPortraitBorderImageSliceTo50",
+            "expect": "expect(document.querySelector('.portrait')).to.have.css('borderImageSlice', '50');"
+        }
+    ],
+    "strict": true
+}
+
+
+
+
+

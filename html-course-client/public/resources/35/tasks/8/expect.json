@@ -1,0 +1,31 @@
+{
+    "assertions": [
+        {
+            "title": "На `8` строке поменяйте значение свойства `background-repeat` на `repeat`,",
+            "name": "setPortraitBgRepeatToRepeat",
+            "expect": "expect(document.querySelector('.portrait')).to.have.css('backgroundRepeat', 'repeat');"
+        },
+        {
+            "title": "а затем на значение `repeat round`.",
+            "name": "setPortraitBgRepeatToRepeatRound",
+            "expect": "expect(document.querySelector('.portrait')).to.have.css('backgroundRepeat', 'repeat round');"
+        },
+        {
+            "title": "Затем задайте портрету ширину `500px`",
+            "name": "setPortraitWidthTo500Px",
+            "expect": "expect(document.querySelector('.portrait')).to.have.css('width', '500px');"
+        },
+        {
+            "title": "и высоту `450px`.",
+            "name": "setPortraitHeightTo450Px",
+            "expect": "expect(document.querySelector('.portrait')).to.have.css('height', '450px');"
+        }
+    ],
+    "strict": true
+}
+
+
+
+
+
+

@@ -1,0 +1,8 @@
+a.arrow {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.arrow::before {
+  content: "";
+}

@@ -1,0 +1,31 @@
+{
+    "intro": "setArrowTopRightBorder",
+    "introTitle": "Измените рамку у блока .arrow-top-right:",
+    "assertions": [
+        {
+            "title": "задайте цвет верхней стороны `#0074d9`,",
+            "name": "setArrowTopRightBorderTopColorToBlue",
+            "expect": "expect(document.querySelectorAll('.arrow-top-right')).to.have.css('borderTopColor', '#0074d9');"
+        },
+        {
+            "title": "толщину нижней стороны `0`,",
+            "name": "setArrowTopRightBorderBottomWidthTo0",
+            "expect": "expect(document.querySelectorAll('.arrow-top-right')).to.have.css('borderBottomWidth', '0');"
+        },
+        {
+            "title": "затем толщину правой стороны `0`",
+            "name": "setArrowTopRightBorderRightWidthTo0",
+            "expect": "expect(document.querySelectorAll('.arrow-top-right')).to.have.css('borderRightWidth', '0');"
+        },
+        {
+            "title": "и цвет левой стороны `transparent`.",
+            "name": "setArrowTopRightBorderLeftColorToTransparent",
+            "expect": "expect(document.querySelectorAll('.arrow-top-right')).to.have.css('borderLeftColor', 'transparent');"
+        }
+    ]
+}
+
+
+
+
+

@@ -1,0 +1,28 @@
+{
+    "intro": "setArrowBottomBorder",
+    "introTitle": "Измените рамку у блока `.arrow-bottom`:",
+    "assertions": [
+        {
+            "title": "задайте цвет верхней стороны `#0074d9`,",
+            "name": "setArrowBottomBorderTopColorToBlue",
+            "expect": "expect(document.querySelectorAll('.arrow-bottom')).to.have.css('borderTopColor', '#0074d9');"
+        },
+        {
+            "title": "толщину нижней стороны `0`,",
+            "name": "setArrowBottomBorderBottomWidthTo0",
+            "expect": "expect(document.querySelectorAll('.arrow-bottom')).to.have.css('borderBottomWidth', '0');"
+        },
+        {
+            "title": "цвет левой и правой сторон сделайте прозрачными `transparent`.",
+            "name": "setArrowBottomBorderRightAndLeftColorToTransparent",
+            "expect": "expect(document.querySelectorAll('.arrow-bottom')).to.have.css('borderLeftColor', 'transparent');expect(document.querySelectorAll('.arrow-bottom')).to.have.css('borderRightColor', 'transparent');"
+        }
+    ]
+}
+
+
+
+
+
+
+

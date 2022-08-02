@@ -1,0 +1,21 @@
+{
+    "intro": "setPortraitProps",
+    "introTitle": "Блоку `.portrait` задайте:",
+    "assertions": [
+        {
+            "title": "ширину `300px`, высоту `400px` и цвет фона `#ffffff`,",
+            "name": "setPortraitWidthTo300PxHeightTo400PxAndBgColorToWhite",
+            "expect": "expect(document.querySelectorAll('.portrait')).to.have.css('width', '300px');expect(document.querySelectorAll('.portrait')).to.have.css('height', '400px');expect(document.querySelectorAll('.portrait')).to.have.css('backgroundColor', '#fff');"
+        },
+        {
+            "title": "внешние отступы: сверху и снизу `20px`, слева и справа `auto`,",
+            "name": "setPortraitMarginTo20PxAuto",
+            "expect": "expect(document).to.have.cssRule('.portrait', 'margin', '20px auto');"
+        },
+        {
+            "title": "а затем неповторяющееся фоновое изображение `img/keks.jpg`.",
+            "name": "setPortraitBackgroundToKeksJpgNoRepeat",
+            "expect": "expect(document.querySelectorAll('.portrait')).to.have.css('backgroundImage', 'url(\"img/keks.jpg\")');expect(document.querySelectorAll('.portrait')).to.have.css('backgroundRepeat', 'no-repeat');"
+        }
+    ]
+}

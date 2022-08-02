@@ -1,0 +1,22 @@
+{
+    "assertions": [
+        {
+            "title": "У `.portrait` замените картинку рамки на `img/border-img-irregular.png`,",
+            "name": "setPortraitBorderImageToBorderImgIrregularPng",
+            "expect": "expect(document.querySelector('.portrait')).to.have.css('borderImageSource', 'url(\"img/border-img-irregular.png\")');"
+        },
+        {
+            "title": "затем измените нарезку картинки для рамки на `50 50 65 40`",
+            "name": "setPortraitBorderImageSliceTo50506540",
+            "expect": "expect(document.querySelector('.portrait')).to.have.css('borderImageSlice', '50 50 65 40');"
+        },
+        {
+            "title": "и добавьте ключевое слово `fill`.",
+            "name": "setPortraitBorderImageSliceTo50506540Fill",
+            "expect": "expect(document.querySelector('.portrait')).to.have.css('borderImageSlice', '50 50 65 40 fill');"
+        }
+    ],
+    "strict": true
+}
+
+

@@ -1,0 +1,22 @@
+{
+    "assertions": [
+        {
+            "title": "Портрету задайте фоновое изображение рамки `img/leafs-frame.png`,",
+            "name": "setPortraitBorderImageToLeafsFramePng",
+            "expect": "expect(document.querySelector('.portrait')).to.have.css('borderImageSource', 'url(\"img/leafs-frame.png\")');"
+        },
+        {
+            "title": "свойство `border-image-slice` со значением `180`",
+            "name": "setPortraitBorderImageSliceTo180",
+            "expect": "expect(document.querySelector('.portrait')).to.have.css('borderImageSlice', '180');"
+        },
+        {
+            "title": "затем добавьте `fill` в `border-image-slice`.",
+            "name": "setPortraitBorderImageSliceTo180Fill",
+            "expect": "expect(document.querySelector('.portrait')).to.have.css('borderImageSlice', '180 fill');"
+        }
+    ],
+    "strict": true
+}
+
+

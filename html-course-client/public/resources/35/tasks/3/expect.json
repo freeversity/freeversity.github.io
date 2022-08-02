@@ -1,0 +1,30 @@
+{
+    "assertions": [
+        {
+            "title": "Блоку `.portrait-1` задайте размер фона `contain`,",
+            "name": "setPortrait1BgSizeToContain",
+            "expect": "expect(document.querySelectorAll('.portrait-1')).to.have.css('backgroundSize', 'contain');"
+        },
+        {
+            "title": "`.portrait-2` — `cover`,",
+            "name": "setPortrait2BgSizeToCover",
+            "expect": "expect(document.querySelectorAll('.portrait-2')).to.have.css('backgroundSize', 'cover');"
+        },
+        {
+            "title": "`.portrait-3` — `contain`",
+            "name": "setPortrait3BgSizeToContain",
+            "expect": "expect(document.querySelectorAll('.portrait-3')).to.have.css('backgroundSize', 'contain');"
+        },
+        {
+            "title": "и `.portrait-4` — снова `cover`.",
+            "name": "setPortrait4BgSizeToCover",
+            "expect": "expect(document.querySelectorAll('.portrait-4')).to.have.css('backgroundSize', 'cover');"
+        }
+    ]
+}
+
+
+
+
+
+

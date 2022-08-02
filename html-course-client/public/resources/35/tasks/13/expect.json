@@ -1,0 +1,12 @@
+{
+    "assertions": [
+        {
+            "title": "Блоку `.portrait` задайте изображение рамки `img/border-img.png`.",
+            "name": "setPortraitBorderImageToBorderImgJpg",
+            "expect": "expect(document.querySelector('.portrait')).to.have.css('borderImageSource', 'url(\"img/border-img.png\")');"
+        }
+    ]
+}
+
+
+

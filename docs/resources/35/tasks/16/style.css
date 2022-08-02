@@ -1,0 +1,14 @@
+.portrait {
+  box-sizing: border-box;
+  margin: 50px auto;
+  padding: 10px;
+  width: 270px;
+  height: 270px;
+  outline: 10px solid white;
+  border: 50px solid rgba(0, 0, 0, 0.4);
+  border-image-source: url("img/border-img.png");
+  border-image-slice: 50;
+  border-image-repeat: stretch;
+  background: url("img/border-img.png") no-repeat center #ffffff;
+  background-clip: padding-box;
+}

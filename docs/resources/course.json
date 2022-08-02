@@ -150,6 +150,47 @@
                     ]
                 },
                 {
+                    "name": "great-keksby-1",
+                    "chapters": [
+                        {
+                            "name": "keksby-introduction",
+                            "id": 40,
+                            "entry": "/resources/40/chapter.json",
+                            "disabled": true
+                        },
+                        {
+                            "name": "keksby-text-styling",
+                            "id": 41,
+                            "entry": "/resources/41/chapter.json",
+                            "disabled": true
+                        },
+                        {
+                            "name": "keksby-links-and-images",
+                            "id": 42,
+                            "entry": "/resources/42/chapter.json",
+                            "disabled": true
+                        },
+                        {
+                            "name": "keksby-tables",
+                            "id": 43,
+                            "entry": "/resources/43/chapter.json",
+                            "disabled": true
+                        },
+                        {
+                            "name": "keksby-form",
+                            "id": 44,
+                            "entry": "/resources/44/chapter.json",
+                            "disabled": true
+                        },
+                        {
+                            "name": "keksby-epic-challenge-1",
+                            "id": 45,
+                            "entry": "/resources/45/chapter.json",
+                            "disabled": true
+                        }
+                    ]
+                },
+                {
                     "name": "decorative-effects",
                     "chapters": [
                         {
@@ -199,6 +240,53 @@
                             "id": 30,
                             "entry": "/resources/30/chapter.json",
                             "unfinished": true
+                        }
+                    ]
+                },
+                {
+                    "name": "great-keksby-2",
+                    "chapters": [
+                        {
+                            "name": "keksby-basic-styling",
+                            "id": 46,
+                            "entry": "/resources/46/chapter.json",
+                            "disabled": true
+                        },
+                        {
+                            "name": "keksby-graphics-and-styling",
+                            "id": 47,
+                            "entry": "/resources/47/chapter.json",
+                            "disabled": true
+                        },
+                        {
+                            "name": "keksby-grids",
+                            "id": 48,
+                            "entry": "/resources/48/chapter.json",
+                            "disabled": true
+                        },
+                        {
+                            "name": "keksby-quarter-finale",
+                            "id": 49,
+                            "entry": "/resources/49/chapter.json",
+                            "disabled": true
+                        },
+                        {
+                            "name": "keksby-half-finale",
+                            "id": 50,
+                            "entry": "/resources/50/chapter.json",
+                            "disabled": true
+                        },
+                        {
+                            "name": "keksby-finale",
+                            "id": 51,
+                            "entry": "/resources/51/chapter.json",
+                            "disabled": true
+                        },
+                        {
+                            "name": "keksby-epic-challenge-2",
+                            "id": 52,
+                            "entry": "/resources/52/chapter.json",
+                            "disabled": true
                         }
                     ]
                 },
@@ -256,8 +344,7 @@
                         {
                             "name": "advanced-background-and-borders",
                             "id": 35,
-                            "entry": "/resources/35/chapter.json",
-                            "unfinished": true
+                            "entry": "/resources/35/chapter.json"
                         },
                         {
                             "name": "advanced-text-styling",

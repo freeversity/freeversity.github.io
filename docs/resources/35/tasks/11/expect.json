@@ -1,0 +1,27 @@
+{
+    "intro": "setPortraitBordrRadius",
+    "introTitle": "Поочерёдно задайте портрету следующие скругления углов:",
+    "assertions": [
+        {
+            "title": "`150px`,",
+            "name": "setPortraitBordrRadiusTo150Px",
+            "expect": "expect(document.querySelector('.portrait')).to.have.css('borderRadius', '150px');"
+        },
+        {
+            "title": "`150px 50px`,",
+            "name": "setPortraitBordrRadiusTo150Px50Px",
+            "expect": "expect(document.querySelector('.portrait')).to.have.css('borderRadius', '150px 50px');"
+        },
+        {
+            "title": "`50%`.",
+            "name": "setPortraitBordrRadiusTo50Perc",
+            "expect": "expect(document.querySelector('.portrait')).to.have.css('borderRadius', '50%');"
+        }
+    ],
+    "strict": true
+}
+
+
+
+
+

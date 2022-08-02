@@ -1,0 +1,19 @@
+{
+    "assertions": [
+        {
+            "title": "Портрету поменяйте первый фон с `img/glasses.svg` на `img/mustache.svg`",
+            "name": "replaceGlassesSvgBgToMustacheSvg",
+            "expect": "expect(document.querySelector('.portrait')).to.have.css('backgroundImage', 'url(\"img/mustache.svg\"), url(\"img/keks.jpg\")');"
+        },
+        {
+            "title": "затем измените для первого фона размер на `110px`",
+            "name": "setPortraitFirstBgSizeTo110Px",
+            "expect": "expect(document.querySelector('.portrait')).to.have.css('backgroundSize', '110px, cover');"
+        },
+        {
+            "title": "и расположение на `170px` от нижнего края и `205px` от правого.",
+            "name": "setPortraitFirstBgPositionToBottom170PxRight205Px",
+            "expect": "expect(document.querySelector('.portrait')).to.have.css('backgroundPosition', 'bottom 170px right 205px, center');"
+        }
+    ]
+}
