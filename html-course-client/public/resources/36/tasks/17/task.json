@@ -1,0 +1,8 @@
+{
+    "id": 17,      
+    "name": "firts-line-pseudo-element",
+    "htmlEntry": "index.html",
+    "cssEntry": "style.css",
+    "articleEntry": "article.md",
+    "expectEntry": "expect.json"
+}

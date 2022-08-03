@@ -1,0 +1,26 @@
+{
+    "intro": "setH1TextShadowProps",
+    "introTitle": "Задайте исходной тени (которой изначально не видно) заголовка `h1`:",
+    "assertions": [
+        {
+            "title": "размытие `5px`,",
+            "name": "setH1TextShadowTo0Px0Px5PxGray",
+            "expect": "expect(document.querySelectorAll('h1')).to.have.css('textShadow', '0px 0px 5px #111111');"
+        },
+        {
+            "title": "затем сместите её вниз на `10px`,",
+            "name": "setH1TextShadowTo0Px10Px5PxGray",
+            "expect": "expect(document.querySelectorAll('h1')).to.have.css('textShadow', '0px 10px 5px #111111');"
+        },
+        {
+            "title": "а потом увеличьте размытие до `15px`.",
+            "name": "setH1TextShadowTo0Px10Px15PxGray",
+            "expect": "expect(document.querySelectorAll('h1')).to.have.css('textShadow', '0px 10px 15px #111111');"
+        }
+    ],
+    "strict": true
+}
+
+
+
+

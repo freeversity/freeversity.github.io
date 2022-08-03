@@ -1,0 +1,16 @@
+{
+    "assertions": [
+        {
+            "title": "Блоку `article` задайте расстояние между колонками равное `25px`,",
+            "name": "setArticleColumnGapTo25Px",
+            "expect": "expect(document.querySelectorAll('article')).to.have.css('columnGap', '25px');"
+        },
+        {
+            "title": "затем увеличьте его до `50px`.",
+            "name": "setArticleColumnGapTo50Px",
+            "expect": "expect(document.querySelectorAll('article')).to.have.css('columnGap', '50px');"
+        }
+    ],
+    "strict": true
+}
+

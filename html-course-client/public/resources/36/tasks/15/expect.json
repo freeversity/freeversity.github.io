@@ -1,0 +1,9 @@
+{
+    "assertions": [
+        {
+            "title": "Задайте абзацам красную строку шириной `24px`.",
+            "name": "setPTextIndentTo24Px",
+            "expect": "expect(document.querySelectorAll('p')).to.have.css('textIndent', '24px');"
+        }
+    ]
+}

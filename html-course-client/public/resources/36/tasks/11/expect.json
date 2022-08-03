@@ -1,0 +1,22 @@
+{
+    "assertions": [
+        {
+            "title": "Раскомментируйте подключение иконочного шрифта `Glyphter`,",
+            "name": "uncommentGlyphterFontFace",
+            "expect": "expect(document).to.have.cssRule('@font-face', 'fontFamily', '\"Glyphter\"');"
+        },
+        {
+            "title": "затем в ссылке перед надписью `Warmphoto` вставьте `span` с символом `A`",
+            "name": "setSpanWithAToAWarmphoto",
+            "expect": "expect(document.querySelector('a span')).to.have.rendered.text('A');expect(document.querySelector('a')).to.have.rendered.text('AWARMPHOTO');"
+        },
+        {
+            "title": "и задайте спану шрифт `Glyphter`.",
+            "name": "setSpanFontFamilyToGlyphter",
+            "expect": "expect(document.querySelector('a span')).to.have.css('fontFamily', 'Glyphter');"
+        }
+    ],
+    "strict": true
+}
+
+

@@ -1,0 +1,15 @@
+{
+    "assertions": [
+        {
+            "title": "Заголовку `h1` задайте интервал между словами `5px`,",
+            "name": "setH1WordSpacingTo5Px",
+            "expect": "expect(document.querySelectorAll('h1')).to.have.css('wordSpacing', '5px');"
+        },
+        {
+            "title": "а затем списку `ul` — интервал между словами `12px`.",
+            "name": "setUlWordSpacingTo12px",
+            "expect": "expect(document.querySelectorAll('ul')).to.have.css('wordSpacing', '12px');"
+        }
+    ]
+}
+

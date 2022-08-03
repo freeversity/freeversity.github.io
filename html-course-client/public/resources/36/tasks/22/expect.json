@@ -1,0 +1,9 @@
+{
+    "assertions": [
+        {
+            "title": "Таблице задайте направление текста справа налево.",
+            "name": "setTableDirectionToRtl",
+            "expect": "expect(document.querySelectorAll('table')).to.have.css('direction', 'rtl');"
+        }
+    ]
+}

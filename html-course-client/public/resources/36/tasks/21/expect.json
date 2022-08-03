@@ -1,0 +1,21 @@
+{
+    "assertions": [
+        {
+            "title": "Блоку `article` задайте высоту `200px` и `overflow: auto`,",
+            "name": "setArticleHeightTo200PxAndOverflowToAuto",
+            "expect": "expect(document.querySelectorAll('article')).to.have.css('height', '200px');expect(document.querySelectorAll('article')).to.have.css('overflow', 'auto');"
+        },
+        {
+            "title": "направление текста `direction` справа налево,",
+            "name": "setArticleDirectionToRtl",
+            "expect": "expect(document.querySelectorAll('article')).to.have.css('direction', 'rtl');"
+        },
+        {
+            "title": "а затем параграфу `p` свойство `unicode-bidi: bidi-override`.",
+            "name": "setPUnicodeBidiToBidiOverride",
+            "expect": "expect(document.querySelectorAll('p')).to.have.css('unicodeBidi', 'bidi-override');"
+        }
+    ]
+}
+
+

@@ -1,0 +1,22 @@
+{
+    "intro": "setPsTextShadowProps",
+    "introTitle": "Для первого и второго параграфов задайте тени:",
+    "assertions": [
+        {
+            "title": "для каждого из параграфов задайте тень с горизонтальным и вертикальным смещением `2px` и размытием `8px`;",
+            "name": "setPsTextShadow2Px2Px8Px",
+            "expect": "document.querySelectorAll('p').forEach((e) => {expect(e).to.have.css('textShadow', `2px 2px 8px ${window.getComputedStyle(e).color}`)});"
+        },
+        {
+            "title": "для первого параграфа укажите цвет тени `#333333`,",
+            "name": "setFirstPTextShadow2Px2Px8PxGray",
+            "expect": "expect(document.querySelectorAll('p:first-child')).to.have.css('textShadow', '2px 2px 8px #333333');expect(document.querySelectorAll('p:not(:first-child)')).not.to.have.css('textShadow', '2px 2px 8px #333333');"
+        },
+        {
+            "title": "для второго — цвет тени `#ff9900`.",
+            "name": "setSecondPTextShadow2Px2Px8PxOrange",
+            "expect": "expect(document.querySelectorAll('p:nth-child(2)')).to.have.css('textShadow', '2px 2px 8px #ff9900');expect(document.querySelectorAll('p:not(:nth-child(2))')).not.to.have.css('textShadow', '2px 2px 8px #ff9900');"
+        }
+    ],
+    "strict": true
+}

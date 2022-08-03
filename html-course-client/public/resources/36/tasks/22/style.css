@@ -1,0 +1,34 @@
+body {
+  padding: 10px;
+  background: url("bokeh.jpg") no-repeat 50% 0;
+  color: #333333;
+  font-size: 14px;
+  font-family: "Georgia", sans;
+}
+
+article {
+  padding: 20px;
+  background-color: rgba(240, 240, 240, 0.85);
+}
+
+table {
+  border-collapse: collapse;
+}
+
+tr:nth-child(odd) {
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+td {
+  padding: 10px 15px;
+  border-right: 1px dashed #cccccc;
+}
+
+td:first-child {
+  text-align: right;
+  font-style: italic;
+}
+
+td:last-child {
+  border-right: none;
+}

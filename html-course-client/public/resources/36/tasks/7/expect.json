@@ -1,0 +1,16 @@
+{
+    "assertions": [
+        {
+            "title": "Заголовку `h1` задайте тень с горизонтальным и вертикальным смещением `-1px`, размытием `1px` и цветом `#1e181c`,",
+            "name": "setH1TextShadowToNeg1pxNeg1Px1PxGray",
+            "expect": "expect(document.querySelectorAll('h1')).to.have.css('textShadow', '-1px -1px 1px #1e181c');"
+        },
+        {
+            "title": "а затем вторую тень с горизонтальным и вертикальным смещением `2px`, размытием `1px` и цветом `#52424d`.",
+            "name": "setH1TextShadowToNeg1pxNeg1Px1PxGray2Px2Px1PxLightGray",
+            "expect": "expect(document.querySelectorAll('h1')).to.have.css('textShadow', '-1px -1px 1px #1e181c, 2px 2px 1px #52424d');"
+        }
+    ],
+    "strict": true
+}
+

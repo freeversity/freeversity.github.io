@@ -1,0 +1,8 @@
+{
+    "id": 6,      
+    "name": "text-shadow-color",
+    "htmlEntry": "index.html",
+    "cssEntry": "style.css",
+    "articleEntry": "article.md",
+    "expectEntry": "expect.json"
+}

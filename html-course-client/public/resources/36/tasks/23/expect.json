@@ -1,0 +1,15 @@
+{
+    "assertions": [
+        {
+            "title": "Абзацу задайте неразрывные пробелы `white-space: nowrap` и `overflow: hidden`,",
+            "name": "setPWhiteSpaceNowrapAndOverflowToHidden",
+            "expect": "expect(document.querySelectorAll('p')).to.have.css('whiteSpace', 'nowrap');expect(document.querySelectorAll('p')).to.have.css('overflow', 'hidden');"
+        },
+        {
+            "title": "а затем режим текстового переполнения `text-overflow` со значением `ellipsis`.",
+            "name": "setPTextOverflowToEllipsis",
+            "expect": "expect(document.querySelectorAll('p')).to.have.css('textOverflow', 'ellipsis');"
+        }
+    ]
+}
+

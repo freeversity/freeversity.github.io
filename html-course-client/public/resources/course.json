@@ -349,8 +349,7 @@
                         {
                             "name": "advanced-text-styling",
                             "id": 36,
-                            "entry": "/resources/36/chapter.json",
-                            "unfinished": true
+                            "entry": "/resources/36/chapter.json"
                         },
                         {
                             "name": "css-tables",
