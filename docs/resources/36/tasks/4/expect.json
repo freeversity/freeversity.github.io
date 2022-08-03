@@ -1,0 +1,20 @@
+{
+    "intro": "setH1TextShadowVerticalOffset",
+    "introTitle": "Сместите исходную тень заголовка `h1`",
+    "assertions": [
+        {
+            "title": "вверх на `5px`,",
+            "name": "setH1TextShadowTo5PxNeg5Px0PxGray",
+            "expect": "expect(document.querySelectorAll('h1')).to.have.css('textShadow', '5px -5px 0px #333333');"
+        },
+        {
+            "title": "а затем вниз на `5px`.",
+            "name": "setH1TextShadowTo5Px5Px0PxGray",
+            "expect": "expect(document.querySelectorAll('h1')).to.have.css('textShadow', '5px 5px 0px #333333');"
+        }
+    ],
+    "strict": true
+}
+
+
+

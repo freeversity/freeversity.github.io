@@ -1,0 +1,20 @@
+body {
+  padding: 10px;
+  background: url("bokeh.jpg") no-repeat 50% 0;
+  color: #333333;
+  font-size: 14px;
+  font-family: "Arial", sans-serif;
+}
+
+article {
+  padding: 20px;
+  background-color: rgba(240, 240, 240, 0.85);
+  column-count: 2;
+}
+
+p {
+  margin: 0;
+  text-align: justify;
+  text-indent: 22px;
+  line-height: 22px;
+}

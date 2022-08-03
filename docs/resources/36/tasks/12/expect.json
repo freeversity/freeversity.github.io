@@ -1,0 +1,22 @@
+{
+    "assertions": [
+        {
+            "title": "Задайте ссылке межсимвольное расстояние `-3px`.",
+            "name": "setALetterSpacingToNeg3Px",
+            "expect": "expect(document.querySelectorAll('a')).to.have.css('letterSpacing', '-3px');"
+        },
+        {
+            "title": "Спану внутри ссылки задайте вертикальное выравнивание `middle`,",
+            "name": "setASpanVrticalAlignToMiddle",
+            "expect": "expect(document.querySelectorAll('a span')).to.have.css('verticalAlign', 'middle');"
+        },
+        {
+            "title": "а затем `margin` справа `18px` и размер шрифта `78px`.",
+            "name": "setASpanMaringRightTo18PxAndFontSizeTo78Px",
+            "expect": "expect(document.querySelectorAll('a span')).to.have.css('marginRight', '18px');expect(document.querySelectorAll('a span')).to.have.css('fontSize', '78px');"
+        }
+    ],
+    "strict": true
+}
+
+

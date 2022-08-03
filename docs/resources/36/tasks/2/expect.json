@@ -1,0 +1,20 @@
+{
+    "intro": "setTextShadow30Px30Px1PxGrayToElems",
+    "introTitle": "Пропишите свойство `text-shadow` со значением `30px 30px 1px #111111`",
+    "assertions": [
+        {
+            "title": "заголовку `h1`,",
+            "name": "setH1TextShadowTo30Px30Px1PxGray",
+            "expect": "expect(document.querySelectorAll('h1')).to.have.css('textShadow', '30px 30px 1px #111111');"
+        },
+        {
+            "title": "смайлику `span`.",
+            "name": "setSpanTextShadowTo30Px30Px1PxGray",
+            "expect": "expect(document.querySelectorAll('span')).to.have.css('textShadow', '30px 30px 1px #111111');"
+        }
+    ]
+}
+
+
+
+

@@ -1,0 +1,25 @@
+{
+    "intro": "setSquareProps",
+    "introTitle": "Блоку `.square` задайте:",
+    "assertions": [
+        {
+            "title": "правило переноса слова `word-wrap` со значением `break-word`;",
+            "name": "setPortraitWidthTo300PxHeightTo400PxAndBgColorToWhite",
+            "expect": "expect(document.querySelectorAll('.square')).to.have.css('wordWrap', 'break-word');"
+        },
+        {
+            "title": "расстояние между символами равное `24px`;",
+            "name": "setPortraitMarginTo20PxAuto",
+            "expect": "expect(document.querySelectorAll('.square')).to.have.css('letterSpacing', '24px');"
+        },
+        {
+            "title": "`padding` слева равный `24px`.",
+            "name": "setPortraitBackgroundToKeksJpgNoRepeat",
+            "expect": "expect(document.querySelectorAll('.square')).to.have.css('paddingLeft', '24px');"
+        }
+    ]
+}
+
+
+
+

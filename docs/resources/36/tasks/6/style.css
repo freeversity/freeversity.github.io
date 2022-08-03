@@ -1,0 +1,27 @@
+body {
+  background: url("glass.jpg") no-repeat 50% 0;
+  color: #fff3e3;
+  font-family: "Arial", sans-serif;
+}
+
+p {
+  margin-left: 150px;
+  font-size: 50px;
+}
+
+p:nth-child(1) {
+  margin-top: 150px;
+  color: #000000;
+  text-shadow: none;
+}
+
+p:nth-child(2) {
+  text-shadow: none;
+}
+
+span {
+  position: absolute;
+  top: 370px;
+  left: 120px;
+  font-size: 100px;
+}

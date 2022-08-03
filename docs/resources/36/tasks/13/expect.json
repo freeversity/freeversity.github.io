@@ -1,0 +1,25 @@
+{
+    "intro": "setSquareProps",
+    "introTitle": "Блоку `.square` задайте:",
+    "assertions": [
+        {
+            "title": "сплошную рамку толщиной `5px` и цветом `#333333`;",
+            "name": "setPortraitWidthTo300PxHeightTo400PxAndBgColorToWhite",
+            "expect": "expect(document.querySelectorAll('.square')).to.have.css('border', '5px solid #333333');"
+        },
+        {
+            "title": "шрифт `\"Montserrat Alternates\", sans-serif` размером `72px`;",
+            "name": "setPortraitMarginTo20PxAuto",
+            "expect": "expect(document.querySelectorAll('.square')).to.have.css('font', '72px \"Montserrat Alternates\", sans-serif');"
+        },
+        {
+            "title": "ширину `260px`.",
+            "name": "setPortraitBackgroundToKeksJpgNoRepeat",
+            "expect": "expect(document.querySelectorAll('.square')).to.have.css('width', '260px');"
+        }
+    ]
+}
+
+
+
+

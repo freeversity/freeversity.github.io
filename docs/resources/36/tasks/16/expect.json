@@ -1,0 +1,15 @@
+{
+    "assertions": [
+        {
+            "title": "Псевдоэлементу `::first-letter` первого параграфа задайте `float: left`,",
+            "name": "setFirstPFirstLetterFloatToLeft",
+            "expect": "expect(document.querySelectorAll('p:first-child'), '::first-letter').to.have.css('float', 'left');"
+        },
+        {
+            "title": "а затем шрифт `\"Georgia\", serif` размером `76px` и межстрочный интервал `60px`.",
+            "name": "setFirstPFirstLetterFontFamilyToGeorgiaSerif7s6Px60Px",
+            "expect": "expect(document.querySelectorAll('p:first-child'), '::first-letter').to.have.css('font', '76px / 60px \"Georgia\", serif');"
+        }
+    ]
+}
+

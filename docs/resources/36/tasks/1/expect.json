@@ -1,0 +1,27 @@
+{
+    "assertions": [
+        {
+            "title": "В первый `span` добавьте символ `&#9786;`,",
+            "name": "addSmileToFirstSpan",
+            "expect": "expect(document.querySelectorAll('span:first-child')).to.have.rendered.text('☺');"
+        },
+        {
+            "title": "во второй — `&#9992;`,",
+            "name": "addPlaneToSecondSpan",
+            "expect": "expect(document.querySelectorAll('span:nth-child(2)')).to.have.rendered.text('✈');"
+        },
+        {
+            "title": "в третий — `&#9788;`,",
+            "name": "addSunToThirdSpan",
+            "expect": "expect(document.querySelectorAll('span:nth-child(3)')).to.have.rendered.text('☼');"
+        },
+        {
+            "title": "в четвёртый — `&hearts;`.",
+            "name": "addHeartToFourthSpan",
+            "expect": "expect(document.querySelectorAll('span:last-child')).to.have.rendered.text('♥');"
+        }
+    ]
+}
+
+
+

@@ -1,0 +1,21 @@
+{
+    "assertions": [
+        {
+            "title": "Псевдоэлементу `::first-letter` первого параграфа задайте цвет текста `#8b3333`,",
+            "name": "setFirstPFirstLetterColorToRed",
+            "expect": "expect(document.querySelectorAll('p:first-child'), '::first-letter').to.have.css('color', '#8b3333');"
+        },
+        {
+            "title": "затем обнулите `text-indent` первого параграфа,",
+            "name": "setFirstPFirstLetterTextIndentTo0",
+            "expect": "expect(document.querySelectorAll('p:first-child')).to.have.css('textIndent', '0');expect(document.querySelectorAll('p:not(:first-child)')).not.to.have.css('textIndent', '0');"
+        },
+        {
+            "title": "а потом для псевдоэлемента `::first-line` первого параграфа задайте полужирный шрифт.",
+            "name": "setFirstPFirstLineFontWeightToBold",
+            "expect": "expect(document.querySelectorAll('p:first-child'), '::first-line').to.have.css('fontWeight', 'bold');"
+        }
+    ]
+}
+
+

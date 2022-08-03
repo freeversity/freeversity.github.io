@@ -1,0 +1,20 @@
+{
+    "intro": "setArticleProps",
+    "introTitle": "Блоку `article` задайте:",
+    "assertions": [
+        {
+            "title": "количество колонок в многоколоночном тексте равное `2`,",
+            "name": "setArticleColumnCountTo2",
+            "expect": "expect(document.querySelectorAll('article')).to.have.css('column-count', '2');"
+        },
+        {
+            "title": "а затем равное `3`.",
+            "name": "setArticleColumnCountTo3",
+            "expect": "expect(document.querySelectorAll('article')).to.have.css('column-count', '3');"
+        }
+    ],
+    "strict": true
+}
+
+
+

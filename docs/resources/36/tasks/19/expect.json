@@ -1,0 +1,21 @@
+{
+    "intro": "setArticleProps",
+    "introTitle": "Блоку `article` задайте:",
+    "assertions": [
+        {
+            "title": "ширину колонки в многоколоночном тексте равное `200px`,",
+            "name": "setArticleColumnWidthTo200Px",
+            "expect": "expect(document.querySelectorAll('article')).to.have.css('columnWidth', '200px');"
+        },
+        {
+            "title": "а затем равное `150px`.",
+            "name": "setArticleColumnWidthTo150Px",
+            "expect": "expect(document.querySelectorAll('article')).to.have.css('columnWidth', '150px');"
+        }
+    ],
+    "strict": true
+}
+
+
+
+

@@ -1,0 +1,16 @@
+{
+    "assertions": [
+        {
+            "title": "Раскомментируйте подключение веб-шрифта `@font-face`,",
+            "name": "uncommentFontFaceRule",
+            "expect": "expect(document).to.have.cssRule('@font-face', 'fontFamily', '\"Montserrat Alternates\"');"
+        },
+        {
+            "title": "а затем задайте ссылке шрифт `\"Montserrat Alternates\", sans-serif` размером `55px`.",
+            "name": "setAFontFamilyMontserratAlterenatessansSerifAndFontSize55Px",
+            "expect": "expect(document.querySelector('a')).to.have.css('font', '55px \"Montserrat Alternates\", sans-serif');"
+        }
+    ],
+    "strict": true
+}
+

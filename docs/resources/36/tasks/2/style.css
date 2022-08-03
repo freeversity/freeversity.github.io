@@ -1,0 +1,16 @@
+body {
+  background: url("sky.jpg") no-repeat 0 0;
+  color: #ecf0f1;
+  font-family: "Arial", sans-serif;
+}
+
+h1 {
+  margin: 40px 40px 200px;
+  font-weight: normal;
+  font-size: 50px;
+}
+
+span {
+  margin: 50px;
+  font-size: 80px;
+}

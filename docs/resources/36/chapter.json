@@ -3,16 +3,156 @@
     "title": "Advanced Text Styling",
     "tasks": [
         {
+            "id": 1,
+            "type": "task",
+            "entry": "/resources/36/tasks/1/task.json",
+            "name": "unicode-symbols"
+        }, 
+        {
+            "id": 2,
+            "type": "task",
+            "entry": "/resources/36/tasks/2/task.json",
+            "name": "text-shadow-prop"
+        }, 
+        {
+            "id": 3,
+            "type": "task",
+            "entry": "/resources/36/tasks/3/task.json",
+            "name": "text-shadow-horizontal-offset"
+        }, 
+        {
+            "id": 4,
+            "type": "task",
+            "entry": "/resources/36/tasks/4/task.json",
+            "name": "text-shadow-vertical-offset"
+        }, 
+        {
+            "id": 5,
+            "type": "task",
+            "entry": "/resources/36/tasks/5/task.json",
+            "name": "text-shadow-blur"
+        }, 
+        {
+            "id": 6,
+            "type": "task",
+            "entry": "/resources/36/tasks/6/task.json",
+            "name": "text-shadow-color"
+        }, 
+        {
+            "id": 7,
+            "type": "task",
+            "entry": "/resources/36/tasks/7/task.json",
+            "name": "pressed-in-text-effect"
+        }, 
+        {
+            "id": 8,
+            "type": "task",
+            "entry": "/resources/36/tasks/8/task.json",
+            "name": "decorative-retro-shadow"
+        }, 
+        {
             "id": 9,
             "type": "challenge",
             "entry": "/resources/36/tasks/9/task.json",
             "name": "psycodelic-shadow"
-        }, {
+        }, 
+        {
+            "id": 10,
+            "type": "task",
+            "entry": "/resources/36/tasks/10/task.json",
+            "name": "logo-irregular-font"
+        }, 
+        {
+            "id": 11,
+            "type": "task",
+            "entry": "/resources/36/tasks/11/task.json",
+            "name": "logo-iconic-font"
+        }, 
+        {
+            "id": 12,
+            "type": "task",
+            "entry": "/resources/36/tasks/12/task.json",
+            "name": "logo-aligning-sizes"
+        }, 
+        {
+            "id": 13,
+            "type": "task",
+            "entry": "/resources/36/tasks/13/task.json",
+            "name": "line-decorative-styling-1"
+        }, 
+        {
+            "id": 14,
+            "type": "task",
+            "entry": "/resources/36/tasks/14/task.json",
+            "name": "line-decorative-styling-2"
+        }, 
+        {
+            "id": 15,
+            "type": "task",
+            "entry": "/resources/36/tasks/15/task.json",
+            "name": "text-indent"
+        }, 
+        {
+            "id": 16,
+            "type": "task",
+            "entry": "/resources/36/tasks/16/task.json",
+            "name": "firts-letter-pseudo-element"
+        }, 
+        {
+            "id": 17,
+            "type": "task",
+            "entry": "/resources/36/tasks/17/task.json",
+            "name": "firts-line-pseudo-element"
+        }, 
+        {
+            "id": 18,
+            "type": "task",
+            "entry": "/resources/36/tasks/18/task.json",
+            "name": "columns-layout-column-count"
+        }, 
+        {
+            "id": 19,
+            "type": "task",
+            "entry": "/resources/36/tasks/19/task.json",
+            "name": "columns-layout-column-width"
+        }, 
+        {
+            "id": 20,
+            "type": "task",
+            "entry": "/resources/36/tasks/20/task.json",
+            "name": "columns-layout-column-gap"
+        }, 
+        {
+            "id": 21,
+            "type": "task",
+            "entry": "/resources/36/tasks/21/task.json",
+            "name": "text-direction"
+        }, 
+        {
+            "id": 22,
+            "type": "task",
+            "entry": "/resources/36/tasks/22/task.json",
+            "name": "text-direction-and-tables"
+        }, 
+        {
+            "id": 23,
+            "type": "task",
+            "entry": "/resources/36/tasks/23/task.json",
+            "name": "text-overflow"
+        }, 
+        {
+            "id": 24,
+            "type": "task",
+            "entry": "/resources/36/tasks/24/task.json",
+            "name": "text-interval"
+        }, 
+        {
             "id": 25,
             "type": "challenge",
             "entry": "/resources/36/tasks/25/task.json",
             "name": "why-so-serious"
-        }, {
+        }, 
+        {
             "id": 26,
             "type": "challenge",
             "entry": "/resources/33/tasks/26/task.json",
